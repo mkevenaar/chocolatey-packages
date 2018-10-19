@@ -1,7 +1,8 @@
 # Chocolatey Packages
 
 [![](https://ci.appveyor.com/api/projects/status/github/mkevenaar/chocolatey-packages?svg=true)](https://ci.appveyor.com/project/mkevenaar/chocolatey-packages)
-[Update status](https://gist.github.com/mkevenaar/YOUR_GIST_ID)
+[![](http://transparent-favicon.info/favicon.ico)](#)
+[Update status](https://gist.github.com/mkevenaar/675e3f672bda54270f8d7f5415f9374d)
 [![](http://transparent-favicon.info/favicon.ico)](#)
 [chocolatey/mkevenaar](https://chocolatey.org/profiles/mkevenaar)
 
