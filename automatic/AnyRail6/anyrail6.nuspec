@@ -22,57 +22,52 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- This section is about this package, although id and version have ties back to the software -->
     <!-- id is lowercase and if you want a good separator for words, use '-', not '.'. Dots are only acceptable as suffixes for certain types of packages, e.g. .install, .portable, .extension, .template -->
     <!-- If the software is cross-platform, attempt to use the same id as the debian/rpm package(s) if possible. -->
-    <id>git.install</id>
-     <!-- version should MATCH as closely as possible with the underlying software -->
+    <id>AnyRail6</id>
+    <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>{{PackageVersion}}</version>
-    <packageSourceUrl>https://github.com/ferventcoder/chocolatey-packages</packageSourceUrl>
+    <version>6.14.4</version>
+    <!-- <packageSourceUrl>Where is this Chocolatey package located (think GitHub)? packageSourceUrl is highly recommended for the community feed</packageSourceUrl>-->
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
-    <owners>Rob Reynolds, Darwin Sanoy</owners>
-    <!-- ============================== -->   
-    
+    <owners>Maurice Kevenaar</owners>
+    <!-- ============================== -->
+
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
-    <title>Git (Install)</title>
-    <authors>Johannes Schindelin, msysgit Committers</authors>
-    <projectUrl>https://git-for-windows.github.io/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/ferventcoder/chocolatey-packages/02c21bebe5abb495a56747cbb9b4b5415c933fc0/icons/git.svg</iconUrl>
-    <licenseUrl>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</licenseUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/git-for-windows/git</projectSourceUrl>
-    <docsUrl>http://git-scm.com/doc</docsUrl>
-    <mailingListUrl>http://groups.google.com/group/git-for-windows</mailingListUrl>
-    <bugTrackerUrl>https://github.com/git-for-windows/git/issues</bugTrackerUrl>
-    <tags>git vcs dvcs version control msysgit admin</tags>
-    <summary>Git (for Windows) – Fast Version Control</summary>
-    <description>
-Git (for Windows) – Git is a powerful distributed Source Code Management tool. If you just want to use Git to do your version control in Windows, you will need to download Git for Windows, run the installer, and you are ready to start.
+    <title>AnyRail6</title>
+    <authors>DRail Modelspoor Software</authors>
+    <!-- projectUrl is required for the community feed -->
+    <projectUrl>https://www.anyrail.com</projectUrl>
+    <iconUrl>http://cdn.rawgit.com/mkevenaar/chocolatey-packages/master/icons/AnyRail6.png</iconUrl>
+    <!-- copyright is usually years and software vendor, but not required for internal feeds -->
+    <copyright>DRail Modelspoor Software</copyright>
+    <tags>anyrail</tags>
+    <description>AnyRail makes model railroad design so easy, it's fun!
 
-Note: Git for Windows is a project run by volunteers, so if you want it to improve, volunteer!
+AnyRail™ is probably the easiest-to-use model railway design tool around. It's also entirely independent, so you can build with almost any track. Enjoy designing your layout - AnyRail ensures everything fits. AnyRail enables you to rocket through the planning phase, or tinker to your heart's content - you don't have to be a computer expert to produce successful designs.
 
-### Package Specifics
-The package uses default install options minus cheetah integration and desktop icons. Cheetah prevents a good upgrade scenario, so it has been removed.
-
-#### Package Parameters
-The following package parameters can be set:
-
- * `/GitOnlyOnPath` - this puts gitinstall\cmd on path. This is also done by default if no package parameters are set.
- * `/GitAndUnixToolsOnPath` - this puts gitinstall\bin on path. This setting will override `/GitOnlyOnPath`.
- * `/NoAutoCrlf` - this setting only affects new installs, it will not override an existing `.gitconfig`. This will ensure 'Checkout as is, commit as is'
- * `/WindowsTerminal` - this makes vim use the regular Windows terminal instead of MinTTY terminal
-
-These parameters can be passed to the installer with the use of `-params`.
-For example: `-params '"/GitAndUnixToolsOnPath /NoAutoCrlf"'`.
 
 **Please Note**: This is an automatically updated package. If you find it is 
 out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.
-    </description>
-    
+let them know the package is no longer updating correctly.</description>
+    <!-- =============================== -->  
+
+    <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
+    <!--<dependencies>
+      <dependency id="" version="__MINIMUM_VERSION__" />
+      <dependency id="" version="[__EXACT_VERSION__]" />
+      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_INCLUSIVE]" />
+      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_EXCLUSIVE)" />
+      <dependency id="" />
+    </dependencies>-->
+
+    <!--<provides>NOT YET IMPLEMENTED</provides>-->
+    <!--<conflicts>NOT YET IMPLEMENTED</conflicts>-->
+    <!--<replaces>NOT YET IMPLEMENTED</replaces>-->
   </metadata>
-  <files>
+  <!-- this section controls what actually gets packaged into the Chocolatey package -->
+  <!-- Uncomment to limit what is packed in -->
+  <!--<files>
     <file src="tools\**" target="tools" />
-  </files>
+  </files>-->
 </package>
-<!-- character encoding: “UTF-8” -->
