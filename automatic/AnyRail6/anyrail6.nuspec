@@ -42,6 +42,9 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>DRail Modelspoor Software</copyright>
     <tags>anyrail</tags>
+    <releaseNotes>https://www.anyrail.com/en/download</releaseNotes>
+    <packageSourceUrl>https://www.anyrail.com/en/download</packageSourceUrl>
+    <docsUrl>https://www.anyrail.com/help_en/index.html</docsUrl>
     <description>AnyRail makes model railroad design so easy, it's fun!
 
 AnyRail™ is probably the easiest-to-use model railway design tool around. It's also entirely independent, so you can build with almost any track. Enjoy designing your layout - AnyRail ensures everything fits. AnyRail enables you to rocket through the planning phase, or tinker to your heart's content - you don't have to be a computer expert to produce successful designs.
