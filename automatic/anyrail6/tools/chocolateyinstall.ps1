@@ -10,12 +10,9 @@ $packageArgs = @{
   unzipLocation  = $toolsDir
   fileType       = 'msi'
   url            = $url
-
-  softwareName   = 'AnyRail6*'
-
   checksum       = $checksum
   checksumType   = $checksumType
-
+  softwareName   = 'AnyRail6*'
   silentArgs     = "/qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
   validExitCodes = @(0, 3010, 1641)
 }
