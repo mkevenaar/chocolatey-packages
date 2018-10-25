@@ -24,8 +24,8 @@ function global:au_GetLatest {
 
     $version = $url[0] -split '-' | select -Last 1 -Skip 1
     $version = '0.' + $version
-    $url32 = 'https://wiki.rocrail.net/rocrail-snapshot/' + $url[0]
-    $url64 = 'https://wiki.rocrail.net/rocrail-snapshot/' + $url[1]
+    $url32 = 'https://wiki.rocrail.net/rocrail-snapshot/history/' + $url[0]
+    $url64 = 'https://wiki.rocrail.net/rocrail-snapshot/history/' + $url[1]
 
     $Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
     return $Latest
