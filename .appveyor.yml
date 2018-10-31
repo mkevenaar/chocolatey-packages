@@ -21,15 +21,16 @@ environment:
   # Github token to commit pushed packages to repository
   github_user_repo: mkevenaar/chocolatey-packages
   github_api_key:
-    secure: gS5AWBTk0ZRv4xaJVCWvbElR4U7WZLdeU2kWjJq3RTkIw2piL972moUclxPBFWaw #https://ci.appveyor.com/tools/encrypt
+    secure: gS5AWBTk0ZRv4xaJVCWvbElR4U7WZLdeU2kWjJq3RTkIw2piL972moUclxPBFWaw
 
 
   # Mail credentials - for error notifications
   mail_user:
-    secure: GGQmzL8I0st6uo9H/FD5chuEEtrCHm0q2W3PZO5TXb4= #https://ci.appveyor.com/tools/encrypt
+    secure: C63MvLXNIMEeED8LB4SNzyIiCS7ZVtviDbeSYIUlTqw=
   mail_pass:
-    secure: gOx4dcNCGFML/xHpt0RtuQ== #https://ci.appveyor.com/tools/encrypt
-  mail_server: smtp.gmail.com
+    secure: VXGNYEqh1p/j5pO+qr83+A==
+  mail_server:
+    secure: GNiWz1x2PgXg54QO7xmVziamgDCJlvPL0NKBXh8WhQI=
   mail_port: 587
   mail_enablessl: true
 
@@ -98,8 +99,9 @@ artifacts:
 
 notifications:
 - provider: Email
-  to: $(mail_user)
-  on_build_success: false
+  to:
+    secure: CJ7rd7iHqZKdGcOlzGn+X3Z56Gwr/CvV5WQGETFio0E=
+  on_build_success: true
   on_build_failure: true
   on_build_status_changed: true
 
