@@ -99,8 +99,7 @@ artifacts:
 
 notifications:
 - provider: Email
-  to:
-    secure: CJ7rd7iHqZKdGcOlzGn+X3Z56Gwr/CvV5WQGETFio0E=
+  to: maurice@kevenaar.name
   on_build_success: true
   on_build_failure: true
   on_build_status_changed: true
