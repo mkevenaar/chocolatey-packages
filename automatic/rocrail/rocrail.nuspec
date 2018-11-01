@@ -44,6 +44,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <releaseNotes>https://wiki.rocrail.net/rocrail-snapshot/log.txt</releaseNotes>
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages</packageSourceUrl>
     <docsUrl>https://wiki.rocrail.net/doku.php</docsUrl>
+    <summary>Rocrail is free software for controlling model trains</summary>
     <description>Rocrail is free software for controlling model trains for Linux, Apple macOS, Raspberry Pi &amp; Odroid and of course Windows operating systems. 
     
 Rocrail assumes all responsibilities for controlling a model railroad and their accessories. Trains can be either manually controlled or completely controlled by the software in automatic mode. A mixed operation, i.e. controlling some trains manually and other trains in fully automatic mode is possible.
