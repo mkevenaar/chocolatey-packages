@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Milen Peev</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://www.scarm.info</projectUrl>
-    <iconUrl>http://cdn.rawgit.com/mkevenaar/chocolatey-packages/master/icons/scarm.png</iconUrl>
+    <iconUrl>https://cdn.rawgit.com/mkevenaar/chocolatey-packages/master/icons/scarm.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Milen Peev</copyright>
     <tags>scarm</tags>
