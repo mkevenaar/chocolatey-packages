@@ -60,8 +60,8 @@ let them know the package is no longer updating correctly.</description>
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
     <dependencies>
-      <dependency id="vcredist140" version="[14.0.24215.1]" />
-      <dependency id="DotNet4.5" version="4.5.20120822" />
+      <dependency id="vcredist2015" version="14.0.24215.20170201" />
+      <!--<dependency id="DotNet4.5" version="4.5.20120822" />-->
     </dependencies>
 
     <!--<provides>NOT YET IMPLEMENTED</provides>-->
