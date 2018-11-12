@@ -12,7 +12,7 @@ $packageArgs = @{
   url           = $url
   checksum       = $checksum
   checksumType   = $checksumType
-  softwareName  = 'MySQL Workbench*'
+  softwareName  = 'QuickPar*'
   silentArgs = '/S'
   validExitCodes = @(0)
 }
