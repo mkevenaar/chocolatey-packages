@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>6.17.4</version>
+    <version>6.19.0</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Maurice Kevenaar</owners>
     <!-- ============================== -->
@@ -45,14 +45,15 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages</packageSourceUrl>
     <docsUrl>https://www.anyrail.com/help_en/index.html</docsUrl>
     <summary>AnyRail makes model railroad design so easy, it's fun!</summary>
-    <description>AnyRail makes model railroad design so easy, it's fun!
+    <description><![CDATA[AnyRail makes model railroad design so easy, it's fun!
 
 AnyRail™ is probably the easiest-to-use model railway design tool around. It's also entirely independent, so you can build with almost any track. Enjoy designing your layout - AnyRail ensures everything fits. AnyRail enables you to rocket through the planning phase, or tinker to your heart's content - you don't have to be a computer expert to produce successful designs.
 
 
-**Please Note**: This is an automatically updated package. If you find it is 
+**Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.</description>
+let them know the package is no longer updating correctly.
+]]></description>
     <!-- =============================== -->  
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
