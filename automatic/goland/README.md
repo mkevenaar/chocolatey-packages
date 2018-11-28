@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.rawgit.com/mkevenaar/chocolatey-packages/master/icons/golang.png" width="48" height="48"/> [goland](https://chocolatey.org/packages/goland)
+﻿# <img src="https://cdn.rawgit.com/mkevenaar/chocolatey-packages/master/icons/goland.png" width="48" height="48"/> [goland](https://chocolatey.org/packages/goland)
 
 GoLand is a new commercial IDE by JetBrains aimed at providing an ergonomic environment for Go development.
 
