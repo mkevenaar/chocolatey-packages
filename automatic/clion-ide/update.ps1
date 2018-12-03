@@ -16,9 +16,10 @@ function global:au_GetLatest {
     $json = Invoke-WebRequest $releases | ConvertFrom-Json
     $url = $json.CL.downloads.windows.link
     $version = $json.CL.version
+    $checksum = ((Invoke-RestMethod -Uri $json.CL.downloads.windows.checksumLink -UseBasicParsing).Split(" "))[0]
 
-    $Latest = @{ URL32 = $url; Version = $version }
+    $Latest = @{ URL32 = $url; Version = $version; Checksum32 = $checksum; ChecksumType32 = 'sha256' }
     return $Latest
 }
 
-update
+update -ChecksumFor none
