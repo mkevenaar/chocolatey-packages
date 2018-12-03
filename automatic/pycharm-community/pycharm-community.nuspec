@@ -47,7 +47,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages</packageSourceUrl>
     <docsUrl>https://www.jetbrains.com/pycharm/documentation/</docsUrl>
     <summary>PyCharm - Lightweight IDE for Python &amp; Scientific development</summary>
-    <description>[![official JetBrains project](http://jb.gg/badges/official-plastic.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
+    <description><![CDATA[[![official JetBrains project](http://jb.gg/badges/official-plastic.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
 
 # ALL THE PYTHON TOOLS IN ONE PLACE
 Be More Productive
@@ -59,7 +59,8 @@ PyCharm knows everything about your code. Rely on it for intelligent code comple
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
-</description>
+
+]]></description>
     <!-- =============================== -->  
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
