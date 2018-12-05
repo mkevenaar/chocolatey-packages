@@ -2,7 +2,7 @@
 
 version: '{build}'
 max_jobs: 1
-image: Visual Studio 2017
+#image: Visual Studio 2015
 # History plugin requires complete log
 #clone_depth: 5
 branches:
@@ -13,7 +13,7 @@ branches:
 
 environment:
   # Set au version to use or omit to use the latest. Specify branch name to use development version from Github
-  au_version:
+  au_version: master
   au_push: true
   # Force test: use 1 to test all, or N to split testing into N groups
   au_test_groups: 1
