@@ -12,14 +12,14 @@ $checksumType64 = 'sha256'
 #Based on InnoSetup
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
-  unzipLocation  = $toolsDir
+  unzipLocation = $toolsDir
   fileType      = 'exe'
   url           = $url32
   checksum      = $checksum32
-  checksumType  = 'sha256'
+  checksumType  = $checksumType32
   url64bit      = $url64
   checksum64    = $checksum64
-  checksumType64= 'sha256'
+  checksumType64= $checksumType64
   softwareName  = 'Rocrail*'
   silentArgs    = "/VERYSILENT /NORESTART /RESTARTEXITCODE=3010 /SP- /SUPPRESSMSGBOXES /CLOSEAPPLICATIONS /FORCECLOSEAPPLICATIONS"
   validExitCodes= @(0,3010)
