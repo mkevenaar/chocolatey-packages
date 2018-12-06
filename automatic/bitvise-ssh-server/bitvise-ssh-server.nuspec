@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Read this before creating packages: https://chocolatey.org/docs/create-packages -->
+<!-- It is especially important to read the above link to understand additional requirements when publishing packages to the community feed aka dot org (https://chocolatey.org/packages). -->
+
+<!-- Test your packages in a test environment: https://github.com/chocolatey/chocolatey-test-environment -->
+
+<!--
+This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Reference. Chocolatey uses a special version of NuGet.Core that allows us to do more than was initially possible. As such there are certain things to be aware of:
+
+* the package xmlns schema url may cause issues with nuget.exe
+* Any of the following elements can ONLY be used by choco tools - projectSourceUrl, docsUrl, mailingListUrl, bugTrackerUrl, packageSourceUrl, provides, conflicts, replaces 
+* nuget.exe can still install packages with those elements but they are ignored. Any authoring tools or commands will error on those elements 
+-->
+
+<!-- You can embed software files directly into packages, as long as you are not bound by distribution rights. -->
+<!-- * If you are an organization making private packages, you probably have no issues here -->
+<!-- * If you are releasing to the community feed, you need to consider distribution rights. -->
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <!-- This section is about this package, although id and version have ties back to the software -->
+    <!-- id is lowercase and if you want a good separator for words, use '-', not '.'. Dots are only acceptable as suffixes for certain types of packages, e.g. .install, .portable, .extension, .template -->
+    <!-- If the software is cross-platform, attempt to use the same id as the debian/rpm package(s) if possible. -->
+    <id>bitvise-ssh-server</id>
+    <!-- version should MATCH as closely as possible with the underlying software -->
+    <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
+    <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
+    <version>7.39</version>
+    <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
+    <owners>Maurice Kevenaar</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <!-- This section is about the software itself -->
+    <title>Bitvise SSH Server</title>
+    <authors>Bitvise Limited</authors>
+    <!-- projectUrl is required for the community feed -->
+    <projectUrl>http://www.bitvise.com/ssh-server</projectUrl>
+    <iconUrl>https://cdn.rawgit.com/mkevenaar/chocolatey-packages/master/icons/bitvise-ssh-server.png</iconUrl>
+    <!-- copyright is usually years and software vendor, but not required for internal feeds -->
+    <copyright>Bitvise Limited</copyright>
+    <tags>ssh server admin</tags>
+    <releaseNotes>http://www.bitvise.com/ssh-server-version-history</releaseNotes>
+    <licenseUrl>http://www.bitvise.com/ssh-server-license</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages</packageSourceUrl>
+    <docsUrl>https://www.bitvise.com/ssh-server-users-guide</docsUrl>
+    <bugTrackerUrl>https://fogbugz.bitvise.com/</bugTrackerUrl>
+    <summary>SSH Server provides secure remote login capabilities</summary>
+    <description>Bitvise SSH Server (previously WinSSHD) provides secure remote login capabilities. Security is our SSH server's key feature: in contrast with Telnet and FTP servers, Bitvise SSH Server encrypts data during transmission. Thus, no one can sniff your password or see what files you are transferring when you access your computer over SSH.
+
+Bitvise SSH Server is ideal for remote administration of Windows servers; for advanced users who wish to access their home machine from work, or their work machine from home; as well as for a wide spectrum of advanced tasks, such as establishing a VPN using the SSH TCP/IP tunneling feature, or providing a secure file depository using SFTP.
+
+Personal Edition (installed by default) is free for non-commercial, personal use.  It has the following limitations:
+
+  * Can use only local Windows accounts (no domains).
+  * Can configure only one Windows group ('everyone').
+  * Can configure only one virtual group.
+  * Has a limit of 10 Windows account entries.
+  * Has a limit of 10 virtual account entries.
+  * GSSAPI authentication is disabled (Kerberos and NTLM).
+
+For any organizational use (non-commercial or commercial) or to remove the limitations of the Personal Edition, it is required to purchase a Standard Edition license and will require re-installing this package with the parameter -standardedition.  See http://www.bitvise.com/ssh-server-license for more information.
+
+#### Package Parameters
+
+* `'"/installDir=C:\Path\to\installationdirectory"`' - overwrite the default installation directory
+* `'"/site=site-name"`'
+* `'"/renameExistingDir=existingDir"`'
+* `'"/force"`'
+* `'"/acceptEULA"`'
+* `'"/interactive"`'
+* `'"/noRollback"`'
+* `'"/activationCode=activation-code-hex"`'
+* `'"/keypairs=keypairs-file"`'
+* `'"/settings=settings-file"`'
+* `'"/siteTypeSettings=fileName"`'
+* `'"/startService"`'
+* `'"/startBssCtrl"`'
+
+Note: Use two single quotes when double quotes are desired."
+
+#### Example
+* `choco install {{PackageName}} -params '"/InstallLocation=C:\temp"'`
+
+**Please Note**: This is an automatically updated package. If you find it is 
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know the package is no longer updating correctly.</description>
+    <dependencies>
+      <dependency id="chocolatey-core.extension" version="1.0" />
+    </dependencies>
+
+    <!--<provides>NOT YET IMPLEMENTED</provides>-->
+    <!--<conflicts>NOT YET IMPLEMENTED</conflicts>-->
+    <!--<replaces>NOT YET IMPLEMENTED</replaces>-->
+  </metadata>
+  <!-- this section controls what actually gets packaged into the Chocolatey package -->
+  <!-- Uncomment to limit what is packed in -->
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
