@@ -1,6 +1,8 @@
 # AU template: https://github.com/majkinetor/au-packages-template
 
 version: '{build}'
+pull_requests:
+  do_not_increment_build_number: true
 max_jobs: 1
 #image: Visual Studio 2015
 # History plugin requires complete log
@@ -15,7 +17,7 @@ environment:
   # Set au version to use or omit to use the latest. Specify branch name to use development version from Github
   au_version: master
   au_push: true
-  # Force test: use 1 to test all, or N to split testing into N groups
+  # Use 1 to test all, or N to split testing into N groups
   au_test_groups: 1
 
   # Github token to commit pushed packages to repository
@@ -34,16 +36,20 @@ environment:
   mail_port: 587
   mail_enablessl: true
 
-  # ID of the gist used to save run results - create a gist under the github_user (secret or not) and grab the id - https://gist.github.com/name/id
-  # Optional, leave empty to create anonymous gist
+  #ID of the gist used to save run results
   gist_id: 675e3f672bda54270f8d7f5415f9374d
 
-  # Force test: gist id for test results
-  gist_id_test:
+  #ID of the gist used to save test run results
+  gist_id_test: 7ca34bddbf76f8ae30a1573e7474e1aa
 
   # Chocolatey API key - to push updated packages
   api_key:
     secure: qkGqdhoPE+AUlbq/DmMV9jvUGmBj5/oRAP6ndRbAxeMi2shb7xwMMxR07pwG0O6B # https://ci.appveyor.com/tools/encrypt
+
+  #Chocolatey version we want to use when checking for updates.
+  choco_version: '0.10.8'
+  choco_version_pr: '0.10.8' # Should be kept to the version available one year ago
+  nupkg_cache_path: C:\packages
 
 init:
 - git config --global user.email "maurice@kevenaar.name"
@@ -51,6 +57,18 @@ init:
 - git config --global core.safecrlf false
 
 install:
+- ps: |
+    $chocoVersion = if (($Env.APPVEYOR_PULL_REQUEST_NUMBER -eq $null) -or ($ENV:APPVEYOR_PULL_REQUEST_NUMBER -eq '')) { $Env:choco_version } else { $Env:choco_version_pr }
+    if (!(Test-Path "$env:nupkg_cache_path")) { mkdir -Force "$env:nupkg_cache_path" }
+    @{
+      'chocolatey' = $chocoVersion
+      'wormies-au-helpers' = '0.3.1'
+    }.GetEnumerator() | % {
+      if (!(Test-Path "${env:nupkg_cache_path}\$($_.Key).$($_.Value).nupkg")) { rm "${env:nupkg_cache_path}\$($_.Key).*.nupkg" ; iwr "https://chocolatey.org/api/v2/package/$($_.Key)/$($_.Value)" -OutFile "${env:nupkg_cache_path}\$($_.Key).$($_.Value).nupkg" }
+      if ($_.Key -eq 'chocolatey') { cup $_.Key --version $_.Value --source ${env:nupkg_cache_path} --allow-downgrade }
+      else { cinst $_.Key --version $_.Value --source ${env:nupkg_cache_path} --ignore-dependencies }
+    }
+    rm "$env:ChocolateyInstall\logs\*.log"
 - ps: 'Get-CimInstance win32_operatingsystem -Property Caption, OSArchitecture, Version | fl Caption, OSArchitecture, Version'
 - ps: $PSVersionTable
 - git --version
@@ -58,32 +76,43 @@ install:
 - ps: |
     git clone -q https://github.com/majkinetor/au.git $Env:TEMP/au
     . "$Env:TEMP/au/scripts/Install-AU.ps1" $Env:au_version
-
 - ps: |
     "Build info"
     '  {0,-20} {1}' -f 'SCHEDULED BUILD:', ($Env:APPVEYOR_SCHEDULED_BUILD -eq 'true')
     '  {0,-20} {1}' -f 'FORCED BUILD:'   , ($Env:APPVEYOR_FORCED_BUILD    -eq 'true')
     '  {0,-20} {1}' -f 'RE BUILD:'       , ($Env:APPVEYOR_RE_BUILD        -eq 'true')
-
 build_script:
 - ps: |
     $ErrorActionPreference = 'Continue'
 
-    if ($Env:APPVEYOR_PROJECT_NAME  -like '*test*') { ./test_all.ps1 "random $Env:au_test_groups"; return }
+    . ./scripts/EventLogs.ps1
+    Clear-EventLogs
 
+    if ($Env:APPVEYOR_PROJECT_NAME  -like '*test*') { ./test_all.ps1 "random $Env:au_test_groups"; return }
+    if (($Env:APPVEYOR_PULL_REQUEST_NUMBER -ne $null) -and ($Env:APPVEYOR_PULL_REQUEST_NUMBER -ne '')) {
+      Set-Service wuauserv -StartupType Manual
+      ./scripts/Test-RepoPackage.ps1 -CleanFiles
+      return
+    } else {
+      # Clean the choco logs as it's quite large
+      rm "$env:ChocolateyInstall\logs\*.log"
+    }
     if ( ($Env:APPVEYOR_SCHEDULED_BUILD -ne 'true') -and ($Env:APPVEYOR_FORCED_BUILD -ne 'true') ) {
         switch -regex ($Env:APPVEYOR_REPO_COMMIT_MESSAGE)
         {
             '\[AU (.+?)\]'   { $forced = $Matches[1] }
-
             '\[PUSH (.+?)\]' {
                 $packages = $Matches[1] -split ' '
                 Write-Host "PUSHING PACKAGES: $packages"
                 foreach ($package in $packages) {
                     Write-Host ("{0}`n{1}`n" -f ('-'*60), "PACKAGE: $package")
                     $package_dir = ls -recurse | ? { $_.Name -eq "$package.nuspec"} | select -First 1 | % Directory
+
                     if (!$package_dir) { Write-Warning "Can't find package '$package'"; continue }
-                    pushd $package_dir; choco pack; Push-Package; popd
+                    pushd $package_dir
+                      if (Test-Path update.ps1 -ea 0) { ./update.ps1 }
+                      choco pack; Push-Package -All;
+                    popd
                 }
                 return
             }
@@ -91,12 +120,20 @@ build_script:
     }
 
     ./update_all.ps1 -ForcedPackages $forced
-    7z a au_temp.zip $Env:TEMP\chocolatey\au\*
-
-artifacts:
-- path: update_info.xml
-- path: Update-AUPackages.md
-- path: au_temp.zip
+    Get-EventLogs * | ? Source -eq 'Schannel' | fl * |  out-file eventlogs.txt
+on_finish:
+- ps: |
+    if (Test-Path $Env:TEMP\chocolatey\au) { 7z a  -mx9 au_temp.7z $Env:TEMP\chocolatey\au\* }
+    $paths = @(
+      Resolve-Path "$env:TEMP\artifacts\*" -ea 0
+      Resolve-Path "$env:ChocolateyInstall\logs\*.log" -ea 0
+      'au_temp.7z'
+      'update_info.xml'
+      'Update-AUPackages.md'
+      'Update-History.md'
+      'eventlogs.txt'
+    )
+    $paths | ? { Test-Path $_ } | % { Push-AppveyorArtifact $_ }
 
 notifications:
 - provider: Email

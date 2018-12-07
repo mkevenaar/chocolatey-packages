@@ -1,0 +1,16 @@
+* text eol=crlf whitespace=trailing-space,tab-in-indent,tabwidth=2
+
+# Possibly have crlf for this as well (believe AU uses Windows Line Endings and utf-8-bom)
+*.nuspec text eol=lf
+
+*.png binary
+*.jpg binary
+*.exe binary
+*.dll binary
+*.zip binary
+*.cer binary
+*.pdf binary
+
+# License files should be the only files allowed to use tabs in indentation
+# to have them be as equal to the original license as possible
+LICENSE.txt text whitespace=-tab-in-indent
