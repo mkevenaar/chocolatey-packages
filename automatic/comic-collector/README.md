@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.rawgit.com/mkevenaar/chocolatey-packages/master/icons/comic-collector.png" width="48" height="48"/> [comic-collector](https://chocolatey.org/packages/comic-collector)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@3ada520713de48c2e8ef7d39a47184bb5dbc62cf/icons/comic-collector.png" width="48" height="48"/> [comic-collector](https://chocolatey.org/packages/comic-collector)
 
 Comic Database Software - catalog your comic book collection
 

@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Bitvise Limited</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://www.bitvise.com/ssh-server</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/mkevenaar/chocolatey-packages/master/icons/bitvise-ssh-server.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4ba09217e6d55c3b7929d146c44953cc9a9cf647/icons/bitvise-ssh-server.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Bitvise Limited</copyright>
     <tags>ssh server admin</tags>

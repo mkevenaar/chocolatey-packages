@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.rawgit.com/mkevenaar/chocolatey-packages/master/icons/bitvise-ssh-server.png" width="48" height="48"/> [bitvise-ssh-server](https://chocolatey.org/packages/bitvise-ssh-server)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4ba09217e6d55c3b7929d146c44953cc9a9cf647/icons/bitvise-ssh-server.png" width="48" height="48"/> [bitvise-ssh-server](https://chocolatey.org/packages/bitvise-ssh-server)
 
 Bitvise SSH Server (previously WinSSHD) provides secure remote login capabilities. Security is our SSH server's key feature: in contrast with Telnet and FTP servers, Bitvise SSH Server encrypts data during transmission. Thus, no one can sniff your password or see what files you are transferring when you access your computer over SSH.
 

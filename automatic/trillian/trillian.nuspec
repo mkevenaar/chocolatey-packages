@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Cerulean Studios</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://www.trillian.im/download/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/mkevenaar/chocolatey-packages/master/icons/trillian.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4ba09217e6d55c3b7929d146c44953cc9a9cf647/icons/trillian.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Cerulean Studios</copyright>
     <tags>chat twitter messenger gmail yahoo facebook skype irc admin</tags>

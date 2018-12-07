@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.rawgit.com/mkevenaar/chocolatey-packages/master/icons/mysql-workbench.png" width="48" height="48"/> [mysql.workbench](https://chocolatey.org/packages/mysql.workbench)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@3eea054c3790ec5b5d23cd6c089ed0ad1f4825fd/icons/mysql-workbench.png" width="48" height="48"/> [mysql.workbench](https://chocolatey.org/packages/mysql.workbench)
 
 MySQL Workbench provides DBAs and developers an integrated tools environment for:
 

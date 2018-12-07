@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>ZeroTier, Inc.</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://www.zerotier.com/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/mkevenaar/chocolatey-packages/master/icons/zerotier-one.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@0d101d5eae92814d889385757f19d9785404ea5b/icons/zerotier-one.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>ZeroTier, Inc.</copyright>
     <tags>zerotier-one admin</tags>

@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>JetBrains</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://www.jetbrains.com/clion/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/mkevenaar/chocolatey-packages/master/icons/clion-ide.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@9dbd485297ce379c83f6009e75e4c65000170830/icons/clion-ide.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>JetBrains s.r.o.</copyright>
     <tags>clion Clion JetBrains c++ cplusplus admin</tags>

@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.rawgit.com/mkevenaar/chocolatey-packages/master/icons/clion-ide.png" width="48" height="48"/> [clion-ide](https://chocolatey.org/packages/clion-ide)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@9dbd485297ce379c83f6009e75e4c65000170830/icons/clion-ide.png" width="48" height="48"/> [clion-ide](https://chocolatey.org/packages/clion-ide)
 
 A POWER TOOL FOR A POWER LANGUAGE
 Smart C and C++ editor

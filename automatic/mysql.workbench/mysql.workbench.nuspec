@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Oracle</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://mysql.com/</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/mkevenaar/chocolatey-packages/master/icons/mysql-workbench.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@3eea054c3790ec5b5d23cd6c089ed0ad1f4825fd/icons/mysql-workbench.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Oracle Corporation and/or its affiliates</copyright>
     <tags>mysql workbench sql database query browser administrator</tags>

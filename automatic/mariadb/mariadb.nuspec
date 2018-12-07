@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>MariaDB Foundation</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://mariadb.org</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/mkevenaar/chocolatey-packages/master/icons/mariadb.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@016b9db31ec90a14102bfdf4bb7ea0731d763382/icons/mariadb.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>MariaDB Foundation</copyright>
     <tags>rdbms sql database mysql admin</tags>
