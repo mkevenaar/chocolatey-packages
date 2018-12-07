@@ -1,14 +1,14 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = 'http://cerulean.cachenetworks.com/trillian-v6.1.0.17.exe'
-$checksum     = '1026a464829f8e2a3e44aecb72fb28b0ecbc8d5c2c1d7336f894fadcccf97a5e'
+$url          = 'http://cerulean.cachenetworks.com/trillian-v6.1.0.17.msi'
+$checksum     = 'fdd2d022c2fd1105470cc88bc2735d55a619fc7c39660b114147a194142950a7'
 $checksumType = 'sha256'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $toolsDir
-  fileType       = 'exe'
+  fileType       = 'msi'
   url            = $url
   checksum       = $checksum
   checksumType   = $checksumType
