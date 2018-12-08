@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@016b9db31ec90a14102bfdf4bb7ea0731d763382/icons/mariadb.png" width="48" height="48"/> [mariadb](https://chocolatey.org/packages/mariadb)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@320be0f0eca14083b7ba734b13a417b407225a8b/icons/mariadb.png" width="48" height="48"/> [mariadb](https://chocolatey.org/packages/mariadb)
 
 MariaDB is designed as a drop-in replacement of [MySQL](https://chocolatey.org/packages/mysql) with more features, new storage engines, fewer bugs, and better performance. MariaDB server is a community developed fork of MySQL server started by core members of the original MySQL team.
 

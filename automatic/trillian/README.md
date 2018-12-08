@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4ba09217e6d55c3b7929d146c44953cc9a9cf647/icons/trillian.png" width="48" height="48"/> [trillian](https://chocolatey.org/packages/trillian)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@c52e6367f74d115a1311e51e2fac041fd8d54cc4/icons/trillian.png" width="48" height="48"/> [trillian](https://chocolatey.org/packages/trillian)
 
 Trillian is a proprietary multiprotocol instant messaging application.
 

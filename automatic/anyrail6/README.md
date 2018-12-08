@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@6e0cbd226bf1fc5943819267f3d6bb7ac67306c9/icons/AnyRail6.png" width="48" height="48"/> [anyrail6](https://chocolatey.org/packages/anyrail6)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@16daac3bcdef0a76bb57a232ebc1e12069a243f2/icons/AnyRail6.png" width="48" height="48"/> [anyrail6](https://chocolatey.org/packages/anyrail6)
 
 AnyRail makes model railroad design so easy, it's fun!
 
