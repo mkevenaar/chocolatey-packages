@@ -44,7 +44,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <releaseNotes>https://www.collectorz.com/movie/whatsnew</releaseNotes>
     <licenseUrl>https://www.collectorz.com/pdfs/terms-of-use.pdf</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages</packageSourceUrl>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/movie-collector</packageSourceUrl>
     <docsUrl>https://help.clz.com/movie/desktop/windows</docsUrl>
     <summary>Movie Database Software - catalog your DVD / Blu-ray collection</summary>
     <description><![CDATA[Movie Database Software - catalog your DVD / Blu-ray collection

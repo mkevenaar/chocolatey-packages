@@ -44,7 +44,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <releaseNotes>https://www.collectorz.com/music/whatsnew</releaseNotes>
     <licenseUrl>https://www.collectorz.com/pdfs/terms-of-use.pdf</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages</packageSourceUrl>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/music-collector</packageSourceUrl>
     <docsUrl>https://help.clz.com/music/desktop/windows</docsUrl>
     <summary>Music Database Software - Catalog your CDs and vinyl records</summary>
     <description><![CDATA[Music Database Software - Catalog your CDs and vinyl records

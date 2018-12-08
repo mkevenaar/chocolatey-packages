@@ -44,7 +44,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <releaseNotes>https://github.com/jimradford/superputty/blob/master/ReleaseNotes.txt</releaseNotes>
     <licenseUrl>https://github.com/jimradford/superputty/blob/master/License.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages</packageSourceUrl>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/superputty</packageSourceUrl>
     <docsUrl>https://github.com/jimradford/superputty/wiki/Documentation</docsUrl>
     <projectSourceUrl>https://github.com/jimradford/superputty</projectSourceUrl>
     <bugTrackerUrl>https://github.com/jimradford/superputty/issues</bugTrackerUrl>

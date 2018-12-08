@@ -42,7 +42,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <copyright>Robert Jan Versluis</copyright>
     <tags>rocrail</tags>
     <releaseNotes>https://wiki.rocrail.net/rocrail-snapshot/log.txt</releaseNotes>
-    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages</packageSourceUrl>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/rocrail</packageSourceUrl>
     <docsUrl>https://wiki.rocrail.net/doku.php</docsUrl>
     <summary>Rocrail is free software for controlling model trains</summary>
     <description><![CDATA[Rocrail is free software for controlling model trains for Linux, Apple macOS, Raspberry Pi & Odroid and of course Windows operating systems.

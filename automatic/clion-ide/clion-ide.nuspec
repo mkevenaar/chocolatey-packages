@@ -44,7 +44,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <releaseNotes>https://blog.jetbrains.com/clion/category/announcement/</releaseNotes>
     <licenseUrl>https://www.jetbrains.com/store/license.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages</packageSourceUrl>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/clion-ide</packageSourceUrl>
     <docsUrl>https://www.jetbrains.com/help/clion/</docsUrl>
     <summary>This is Clion from JetBrains</summary>
     <description><![CDATA[A POWER TOOL FOR A POWER LANGUAGE

@@ -43,7 +43,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <tags>toolbox jetbrains rubymine rider resharper webstorm clion datagrip intellij pycharm phpstorm goland appcode ide</tags>
     <licenseUrl>https://www.jetbrains.com/store/license.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages</packageSourceUrl>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/jetbrainstoolbox</packageSourceUrl>
     <summary>A control panel for your JetBrains tools and projects</summary>
     <description>A control panel for your JetBrains tools and projects
 

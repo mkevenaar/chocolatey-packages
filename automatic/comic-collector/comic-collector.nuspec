@@ -44,7 +44,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <releaseNotes>https://www.collectorz.com/comic/whatsnew</releaseNotes>
     <licenseUrl>https://www.collectorz.com/pdfs/terms-of-use.pdf</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages</packageSourceUrl>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/comic-collector</packageSourceUrl>
     <docsUrl>https://help.clz.com/comic/desktop/windows</docsUrl>
     <summary>Comic Database Software - catalog your comic book collection</summary>
     <description><![CDATA[Comic Database Software - catalog your comic book collection

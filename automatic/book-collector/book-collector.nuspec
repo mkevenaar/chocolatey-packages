@@ -44,7 +44,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <releaseNotes>https://www.collectorz.com/book/whatsnew</releaseNotes>
     <licenseUrl>https://www.collectorz.com/pdfs/terms-of-use.pdf</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages</packageSourceUrl>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/book-collector</packageSourceUrl>
     <docsUrl>https://help.clz.com/book/desktop/windows</docsUrl>
     <summary>Book Database Software - catalog your book collection</summary>
     <description><![CDATA[Book Database Software - catalog your book collection

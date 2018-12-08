@@ -42,7 +42,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <copyright>Milen Peev</copyright>
     <tags>scarm</tags>
     <releaseNotes>http://www.scarm.info/blog/</releaseNotes>
-    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages</packageSourceUrl>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/scarm</packageSourceUrl>
     <docsUrl>http://www.scarm.info/index.php?page=help</docsUrl>
     <summary>Simple Computer Aided Railway Modeller</summary>
     <description>SCARM means Simple Computer Aided Railway Modeller – software for easy and precise design of model train layouts and railroad track plans.

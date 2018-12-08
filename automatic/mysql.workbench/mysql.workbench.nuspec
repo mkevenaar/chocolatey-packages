@@ -44,7 +44,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <releaseNotes>https://dev.mysql.com/doc/relnotes/workbench/en/</releaseNotes>
     <licenseUrl>http://www.gnu.org/licenses/old-licenses/gpl-2.0.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages</packageSourceUrl>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/mysql.workbench</packageSourceUrl>
     <docsUrl>https://dev.mysql.com/doc/workbench/en/</docsUrl>
     <summary>MySQL Workbench (GUI Tool)</summary>
     <description>MySQL Workbench provides DBAs and developers an integrated tools environment for:

@@ -42,7 +42,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <copyright>DRail Modelspoor Software</copyright>
     <tags>anyrail</tags>
     <releaseNotes>https://www.anyrail.com/en/download</releaseNotes>
-    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages</packageSourceUrl>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/anyrail6</packageSourceUrl>
     <docsUrl>https://www.anyrail.com/help_en/index.html</docsUrl>
     <summary>AnyRail makes model railroad design so easy, it's fun!</summary>
     <description><![CDATA[AnyRail makes model railroad design so easy, it's fun!

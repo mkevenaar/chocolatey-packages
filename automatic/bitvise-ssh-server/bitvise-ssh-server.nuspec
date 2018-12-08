@@ -44,7 +44,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <releaseNotes>http://www.bitvise.com/ssh-server-version-history</releaseNotes>
     <licenseUrl>http://www.bitvise.com/ssh-server-license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages</packageSourceUrl>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/bitvise-ssh-server</packageSourceUrl>
     <docsUrl>https://www.bitvise.com/ssh-server-users-guide</docsUrl>
     <bugTrackerUrl>https://fogbugz.bitvise.com/</bugTrackerUrl>
     <summary>SSH Server provides secure remote login capabilities</summary>

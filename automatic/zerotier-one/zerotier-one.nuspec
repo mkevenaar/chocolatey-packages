@@ -45,7 +45,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- If there is a license Url available, it is is required for the community feed -->
     <licenseUrl>https://raw.githubusercontent.com/zerotier/ZeroTierOne/master/COPYING</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages</packageSourceUrl>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/zerotier-one</packageSourceUrl>
     <projectSourceUrl>https://github.com/zerotier/ZeroTierOne</projectSourceUrl>
     <docsUrl>https://www.zerotier.com/manual.shtml</docsUrl>
     <bugTrackerUrl>https://github.com/zerotier/ZeroTierOne/issues</bugTrackerUrl>

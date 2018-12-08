@@ -44,7 +44,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <releaseNotes>https://www.trillian.im/news/</releaseNotes>
     <licenseUrl>https://www.trillian.im/eula/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages</packageSourceUrl>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/trillian</packageSourceUrl>
     <docsUrl>https://www.trillian.im/help/user/</docsUrl>
     <summary>Proprietary multiprotocol instant messaging application</summary>
     <description><![CDATA[Trillian is a proprietary multiprotocol instant messaging application.

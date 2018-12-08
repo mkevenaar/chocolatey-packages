@@ -44,7 +44,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <releaseNotes>https://www.collectorz.com/game/whatsnew</releaseNotes>
     <licenseUrl>https://www.collectorz.com/pdfs/terms-of-use.pdf</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages</packageSourceUrl>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/game-collector</packageSourceUrl>
     <docsUrl>https://help.clz.com/game/desktop/windows</docsUrl>
     <summary>Video Game Database Software - catalog your game collection</summary>
     <description><![CDATA[Video Game Database Software - catalog your game collection
