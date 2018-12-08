@@ -17,6 +17,7 @@
 *.new
 *.exist
 *-orig.*
+.idea/
 Thumbs.db
 .DS_Store
 _ReSharper*

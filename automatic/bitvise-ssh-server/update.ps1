@@ -1,4 +1,4 @@
-import-module au
+﻿import-module au
 
 $releases = 'https://www.bitvise.com/ssh-server-download'
 
