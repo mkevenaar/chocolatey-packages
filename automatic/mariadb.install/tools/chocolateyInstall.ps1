@@ -14,10 +14,10 @@ $packageArgs = @{
   fileType       = 'msi'
   url           = $url32
   checksum      = $checksum32
-  checksumType  = 'sha256'
+  checksumType  = $checksumType32
   url64bit      = $url64
   checksum64    = $checksum64
-  checksumType64= 'sha256'
+  checksumType64= $checksumType64
   softwareName   = 'MariaDB *'
   silentArgs     = "SERVICENAME=MySQL /qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
   validExitCodes = @(0,3010)
