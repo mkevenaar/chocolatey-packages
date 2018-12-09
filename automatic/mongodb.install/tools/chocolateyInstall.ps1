@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64          = 'https://downloads.mariadb.org/f/mariadb-10.3.11/winx64-packages/mariadb-10.3.11-winx64.msi'
-$checksum64     = 'f1c6b92b53a74f8eb234070f00c569026ea0ab8e16ca3986dce3d62e731874bb'
+$url64          = 'https://fastdl.mongodb.org/win32/mongodb-win32-x86_64-2008plus-ssl-4.0.4-signed.msi'
+$checksum64     = '7d5b1f3a655cf2fe9864554699ffd6d7db616889fd211b4f0951d185e8395659'
 $checksumType64 = 'sha256'
 $silentArgs     = 'ADDLOCAL="Server,ServerService,Router,Client,MonitoringTools,ImportExportTools,MiscellaneousTools" /qn /norestart'
 $dataPath       = "$env:PROGRAMDATA\MongoDB\data\db"
