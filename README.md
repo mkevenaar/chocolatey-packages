@@ -2,9 +2,14 @@
 
 [![](https://ci.appveyor.com/api/projects/status/github/mkevenaar/chocolatey-packages?svg=true)](https://ci.appveyor.com/project/mkevenaar/chocolatey-packages)
 [![](http://transparent-favicon.info/favicon.ico)](#)
-[Update status](https://gist.github.com/mkevenaar/675e3f672bda54270f8d7f5415f9374d)
+[![Update status](https://img.shields.io/badge/Update-Status-blue.svg)](https://gist.github.com/mkevenaar/675e3f672bda54270f8d7f5415f9374d)
 [![](http://transparent-favicon.info/favicon.ico)](#)
-[chocolatey/mkevenaar](https://chocolatey.org/profiles/mkevenaar)
+[![chocolatey/mkevenaar](https://img.shields.io/badge/Chocolatey-mkevenaar-yellowgreen.svg)](https://chocolatey.org/profiles/mkevenaar)
+
+If you have any issues with one of the packages hosted in this repository, please feel free to open an issue (preferred instead of using `Contact Maintainers` on chocolatey.org).
+
+This repository contains [chocolatey automatic packages](https://chocolatey.org/docs/automatic-packages).
+The repository is setup so that you can manage your packages entirely from the GitHub web interface (using AppVeyor to update and push packages) and/or using the local repository copy.
 
 ## Chocolatey Packages Template
 
