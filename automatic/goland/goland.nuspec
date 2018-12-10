@@ -33,7 +33,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
-    <title>JetBrains GoLand</title>
+    <title>JetBrains GoLand 2018.3.1</title>
     <authors>Jetbrains</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://www.jetbrains.com/go/</projectUrl>
