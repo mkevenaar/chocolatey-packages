@@ -32,19 +32,11 @@ Install-ChocolateyZipPackage  @packageArgs
 
 # find the unpack directory
 $installedContentsDir = Get-ChildItem $installDir -include 'mariadb*' | Sort-Object -Property LastWriteTime -Desc | Select-Object -First 1
-# shut down service if running
-try {
-  write-host "Shutting down MySQL if it is running"
-  Start-ChocolateyProcessAsAdmin "cmd /c NET STOP MySQL"
-  Start-ChocolateyProcessAsAdmin "cmd /c sc delete MySQL"
-} catch {
-  # no service installed
-}
 
 # delete current bin directory contents
 if ([System.IO.Directory]::Exists("$installDirBin")) {
-  write-host "Clearing out the contents of `'$installDirBin`'."
-  start-sleep 3
+  Write-Host "Clearing out the contents of `'$installDirBin`'."
+  Start-Sleep 3
   [System.IO.Directory]::Delete($installDirBin,$true)
 }
 
@@ -59,10 +51,7 @@ Write-Host "Initializing MariaDB if it hasn't already been initialized."
 try {
   $defaultDataDir='C:\ProgramData\MariaDB\data'
   if (![System.IO.Directory]::Exists($defaultDataDir)) {[System.IO.Directory]::CreateDirectory($defaultDataDir) | Out-Null}
-  Start-ChocolateyProcessAsAdmin "cmd /c '$($installDirBin)\mysql_install_db.exe --datadir=$($defaultDataDir) --service=MySQL'"
+  Start-Process "cmd /c '$( $installDirBin )\mysql_install_db.exe --datadir=$( $defaultDataDir )'"
 } catch {
   write-host "MariaDB has already been initialized"
 }
-
-# turn on the service
-Start-ChocolateyProcessAsAdmin "cmd /c NET START MySQL"
