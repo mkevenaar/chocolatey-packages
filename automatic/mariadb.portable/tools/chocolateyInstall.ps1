@@ -48,10 +48,9 @@ Copy-Item "$($installedContentsDir)\*" "$($installDir)\current" -Force -Recurse
 # initialize everything
 Write-Host "Initializing MariaDB if it hasn't already been initialized."
 
-try {
-  $defaultDataDir='C:\ProgramData\MariaDB\data'
-  if (![System.IO.Directory]::Exists($defaultDataDir)) {[System.IO.Directory]::CreateDirectory($defaultDataDir) | Out-Null}
-  Start-Process "cmd /c '$( $installDirBin )\mysql_install_db.exe --datadir=$( $defaultDataDir )'"
-} catch {
-  write-host "MariaDB has already been initialized"
+$defaultDataDir='C:\ProgramData\MariaDB\data'
+if (![System.IO.Directory]::Exists($defaultDataDir)) {
+  [System.IO.Directory]::CreateDirectory($defaultDataDir) | Out-Null
 }
+
+Start-Process $installDirBin\mysql_install_db.exe --datadir=$defaultDataDir
