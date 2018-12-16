@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@a31b76c6c562ac83b2f0d70d6126083186543838/icons/winrar.png" width="48" height="48"/> [winrar](https://chocolatey.org/packages/winrar)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@51247a81a30c4c8d14434fcbc61c7a0b750c0945/icons/winrar.png" width="48" height="48"/> [winrar](https://chocolatey.org/packages/winrar)
 
 
 WinRAR is a powerful archive manager. It can backup your data and reduce the size of email attachments, decompress RAR, ZIP and other files downloaded from Internet and create new archives in RAR and ZIP file format.
