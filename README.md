@@ -4,7 +4,8 @@
 [![](http://transparent-favicon.info/favicon.ico)](#)
 [![Update status](https://img.shields.io/badge/Update-Status-blue.svg)](https://gist.github.com/mkevenaar/675e3f672bda54270f8d7f5415f9374d)
 [![](http://transparent-favicon.info/favicon.ico)](#)
-[![chocolatey/mkevenaar](https://img.shields.io/badge/Chocolatey-mkevenaar-yellowgreen.svg)](https://chocolatey.org/profiles/mkevenaar)
+[![chocolatey/mkevenaar](https://img.shields.io/badge/Chocolatey-mkevenaar-yellowgreen.svg)](https://chocolatey.org/profiles/mkevenaar) [![](http://transparent-favicon.info/favicon.ico)](#)
+[![Join the chat at https://gitter.im/chocolatey-packages-mkevenaar/Lobby](https://badges.gitter.im/chocolatey-packages-mkevenaar/Lobby.svg)](https://gitter.im/chocolatey-packages-mkevenaar/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 If you have any issues with one of the packages hosted in this repository, please feel free to open an issue (preferred instead of using `Contact Maintainers` on chocolatey.org).
 
