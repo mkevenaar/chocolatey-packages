@@ -40,7 +40,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@083dd15e52cd8b007dd76e7ec933436c910dbe83/icons/mongodb.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>MongoDB Inc</copyright>
-    <tags>cli database nosql admin</tags>
+    <tags>cli database nosql</tags>
     <releaseNotes>https://docs.mongodb.com/manual/release-notes/</releaseNotes>
     <licenseUrl>https://www.mongodb.com/community/licensing</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
