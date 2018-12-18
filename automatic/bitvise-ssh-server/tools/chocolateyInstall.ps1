@@ -78,10 +78,16 @@ if ( $packageParameters.settings ) {
   $silentArgs += " -settings=" + $settingsFile
 }
     
-if ( $packageParameters.siteTypeSettings ) {
-  Write-Host "siteTypeSettings Argument Found"
-  $siteTypeSettings = $packageParameters.siteTypeSettings
-  $silentArgs += " -siteTypeSettings=" + $siteTypeSettings
+if ( $packageParameters.instanceTypeSettings ) {
+  Write-Host "instanceTypeSettings Argument Found"
+  $instanceTypeSettings = $packageParameters.instanceTypeSettings
+  $silentArgs += " -instanceTypeSettings=" + $instanceTypeSettings
+}
+
+if ( $packageParameters.certificates ) {
+  Write-Host "certificates Argument Found"
+  $certificates = $packageParameters.certificates
+  $silentArgs += " -certificates=" + $certificates
 }
     
 if ( $packageParameters.startService ) {
