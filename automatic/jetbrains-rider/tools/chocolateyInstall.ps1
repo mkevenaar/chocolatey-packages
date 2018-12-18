@@ -13,7 +13,7 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   softwareName  = 'Jetbrains Rider*'
   fileType      = 'exe'
-  silentArgs    = "/S"
+  silentArgs    = "/S /CONFIG=$toolsDir\silent.config "
   validExitCodes = @(0)
   url            = $url
   checksum       = $checksum
