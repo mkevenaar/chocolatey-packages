@@ -27,7 +27,8 @@ For any organizational use (non-commercial or commercial) or to remove the limit
 * `'"/activationCode=activation-code-hex"`'
 * `'"/keypairs=keypairs-file"`'
 * `'"/settings=settings-file"`'
-* `'"/siteTypeSettings=fileName"`'
+* `'"/instanceTypeSettings=fileName"`'
+* `'"/certificates=fileName"`'
 * `'"/startService"`'
 * `'"/startBssCtrl"`'
 
