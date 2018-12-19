@@ -47,7 +47,8 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/pycharm</packageSourceUrl>
     <docsUrl>https://www.jetbrains.com/pycharm/documentation/</docsUrl>
     <summary>Python IDE for Professional Developers</summary>
-    <description><![CDATA[[official JetBrains project](http://jb.gg/badges/official-plastic.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
+    <description><![CDATA[[![official JetBrains project](http://jb.gg/badges/official-plastic.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
+
 # ALL THE PYTHON TOOLS IN ONE PLACE
 Be More Productive
 Save time while PyCharm takes care of the routine. Focus on the bigger things and embrace the keyboard-centric approach to get the most of PyCharm’s many productivity features.

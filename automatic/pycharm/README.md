@@ -1,6 +1,7 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@6a88120fa3e1af45adf8c403dd8fe5af15997ee6/icons/pycharm.png" width="48" height="48"/> [pycharm](https://chocolatey.org/packages/pycharm)
 
-[official JetBrains project](http://jb.gg/badges/official-plastic.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
+[![official JetBrains project](http://jb.gg/badges/official-plastic.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
+
 # ALL THE PYTHON TOOLS IN ONE PLACE
 Be More Productive
 Save time while PyCharm takes care of the routine. Focus on the bigger things and embrace the keyboard-centric approach to get the most of PyCharm’s many productivity features.
