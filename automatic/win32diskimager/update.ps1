@@ -1,7 +1,7 @@
 import-module au
 
 #Virtual package uses dependency updater to get the version
-. $PSScriptRoot\..\mongodb.install\update.ps1
+. $PSScriptRoot\..\win32diskimager.install\update.ps1
 
 function global:au_SearchReplace {
   @{
@@ -11,7 +11,7 @@ function global:au_SearchReplace {
     }
  }
 
-# Left empty intentionally to override BeforeUpdate in mongodb.install
+# Left empty intentionally to override BeforeUpdate in win32diskimager.install
 function global:au_BeforeUpdate { }
 
 update -ChecksumFor none
