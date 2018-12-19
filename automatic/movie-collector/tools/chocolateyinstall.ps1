@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = 'http://installers.collectorz.com/movie-win/moviecollectorsetup1903.exe'
-$checksum     = '41ae8782701ce9f30c376ed1c4bffed612e73727672d2c5b98c62eb1369ee4ac'
+$url          = 'http://installers.collectorz.com/movie-win/moviecollectorsetup1904.exe'
+$checksum     = 'cd2a91ba2dfec3715607c9c5bf271ba6aac7d4790995037bf6912384242990ee'
 $checksumType = 'sha256'
 
 $packageArgs = @{
