@@ -8,8 +8,6 @@ $url64          = 'https://wiki.rocrail.net/rocrail-snapshot/history/rocrail-147
 $checksum64     = '3d8a6db99aee75de5f35d3f3259c2b7ed2ab2a5d674a404e7955682c0a4a6fd2'
 $checksumType64 = 'sha256'
 
-
-#Based on InnoSetup
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $toolsDir
