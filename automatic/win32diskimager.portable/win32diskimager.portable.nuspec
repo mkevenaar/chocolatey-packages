@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>1.0.0</version>
+    <version>1.0.0.20181220</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Maurice Kevenaar</owners>
     <!-- ============================== -->
@@ -44,12 +44,12 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <releaseNotes>https://sourceforge.net/p/win32diskimager/code/ci/master/tree/Changelog.txt</releaseNotes>
     <licenseUrl>https://sourceforge.net/p/win32diskimager/code/ci/master/tree/License.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/win32diskimager</packageSourceUrl>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/win32diskimager.portable</packageSourceUrl>
     <docsUrl>https://sourceforge.net/p/win32diskimager/wiki/Home/</docsUrl>
     <projectSourceUrl>https://sourceforge.net/p/win32diskimager/code/ci/master/tree/</projectSourceUrl>
     <bugTrackerUrl>https://sourceforge.net/p/win32diskimager/tickets/</bugTrackerUrl>
     <summary>A tool for writing images to USB sticks or SD/CF cards</summary>
-    <description>This program is designed to write a raw disk image to removable SD or USB flash devices or backup these devices to a raw image file. It is very useful for embedded development, namely Arm development projects (Android, Ubuntu on Arm, etc). Anyone is free to branch and modify this program. Patches are always welcome.
+    <description><![CDATA[This program is designed to write a raw disk image to removable SD or USB flash devices or backup these devices to a raw image file. It is very useful for embedded development, namely Arm development projects (Android, Ubuntu on Arm, etc). Anyone is free to branch and modify this program. Patches are always welcome.
 
 Simply run the utility, point it at your img, and then select the removable device to write to.
 
@@ -59,7 +59,8 @@ Warning: Issues have been reported when using to write to USB Floppy drives (and
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.</description>
+let them know the package is no longer updating correctly.
+]]></description>
     <!-- =============================== -->  
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
