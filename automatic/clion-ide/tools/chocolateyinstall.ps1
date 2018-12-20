@@ -11,7 +11,7 @@ New-Item -ItemType Directory -Force -Path $programfiles\JetBrains
  
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
-  softwareName   = 'JetBrains Clion*'
+  softwareName   = 'JetBrains CLion*'
   fileType      = 'exe'
   silentArgs    = "/S /CONFIG=$toolsDir\silent.config "
   validExitCodes = @(0)
