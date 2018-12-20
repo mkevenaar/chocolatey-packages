@@ -5,7 +5,6 @@ $url          = 'http://download.aida64.com/aida64engineer599.exe'
 $checksum     = 'ff087912723b6a29c167a8b0e6fd8bf59a60f2a6417db3e33fe92991741407e4'
 $checksumType = 'sha256'
 
-$validExitCodes = @(0)
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $toolsDir
