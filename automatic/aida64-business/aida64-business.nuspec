@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>5.75.3900</version>
+    <version>5.99.4900</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Maurice Kevenaar</owners>
     <!-- ============================== -->
@@ -49,7 +49,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <bugTrackerUrl>http://www.aida64.com/support/contactform</bugTrackerUrl>
     <summary>Advanced system diagnostics utility for home users</summary>
     <mailingListUrl>https://forums.aida64.com/</mailingListUrl>
-    <description>A professional solution, based on the award-winning AIDA64 engine, which makes a detailed hardware and software inventory of the company PC fleet, and supports PC fleet management with remote functions. It also supports IT decision-making with essential statistics, and helps companies reduce their IT costs.
+    <description><![CDATA[A professional solution, based on the award-winning AIDA64 engine, which makes a detailed hardware and software inventory of the company PC fleet, and supports PC fleet management with remote functions. It also supports IT decision-making with essential statistics, and helps companies reduce their IT costs.
 
 #### Community
 * [Facebook](https://www.facebook.com/AIDA64)
@@ -67,7 +67,8 @@ This package installs a 30-day trial version.
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.</description>
+let them know the package is no longer updating correctly.
+]]></description>
     <!-- =============================== -->  
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
