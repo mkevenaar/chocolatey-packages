@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.rawgit.com/dtgm/chocolatey-packages/2697586f564894b3346352497da46f320a02e725/icons/wifiinfoview.png" width="48" height="48"/> [wifiinfoview](https://chocolatey.org/packages/wifiinfoview)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@77038a102b198ab4b547811d09b914cb5396f191/icons/wifiinfoview.png" width="48" height="48"/> [wifiinfoview](https://chocolatey.org/packages/wifiinfoview)
 
 WifiInfoView scans the wireless networks in your area and displays extensive information about them, including: Network Name (SSID), MAC Address, PHY Type (802.11g or 802.11n), RSSI, Signal Quality, Frequency, Channel Number, Maximum Speed, Company Name, Router Model and Router Name (Only for routers that provides this information), and more...
 
