@@ -37,14 +37,14 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Nir Sofer</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://www.nirsoft.net/utils/wireless_network_watcher.html</projectUrl>
-    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/2697586f564894b3346352497da46f320a02e725/icons/wnetwatcher.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@77038a102b198ab4b547811d09b914cb5396f191/icons/wnetwatcher.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>NirSoft</copyright>
     <tags>wifi network watcher connected devices computers who</tags>
     <releaseNotes>http://www.nirsoft.net/utils/wireless_network_watcher.html</releaseNotes>
     <licenseUrl>http://www.nirsoft.net/utils/wireless_network_watcher.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/win32diskimager</packageSourceUrl>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/wnetwatcher</packageSourceUrl>
     <docsUrl>http://www.nirsoft.net/utils/wireless_network_watcher.html</docsUrl>
     <summary>Show who is connected to your wireless network</summary>
     <description>Wireless Network Watcher is a small utility that scans your wireless network and displays the list of all computers and devices that are currently connected to your network.
