@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = 'http://www.nirsoft.net/utils/wnetwatcher.zip'
-$checksum     = '289df1a9f7a7e026451eafae531964a575245774011376bc20b5b857971cb156'
+$url          = 'http://www.nirsoft.net/utils/wirelessnetview.zip'
+$checksum     = 'd33aca4977de8dfaaa859813d21fe7d20709f80ace32302891b604fdc0c6ff78'
 $checksumType = 'sha256'
 
 $packageArgs = @{
