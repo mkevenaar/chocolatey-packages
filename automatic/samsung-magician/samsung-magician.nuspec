@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>0.0</version>
+    <version>5.3</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Maurice Kevenaar</owners>
     <!-- ============================== -->
@@ -46,12 +46,13 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/samsung-magician</packageSourceUrl>
     <docsUrl>https://www.samsung.com/semiconductor/minisite/ssd/product/consumer/magician/</docsUrl>
     <summary>Manage your drive like magic</summary>
-    <description>Manage your drive like magic
+    <description><![CDATA[Manage your drive like magic
 Reaching the maximum potential and proficiency of your Samsung SSD is easy. With the advanced Magician software, an exclusive set of essential tools equip you like a pro. Stay ahead with automatic updates, check drive health and speed, and enable speed boosting RAPID Mode, all with one simple download.
 
-**Please Note**: This is an automatically updated package. If you find it is 
+**Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.</description>
+let them know the package is no longer updating correctly.
+]]></description>
     <!-- =============================== -->  
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
