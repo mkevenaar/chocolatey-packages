@@ -1,5 +1,5 @@
 ﻿$packageName = '{{PackageName}}'
-$packageSearch = 'Nirsoft wirelessnetview'
+$packageSearch = 'Nirsoft wirelessnetview*'
 $installerType = 'exe'
 $silentArgs = '/S'
 $validExitCodes = @(0)
@@ -11,6 +11,6 @@ Get-ItemProperty -Path @( 'HKLM:\Software\Wow6432Node\Microsoft\Windows\CurrentV
 | Where-Object   { $_.DisplayName -like "$packageSearch*" } `
 | ForEach-Object { Uninstall-ChocolateyPackage -PackageName "$packageName" `
                                                -FileType "$installerType" `
-                                               -SilentArgs "$silentArgs" `
+                                               -SilentArgs "$($silentArgs)" `
                                                -File "$($_.UninstallString.Replace('"',''))" `
                                                -ValidExitCodes $validExitCodes }
