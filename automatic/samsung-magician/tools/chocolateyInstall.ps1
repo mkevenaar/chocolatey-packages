@@ -17,8 +17,7 @@ $packageArgs = @{
   validExitCodes = @(0,3010)
 }
 
-#Thanks to dtgm and the GitHub package for ideas.
-$ahkExe = 'AutoHotKey'
+$ahkExe = Get-ChildItem "$env:ChocolateyInstall\lib\autohotkey.portable" -Recurse -filter AutoHotKey.exe
 $ahkFile = Join-Path $toolsDir "chocolateyInstall.ahk"
 $ahkProc = Start-Process -FilePath $ahkExe `
                          -ArgumentList $ahkFile `
