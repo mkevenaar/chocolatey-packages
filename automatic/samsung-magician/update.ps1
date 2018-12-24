@@ -1,4 +1,4 @@
-import-module au
+Import-Module AU
 
 $releases = 'https://www.samsung.com/semiconductor/minisite/ssd/download/tools/'
 
