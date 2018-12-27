@@ -22,41 +22,44 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- This section is about this package, although id and version have ties back to the software -->
     <!-- id is lowercase and if you want a good separator for words, use '-', not '.'. Dots are only acceptable as suffixes for certain types of packages, e.g. .install, .portable, .extension, .template -->
     <!-- If the software is cross-platform, attempt to use the same id as the debian/rpm package(s) if possible. -->
-    <id>pycharm-edu</id>
+    <id>intellijidea-edu</id>
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>2018.3</version>
+    <version>0.0</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Maurice Kevenaar</owners>
     <!-- ============================== -->
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
-    <title>JetBrains Pycharm Educational</title>
+    <title>JetBrains IntelliJ IDEA (Educational</title>
     <authors>JetBrains</authors>
     <!-- projectUrl is required for the community feed -->
-    <projectUrl>https://www.jetbrains.com/pycharm-edu/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@d7949131bb33509ebc8294e210fd60c84af5b082/icons/pycharm-edu.png</iconUrl>
+    <projectUrl>https://www.jetbrains.com/education/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@1a84d4bb32d44c7d8251d48471814ccd194dfc24/icons/intellijidea-edu.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>JetBrains s.r.o.</copyright>
-    <tags>PyCharm jetbrains python edu IDE admin</tags>
-    <releaseNotes>https://blog.jetbrains.com/pycharm/category/announcement/</releaseNotes>
+    <tags>java jetbrains idea edu IDE admin</tags>
+    <releaseNotes>https://blog.jetbrains.com/idea/category/releases/</releaseNotes>
     <licenseUrl>https://www.jetbrains.com/store/license.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/pycharm-edu</packageSourceUrl>
-    <docsUrl>https://www.jetbrains.com/pycharm/documentation/</docsUrl>
-    <summary>PyCharm Edu - An Easy and Professional Tool to Learn &amp; Teach Programming with Python</summary>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/intellijidea-edu</packageSourceUrl>
+    <docsUrl>https://www.jetbrains.com/idea/documentation/</docsUrl>
+    <summary>IntelliJ IDEA Edu - Capable and Ergonomic Java IDE</summary>
     <description>[![official JetBrains project](http://jb.gg/badges/official-plastic.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
 
-#Use a free &amp; open source solution
-PyCharm Edu is totally free and open source. This includes unlimited learning, course creation and distribution, and even developing Python applications.
+#ENJOY PRODUCTIVE JAVA
+Every aspect of IntelliJ IDEA is specifically designed to maximize developer productivity.
 
-#Everything you need, right out of the box
-PyCharm Edu offers a complete toolkit for both learners and educators of programming. This includes essential learning features like an integrated Python console, Debugger and VCS, along with unique educational features like “fill in the missing code” exercises, intelligent hints, checks, smart suggestions, code auto-completion, and much more.
+Together, the powerful static code analysis and ergonomic design make development not only productive but also an enjoyable experience.
 
-#Your intelligent assistant
-PyCharm Edu detects code problems and errors on the fly, as you go, and makes educated suggestions based on its deep understanding of Python code. Thanks to this instant feedback, you can save time and effort with both learning and teaching.
+#Deep intelligence
+After IntelliJ IDEA has indexed your source code, it offers a blazing fast and intelligent experience by giving relevant suggestions in every context: instant and clever code completion, on-the-fly code analysis, and reliable refactoring tools.
+
+#Out-of-the-box experience
+
+Mission-critical tools such as integrated version control systems and a wide variety of supported languages and frameworks are all to hand — no plugin hassle included.
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
