@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.rawgit.com/dtgm/chocolatey-packages/2697586f564894b3346352497da46f320a02e725/icons/wnetwatcher.png" width="48" height="48"/> [wnetwatcher.portable](https://chocolatey.org/packages/wnetwatcher.portable)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@72d4273ca59988b456ffc543827642170797aeef/icons/wnetwatcher.png" width="48" height="48"/> [wnetwatcher.portable](https://chocolatey.org/packages/wnetwatcher.portable)
 
 Wireless Network Watcher is a small utility that scans your wireless network and displays the list of all computers and devices that are currently connected to your network.
 
