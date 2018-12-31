@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>0.0</version>
+    <version>4.2.3.3625</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Maurice Kevenaar</owners>
     <!-- ============================== -->
@@ -47,12 +47,13 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/tomtom-mydrive-connect</packageSourceUrl>
     <docsUrl>https://www.tomtom.com/en_us/mydrive-connect/</docsUrl>
     <summary>Update your TomTom navigation device</summary>
-    <description>##Update your TomTom navigation device
+    <description><![CDATA[##Update your TomTom navigation device
 To update your TomTom navigation device, you need to install the MyDrive Connect application on your PC or Mac® computer. MyDrive Connect is our free support application that helps you to manage your content and services on your TomTom navigation device. Via MyDrive Connect we will offer you the latest maps, software updates, and the possibility to renew your services. We recommend connecting your navigation device regularly to ensure you will have the best driving experience. Every week we have several updates and fixes available. Make sure you are using the latest version of MyDrive Connect. Once installed, please simply connect your TomTom navigation device to your PC or Mac® and the application will start automatically.
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.</description>
+let them know the package is no longer updating correctly.
+]]></description>
     <!-- =============================== -->  
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
