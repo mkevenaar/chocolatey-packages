@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>6.0.5.1518</version>
+    <version>9.9.5.12</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Maurice Kevenaar</owners>
     <!-- ============================== -->
@@ -48,13 +48,14 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <docsUrl>https://support.viber.com/</docsUrl>
     <bugTrackerUrl>https://support.viber.com/customer/portal/emails/new</bugTrackerUrl>
     <summary>Make free phone calls and send text messages</summary>
-    <description>Viber is a mobile application that lets you make free phone calls and send text messages to anyone who also has the application installed. You can call or text any Viber user, anywhere in the world, for free.
+    <description><![CDATA[Viber is a mobile application that lets you make free phone calls and send text messages to anyone who also has the application installed. You can call or text any Viber user, anywhere in the world, for free.
 
 Viber integrates seamlessly with your existing address book, has great sound quality and once activated, does not require a PIN, username or any additional "in application" purchase.
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.</description>
+let them know the package is no longer updating correctly.
+]]></description>
     <dependencies>
       <dependency id="autohotkey.portable" />
     </dependencies>
