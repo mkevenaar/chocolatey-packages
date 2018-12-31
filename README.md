@@ -1,6 +1,4 @@
 # Chocolatey Packages
-[![Join the chat at https://gitter.im/mkevenaar/Lobby](https://badges.gitter.im/mkevenaar/Lobby.svg)](https://gitter.im/mkevenaar/Lobby?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
-[![](http://transparent-favicon.info/favicon.ico)](#)
 [![Appveyor Build](https://ci.appveyor.com/api/projects/status/github/mkevenaar/chocolatey-packages?svg=true)](https://ci.appveyor.com/project/mkevenaar/chocolatey-packages)
 [![](http://transparent-favicon.info/favicon.ico)](#)
 [![Update status](https://img.shields.io/badge/Update-Status-blue.svg)](https://gist.github.com/mkevenaar/675e3f672bda54270f8d7f5415f9374d)
