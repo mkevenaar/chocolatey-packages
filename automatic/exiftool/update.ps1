@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'http://www.dymo.com/en-US/online-support'
+$releases = 'http://owl.phy.queensu.ca/~phil/exiftool/'
 
 function global:au_SearchReplace {
     @{
@@ -15,10 +15,10 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
-    $re = "DL.+Setup.+.exe"
-    $url = $download_page.links | ? href -match $re | select -First 1 -expand href
+    $re = "exiftool-(.+).zip"
+    $url = $releases + ($download_page.Links | Where-Object href -match $re | Select-Object -First 1 -expand href)
 
-    $version = ([regex]::Match($url,'DL.+Setup.(.+).exe')).Captures.Groups[1].value
+    $version = $url -split "-" | Select-Object -last 1 | ForEach-Object { $_ -replace ".zip", "" }
 
     return @{ 
         URL32 = $url
@@ -26,4 +26,6 @@ function global:au_GetLatest {
     }
 }
 
-update
+if ($MyInvocation.InvocationName -ne '.') {
+    update -ChecksumFor 32
+}
