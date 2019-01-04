@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <metadata>
+    <id>mbsa</id>
+    <title>Microsoft Baseline Security Analyzer</title>
+    <version>2.3.2211</version>
+    <authors>Microsoft</authors>
+    <owners>dtgm</owners>
+    <summary>Scan local and remote systems for common security misconfigurations</summary>
+    <description>
+Microsoft Baseline Security Analyzer (MBSA) lets administrators scan local and remote systems to assess the security state of Windows machines. MBSA scans for missing security updates as well as common security misconfigurations.
+
+MBSA is built on the Windows Update Agent and Microsoft Update infrastructure, ensuring consistency across Microsoft management products, including Microsoft Update (MU), Windows Server Update Services 2.0 and 3.0 (WSUS), Systems Management Server Inventory Tool for Microsoft Update (ITMU) (SMS), System Center Configuration Manager (SCCM) 2007, and Small Business Server (SBS.)
+    </description>
+    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/manual/mbsa</packageSourceUrl>
+    <projectUrl>http://www.microsoft.com/download/details.aspx?id=7558</projectUrl>
+    <docsUrl>http://www.microsoft.com/technet/security/tools/mbsa2/qa.mspx</docsUrl>
+    <mailingListUrl>http://social.technet.microsoft.com/forums/en-us/mbsa</mailingListUrl>
+    <iconUrl>https://cdn.rawgit.com/dtgm/chocolatey-packages/8c6789d80411f69d6d706e202aebf1207805ec38/icons/mbsa.png</iconUrl>
+    <tags>security configuration analyzer cli gui</tags>
+    <copyright>http://www.microsoft.com/about/legal/IntellectualProperty/Copyright/Default.aspx</copyright>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <releaseNotes>
+#### Program
+* Date published by Microsoft: 09 Jan 2015
+* [Supported Operating Systems](https://technet.microsoft.com/security/cc184924.aspx#windows-version)
+* [Supported Microsoft Office](https://technet.microsoft.com/security/cc184924.aspx#office-support)
+
+#### Package
+* Automatically built and uploaded by [dtgm](https://chocolatey.org/profiles/dtgm)
+    </releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
