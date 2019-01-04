@@ -98,6 +98,7 @@ function SearchAndReplace() {
       "(?i)(\<iconUrl\>).*(\<\/iconUrl\>)" = "`${1}$($Latest.IconURL)`${2}"
       "(?i)(\<projectUrl\>).*(\<\/projectUrl\>)" = "`${1}$($Latest.ProjectUrl)`${2}"
       "(?i)(\<tags\>).*(\<\/tags\>)" = "`${1}$($Latest.Tags)`${2}"
+      "(?i)(\<title\>).*(\<\/title\>)" = "`${1}$($Latest.SoftwareTitle)`${2}"
     }
   }
 

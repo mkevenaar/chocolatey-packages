@@ -40,6 +40,7 @@ function global:au_GetLatest {
       Win32Format   = $data.Win32Format
       Win64Format   = $data.Win64Format
       SoftwareName  = 'Mozilla Firefox'
+      SoftwareTitle = "Firefox Beta"
       ReleaseNotes  = "https://www.mozilla.org/firefox/beta/notes/"
       IconURL       = "https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@92fc1201bdb7d7deb90a0b4ec4b12f26e6e5412c/icons/firefox-beta.png"
       ProjectURL    = "https://www.mozilla.org/firefox/beta"
@@ -59,6 +60,7 @@ function global:au_GetLatest {
       Win32Format   = $data.Win32Format
       Win64Format   = $data.Win64Format
       SoftwareName  = 'Firefox Developer Edition'
+      SoftwareTitle = "Firefox Developer Edition"
       ReleaseNotes  = "https://www.mozilla.org/en-US/firefox/developer/notes/"
       IconURL       = "https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@92fc1201bdb7d7deb90a0b4ec4b12f26e6e5412c/icons/firefox-beta.png"
       ProjectURL    = "https://www.mozilla.org/firefox/developer"
