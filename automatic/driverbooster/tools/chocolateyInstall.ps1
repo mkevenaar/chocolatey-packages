@@ -7,7 +7,7 @@ $checksumType = 'sha256'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
-  softwareName  = 'IObit Uninstaller*'
+  softwareName  = 'Driver Booster*'
   fileType      = 'exe'
   silentArgs    = "/sp- /verysilent /suppressmsgboxes /install_start"
   validExitCodes= @(0,3010)
