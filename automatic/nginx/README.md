@@ -15,7 +15,7 @@ Example: `choco install nginx --params '"/installLocation:C:\nginx /port:433"'`
 ## Notes
 
 * This package will install the latest Nginx binaries
-* The complete path of the package will be `$Env:AppData\Nginx*`
+* The complete path of the package will be `$Env:ChocolateyToolsLocation\Nginx*`
 * Nginx will be installed as a service under the default name 'Nginx' (can be disabled with the `/noService` install parameter)
 
 **Please Note**: This is an automatically updated package. If you find it is
