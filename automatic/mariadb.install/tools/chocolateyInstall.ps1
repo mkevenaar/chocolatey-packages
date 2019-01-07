@@ -1,11 +1,11 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32          = 'https://downloads.mariadb.org/f/mariadb-10.3.11/win32-packages/mariadb-10.3.11-win32.msi'
-$checksum32     = 'fd2a07bf6e7ebd8610161f19606ba03e8425306f66eaec76a8be13f866c581b0'
+$url32          = 'https://downloads.mariadb.org/f/mariadb-10.3.12/win32-packages/mariadb-10.3.12-win32.msi'
+$checksum32     = '322df547803d9437c588e056a2f4b403b160cb4493fb911ff033ab708e933aa8'
 $checksumType32 = 'sha256'
-$url64          = 'https://downloads.mariadb.org/f/mariadb-10.3.11/winx64-packages/mariadb-10.3.11-winx64.msi'
-$checksum64     = 'f1c6b92b53a74f8eb234070f00c569026ea0ab8e16ca3986dce3d62e731874bb'
+$url64          = 'https://downloads.mariadb.org/f/mariadb-10.3.12/winx64-packages/mariadb-10.3.12-winx64.msi'
+$checksum64     = '52a04dadb2e013bfe6f42cdf5dde23b5d8dd4f524f26d055bfb4985aabf6adcd'
 $checksumType64 = 'sha256'
 
 $packageArgs = @{
