@@ -60,7 +60,7 @@ nginx [engine x] is an HTTP and reverse proxy server, a mail proxy server, a gen
 * `/port` - The port Nginx will listen to. Default: `80`
 * `/noService` - Don't install the nginx windows service
 
-Example: `choco install nginx --params '"/installLocation:C:\\nginx /port:433"'`
+Example: `choco install nginx --params '"/installLocation:C:\nginx /port:433"'`
 
 ## Notes
 
