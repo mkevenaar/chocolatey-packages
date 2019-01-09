@@ -19,7 +19,7 @@ function global:au_GetLatest {
     $re  = ".+Inst.exe"
     $url = $download_page.links | ? href -match $re | select -First 1 -expand href
 
-    $version = ([regex]::Match($download_page.RawContent,'version ([\d+\.]+)')).Captures.Groups[1].value
+    $version = ([regex]::Match($download_page.RawContent,'Current version: ([\d+\.]+)')).Captures.Groups[1].value
     
     return @{ 
         URL32 = $url
