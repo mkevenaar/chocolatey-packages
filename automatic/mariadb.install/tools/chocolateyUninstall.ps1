@@ -17,7 +17,8 @@ Write-Verbose "Uninstalling program and removing package..."
 $regKey | ForEach-Object {
   Uninstall-ChocolateyPackage -PackageName "$packageName" `
                               -FileType "$installerType" `
-                              -SilentArgs "$($_.PSChildName) $silentArgs" `
+                              -File "$($_.UninstallString)" `
+                              -SilentArgs "$silentArgs" `
                               -ValidExitCodes $validExitCodes
 }
 
