@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>8.2.0</version>
+    <version>8.3.0</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Maurice Kevenaar</owners>
     <!-- ============================== -->
@@ -47,10 +47,10 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/iobit-uninstaller</packageSourceUrl>
     <mailingListUrl>http://forums.iobit.com/</mailingListUrl>
     <summary>IObit Uninstaller Free; Scrub away Every Trace of Unwanted Programs, Plug-ins and Windows Apps</summary>
-    <description>#Lighter &amp; Cleaner PC
+    <description><![CDATA[#Lighter & Cleaner PC
 Need to uninstall programs and free up disk space? IObit Uninstaller is the one you can trust, no matter programs no longer being used, can’t being uninstalled through standard uninstallation or bundled with other programs. It also introduces an easy way to uninstall programs. You can quickly remove programs via desk icon, opened window or system tray icon.
 
-#Safer &amp; Faster Browsing
+#Safer & Faster Browsing
 Once malicious toolbar get to your computer they might take over your browsers by changing settings without permission. What’s worse, you would end up in privacy leaking and slow internet. IObit Uninstaller 8 Free lists all toolbars and marks out the malicious ones installed on main-stream browsers: Chrome, Firefox, IE, Opera, allowing you find and delete them quickly.
 
 #No Leftover Files
@@ -62,7 +62,8 @@ Outdated software is risky. Attacker can easy find weakness in it resulting whol
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
-</description>
+
+]]></description>
     <!-- =============================== -->  
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
