@@ -9,18 +9,10 @@ function GetVersionAndUrlFormats() {
   )
 
   $download_page = Invoke-WebRequest -UseBasicParsing -Uri $UpdateUrl
-  if ($Product -ne 'firefox-dev' -and $Product -ne 'firefox-nightly')   {
-    $re = "download.mozilla.*product=$Product.*(&amp;|&)os=win(&amp;|&)lang=en-US"
-    $url = $download_page.links | Where-Object href -match $re | Select-Object -first 1 -expand href
-    $url = Get-RedirectedUrl $url
-    $url = $url -replace 'en-US', '${locale}' -replace '&amp;', '&'
-  } elseif ($Product -eq 'firefox-dev') {
-    $re = "Setup"
-    $url = 'https://releases.mozilla.org' + $download_page.links[-1].href + 'win32/en-US/'
-    $download_page = Invoke-WebRequest -UseBasicParsing -Uri $url
-    $url = 'https://releases.mozilla.org' + ($download_page.links | Where-Object href -match $re | Select-Object -first 1 -expand href)
-    $url = $url -replace 'en-US','${locale}' -replace '&amp;','&'
-  }
+  $re = "download.mozilla.*product=$Product.*(&amp;|&)os=win(&amp;|&)lang=en-US"
+  $url = $download_page.links | Where-Object href -match $re | Select-Object -first 1 -expand href
+  $url = Get-RedirectedUrl $url
+  $url = $url -replace 'en-US', '${locale}' -replace '&amp;', '&'
 
   $result = @{
     Version = $url -split '\/' | Select-Object -last 1 -skip 3

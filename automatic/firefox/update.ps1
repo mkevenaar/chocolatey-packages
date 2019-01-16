@@ -4,7 +4,7 @@ import-module au
 . "$PSScriptRoot\update_helper.ps1"
 
 $releasesBETA    = 'https://www.mozilla.org/en-US/firefox/beta/all/'
-$releasesDEV     = 'https://releases.mozilla.org/pub/devedition/releases/'
+$releasesDEV     = 'https://www.mozilla.org/en-US/firefox/developer/all/'
 $product = 'firefox'
 
 function global:au_BeforeUpdate {
@@ -62,7 +62,7 @@ function global:au_GetLatest {
       SoftwareName  = 'Firefox Developer Edition'
       SoftwareTitle = "Firefox Developer Edition"
       ReleaseNotes  = "https://www.mozilla.org/en-US/firefox/developer/notes/"
-      IconURL       = "https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@92fc1201bdb7d7deb90a0b4ec4b12f26e6e5412c/icons/firefox-beta.png"
+      IconURL       = "https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@b40e08792b4d113bcb96960eaa184c093471a01e/icons/firefox-dev.png"
       ProjectURL    = "https://www.mozilla.org/firefox/developer"
       Tags          = "browser mozilla firefox developmer admin foss cross-platform"
       PackageName   = 'firefox-dev'
