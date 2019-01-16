@@ -31,7 +31,8 @@ function global:au_GetLatest {
   
   $data = GetVersionAndUrlFormats -UpdateUrl $releasesBETA -Product "${product}-beta"
   $version = $data.Version
-  $betaversion = $version -replace "b", "-beta"
+  $betaversion = $version -replace "b", "."
+  $betaversion += "-beta"
 
   $streams.Add("beta", @{
       LocaleURL     = "$releases"
@@ -51,7 +52,8 @@ function global:au_GetLatest {
 
   $data = GetVersionAndUrlFormats -UpdateUrl $releasesDEV -Product "${product}-dev"
   $version = $data.Version
-  $betaversion = $version -replace "b", "-beta"
+  $betaversion = $version -replace "b", "."
+  $betaversion += "-beta"
 
   $streams.Add("dev", @{
       LocaleURL     = "$releases"
