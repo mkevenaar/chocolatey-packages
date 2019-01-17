@@ -2,7 +2,7 @@
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url          = 'http://www.nirsoft.net/utils/wifiinfoview.zip'
-$checksum     = 'e2d87bf28fa55b2260f191a2c41808d012ab2a5217bb5684c4bc1f0d01b9e4dd'
+$checksum     = 'a3715fc2ab60167db1b1b81e631d65c95564f58502a49c3ce48bdc397644de45'
 $checksumType = 'sha256'
 
 $packageArgs = @{
