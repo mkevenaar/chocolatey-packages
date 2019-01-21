@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>8.0.13.20181109</version>
+    <version>8.0.14</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Maurice Kevenaar</owners>
     <!-- ============================== -->
@@ -47,15 +47,16 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/mysql.workbench</packageSourceUrl>
     <docsUrl>https://dev.mysql.com/doc/workbench/en/</docsUrl>
     <summary>MySQL Workbench (GUI Tool)</summary>
-    <description>MySQL Workbench provides DBAs and developers an integrated tools environment for:
+    <description><![CDATA[MySQL Workbench provides DBAs and developers an integrated tools environment for:
 
 - Database Design and Modeling
 - SQL Development (replacing MySQL Query Browser)
 - Database Administration (replacing MySQL Administrator)
 
-**Please Note**: This is an automatically updated package. If you find it is 
+**Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.</description>
+let them know the package is no longer updating correctly.
+]]></description>
     <!-- =============================== -->  
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
