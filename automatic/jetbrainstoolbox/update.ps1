@@ -15,7 +15,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $json = Invoke-WebRequest $releases | ConvertFrom-Json
     $url = $json.TBA.downloads.windows.link
-    $version = "$($json.TBA.version).$($json.TBA.build)"
+    $version = "$($json.TBA.build)"
     $checksum = ((Invoke-RestMethod -Uri $json.TBA.downloads.windows.checksumLink -UseBasicParsing).Split(" "))[0]
 
     $Latest = @{ URL32 = $url; Version = $version; Checksum32 = $checksum; ChecksumType32 = 'sha256' }
