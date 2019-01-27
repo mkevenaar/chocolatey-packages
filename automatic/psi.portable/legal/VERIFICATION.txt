@@ -1,0 +1,19 @@
+VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The installer have been downloaded from their official download link listed on <https://sourceforge.net/projects/psi/files/Psi/>
+and can be verified like this:
+
+1. Download the following installers:
+  32-Bit: <https://sourceforge.net/projects/psi/files/Psi/1.4/psi-portable-1.4_win7_x86.7z/download>
+  64-Bit: <https://sourceforge.net/projects/psi/files/Psi/1.4/psi-portable-1.4_win7_x86_64.7z/download>
+2. You can use one of the following methods to obtain the checksum
+  - Use powershell function 'Get-Filehash'
+  - Use chocolatey utility 'checksum.exe'
+
+  checksum type: sha256
+  checksum32: B0A4F3A93FF3F97591A6114D898AD71EAA53D4BD5768677EA8EF2BD4E5D64073
+  checksum64: 764B182DA3A702D18739C6B01A6B39606FFC86B0798B94EBC00E20FF3ECE8E70
+
+File 'LICENSE.txt' is obtained from <https://github.com/psi-im/psi/blob/master/COPYING>
