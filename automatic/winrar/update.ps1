@@ -37,7 +37,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases
-    $version = $download_page.Links | Where-Object href -Match ".exe" | Select-Object -First 1 -ExpandProperty innerhtml
+    $version = $download_page.Links | Where-Object href -Match "wrar\d+.exe" | Select-Object -First 1 -ExpandProperty innerhtml
     $version = ([regex]::Match($version,'\(32 bit\) (.+)</[bB]>')).Captures.Groups[1].value
     $fileVersion = $version.Replace('.','')
     @{
