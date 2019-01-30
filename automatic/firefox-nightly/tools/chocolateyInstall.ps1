@@ -7,7 +7,7 @@ $toolsPath = Split-Path $MyInvocation.MyCommand.Definition
 $packageName = 'firefox-nightly'
 $softwareName = 'Nightly'
 
-$alreadyInstalled = (AlreadyInstalled -product $softwareName -version '66.0a1')
+#$alreadyInstalled = (AlreadyInstalled -product $softwareName -version '66.0a1')
 
 if (Get-32bitOnlyInstalled -product $softwareName) {
   Write-Output $(
@@ -17,12 +17,12 @@ if (Get-32bitOnlyInstalled -product $softwareName) {
   )
 }
 
-if ($alreadyInstalled -and ($env:ChocolateyForce -ne $true)) {
-  Write-Output $(
-    "Firefox is already installed. " +
-    'No need to download and re-install.'
-  )
-} else {
+#if ($alreadyInstalled -and ($env:ChocolateyForce -ne $true)) {
+#  Write-Output $(
+#    "Firefox is already installed. " +
+#    'No need to download and re-install.'
+#  )
+#} else {
   $locale = 'en-US' #https://github.com/chocolatey/chocolatey-coreteampackages/issues/933
   $locale = GetLocale -localeFile "$toolsPath\LanguageChecksums.csv" -product $softwareName
   $checksums = GetChecksums -language $locale -checksumFile "$toolsPath\LanguageChecksums.csv"
@@ -47,4 +47,4 @@ if ($alreadyInstalled -and ($env:ChocolateyForce -ne $true)) {
   }
 
   Install-ChocolateyPackage @packageArgs
-}
+#}
