@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>7.0.21.0</version>
+    <version>7.0.22.0</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Maurice Kevenaar</owners>
     <!-- ============================== -->
@@ -47,7 +47,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/duplicatefilefinder</packageSourceUrl>
     <docsUrl>https://www.auslogics.com/en/support/product/duplicate-file-finder/</docsUrl>
     <summary>Sort through images, music, videos and other personal files to remove duplicate copies</summary>
-    <description>Duplicate File Finder will help you locate and remove useless file duplicates to free up disk space and better organize your file collections. You will have full control in being able to look through the list of duplicates and decide which copy to keep. 
+    <description><![CDATA[Duplicate File Finder will help you locate and remove useless file duplicates to free up disk space and better organize your file collections. You will have full control in being able to look through the list of duplicates and decide which copy to keep.
 
 #### Features
 * Free -- This program is totally free with no term limitations for home or commercial use. Free regular updates included.
@@ -56,7 +56,8 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.</description>
+let them know the package is no longer updating correctly.
+]]></description>
     <dependencies>
       <dependency id="chocolatey-core.extension" />
     </dependencies>
