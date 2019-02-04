@@ -34,12 +34,12 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
     <title>Openfire</title>
-    <authors>Jive Software</authors>
+    <authors>Ignite Realtime</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://www.igniterealtime.org/projects/openfire</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@a58cc7208328bc21791e56157fa6374d78f3ae32/icons/openfire.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Jive Software</copyright>
+    <copyright>Ignite Realtime</copyright>
     <tags>chat group video xmpp jabber admin</tags>
     <releaseNotes>http://download.igniterealtime.org/openfire/docs/latest/changelog.html</releaseNotes>
     <licenseUrl>http://www.igniterealtime.org/builds/openfire/docs/latest/LICENSE.html</licenseUrl>
