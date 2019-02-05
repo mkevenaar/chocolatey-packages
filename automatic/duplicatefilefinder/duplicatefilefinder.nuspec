@@ -42,7 +42,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <copyright>Auslogics</copyright>
     <tags>file-duplicates deduplication freeware admin</tags>
     <releaseNotes>https://www.auslogics.com/en/software/duplicate-file-finder/popup/history/</releaseNotes>
-    <licenseUrl>https://www.auslogics.com/en/support/product/duplicate-file-finder/</licenseUrl>
+    <!--<licenseUrl>https://www.auslogics.com/en/support/product/duplicate-file-finder/</licenseUrl>-->
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/duplicatefilefinder</packageSourceUrl>
     <docsUrl>https://www.auslogics.com/en/support/product/duplicate-file-finder/</docsUrl>
