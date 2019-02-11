@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = 'https://www.scarm.info/SCARMsetup_1_4_0.exe'
-$checksum     = '459dc4663c1ae2ac87bb2c28c7cb78e9c26fc3d77a805595e5ba7c54a2bbe85d'
+$url          = 'https://www.scarm.info/SCARMsetup_1_5_0.exe'
+$checksum     = 'fdb91b560db76cdd94f98a57dd19c17fb5e953d9d50aa724c11cbba2e185c53a'
 $checksumType = 'sha256'
 
 $packageArgs = @{
