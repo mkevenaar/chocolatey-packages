@@ -5,8 +5,8 @@ $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'exe'
-  file           = "$toolsdir\omnidb-server_2.13.0-windows-i386.exe"
-  file64         = "$toolsdir\omnidb-server_2.13.0-windows-amd64.exe"
+  file           = "$toolsdir\omnidb-server_2.14.0-windows-i386.exe"
+  file64         = "$toolsdir\omnidb-server_2.14.0-windows-amd64.exe"
   softwareName   = 'OmniDB-server*'
   silentArgs     = "/VERYSILENT /NORESTART /RESTARTEXITCODE=3010 /SP- /SUPPRESSMSGBOXES /CLOSEAPPLICATIONS /FORCECLOSEAPPLICATIONS"
   validExitCodes = @(0,3010)
