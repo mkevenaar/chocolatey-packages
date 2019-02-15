@@ -36,26 +36,24 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <title>Spark</title>
     <authors>Ignite Realtime</authors>
     <!-- projectUrl is required for the community feed -->
-    <projectUrl>http://www.igniterealtime.org/projects/spark</projectUrl>
+    <projectUrl>https://www.igniterealtime.org/projects/spark</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@5ba00a7d7af3ba4d40acabfaa8c37fa14d43fdce/icons/spark.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Ignite Realtime</copyright>
     <tags>chat group video xmpp jabber admin</tags>
-    <releaseNotes>http://download.igniterealtime.org/spark/docs/latest/changelog.html</releaseNotes>
-    <licenseUrl>http://www.igniterealtime.org/builds/spark/docs/latest/LICENSE.html</licenseUrl>
+    <releaseNotes>https://download.igniterealtime.org/spark/docs/latest/changelog.html</releaseNotes>
+    <licenseUrl>https://www.igniterealtime.org/builds/spark/docs/latest/LICENSE.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/spark</packageSourceUrl>
-    <docsUrl>http://www.igniterealtime.org/projects/spark/documentation.jsp</docsUrl>
+    <docsUrl>https://www.igniterealtime.org/projects/spark/documentation.jsp</docsUrl>
     <bugTrackerUrl>https://igniterealtime.org/issues/projects/SPARK</bugTrackerUrl>
-    <projectSourceUrl>http://www.igniterealtime.org/downloads/source.jsp</projectSourceUrl>
-    <mailingListUrl>https://community.igniterealtime.org/community/support/spark_support</mailingListUrl>
+    <projectSourceUrl>https://www.igniterealtime.org/downloads/source.jsp</projectSourceUrl>
+    <mailingListUrl>https://discourse.igniterealtime.org/c/spark</mailingListUrl>
     <summary>Cross-platform real-time collaboration client optimized for business and organizations.</summary>
     <description>
 Spark is an Open Source, cross-platform IM client optimized for businesses and organizations. It features built-in support for group chat, telephony integration, and strong security. It also offers a great end-user experience with features like in-line spell checking, group chat room bookmarks, and tabbed conversations.
 
 Combined with the Openfire server, Spark is the easiest and best alternative to using un-secure public IM networks. 
-
-[Screenshots](http://www.igniterealtime.org/projects/spark/screenshots.jsp)
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
