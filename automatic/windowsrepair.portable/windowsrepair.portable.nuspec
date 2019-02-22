@@ -45,7 +45,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <licenseUrl>http://www.tweaking.com/core/termsofuse/index.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/windowsrepair.portable</packageSourceUrl>
-    <docsUrl>https://www.tweaking.com/content/page/windows_repair_all_in_one.html</docsUrl>
+    <docsUrl>https://www.tweaking.com/articles/pages/windows_repair_all_in_one_tips,1.html</docsUrl>
     <summary>All-in-one repair tool to help fix known Windows issues</summary>
     <description><![CDATA[An all-in-one repair tool to help fix a large majority of known Windows problems including registry errors and file permissions as well as issues with Internet Explorer, Windows Update, Windows Firewall and more.
 
