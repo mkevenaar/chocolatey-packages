@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>0.9.60</version>
+    <version>0.9.60.2</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Maurice Kevenaar, Rob Reynolds</owners>
     <!-- ============================== -->
@@ -50,7 +50,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <bugTrackerUrl>https://trac.filezilla-project.org/</bugTrackerUrl>
     <mailingListUrl>https://forum.filezilla-project.org/</mailingListUrl>
     <summary>FileZilla Server - The free FTP solution</summary>
-    <description>FileZilla Server is a server that supports FTP and FTP over TLS which provides secure encrypted connections to the server.
+    <description><![CDATA[FileZilla Server is a server that supports FTP and FTP over TLS which provides secure encrypted connections to the server.
 
 FileZilla supports TLS, the same level of encryption supported by your web browser, to protect your data. When using TLS your data is encrypted so that prying eyes cannot see it, and your confidential information is protected. It also supports on-the-fly data compression, which can improve the transfer rates.
 
@@ -60,7 +60,8 @@ Support for SFTP (SSH File Transfer Protocol) is not implemented in Filezilla Se
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.</description>
+let them know the package is no longer updating correctly.
+]]></description>
     <!-- =============================== -->  
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
