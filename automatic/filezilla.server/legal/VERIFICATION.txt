@@ -1,0 +1,17 @@
+VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The installer have been downloaded from their official download link listed on <https://filezilla-project.org/download.php?show_all=1&type=server>
+and can be verified like this:
+
+1. Download the following installers:
+  32-Bit: <https://dl2.cdn.filezilla-project.org/server/FileZilla_Server-0_9_60_2.exe?h=p56aR5w3-n1yNmtm7HPA5A&x=1551183584>
+2. You can use one of the following methods to obtain the checksum
+  - Use powershell function 'Get-Filehash'
+  - Use chocolatey utility 'checksum.exe'
+
+  checksum type: sha256
+  checksum32: 036322D9C9AD01047171B8D13EA2CFC65B1D882E122E2F4D11A9B3FB32E9C932
+
+File 'LICENSE.txt' is obtained from <https://filezilla-project.org/misc/gpl-2.0-standalone.html>
