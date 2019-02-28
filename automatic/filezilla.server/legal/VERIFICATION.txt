@@ -6,7 +6,7 @@ The installer have been downloaded from their official download link listed on <
 and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <https://dl2.cdn.filezilla-project.org/server/FileZilla_Server-0_9_60_2.exe?h=N1bZY1aljlu5VJZ-tX0pQA&x=1551184156>
+  32-Bit: <https://dl2.cdn.filezilla-project.org/server/FileZilla_Server-0_9_60_2.exe?h=2DhwRt5JCZiDM1fPRJ_uag&x=1551264994>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'

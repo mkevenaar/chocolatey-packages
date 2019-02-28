@@ -58,6 +58,12 @@ Unfortunately, the compression setting can have mixed results, so it is advised 
 
 Support for SFTP (SSH File Transfer Protocol) is not implemented in Filezilla Server.
 
+## Package Parameters
+
+* `/ftproot` - Set the FTP Document root. The directory will be created if it does not exists. Default: `C:\temp\ftproot`
+
+Example: `choco install filezilla.server --params '"/ftproot:C:\ftpRoot"'`
+
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
