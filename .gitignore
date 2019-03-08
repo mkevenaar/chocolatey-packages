@@ -10,6 +10,7 @@
 *.test
 *.work
 *.exe
+*.msi
 *.dll
 *.zip
 *.7z
