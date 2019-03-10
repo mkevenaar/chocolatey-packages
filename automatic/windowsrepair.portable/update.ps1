@@ -17,7 +17,7 @@ function global:au_GetLatest {
 
     $re = '<br /><strong>(.+\d) - For all versions'
     $version = ([regex]::Match($download_page.content,$re)).Captures.Groups[1].value
-    $url = $download_page.Links | Where-Object href -match "aio.zip" | Select-Object -First 1 -expand href
+    $url = "http://www.tweaking.com/files/setups/tweaking.com_windows_repair_aio.zip"
 
 
     return @{ 
