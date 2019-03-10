@@ -37,7 +37,7 @@ function Get-NginxPaths {
         [Parameter(Position = 0, Mandatory)][ValidateNotNullOrEmpty()][string] $installDir
     )
 
-    $nginxDir = Get-ChildItem $installDir -Directory -Filter 'nginx*' | Select-Object -First 1 -ExpandProperty FullName
+    $nginxDir = Get-ChildItem $installDir -Directory -Filter 'nginx*' | Sort-Object { -join $_.Name.Replace('-','.').Split('.').PadLeft(3) } -Descending | Select-Object -First 1 -ExpandProperty FullName
     $confPath = Join-Path $nginxDir 'conf\nginx.conf'
     $binPath = Join-Path $nginxDir 'nginx.exe'
 
