@@ -32,7 +32,6 @@ $Options = [ordered]@{
       'An exception occurred during a WebClient request'
       'remote session failed with an unexpected state'
       'The connection was closed unexpectedly.'
-      'Unable to connect to the remote server'
     )
     #RepeatSleep   = 250                                    #How much to sleep between repeats in seconds, by default 0
     #RepeatCount   = 2                                      #How many times to repeat on errors, by default 1
