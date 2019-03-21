@@ -47,8 +47,8 @@ environment:
     secure: qkGqdhoPE+AUlbq/DmMV9jvUGmBj5/oRAP6ndRbAxeMi2shb7xwMMxR07pwG0O6B # https://ci.appveyor.com/tools/encrypt
 
   #Chocolatey version we want to use when checking for updates.
-  choco_version: '0.10.8'
-  choco_version_pr: '0.10.8' # Should be kept to the version available one year ago
+  choco_version: '0.10.9'
+  choco_version_pr: '0.10.9' # Should be kept to the version available one year ago
   nupkg_cache_path: C:\packages
 
 init:
@@ -62,7 +62,7 @@ install:
     if (!(Test-Path "$env:nupkg_cache_path")) { mkdir -Force "$env:nupkg_cache_path" }
     @{
       'chocolatey' = $chocoVersion
-      'wormies-au-helpers' = '0.3.1'
+      'wormies-au-helpers' = '0.3.2'
       'autohotkey.portable' = '1.1.30.01'
     }.GetEnumerator() | % {
       if (!(Test-Path "${env:nupkg_cache_path}\$($_.Key).$($_.Value).nupkg")) { rm "${env:nupkg_cache_path}\$($_.Key).*.nupkg" ; Invoke-WebRequest "https://chocolatey.org/api/v2/package/$($_.Key)/$($_.Value)" -OutFile "${env:nupkg_cache_path}\$($_.Key).$($_.Value).nupkg" }
