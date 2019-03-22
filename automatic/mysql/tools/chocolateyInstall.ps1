@@ -35,8 +35,8 @@ $installedContentsDir = get-childitem $installDir -include 'mysql*' | Sort-Objec
 # shut down service if running
 try {
   write-host "Shutting down MySQL if it is running"
-  Start-ChocolateyProcessAsAdmin "cmd /c NET STOP $(serviceName)"
-  Start-ChocolateyProcessAsAdmin "cmd /c sc delete $(serviceName)"
+  Start-ChocolateyProcessAsAdmin "cmd /c NET STOP $serviceName"
+  Start-ChocolateyProcessAsAdmin "cmd /c sc delete $serviceName"
 } catch {
   # no service installed
 }
@@ -61,7 +61,7 @@ if (!(Test-Path($iniFileDest))) {
 [mysqld]
 basedir=$($installDir.Replace("\","\\"))\\current
 datadir=$($dataDir.Replace("\","\\"))\\data
-port=$(port)
+port=$port
 "@ | Out-File $iniFileDest -Force -Encoding ASCII
 }
 
@@ -79,7 +79,7 @@ try {
 
 # install the service itself
 write-host "Installing the mysql service"
-Start-ChocolateyProcessAsAdmin "cmd /c '$($installDirBin)\mysqld' --install $(serviceName)"
+Start-ChocolateyProcessAsAdmin "cmd /c '$($installDirBin)\mysqld' --install $serviceName"
 # turn on the service
-Start-ChocolateyProcessAsAdmin "cmd /c NET START $(serviceName)"
+Start-ChocolateyProcessAsAdmin "cmd /c NET START $serviceName"
 
