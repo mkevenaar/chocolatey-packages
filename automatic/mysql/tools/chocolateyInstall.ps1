@@ -4,13 +4,18 @@ $url = 'https://dev.mysql.com/get/Downloads/MySQL-8.0/mysql-8.0.15-winx64.zip'
 $checksum = '16bf0ad985dd862c81f030438e7907872c2989fbb67548177f5853803d3fb803'
 $checksumType = 'sha256'
 
+$pp = Get-PackageParameters
+
 $packageName = 'mysql'
-$binRoot = Get-ToolsLocation
+$binRoot = if ($pp.installLocation) { $pp.installLocation } else { Get-ToolsLocation }
 $installDir = Join-Path $binRoot "$packageName"
 $installDirBin = "$($installDir)\current\bin"
 Write-Host "Adding `'$installDirBin`' to the path and the current shell path"
 Install-ChocolateyPath "$installDirBin"
 $env:Path = "$($env:Path);$($installDirBin)"
+$port = if ($pp.Port) { $pp.Port } else { 3306 }
+$service = if ($pp.serviceName) { $pp.serviceName } else { "MySQL" }
+$dataDir = if ($pp.dataLocation) { Join-Path $pp.dataLocation "$packageName" } else { "C:\ProgramData\MySQL" }
 
 if (![System.IO.Directory]::Exists($installDir)) {[System.IO.Directory]::CreateDirectory($installDir) | Out-Null}
 
@@ -30,8 +35,8 @@ $installedContentsDir = get-childitem $installDir -include 'mysql*' | Sort-Objec
 # shut down service if running
 try {
   write-host "Shutting down MySQL if it is running"
-  Start-ChocolateyProcessAsAdmin "cmd /c NET STOP MySQL"
-  Start-ChocolateyProcessAsAdmin "cmd /c sc delete MySQL"
+  Start-ChocolateyProcessAsAdmin "cmd /c NET STOP $(serviceName)"
+  Start-ChocolateyProcessAsAdmin "cmd /c sc delete $(serviceName)"
 } catch {
   # no service installed
 }
@@ -55,7 +60,8 @@ if (!(Test-Path($iniFileDest))) {
 @"
 [mysqld]
 basedir=$($installDir.Replace("\","\\"))\\current
-datadir=C:\\ProgramData\\MySQL\\data
+datadir=$($dataDir.Replace("\","\\"))\\data
+port=$(port)
 "@ | Out-File $iniFileDest -Force -Encoding ASCII
 }
 
@@ -64,7 +70,7 @@ datadir=C:\\ProgramData\\MySQL\\data
 Write-Host "Initializing MySQL if it hasn't already been initialized."
 try {
 
-  $defaultDataDir='C:\ProgramData\MySQL\data'
+  $defaultDataDir= Join-Path $dataDir "data"
   if (![System.IO.Directory]::Exists($defaultDataDir)) {[System.IO.Directory]::CreateDirectory($defaultDataDir) | Out-Null}
   Start-ChocolateyProcessAsAdmin "cmd /c '$($installDirBin)\mysqld' --defaults-file=$iniFileDest --initialize-insecure"
 } catch {
@@ -73,7 +79,7 @@ try {
 
 # install the service itself
 write-host "Installing the mysql service"
-Start-ChocolateyProcessAsAdmin "cmd /c '$($installDirBin)\mysqld' --install"
+Start-ChocolateyProcessAsAdmin "cmd /c '$($installDirBin)\mysqld' --install $(serviceName)"
 # turn on the service
-Start-ChocolateyProcessAsAdmin "cmd /c NET START MySQL"
+Start-ChocolateyProcessAsAdmin "cmd /c NET START $(serviceName)"
 
