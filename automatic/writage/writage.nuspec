@@ -43,7 +43,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <licenseUrl>http://www.writage.com/tos/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/writage</packageSourceUrl>
-    <docsUrl>http://www.writage.com/support/</docsUrl>
+    <docsUrl>http://www.writage.com/#overview</docsUrl>
     <summary>Markdown plugin for Microsoft Word</summary>
     <description><![CDATA[** NOTE ** This package requires Word 2010 or higher to be installed.
 
