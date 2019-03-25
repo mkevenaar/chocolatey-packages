@@ -5,3 +5,12 @@ MySQL Community Edition is the freely downloadable version of the world's most p
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
+
+### Package Parameters
+The package accepts the following optional parameters:
+* `/installLocation` - filesystem location for mysql binaries
+* `/dataLocation` - filesystem location for mysql data
+* `/port` - numberic TCP listening port
+* `/serviceName` - custom name for the Windows services entry
+
+Example: `choco install mysql --params "/port:3307 /serviceName:AltSQL"`
