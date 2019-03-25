@@ -33,7 +33,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
-    <title>veusz--windows-setup (Install)</title>
+    <title>Veusz (Install)</title>
     <authors>Jeremy Sanders</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://veusz.github.io/</projectUrl>
