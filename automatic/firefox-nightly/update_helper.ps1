@@ -21,11 +21,12 @@ function GetVersionAndUrlFormats() {
     $url = 'https://releases.mozilla.org' + ($download_page.links | Where-Object href -match $re | Select-Object -first 1 -expand href)
     $url = $url -replace 'en-US','${locale}' -replace '&amp;','&'
   } elseif ($Product -eq 'firefox-nightly') {
-    $re = "en-US.win32.buildhub.json"
+    $re = "en-US.win64.buildhub.json"
     $url = 'https://releases.mozilla.org' + ($download_page.links | Where-Object href -match $re | Select-Object -last 1 -expand href)
     $json = Invoke-WebRequest $url | ConvertFrom-Json
     $url = $json.download.url
     $url = $url -replace 'en-US','${locale}' -replace '&amp;','&'
+    $url = $url -replace -replace 'win64','win32'
   }
 
   $result = @{
