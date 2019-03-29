@@ -26,7 +26,7 @@ function GetVersionAndUrlFormats() {
     $json = Invoke-WebRequest $url | ConvertFrom-Json
     $url = $json.download.url
     $url = $url -replace 'en-US','${locale}' -replace '&amp;','&'
-    $url = $url -replace -replace 'win64','win32'
+    $url = $url -replace 'win64','win32'
   }
 
   $result = @{
