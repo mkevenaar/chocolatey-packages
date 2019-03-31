@@ -4,8 +4,8 @@ $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url32          = 'https://wiki.rocrail.net/rocrail-snapshot/history/rocrail-15243-win32.exe'
 $checksum32     = '79779b178ecef0f8c6759d7550a119152b10597e09c04a5e90ca6f23583dfa76'
 $checksumType32 = 'sha256'
-$url64          = 'https://wiki.rocrail.net/rocrail-snapshot/history/rocrail-15243-win64.exe'
-$checksum64     = '28cdba427ccd14f93b2266a3c24a7d8444b748e36b72f577e8ffac9e9248fbc4'
+$url64          = 'https://wiki.rocrail.net/rocrail-snapshot/history/rocrail-15245-win64.exe'
+$checksum64     = 'f89bcc12a09525023ddd5f422cc3da7d1b41e0dcc03c18f7ab08485d4998b7cd'
 $checksumType64 = 'sha256'
 
 $packageArgs = @{
