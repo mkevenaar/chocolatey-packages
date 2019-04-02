@@ -47,7 +47,7 @@ environment:
     secure: qkGqdhoPE+AUlbq/DmMV9jvUGmBj5/oRAP6ndRbAxeMi2shb7xwMMxR07pwG0O6B # https://ci.appveyor.com/tools/encrypt
 
   #Chocolatey version we want to use when checking for updates.
-  choco_version: '0.10.9'
+  choco_version: '0.10.14-beta-20190402'
   choco_version_pr: '0.10.9' # Should be kept to the version available one year ago
   nupkg_cache_path: C:\packages
 
