@@ -2,10 +2,10 @@
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url32          = 'https://www.uvnc.eu/download/1224/UltraVNC_1_2_24_X86_Setup.exe'
-$checksum32     = 'b0c6b307c35f87c738c29f38ad6a33355a186002f5b94b57e54d94d83381c0db'
+$checksum32     = 'd55dbaa0c4db03dfce5a98c681a86c31b3524945b1b3aee73f59e3a5501102c0'
 $checksumType32 = 'sha256'
 $url64          = 'https://www.uvnc.eu/download/1224/UltraVNC_1_2_24_X64_Setup.exe'
-$checksum64     = 'f8ce2e5633c8c5413cb73fcfc78ab0b631f929d29d5632a57480b17714f6c0a5'
+$checksum64     = 'e71d6164defea59f8d44a43542bc642461b184ae751ec29b06dfc46aa22bc148'
 $checksumType64 = 'sha256'
 
 $packageArgs = @{
