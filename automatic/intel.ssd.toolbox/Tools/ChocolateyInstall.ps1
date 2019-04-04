@@ -2,7 +2,7 @@
 
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url        = 'https://downloadmirror.intel.com/28674/eng/Intel%20SSD%20Toolbox%20-%20v3.5.10.exe'
-$checksum     = '1EBD356C1A1783CFF8AB957EDC0517F80844ABCFCE9E5B89D845546B3F752C19'
+$checksum     = '1ebd356c1a1783cff8ab957edc0517f80844abcfce9e5b89d845546b3f752c19'
 $checksumType = 'sha256'
 
 $packageArgs = @{
