@@ -7,8 +7,8 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://nightlies.videolan.org//build/win32/vlc-3.0.7-20190403-0306/vlc-3.0.7-20190403-0306-win32.exe
-   x64: https://nightlies.videolan.org//build/win64/vlc-3.0.7-20190403-0510/vlc-3.0.7-20190403-0510-win64.exe
+   x32: https://nightlies.videolan.org//build/win32/vlc-4.0.0-20190404-0904/vlc-4.0.0-20190404-0904-dev-win32.exe
+   x64: https://nightlies.videolan.org//build/win64/vlc-4.0.0-20190404-0854/vlc-4.0.0-20190404-0854-dev-win64.exe
 
    to download the installer.
 
@@ -16,12 +16,12 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: FAE940B5C3A1DF62D8E8A1DB2F8B603789A1DED7F3D9CCFE97588E1BCF882FA0
-   checksum64: 191A231CE54EDD52C07CB6EE04B157D37470F3E8E472CB17F097CB0C6400B791
+   checksum32: 7ED380A369DD240F288F157A20DDA28BEE6690C15E61D6B755CE113193C98A3F
+   checksum64: E848DA067E1AC5EE5AD0F5BF84CF88B6FD697DC1ECA6E8D1056140B362F36A49
 
 Using AU:
 
-   Get-RemoteChecksum https://nightlies.videolan.org//build/win64/vlc-3.0.7-20190403-0510/vlc-3.0.7-20190403-0510-win64.exe
+   Get-RemoteChecksum https://nightlies.videolan.org//build/win64/vlc-4.0.0-20190404-0854/vlc-4.0.0-20190404-0854-dev-win64.exe
 
 File 'LICENSE.txt' obtained from:
    https://git.videolan.org/?p=vlc.git;a=blob_plain;f=COPYING;hb=HEAD
