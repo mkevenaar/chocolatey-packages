@@ -2,18 +2,18 @@ VERIFICATION
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
-The installer have been downloaded from their official download link listed on <>
+The installer have been downloaded from their official download link listed on <https://www.wireshark.org/#download>
 and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <https://www.wireshark.org/download/win32/all-versions/Wireshark-win32-3.0.0.exe>
-  64-Bit: <https://www.wireshark.org/download/win64/all-versions/Wireshark-win64-3.0.0.exe>
+  32-Bit: <https://www.wireshark.org/download/win32/all-versions/Wireshark-win32-3.0.1.exe>
+  64-Bit: <https://www.wireshark.org/download/win64/all-versions/Wireshark-win64-3.0.1.exe>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: CA59A35866B5837578070AE064BB099D7A50B81BE6B86884679AA86EF08EA89F
-  checksum64: B5D30A9C0B2835A41E8132B1D9246A01AD6F1461A4DE14FA3CCBDF4919C70EAC
+  checksum32: C2C4CB14B96D66342F84FDF9DA17344DB6D5051952B37C1045F104733EE662C4
+  checksum64: 80E9BDFCB3BFB3800C202EFCDFBB286A2B89D0BF2B8D94F2727D117B0013C821
 
 File 'LICENSE.txt' is obtained from <https://code.wireshark.org/review/gitweb?p=wireshark.git;a=blob;f=COPYING;hb=HEAD>
