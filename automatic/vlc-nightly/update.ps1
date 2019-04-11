@@ -1,5 +1,5 @@
 import-module au
-$releases = 'https://nightlies.videolan.org/'
+$releases = 'https://nightlies.videolan.org'
 
 function global:au_SearchReplace {
    @{
@@ -34,8 +34,8 @@ function global:au_GetLatest {
   #win64
   $download_page64 = Invoke-WebRequest -Uri "$releases/build/win64/" -UseBasicParsing
   
-  $folder32Bits = $download_page32.links | Where-Object href -Match "vlc-.+$date" | Select-Object -ExpandProperty href
-  $folder64Bits = $download_page64.links | Where-Object href -Match "vlc-.+$date" | Select-Object -ExpandProperty href
+  $folder32Bits = $download_page32.links | Where-Object href -Match "vlc-.+$date"
+  $folder64Bits = $download_page64.links | Where-Object href -Match "vlc-.+$date"
 
   $re    = '\.exe$'
 
@@ -47,14 +47,14 @@ function global:au_GetLatest {
     $chocoVersion = $version + "." + $date
 
     # 32 bit
-    $32bitFolder = $folder32Bits -match $version
+    $32bitFolder = $folder32Bits | Where-Object href -match $version | Select-Object -ExpandProperty href
     $32bitFolderUrl = $releases + "/build/win32/" + $32bitFolder
     $32bitFiles = Invoke-WebRequest -Uri $32bitFolderUrl -UseBasicParsing
     $filename32 = $32bitFiles.links | Where-Object href -Match $re | Select-Object -ExpandProperty href
     $url32bit = $releases + "/build/win32/" + $32bitFolder + $filename32
 
     # 64 bit
-    $64bitFolder = $_
+    $64bitFolder = $_.href
     $64bitFolderUrl = $releases + "/build/win64/" + $64bitFolder
     $64bitFiles = Invoke-WebRequest -Uri $64bitFolderUrl -UseBasicParsing
     $filename64 = $64bitFiles.links | Where-Object href -Match $re | Select-Object -ExpandProperty href
