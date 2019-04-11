@@ -47,7 +47,7 @@ function global:au_GetLatest {
     $chocoVersion = $version + "." + $date
 
     # 32 bit
-    $32bitFolder = $folder32Bits | Where-Object href -match $version | Select-Object -ExpandProperty href
+    $32bitFolder = $folder32Bits | Where-Object href -match $version | Select-Object -First 1 -ExpandProperty href
     $32bitFolderUrl = $releases + "/build/win32/" + $32bitFolder
     $32bitFiles = Invoke-WebRequest -Uri $32bitFolderUrl -UseBasicParsing
     $filename32 = $32bitFiles.links | Where-Object href -Match $re | Select-Object -ExpandProperty href
@@ -60,7 +60,9 @@ function global:au_GetLatest {
     $filename64 = $64bitFiles.links | Where-Object href -Match $re | Select-Object -ExpandProperty href
     $url64bit = $releases + "/build/win64/" + $64bitFolder + $filename64
 
-    $streams.Add((Get-Version $version).ToString(2), (CreateStream $url32bit $url64Bit $chocoVersion))
+    if($filename32 -and $filename64) {
+      $streams.Add((Get-Version $version).ToString(2), (CreateStream $url32bit $url64Bit $chocoVersion))
+    }
 
   } | Out-Null
 
