@@ -1,17 +1,24 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = 'http://downloadcenter.samsung.com/content/SW/201812/20181205162757370/Samsung_Magician_Installer.exe'
-$checksum     = '00a64011d594f7d0fc0ea0748dff7f7c3057c021cdf2a26bb5148066c273a5e8'
+$url          = 'http://ssd.samsungsemi.com/ecomobile/ssd/update10.do?fname=/Samsung_Magician_Installer.zip'
+$checksum     = 'b66b41b3bf6c71bd6051a383262f72ffc5a34376f43c63c9d2b21ab79ba8ac3b'
 $checksumType = 'sha256'
 
 $packageArgs = @{
-  packageName    = $env:ChocolateyPackageName
-  unzipLocation  = $toolsDir
-  fileType       = 'exe'
+  PackageName    = $env:ChocolateyPackageName
   url            = $url
   checksum       = $checksum
   checksumType   = $checksumType
+  Destination    = $toolsDir
+}
+
+Install-ChocolateyZipPackage @packageArgs
+
+$packageArgs = @{
+  packageName    = $env:ChocolateyPackageName
+  fileType       = 'exe'
+  file           = Get-Item $toolsDir\*.exe
   softwareName   = 'Samsung Magician*'
   silentArgs     = ""
   validExitCodes = @(0,3010)
@@ -24,6 +31,6 @@ $ahkProc = Start-Process -FilePath $ahkEXE.FullName -ArgumentList "$ahkFile" -Pa
 Write-Debug "AutoHotKey start time:`t$($ahkProc.StartTime.ToShortTimeString())"
 Write-Debug "Process ID:`t$($ahkProc.Id)"
 
-Install-ChocolateyPackage @packageArgs
+Install-ChocolateyInstallPackage @packageArgs
 
 if (Get-Process -id $ahkProc.Id -ErrorAction SilentlyContinue) {Stop-Process -id $ahkProc.Id}
