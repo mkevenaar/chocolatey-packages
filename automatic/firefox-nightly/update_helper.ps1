@@ -22,8 +22,8 @@ function GetVersionAndUrlFormats() {
     $url = $url -replace 'en-US','${locale}' -replace '&amp;','&'
   } elseif ($Product -eq 'firefox-nightly') {
     $re = "en-US.win64.buildhub.json"
-    $url = 'https://releases.mozilla.org' + ($download_page.links | Where-Object href -match $re | Select-Object -last 1 -expand href)
-    $json = Invoke-WebRequest $url | ConvertFrom-Json
+    $jsonurl = 'https://releases.mozilla.org' + ($download_page.links | Where-Object href -match $re | Select-Object -last 1 -expand href)
+    $json = Invoke-WebRequest $jsonurl | ConvertFrom-Json
     $url = $json.download.url
     $url = $url -replace 'en-US','${locale}' -replace '&amp;','&'
     $url = $url -replace 'win64','win32'
@@ -54,7 +54,7 @@ function CreateNightlyChecksumsFile() {
     [string]$Version,
     [string]$Product
   )
-  $sha512re = "^([a-f\d]+)\s*sha512 [\d]+ installer.exe"
+  $sha512re = "^([a-f\d]+)\s*sha512 [\d]+ firefox.+installer.exe"
 
   $reOpts = [System.Text.RegularExpressions.RegexOptions]::Multiline `
     -bor [System.Text.RegularExpressions.RegexOptions]::IgnoreCase
