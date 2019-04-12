@@ -10,8 +10,9 @@ $packageArgs = @{
 
 Get-ChocolateyUnzip @packageArgs
 
-# create empty sidecar so shimgen creates shim for GUI rather than console
-$installFile = Join-Path -Path $toolsDir `
-                         -ChildPath "simulide.exe.gui"
-Set-Content -Path $installFile `
-            -Value $null
+$bindir = Join-Path -Path ($packageArgs.file -replace ".7z") -ChildPath "bin"
+
+# create empty sidecar so shimgen ignores them.
+Set-Content -Path (Join-Path -Path $bindir -ChildPath "simulide.exe.ignore") -Value $null
+Set-Content -Path (Join-Path -Path $bindir -ChildPath "avra.exe.ignore") -Value $null
+Set-Content -Path (Join-Path -Path $bindir -ChildPath "gpasm.exe.ignore") -Value $null
