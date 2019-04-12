@@ -5,7 +5,7 @@ $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   destination    = $toolsDir
-  file           = "$toolsDir\SimulIDE_0.3.10_SR1-Win32.7z"
+  file           = "$toolsDir\SimulIDE_0.3.10-SR2-Win32.7z"
 }
 
 Get-ChocolateyUnzip @packageArgs

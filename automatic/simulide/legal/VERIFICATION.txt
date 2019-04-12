@@ -6,12 +6,12 @@ The installer have been downloaded from their official download link listed on <
 and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <https://sourceforge.net/projects/simulide/files/SimulIDE_0.3.10/SimulIDE_0.3.10_SR1-Win32.zip/download>
+  32-Bit: <https://sourceforge.net/projects/simulide/files/SimulIDE_0.3.10/SimulIDE_0.3.10-SR2-Win32.zip/download>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: 875CAC6067783BE1244967DA24CF742F5DB2A62C2BAACBEA6380775170CCC1D5
+  checksum32: F822DC6EE316589387BA130952104AB2E65F35D6E60783F463AB000B30AE1967
 
 File 'LICENSE.txt' is obtained from <https://sourceforge.net/p/simulide/svnrepo/HEAD/tree/trunk/COPYING>
