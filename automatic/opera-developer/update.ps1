@@ -11,7 +11,7 @@ function global:au_SearchReplace {
             "(^\s*checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
             "(^[$]version\s*=\s*)('.*')"    = "`$1'$($Latest.Version)'"
         }
-        ".\opera-beta.nuspec" = @{
+        ".\opera-developer.nuspec" = @{
           "(?i)(^\s*\<releaseNotes\>).*(\<\/releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`${2}"
         }
     }
