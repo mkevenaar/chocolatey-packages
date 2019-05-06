@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>60.0.3255.60-beta</version>
+    <version>60.0.3255.79-beta</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Maurice Kevenaar</owners>
     <!-- ============================== -->
@@ -41,12 +41,12 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Opera Software</copyright>
     <tags>browser opera beta cross-platform internet admin</tags>
-    <releaseNotes>https://blogs.opera.com/desktop/changelog-for-60/#b3255.60</releaseNotes>
+    <releaseNotes>https://blogs.opera.com/desktop/changelog-for-60/#b3255.79</releaseNotes>
     <licenseUrl>http://www.operasoftware.com/eula/browser</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/opera-beta</packageSourceUrl>
     <summary>The Opera web browser makes the Web fast and fun, giving you a better web browser experience on any computer.</summary>
-    <description>The Opera web browser makes the Web fast and fun, giving you a better web browser experience on any computer.
+    <description><![CDATA[The Opera web browser makes the Web fast and fun, giving you a better web browser experience on any computer.
 
 
 ## Parameters
@@ -58,7 +58,8 @@ For example: `--params '"/NoDesktopShortcut /NoTaskbarShortcut"'`
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.</description>
+let them know the package is no longer updating correctly.
+]]></description>
     <!-- =============================== -->  
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
