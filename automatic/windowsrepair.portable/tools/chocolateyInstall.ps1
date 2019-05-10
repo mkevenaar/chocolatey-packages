@@ -2,7 +2,7 @@
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url          = 'http://www.tweaking.com/files/setups/tweaking.com_windows_repair_aio.zip'
-$checksum     = 'dcd45be99f0f31c8e8a6918efcc5f8421ff0fd5fac791ab972558f159c05ab9e'
+$checksum     = '37346684f5222b5989afc54cb19099c9838161b5aa827d06fb39a2b75c886683'
 $checksumType = 'sha256'
 
 $packageArgs = @{
