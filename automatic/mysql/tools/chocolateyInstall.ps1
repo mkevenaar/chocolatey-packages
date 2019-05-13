@@ -14,7 +14,7 @@ Write-Host "Adding `'$installDirBin`' to the path and the current shell path"
 Install-ChocolateyPath "$installDirBin"
 $env:Path = "$($env:Path);$($installDirBin)"
 $port = if ($pp.Port) { $pp.Port } else { 3306 }
-$service = if ($pp.serviceName) { $pp.serviceName } else { "MySQL" }
+$serviceName = if ($pp.serviceName) { $pp.serviceName } else { "MySQL" }
 $dataDir = if ($pp.dataLocation) { Join-Path $pp.dataLocation "$packageName" } else { "C:\ProgramData\MySQL" }
 
 if (![System.IO.Directory]::Exists($installDir)) {[System.IO.Directory]::CreateDirectory($installDir) | Out-Null}
@@ -72,7 +72,7 @@ try {
 
   $defaultDataDir= Join-Path $dataDir "data"
   if (![System.IO.Directory]::Exists($defaultDataDir)) {[System.IO.Directory]::CreateDirectory($defaultDataDir) | Out-Null}
-  Start-ChocolateyProcessAsAdmin "cmd /c '$($installDirBin)\mysqld' --defaults-file=$iniFileDest --initialize-insecure"
+  Start-ChocolateyProcessAsAdmin "cmd /c '$($installDirBin)\mysqld' --defaults-file='$iniFileDest' --initialize-insecure"
 } catch {
   write-host "MySQL has already been initialized"
 }
@@ -82,4 +82,3 @@ write-host "Installing the mysql service"
 Start-ChocolateyProcessAsAdmin "cmd /c '$($installDirBin)\mysqld' --install $serviceName"
 # turn on the service
 Start-ChocolateyProcessAsAdmin "cmd /c NET START $serviceName"
-
