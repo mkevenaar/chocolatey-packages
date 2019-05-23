@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>0.0</version>
+    <version>1.2.3</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Maurice Kevenaar</owners>
     <!-- ============================== -->
@@ -50,7 +50,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <bugTrackerUrl>https://github.com/Zettlr/Zettlr/issues</bugTrackerUrl>
     <mailingListUrl>https://forum.zettlr.com/</mailingListUrl>
     <summary>A Markdown Editor for the 21st Century</summary>
-    <description>![The central window of Zettlr](https://cdn.jsdelivr.net/gh/Zettlr/Zettlr@dbfe0df65f7ec0e6f22ef4c1ddab681e316818cd/resources/screenshots/zettlr_view.png)
+    <description><![CDATA[![The central window of Zettlr](https://cdn.jsdelivr.net/gh/Zettlr/Zettlr@dbfe0df65f7ec0e6f22ef4c1ddab681e316818cd/resources/screenshots/zettlr_view.png)
 
 With Zettlr, writing professional texts is easy and motivating: Whether you are a college student, a researcher, a journalist, or an author — Zettlr has the right tools for you. [Watch the video](https://www.youtube.com/watch?v=BJ27r6YGpAs) or continue reading to see what they are!
 
@@ -71,7 +71,8 @@ With Zettlr, writing professional texts is easy and motivating: Whether you are 
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.</description>
+let them know the package is no longer updating correctly.
+]]></description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
