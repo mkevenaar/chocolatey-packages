@@ -1,6 +1,6 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4fa07822efa981d198c0dd8801a7a98219c5184c/icons/zettlr.png" width="48" height="48"/> [zettlr](https://chocolatey.org/packages/zettlr)
 
-![The central window of Zettlr](https://cdn.jsdelivr.net/gh/Zettlr/Zettlr@dbfe0df65f7ec0e6f22ef4c1ddab681e316818cd/resources/screenshots/zettlr_view.png)
+![The central window of Zettlr](https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@986f5f4c4c00334ac5e65f5a961ef0442a5eef6d/automatic/zettlr/screenshot.png)
 
 With Zettlr, writing professional texts is easy and motivating: Whether you are a college student, a researcher, a journalist, or an author — Zettlr has the right tools for you. [Watch the video](https://www.youtube.com/watch?v=BJ27r6YGpAs) or continue reading to see what they are!
 
