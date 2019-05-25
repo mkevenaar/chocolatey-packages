@@ -5,7 +5,7 @@ Easy to install on Windows, Linux or Mac. Run unlimited pipelines in Docker or C
 
 * Works with GitHub, Bitbucket, GitLab and Azure Repos
 * Run Windows and Linux builds in parallel in the same Docker pipeline
-*Run builds on Azure, AWS or GCP and pay for build minutes only
+* Run builds on Azure, AWS or GCP and pay for build minutes only
 * Free for one user with unlimited projects, builds and clouds
 
 **Please Note**: This is an automatically updated package. If you find it is
