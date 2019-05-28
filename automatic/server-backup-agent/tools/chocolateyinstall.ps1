@@ -3,10 +3,10 @@
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $url32          = 'http://repo.r1soft.com/trials/ServerBackup-Windows-Agent-x86.msi'
-$checksum32     = '2B528E02666528B38A50D500F2B1BCA90287A0FD425BCF4B5E3754EB4B9B821C'
+$checksum32     = '5DCC7619EF12E22220114226382A91016F6B6210A3F56B4B6F18148A4120370C'
 $checksumType32 = 'sha256'
 $url64          = 'http://repo.r1soft.com/trials/ServerBackup-Windows-Agent-x64.msi'
-$checksum64     = '16236fa25c4d6c1e8799937d0923efbd9d149db7f457a48c795c401374c644b2'
+$checksum64     = '6cc38eabed3fffbd1fbc88a23d216ba1aab057a8d676b0463875a65c0c9b07ae'
 $checksumType64 = 'sha256'
 
 $packageArgs = @{
