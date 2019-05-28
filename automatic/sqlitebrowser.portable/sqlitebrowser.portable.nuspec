@@ -40,7 +40,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@326e9c0439d53d73fcc5ef931486c8ffbdfb016e/icons/sqlitebrowser.svg</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>René Peinthor,Martin Kleusberg ,Mauricio Piacentini,Justin Clift</copyright>
-    <tags>sqlite database browser editor qt admin</tags>
+    <tags>sqlite database browser editor qt</tags>
     <releaseNotes>https://github.com/sqlitebrowser/sqlitebrowser/releases</releaseNotes>
     <licenseUrl>https://github.com/sqlitebrowser/sqlitebrowser/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
