@@ -8,7 +8,7 @@ $packageArgs = @{
   fileType       = 'msi'
   file           = "$toolsdir\DB.Browser.for.SQLite-3.11.2-win32.msi"
   file64         = "$toolsdir\DB.Browser.for.SQLite-3.11.2-win64.msi"
-  softwareName   = 'MariaDB *'
+  softwareName   = 'DB Browser for SQLite*'
   silentArgs     = "/qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
   validExitCodes = @(0,3010)
 }
