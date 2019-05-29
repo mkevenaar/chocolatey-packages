@@ -42,15 +42,18 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <copyright>Appveyor Systems Inc.</copyright>
     <tags>appveyor-server admin</tags>
     <releaseNotes>https://www.appveyor.com/releases/</releaseNotes>
+    <licenseUrl>https://www.appveyor.com/terms-of-service/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/appveyor-server</packageSourceUrl>
     <docsUrl>https://www.appveyor.com/docs/server/</docsUrl>
+    <mailingListUrl>https://help.appveyor.com/discussions</mailingListUrl>
     <summary>AppVeyor CI on your own server</summary>
     <description><![CDATA[AppVeyor CI on your own server
 Easy to install on Windows, Linux or Mac. Run unlimited pipelines in Docker or Cloud.
 
 * Works with GitHub, Bitbucket, GitLab and Azure Repos
 * Run Windows and Linux builds in parallel in the same Docker pipeline
-*Run builds on Azure, AWS or GCP and pay for build minutes only
+* Run builds on Azure, AWS or GCP and pay for build minutes only
 * Free for one user with unlimited projects, builds and clouds
 
 **Please Note**: This is an automatically updated package. If you find it is
@@ -76,5 +79,6 @@ let them know the package is no longer updating correctly.
   <!-- Uncomment to limit what is packed in -->
   <files>
     <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
   </files>
 </package>

@@ -1,33 +1,40 @@
 Import-Module AU
-Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1"
-Import-Module "$PSScriptRoot\..\..\scripts/au_extensions.psm1"
 
-function global:au_SearchReplace {
-    @{
-        '.\tools\chocolateyInstall.ps1' = @{
-            "(^[$]url32\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
-            "(^[$]checksum32\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
-            "(^[$]checksumType32\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
-        }
-     }
-}
+$releases = 'https://www.appveyor.com/releases/'
+
+function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 
 function global:au_GetLatest {
-  $url32 = 'https://www.appveyor.com/downloads/appveyor-server/latest/windows/appveyor-server.msi'
-  $dest = "$env:TEMP\appveyor-server.msi"
+  $download_page = Invoke-WebRequest -Uri $releases
+  $re = "/releases/(.+\d)/"
 
-  Get-WebFile $url32 $dest | Out-Null
-  $checksumType = 'sha256'
-  $version = (Get-MsiInformation -Path $dest).ProductVersion
-  $checksum32 = Get-FileHash $dest -Algorithm $checksumType | % Hash
-  Remove-Item -force $dest -ErrorAction SilentlyContinue
+  $version = $download_page.Links | Where-Object href -match $re | Select-Object -First 1 -expand innerhtml
+  $versiondata = Get-Version($version)
+  $version = $versiondata.toString()
+
+  $url32 = "https://www.appveyor.com/downloads/appveyor-server/" + $versiondata.toString(2) + "/windows/appveyor-server-" + $version + "-x64.msi"
 
   return @{
-    URL32          = $url32
-    Version        = $version
-    Checksum32     = $checksum32
-    ChecksumType32 = $checksumType
+        URL32 = $url32
+        Version = $version 
+        FileType = 'msi'
+    }
+}
+
+function global:au_SearchReplace {
+  return @{
+    ".\tools\chocolateyInstall.ps1" = @{
+      "(?i)(^\s*file\s*=\s*`"[$]toolsDir\\).*"   = "`${1}$($Latest.FileName32)`""
+    }
+    ".\legal\VERIFICATION.txt" = @{
+      "(?i)(listed on\s*)\<.*\>" = "`${1}<$releases>"
+      "(?i)(32-Bit.+)\<.*\>"     = "`${1}<$($Latest.URL32)>"
+      "(?i)(checksum type:).*"   = "`${1} $($Latest.ChecksumType32)"
+      "(?i)(checksum32:).*"      = "`${1} $($Latest.Checksum32)"
+    }
   }
 }
 
-update -ChecksumFor none
+if ($MyInvocation.InvocationName -ne '.') {
+  update -ChecksumFor None
+}
