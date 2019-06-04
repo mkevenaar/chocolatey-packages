@@ -6,13 +6,13 @@ The installer have been downloaded from their official download link listed on <
 and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <https://www.appveyor.com/downloads/appveyor-server/7.0/windows/appveyor-server-7.0.2150-x64.msi>
+  32-Bit: <https://www.appveyor.com/downloads/appveyor-server/7.0/windows/appveyor-server-7.0.2184-x64.msi>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: 78E7D0C3D47F77734844EE4E16A83DF4CC53E7428FBFC41454DFB8D7A39873F7
+  checksum32: 6334D0D276F325B6F8D854666E9DC40897A6141984D582A576E5C86111330452
 
 File 'LICENSE.txt' is obtained from <https://www.appveyor.com/terms-of-service/>
 
