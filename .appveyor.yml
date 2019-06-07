@@ -42,12 +42,12 @@ environment:
   #ID of the gist used to save test run results
   gist_id_test: 7ca34bddbf76f8ae30a1573e7474e1aa
 
-  # Chocolatey API key - to push updated packages
+  #Chocolatey API key - to push updated packages
   api_key:
     secure: qkGqdhoPE+AUlbq/DmMV9jvUGmBj5/oRAP6ndRbAxeMi2shb7xwMMxR07pwG0O6B # https://ci.appveyor.com/tools/encrypt
 
   #Chocolatey version we want to use when checking for updates.
-  choco_version: '0.10.14-beta-20190402'
+  choco_version: '0.10.15'
   choco_version_pr: '0.10.9' # Should be kept to the version available one year ago
   nupkg_cache_path: C:\packages
 
@@ -58,7 +58,7 @@ init:
 
 install:
 - ps: |
-    $chocoVersion = if (($Env.APPVEYOR_PULL_REQUEST_NUMBER -eq $null) -or ($ENV:APPVEYOR_PULL_REQUEST_NUMBER -eq '')) { $Env:choco_version } else { $Env:choco_version_pr }
+    $chocoVersion = if (($Env:APPVEYOR_PULL_REQUEST_NUMBER -eq $null) -or ($ENV:APPVEYOR_PULL_REQUEST_NUMBER -eq '')) { $Env:choco_version } else { $Env:choco_version_pr }
     if (!(Test-Path "$env:nupkg_cache_path")) { mkdir -Force "$env:nupkg_cache_path" }
     @{
       'chocolatey' = $chocoVersion
@@ -135,7 +135,7 @@ on_finish:
       'eventlogs.txt'
     )
     $paths | ? { Test-Path $_ } | % { Push-AppveyorArtifact $_ }
-# - ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
+#- ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
 
 notifications:
 - provider: Email
