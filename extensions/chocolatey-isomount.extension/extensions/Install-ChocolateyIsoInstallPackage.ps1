@@ -160,7 +160,7 @@ param(
                                      -FileType $fileType `
                                      -SilentArgs $silentArgs `
                                      -File $filePath `
-                                     -ValidExitCodes $validExitCodes `
+                                     -ValidExitCodes $validExitCodes
 
     Dismount-DiskImage -ImagePath $isoFile
 

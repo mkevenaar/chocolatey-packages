@@ -125,10 +125,6 @@ function Install-ChocolateyIsoPackage {
 .PARAMETER IsoCache
     OPTIONAL - Full path to a cache location. Defaults to `$env:Temp`.
 
-.PARAMETER NoCache
-    OPTIONAL - Disable the cache functionality. Defaults to `$false`. This option should
-    only be used in rare cases.
-
 .PARAMETER IgnoredArguments
     Allows splatting with arguments that do not apply. Do not use directly.
 
@@ -182,7 +178,6 @@ param(
     [alias("fileFullPath")][parameter(Mandatory=$false)][string] $file = '',
     [alias("fileFullPath64")][parameter(Mandatory=$false)][string] $file64 = '',
     [parameter(Mandatory=$false)][string] $isoCache = $env:TEMP,
-    [parameter(Mandatory=$false)][switch] $noCache = $false,
     [parameter(ValueFromRemainingArguments = $true)][Object[]] $ignoredArguments
 )
     # POSH3 is required for `Mount-DiskImage`
@@ -204,7 +199,7 @@ param(
                                      -Checksum $checksum `
                                      -ChecksumType $checksumType `
                                      -Options $options `
-                                     -ForceDownload $noCache
+                                     -GetOriginalFileName
     
     if (Get-ProcessorBits 64) {
         $forceX86 = $env:chocolateyForceX86
@@ -222,6 +217,6 @@ param(
                                         -FileType $fileType `
                                         -SilentArgs $silentArgs `
                                         -File $filePath `
-                                        -ValidExitCodes $validExitCodes `
+                                        -ValidExitCodes $validExitCodes
 
 }
