@@ -129,6 +129,9 @@ function Install-ChocolateyIsoPackage {
     OPTIONAL - Disable the cache functionality. Defaults to `$false`. This option should
     only be used in rare cases.
 
+.PARAMETER IgnoredArguments
+    Allows splatting with arguments that do not apply. Do not use directly.
+
 .EXAMPLE
     >
     $packageName= 'bob'
@@ -179,7 +182,8 @@ param(
     [alias("fileFullPath")][parameter(Mandatory=$false)][string] $file = '',
     [alias("fileFullPath64")][parameter(Mandatory=$false)][string] $file64 = '',
     [parameter(Mandatory=$false)][string] $isoCache = $env:TEMP,
-    [parameter(Mandatory=$false)][bool] $noCache = $false
+    [parameter(Mandatory=$false)][switch] $noCache = $false,
+    [parameter(ValueFromRemainingArguments = $true)][Object[]] $ignoredArguments
 )
     # POSH3 is required for `Mount-DiskImage`
     if ($PSVersionTable.PSVersion -lt (New-Object 'Version' 3,0)) {
@@ -187,20 +191,20 @@ param(
     }
 
     if (![System.IO.Directory]::Exists($isoCache)) { [System.IO.Directory]::CreateDirectory($isoCache) | Out-Null }
-    $downloadFileName = "$($packageName)Install.$fileType"
+    $downloadFileName = "$($packageName)Image.iso"
     if ($url.EndsWith(".iso")) {
         $downloadFileName = $url.Substring($url.LastIndexOf("/") + 1)
     }
 
-    $downloadFilePath = Join-Path $tempDir $downloadFileName
+    $downloadFilePath = Join-Path $isoCache $downloadFileName
 
     $isoPath = Get-ChocolateyWebFile -PackageName $packageName `
-                                      -FileFullPath $downloadFilePath `
-                                      -Url $url `
-                                      -Checksum $checksum `
-                                      -ChecksumType $checksumType `
-                                      -Options $options `
-                                      -ForceDownload $noCache
+                                     -FileFullPath $downloadFilePath `
+                                     -Url $url `
+                                     -Checksum $checksum `
+                                     -ChecksumType $checksumType `
+                                     -Options $options `
+                                     -ForceDownload $noCache
     
     if (Get-ProcessorBits 64) {
         $forceX86 = $env:chocolateyForceX86
