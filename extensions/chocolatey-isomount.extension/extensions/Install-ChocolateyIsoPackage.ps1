@@ -185,6 +185,8 @@ param(
         throw 'This function requires PowerShell 3 or higher'
     }
 
+    [string]$silentArgs = $silentArgs -join ' '
+
     if (![System.IO.Directory]::Exists($isoCache)) { [System.IO.Directory]::CreateDirectory($isoCache) | Out-Null }
     $downloadFileName = "$($packageName)Image.iso"
     if ($url.EndsWith(".iso")) {
@@ -201,22 +203,11 @@ param(
                                      -Options $options `
                                      -GetOriginalFileName
     
-    if (Get-ProcessorBits 64) {
-        $forceX86 = $env:chocolateyForceX86
-        if ($forceX86) {
-            Write-Debug "User specified '-x86' so forcing 32-bit"
-        } else {
-            if ($file64 -ne $null -and $file64 -ne '') {
-                $filePath = $file64
-            }
-        }
-    }
-
     Install-ChocolateyIsoInstallPackage -PackageName $packageName `
                                         -IsoFile $isoPath
                                         -FileType $fileType `
                                         -SilentArgs $silentArgs `
-                                        -File $filePath `
+                                        -File $file `
+                                        -File64 $file64 `
                                         -ValidExitCodes $validExitCodes
-
 }

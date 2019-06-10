@@ -127,8 +127,8 @@ param(
     [parameter(Mandatory=$false, Position=2)]
     [alias("installerType","installType")][string] $fileType = 'exe',
     [parameter(Mandatory=$false, Position=3)][string[]] $silentArgs = '',
-    [alias("fileFullPath")][parameter(Mandatory=$false, Position=4)][string] $file,
-    [alias("fileFullPath64")][parameter(Mandatory=$false)][string] $file64,
+    [alias("fileFullPath")][parameter(Mandatory=$false, Position=4)][string] $file = '',
+    [alias("fileFullPath64")][parameter(Mandatory=$false)][string] $file64 = '',
     [parameter(Mandatory=$false)] $validExitCodes = @(0),
     [parameter(ValueFromRemainingArguments = $true)][Object[]] $ignoredArguments
 )
@@ -136,30 +136,26 @@ param(
     if ($PSVersionTable.PSVersion -lt (New-Object 'Version' 3,0)) {
         throw 'This function requires PowerShell 3 or higher'
     }
-    Mount-DiskImage -ImagePath $isoFile
 
-    #Get the drive letter where iso is mounted
-    $driveLetter = (Get-DiskImage $isoFile | Get-Volume).DriveLetter
-    
-    $isoDrive = $driveLetter + ":"
+    [string]$silentArgs = $silentArgs -join ' '
+
+    $mountResult = Mount-DiskImage -ImagePath $isoFile -StorageType ISO -PassThru
+    $isoVolume = $mountResult | Get-Volume
+    $isoDrive = "$($isoVolume.DriveLetter):"
 
     if (Get-ProcessorBits 64) {
-        $forceX86 = $env:chocolateyForceX86
-        if ($forceX86) {
-            Write-Debug "User specified '-x86' so forcing 32-bit"
-        } else {
-            if ($file64 -ne $null -and $file64 -ne '') {
-                $filePath = $file64
-            }
+        if ($file64 -ne $null -and $file64 -ne '') {
+            $file64 = "$($isoDrive)\$file64"
         }
     }
 
-    $filePath = Join-Path $isoDrive $filePath
+    $file = "$($isoDrive)\$file"
 
     Install-ChocolateyInstallPackage -PackageName $packageName `
                                      -FileType $fileType `
                                      -SilentArgs $silentArgs `
-                                     -File $filePath `
+                                     -File $file `
+                                     -File64 $file64 `
                                      -ValidExitCodes $validExitCodes
 
     Dismount-DiskImage -ImagePath $isoFile
