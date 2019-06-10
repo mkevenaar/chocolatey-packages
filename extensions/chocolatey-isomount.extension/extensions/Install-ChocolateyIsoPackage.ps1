@@ -2,6 +2,7 @@ function Install-ChocolateyIsoPackage {
 <#
 .SYNOPSIS
     **NOTE:** Administrative Access Required.
+
     Installs software into "Programs and Features" based on a remote ISO file download. 
     Use Install-ChocolateyIsoInstallPackage when using a local or embedded file.
 
@@ -13,6 +14,7 @@ function Install-ChocolateyIsoPackage {
 
 .NOTES
     This command will assert UAC/Admin privileges on the machine.
+    
     It will download the ISO file to the 'IsoCache' folder, if it is not already there.
     This will prevent downloading the same ISO file over and over again. This function can be disabled
     on a per package base by setting the 'NoCache' parameter to $true
@@ -200,13 +202,6 @@ param(
                                       -Options $options `
                                       -ForceDownload $noCache
     
-    Mount-DiskImage -ImagePath $isoPath
-
-    #Get the drive letter where iso is mounted
-    $driveLetter = (Get-DiskImage $iso | Get-Volume).DriveLetter
-    
-    $isoDrive = $driveLetter + ":"
-
     if (Get-ProcessorBits 64) {
         $forceX86 = $env:chocolateyForceX86
         if ($forceX86) {
@@ -218,13 +213,11 @@ param(
         }
     }
 
-    $filePath = Join-Path $isoDrive $filePath
+    Install-ChocolateyIsoInstallPackage -PackageName $packageName `
+                                        -IsoFile $isoPath
+                                        -FileType $fileType `
+                                        -SilentArgs $silentArgs `
+                                        -File $filePath `
+                                        -ValidExitCodes $validExitCodes `
 
-    Install-ChocolateyInstallPackage -PackageName $packageName `
-                                     -FileType $fileType `
-                                     -SilentArgs $silentArgs `
-                                     -File $filePath `
-                                     -ValidExitCodes $validExitCodes `
-
-    Dismount-DiskImage -ImagePath $isoPath
 }
