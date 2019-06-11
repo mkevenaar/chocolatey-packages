@@ -39,7 +39,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <projectUrl>https://github.com/mkevenaar/chocolatey-packages</projectUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Maurice Kevenaar</copyright>
-    <tags>chocolatey extension iso mount isomount admin</tags>
+    <tags>chocolatey unofficial extension iso mount isomount admin</tags>
     <releaseNotes>https://github.com/mkevenaar/chocolatey-packages/tree/master/extensions/chocolatey-isomount.extension/CHANGELOG.md</releaseNotes>
     <licenseUrl>https://github.com/mkevenaar/chocolatey-packages/blob/master/LICENSE.md</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
