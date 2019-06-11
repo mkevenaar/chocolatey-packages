@@ -1,9 +1,9 @@
-function Install-ChocolateyIsoInstallPackage {
+﻿function Install-ChocolateyIsoInstallPackage {
 <#
 .SYNOPSIS
     **NOTE:** Administrative Access Required.
-    
-    Installs software into "Programs and Features" based on a remote ISO file download. 
+
+    Installs software into "Programs and Features" based on a remote ISO file download.
     Use Install-ChocolateyIsoPackage when the ISO needs to be downloaded first.
 
 .DESCRIPTION
@@ -21,14 +21,14 @@ function Install-ChocolateyIsoInstallPackage {
     official distribution points.
 
     This is a wrapper around several existing Chocolatey commandlets.
-    
+
     Chocolatey is copyrighted by its rightful owners. See: https://chocolatey.org
 
 .INPUTS
     None
 
 .OUTPUTS
-    None    
+    None
 
 .PARAMETER PackageName
     The name of the package - while this is an arbitrary value, it's
@@ -74,7 +74,7 @@ function Install-ChocolateyIsoInstallPackage {
     `$downloadedfileFullPath = "c:\path\setup.exe"` and `$silentArgs = "/S"`.
 
 .PARAMETER File
-    The locatation of the 32bit file inside the ISO. 
+    The locatation of the 32bit file inside the ISO.
 
 .PARAMETER File64
     The locatation of the 64bit file inside the ISO.
@@ -82,8 +82,12 @@ function Install-ChocolateyIsoInstallPackage {
 .PARAMETER ValidExitCodes
     Array of exit codes indicating success. Defaults to `@(0)`.
 
+.PARAMETER UseOnlyPackageSilentArguments
+    Do not allow choco to provide/merge additional silent arguments and
+    only use the ones available with the package. Available in 0.9.10+.
+
 .PARAMETER IsoFile
-    The location of the ISO file. 
+    The location of the ISO file.
     If embedding in the package, you can get it to the path with
     `"$(Split-Path -parent $MyInvocation.MyCommand.Definition)\\ISO_FILE"`
 
@@ -130,6 +134,8 @@ param(
     [alias("fileFullPath")][parameter(Mandatory=$false, Position=4)][string] $file = '',
     [alias("fileFullPath64")][parameter(Mandatory=$false)][string] $file64 = '',
     [parameter(Mandatory=$false)] $validExitCodes = @(0),
+    [parameter(Mandatory=$false)]
+    [alias("useOnlyPackageSilentArgs")][switch] $useOnlyPackageSilentArguments = $false,
     [parameter(ValueFromRemainingArguments = $true)][Object[]] $ignoredArguments
 )
     # POSH3 is required for `Mount-DiskImage`
@@ -138,6 +144,8 @@ param(
     }
 
     [string]$silentArgs = $silentArgs -join ' '
+
+    Write-FunctionCallLogMessage -Invocation $MyInvocation -Parameters $PSBoundParameters
 
     $mountResult = Mount-DiskImage -ImagePath $isoFile -StorageType ISO -PassThru
     $isoVolume = $mountResult | Get-Volume
@@ -156,7 +164,8 @@ param(
                                      -SilentArgs $silentArgs `
                                      -File $file `
                                      -File64 $file64 `
-                                     -ValidExitCodes $validExitCodes
+                                     -ValidExitCodes $validExitCodes `
+                                     -UseOnlyPackageSilentArguments:$useOnlyPackageSilentArguments
 
     Dismount-DiskImage -ImagePath $isoFile
 

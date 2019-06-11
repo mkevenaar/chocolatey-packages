@@ -1,9 +1,9 @@
-function Install-ChocolateyIsoPackage {
+﻿function Install-ChocolateyIsoPackage {
 <#
 .SYNOPSIS
     **NOTE:** Administrative Access Required.
 
-    Installs software into "Programs and Features" based on a remote ISO file download. 
+    Installs software into "Programs and Features" based on a remote ISO file download.
     Use Install-ChocolateyIsoInstallPackage when using a local or embedded file.
 
 .DESCRIPTION
@@ -14,20 +14,20 @@ function Install-ChocolateyIsoPackage {
 
 .NOTES
     This command will assert UAC/Admin privileges on the machine.
-    
+
     It will download the ISO file to the 'IsoCache' folder, if it is not already there.
     This will prevent downloading the same ISO file over and over again. This function can be disabled
     on a per package base by setting the 'NoCache' parameter to $true
 
     This is a wrapper around several existing Chocolatey commandlets.
-    
+
     Chocolatey is copyrighted by its rightful owners. See: https://chocolatey.org
 
 .INPUTS
     None
 
 .OUTPUTS
-    None    
+    None
 
 .PARAMETER PackageName
     The name of the package - while this is an arbitrary value, it's
@@ -73,7 +73,7 @@ function Install-ChocolateyIsoPackage {
     `$downloadedfileFullPath = "c:\path\setup.exe"` and `$silentArgs = "/S"`.
 
 .PARAMETER Url
-    This is the url to download the resource from. 
+    This is the url to download the resource from.
 
     Prefer HTTPS when available. Can be HTTP, FTP, or File URIs.
 
@@ -100,7 +100,7 @@ function Install-ChocolateyIsoPackage {
     **NOTE:** To determine checksums, you can get that from the original
     site if provided. You can also use the [checksum tool available on
     the community feed](https://chocolatey.org/packages/checksum) (`choco install checksum`)
-    zand use it e.g. `checksum -t sha256 -f path\to\file`. Ensure you
+    and use it e.g. `checksum -t sha256 -f path\to\file`. Ensure you
     provide checksums for all remote resources used.
 
 .PARAMETER ChecksumType
@@ -117,10 +117,14 @@ function Install-ChocolateyIsoPackage {
     OPTIONAL - Specify custom headers. Available in 0.9.10+.
 
 .PARAMETER File
-    The locatation of the 32bit file inside the ISO. 
+    The locatation of the 32bit file inside the ISO.
 
 .PARAMETER File64
     The locatation of the 64bit file inside the ISO.
+
+.PARAMETER UseOnlyPackageSilentArguments
+    Do not allow choco to provide/merge additional silent arguments and only
+    use the ones available with the package. Available in 0.9.10+.
 
 .PARAMETER IsoCache
     OPTIONAL - Full path to a cache location. Defaults to `$env:Temp`.
@@ -162,7 +166,7 @@ function Install-ChocolateyIsoPackage {
     Get-UninstallRegistryKey
 
 .LINK
-    Install-ChocolateyZipPackage    
+    Install-ChocolateyZipPackage
 #>
 
 param(
@@ -177,6 +181,8 @@ param(
     [parameter(Mandatory=$false)][hashtable] $options = @{Headers=@{}},
     [alias("fileFullPath")][parameter(Mandatory=$false)][string] $file = '',
     [alias("fileFullPath64")][parameter(Mandatory=$false)][string] $file64 = '',
+    [parameter(Mandatory=$false)]
+    [alias("useOnlyPackageSilentArgs")][switch] $useOnlyPackageSilentArguments = $false,
     [parameter(Mandatory=$false)][string] $isoCache = $env:TEMP,
     [parameter(ValueFromRemainingArguments = $true)][Object[]] $ignoredArguments
 )
@@ -186,6 +192,8 @@ param(
     }
 
     [string]$silentArgs = $silentArgs -join ' '
+
+    Write-FunctionCallLogMessage -Invocation $MyInvocation -Parameters $PSBoundParameters
 
     if (![System.IO.Directory]::Exists($isoCache)) { [System.IO.Directory]::CreateDirectory($isoCache) | Out-Null }
     $downloadFileName = "$($packageName)Image.iso"
@@ -202,12 +210,13 @@ param(
                                      -ChecksumType $checksumType `
                                      -Options $options `
                                      -GetOriginalFileName
-    
+
     Install-ChocolateyIsoInstallPackage -PackageName $packageName `
-                                        -IsoFile $isoPath
+                                        -IsoFile $isoPath `
                                         -FileType $fileType `
                                         -SilentArgs $silentArgs `
                                         -File $file `
                                         -File64 $file64 `
-                                        -ValidExitCodes $validExitCodes
+                                        -ValidExitCodes $validExitCodes `
+                                        -UseOnlyPackageSilentArguments:$useOnlyPackageSilentArguments
 }
