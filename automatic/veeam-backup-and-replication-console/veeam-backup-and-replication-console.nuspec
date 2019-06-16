@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>0.0</version>
+    <version>9.5.4.2753</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Maurice Kevenaar</owners>
     <!-- ============================== -->
@@ -48,9 +48,9 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <docsUrl>https://helpcenter.veeam.com/docs/backup/vsphere/overview.html</docsUrl>
     <mailingListUrl>https://forums.veeam.com/</mailingListUrl>
     <summary>Veeam Backup &amp; Replication console</summary>
-    <description>Console for Veeam Backup &amp; Replication.
+    <description><![CDATA[Console for Veeam Backup & Replication.
 
-Veeam® Backup &amp; Replication™ is a backup solution developed for VMware vSphere and Microsoft Hyper-V virtual environments. Veeam Backup &amp; Replication provides a set of features for performing data protection and disaster recovery tasks.
+Veeam® Backup & Replication™ is a backup solution developed for VMware vSphere and Microsoft Hyper-V virtual environments. Veeam Backup & Replication provides a set of features for performing data protection and disaster recovery tasks.
 
 ### Package Parameters
 The package accepts the following optional parameters:
@@ -60,12 +60,13 @@ Example: `choco install veeam-explorer-for-ad --params "/isoCache:c:\MyFolder"`
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.</description>
+let them know the package is no longer updating correctly.
+]]></description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
     <dependencies>
-      <dependency id="veeam-backup-and-replication-iso" version="[0.0]" />
+      <dependency id="veeam-backup-and-replication-iso" version="[9.5.4.2753]" />
       <dependency id="chocolatey-isomount.extension" version="1.0" />
       <dependency id="DotNet4.6.1" />
       <dependency id="SQL2014.SMO" />

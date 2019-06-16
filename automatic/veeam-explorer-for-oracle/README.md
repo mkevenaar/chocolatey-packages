@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@0aa90b9a3e8cae019512dcfbda714fb841510b0a/icons/veeam-explorer-for-oracle.png" width="48" height="48"/> [veeam-explorer-for-oracle](https://chocolatey.org/packages/veeam-explorer-for-oracle)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@81eadd12de9d8a24796945af00e35f86ebc48d08/icons/veeam-explorer-for-oracle.png" width="48" height="48"/> [veeam-explorer-for-oracle](https://chocolatey.org/packages/veeam-explorer-for-oracle)
 
 Recovery tool for Oracle
 

@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@8981e994480a3fe0411cba996a271dd6a74c4416/icons/veeam-explorer-for-microsoft-sql-server.png" width="48" height="48"/> [veeam-explorer-for-microsoft-sql-server](https://chocolatey.org/packages/veeam-explorer-for-microsoft-sql-server)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@b3e4c2b4dd49738c36e16499fd75c396a85315b6/icons/veeam-explorer-for-microsoft-sql-server.png" width="48" height="48"/> [veeam-explorer-for-microsoft-sql-server](https://chocolatey.org/packages/veeam-explorer-for-microsoft-sql-server)
 
 Recovery tool for Microsoft SQL Server
 

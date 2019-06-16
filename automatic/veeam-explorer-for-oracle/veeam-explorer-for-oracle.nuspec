@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>0.0</version>
+    <version>9.5.4.2753</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Maurice Kevenaar</owners>
     <!-- ============================== -->
@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Veeam Software AG</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://www.veeam.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@0aa90b9a3e8cae019512dcfbda714fb841510b0a/icons/veeam-explorer-for-oracle.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@81eadd12de9d8a24796945af00e35f86ebc48d08/icons/veeam-explorer-for-oracle.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Veeam Software AG</copyright>
     <tags>veeam-explorer-for-oracle veeam explorer oracle admin</tags>
@@ -48,19 +48,20 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <docsUrl>https://www.veeam.com/oracle-backup-recovery-explorer.html</docsUrl>
     <mailingListUrl>https://forums.veeam.com/</mailingListUrl>
     <summary>Veeam Backup &amp; Replication explorer for Oracle</summary>
-    <description>Recovery tool for Oracle
+    <description><![CDATA[Recovery tool for Oracle
 
 Veeam® Explorer™ for Oracle delivers low recovery time objectives (RTOs) and recovery point objectives (RPOs) with agentless transaction log backup and transaction-level recovery of Oracle databases — so you can restore your Oracle database to a precise point in time, even to a specific database transaction.
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.</description>
+let them know the package is no longer updating correctly.
+]]></description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
     <dependencies>
-      <dependency id="veeam-backup-and-replication-iso" version="[0.0]" />
-      <dependency id="veeam-backup-and-replication-console" version="[0.0]" />
+      <dependency id="veeam-backup-and-replication-iso" version="[9.5.4.2753]" />
+      <dependency id="veeam-backup-and-replication-console" version="[9.5.4.2753]" />
       <dependency id="chocolatey-isomount.extension" version="1.0" />
     </dependencies>
 

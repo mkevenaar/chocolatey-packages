@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>0.0</version>
+    <version>9.5.4.2753</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Maurice Kevenaar</owners>
     <!-- ============================== -->
@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Veeam Software AG</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://www.veeam.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@8981e994480a3fe0411cba996a271dd6a74c4416/icons/veeam-explorer-for-microsoft-sql-server.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@b3e4c2b4dd49738c36e16499fd75c396a85315b6/icons/veeam-explorer-for-microsoft-sql-server.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Veeam Software AG</copyright>
     <tags>veeam-explorer-for-microsoft-sql-server veeam explorer sqlserver sql admin</tags>
@@ -48,19 +48,20 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <docsUrl>https://www.veeam.com/microsoft-sql-server-explorer.html</docsUrl>
     <mailingListUrl>https://forums.veeam.com/</mailingListUrl>
     <summary>Veeam Backup &amp; Replication explorer for SQL Server</summary>
-    <description>Recovery tool for Microsoft SQL Server
+    <description><![CDATA[Recovery tool for Microsoft SQL Server
 
-Veeam® Explorer™ for Microsoft SQL Server gives you fast, transaction-level recovery of SQL databases. With agentless transaction log backup and replay1, you can quickly perform point-in-time restores of your Microsoft SQL Server databases — down to an individual transaction — achieving Recovery Time Objectives (RTOs) and Recovery Point Objectives (RPOs) of &lt; 15 minutes.
+Veeam® Explorer™ for Microsoft SQL Server gives you fast, transaction-level recovery of SQL databases. With agentless transaction log backup and replay1, you can quickly perform point-in-time restores of your Microsoft SQL Server databases — down to an individual transaction — achieving Recovery Time Objectives (RTOs) and Recovery Point Objectives (RPOs) of < 15 minutes.
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.</description>
+let them know the package is no longer updating correctly.
+]]></description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
     <dependencies>
-      <dependency id="veeam-backup-and-replication-iso" version="[0.0]" />
-      <dependency id="veeam-backup-and-replication-console" version="[0.0]" />
+      <dependency id="veeam-backup-and-replication-iso" version="[9.5.4.2753]" />
+      <dependency id="veeam-backup-and-replication-console" version="[9.5.4.2753]" />
       <dependency id="chocolatey-isomount.extension" version="1.0" />
     </dependencies>
 

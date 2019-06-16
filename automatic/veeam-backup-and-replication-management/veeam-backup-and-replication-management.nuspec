@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>0.0</version>
+    <version>9.5.4.2753</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Maurice Kevenaar</owners>
     <!-- ============================== -->
@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Veeam Software AG</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://www.veeam.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@fe8689d5f3e441b1a91987d46091d6e17cc8cda8/icons/veeam-backup-and-replication-management.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@9c945e67b686ffd19927bdf96fcdf4f264a6dc41/icons/veeam-backup-and-replication-management.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Veeam Software AG</copyright>
     <tags>veeam-backup-and-replication-console veeam console admin</tags>
@@ -48,13 +48,13 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <docsUrl>https://helpcenter.veeam.com/docs/backup/vsphere/overview.html</docsUrl>
     <mailingListUrl>https://forums.veeam.com/</mailingListUrl>
     <summary>Veeam Backup &amp; Replication management console and explorers</summary>
-    <description>Console for Veeam Backup &amp; Replication.
+    <description><![CDATA[Console for Veeam Backup & Replication.
 
-Veeam® Backup &amp; Replication™ is a backup solution developed for VMware vSphere and Microsoft Hyper-V virtual environments. Veeam Backup &amp; Replication provides a set of features for performing data protection and disaster recovery tasks.
-	
+Veeam® Backup & Replication™ is a backup solution developed for VMware vSphere and Microsoft Hyper-V virtual environments. Veeam Backup & Replication provides a set of features for performing data protection and disaster recovery tasks.
+
 This package is a meta package. It will install the following software on your computer:
 
-- [Veeam Backup &amp; Replication Console](https://chocolatey.org/packages/veeam-backup-and-replication-console)
+- [Veeam Backup & Replication Console](https://chocolatey.org/packages/veeam-backup-and-replication-console)
 - [Veeam Explorer for Microsoft Active Directory](https://chocolatey.org/packages/veeam-explorer-for-microsoft-active-directory)
 - [Veeam Explorer for Microsoft Exchange](https://chocolatey.org/packages/veeam-explorer-for-microsoft-exchange)
 - [Veeam Explorer for Microsoft SharePoint](https://chocolatey.org/packages/veeam-explorer-for-microsoft-sharepoint)
@@ -63,17 +63,18 @@ This package is a meta package. It will install the following software on your c
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.</description>
+let them know the package is no longer updating correctly.
+]]></description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
     <dependencies>
-      <dependency id="veeam-backup-and-replication-console" version="[0.0]" />
-      <dependency id="veeam-explorer-for-microsoft-active-directory" version="[0.0]" />
-      <dependency id="veeam-explorer-for-microsoft-exchange" version="[0.0]" />
-      <dependency id="veeam-explorer-for-microsoft-sharepoint" version="[0.0]" />
-      <dependency id="veeam-explorer-for-microsoft-sql-server" version="[0.0]" />
-      <dependency id="veeam-explorer-for-oracle" version="[0.0]" />
+      <dependency id="veeam-backup-and-replication-console" version="[9.5.4.2753]" />
+      <dependency id="veeam-explorer-for-microsoft-active-directory" version="[9.5.4.2753]" />
+      <dependency id="veeam-explorer-for-microsoft-exchange" version="[9.5.4.2753]" />
+      <dependency id="veeam-explorer-for-microsoft-sharepoint" version="[9.5.4.2753]" />
+      <dependency id="veeam-explorer-for-microsoft-sql-server" version="[9.5.4.2753]" />
+      <dependency id="veeam-explorer-for-oracle" version="[9.5.4.2753]" />
     </dependencies>
 
     <!--<provides>NOT YET IMPLEMENTED</provides>-->

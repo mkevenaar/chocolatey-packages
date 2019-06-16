@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@fe8689d5f3e441b1a91987d46091d6e17cc8cda8/icons/veeam-backup-and-replication-management.png" width="48" height="48"/> [veeam-backup-and-replication-management](https://chocolatey.org/packages/veeam-backup-and-replication-management)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@9c945e67b686ffd19927bdf96fcdf4f264a6dc41/icons/veeam-backup-and-replication-management.png" width="48" height="48"/> [veeam-backup-and-replication-management](https://chocolatey.org/packages/veeam-backup-and-replication-management)
 
 Console for Veeam Backup & Replication.
 
