@@ -37,14 +37,14 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Veeam Software AG</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://www.veeam.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@29a67d5d4ac86374e36a35640ef7f869474bd1df/icons/veeam-backup-and-replication-console.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@fe8689d5f3e441b1a91987d46091d6e17cc8cda8/icons/veeam-backup-and-replication-management.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Veeam Software AG</copyright>
     <tags>veeam-backup-and-replication-console veeam console admin</tags>
     <releaseNotes>https://www.veeam.com/kb2926</releaseNotes>
     <licenseUrl>https://www.veeam.com/eula.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/veeam-backup-and-replication-console</packageSourceUrl>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/veeam-backup-and-replication-management</packageSourceUrl>
     <docsUrl>https://helpcenter.veeam.com/docs/backup/vsphere/overview.html</docsUrl>
     <mailingListUrl>https://forums.veeam.com/</mailingListUrl>
     <summary>Veeam Backup &amp; Replication management console and explorers</summary>
