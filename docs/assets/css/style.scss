@@ -14,3 +14,8 @@
 aside#sidebar {
   width: 250px;
 }
+
+.result li.active a {
+  color: lightgray;
+  cursor: default;
+}

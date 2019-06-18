@@ -1,0 +1,9 @@
+toc:
+  - title: chocolatey-isomount.extension
+    subfolderitems:
+      - page: Documentation
+        url: /chocolatey-isomount.extension/Index.html
+      - page: Install-ChocolateyIsoInstallPackage
+        url: /chocolatey-isomount.extension/HelpersInstallChocolateyIsoInstallPackage.html
+      - page: Install-ChocolateyIsoPackage
+        url: /chocolatey-isomount.extension/HelpersInstallChocolateyIsoPackage.html
