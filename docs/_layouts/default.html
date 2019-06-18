@@ -47,12 +47,22 @@
               .tar.gz file
             </a>
           {% endif %}
+            <ul>
+                <li>
+                    <a href="{{ '/' | absolute_url }}">Home</a>
+                </li>
+                <li>
+                    <strong>Helpers</strong>
+                </li>
+                <li>
+                    <a href="{{ '/Install-ChocolateyIsoInstallPackage.html' | relative_url }}">Install-ChocolateyIsoInstallPackage</a>
+                </li>
+                <li>
+                    <a href="{{ '/Install-ChocolateyIsoPackage.html' | relative_url }}">Install-ChocolateyIsoPackage</a>
+                </li>
+            </ul>
 
-          {% if site.github.is_project_page %}
-            <p class="repo-owner"><a href="{{ site.github.repository_url }}">{{ site.github.repository_name }}</a> is maintained by <a href="{{ site.github.owner_url }}">{{ site.github.owner_name }}</a>.</p>
-          {% endif %}
-
-          <a href="https://www.patreon.com/bePatron?u=20882165" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+            <a href="https://www.patreon.com/bePatron?u=20882165" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
 
         </aside>
       </div>
