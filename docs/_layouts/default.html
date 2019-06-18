@@ -39,7 +39,7 @@
         <aside id="sidebar">
             <ul class="navigation">
                 <li>
-                    <a href="/" >Home</a>
+                    <a href="{{ '/' | relative_url }}'" >Home</a>
                 </li>
             </ul>
             {% for item in site.data.navigation.toc %}
@@ -47,7 +47,7 @@
             <ul class="navigation">
             {% for entry in item.subfolderitems %}
                 <li class="{% if item.url == page.url %}active{% endif %}">
-                    <a href="{{ entry.url }}">{{ entry.page }}</a>
+                    <a href="{{ entry.url | relative_url }}">{{ entry.page }}</a>
                 </li>
             {% endfor %}
             </ul>
