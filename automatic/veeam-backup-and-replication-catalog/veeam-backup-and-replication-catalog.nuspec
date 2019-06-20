@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>0.0</version>
+    <version>9.5.4.2753</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Maurice Kevenaar</owners>
     <!-- ============================== -->
@@ -48,12 +48,12 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <docsUrl>https://helpcenter.veeam.com/docs/backup/vsphere/overview.html</docsUrl>
     <mailingListUrl>https://forums.veeam.com/</mailingListUrl>
     <summary>Veeam Backup &amp; Replication Catalog</summary>
-    <description>Veeam Backup Catalog is a feature that stands for VM guest OS file indexing. Veeam Backup Catalog comprises Veeam Guest Catalog services that run on the following servers in the backup infrastructure: Veeam backup server and Veeam Backup Enterprise Manager server.
+    <description><![CDATA[Veeam Backup Catalog is a feature that stands for VM guest OS file indexing. Veeam Backup Catalog comprises Veeam Guest Catalog services that run on the following servers in the backup infrastructure: Veeam backup server and Veeam Backup Enterprise Manager server.
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
 
 ### Package Parameters
 The package accepts the following optional parameters:
-* `/catalogLocation` - Specifies a path to the catalog folder where index files must be stored. By default, Veeam Backup &amp; Replication creates the VBRCatalog folder on a volume with the maximum amount of free space
+* `/catalogLocation` - Specifies a path to the catalog folder where index files must be stored. By default, Veeam Backup & Replication creates the VBRCatalog folder on a volume with the maximum amount of free space
 * `/username` - Specifies a user account under which the Veeam Guest Catalog Service will run. If you do not specify this parameter, the Veeam Guest Catalog Service will run under the Local System account.
 * `/password` - This parameter must be used if you have specified the /username parameter. Specifies a password for the account under which the Veeam Guest Catalog Service will run.
 * `/port` - Specifies a TCP port that will be used by the Veeam Guest Catalog Service. By default, port number 9393 is used.
@@ -63,7 +63,8 @@ Example: `choco install veeam-backup-and-replication-catalog --params "/port:900
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.</description>
+let them know the package is no longer updating correctly.
+]]></description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
