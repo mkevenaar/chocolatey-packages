@@ -27,10 +27,10 @@ if ($pp.port) {
 }
 
 if ($pp.username) {
-  $computername = net user | Where-Object { $_ -match "\\\\(.+)" } | ForEach-Object { $Matches[1] }
+  $computername = $env:computername
   $fulluser = $pp.username
-  if (-not $pp.username -contains "\") {
-    $fulluser = "$computername\$pp.username"
+  if ($pp.username -notcontains "\") {
+    $fulluser = "$($computername)\$($pp.username)"
   }
   if(-not $pp.password) {
     throw 'Password is required when setting a username...'
@@ -39,14 +39,13 @@ if ($pp.username) {
     if ($pp.username -contains "\") {
       throw "Only local users can be created"
     }
-
-    # This is POSH3 or higher only.
-    if (Get-LocalUser -Name $pp.username -ErrorAction SilentlyContinue) {
+    
+    if (Get-WmiObject -Class Win32_UserAccount | Where-Object {$_.Name -eq $pp.username}) {
       Write-Warning "The local user already exists, not creating again"
     } else {
-      New-LocalUser -Name $pp.username -Password $pp.password -AccountNeverExpires -UserMayNotChangePassword -Confirm:$false
-      Add-LocalGroupMember -Group "Administrators" -Member $pp.username -Confirm:$false
-    }
+      net user $pp.username $pp.password /add /PASSWORDCHG:NO 
+      wmic UserAccount where ("Name='{0}'" -f $pp.username) set PasswordExpires=False
+      net localgroup "Administrators" $pp.username /add    }
   }
   $silentArgs += " VBRC_SERVICE_USER=`"$($fulluser)`" VBRC_SERVICE_PASSWORD=`"$($pp.password)`""
 }
