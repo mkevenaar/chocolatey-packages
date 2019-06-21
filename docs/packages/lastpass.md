@@ -1,0 +1,25 @@
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@0411adaf8f882b9f2afe83ed6fa048135378742c/icons/lastpass.png" width="32" height="32"/> [![LastPass](https://img.shields.io/chocolatey/v/lastpass.svg?label=LastPass)](https://chocolatey.org/packages/lastpass)
+
+## Usage
+To install LastPass, run the following command from the command line or from PowerShell:
+```powershell
+choco install lastpass
+```
+
+To upgrade LastPass, run the following command from the command line or from PowerShell:
+```powershell
+choco upgrade lastpass
+```
+
+To uninstall LastPass, run the following command from the command line or from PowerShell:
+```powershell
+choco uninstall lastpass
+```
+
+## Description
+LastPass is a password manager that makes web browsing easier and more secure.
+
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know the package is no longer updating correctly.
+

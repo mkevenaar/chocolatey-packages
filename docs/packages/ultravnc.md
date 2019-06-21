@@ -1,0 +1,26 @@
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@793b0f9445b2258a192e23bba3d482e7df9db46b/icons/ultravnc.png" width="32" height="32"/> [![UltraVNC](https://img.shields.io/chocolatey/v/ultravnc.svg?label=UltraVNC)](https://chocolatey.org/packages/ultravnc)
+
+## Usage
+To install UltraVNC, run the following command from the command line or from PowerShell:
+```powershell
+choco install ultravnc
+```
+
+To upgrade UltraVNC, run the following command from the command line or from PowerShell:
+```powershell
+choco upgrade ultravnc
+```
+
+To uninstall UltraVNC, run the following command from the command line or from PowerShell:
+```powershell
+choco uninstall ultravnc
+```
+
+## Description
+
+UltraVNC is an open source application that uses the VNC protocol to control another computer remotely over a network connection.  UltraVNC allows the use of a remote computer as if the user were in front of it. This is achieved by sending mouse movements and key-presses to the remote computer, and replicating the remote computer's display (subject to differences in resolution) locally in real time. UltraVNC bears a strong resemblance to RealVNC Free Edition. However, in addition to remote control it adds various features, such as an encryption plugin to secure the client/server connection. It also supports file transfers, chat functionality and various authentication methods. The two computers must be able to communicate across a network, such as a local subnet, internal network, or the Internet.
+
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know the package is no longer updating correctly.
+

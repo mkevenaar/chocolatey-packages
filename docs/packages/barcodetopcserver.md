@@ -1,0 +1,37 @@
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@0be2256749eb0618e325047a83c26f63ec96aeb9/icons/barcode-to-pc-server.png" width="32" height="32"/> [![Barcode to PC server](https://img.shields.io/chocolatey/v/barcode-to-pc-server.svg?label=Barcode to PC server)](https://chocolatey.org/packages/barcode-to-pc-server)
+
+## Usage
+To install Barcode to PC server, run the following command from the command line or from PowerShell:
+```powershell
+choco install barcode-to-pc-server
+```
+
+To upgrade Barcode to PC server, run the following command from the command line or from PowerShell:
+```powershell
+choco upgrade barcode-to-pc-server
+```
+
+To uninstall Barcode to PC server, run the following command from the command line or from PowerShell:
+```powershell
+choco uninstall barcode-to-pc-server
+```
+
+## Description
+#Features
+
+##Real-time key strokes
+Thanks to the keyboard emulation, your smartphone sends keystrokes directly to your computer, no copy/paste required!
+
+##Wi-Fi ready
+You only need to connect your smartphone to the same network of your computer (LAN)
+
+##Save to file
+You can append your scannings to a file in real-time. You can also export the scans all at once in a CSV file
+
+##QR Codes
+Almost any barcode format is supported, see the full list [here](https://github.com/phonegap/phonegap-plugin-barcodescanner#using-the-plugin)
+
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know the package is no longer updating correctly.
+

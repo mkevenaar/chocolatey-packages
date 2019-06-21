@@ -9,4 +9,236 @@
         url: /chocolatey-isomount.extension/HelpersInstallChocolateyIsoInstallPackage.html
       - page: Install-ChocolateyIsoPackage
         url: /chocolatey-isomount.extension/HelpersInstallChocolateyIsoPackage.html
+  - title: Packages
+    subfolderitems:
+      - page: AIDA64 Business
+        url: /packages/aida64business.html
+      - page: AIDA64 Engineer
+        url: /packages/aida64engineer.html
+      - page: AIDA64 Extreme
+        url: /packages/aida64extreme.html
+      - page: AIDA64 Network Audit
+        url: /packages/aida64networkaudit.html
+      - page: AlternateStreamView
+        url: /packages/alternatestreamview.html
+      - page: AnyRail6
+        url: /packages/anyrail6.html
+      - page: AppVeyor Server (Community Edition)
+        url: /packages/appveyorserver.html
+      - page: Bacula
+        url: /packages/bacula.html
+      - page: Barcode to PC server
+        url: /packages/barcodetopcserver.html
+      - page: Bitvise SSH Server
+        url: /packages/bitvisesshserver.html
+      - page: Book Collector
+        url: /packages/bookcollector.html
+      - page: ChromeCacheView
+        url: /packages/chromecacheview.html
+      - page: JetBrains Clion
+        url: /packages/clionide.html
+      - page: Comic Collector
+        url: /packages/comiccollector.html
+      - page: DevManView
+        url: /packages/devmanview.html
+      - page: Driver Booster
+        url: /packages/driverbooster.html
+      - page: Duplicate File Finder
+        url: /packages/duplicatefilefinder.html
+      - page: DYMO Connect
+        url: /packages/dymoconnect.html
+      - page: DYMO Label
+        url: /packages/dymolabel.html
+      - page: ExifTool
+        url: /packages/exiftool.html
+      - page: FileZilla Server
+        url: /packages/filezilla.server.html
+      - page: Firefox Developer Edition
+        url: /packages/firefox.html
+      - page: Firefox Nightly
+        url: /packages/firefoxnightly.html
+      - page: Game Collector
+        url: /packages/gamecollector.html
+      - page: JetBrains GoLand
+        url: /packages/goland.html
+      - page: Intel SSD Toolbox
+        url: /packages/intel.ssd.toolbox.html
+      - page: JetBrains IntelliJ IDEA (Educational)
+        url: /packages/intellijideaedu.html
+      - page: IObit Malware Fighter Free
+        url: /packages/iobitmalwarefighter.html
+      - page: IObit Uninstaller
+        url: /packages/iobituninstaller.html
+      - page: Jetbrains Rider
+        url: /packages/jetbrainsrider.html
+      - page: JetBrains Toolbox App (Install)
+        url: /packages/jetbrainstoolbox.html
+      - page: JetBrains YouTrack
+        url: /packages/jetbrainsyoutrack.html
+      - page: LastPass
+        url: /packages/lastpass.html
+      - page: MariaDB
+        url: /packages/mariadb.html
+      - page: MariaDB (Install)
+        url: /packages/mariadb.install.html
+      - page: MariaDB (Portable)
+        url: /packages/mariadb.portable.html
+      - page: Microsoft Baseline Security Analyzer
+        url: /packages/mbsa.html
+      - page: MongoDB
+        url: /packages/mongodb.html
+      - page: MongoDB (Install)
+        url: /packages/mongodb.install.html
+      - page: MongoDB (Portable)
+        url: /packages/mongodb.portable.html
+      - page: Movie Collector
+        url: /packages/moviecollector.html
+      - page: Music Collector
+        url: /packages/musiccollector.html
+      - page: MySQL (Community Server)
+        url: /packages/mysql.html
+      - page: MySQL Workbench
+        url: /packages/mysql.workbench.html
+      - page: nginx
+        url: /packages/nginx.html
+      - page: Nullsoft Scriptable Install System
+        url: /packages/nsis.html
+      - page: Nullsoft Scriptable Install System (Install)
+        url: /packages/nsis.install.html
+      - page: Nullsoft Scriptable Install System (Portable)
+        url: /packages/nsis.portable.html
+      - page: OmniDB-app
+        url: /packages/omnidbapp.html
+      - page: OmniDB-server
+        url: /packages/omnidbserver.html
+      - page: Openfire
+        url: /packages/openfire.html
+      - page: Opera beta
+        url: /packages/operabeta.html
+      - page: Opera Developer
+        url: /packages/operadeveloper.html
+      - page: OrientDB (Portable)
+        url: /packages/orientdb.html
+      - page: Psi
+        url: /packages/psi.html
+      - page: Psi (Install)
+        url: /packages/psi.install.html
+      - page: Psi (Portable)
+        url: /packages/psi.portable.html
+      - page: JetBrains Pycharm Professional
+        url: /packages/pycharm.html
+      - page: JetBrains PyCharm (Install)
+        url: /packages/pycharmcommunity.html
+      - page: JetBrains Pycharm Educational
+        url: /packages/pycharmedu.html
+      - page: QuickPar
+        url: /packages/QuickPar.html
+      - page: Rocrail
+        url: /packages/rocrail.html
+      - page: Samsung Magician
+        url: /packages/samsungmagician.html
+      - page: SCARM
+        url: /packages/scarm.html
+      - page: Server Backup Agent
+        url: /packages/serverbackupagent.html
+      - page: SimulIDE
+        url: /packages/simulide.html
+      - page: Slack for Windows
+        url: /packages/slack.html
+      - page: smartmontools
+        url: /packages/smartmontools.html
+      - page: Spark
+        url: /packages/spark.html
+      - page: SpeedFan
+        url: /packages/speedfan.html
+      - page: DB Browser for SQLite
+        url: /packages/sqlitebrowser.html
+      - page: DB Browser for SQLite (Install)
+        url: /packages/sqlitebrowser.install.html
+      - page: DB Browser for SQLite (Portable)
+        url: /packages/sqlitebrowser.portable.html
+      - page: SuperPutty
+        url: /packages/superputty.html
+      - page: SuperPutty (Install)
+        url: /packages/superputty.install.html
+      - page: SuperPutty (Portable)
+        url: /packages/superputty.portable.html
+      - page: Swift for Windows
+        url: /packages/swiftforwindows.html
+      - page: Thonny
+        url: /packages/thonny.html
+      - page: TomTom MyDrive Connect
+        url: /packages/tomtommydriveconnect.html
+      - page: Trillian
+        url: /packages/trillian.html
+      - page: UltraVNC
+        url: /packages/ultravnc.html
+      - page: Veeam Backup & Replication Catalog
+        url: /packages/veeambackupandreplicationcatalog.html
+      - page: Veeam Backup & Replication Console
+        url: /packages/veeambackupandreplicationconsole.html
+      - page: Veeam Backup & Replication ISO downloader
+        url: /packages/veeambackupandreplicationiso.html
+      - page: Veeam Backup & Replication Management Console
+        url: /packages/veeambackupandreplicationmanagement.html
+      - page: Veeam Explorer for Microsoft Active Directory
+        url: /packages/veeamexplorerformicrosoftactivedirectory.html
+      - page: Veeam Explorer for Microsoft Exchange
+        url: /packages/veeamexplorerformicrosoftexchange.html
+      - page: Veeam Explorer for Microsoft SharePoint
+        url: /packages/veeamexplorerformicrosoftsharepoint.html
+      - page: Veeam Explorer for Microsoft SQL Server
+        url: /packages/veeamexplorerformicrosoftsqlserver.html
+      - page: Veeam Explorer for Oracle
+        url: /packages/veeamexplorerfororacle.html
+      - page: Veusz (Install)
+        url: /packages/veusz.html
+      - page: Viber
+        url: /packages/viber.html
+      - page: VLC Nightly
+        url: /packages/vlcnightly.html
+      - page: Ansible VSCode Extension
+        url: /packages/vscodeansible.html
+      - page: Puppet VSCode Extension
+        url: /packages/vscodepuppet.html
+      - page: Live Share VSCode Extension
+        url: /packages/vscodevsliveshare.html
+      - page: YAML VSCode Extension
+        url: /packages/vscodeyaml.html
+      - page: WifiInfoView
+        url: /packages/wifiinfoview.html
+      - page: Win32 Disk Imager
+        url: /packages/win32diskimager.html
+      - page: Win32 Disk Imager (Install)
+        url: /packages/win32diskimager.install.html
+      - page: Win32 Disk Imager (Portable)
+        url: /packages/win32diskimager.portable.html
+      - page: Windows Repair
+        url: /packages/windowsrepair.html
+      - page: Windows Repair (Install)
+        url: /packages/windowsrepair.install.html
+      - page: Windows Repair (Portable)
+        url: /packages/windowsrepair.portable.html
+      - page: WinRAR
+        url: /packages/winrar.html
+      - page: WirelessNetView
+        url: /packages/wirelessnetview.html
+      - page: WirelessNetView (Install)
+        url: /packages/wirelessnetview.install.html
+      - page: WirelessNetView (Portable)
+        url: /packages/wirelessnetview.portable.html
+      - page: Wireshark
+        url: /packages/wireshark.html
+      - page: Wireless Network Watcher
+        url: /packages/wnetwatcher.html
+      - page: Wireless Network Watcher (Install)
+        url: /packages/wnetwatcher.install.html
+      - page: Wireless Network Watcher (Portable)
+        url: /packages/wnetwatcher.portable.html
+      - page: Writage
+        url: /packages/writage.html
+      - page: zerotier-one (Install)
+        url: /packages/zerotierone.html
+      - page: Zettlr
+        url: /packages/zettlr.html
 

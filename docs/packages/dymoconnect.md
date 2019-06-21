@@ -1,0 +1,27 @@
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@1a068bd63ced80de8635921175bc0bfc18c97485/icons/dymo-connect.png" width="32" height="32"/> [![DYMO Connect](https://img.shields.io/chocolatey/v/dymo-connect.svg?label=DYMO Connect)](https://chocolatey.org/packages/dymo-connect)
+
+## Usage
+To install DYMO Connect, run the following command from the command line or from PowerShell:
+```powershell
+choco install dymo-connect
+```
+
+To upgrade DYMO Connect, run the following command from the command line or from PowerShell:
+```powershell
+choco upgrade dymo-connect
+```
+
+To uninstall DYMO Connect, run the following command from the command line or from PowerShell:
+```powershell
+choco uninstall dymo-connect
+```
+
+## Description
+DYMO-Label
+
+Enables you to create and print labels - all without the hassles of printing sheet labels on a standard desktop printer.
+
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know the package is no longer updating correctly.
+

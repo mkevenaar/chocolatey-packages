@@ -1,0 +1,26 @@
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@67806fe7af712974358b5cae3b59ce3cfbbd1c0a/icons/driverbooster.png" width="32" height="32"/> [![Driver Booster](https://img.shields.io/chocolatey/v/driverbooster.svg?label=Driver Booster)](https://chocolatey.org/packages/driverbooster)
+
+## Usage
+To install Driver Booster, run the following command from the command line or from PowerShell:
+```powershell
+choco install driverbooster
+```
+
+To upgrade Driver Booster, run the following command from the command line or from PowerShell:
+```powershell
+choco upgrade driverbooster
+```
+
+To uninstall Driver Booster, run the following command from the command line or from PowerShell:
+```powershell
+choco uninstall driverbooster
+```
+
+## Description
+Scans and identifies outdated drivers automatically, and downloads and installs the right update for you with just ONE click, saving you loads of time.
+
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know the package is no longer updating correctly.
+
+
