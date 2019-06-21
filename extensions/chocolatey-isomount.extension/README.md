@@ -1,4 +1,4 @@
-# chocolatey-isomount.extension
+# Chocolatey ISO helpers extension
 
 This is a Chocolatey extension that simplifies building Chocolatey packages that require deployments via ISO files.
 

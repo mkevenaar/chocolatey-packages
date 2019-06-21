@@ -37,27 +37,26 @@
         </section>
 
         <aside id="sidebar">
-            <ul class="navigation">
-                <li>
-                    <a href="{{ '/' | absolute_url }}">Home</a>
-                </li>
-            </ul>
-            {% for item in site.data.navigation.toc %}
-            <h3>{{ item.title }}</h3>
-            <ul class="navigation">
-            {% for entry in item.subfolderitems %}
-                <li class="{% if item.url == page.url %}active{% endif %}">
-                    <a href="{{ entry.url | relative_url }}">{{ entry.page }}</a>
-                </li>
-            {% endfor %}
-            </ul>
-            {% endfor %}
-            <ul class="navigation">
-                <li>
-                    <a href="https://www.patreon.com/bePatron?u=20882165" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
-                </li>
-            </ul>
-
+          <ul class="navigation">
+            <li>
+              <a href="{{ '/' | absolute_url }}">Home</a>
+            </li>
+          </ul>
+          <ul class="navigation">
+            <li>
+              <a href="https://www.patreon.com/bePatron?u=20882165" data-patreon-widget-type="become-patron-button">Become a Patron!</a><script async src="https://c6.patreon.com/becomePatronButton.bundle.js"></script>
+            </li>
+        </ul>
+        {% for item in site.data.navigation.toc %}
+          <h3>{{ item.title }}</h3>
+          <ul class="navigation">
+          {% for entry in item.subfolderitems %}
+            <li class="{% if item.url == page.url %}active{% endif %}">
+              <a href="{{ entry.url | relative_url }}">{{ entry.page }}</a>
+            </li>
+          {% endfor %}
+          </ul>
+          {% endfor %}
         </aside>
       </div>
     </div>
