@@ -218,7 +218,7 @@ choco uninstall $($meta.id)
 ```````
 
 ## Description
-$( $meta.description.InnerText -replace "`n", $lineFeed )
+$( $meta.description.InnerText )
 "@ | Out-File -Encoding UTF8 $filename
   
     $navigation += "      - page: $($nuspec.package.metadata.title)$($lineFeed)"
