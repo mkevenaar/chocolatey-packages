@@ -1,6 +1,6 @@
 ﻿# Install-ChocolateyIsoInstallPackage
 
-<!-- This documentation is automatically generated from https://github.com/mkevenaar/chocolatey-packages/tree/master/extensions/chocolatey-isomount.extension/extensions/Install-ChocolateyIsoInstallPackage.ps1 using https://github.com/mkevenaar/chocolatey-packages/tree/master/GenerateDocs.ps1. Contributions are welcome at the original location(s). -->
+<!-- This documentation is automatically generated from https://github.com/mkevenaar/chocolatey-packages/tree/master//extensions/chocolatey-isomount.extension/extensions/Install-ChocolateyIsoInstallPackage.ps1 using https://github.com/mkevenaar/chocolatey-packages/tree/master/GenerateDocs.ps1. Contributions are welcome at the original location(s). -->
 
 **NOTE:** Administrative Access Required.
 
@@ -233,4 +233,4 @@ This cmdlet supports the common parameters: -Verbose, -Debug, -ErrorAction, -Err
 
 ***NOTE:*** This documentation has been automatically generated from `Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1" -Force; Get-Help Install-ChocolateyIsoInstallPackage -Full`.
 
-View the source for [Install-ChocolateyIsoInstallPackage](https://github.com/mkevenaar/chocolatey-packages/tree/master/extensions/chocolatey-isomount.extension/extensions/Install-ChocolateyIsoInstallPackage.ps1)
+View the source for [Install-ChocolateyIsoInstallPackage](https://github.com/mkevenaar/chocolatey-packages/tree/master//extensions/chocolatey-isomount.extension/extensions/Install-ChocolateyIsoInstallPackage.ps1)
