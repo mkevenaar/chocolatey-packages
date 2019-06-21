@@ -18,3 +18,7 @@ choco uninstall mbsa
 
 ## Description
 
+Microsoft Baseline Security Analyzer (MBSA) lets administrators scan local and remote systems to assess the security state of Windows machines. MBSA scans for missing security updates as well as common security misconfigurations.
+
+MBSA is built on the Windows Update Agent and Microsoft Update infrastructure, ensuring consistency across Microsoft management products, including Microsoft Update (MU), Windows Server Update Services 2.0 and 3.0 (WSUS), Systems Management Server Inventory Tool for Microsoft Update (ITMU) (SMS), System Center Configuration Manager (SCCM) 2007, and Small Business Server (SBS.)
+    

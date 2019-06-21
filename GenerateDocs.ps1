@@ -11,7 +11,7 @@ $navigationFile = Join-Path $thisDirectory "docs\_data\navigation.yml"
 $docsFolder = [System.IO.Path]::GetFullPath("$thisDirectory\docs")
 $navigation = "toc:$lineFeed"
 # $packagesFolder = "automatic,deprecated,manual" 
-$packagesFolder = @("automatic", "deprecated" ,"manual")
+$packagesFolder = @("automatic", "extensions", "deprecated" ,"manual")
 
 function Get-Aliases($commandName){
 
@@ -218,7 +218,7 @@ choco uninstall $($meta.id)
 ```````
 
 ## Description
-$( $meta.description.InnerText )
+$( if($meta.description.InnerText) {$meta.description.InnerText} else {$meta.description} )
 "@ | Out-File -Encoding UTF8 $filename
   
     $navigation += "      - page: $($nuspec.package.metadata.title)$($lineFeed)"

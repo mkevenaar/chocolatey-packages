@@ -17,4 +17,10 @@ choco uninstall veeam-explorer-for-microsoft-active-directory
 ```
 
 ## Description
+Recovery tool for Microsoft Active Directory
 
+Veeam® Explorer™ for Microsoft Active Directory provides fast and reliable object-level recovery for Active Directory from a single-pass, agentless backup or storage snapshot — without the need to restore an entire virtual machine (VM) or use third-party tools.
+
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know the package is no longer updating correctly.

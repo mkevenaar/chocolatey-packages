@@ -17,4 +17,8 @@ choco uninstall zerotier-one
 ```
 
 ## Description
-
+ZeroTier is a smart switch for Earth with VLAN capability. See https://www.zerotier.com/ for more information.
+    
+**Please Note**: This is an automatically updated package. If you find it is 
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know the package is no longer updating correctly.
