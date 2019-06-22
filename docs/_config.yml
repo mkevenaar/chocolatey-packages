@@ -16,6 +16,7 @@
 title: Chocolatey Packages
 description: Documentation about My Chocolatey Packages.
 theme: jekyll-theme-architect
+google_analytics: UA-142557186-1
 
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
