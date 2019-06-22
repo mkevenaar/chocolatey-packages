@@ -2,9 +2,7 @@
 
 $toolsDir = Split-Path $MyInvocation.MyCommand.Definition
 
-$installerFile = if ((Get-OSArchitectureWidth 64) -and $env:chocolateyForceX86 -ne 'true') {
-         Write-Host "Installing x64 bit version"; Get-Item "$toolsDir\*_x64.exe"
-} else { Write-Host "Installing x32 bit version"; Get-Item "$toolsDir\*_x32.exe" }
+$installerFile = Get-Item "$toolsDir\*_x64.exe"
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
