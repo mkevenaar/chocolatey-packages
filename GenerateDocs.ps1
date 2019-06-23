@@ -221,7 +221,7 @@ choco uninstall $($meta.id)
 $( if($meta.description.InnerText) {$meta.description.InnerText} else {$meta.description} )
 "@ | Out-File -Encoding UTF8 $filename
   
-    $navigation += "      - page: $($nuspec.package.metadata.title)$($lineFeed)"
+    $navigation += "      - page: `"$($nuspec.package.metadata.title)`"$($lineFeed)"
     $navigation += "        url: /packages/$url.html$($lineFeed)"
   }
 
