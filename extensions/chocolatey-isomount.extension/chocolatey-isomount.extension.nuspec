@@ -53,10 +53,19 @@ These functions may be used in Chocolatey install/uninstall scripts by declaring
 
 **NOTE**: This package requires PowerShell 3 or higher
     </description>
+    <!-- =============================== -->  
+
+    <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
     <dependencies>
       <dependency id="chocolatey-core.extension" version="1.3.3" />
     </dependencies>
+
+    <!--<provides>NOT YET IMPLEMENTED</provides>-->
+    <!--<conflicts>NOT YET IMPLEMENTED</conflicts>-->
+    <!--<replaces>NOT YET IMPLEMENTED</replaces>-->
   </metadata>
+  <!-- this section controls what actually gets packaged into the Chocolatey package -->
+  <!-- Uncomment to limit what is packed in -->
   <files>
     <file src="extensions\**" target="extensions" />
   </files>
