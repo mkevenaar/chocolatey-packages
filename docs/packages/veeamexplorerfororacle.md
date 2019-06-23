@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@81eadd12de9d8a24796945af00e35f86ebc48d08/icons/veeam-explorer-for-oracle.png" width="32" height="32"/> [![Veeam Explorer for Oracle](https://img.shields.io/chocolatey/v/veeam-explorer-for-oracle.svg?label=Veeam Explorer for Oracle)](https://chocolatey.org/packages/veeam-explorer-for-oracle)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@81eadd12de9d8a24796945af00e35f86ebc48d08/icons/veeam-explorer-for-oracle.png" width="32" height="32"/> [![Veeam Explorer for Oracle](https://img.shields.io/chocolatey/v/veeam-explorer-for-oracle.svg?label=Veeam+Explorer+for+Oracle)](https://chocolatey.org/packages/veeam-explorer-for-oracle)
 
 ## Usage
 To install Veeam Explorer for Oracle, run the following command from the command line or from PowerShell:

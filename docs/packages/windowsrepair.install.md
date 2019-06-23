@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@9ef7d8e2821d9e6865606c6f0796bd9c5c5c1683/icons/windowsrepair.png" width="32" height="32"/> [![Windows Repair (Install)](https://img.shields.io/chocolatey/v/windowsrepair.install.svg?label=Windows Repair (Install))](https://chocolatey.org/packages/windowsrepair.install)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@9ef7d8e2821d9e6865606c6f0796bd9c5c5c1683/icons/windowsrepair.png" width="32" height="32"/> [![Windows Repair (Install)](https://img.shields.io/chocolatey/v/windowsrepair.install.svg?label=Windows+Repair+(Install))](https://chocolatey.org/packages/windowsrepair.install)
 
 ## Usage
 To install Windows Repair (Install), run the following command from the command line or from PowerShell:

@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@50186ee4bb8d49a525e485cfbbb88d2167d93c29/icons/mysql.workbench.png" width="32" height="32"/> [![MySQL Workbench](https://img.shields.io/chocolatey/v/mysql.workbench.svg?label=MySQL Workbench)](https://chocolatey.org/packages/mysql.workbench)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@50186ee4bb8d49a525e485cfbbb88d2167d93c29/icons/mysql.workbench.png" width="32" height="32"/> [![MySQL Workbench](https://img.shields.io/chocolatey/v/mysql.workbench.svg?label=MySQL+Workbench)](https://chocolatey.org/packages/mysql.workbench)
 
 ## Usage
 To install MySQL Workbench, run the following command from the command line or from PowerShell:

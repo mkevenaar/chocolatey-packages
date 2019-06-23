@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@17ecf9871387731a8fc960d008cf2786efd83f6e/icons/jetbrains-youtrack.png" width="32" height="32"/> [![JetBrains YouTrack](https://img.shields.io/chocolatey/v/jetbrains-youtrack.svg?label=JetBrains YouTrack)](https://chocolatey.org/packages/jetbrains-youtrack)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@17ecf9871387731a8fc960d008cf2786efd83f6e/icons/jetbrains-youtrack.png" width="32" height="32"/> [![JetBrains YouTrack](https://img.shields.io/chocolatey/v/jetbrains-youtrack.svg?label=JetBrains+YouTrack)](https://chocolatey.org/packages/jetbrains-youtrack)
 
 ## Usage
 To install JetBrains YouTrack, run the following command from the command line or from PowerShell:

@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@012830bf1d08a51c5b0bf0d95884b1883d69da7b/icons/vscode-yaml.png" width="32" height="32"/> [![YAML VSCode Extension](https://img.shields.io/chocolatey/v/vscode-yaml.svg?label=YAML VSCode Extension)](https://chocolatey.org/packages/vscode-yaml)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@012830bf1d08a51c5b0bf0d95884b1883d69da7b/icons/vscode-yaml.png" width="32" height="32"/> [![YAML VSCode Extension](https://img.shields.io/chocolatey/v/vscode-yaml.svg?label=YAML+VSCode+Extension)](https://chocolatey.org/packages/vscode-yaml)
 
 ## Usage
 To install YAML VSCode Extension, run the following command from the command line or from PowerShell:

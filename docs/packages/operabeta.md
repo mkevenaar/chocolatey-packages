@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@9f61a113f6d9f1bba2af3ef78d13306fde889492/icons/opera-beta.png" width="32" height="32"/> [![Opera beta](https://img.shields.io/chocolatey/v/opera-beta.svg?label=Opera beta)](https://chocolatey.org/packages/opera-beta)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@9f61a113f6d9f1bba2af3ef78d13306fde889492/icons/opera-beta.png" width="32" height="32"/> [![Opera beta](https://img.shields.io/chocolatey/v/opera-beta.svg?label=Opera+beta)](https://chocolatey.org/packages/opera-beta)
 
 ## Usage
 To install Opera beta, run the following command from the command line or from PowerShell:

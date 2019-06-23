@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@71b2b9bb77658ff645430f37851bc5a826b96cc7/icons/vscode-puppet.png" width="32" height="32"/> [![Puppet VSCode Extension](https://img.shields.io/chocolatey/v/vscode-puppet.svg?label=Puppet VSCode Extension)](https://chocolatey.org/packages/vscode-puppet)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@71b2b9bb77658ff645430f37851bc5a826b96cc7/icons/vscode-puppet.png" width="32" height="32"/> [![Puppet VSCode Extension](https://img.shields.io/chocolatey/v/vscode-puppet.svg?label=Puppet+VSCode+Extension)](https://chocolatey.org/packages/vscode-puppet)
 
 ## Usage
 To install Puppet VSCode Extension, run the following command from the command line or from PowerShell:

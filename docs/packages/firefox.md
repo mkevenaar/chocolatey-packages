@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@b40e08792b4d113bcb96960eaa184c093471a01e/icons/firefox-dev.png" width="32" height="32"/> [![Firefox Developer Edition](https://img.shields.io/chocolatey/v/firefox-dev.svg?label=Firefox Developer Edition)](https://chocolatey.org/packages/firefox-dev)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@b40e08792b4d113bcb96960eaa184c093471a01e/icons/firefox-dev.png" width="32" height="32"/> [![Firefox Developer Edition](https://img.shields.io/chocolatey/v/firefox-dev.svg?label=Firefox+Developer+Edition)](https://chocolatey.org/packages/firefox-dev)
 
 ## Usage
 To install Firefox Developer Edition, run the following command from the command line or from PowerShell:

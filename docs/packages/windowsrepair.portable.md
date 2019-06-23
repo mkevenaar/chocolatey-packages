@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@9ef7d8e2821d9e6865606c6f0796bd9c5c5c1683/icons/windowsrepair.png" width="32" height="32"/> [![Windows Repair (Portable)](https://img.shields.io/chocolatey/v/windowsrepair.portable.svg?label=Windows Repair (Portable))](https://chocolatey.org/packages/windowsrepair.portable)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@9ef7d8e2821d9e6865606c6f0796bd9c5c5c1683/icons/windowsrepair.png" width="32" height="32"/> [![Windows Repair (Portable)](https://img.shields.io/chocolatey/v/windowsrepair.portable.svg?label=Windows+Repair+(Portable))](https://chocolatey.org/packages/windowsrepair.portable)
 
 ## Usage
 To install Windows Repair (Portable), run the following command from the command line or from PowerShell:

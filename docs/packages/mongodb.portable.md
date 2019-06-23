@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@083dd15e52cd8b007dd76e7ec933436c910dbe83/icons/mongodb.png" width="32" height="32"/> [![MongoDB (Portable)](https://img.shields.io/chocolatey/v/mongodb.portable.svg?label=MongoDB (Portable))](https://chocolatey.org/packages/mongodb.portable)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@083dd15e52cd8b007dd76e7ec933436c910dbe83/icons/mongodb.png" width="32" height="32"/> [![MongoDB (Portable)](https://img.shields.io/chocolatey/v/mongodb.portable.svg?label=MongoDB+(Portable))](https://chocolatey.org/packages/mongodb.portable)
 
 ## Usage
 To install MongoDB (Portable), run the following command from the command line or from PowerShell:

@@ -3,6 +3,8 @@
 # Special thanks to Glenn Sarti (https://github.com/glennsarti) for his help on this.
 $ErrorActionPreference = 'Stop'
 
+Add-Type -AssemblyName System.Web
+
 $thisDirectory = (Split-Path -parent $MyInvocation.MyCommand.Definition);
 $psModuleDirectory = [System.IO.Path]::GetFullPath("$thisDirectory\extensions\")
 $lineFeed = "`r`n"
@@ -199,7 +201,7 @@ View the source for [$($_.Name)]($sourceFunctions/$($_.Name)`.ps1)
     [xml]$nuspec = Get-Content "$NuspecPath" -Encoding UTF8
     $meta = $nuspec.package.metadata
     $readme += @"
-# <img src=`"$($meta.iconUrl)`" width="32" height="32"/> [![$($meta.title)](https://img.shields.io/chocolatey/v/$($meta.id).svg?label=$($meta.title))](https://chocolatey.org/packages/$($meta.id))
+# <img src=`"$($meta.iconUrl)`" width="32" height="32"/> [![$($meta.title)](https://img.shields.io/chocolatey/v/$($meta.id).svg?label=$([System.Net.WebUtility]::UrlEncode($meta.title)))](https://chocolatey.org/packages/$($meta.id))
 
 ## Usage
 To install $($meta.title), run the following command from the command line or from PowerShell:

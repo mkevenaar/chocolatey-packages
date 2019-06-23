@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@fddc0be7a9965af753ab1b6b79b5ec2be460e51b/icons/orientdb.svg" width="32" height="32"/> [![OrientDB (Portable)](https://img.shields.io/chocolatey/v/orientdb.svg?label=OrientDB (Portable))](https://chocolatey.org/packages/orientdb)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@fddc0be7a9965af753ab1b6b79b5ec2be460e51b/icons/orientdb.svg" width="32" height="32"/> [![OrientDB (Portable)](https://img.shields.io/chocolatey/v/orientdb.svg?label=OrientDB+(Portable))](https://chocolatey.org/packages/orientdb)
 
 ## Usage
 To install OrientDB (Portable), run the following command from the command line or from PowerShell:

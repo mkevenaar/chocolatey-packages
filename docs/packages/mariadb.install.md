@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@320be0f0eca14083b7ba734b13a417b407225a8b/icons/mariadb.png" width="32" height="32"/> [![MariaDB (Install)](https://img.shields.io/chocolatey/v/mariadb.install.svg?label=MariaDB (Install))](https://chocolatey.org/packages/mariadb.install)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@320be0f0eca14083b7ba734b13a417b407225a8b/icons/mariadb.png" width="32" height="32"/> [![MariaDB (Install)](https://img.shields.io/chocolatey/v/mariadb.install.svg?label=MariaDB+(Install))](https://chocolatey.org/packages/mariadb.install)
 
 ## Usage
 To install MariaDB (Install), run the following command from the command line or from PowerShell:

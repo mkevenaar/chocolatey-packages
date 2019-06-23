@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@2a0d1b78a421771353d15c06da4341ae2b325cda/icons/intel.ssd.toolbox.png" width="32" height="32"/> [![Intel SSD Toolbox](https://img.shields.io/chocolatey/v/intel.ssd.toolbox.svg?label=Intel SSD Toolbox)](https://chocolatey.org/packages/intel.ssd.toolbox)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@2a0d1b78a421771353d15c06da4341ae2b325cda/icons/intel.ssd.toolbox.png" width="32" height="32"/> [![Intel SSD Toolbox](https://img.shields.io/chocolatey/v/intel.ssd.toolbox.svg?label=Intel+SSD+Toolbox)](https://chocolatey.org/packages/intel.ssd.toolbox)
 
 ## Usage
 To install Intel SSD Toolbox, run the following command from the command line or from PowerShell:

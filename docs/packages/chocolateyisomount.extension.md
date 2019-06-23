@@ -1,4 +1,4 @@
-﻿# <img src="" width="32" height="32"/> [![Chocolatey ISO helpers extension](https://img.shields.io/chocolatey/v/chocolatey-isomount.extension.svg?label=Chocolatey ISO helpers extension)](https://chocolatey.org/packages/chocolatey-isomount.extension)
+﻿# <img src="" width="32" height="32"/> [![Chocolatey ISO helpers extension](https://img.shields.io/chocolatey/v/chocolatey-isomount.extension.svg?label=Chocolatey+ISO+helpers+extension)](https://chocolatey.org/packages/chocolatey-isomount.extension)
 
 ## Usage
 To install Chocolatey ISO helpers extension, run the following command from the command line or from PowerShell:

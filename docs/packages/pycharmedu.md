@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@d7949131bb33509ebc8294e210fd60c84af5b082/icons/pycharm-edu.png" width="32" height="32"/> [![JetBrains Pycharm Educational](https://img.shields.io/chocolatey/v/pycharm-edu.svg?label=JetBrains Pycharm Educational)](https://chocolatey.org/packages/pycharm-edu)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@d7949131bb33509ebc8294e210fd60c84af5b082/icons/pycharm-edu.png" width="32" height="32"/> [![JetBrains Pycharm Educational](https://img.shields.io/chocolatey/v/pycharm-edu.svg?label=JetBrains+Pycharm+Educational)](https://chocolatey.org/packages/pycharm-edu)
 
 ## Usage
 To install JetBrains Pycharm Educational, run the following command from the command line or from PowerShell:

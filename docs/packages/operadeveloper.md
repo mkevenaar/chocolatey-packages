@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@2d6548eb36c1599d8d5da98c79e1772f75d081e6/icons/opera-developer.png" width="32" height="32"/> [![Opera Developer](https://img.shields.io/chocolatey/v/opera-developer.svg?label=Opera Developer)](https://chocolatey.org/packages/opera-developer)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@2d6548eb36c1599d8d5da98c79e1772f75d081e6/icons/opera-developer.png" width="32" height="32"/> [![Opera Developer](https://img.shields.io/chocolatey/v/opera-developer.svg?label=Opera+Developer)](https://chocolatey.org/packages/opera-developer)
 
 ## Usage
 To install Opera Developer, run the following command from the command line or from PowerShell:

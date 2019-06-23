@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@e1ad9513cb5d8d6c79ce23c9023f141ac1b8df2d/icons/samsung-magician.png" width="32" height="32"/> [![Samsung Magician](https://img.shields.io/chocolatey/v/samsung-magician.svg?label=Samsung Magician)](https://chocolatey.org/packages/samsung-magician)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@e1ad9513cb5d8d6c79ce23c9023f141ac1b8df2d/icons/samsung-magician.png" width="32" height="32"/> [![Samsung Magician](https://img.shields.io/chocolatey/v/samsung-magician.svg?label=Samsung+Magician)](https://chocolatey.org/packages/samsung-magician)
 
 ## Usage
 To install Samsung Magician, run the following command from the command line or from PowerShell:

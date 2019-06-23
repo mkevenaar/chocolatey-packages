@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@05282da8fb86d53634363900131ef66e316ea144/icons/clion-ide.png" width="32" height="32"/> [![JetBrains Clion](https://img.shields.io/chocolatey/v/clion-ide.svg?label=JetBrains Clion)](https://chocolatey.org/packages/clion-ide)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@05282da8fb86d53634363900131ef66e316ea144/icons/clion-ide.png" width="32" height="32"/> [![JetBrains Clion](https://img.shields.io/chocolatey/v/clion-ide.svg?label=JetBrains+Clion)](https://chocolatey.org/packages/clion-ide)
 
 ## Usage
 To install JetBrains Clion, run the following command from the command line or from PowerShell:

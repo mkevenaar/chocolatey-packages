@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@b740eda125847cf997405fd3c7e8c470218f2292/icons/dymo-label.png" width="32" height="32"/> [![DYMO Label](https://img.shields.io/chocolatey/v/dymo-label.svg?label=DYMO Label)](https://chocolatey.org/packages/dymo-label)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@b740eda125847cf997405fd3c7e8c470218f2292/icons/dymo-label.png" width="32" height="32"/> [![DYMO Label](https://img.shields.io/chocolatey/v/dymo-label.svg?label=DYMO+Label)](https://chocolatey.org/packages/dymo-label)
 
 ## Usage
 To install DYMO Label, run the following command from the command line or from PowerShell:

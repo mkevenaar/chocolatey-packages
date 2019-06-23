@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@80cca03cb46a5447d642966a1fe87ab354ae8b3a/icons/book-collector.png" width="32" height="32"/> [![Book Collector](https://img.shields.io/chocolatey/v/book-collector.svg?label=Book Collector)](https://chocolatey.org/packages/book-collector)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@80cca03cb46a5447d642966a1fe87ab354ae8b3a/icons/book-collector.png" width="32" height="32"/> [![Book Collector](https://img.shields.io/chocolatey/v/book-collector.svg?label=Book+Collector)](https://chocolatey.org/packages/book-collector)
 
 ## Usage
 To install Book Collector, run the following command from the command line or from PowerShell:

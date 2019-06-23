@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ad615a27dbe925cf5030c597e0ffc54cd7e1028b/icons/veusz.png" width="32" height="32"/> [![Veusz (Install)](https://img.shields.io/chocolatey/v/veusz.svg?label=Veusz (Install))](https://chocolatey.org/packages/veusz)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ad615a27dbe925cf5030c597e0ffc54cd7e1028b/icons/veusz.png" width="32" height="32"/> [![Veusz (Install)](https://img.shields.io/chocolatey/v/veusz.svg?label=Veusz+(Install))](https://chocolatey.org/packages/veusz)
 
 ## Usage
 To install Veusz (Install), run the following command from the command line or from PowerShell:

@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@355d7ce6ca37378aa523127e7f4200685ad58121/icons/wirelessnetview.png" width="32" height="32"/> [![WirelessNetView (Portable)](https://img.shields.io/chocolatey/v/wirelessnetview.portable.svg?label=WirelessNetView (Portable))](https://chocolatey.org/packages/wirelessnetview.portable)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@355d7ce6ca37378aa523127e7f4200685ad58121/icons/wirelessnetview.png" width="32" height="32"/> [![WirelessNetView (Portable)](https://img.shields.io/chocolatey/v/wirelessnetview.portable.svg?label=WirelessNetView+(Portable))](https://chocolatey.org/packages/wirelessnetview.portable)
 
 ## Usage
 To install WirelessNetView (Portable), run the following command from the command line or from PowerShell:

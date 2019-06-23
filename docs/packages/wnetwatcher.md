@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@72d4273ca59988b456ffc543827642170797aeef/icons/wnetwatcher.png" width="32" height="32"/> [![Wireless Network Watcher](https://img.shields.io/chocolatey/v/wnetwatcher.svg?label=Wireless Network Watcher)](https://chocolatey.org/packages/wnetwatcher)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@72d4273ca59988b456ffc543827642170797aeef/icons/wnetwatcher.png" width="32" height="32"/> [![Wireless Network Watcher](https://img.shields.io/chocolatey/v/wnetwatcher.svg?label=Wireless+Network+Watcher)](https://chocolatey.org/packages/wnetwatcher)
 
 ## Usage
 To install Wireless Network Watcher, run the following command from the command line or from PowerShell:
