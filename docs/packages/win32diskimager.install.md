@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@3559cef4d1eb00218748abd0fdf44ace62344147/icons/win32diskimager.png" width="32" height="32"/> [![Win32 Disk Imager (Install)](https://img.shields.io/chocolatey/v/win32diskimager.install.svg?label=Win32+Disk+Imager+(Install))](https://chocolatey.org/packages/win32diskimager.install)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@3559cef4d1eb00218748abd0fdf44ace62344147/icons/win32diskimager.png" width="32" height="32"/> [![Win32 Disk Imager (Install)](https://img.shields.io/chocolatey/v/win32diskimager.install.svg?label=Win32+Disk+Imager+(Install))](https://chocolatey.org/packages/win32diskimager.install) [![Win32 Disk Imager (Install)](https://img.shields.io/chocolatey/dt/win32diskimager.install.svg)](https://chocolatey.org/packages/win32diskimager.install)
 
 ## Usage
 To install Win32 Disk Imager (Install), run the following command from the command line or from PowerShell:

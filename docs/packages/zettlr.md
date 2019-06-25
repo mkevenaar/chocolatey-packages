@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4fa07822efa981d198c0dd8801a7a98219c5184c/icons/zettlr.png" width="32" height="32"/> [![Zettlr](https://img.shields.io/chocolatey/v/zettlr.svg?label=Zettlr)](https://chocolatey.org/packages/zettlr)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4fa07822efa981d198c0dd8801a7a98219c5184c/icons/zettlr.png" width="32" height="32"/> [![Zettlr](https://img.shields.io/chocolatey/v/zettlr.svg?label=Zettlr)](https://chocolatey.org/packages/zettlr) [![Zettlr](https://img.shields.io/chocolatey/dt/zettlr.svg)](https://chocolatey.org/packages/zettlr)
 
 ## Usage
 To install Zettlr, run the following command from the command line or from PowerShell:

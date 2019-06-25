@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@460f3840913659bcfe3189d151ecf3e6fa3efcc6/icons/bacula.png" width="32" height="32"/> [![Bacula](https://img.shields.io/chocolatey/v/bacula.svg?label=Bacula)](https://chocolatey.org/packages/bacula)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@460f3840913659bcfe3189d151ecf3e6fa3efcc6/icons/bacula.png" width="32" height="32"/> [![Bacula](https://img.shields.io/chocolatey/v/bacula.svg?label=Bacula)](https://chocolatey.org/packages/bacula) [![Bacula](https://img.shields.io/chocolatey/dt/bacula.svg)](https://chocolatey.org/packages/bacula)
 
 ## Usage
 To install Bacula, run the following command from the command line or from PowerShell:

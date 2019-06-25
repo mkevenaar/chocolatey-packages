@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@16daac3bcdef0a76bb57a232ebc1e12069a243f2/icons/AnyRail6.png" width="32" height="32"/> [![AnyRail6](https://img.shields.io/chocolatey/v/anyrail6.svg?label=AnyRail6)](https://chocolatey.org/packages/anyrail6)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@16daac3bcdef0a76bb57a232ebc1e12069a243f2/icons/AnyRail6.png" width="32" height="32"/> [![AnyRail6](https://img.shields.io/chocolatey/v/anyrail6.svg?label=AnyRail6)](https://chocolatey.org/packages/anyrail6) [![AnyRail6](https://img.shields.io/chocolatey/dt/anyrail6.svg)](https://chocolatey.org/packages/anyrail6)
 
 ## Usage
 To install AnyRail6, run the following command from the command line or from PowerShell:

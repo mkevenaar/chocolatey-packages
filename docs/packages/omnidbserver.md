@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@35a3c2c9405695b548d10666884abcf238e92e1e/icons/omnidb-server.png" width="32" height="32"/> [![OmniDB-server](https://img.shields.io/chocolatey/v/omnidb-server.svg?label=OmniDB-server)](https://chocolatey.org/packages/omnidb-server)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@35a3c2c9405695b548d10666884abcf238e92e1e/icons/omnidb-server.png" width="32" height="32"/> [![OmniDB-server](https://img.shields.io/chocolatey/v/omnidb-server.svg?label=OmniDB-server)](https://chocolatey.org/packages/omnidb-server) [![OmniDB-server](https://img.shields.io/chocolatey/dt/omnidb-server.svg)](https://chocolatey.org/packages/omnidb-server)
 
 ## Usage
 To install OmniDB-server, run the following command from the command line or from PowerShell:

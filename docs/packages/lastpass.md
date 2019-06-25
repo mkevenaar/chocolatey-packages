@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@0411adaf8f882b9f2afe83ed6fa048135378742c/icons/lastpass.png" width="32" height="32"/> [![LastPass](https://img.shields.io/chocolatey/v/lastpass.svg?label=LastPass)](https://chocolatey.org/packages/lastpass)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@0411adaf8f882b9f2afe83ed6fa048135378742c/icons/lastpass.png" width="32" height="32"/> [![LastPass](https://img.shields.io/chocolatey/v/lastpass.svg?label=LastPass)](https://chocolatey.org/packages/lastpass) [![LastPass](https://img.shields.io/chocolatey/dt/lastpass.svg)](https://chocolatey.org/packages/lastpass)
 
 ## Usage
 To install LastPass, run the following command from the command line or from PowerShell:

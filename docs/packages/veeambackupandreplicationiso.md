@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@c47bdf43fc57a640b409a821fead080042245a3f/icons/veeam-backup-and-replication-iso.png" width="32" height="32"/> [![Veeam Backup & Replication ISO downloader](https://img.shields.io/chocolatey/v/veeam-backup-and-replication-iso.svg?label=Veeam+Backup+%26+Replication+ISO+downloader)](https://chocolatey.org/packages/veeam-backup-and-replication-iso)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@c47bdf43fc57a640b409a821fead080042245a3f/icons/veeam-backup-and-replication-iso.png" width="32" height="32"/> [![Veeam Backup & Replication ISO downloader](https://img.shields.io/chocolatey/v/veeam-backup-and-replication-iso.svg?label=Veeam+Backup+%26+Replication+ISO+downloader)](https://chocolatey.org/packages/veeam-backup-and-replication-iso) [![Veeam Backup & Replication ISO downloader](https://img.shields.io/chocolatey/dt/veeam-backup-and-replication-iso.svg)](https://chocolatey.org/packages/veeam-backup-and-replication-iso)
 
 ## Usage
 To install Veeam Backup & Replication ISO downloader, run the following command from the command line or from PowerShell:

@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@218fd53341b8400391b0efdb75f313d01cdcf984/icons/superputty.png" width="32" height="32"/> [![SuperPutty (Portable)](https://img.shields.io/chocolatey/v/superputty.portable.svg?label=SuperPutty+(Portable))](https://chocolatey.org/packages/superputty.portable)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@218fd53341b8400391b0efdb75f313d01cdcf984/icons/superputty.png" width="32" height="32"/> [![SuperPutty (Portable)](https://img.shields.io/chocolatey/v/superputty.portable.svg?label=SuperPutty+(Portable))](https://chocolatey.org/packages/superputty.portable) [![SuperPutty (Portable)](https://img.shields.io/chocolatey/dt/superputty.portable.svg)](https://chocolatey.org/packages/superputty.portable)
 
 ## Usage
 To install SuperPutty (Portable), run the following command from the command line or from PowerShell:

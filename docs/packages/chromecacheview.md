@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4728cb699d6dc13c7c8ea5fe4fabd24fc9b0678d/icons/chromecacheview.png" width="32" height="32"/> [![ChromeCacheView](https://img.shields.io/chocolatey/v/chromecacheview.svg?label=ChromeCacheView)](https://chocolatey.org/packages/chromecacheview)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4728cb699d6dc13c7c8ea5fe4fabd24fc9b0678d/icons/chromecacheview.png" width="32" height="32"/> [![ChromeCacheView](https://img.shields.io/chocolatey/v/chromecacheview.svg?label=ChromeCacheView)](https://chocolatey.org/packages/chromecacheview) [![ChromeCacheView](https://img.shields.io/chocolatey/dt/chromecacheview.svg)](https://chocolatey.org/packages/chromecacheview)
 
 ## Usage
 To install ChromeCacheView, run the following command from the command line or from PowerShell:

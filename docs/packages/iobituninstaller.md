@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@fa5af738fb52d32c4c8778f7ac39077787c4653e/icons/iobit-uninstaller.png" width="32" height="32"/> [![IObit Uninstaller](https://img.shields.io/chocolatey/v/iobit-uninstaller.svg?label=IObit+Uninstaller)](https://chocolatey.org/packages/iobit-uninstaller)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@fa5af738fb52d32c4c8778f7ac39077787c4653e/icons/iobit-uninstaller.png" width="32" height="32"/> [![IObit Uninstaller](https://img.shields.io/chocolatey/v/iobit-uninstaller.svg?label=IObit+Uninstaller)](https://chocolatey.org/packages/iobit-uninstaller) [![IObit Uninstaller](https://img.shields.io/chocolatey/dt/iobit-uninstaller.svg)](https://chocolatey.org/packages/iobit-uninstaller)
 
 ## Usage
 To install IObit Uninstaller, run the following command from the command line or from PowerShell:

@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@a562571bebc3bd7f25660341bd2ab5db86f5ff25/icons/vlc-nightly.png" width="32" height="32"/> [![VLC Nightly](https://img.shields.io/chocolatey/v/vlc-nightly.svg?label=VLC+Nightly)](https://chocolatey.org/packages/vlc-nightly)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@a562571bebc3bd7f25660341bd2ab5db86f5ff25/icons/vlc-nightly.png" width="32" height="32"/> [![VLC Nightly](https://img.shields.io/chocolatey/v/vlc-nightly.svg?label=VLC+Nightly)](https://chocolatey.org/packages/vlc-nightly) [![VLC Nightly](https://img.shields.io/chocolatey/dt/vlc-nightly.svg)](https://chocolatey.org/packages/vlc-nightly)
 
 ## Usage
 To install VLC Nightly, run the following command from the command line or from PowerShell:

@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@e863b511126b5c4ca6b12556dc428382a96c1a67/icons/appveyor-server.png" width="32" height="32"/> [![AppVeyor Server (Community Edition)](https://img.shields.io/chocolatey/v/appveyor-server.svg?label=AppVeyor+Server+(Community+Edition))](https://chocolatey.org/packages/appveyor-server)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@e863b511126b5c4ca6b12556dc428382a96c1a67/icons/appveyor-server.png" width="32" height="32"/> [![AppVeyor Server (Community Edition)](https://img.shields.io/chocolatey/v/appveyor-server.svg?label=AppVeyor+Server+(Community+Edition))](https://chocolatey.org/packages/appveyor-server) [![AppVeyor Server (Community Edition)](https://img.shields.io/chocolatey/dt/appveyor-server.svg)](https://chocolatey.org/packages/appveyor-server)
 
 ## Usage
 To install AppVeyor Server (Community Edition), run the following command from the command line or from PowerShell:

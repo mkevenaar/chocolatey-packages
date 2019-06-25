@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@be994ab8a840e0ada1e68cef1674288eef7e685c/icons/wifiinfoview.png" width="32" height="32"/> [![WifiInfoView](https://img.shields.io/chocolatey/v/wifiinfoview.svg?label=WifiInfoView)](https://chocolatey.org/packages/wifiinfoview)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@be994ab8a840e0ada1e68cef1674288eef7e685c/icons/wifiinfoview.png" width="32" height="32"/> [![WifiInfoView](https://img.shields.io/chocolatey/v/wifiinfoview.svg?label=WifiInfoView)](https://chocolatey.org/packages/wifiinfoview) [![WifiInfoView](https://img.shields.io/chocolatey/dt/wifiinfoview.svg)](https://chocolatey.org/packages/wifiinfoview)
 
 ## Usage
 To install WifiInfoView, run the following command from the command line or from PowerShell:

@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ac7471b84549c0aaa0dc646044435bdcf692305e/icons/nginx.png" width="32" height="32"/> [![nginx](https://img.shields.io/chocolatey/v/nginx.svg?label=nginx)](https://chocolatey.org/packages/nginx)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ac7471b84549c0aaa0dc646044435bdcf692305e/icons/nginx.png" width="32" height="32"/> [![nginx](https://img.shields.io/chocolatey/v/nginx.svg?label=nginx)](https://chocolatey.org/packages/nginx) [![nginx](https://img.shields.io/chocolatey/dt/nginx.svg)](https://chocolatey.org/packages/nginx)
 
 ## Usage
 To install nginx, run the following command from the command line or from PowerShell:

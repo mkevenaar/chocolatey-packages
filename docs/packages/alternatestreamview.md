@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@8b9ee59469e746e1cf7a79392ea983f6c20d001d/icons/alternatestreamview.png" width="32" height="32"/> [![AlternateStreamView](https://img.shields.io/chocolatey/v/alternatestreamview.svg?label=AlternateStreamView)](https://chocolatey.org/packages/alternatestreamview)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@8b9ee59469e746e1cf7a79392ea983f6c20d001d/icons/alternatestreamview.png" width="32" height="32"/> [![AlternateStreamView](https://img.shields.io/chocolatey/v/alternatestreamview.svg?label=AlternateStreamView)](https://chocolatey.org/packages/alternatestreamview) [![AlternateStreamView](https://img.shields.io/chocolatey/dt/alternatestreamview.svg)](https://chocolatey.org/packages/alternatestreamview)
 
 ## Usage
 To install AlternateStreamView, run the following command from the command line or from PowerShell:

@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@a58cc7208328bc21791e56157fa6374d78f3ae32/icons/openfire.png" width="32" height="32"/> [![Openfire](https://img.shields.io/chocolatey/v/openfire.svg?label=Openfire)](https://chocolatey.org/packages/openfire)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@a58cc7208328bc21791e56157fa6374d78f3ae32/icons/openfire.png" width="32" height="32"/> [![Openfire](https://img.shields.io/chocolatey/v/openfire.svg?label=Openfire)](https://chocolatey.org/packages/openfire) [![Openfire](https://img.shields.io/chocolatey/dt/openfire.svg)](https://chocolatey.org/packages/openfire)
 
 ## Usage
 To install Openfire, run the following command from the command line or from PowerShell:

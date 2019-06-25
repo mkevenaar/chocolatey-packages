@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@1a068bd63ced80de8635921175bc0bfc18c97485/icons/dymo-connect.png" width="32" height="32"/> [![DYMO Connect](https://img.shields.io/chocolatey/v/dymo-connect.svg?label=DYMO+Connect)](https://chocolatey.org/packages/dymo-connect)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@1a068bd63ced80de8635921175bc0bfc18c97485/icons/dymo-connect.png" width="32" height="32"/> [![DYMO Connect](https://img.shields.io/chocolatey/v/dymo-connect.svg?label=DYMO+Connect)](https://chocolatey.org/packages/dymo-connect) [![DYMO Connect](https://img.shields.io/chocolatey/dt/dymo-connect.svg)](https://chocolatey.org/packages/dymo-connect)
 
 ## Usage
 To install DYMO Connect, run the following command from the command line or from PowerShell:

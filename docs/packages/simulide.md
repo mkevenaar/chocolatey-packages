@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ab172920222bd8bb7e28a2f579b5e5d7e08de895/icons/simulide.png" width="32" height="32"/> [![SimulIDE](https://img.shields.io/chocolatey/v/simulide.svg?label=SimulIDE)](https://chocolatey.org/packages/simulide)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ab172920222bd8bb7e28a2f579b5e5d7e08de895/icons/simulide.png" width="32" height="32"/> [![SimulIDE](https://img.shields.io/chocolatey/v/simulide.svg?label=SimulIDE)](https://chocolatey.org/packages/simulide) [![SimulIDE](https://img.shields.io/chocolatey/dt/simulide.svg)](https://chocolatey.org/packages/simulide)
 
 ## Usage
 To install SimulIDE, run the following command from the command line or from PowerShell:

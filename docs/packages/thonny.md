@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@81ff2d5f95d772fafbef2696261b9b9d5bc099ac/icons/thonny.png" width="32" height="32"/> [![Thonny](https://img.shields.io/chocolatey/v/thonny.svg?label=Thonny)](https://chocolatey.org/packages/thonny)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@81ff2d5f95d772fafbef2696261b9b9d5bc099ac/icons/thonny.png" width="32" height="32"/> [![Thonny](https://img.shields.io/chocolatey/v/thonny.svg?label=Thonny)](https://chocolatey.org/packages/thonny) [![Thonny](https://img.shields.io/chocolatey/dt/thonny.svg)](https://chocolatey.org/packages/thonny)
 
 ## Usage
 To install Thonny, run the following command from the command line or from PowerShell:

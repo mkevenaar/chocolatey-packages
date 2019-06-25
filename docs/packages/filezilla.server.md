@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@715a1639b4122317e68f360d5e48f89ead28698e/icons/filezilla.server.png" width="32" height="32"/> [![FileZilla Server](https://img.shields.io/chocolatey/v/filezilla.server.svg?label=FileZilla+Server)](https://chocolatey.org/packages/filezilla.server)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@715a1639b4122317e68f360d5e48f89ead28698e/icons/filezilla.server.png" width="32" height="32"/> [![FileZilla Server](https://img.shields.io/chocolatey/v/filezilla.server.svg?label=FileZilla+Server)](https://chocolatey.org/packages/filezilla.server) [![FileZilla Server](https://img.shields.io/chocolatey/dt/filezilla.server.svg)](https://chocolatey.org/packages/filezilla.server)
 
 ## Usage
 To install FileZilla Server, run the following command from the command line or from PowerShell:

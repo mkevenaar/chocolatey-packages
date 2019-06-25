@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@56f4b3fcae72ad65ec8184b0dc79d3d9954b8d42/icons/exiftool.png" width="32" height="32"/> [![ExifTool](https://img.shields.io/chocolatey/v/exiftool.svg?label=ExifTool)](https://chocolatey.org/packages/exiftool)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@56f4b3fcae72ad65ec8184b0dc79d3d9954b8d42/icons/exiftool.png" width="32" height="32"/> [![ExifTool](https://img.shields.io/chocolatey/v/exiftool.svg?label=ExifTool)](https://chocolatey.org/packages/exiftool) [![ExifTool](https://img.shields.io/chocolatey/dt/exiftool.svg)](https://chocolatey.org/packages/exiftool)
 
 ## Usage
 To install ExifTool, run the following command from the command line or from PowerShell:

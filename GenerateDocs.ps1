@@ -1,4 +1,4 @@
-# Based on the script from Chocolatey Software (https://github.com/chocolatey/choco/) 
+# Based on the script from Chocolatey Software (https://github.com/chocolatey/choco/)
 
 # Special thanks to Glenn Sarti (https://github.com/glennsarti) for his help on this.
 $ErrorActionPreference = 'Stop'
@@ -12,7 +12,7 @@ $sourceLocation = 'https://github.com/mkevenaar/chocolatey-packages/tree/master/
 $navigationFile = Join-Path $thisDirectory "docs\_data\navigation.yml"
 $docsFolder = [System.IO.Path]::GetFullPath("$thisDirectory\docs")
 $navigation = "toc:$lineFeed"
-# $packagesFolder = "automatic,deprecated,manual" 
+# $packagesFolder = "automatic,deprecated,manual"
 $packagesFolder = @("automatic", "extensions", "deprecated" ,"manual")
 
 function Get-Aliases($commandName){
@@ -143,7 +143,7 @@ try
       $hasCmdletBinding = (Get-Command -Name $commandName).CmdLetBinding
       $navigation += "      - page: $commandName$($lineFeed)"
       $navigation += "        url: /$psModuleName/$url.html$($lineFeed)"
-  
+
     Write-Host "Generating $fileName ..."
     @"
 # $($_.Name)
@@ -201,7 +201,7 @@ View the source for [$($_.Name)]($sourceFunctions/$($_.Name)`.ps1)
     [xml]$nuspec = Get-Content "$NuspecPath" -Encoding UTF8
     $meta = $nuspec.package.metadata
     $readme += @"
-# <img src=`"$($meta.iconUrl)`" width="32" height="32"/> [![$($meta.title)](https://img.shields.io/chocolatey/v/$($meta.id).svg?label=$([System.Net.WebUtility]::UrlEncode($meta.title)))](https://chocolatey.org/packages/$($meta.id))
+# <img src=`"$($meta.iconUrl)`" width="32" height="32"/> [![$($meta.title)](https://img.shields.io/chocolatey/v/$($meta.id).svg?label=$([System.Net.WebUtility]::UrlEncode($meta.title)))](https://chocolatey.org/packages/$($meta.id)) [![$($meta.title)](https://img.shields.io/chocolatey/dt/$($meta.id).svg)](https://chocolatey.org/packages/$($meta.id))
 
 ## Usage
 To install $($meta.title), run the following command from the command line or from PowerShell:
@@ -222,7 +222,7 @@ choco uninstall $($meta.id)
 ## Description
 $( if($meta.description.InnerText) {$meta.description.InnerText} else {$meta.description} )
 "@ | Out-File -Encoding UTF8 $filename
-  
+
     $navigation += "      - page: `"$($nuspec.package.metadata.title)`"$($lineFeed)"
     $navigation += "        url: /packages/$url.html$($lineFeed)"
   }
@@ -237,7 +237,7 @@ $( if($meta.description.InnerText) {$meta.description.InnerText} else {$meta.des
   #   } else {
   #     git commit -m "$message" "$path" | Out-Null;
   #   }
-  # }  
+  # }
   Exit 0
 }
 catch

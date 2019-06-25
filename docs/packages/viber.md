@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@3a055dbd4509673290e55aa9de2c53c9a4b6b7ed/icons/viber.png" width="32" height="32"/> [![Viber](https://img.shields.io/chocolatey/v/viber.svg?label=Viber)](https://chocolatey.org/packages/viber)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@3a055dbd4509673290e55aa9de2c53c9a4b6b7ed/icons/viber.png" width="32" height="32"/> [![Viber](https://img.shields.io/chocolatey/v/viber.svg?label=Viber)](https://chocolatey.org/packages/viber) [![Viber](https://img.shields.io/chocolatey/dt/viber.svg)](https://chocolatey.org/packages/viber)
 
 ## Usage
 To install Viber, run the following command from the command line or from PowerShell:

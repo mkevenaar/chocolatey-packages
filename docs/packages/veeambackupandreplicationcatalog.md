@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@dadb5921321fb56ca5a60149612bb0fba69daa84/icons/veeam-backup-and-replication-catalog.png" width="32" height="32"/> [![Veeam Backup & Replication Catalog](https://img.shields.io/chocolatey/v/veeam-backup-and-replication-catalog.svg?label=Veeam+Backup+%26+Replication+Catalog)](https://chocolatey.org/packages/veeam-backup-and-replication-catalog)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@dadb5921321fb56ca5a60149612bb0fba69daa84/icons/veeam-backup-and-replication-catalog.png" width="32" height="32"/> [![Veeam Backup & Replication Catalog](https://img.shields.io/chocolatey/v/veeam-backup-and-replication-catalog.svg?label=Veeam+Backup+%26+Replication+Catalog)](https://chocolatey.org/packages/veeam-backup-and-replication-catalog) [![Veeam Backup & Replication Catalog](https://img.shields.io/chocolatey/dt/veeam-backup-and-replication-catalog.svg)](https://chocolatey.org/packages/veeam-backup-and-replication-catalog)
 
 ## Usage
 To install Veeam Backup & Replication Catalog, run the following command from the command line or from PowerShell:
