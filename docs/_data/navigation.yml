@@ -63,6 +63,8 @@
         url: /packages/gamecollector.html
       - page: "JetBrains GoLand"
         url: /packages/goland.html
+      - page: "Apple iCloud"
+        url: /packages/icloud.html
       - page: "Intel SSD Toolbox"
         url: /packages/intel.ssd.toolbox.html
       - page: "JetBrains IntelliJ IDEA (Educational)"
