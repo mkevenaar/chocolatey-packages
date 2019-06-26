@@ -29,21 +29,21 @@ if ($pp.port) {
 if ($pp.username) {
   $computername = $env:computername
   $fulluser = $pp.username
-  if ($pp.username -notcontains "\") {
+  if ($pp.username -notmatch "\\") {
     $fulluser = "$($computername)\$($pp.username)"
   }
   if(-not $pp.password) {
     throw 'Password is required when setting a username...'
   }
   if ($pp.create) {
-    if ($pp.username -contains "\") {
+    if ($pp.username -match "\\") {
       throw "Only local users can be created"
     }
-    
+
     if (Get-WmiObject -Class Win32_UserAccount | Where-Object {$_.Name -eq $pp.username}) {
       Write-Warning "The local user already exists, not creating again"
     } else {
-      net user $pp.username $pp.password /add /PASSWORDCHG:NO 
+      net user $pp.username $pp.password /add /PASSWORDCHG:NO
       wmic UserAccount where ("Name='{0}'" -f $pp.username) set PasswordExpires=False
       net localgroup "Administrators" $pp.username /add    }
   }
