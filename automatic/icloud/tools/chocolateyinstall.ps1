@@ -6,6 +6,7 @@ $packageArgs = @{
   packageName    = 'iCloud'
   fileType       = 'msi'
   url            = 'http://updates-http.cdn-apple.com/2019/windows/041-46293-20190520-2518E9CC-7B5A-11E9-B745-712CAD1AF799/iCloudSetup.exe'
+  url64bit       = '' # this must be added here due to https://github.com/chocolatey/choco/issues/1860
   softwareName   = 'iCloud'
   checksum       = '0A85E9E88E1BAF48F82EAE45E50AA4C00B308C39773585D27506D38C6A2395B8'
   checksumType   = 'sha256'
