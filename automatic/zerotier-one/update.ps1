@@ -15,8 +15,8 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases
 
-    $version = $download_page.ParsedHtml.getElementsByTagName('b') | % innerhtml | select -First 1
-    
+    $version = $download_page.ParsedHtml.getElementsByTagName('strong') | Foreach-Object innerhtml | Select-Object -First 1
+
     $url32 = 'https://download.zerotier.com/RELEASES/' + $version + '/dist/ZeroTier%20One.msi'
 
     $Latest = @{ URL32 = $url32; Version = $version }
