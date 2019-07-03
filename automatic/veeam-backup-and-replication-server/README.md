@@ -2,12 +2,15 @@
 
 Industry-leading backup, recovery and replication software
 
+**Please note** One of the dependencies might trigger a reboot.
+
 Veeam® Backup & Replication™ helps businesses achieve comprehensive data protection for ALL workloads — virtual, physical and cloud-based workloads. With a single console, achieve fast, flexible and reliable backup, recovery and replication of all applications and data.
 
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
 
 ### Package Parameters
 The package accepts the following optional parameters:
+
 * `/nfsDatastoreLocation` - Specifies the vPower cache folder to which the write cache will be stored. By default, Veeam Backup & Replication uses the folder on a volume with the maximum amount of free space, for example, C:\ProgramData\Veeam\Backup\NfsDatastore\.
 * `/backupPort` - Specifies a TCP port that will be used by the Veeam Backup Service. By default, port number 9392 is used.
 * `/mountserverPort` - Specifies a port used for communication between the mount server and the backup server. By default, port 9401 is used.
