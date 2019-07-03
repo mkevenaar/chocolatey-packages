@@ -14,7 +14,7 @@ $packageArgs = @{
   checksumType   = $checksumType
   softwareName   = 'Evernote*'
   silentArgs     = '/quiet'
-  validExitCodes= @(0,3010)
+  validExitCodes= @(0,3010,-1073741819)
 }
 
 Install-ChocolateyPackage @packageArgs
