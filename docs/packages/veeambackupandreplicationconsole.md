@@ -19,13 +19,9 @@ choco uninstall veeam-backup-and-replication-console
 ## Description
 Console for Veeam Backup & Replication.
 
+**Please note** One of the dependencies might trigger a reboot.
+
 Veeam® Backup & Replication™ is a backup solution developed for VMware vSphere and Microsoft Hyper-V virtual environments. Veeam Backup & Replication provides a set of features for performing data protection and disaster recovery tasks.
-
-### Package Parameters
-The package accepts the following optional parameters:
-* `/isoCache` - filesystem location for caching your ISO files
-
-Example: `choco install veeam-explorer-for-ad --params "/isoCache:c:\MyFolder"`
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
