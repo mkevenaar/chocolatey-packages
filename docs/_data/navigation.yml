@@ -51,6 +51,8 @@
         url: /packages/dymoconnect.html
       - page: "DYMO Label"
         url: /packages/dymolabel.html
+      - page: "Evernote"
+        url: /packages/evernote.html
       - page: "ExifTool"
         url: /packages/exiftool.html
       - page: "FileZilla Server"
