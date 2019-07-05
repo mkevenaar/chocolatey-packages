@@ -19,8 +19,6 @@ choco uninstall veeam-backup-and-replication-server
 ## Description
 Industry-leading backup, recovery and replication software
 
-**Please note** One of the dependencies might trigger a reboot.
-
 Veeam® Backup & Replication™ helps businesses achieve comprehensive data protection for ALL workloads — virtual, physical and cloud-based workloads. With a single console, achieve fast, flexible and reliable backup, recovery and replication of all applications and data.
 
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
