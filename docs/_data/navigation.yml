@@ -157,6 +157,8 @@
         url: /packages/spark.html
       - page: "SpeedFan"
         url: /packages/speedfan.html
+      - page: "Microsoft System CLR Types for SQL Server 2014"
+        url: /packages/SQL2014.ClrTypes.html
       - page: "Microsoft SQL Server 2014 Management Objects"
         url: /packages/SQL2014.SMO.html
       - page: "DB Browser for SQLite"
