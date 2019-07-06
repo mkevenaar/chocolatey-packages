@@ -231,6 +231,6 @@ This cmdlet supports the common parameters: -Verbose, -Debug, -ErrorAction, -Err
 
 [[Function Reference|HelpersReference]]
 
-***NOTE:*** This documentation has been automatically generated from `Import-Module "$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1" -Force; Get-Help Install-ChocolateyIsoInstallPackage -Full`.
+***NOTE:*** This documentation has been automatically generated from `Import-Module "$env:ChocolateyInstalls\chocolatey-isomounts\chocolatey-isomount.psm1" -Force; Get-Help Install-ChocolateyIsoInstallPackage -Full`.
 
 View the source for [Install-ChocolateyIsoInstallPackage](https://github.com/mkevenaar/chocolatey-packages/tree/master//extensions/chocolatey-isomount.extension/extensions/Install-ChocolateyIsoInstallPackage.ps1)

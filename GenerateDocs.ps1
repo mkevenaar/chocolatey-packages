@@ -5,7 +5,7 @@ $ErrorActionPreference = 'Stop'
 
 Add-Type -AssemblyName System.Web
 
-$thisDirectory = (Split-Path -parent $MyInvocation.MyCommand.Definition);
+$thisDirectory = (Split-Path -parent $MyInvocation.MyCommand.Definition)
 $psModuleDirectory = [System.IO.Path]::GetFullPath("$thisDirectory\extensions\")
 $lineFeed = "`r`n"
 $sourceLocation = 'https://github.com/mkevenaar/chocolatey-packages/tree/master/'
@@ -121,6 +121,7 @@ try
 
     Write-Host "Importing the Module $psModuleName ..."
     Import-Module "$psModuleLocation" -Force -Verbose
+    $relativeName = $psModuleLocation -replace ".extension" -replace [regex]::Escape($thisDirectory), "`$env:ChocolateyInstall"
     Write-Host "Working on $docsFolder"
     if (Test-Path($moduleDocsFolder)) { Remove-Item $moduleDocsFolder -Force -Recurse -EA SilentlyContinue }
     if(-not(Test-Path $moduleDocsFolder)){ mkdir $moduleDocsFolder -EA Continue | Out-Null }
@@ -176,7 +177,7 @@ $( if ($_.relatedLinks -ne $null) {Write-Output "$lineFeed## Links$lineFeed$line
 
 [[Function Reference|HelpersReference]]
 
-***NOTE:*** This documentation has been automatically generated from ``Import-Module `"`$env:ChocolateyInstall\helpers\chocolateyInstaller.psm1`" -Force; Get-Help $($_.Name) -Full``.
+***NOTE:*** This documentation has been automatically generated from ``Import-Module `"$($relativeName)`" -Force; Get-Help $($_.Name) -Full``.
 
 View the source for [$($_.Name)]($sourceFunctions/$($_.Name)`.ps1)
 "@  | Out-File $fileName -Encoding UTF8 -Force
@@ -201,7 +202,7 @@ View the source for [$($_.Name)]($sourceFunctions/$($_.Name)`.ps1)
     [xml]$nuspec = Get-Content "$NuspecPath" -Encoding UTF8
     $meta = $nuspec.package.metadata
     $readme += @"
-# <img src=`"$($meta.iconUrl)`" width="32" height="32"/> [![$($meta.title)](https://img.shields.io/chocolatey/v/$($meta.id).svg?label=$([System.Net.WebUtility]::UrlEncode($meta.title)))](https://chocolatey.org/packages/$($meta.id)) [![$($meta.title)](https://img.shields.io/chocolatey/dt/$($meta.id).svg)](https://chocolatey.org/packages/$($meta.id))
+# $( if ( $meta.iconUrl ) { Write-Output "<img src=`"$($meta.iconUrl)`" width=`"32`" height=`"32`"/>" }) [![$($meta.title)](https://img.shields.io/chocolatey/v/$($meta.id).svg?label=$([System.Net.WebUtility]::UrlEncode($meta.title)))](https://chocolatey.org/packages/$($meta.id)) [![$($meta.title)](https://img.shields.io/chocolatey/dt/$($meta.id).svg)](https://chocolatey.org/packages/$($meta.id))
 
 ## Usage
 To install $($meta.title), run the following command from the command line or from PowerShell:
