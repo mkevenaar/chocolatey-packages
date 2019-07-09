@@ -4,6 +4,8 @@ Industry-leading backup, recovery and replication software
 
 Veeam® Backup & Replication™ helps businesses achieve comprehensive data protection for ALL workloads — virtual, physical and cloud-based workloads. With a single console, achieve fast, flexible and reliable backup, recovery and replication of all applications and data.
 
+**NOTE** You do have to install a SQL Server before you can use this package.
+
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
 
 ### Package Parameters
