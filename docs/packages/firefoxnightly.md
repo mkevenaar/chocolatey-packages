@@ -44,6 +44,8 @@ let them know the package is no longer updating correctly.
 
 ## Links
 [Chocolatey Package Page](https://chocolatey.org/packages/firefox-nightly)
+
 [Software Site](https://www.mozilla.org/firefox/nightly/)
+
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/firefox-nightly)
 

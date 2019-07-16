@@ -40,6 +40,8 @@ let them know the package is no longer updating correctly.
 
 ## Links
 [Chocolatey Package Page](https://chocolatey.org/packages/aida64-networkaudit)
+
 [Software Site](http://www.aida64.com/products/aida64-network-audit)
+
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/aida64-networkaudit)
 

@@ -27,6 +27,8 @@ let them know the package is no longer updating correctly.
 
 ## Links
 [Chocolatey Package Page](https://chocolatey.org/packages/tomtom-mydrive-connect)
+
 [Software Site](https://www.tomtom.com/mydrive-connect/)
+
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/tomtom-mydrive-connect)
 

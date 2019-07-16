@@ -37,6 +37,8 @@ let them know the package is no longer updating correctly.
 
 ## Links
 [Chocolatey Package Page](https://chocolatey.org/packages/mariadb.portable)
+
 [Software Site](https://mariadb.org)
+
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/mariadb.portable)
 

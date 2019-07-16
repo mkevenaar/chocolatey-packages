@@ -27,6 +27,8 @@ let them know the package is no longer updating correctly.
 
 ## Links
 [Chocolatey Package Page](https://chocolatey.org/packages/samsung-magician)
+
 [Software Site](https://www.samsung.com/semiconductor/minisite/ssd/product/consumer/magician/)
+
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/samsung-magician)
 

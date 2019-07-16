@@ -28,6 +28,8 @@ let them know the package is no longer updating correctly.
 
 ## Links
 [Chocolatey Package Page](https://chocolatey.org/packages/spark)
+
 [Software Site](https://www.igniterealtime.org/projects/spark)
+
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/spark)
 

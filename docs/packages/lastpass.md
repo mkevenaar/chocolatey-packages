@@ -26,6 +26,8 @@ let them know the package is no longer updating correctly.
 
 ## Links
 [Chocolatey Package Page](https://chocolatey.org/packages/lastpass)
+
 [Software Site](https://lastpass.com/)
+
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/lastpass)
 

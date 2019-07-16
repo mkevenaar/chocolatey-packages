@@ -43,6 +43,8 @@ let them know the package is no longer updating correctly.
 
 ## Links
 [Chocolatey Package Page](https://chocolatey.org/packages/zettlr)
+
 [Software Site](https://www.zettlr.com/)
+
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/zettlr)
 

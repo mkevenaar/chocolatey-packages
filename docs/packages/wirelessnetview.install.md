@@ -32,6 +32,8 @@ let them know the package is no longer updating correctly.
 
 ## Links
 [Chocolatey Package Page](https://chocolatey.org/packages/wirelessnetview.install)
+
 [Software Site](http://www.nirsoft.net/utils/wireless_network_view.html)
+
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/wirelessnetview.install)
 

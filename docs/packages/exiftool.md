@@ -46,6 +46,8 @@ let them know the package is no longer updating correctly.
 
 ## Links
 [Chocolatey Package Page](https://chocolatey.org/packages/exiftool)
+
 [Software Site](http://owl.phy.queensu.ca/~phil/exiftool/)
+
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/exiftool)
 

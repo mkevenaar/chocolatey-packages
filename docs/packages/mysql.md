@@ -35,6 +35,8 @@ Example: `choco install mysql --params "/port:3307 /serviceName:AltSQL"`
 
 ## Links
 [Chocolatey Package Page](https://chocolatey.org/packages/mysql)
+
 [Software Site](http://mysql.com/)
+
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/mysql)
 

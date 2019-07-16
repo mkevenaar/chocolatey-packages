@@ -31,6 +31,8 @@ let them know the package is no longer updating correctly.
 
 ## Links
 [Chocolatey Package Page](https://chocolatey.org/packages/devmanview)
+
 [Software Site](http://www.nirsoft.net/utils/device_manager_view.html)
+
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/devmanview)
 

@@ -34,6 +34,8 @@ let them know the package is no longer updating correctly.
 
 ## Links
 [Chocolatey Package Page](https://chocolatey.org/packages/opera-beta)
+
 [Software Site](http://www.opera.com/computer/beta)
+
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/opera-beta)
 

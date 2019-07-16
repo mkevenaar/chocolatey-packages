@@ -31,6 +31,8 @@ let them know the package is no longer updating correctly.
 
 ## Links
 [Chocolatey Package Page](https://chocolatey.org/packages/rocrail)
+
 [Software Site](https://wiki.rocrail.net/doku.php)
+
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/rocrail)
 

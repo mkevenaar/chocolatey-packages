@@ -57,6 +57,8 @@ let them know the package is no longer updating correctly.
 
 ## Links
 [Chocolatey Package Page](https://chocolatey.org/packages/thonny)
+
 [Software Site](https://thonny.org/)
+
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/thonny)
 

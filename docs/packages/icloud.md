@@ -26,6 +26,8 @@ let them know the package is no longer updating correctly.
 
 ## Links
 [Chocolatey Package Page](https://chocolatey.org/packages/iCloud)
+
 [Software Site](http://www.apple.com/icloud/)
+
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/icloud)
 

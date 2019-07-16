@@ -61,6 +61,8 @@ let them know the package is no longer updating correctly.
 
 ## Links
 [Chocolatey Package Page](https://chocolatey.org/packages/bitvise-ssh-server)
+
 [Software Site](http://www.bitvise.com/ssh-server)
+
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/bitvise-ssh-server)
 

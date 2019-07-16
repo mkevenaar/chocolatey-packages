@@ -35,6 +35,8 @@ let them know the package is no longer updating correctly.
 
 ## Links
 [Chocolatey Package Page](https://chocolatey.org/packages/nsis.portable)
+
 [Software Site](http://nsis.sourceforge.net/)
+
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/nsis.portable)
 

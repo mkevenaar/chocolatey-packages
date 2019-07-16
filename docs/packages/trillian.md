@@ -29,6 +29,8 @@ let them know the package is no longer updating correctly.
 
 ## Links
 [Chocolatey Package Page](https://chocolatey.org/packages/trillian)
+
 [Software Site](https://www.trillian.im/download/)
+
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/trillian)
 

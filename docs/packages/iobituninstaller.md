@@ -37,6 +37,8 @@ let them know the package is no longer updating correctly.
 
 ## Links
 [Chocolatey Package Page](https://chocolatey.org/packages/iobit-uninstaller)
+
 [Software Site](https://www.iobit.com/en/advanceduninstaller.php)
+
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/iobit-uninstaller)
 

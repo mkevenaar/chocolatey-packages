@@ -29,6 +29,8 @@ let them know the package is no longer updating correctly.
 
 ## Links
 [Chocolatey Package Page](https://chocolatey.org/packages/music-collector)
+
 [Software Site](https://www.collectorz.com/music/music-collector)
+
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/music-collector)
 

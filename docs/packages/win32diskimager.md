@@ -32,6 +32,8 @@ let them know the package is no longer updating correctly.
 
 ## Links
 [Chocolatey Package Page](https://chocolatey.org/packages/win32diskimager)
+
 [Software Site](https://sourceforge.net/projects/win32diskimager/)
+
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/win32diskimager)
 

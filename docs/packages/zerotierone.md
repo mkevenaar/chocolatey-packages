@@ -25,6 +25,8 @@ let them know the package is no longer updating correctly.
 
 ## Links
 [Chocolatey Package Page](https://chocolatey.org/packages/zerotier-one)
+
 [Software Site](https://www.zerotier.com/)
+
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/zerotier-one)
 

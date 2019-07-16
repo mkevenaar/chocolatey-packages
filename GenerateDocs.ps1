@@ -225,7 +225,9 @@ $( if($meta.description.InnerText) {$meta.description.InnerText} else {$meta.des
 
 ## Links
 [Chocolatey Package Page](https://chocolatey.org/packages/$($meta.id))
+
 [Software Site]($($meta.projectUrl))
+
 [Package Source]($($meta.packageSourceUrl))
 
 "@ | Out-File -Encoding UTF8 $filename

@@ -32,6 +32,8 @@ let them know the package is no longer updating correctly.
 
 ## Links
 [Chocolatey Package Page](https://chocolatey.org/packages/windowsrepair.portable)
+
 [Software Site](http://www.tweaking.com/content/page/windows_repair_all_in_one.html)
+
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/windowsrepair.portable)
 

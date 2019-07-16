@@ -41,6 +41,8 @@ let them know the package is no longer updating correctly.
 
 ## Links
 [Chocolatey Package Page](https://chocolatey.org/packages/pycharm)
+
 [Software Site](http://www.jetbrains.com/pycharm/)
+
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/pycharm)
 

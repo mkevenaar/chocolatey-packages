@@ -29,6 +29,8 @@ let them know the package is no longer updating correctly.
 
 ## Links
 [Chocolatey Package Page](https://chocolatey.org/packages/alternatestreamview)
+
 [Software Site](http://www.nirsoft.net/utils/alternate_data_streams.html)
+
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/alternatestreamview)
 

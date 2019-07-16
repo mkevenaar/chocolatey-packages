@@ -25,6 +25,8 @@ let them know the package is no longer updating correctly.
 
 ## Links
 [Chocolatey Package Page](https://chocolatey.org/packages/QuickPar)
+
 [Software Site](http://www.quickpar.org.uk)
+
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/manual/QuickPar)
 

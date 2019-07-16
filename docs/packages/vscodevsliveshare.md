@@ -30,6 +30,8 @@ let them know the package is no longer updating correctly.
 
 ## Links
 [Chocolatey Package Page](https://chocolatey.org/packages/vscode-vsliveshare)
+
 [Software Site](https://marketplace.visualstudio.com/items?itemName=ms-vsliveshare.vsliveshare)
+
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/vscode-vsliveshare)
 

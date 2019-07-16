@@ -28,6 +28,8 @@ let them know the package is no longer updating correctly.
 
 ## Links
 [Chocolatey Package Page](https://chocolatey.org/packages/viber)
+
 [Software Site](https://www.viber.com/en/products/windows)
+
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/viber)
 

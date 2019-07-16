@@ -28,6 +28,8 @@ let them know the package is no longer updating correctly.
 
 ## Links
 [Chocolatey Package Page](https://chocolatey.org/packages/goland)
+
 [Software Site](https://www.jetbrains.com/go/)
+
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/goland)
 
