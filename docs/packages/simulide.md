@@ -39,3 +39,9 @@ Editor/Debugger is still in it's firsts stages of development, with basic functi
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 
+
+## Links
+[Chocolatey Package Page](https://chocolatey.org/packages/simulide)
+[Software Site](https://simulide.blogspot.com/)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/simulide)
+

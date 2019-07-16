@@ -34,3 +34,9 @@ See [GSmartControl](https://chocolatey.org/packages/gsmartcontrol) for a GTK GUI
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 
+
+## Links
+[Chocolatey Package Page](https://chocolatey.org/packages/smartmontools)
+[Software Site](http://www.smartmontools.org/)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/smartmontools)
+

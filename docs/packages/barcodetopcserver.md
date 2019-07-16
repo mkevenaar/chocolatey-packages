@@ -35,3 +35,9 @@ Almost any barcode format is supported, see the full list [here](https://github.
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 
+
+## Links
+[Chocolatey Package Page](https://chocolatey.org/packages/barcode-to-pc-server)
+[Software Site](https://barcodetopc.com/)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/barcode-to-pc-server)
+

@@ -35,3 +35,9 @@ SuperPutty is written in C# and runs on any Windows platform supporting the .NET
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 
+
+## Links
+[Chocolatey Package Page](https://chocolatey.org/packages/superputty.portable)
+[Software Site](https://www.facebook.com/superputty)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/superputty.portable)
+

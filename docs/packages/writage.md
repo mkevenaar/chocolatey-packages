@@ -38,3 +38,9 @@ The following Markdown elements are supported:
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 
+
+## Links
+[Chocolatey Package Page](https://chocolatey.org/packages/writage)
+[Software Site](http://www.writage.com/)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/writage)
+

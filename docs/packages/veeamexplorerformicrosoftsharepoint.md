@@ -25,3 +25,9 @@ Microsoft SharePoint has traditionally been one of the most difficult applicatio
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 
+
+## Links
+[Chocolatey Package Page](https://chocolatey.org/packages/veeam-explorer-for-microsoft-sharepoint)
+[Software Site](http://www.veeam.com/)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/veeam-explorer-for-microsoft-sharepoint)
+

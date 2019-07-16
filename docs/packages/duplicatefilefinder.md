@@ -28,3 +28,9 @@ Duplicate File Finder will help you locate and remove useless file duplicates to
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 
+
+## Links
+[Chocolatey Package Page](https://chocolatey.org/packages/duplicatefilefinder)
+[Software Site](https://www.auslogics.com/en/software/duplicate-file-finder/)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/duplicatefilefinder)
+

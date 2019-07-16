@@ -40,3 +40,9 @@ With Zettlr, writing professional texts is easy and motivating: Whether you are 
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 
+
+## Links
+[Chocolatey Package Page](https://chocolatey.org/packages/zettlr)
+[Software Site](https://www.zettlr.com/)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/zettlr)
+

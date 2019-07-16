@@ -27,3 +27,9 @@ You can also export the connected devices list into html/xml/csv/text file, or c
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 
+
+## Links
+[Chocolatey Package Page](https://chocolatey.org/packages/wnetwatcher.install)
+[Software Site](http://www.nirsoft.net/utils/wireless_network_watcher.html)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/wnetwatcher.install)
+

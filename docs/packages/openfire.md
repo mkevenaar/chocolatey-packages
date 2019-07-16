@@ -23,3 +23,9 @@ Openfire is a real time collaboration (RTC) server licensed under the Open Sourc
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 
+
+## Links
+[Chocolatey Package Page](https://chocolatey.org/packages/openfire)
+[Software Site](http://www.igniterealtime.org/projects/openfire)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/openfire)
+

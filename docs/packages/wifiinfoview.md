@@ -27,3 +27,9 @@ WifiInfoView also has a summary mode, which displays a summary of all detected w
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 
+
+## Links
+[Chocolatey Package Page](https://chocolatey.org/packages/wifiinfoview)
+[Software Site](http://www.nirsoft.net/utils/wifi_information_view.html)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/wifiinfoview)
+

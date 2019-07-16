@@ -40,3 +40,9 @@ out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 
 
+
+## Links
+[Chocolatey Package Page](https://chocolatey.org/packages/aida64-extreme)
+[Software Site](http://www.aida64.com/products/aida64-extreme)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/aida64-extreme)
+

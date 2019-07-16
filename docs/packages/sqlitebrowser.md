@@ -43,3 +43,9 @@ In August 2014, the project was renamed to __Database Browser for SQLite__ at th
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
+
+## Links
+[Chocolatey Package Page](https://chocolatey.org/packages/sqlitebrowser)
+[Software Site](http://sqlitebrowser.org/)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/sqlitebrowser)
+

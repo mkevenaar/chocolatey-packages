@@ -23,3 +23,9 @@ Slack is a collaboration hub for work, no matter what work you do. It’s a plac
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 
+
+## Links
+[Chocolatey Package Page](https://chocolatey.org/packages/slack)
+[Software Site](https://slack.com/)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/slack)
+

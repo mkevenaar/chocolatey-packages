@@ -25,3 +25,9 @@ First multi-model database. Fastest graph database. This is OrientDB.
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 
+
+## Links
+[Chocolatey Package Page](https://chocolatey.org/packages/orientdb)
+[Software Site](https://orientdb.org)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/orientdb)
+

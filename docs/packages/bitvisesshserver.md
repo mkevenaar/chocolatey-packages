@@ -58,3 +58,9 @@ Note: Use two single quotes when double quotes are desired."
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 
+
+## Links
+[Chocolatey Package Page](https://chocolatey.org/packages/bitvise-ssh-server)
+[Software Site](http://www.bitvise.com/ssh-server)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/bitvise-ssh-server)
+

@@ -22,3 +22,9 @@ ZeroTier is a smart switch for Earth with VLAN capability. See https://www.zerot
 **Please Note**: This is an automatically updated package. If you find it is 
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
+
+## Links
+[Chocolatey Package Page](https://chocolatey.org/packages/zerotier-one)
+[Software Site](https://www.zerotier.com/)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/zerotier-one)
+

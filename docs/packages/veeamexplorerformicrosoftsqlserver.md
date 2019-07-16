@@ -25,3 +25,9 @@ Veeam® Explorer™ for Microsoft SQL Server gives you fast, transaction-level r
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 
+
+## Links
+[Chocolatey Package Page](https://chocolatey.org/packages/veeam-explorer-for-microsoft-sql-server)
+[Software Site](http://www.veeam.com/)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/veeam-explorer-for-microsoft-sql-server)
+

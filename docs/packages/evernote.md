@@ -29,3 +29,9 @@ PRESENT: Have fast, effective meetings by presenting your work as it evolves. No
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 
+
+## Links
+[Chocolatey Package Page](https://chocolatey.org/packages/evernote)
+[Software Site](http://evernote.com/evernote/)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/evernote)
+

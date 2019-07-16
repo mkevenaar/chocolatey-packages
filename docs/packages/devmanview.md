@@ -28,3 +28,9 @@ This feature can be useful if you have Windows operating system with booting pro
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
+
+## Links
+[Chocolatey Package Page](https://chocolatey.org/packages/devmanview)
+[Software Site](http://www.nirsoft.net/utils/device_manager_view.html)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/devmanview)
+

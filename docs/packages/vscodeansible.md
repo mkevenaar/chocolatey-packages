@@ -23,3 +23,9 @@ The VSCode ansible extension is designed to increase developer productivity auth
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
+
+## Links
+[Chocolatey Package Page](https://chocolatey.org/packages/vscode-ansible)
+[Software Site](https://marketplace.visualstudio.com/items?itemName=vscoss.vscode-ansible)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/vscode-ansible)
+

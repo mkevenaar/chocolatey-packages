@@ -49,3 +49,9 @@ This overhaul work resulted in the creation of several key components that would
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
+
+## Links
+[Chocolatey Package Page](https://chocolatey.org/packages/microsoft-windows-terminal)
+[Software Site](https://github.com/microsoft/terminal)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/microsoft-windows-terminal)
+

@@ -22,3 +22,9 @@ These functions may be used in Chocolatey install/uninstall scripts by declaring
 
 **NOTE**: This package requires PowerShell 3 or higher
     
+
+## Links
+[Chocolatey Package Page](https://chocolatey.org/packages/chocolatey-isomount.extension)
+[Software Site](https://github.com/mkevenaar/chocolatey-packages)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/extensions/chocolatey-isomount.extension)
+

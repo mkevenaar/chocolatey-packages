@@ -26,3 +26,9 @@ out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 
 
+
+## Links
+[Chocolatey Package Page](https://chocolatey.org/packages/game-collector)
+[Software Site](https://www.collectorz.com/game/game-collector)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/game-collector)
+

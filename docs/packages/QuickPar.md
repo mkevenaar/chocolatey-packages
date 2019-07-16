@@ -22,3 +22,9 @@ QuickPar is a utility for creating Parity Volumes using the Reed Solomon algorit
 **Please Note**: This is an automatically updated package. If you find it is 
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
+
+## Links
+[Chocolatey Package Page](https://chocolatey.org/packages/QuickPar)
+[Software Site](http://www.quickpar.org.uk)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/manual/QuickPar)
+

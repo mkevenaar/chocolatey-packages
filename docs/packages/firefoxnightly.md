@@ -41,3 +41,9 @@ Every 6 weeks, Firefox developers take the current stable features of each build
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 
+
+## Links
+[Chocolatey Package Page](https://chocolatey.org/packages/firefox-nightly)
+[Software Site](https://www.mozilla.org/firefox/nightly/)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/firefox-nightly)
+

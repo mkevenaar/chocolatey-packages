@@ -30,3 +30,9 @@ In technical terms, it is a network Client/Server based backup program. Bacula i
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 
+
+## Links
+[Chocolatey Package Page](https://chocolatey.org/packages/bacula)
+[Software Site](http://www.bacula.org/)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/bacula)
+

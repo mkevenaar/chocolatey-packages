@@ -23,3 +23,9 @@ LastPass is a password manager that makes web browsing easier and more secure.
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 
+
+## Links
+[Chocolatey Package Page](https://chocolatey.org/packages/lastpass)
+[Software Site](https://lastpass.com/)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/lastpass)
+

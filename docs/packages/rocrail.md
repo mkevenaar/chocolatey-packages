@@ -28,3 +28,9 @@ Using this program is at your own risk. Robert Jan Versluis can not be held resp
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 
+
+## Links
+[Chocolatey Package Page](https://chocolatey.org/packages/rocrail)
+[Software Site](https://wiki.rocrail.net/doku.php)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/rocrail)
+

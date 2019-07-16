@@ -54,3 +54,9 @@ Simple and clean pip GUI. Select Tools → Manage packages for even easier insta
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 
+
+## Links
+[Chocolatey Package Page](https://chocolatey.org/packages/thonny)
+[Software Site](https://thonny.org/)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/thonny)
+

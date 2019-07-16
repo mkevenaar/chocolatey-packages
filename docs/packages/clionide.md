@@ -24,3 +24,9 @@ Thanks to native C and C++ support, including modern C++ standards, libc++ and B
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 
+
+## Links
+[Chocolatey Package Page](https://chocolatey.org/packages/clion-ide)
+[Software Site](https://www.jetbrains.com/clion/)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/clion-ide)
+

@@ -56,3 +56,9 @@ You will need to have the [Puppet Agent](https://puppet.com/docs/puppet/4.10/abo
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 
+
+## Links
+[Chocolatey Package Page](https://chocolatey.org/packages/vscode-puppet)
+[Software Site](https://marketplace.visualstudio.com/items?itemName=jpogran.puppet-vscode)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/vscode-puppet)
+

@@ -43,3 +43,9 @@ ExifTool is a platform-independent Perl library plus a command-line application 
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 
+
+## Links
+[Chocolatey Package Page](https://chocolatey.org/packages/exiftool)
+[Software Site](http://owl.phy.queensu.ca/~phil/exiftool/)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/exiftool)
+

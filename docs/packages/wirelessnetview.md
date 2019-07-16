@@ -29,3 +29,9 @@ Please read this [blog post](http://blog.nirsoft.net/2009/05/17/antivirus-compan
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 
+
+## Links
+[Chocolatey Package Page](https://chocolatey.org/packages/wirelessnetview)
+[Software Site](http://www.nirsoft.net/utils/wireless_network_view.html)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/wirelessnetview)
+

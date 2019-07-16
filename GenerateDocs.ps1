@@ -222,6 +222,12 @@ choco uninstall $($meta.id)
 
 ## Description
 $( if($meta.description.InnerText) {$meta.description.InnerText} else {$meta.description} )
+
+## Links
+[Chocolatey Package Page](https://chocolatey.org/packages/$($meta.id))
+[Software Site]($($meta.projectUrl))
+[Package Source]($($meta.packageSourceUrl))
+
 "@ | Out-File -Encoding UTF8 $filename
 
     $navigation += "      - page: `"$($nuspec.package.metadata.title)`"$($lineFeed)"

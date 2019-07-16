@@ -42,3 +42,9 @@ Latest downloads for Wireshark are at http://www.wireshark.org/download.html
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 
+
+## Links
+[Chocolatey Package Page](https://chocolatey.org/packages/wireshark)
+[Software Site](http://www.wireshark.org)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/wireshark)
+

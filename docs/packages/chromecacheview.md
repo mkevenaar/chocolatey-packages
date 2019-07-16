@@ -27,3 +27,9 @@ You can easily select one or more items from the cache list, and then extract th
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 
+
+## Links
+[Chocolatey Package Page](https://chocolatey.org/packages/chromecacheview)
+[Software Site](http://www.nirsoft.net/utils/chrome_cache_view.html)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/chromecacheview)
+

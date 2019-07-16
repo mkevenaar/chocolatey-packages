@@ -24,3 +24,9 @@ Veeam® Explorer™ for Microsoft Active Directory provides fast and reliable ob
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
+
+## Links
+[Chocolatey Package Page](https://chocolatey.org/packages/veeam-explorer-for-microsoft-active-directory)
+[Software Site](http://www.veeam.com/)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/veeam-explorer-for-microsoft-active-directory)
+

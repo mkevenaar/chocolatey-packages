@@ -24,3 +24,9 @@ Reaching the maximum potential and proficiency of your Samsung SSD is easy. With
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 
+
+## Links
+[Chocolatey Package Page](https://chocolatey.org/packages/samsung-magician)
+[Software Site](https://www.samsung.com/semiconductor/minisite/ssd/product/consumer/magician/)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/samsung-magician)
+

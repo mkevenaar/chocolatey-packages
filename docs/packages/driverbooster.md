@@ -24,3 +24,9 @@ out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 
 
+
+## Links
+[Chocolatey Package Page](https://chocolatey.org/packages/driverbooster)
+[Software Site](http://www.iobit.com/driver-booster.php)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/driverbooster)
+

@@ -29,3 +29,9 @@ Easy to install on Windows, Linux or Mac. Run unlimited pipelines in Docker or C
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 
+
+## Links
+[Chocolatey Package Page](https://chocolatey.org/packages/appveyor-server)
+[Software Site](https://www.appveyor.com/on-premise/)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/appveyor-server)
+

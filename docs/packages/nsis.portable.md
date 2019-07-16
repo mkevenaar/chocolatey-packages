@@ -32,3 +32,9 @@ NSIS is script-based and allows you to create the logic to handle even the most 
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 
+
+## Links
+[Chocolatey Package Page](https://chocolatey.org/packages/nsis.portable)
+[Software Site](http://nsis.sourceforge.net/)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/nsis.portable)
+

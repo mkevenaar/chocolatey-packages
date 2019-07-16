@@ -26,3 +26,9 @@ out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 
 
+
+## Links
+[Chocolatey Package Page](https://chocolatey.org/packages/dymo-label)
+[Software Site](http://www.dymo.com)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/dymo-label)
+

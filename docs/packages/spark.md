@@ -25,3 +25,9 @@ Combined with the Openfire server, Spark is the easiest and best alternative to 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
+
+## Links
+[Chocolatey Package Page](https://chocolatey.org/packages/spark)
+[Software Site](https://www.igniterealtime.org/projects/spark)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/spark)
+
