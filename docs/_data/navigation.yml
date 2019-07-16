@@ -91,6 +91,8 @@
         url: /packages/mariadb.portable.html
       - page: "Microsoft Baseline Security Analyzer"
         url: /packages/mbsa.html
+      - page: "Windows Terminal"
+        url: /packages/microsoftwindowsterminal.html
       - page: "MongoDB"
         url: /packages/mongodb.html
       - page: "MongoDB (Install)"
