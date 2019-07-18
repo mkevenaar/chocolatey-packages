@@ -4,7 +4,7 @@ $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $isoPackageName = 'veeam-backup-and-replication-iso'
 $scriptPath = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 $commonPath = $(Split-Path -parent $(Split-Path -parent $scriptPath))
-$filename = 'VeeamBackup&Replication_9.5.4.2753.Update4a.iso'
+$filename = 'VeeamBackup&Replication_9.5.4.2866.Update4b.iso'
 $installPath = Join-Path  (Join-Path $commonPath $isoPackageName) $filename
 
 $fileLocation = 'Explorers\VeeamExplorerForActiveDirectory.msi'
@@ -18,7 +18,7 @@ $packageArgs = @{
   file           = $fileLocation
   fileType       = 'msi'
   silentArgs     = "ACCEPT_EULA=1 ACCEPT_THIRDPARTY_LICENSES=1 /qn /norestart /l*v `"$env:TEMP\$env:ChocolateyPackageName.$env:ChocolateyPackageVersion.log`""
-  validExitCodes = @(0,1641,3010)
+  validExitCodes = @(0,1638,1641,3010) #1638 was added to allow updating when an newer version is already installed.
   destination    = $toolsDir
 }
 
