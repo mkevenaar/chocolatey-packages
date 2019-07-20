@@ -9,8 +9,8 @@ if ($WindowsVersion.Major -ne "10") {
 }
 #The .msixbundle format is not supported on Windows 10 version 1709 and 1803. https://docs.microsoft.com/en-us/windows/msix/msix-1709-and-1803-support
 $IsCorrectBuild=[Environment]::OSVersion.Version.Build
-if ($IsCorrectBuild -lt "17763") {
-  throw "This package requires at least Windows 10 version 1809/OS build 17763.x."
+if ($IsCorrectBuild -lt "18362") {
+  throw "This package requires at least Windows 10 version 1903/OS build 18362.x."
 }
 
 Add-AppxPackage -Path $fileName
