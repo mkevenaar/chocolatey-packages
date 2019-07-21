@@ -11,11 +11,12 @@ function global:au_GetLatest {
     $url = $download_page.links | ? href -match $re | select -First 1 -expand href
 
     $version = ([regex]::Match($url,'/thonny-(.+).exe')).Captures.Groups[1].value
+    $version = $version -replace "b", "-beta"
     $url = 'https://github.com' + $url
 
-    return @{ 
+    return @{
         URL32 = $url
-        Version = $version 
+        Version = $version
         FileType = 'exe'
     }
 }
