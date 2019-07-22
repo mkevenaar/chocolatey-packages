@@ -133,6 +133,8 @@
         url: /packages/psi.install.html
       - page: "Psi (Portable)"
         url: /packages/psi.portable.html
+      - page: "Pulumi (Portable)"
+        url: /packages/pulumi.html
       - page: "JetBrains Pycharm Professional"
         url: /packages/pycharm.html
       - page: "JetBrains PyCharm (Install)"
