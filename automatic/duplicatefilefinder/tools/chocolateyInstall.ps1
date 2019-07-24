@@ -2,7 +2,7 @@
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url          = 'http://downloads.auslogics.com/en/duplicate-file-finder/duplicate-file-finder-setup.exe'
-$checksum     = 'aba305409db1ae459124eef68865be787d8f4cd0d9d6b7d681157e43f874bbfc'
+$checksum     = 'c99283faddc7ba5aeee4a69dc2f17dd92ab5dfc67e651fdd1ba32de00160cb6f'
 $checksumType = 'sha256'
 
 $packageArgs = @{
