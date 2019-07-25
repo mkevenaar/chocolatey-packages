@@ -1,35 +1,29 @@
 Import-Module au
 
-$releases = 'https://www.pulumi.com/docs/reference/install/'
-
 function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+  $version = (Invoke-WebRequest -UseBasicParsing https://www.pulumi.com/latest-version).Content.Trim()
 
-    #pulumi-v0.17.24-windows-x64.zip
-    $re  = "pulumi-v(.+)-windows-x64.zip"
-    $url = $download_page.links | ? href -match $re | select -First 1 -expand href
+  $url = "https://get.pulumi.com/releases/sdk/pulumi-v${version}-windows-x64.zip"
 
-    $version = ([regex]::Match($url,$re)).Captures.Groups[1].value
-
-    return @{ 
-        URL32 = $url
-        Version = $version 
-        FileType = 'zip'
-    }
+  return @{
+      URL64 = $url
+      Version = $version
+      FileType = 'zip'
+  }
 }
 
 function global:au_SearchReplace {
   return @{
     ".\tools\chocolateyInstall.ps1" = @{
-      "(?i)(^\s*file\s*=\s*`"[$]toolsDir\\).*"   = "`${1}$($Latest.FileName32)`""
+      "(?i)(^\s*file64\s*=\s*`"[$]toolsDir\\).*"   = "`${1}$($Latest.FileName64)`""
     }
     ".\legal\VERIFICATION.txt" = @{
       "(?i)(listed on\s*)\<.*\>" = "`${1}<$releases>"
-      "(?i)(32-Bit.+)\<.*\>"     = "`${1}<$($Latest.URL32)>"
-      "(?i)(checksum type:).*"   = "`${1} $($Latest.ChecksumType32)"
-      "(?i)(checksum32:).*"      = "`${1} $($Latest.Checksum32)"
+      "(?i)(64-Bit.+)\<.*\>"     = "`${1}<$($Latest.URL64)>"
+      "(?i)(checksum type:).*"   = "`${1} $($Latest.ChecksumType64)"
+      "(?i)(checksum64:).*"      = "`${1} $($Latest.Checksum64)"
     }
   }
 }
