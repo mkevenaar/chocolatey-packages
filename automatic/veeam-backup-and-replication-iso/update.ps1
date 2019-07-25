@@ -31,7 +31,7 @@ function global:au_GetLatest {
     }
 
     $filename = "VeeamBackup&Replication_$($isoVersion).iso"
-    $url = "https://download2.veeam.com/$($filename)"
+    $url = "https://download5.veeam.com/$($filename)"
 
     $ReleaseNotes = $download_page.Links | Where-Object href -match "kb" | Select-Object -First 1 -ExpandProperty href
 
