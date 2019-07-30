@@ -1,11 +1,11 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32          = 'https://wiki.rocrail.net/rocrail-snapshot/history/rocrail-15798-win32.exe'
-$checksum32     = '25e8f8a62c8a48c4bd675d2639e14becd0e607c18d81b45d9557952efa973a8a'
+$url32          = 'https://wiki.rocrail.net/rocrail-snapshot/history/rocrail-15807-win32.exe'
+$checksum32     = 'b6b243b46aabdf305eb3d6a88abeb939b1fa526fde0daf02df277b89f8fd2c01'
 $checksumType32 = 'sha256'
-$url64          = 'https://wiki.rocrail.net/rocrail-snapshot/history/rocrail-15798-win64.exe'
-$checksum64     = '8a9e3ad91c08683ba7056516bc80afdd133ea3388a6390c9aecf41afa46f83f6'
+$url64          = 'https://wiki.rocrail.net/rocrail-snapshot/history/rocrail-15807-win64.exe'
+$checksum64     = '9c6deb77a498fc9f8dce2634ade1bec9b0c5aaa9ba4c06801d64e22d7e87b8a7'
 $checksumType64 = 'sha256'
 
 $packageArgs = @{
