@@ -1,26 +1,36 @@
-import-module au
+Import-Module AU
 
 $releases = 'https://www.zerotier.com/download.shtml'
 
-function global:au_SearchReplace {
-    @{
-        'tools\chocolateyInstall.ps1' = @{
-            "(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
-            "(^[$]checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
-            "(^[$]checksumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
-        }
-     }
-}
-
+function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases
+  $download_page = Invoke-WebRequest -Uri $releases
 
-    $version = $download_page.ParsedHtml.getElementsByTagName('strong') | Foreach-Object innerhtml | Select-Object -First 1
+  $version = $download_page.ParsedHtml.getElementsByTagName('strong') | Foreach-Object innerhtml | Select-Object -First 1
 
-    $url32 = 'https://download.zerotier.com/RELEASES/' + $version + '/dist/ZeroTier%20One.msi'
+  $url32 = 'https://download.zerotier.com/RELEASES/' + $version + '/dist/ZeroTier%20One.msi'
 
-    $Latest = @{ URL32 = $url32; Version = $version }
-    return $Latest
+  return @{
+        URL32 = $url32
+        Version = $version 
+        FileType = 'msi'
+    }
 }
 
-update
+function global:au_SearchReplace {
+  return @{
+    ".\tools\chocolateyInstall.ps1" = @{
+      "(?i)(^\s*file\s*=\s*`"[$]toolsDir\\).*"   = "`${1}$($Latest.FileName32)`""
+    }
+    ".\legal\VERIFICATION.txt" = @{
+      "(?i)(listed on\s*)\<.*\>" = "`${1}<$releases>"
+      "(?i)(32-Bit.+)\<.*\>"     = "`${1}<$($Latest.URL32)>"
+      "(?i)(checksum type:).*"   = "`${1} $($Latest.ChecksumType32)"
+      "(?i)(checksum32:).*"      = "`${1} $($Latest.Checksum32)"
+    }
+  }
+}
+
+if ($MyInvocation.InvocationName -ne '.') {
+  update -ChecksumFor None
+}
