@@ -1,10 +1,10 @@
 ﻿$ErrorActionPreference = 'Stop';
 
-$url32          = 'https://downloads.mariadb.org/f/mariadb-10.4.6/win32-packages/mariadb-10.4.6-win32.zip'
-$checksum32     = 'aac276f3e4c240ab2773f17ef75886a5e064c0ae532d3bf1bf6724d9bceed1ca'
+$url32          = 'https://downloads.mariadb.org/f/mariadb-10.4.7/win32-packages/mariadb-10.4.7-win32.zip'
+$checksum32     = '91531208c4748f448701bc818232de0d72b0ea372e78fdfb5a228ce441354eb3'
 $checksumType32 = 'sha256'
-$url64          = 'https://downloads.mariadb.org/f/mariadb-10.4.6/winx64-packages/mariadb-10.4.6-winx64.zip'
-$checksum64     = '6cbcfc2c1ccd9802cec9e7c43270f4fa763e0583c9e6585dfade4d9e22c670b2'
+$url64          = 'https://downloads.mariadb.org/f/mariadb-10.4.7/winx64-packages/mariadb-10.4.7-winx64.zip'
+$checksum64     = '849f28b41a86564fdd7e4ea3d60838108a957960531f90ee17b027c372286041'
 $checksumType64 = 'sha256'
 
 $packageName = 'mariadb'
