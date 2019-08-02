@@ -11,14 +11,14 @@ function global:au_GetLatest {
     $version_url = $version_page.links | ? href -match $re | select -First 1 -expand href
 
     $version = ([regex]::Match($version_url,'/mariadb/(.+)/')).Captures.Groups[1].value
-    
-    $url32 = "https://downloads.mariadb.org/f/mariadb-" + $version + "/win32-packages/mariadb-" + $version + "-win32.msi"
-    $url64 = "https://downloads.mariadb.org/f/mariadb-" + $version + "/winx64-packages/mariadb-" + $version + "-winx64.msi"
-    
-    return @{ 
+
+    $url32 = "https://downloads.mariadb.org/interstitial/mariadb-" + $version + "/win32-packages/mariadb-" + $version + "-win32.msi"
+    $url64 = "https://downloads.mariadb.org/interstitial/mariadb-" + $version + "/winx64-packages/mariadb-" + $version + "-winx64.msi"
+
+    return @{
         URL32 = $url32
         URL64 = $url64
-        Version = $version 
+        Version = $version
         FileType = 'msi'
     }
 }
