@@ -12,8 +12,9 @@ function global:au_GetLatest {
   $versiondata = Get-Version($version)
   $version = $versiondata.toString()
 
-  $url32 = "https://www.appveyor.com/downloads/appveyor-server/" + $versiondata.toString(2) + "/windows/appveyor-server-" + $version + "-x64.msi"
-
+  #$url32 = "https://www.appveyor.com/downloads/appveyor-server/" + $versiondata.toString(2) + "/windows/appveyor-server-" + $version + "-x64.msi"
+  $url32 = "https://www.appveyor.com/downloads/appveyor/appveyor-server.msi"
+  
   return @{
         URL32 = $url32
         Version = $version 
