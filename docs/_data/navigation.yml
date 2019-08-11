@@ -23,7 +23,7 @@
         url: /packages/alternatestreamview.html
       - page: "AnyRail6"
         url: /packages/anyrail6.html
-      - page: "AppVeyor Server (Community Edition)"
+      - page: "AppVeyor Server (Team Edition)"
         url: /packages/appveyorserver.html
       - page: "Bacula"
         url: /packages/bacula.html
