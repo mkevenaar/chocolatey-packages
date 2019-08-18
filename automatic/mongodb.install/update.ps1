@@ -15,13 +15,15 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     Add-Type -AssemblyName System.Web
 
-    $download_page = Invoke-WebRequest -Uri $releases
+    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
-    $Results = ($download_page.ParsedHtml.getElementById('server-data')).innerhtml
+    $re = "(?smi)`"server-data`">(.+?)`<"
+    $Results = ([regex]::Match($download_page.content,$re)).Captures.Groups[1].value.Trim()
+
     $json = [System.Web.HttpUtility]::HtmlDecode($Results) | ConvertFrom-Json
 
     $latest = $json.community.versions | Where-Object { $_.production_release -eq "True" } | Select-Object -first 1
-    $url = ($latest.downloads | Where-Object { $_.target -eq "windows_x86_64-2008plus-ssl" }).msi
+    $url = ($latest.downloads | Where-Object { $_.target -eq "windows_x86_64-2012plus" }).msi
 
     $version = $latest.version
     $url64   = $url
