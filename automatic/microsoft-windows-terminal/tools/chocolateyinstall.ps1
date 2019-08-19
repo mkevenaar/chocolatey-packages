@@ -2,6 +2,7 @@
 
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $fileName       = "$toolsDir\Microsoft.WindowsTerminal_0.3.2171.0_8wekyb3d8bbwe.msixbundle"
+$version        = '0.3.2171.0'
 
 $WindowsVersion=[Environment]::OSVersion.Version
 if ($WindowsVersion.Major -ne "10") {
@@ -13,13 +14,13 @@ if ($IsCorrectBuild -lt "18362") {
   throw "This package requires at least Windows 10 version 1903/OS build 18362.x."
 }
 
-if ((Get-AppxPackage -name Microsoft.WindowsTerminal).Version -Match $env:ChocolateyPackageVersion) {
+if ((Get-AppxPackage -name Microsoft.WindowsTerminal).Version -Match $version) {
   if($env:ChocolateyForce) {
     # you can't install the same version of an appx package, you need to remove it first
     Write-Host Removing allready installed version first.
     Get-AppxPackage -Name Microsoft.WindowsTerminal | Remove-AppxPackage
   } else {
-    Write-Host The $env:ChocolateyPackageVersion version of Windows-Terminal is allready installed. If you want to reinstall use --force
+    Write-Host The $version version of Windows-Terminal is allready installed. If you want to reinstall use --force
     return
   }
 }

@@ -9,14 +9,15 @@ function global:au_GetLatest {
 
     #Microsoft.WindowsTerminal_0.2.1831.0_8wekyb3d8bbwe.msixbundle
     $re  = "Microsoft.WindowsTerminal_(.+)_.*.msixbundle"
-    $url = $download_page.links | ? href -match $re | select -First 1 -expand href
+    $url = $download_page.links | Where-Object href -match $re | Select-Object -First 1 -expand href
 
     $version = ([regex]::Match($url,$re)).Captures.Groups[1].value
     $url = 'https://github.com' + $url
 
-    return @{ 
+    return @{
         URL32 = $url
-        Version = $version 
+        Version = $version
+        RemoteVersion  = $version
         FileType = 'msixbundle'
     }
 }
@@ -24,7 +25,8 @@ function global:au_GetLatest {
 function global:au_SearchReplace {
   return @{
     ".\tools\chocolateyInstall.ps1" = @{
-      "(^[$]fileName\s*=\s*`"[$]toolsDir\\).*"   = "`${1}$($Latest.FileName32)`""
+      "(^[$]fileName\s*=\s*`"[$]toolsDir\\).*" = "`${1}$($Latest.FileName32)`""
+      "(^[$]version\s*=\s*)`".*`""             = "`${1}'$($Latest.RemoteVersion)'"
     }
     ".\legal\VERIFICATION.txt" = @{
       "(?i)(listed on\s*)\<.*\>" = "`${1}<$releases>"
