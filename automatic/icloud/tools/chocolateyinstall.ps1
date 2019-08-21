@@ -10,7 +10,7 @@ $packageArgs = @{
   checksum       = '0A4BAB1FDB927D6E242465C7CAA0BDED73F1D6D2086C0BA9CBEC947451027C93'
   checksumType   = 'sha256'
   silentArgs     = "/qn /norestart"
-  validExitCodes = @(0, 2010, 1641)
+  validExitCodes = @(0, 2010, 1603, 1641)
   unzipLocation  = Get-PackageCacheLocation
 }
 
