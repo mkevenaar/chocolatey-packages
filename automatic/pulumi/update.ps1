@@ -3,7 +3,7 @@ Import-Module au
 function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 
 function global:au_GetLatest {
-  $version = (Invoke-WebRequest -UseBasicParsing https://www.pulumi.com/latest-version).Content.Trim()
+  $version = (Invoke-WebRequest -UseBasicParsing https://www.pulumi.com/latest-version).Content.Trim() -Replace "beta\.", "beta"
 
   $url = "https://get.pulumi.com/releases/sdk/pulumi-v${version}-windows-x64.zip"
 
