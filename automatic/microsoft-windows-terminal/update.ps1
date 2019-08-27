@@ -26,7 +26,7 @@ function global:au_SearchReplace {
   return @{
     ".\tools\chocolateyInstall.ps1" = @{
       "(^[$]fileName\s*=\s*`"[$]toolsDir\\).*" = "`${1}$($Latest.FileName32)`""
-      "(^[$]version\s*=\s*)`".*`""             = "`${1}'$($Latest.RemoteVersion)'"
+      "(^[$]version\s*=\s*)`".*`""             = "`${1}`"$($Latest.RemoteVersion)`""
     }
     ".\legal\VERIFICATION.txt" = @{
       "(?i)(listed on\s*)\<.*\>" = "`${1}<$releases>"
