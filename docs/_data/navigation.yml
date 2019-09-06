@@ -127,6 +127,8 @@
         url: /packages/operadeveloper.html
       - page: "OrientDB (Portable)"
         url: /packages/orientdb.html
+      - page: "PowerToys"
+        url: /packages/powertoys.html
       - page: "Psi"
         url: /packages/psi.html
       - page: "Psi (Install)"
