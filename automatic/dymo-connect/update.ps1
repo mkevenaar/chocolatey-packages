@@ -16,13 +16,13 @@ function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
     $re = "DCDSetup(.+).exe"
-    $url = "https" ($download_page.links | Where-Object href -match $re | Select-Object -First 1 -expand href)
+    $url = "http:" + ($download_page.links | Where-Object href -match $re | Select-Object -First 1 -expand href)
 
     $version = ([regex]::Match($url,$re)).Captures.Groups[1].value
 
-    return @{ 
-        URL32 = $url
-        Version = $version 
+    return @{
+      URL32 = $url
+      Version = $version
     }
 }
 
