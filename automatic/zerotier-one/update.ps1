@@ -1,12 +1,12 @@
 Import-Module AU
 
-$releases = 'https://www.zerotier.com/download.shtml'
+$releases = 'https://github.com/zerotier/ZeroTierOne/releases/latest'
 
 function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 function global:au_GetLatest {
-  $download_page = Invoke-WebRequest -Uri $releases
+  $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
-  $version = $download_page.ParsedHtml.getElementsByTagName('strong') | Foreach-Object innerhtml | Select-Object -First 1
+  $version = ($download_page.Links | Where-Object href -Match "releases/tag" | Select-Object -First 1 -ExpandProperty href) -Split "/" | Select-Object -Last 1
 
   $url32 = 'https://download.zerotier.com/RELEASES/' + $version + '/dist/ZeroTier%20One.msi'
 
