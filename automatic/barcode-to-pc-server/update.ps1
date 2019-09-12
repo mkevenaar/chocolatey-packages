@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'https://barcodetopc.com/'
+$releases = 'https://github.com/fttx/barcode-to-pc-server/releases/latest'
 
 function global:au_SearchReplace {
     @{
@@ -17,12 +17,13 @@ function global:au_GetLatest {
 
     $re = "barcode-to-pc-server.v(.+\d).win.setup.exe"
     $url = $download_page.Links | Where-Object href -match $re | Select-Object -First 1 -expand href
+    $url = "https://github.com" + $url
 
     $version = $url -split "/" | Select-Object -last 1 -skip 1
     $version = Get-Version $version
-    return @{ 
+    return @{
         URL32 = $url
-        Version = $version 
+        Version = $version
     }
 }
 
