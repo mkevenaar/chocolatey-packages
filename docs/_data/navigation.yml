@@ -65,6 +65,12 @@
         url: /packages/gamecollector.html
       - page: "JetBrains GoLand"
         url: /packages/goland.html
+      - page: "Helio Workstation"
+        url: /packages/helioworkstation.html
+      - page: "Helio Workstation (Install)"
+        url: /packages/helioworkstation.install.html
+      - page: "Helio Workstation (Portable)"
+        url: /packages/helioworkstation.portable.html
       - page: "Apple iCloud"
         url: /packages/icloud.html
       - page: "Intel SSD Toolbox"
