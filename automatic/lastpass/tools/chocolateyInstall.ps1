@@ -1,10 +1,10 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $url32          = 'https://download.cloud.lastpass.com/windows_installer/lastpass.exe'
-$checksum32     = '9354e7d164aa838af0e4835a8f1f7bc01ba591ccf43739fb0625b5ad43629882'
+$checksum32     = 'b05d16efd037e084be674089c9f4a68ff5518d6e48573e51f26a3848705de989'
 $checksumType32 = 'sha256'
 $url64          = 'https://download.cloud.lastpass.com/windows_installer/lastpass_x64.exe'
-$checksum64     = '9427dcc285bf574c7aab03e998e7c2062f0a3e62619048062bf956ebcf1b48fa'
+$checksum64     = '2401c795e7584c3a185e221cba77dbb422a82aa4ce97936534066f5ee9c79005'
 $checksumType64 = 'sha256'
 
 $packageArgs = @{
