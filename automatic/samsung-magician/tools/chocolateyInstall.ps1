@@ -2,7 +2,7 @@
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url          = 'http://ssd.samsungsemi.com/ecomobile/ssd/update10.do?fname=/Samsung_Magician_Installer.zip'
-$checksum     = 'b66b41b3bf6c71bd6051a383262f72ffc5a34376f43c63c9d2b21ab79ba8ac3b'
+$checksum     = '9059b1ee42c5fa2251e36675807f8d94c5fd4a5e2887dcba7f94c8f4afd81375'
 $checksumType = 'sha256'
 
 $packageArgs = @{
