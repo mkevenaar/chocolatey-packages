@@ -17,7 +17,7 @@ function global:au_GetLatest {
 
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
-    $re = "(?smi)`"server-data`">(.+?)`<"
+    $re = "(?smi)`"server-data`">window.__serverData = (.+?)`<"
     $Results = ([regex]::Match($download_page.content,$re)).Captures.Groups[1].value.Trim()
 
     $json = [System.Web.HttpUtility]::HtmlDecode($Results) | ConvertFrom-Json
