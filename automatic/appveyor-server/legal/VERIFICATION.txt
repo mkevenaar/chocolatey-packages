@@ -12,7 +12,7 @@ and can be verified like this:
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: 1B5DB4069D83F3605B1BB89A03E015FE022748EC0C0977BB210EA9F3F82C14A8
+  checksum32: F750D6C96FA6817FB0CB89C1B23DA45D6D74FB118FE66F2AAF769C6B77BA1FEB
 
 File 'LICENSE.txt' is obtained from <https://www.appveyor.com/terms-of-service/>
 
