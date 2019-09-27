@@ -225,6 +225,8 @@
         url: /packages/vscodeansible.html
       - page: "Puppet VSCode Extension"
         url: /packages/vscodepuppet.html
+      - page: "Ruby VSCode Extension"
+        url: /packages/vscoderuby.html
       - page: "Live Share VSCode Extension"
         url: /packages/vscodevsliveshare.html
       - page: "YAML VSCode Extension"
