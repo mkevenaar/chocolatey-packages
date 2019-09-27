@@ -11,20 +11,24 @@ function global:au_SearchReplace {
         }
      }
 }
+function global:au_BeforeUpdate {
+  $Latest.Checksum32 = Get-RemoteChecksum $Latest.URL32
+}
+
 
 function global:au_GetLatest {
   $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
-  $re = "Evernote_(.+).exe" 
+  $re = "Evernote_(.+).exe"
 
   $url32 = $download_page.Links | Where-Object href -match $re | Select-Object -First 1 -expand href
 
   $version = ([regex]::Match($url32,$re)).Captures.Groups[1].value
 
-  return @{ 
+  return @{
     URL32 = $url32
-    Version = $version 
+    Version = $version
   }
 }
 
-update -ChecksumFor 32
+update -ChecksumFor none
