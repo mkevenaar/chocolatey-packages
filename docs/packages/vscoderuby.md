@@ -32,6 +32,7 @@ This extension provides Ruby language and debugging support for Visual Studio Co
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 
+
 ## Links
 [Chocolatey Package Page](https://chocolatey.org/packages/vscode-ruby)
 
