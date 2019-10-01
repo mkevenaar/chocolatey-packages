@@ -1,20 +1,27 @@
-$ErrorActionPreference = 'Stop';
+﻿$ErrorActionPreference = 'Stop';
+
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-#Based on Msi
+$url32          = 'https://download.microsoft.com/download/F/E/E/FEE62C90-E5A9-4746-8478-11980609E5C2/ENU/x86/SQLSysClrTypes.msi'
+$checksum32     = '5CA2CC72AA5B9D02014958A8BF664676672DE7D10EF4F4BD2658301210541867'
+$checksumType32 = 'sha256'
+$url64          = 'https://download.microsoft.com/download/F/E/E/FEE62C90-E5A9-4746-8478-11980609E5C2/ENU/x64/SQLSysClrTypes.msi'
+$checksum64     = '74cb1bc8216b24acfbc643ea7555fc7d6067dfd39b7316e79203552c36282c8f'
+$checksumType64 = 'sha256'
+
 $packageArgs = @{
-  packageName   = $env:ChocolateyPackageName
+  packageName    = $env:ChocolateyPackageName
+  unzipLocation  = $toolsDir
+  fileType       = 'msi'
+  url            = $url32
+  checksum       = $checksum32
+  checksumType   = $checksumType32
+  url64bit      = $url64
+  checksum64    = $checksum64
+  checksumType64= $checksumType64
   softwareName  = 'Microsoft System CLR Types for SQL Server 2014*'
-  fileType      = 'msi'
   silentArgs    = "/qn /norestart /l*v `"$env:TEMP\$env:ChocolateyPackageName.$env:ChocolateyPackageVersion.log`""
   validExitCodes= @(0,1641,3010)
-  url           = "https://download.microsoft.com/download/F/E/E/FEE62C90-E5A9-4746-8478-11980609E5C2/ENU/x86/SQLSysClrTypes.msi"
-  checksum      = 'E592C97417B8102AA1AFF72A28012AB8BF122E02CB9C23C692B76E1D1EA9B47E'
-  checksumType  = 'sha256'
-  url64bit      = "https://download.microsoft.com/download/F/E/E/FEE62C90-E5A9-4746-8478-11980609E5C2/ENU/x64/SQLSysClrTypes.msi"
-  checksum64    = 'D264B0B4D8E503C2638C18F09FF74F895DA92A9984D2B7C5D6192A6A22FA3C41'
-  checksumType64= 'sha256'
-  destination   = $toolsDir
 }
 
 Install-ChocolateyPackage @packageArgs
