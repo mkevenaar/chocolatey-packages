@@ -12,7 +12,7 @@ function global:au_SearchReplace {
      }
 }
 function global:au_BeforeUpdate {
-  $Latest.Checksum32 = Get-RemoteChecksum $Latest.URL32
+  $Latest.Checksum32 = Get-RemoteChecksum -Url $Latest.URL32 -Algorithm $Latest.ChecksumType32
 }
 
 
@@ -28,6 +28,7 @@ function global:au_GetLatest {
   return @{
     URL32 = $url32
     Version = $version
+    ChecksumType32 = 'sha256'
   }
 }
 
