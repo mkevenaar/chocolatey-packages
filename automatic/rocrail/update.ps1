@@ -27,7 +27,7 @@ function global:au_GetLatest {
     $filename32 = $uri32.Substring($uri32.LastIndexOf("/") + 1)
     $filename64 = $uri64.Substring($uri64.LastIndexOf("/") + 1)
     $version = $filename64 -split '-' | select -Last 1 -Skip 1
-    $version = '0.' + $version
+    $version = '1.' + $version
     $url32 = 'https://wiki.rocrail.net/rocrail-snapshot/history/' + $filename32
     $url64 = 'https://wiki.rocrail.net/rocrail-snapshot/history/' + $filename64
 
