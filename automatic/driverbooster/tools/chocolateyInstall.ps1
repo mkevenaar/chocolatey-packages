@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url          = 'http://update.iobit.com/dl/driver_booster_setup.exe'
-$checksum     = '67E95B3362F0067EEF8F4A0ACCA81C54CD7C84A0413F28C14315AE2D57794DCB'
+$checksum     = '8F5CFE170EA788508E33C05A827DBC1A96F3344047AD1C8E8ED27CD16D5A17C7'
 
 $checksumType = 'sha256'
 
