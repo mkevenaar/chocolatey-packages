@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@fddc0be7a9965af753ab1b6b79b5ec2be460e51b/icons/orientdb.svg" width="48" height="48"/> [orientdb](https://chocolatey.org/packages/orientdb)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@49cbd0915acb75d0b982b1a604a00498ff1e76e0/icons/orientdb.svg" width="48" height="48"/> [orientdb](https://chocolatey.org/packages/orientdb)
 
 The database designed for the modern world
 
