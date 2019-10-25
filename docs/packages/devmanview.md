@@ -29,6 +29,7 @@ This feature can be useful if you have Windows operating system with booting pro
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 
+
 ## Links
 [Chocolatey Package Page](https://chocolatey.org/packages/devmanview)
 

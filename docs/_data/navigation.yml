@@ -231,6 +231,12 @@
         url: /packages/vscodevsliveshare.html
       - page: "YAML VSCode Extension"
         url: /packages/vscodeyaml.html
+      - page: "IBM 3270 terminal emulator"
+        url: /packages/wc3270.html
+      - page: "IBM 3270 terminal emulator (Install)"
+        url: /packages/wc3270.install.html
+      - page: "IBM 3270 terminal emulator (Portable)"
+        url: /packages/wc3270.portable.html
       - page: "WifiInfoView"
         url: /packages/wifiinfoview.html
       - page: "Win32 Disk Imager"
