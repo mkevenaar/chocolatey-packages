@@ -1,13 +1,13 @@
 ﻿$ErrorActionPreference = 'Stop';
 
-$version = '7.14.0.29'
+$version = '7.15.0.10'
 
 $packageArgs = @{
   packageName    = 'iCloud'
   fileType       = 'msi'
-  url            = 'http://updates-http.cdn-apple.com/2019/windows/041-75336-20191002-45F92212-E56B-11E9-9B8B-CBB84BDB2D0F/iCloudSetup.exe'
+  url            = 'http://updates-http.cdn-apple.com/2019/windows/061-24943-20191028-18EC3E3C-F9D2-11E9-9D7B-F55FB62FDC30/iCloudSetup.exe'
   softwareName   = 'iCloud'
-  checksum       = '56220C91F8E3DFE6692ED69393C532BC2BC976DC66D845AE9AC6790F61F31CC1'
+  checksum       = 'C619EE5E724026B0CB3BC62A01FFB9130DFA45100970AC235C0B9133EAA8C195'
   checksumType   = 'sha256'
   silentArgs     = "/qn /norestart"
   validExitCodes = @(0, 2010, 1603, 1641)
