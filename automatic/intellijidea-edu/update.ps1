@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'https://data.services.jetbrains.com/products/releases?code=IICE&latest=true&type=release'
+$releases = 'https://data.services.jetbrains.com/products/releases?code=IIE&latest=true&type=release'
 
 function global:au_SearchReplace {
     @{
