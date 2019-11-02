@@ -1,3 +1,3 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-Install-VsCodeExtension -extensionId 'ms-vsliveshare.vsliveshare@1.0.1122'
+Install-VsCodeExtension -extensionId 'ms-vsliveshare.vsliveshare@1.0.1123'
