@@ -65,6 +65,8 @@
         url: /packages/gamecollector.html
       - page: "JetBrains GoLand"
         url: /packages/goland.html
+      - page: "Hangouts Chat (Install)"
+        url: /packages/googlehangoutschat.html
       - page: "Helio Workstation"
         url: /packages/helioworkstation.html
       - page: "Helio Workstation (Install)"
