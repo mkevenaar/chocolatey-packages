@@ -23,5 +23,9 @@ $packageArgs = @{
   validExitCodes= @(0,3010)
 }
 
+$pp = Get-PackageParameters
+if ($pp['LoadInf'] -and !(Test-Path $pp['LoadInf'])) { throw "$($pp['LoadInf']) is not a valid file" }
+$packageArgs['silentArgs'] += " /loadinf:$($pp['LoadInf'])"
+
 Install-ChocolateyPackage @packageArgs
 
