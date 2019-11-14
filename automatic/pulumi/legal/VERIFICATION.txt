@@ -6,12 +6,12 @@ The installer have been downloaded from their official download link listed on <
 and can be verified like this:
 
 1. Download the following installers:
-  64-Bit: <https://get.pulumi.com/releases/sdk/pulumi-v1.5.1-windows-x64.zip>
+  64-Bit: <https://get.pulumi.com/releases/sdk/pulumi-v1.5.2-windows-x64.zip>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum64: 332D8950EF5291814F2FED1F6E70F905EDBBE04910A184919A0AE971E00F608E
+  checksum64: B1570812AB5DD9DFA6E02DFDF076A0B7350E8A5545394F11EE4D1FC9255F4BF4
 
 File 'LICENSE.txt' is obtained from <https://github.com/pulumi/pulumi/blob/master/LICENSE>
