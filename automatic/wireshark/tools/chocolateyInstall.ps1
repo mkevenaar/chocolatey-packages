@@ -14,3 +14,6 @@ $packageArgs = @{
 
 Install-ChocolateyInstallPackage @packageArgs
 
+foreach ($installer in (Get-ChildItem $toolsDir -include *.exe -recurse)) {
+  New-Item "$installer.ignore" -type file -force | Out-Null
+}
