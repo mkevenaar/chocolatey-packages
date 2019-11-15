@@ -14,6 +14,4 @@ $packageArgs = @{
 
 Install-ChocolateyInstallPackage @packageArgs
 
-foreach ($installer in (Get-ChildItem $toolsDir -include *.exe -recurse)) {
-  New-Item "$installer.ignore" -type file -force | Out-Null
-}
+Get-ChildItem $toolsPath\*.exe | ForEach-Object { Remove-Item $_ -ea 0; if (Test-Path $_) { Set-Content "$_.ignore" } }
