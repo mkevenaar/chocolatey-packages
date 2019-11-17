@@ -1,11 +1,11 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32          = 'https://www.uvnc.eu/download/1224/UltraVNC_1_2_24_X86_Setup.exe'
-$checksum32     = 'd55dbaa0c4db03dfce5a98c681a86c31b3524945b1b3aee73f59e3a5501102c0'
+$url32          = 'https://www.uvnc.eu/download/1230/UltraVNC_1_2_30_X86_Setup.exe'
+$checksum32     = '77da28b1bc36edb769bf0e09494bcc465c2689dc3dd82da1902bc06e0ef03581'
 $checksumType32 = 'sha256'
-$url64          = 'https://www.uvnc.eu/download/1224/UltraVNC_1_2_24_X64_Setup.exe'
-$checksum64     = 'e71d6164defea59f8d44a43542bc642461b184ae751ec29b06dfc46aa22bc148'
+$url64          = 'https://www.uvnc.eu/download/1230/UltraVNC_1_2_30_X64_Setup.exe'
+$checksum64     = 'fe3d1135ae0e7b72394a6f3cc137282cb5e6382a55b5ceee72140d28f5ffe961'
 $checksumType64 = 'sha256'
 
 $packageArgs = @{
