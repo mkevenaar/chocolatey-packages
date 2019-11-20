@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = 'http://download.dymo.com/dymo/Software/Win/DCDSetup1.1.exe'
-$checksum     = 'b26e92a6f762eeb3fc23008251e6ebb22d32ab4c626a484e9b717cea31997ed7'
+$url          = 'http://download.dymo.com/dymo/Software/Win/DCDSetup1.2.exe'
+$checksum     = 'ea65964cf8ce76564d7876468e93b1ca0af0414dab568bee44e3744a568b2263'
 $checksumType = 'sha256'
 
 $packageArgs = @{
