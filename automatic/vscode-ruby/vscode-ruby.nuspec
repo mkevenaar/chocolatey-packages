@@ -41,8 +41,8 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Peng Lv</copyright>
     <tags>vscode-ruby ruby extension vscode</tags>
-    <releaseNotes>https://marketplace.visualstudio.com/items/rebornix.Ruby/changelog</releaseNotes>
-    <licenseUrl>https://marketplace.visualstudio.com/items/rebornix.Ruby/license</licenseUrl>
+    <releaseNotes>https://github.com/rubyide/vscode-ruby/blob/master/CHANGELOG.md</releaseNotes>
+    <licenseUrl>https://github.com/rubyide/vscode-ruby/blob/master/LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/vscode-ruby</packageSourceUrl>
     <projectSourceUrl>https://github.com/rubyide/vscode-ruby</projectSourceUrl>
