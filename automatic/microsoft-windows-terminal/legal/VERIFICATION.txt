@@ -6,12 +6,12 @@ The installer have been downloaded from their official download link listed on <
 and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <https://github.com/microsoft/terminal/releases/download/v0.6.2951.0/Microsoft.WindowsTerminal_0.6.2951.0_8wekyb3d8bbwe.msixbundle>
+  32-Bit: <https://github.com/microsoft/terminal/releases/download/v0.7.3291.0/Microsoft.WindowsTerminal_0.7.3291.0_8wekyb3d8bbwe.msixbundle>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: 1E55CD46043AD5613242AAE3BCEB528B81A181A8B388015EBE7767000102D06A
+  checksum32: 1CF685BA44C55CD8CBB78766DB187C75B9AB3107309E0A1727D6A5ACBB85CB80
 
 File 'LICENSE.txt' is obtained from <https://github.com/microsoft/terminal/blob/master/LICENSE>
