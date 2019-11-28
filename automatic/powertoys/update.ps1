@@ -1,6 +1,6 @@
 Import-Module au
 
-$releases = 'https://github.com/microsoft/PowerToys/releases'
+$releases = 'https://github.com/microsoft/PowerToys/releases/latest'
 
 function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 
