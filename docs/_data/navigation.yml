@@ -83,6 +83,8 @@
         url: /packages/iobitmalwarefighter.html
       - page: "IObit Uninstaller"
         url: /packages/iobituninstaller.html
+      - page: "Freedom Scientific JAWS"
+        url: /packages/JAWS.html
       - page: "Jetbrains Rider"
         url: /packages/jetbrainsrider.html
       - page: "JetBrains Toolbox App (Install)"

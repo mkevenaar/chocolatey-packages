@@ -42,6 +42,7 @@ Make conversations more efficient by interacting directly with deeply integrated
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 
+
 ## Links
 [Chocolatey Package Page](https://chocolatey.org/packages/google-hangouts-chat)
 
