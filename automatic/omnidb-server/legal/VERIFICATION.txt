@@ -6,12 +6,12 @@ The installer have been downloaded from their official download link listed on <
 and can be verified like this:
 
 1. Download the following installers:
-  64-Bit: <https://omnidb.org/dist/2.16.0/omnidb-server_2.16.0-windows-amd64.exe>
+  64-Bit: <https://omnidb.org/dist/2.17.0/omnidb-server_2.17.0-windows-amd64.exe>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum64: 26C1B5549980FD8AE9943A9A70443A635185E9F572F65CD0440909C83BA401FE
+  checksum64: FB9CF1BDF8033B96A1228F62DBCF6AF9DF55B290D1B6769A15D7C65AAF857DF0
 
 File 'LICENSE.txt' is obtained from <https://github.com/OmniDB/OmniDB/blob/master/LICENSE>
