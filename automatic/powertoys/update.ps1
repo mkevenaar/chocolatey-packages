@@ -7,8 +7,7 @@ function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
-    #Microsoft.WindowsTerminal_0.2.1831.0_8wekyb3d8bbwe.msixbundle
-    $re  = "PowerToysSetup.msi"
+    $re  = "PowerToysSetup(.+)?.msi"
     $url = $download_page.links | Where-Object href -match $re | Select-Object -First 1 -expand href
 
     $version = (($download_page.Links | Where-Object href -Match "releases/tag" | Select-Object -First 1 -ExpandProperty href) -Split "/" | Select-Object -Last 1) -Replace "v"

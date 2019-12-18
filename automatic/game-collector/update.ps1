@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'https://www.collectorz.com/game/signup-completed'
+$releases = 'https://www.collectorz.com/game/game-collector/signup-completed'
 $softwareurl = 'https://www.collectorz.com/download?pf=w&p=game'
 
 function global:au_SearchReplace {
@@ -21,9 +21,9 @@ function global:au_GetLatest {
     $versionregex = "([0-9]+.[0-9]+.[0-9]+)"
     $version = ([regex]::Match($versiondata, $versionregex)).Captures.Groups[1].value
 
-    return @{ 
+    return @{
         URL32 = $url
-        Version = $version 
+        Version = $version
     }
 }
 
