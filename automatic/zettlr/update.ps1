@@ -8,15 +8,15 @@ function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
     #Zettlr-win32-x64-1.2.3.exe
-    $re  = "Zettlr-win32-x64-(.+).exe"
+    $re  = "Zettlr-(.+).exe"
     $url = $download_page.links | ? href -match $re | select -First 1 -expand href
 
     $version = ([regex]::Match($url,$re)).Captures.Groups[1].value
     $url = 'https://github.com' + $url
 
-    return @{ 
+    return @{
         URL32 = $url
-        Version = $version 
+        Version = $version
         FileType = 'exe'
     }
 }
