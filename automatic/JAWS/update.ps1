@@ -22,10 +22,10 @@ function global:au_GetLatest {
     $verisonsurl = 'https://support.freedomscientific.com/Downloads/OfflineInstallers/GetInstallers?product=JAWS&version='+$majorversion+'&language=mul&releaseType=Offline&_=' + $ED
     $verisonsjson = Invoke-WebRequest $verisonsurl | ConvertFrom-Json
 
-    $url32 = ($verisonsjson | Where-Object InstallerPlatform -Match "32").InstallerLocationHTTP
-    $url64 = ($verisonsjson | Where-Object InstallerPlatform -Match "64").InstallerLocationHTTP
+    $url32 = ($verisonsjson | Where-Object InstallerPlatform -Match "32" | Sort-Object -Property FileName -Descending | Select-Object -First 1 ).InstallerLocationHTTP
+    $url64 = ($verisonsjson | Where-Object InstallerPlatform -Match "64" | Sort-Object -Property FileName -Descending | Select-Object -First 1 ).InstallerLocationHTTP
 
-    $version = ($verisonsjson | Where-Object InstallerPlatform -Match "64").FileName
+    $version = ($verisonsjson | Where-Object InstallerPlatform -Match "64" | Sort-Object -Property FileName -Descending | Select-Object -First 1 ).FileName
     $version = (Get-Version $version).Version
 
     $Latest = @{ URL32 = $url32; URL64 = $url64; Version = $version }
