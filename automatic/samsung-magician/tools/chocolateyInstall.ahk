@@ -33,10 +33,6 @@ WinWait, %winTitleInstall%, Collection and Use
 ControlClick, I &accept the agreement, %winTitleInstall%,,,, NA
 ControlClick, &Next >, %winTitleInstall%,,,, NA
 
-; Installation Folder
-WinWait, %winTitleInstall%, Select Destination
-ControlClick, &Next >, %winTitleInstall%,,,, NA
-
 ; Icons
 WinWait, %winTitleInstall%, Select Additional
 ControlClick, &Next >, %winTitleInstall%,,,, NA
