@@ -209,6 +209,8 @@
         url: /packages/veeambackupandreplicationmanagement.html
       - page: "Veeam Backup & Replication Server"
         url: /packages/veeambackupandreplicationserver.html
+      - page: "Veeam Backup for Microsoft Office 365"
+        url: /packages/veeambackupformicrosoftoffice365.html
       - page: "Veeam Explorer for Microsoft Active Directory"
         url: /packages/veeamexplorerformicrosoftactivedirectory.html
       - page: "Veeam Explorer for Microsoft Exchange"
