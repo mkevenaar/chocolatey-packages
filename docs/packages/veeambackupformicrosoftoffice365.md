@@ -33,9 +33,9 @@ The package accepts the following optional parameters:
 
 * `/server` - Only install Veeam Backup for Microsoft Office 365 Server
 * `/console` - Only install Veeam Backup for Microsoft Office 365 Console
-* `/powershell - Only install Veeam Backup for Microsoft Office 365 PowerShell
+* `/powershell` - Only install Veeam Backup for Microsoft Office 365 PowerShell
 
-**NOTE** These parameters can be combined. e.g. `/server /powershell` to only install Server and PowerShell parts.
+**NOTE** These parameters can be combined. e.g. `-params '"/server /powershell"'` to only install Server and PowerShell parts.
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
