@@ -57,7 +57,9 @@ out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 
 ### Package Parameters
+
 The package accepts the following optional parameters:
+
 * `/installLocation` - filesystem location for mysql binaries
 * `/dataLocation` - filesystem location for mysql data
 * `/port` - numberic TCP listening port

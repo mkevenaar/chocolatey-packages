@@ -17,7 +17,7 @@ choco uninstall veeam-explorer-for-microsoft-exchange
 ```
 
 ## Description
-Recovery tool for Microsoft Exchange
+## Recovery tool for Microsoft Exchange
 
 Veeam® Explorer™ for Microsoft Exchange offers revolutionary technology that gives you instant visibility into Exchange backups, granular recovery of individual items and easy-to-use eDiscovery options — all without restoring the full Exchange database or entire server.
 

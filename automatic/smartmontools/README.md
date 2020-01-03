@@ -9,6 +9,7 @@ Due to OS-specific issues and also depending on the different state of smartmont
 See [GSmartControl](https://chocolatey.org/packages/gsmartcontrol) for a GTK GUI interface.
 
 #### Documentation
+
 * [FAQ](http://www.smartmontools.org/wiki/FAQ)
 * [Manual](http://www.smartmontools.org/wiki/TocDoc)
 * [Developer](http://www.smartmontools.org/wiki/TocDeveloper)

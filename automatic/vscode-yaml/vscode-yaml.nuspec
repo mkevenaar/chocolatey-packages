@@ -48,7 +48,8 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <projectSourceUrl>https://github.com/redhat-developer/vscode-yaml</projectSourceUrl>
     <bugTrackerUrl>https://github.com/redhat-developer/vscode-yaml/issues</bugTrackerUrl>
     <summary>Real-time collaborative development from the comfort of your favorite tools.</summary>
-    <description><![CDATA[# YAML Language Support by Red Hat
+    <description><![CDATA[## YAML Language Support by Red Hat
+
 Provides comprehensive YAML Language support to [Visual Studio Code](https://code.visualstudio.com/), via the [yaml-language-server](https://github.com/redhat-developer/yaml-language-server), with built-in Kubernetes and Kedge syntax support.
 
 **Please Note**: This is an automatically updated package. If you find it is

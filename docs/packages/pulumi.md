@@ -18,9 +18,11 @@ choco uninstall pulumi
 
 ## Description
 ## Modern Infrastructure as Code
+
 Create, deploy, and manage infrastructure on any cloud using your favorite language.
 
 ## Any Code. Any Cloud. Any Team.
+
 Unify development and devops practices to define, deploy, and manage cloud apps and infrastructure.
 
 **Please Note**: This is an automatically updated package. If you find it is

@@ -17,7 +17,6 @@ choco uninstall alternatestreamview
 ```
 
 ## Description
-
 AlternateStreamView is a small utility that allows you to scan your NTFS drive, and find all hidden alternate streams stored in the file system.
 
 After scanning and finding the alternate streams, you can extract these streams into the specified folder, delete unwanted streams, or save the streams list into text/html/csv/xml file.

@@ -1,15 +1,19 @@
 # <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@51247a81a30c4c8d14434fcbc61c7a0b750c0945/icons/winrar.png" width="48" height="48"/> [winrar](https://chocolatey.org/packages/winrar)
 
+**NOTE** When a new version is released, not all translations are avaialbe. Currently there is no solution to permanently fix this. For more information have a look at issue [#20](https://github.com/mkevenaar/chocolatey-packages/issues/20)
+
+## WinRAR
 
 WinRAR is a powerful archive manager. It can backup your data and reduce the size of email attachments, decompress RAR, ZIP and other files downloaded from Internet and create new archives in RAR and ZIP file format.
 
 You can find themes for WinRAR [here](http://www.rarlab.com/themes.htm).
 
-#### Commercial software
+### Commercial software
 
 You can try WinRAR before you [buy](https://shop.win-rar.com/16/purl-shop-1984-1-n).
 
-#### Package Parameters
+### Package Parameters
+
 The following package parameters can be set:
 
 * `/LCID:` - the language code you want to install - defaults to your current language

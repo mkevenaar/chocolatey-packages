@@ -1,6 +1,6 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@783a3b629ad9948830e24567739a7a884537d9a4/icons/powertoys.png" width="48" height="48"/> [powertoys](https://chocolatey.org/packages/powertoys)
 
-# PowerToys
+## PowerToys
 
 PowerToys is a set of utilities for power users to tune and streamline their Windows experience for greater productivity.
 

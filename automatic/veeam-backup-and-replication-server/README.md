@@ -1,6 +1,6 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@3b43537c8f99e1ea08563dbe1587c158c4f52e3c/icons/veeam-backup-and-replication-server.png" width="48" height="48"/> [veeam-backup-and-replication-server](https://chocolatey.org/packages/veeam-backup-and-replication-server)
 
-Industry-leading backup, recovery and replication software
+## Industry-leading backup, recovery and replication software
 
 Veeam® Backup & Replication™ helps businesses achieve comprehensive data protection for ALL workloads — virtual, physical and cloud-based workloads. With a single console, achieve fast, flexible and reliable backup, recovery and replication of all applications and data.
 
@@ -9,6 +9,7 @@ Veeam® Backup & Replication™ helps businesses achieve comprehensive data prot
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
 
 ### Package Parameters
+
 The package accepts the following optional parameters:
 
 * `/nfsDatastoreLocation` - Specifies the vPower cache folder to which the write cache will be stored. By default, Veeam Backup & Replication uses the folder on a volume with the maximum amount of free space, for example, C:\ProgramData\Veeam\Backup\NfsDatastore\.

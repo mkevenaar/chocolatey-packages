@@ -1,6 +1,6 @@
 # <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ab172920222bd8bb7e28a2f579b5e5d7e08de895/icons/simulide.png" width="48" height="48"/> [simulide](https://chocolatey.org/packages/simulide)
 
-# SimulIDE 0.3.10
+## SimulIDE
 
 Electronic Circuit Simulator
 
@@ -13,7 +13,6 @@ PIC simulation is provided by gpsim and avr simulation by simavr.
 This is not an accurate simulator for circuit analisis, it aims to be the fast, simple and easy to use, so this means simple and not very accurate electronic models and limited features.
 
 Intended for hobbist or students to learn and experiment with simple circuits.
-
 
 SimulIDE also features a code Editor and Debugger for GcBasic, Arduino, PIC asm and AVR asm.
 Editor/Debugger is still in it's firsts stages of development, with basic functionalities, but it is possible to write, compile and basic debugging with breakpoints, watch registers and global variables.

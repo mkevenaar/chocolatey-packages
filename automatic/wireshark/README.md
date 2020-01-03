@@ -18,8 +18,7 @@ Wireshark has a rich feature set which includes the following:
 - Coloring rules can be applied to the packet list for quick, intuitive analysis
 - Output can be exported to XML, PostScript®, CSV, or plain text
 
-The Wireshark home site is at http://www.wireshark.org/
-Latest downloads for Wireshark are at http://www.wireshark.org/download.html
+The Wireshark home site is at [http://www.wireshark.org/](http://www.wireshark.org/)
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and

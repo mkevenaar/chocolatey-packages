@@ -48,7 +48,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <projectSourceUrl>https://github.com/psi-im/psi</projectSourceUrl>
     <bugTrackerUrl>https://github.com/psi-im/psi/issues</bugTrackerUrl>
     <summary>Instant messaging application for the XMPP network</summary>
-    <description>Psi is a free instant messaging application designed for the open protocol XMPP network. Fast and lightweight, Psi is fully open-source and compatible with Windows, Linux, and Mac OS X.
+    <description><![CDATA[Psi is a free instant messaging application designed for the open protocol XMPP network. Fast and lightweight, Psi is fully open-source and compatible with Windows, Linux, and Mac OS X.
 
 Extensible Messaging and Presence Protocol (XMPP) is an open technology for real-time communication, which powers a wide range of applications including instant messaging, presence, multi-party chat, voice and video calls, collaboration, lightweight middleware, content syndication, and generalized routing of XML data.  See http://xmpp.org/
 
@@ -57,15 +57,18 @@ Because XMPP allows gateways to other services, which many servers support, it c
 Psi has built in GnuPG support for message encryption.  With Psi's full Unicode support and localizations, easy file transfers, customizable iconsets, and many other great features, you'll learn why users around the world are making the switch to free, open instant messaging.
 
 #### User support forum
+
 * https://groups.google.com/forum/#!forum/psi-users
 
 ### Source code
+
 * https://github.com/psi-im/psi
 * https://groups.google.com/forum/#!forum/psi-users
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.</description>
+let them know the package is no longer updating correctly.
+]]></description>
     <!-- =============================== -->  
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->

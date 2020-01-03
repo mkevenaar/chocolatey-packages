@@ -17,7 +17,6 @@ choco uninstall nginx
 ```
 
 ## Description
-
 nginx [engine x] is an HTTP and reverse proxy server, a mail proxy server, a generic TCP/UDP proxy server, as well as a load balancer and an HTTP cache.
 
 ## Package Parameters

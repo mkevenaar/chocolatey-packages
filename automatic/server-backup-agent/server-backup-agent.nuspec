@@ -45,7 +45,9 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/server-backup-agent</packageSourceUrl>
     <docsUrl>http://wiki.r1soft.com/display/ServerBackupManager/Home</docsUrl>
     <summary>R1Soft Server Backup agent</summary>
-    <description><![CDATA[R1Soft Server Backup agent (CDP)
+    <description><![CDATA[## R1Soft Server Backup agent (CDP)
+
+The R1Soft Server Backup agent is a small application that runs on protected servers and communicates with the Server Backup Manager. The CDP Agent is sometimes referred to as the Backup Agent or "cdp-agent," which is the name of the startup script on Linux.
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and

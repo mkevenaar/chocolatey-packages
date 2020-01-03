@@ -20,6 +20,7 @@ choco uninstall exiftool
 ExifTool is a platform-independent Perl library plus a command-line application for reading, writing and editing meta information in a wide variety of files. ExifTool supports many different metadata formats including EXIF, GPS, IPTC, XMP, JFIF, GeoTIFF, ICC Profile, Photoshop IRB, FlashPix, AFCP and ID3, as well as the maker notes of many digital cameras by Canon, Casio, FLIR, FujiFilm, GE, HP, JVC/Victor, Kodak, Leaf, Minolta/Konica-Minolta, Nikon, Nintendo, Olympus/Epson, Panasonic/Leica, Pentax/Asahi, Phase One, Reconyx, Ricoh, Samsung, Sanyo, Sigma/Foveon and Sony.
 
 #### Features
+
 * Reads/writes metadata in a wide variety of files
 * Supports many different types of metadata including EXIF, IPTC and XMP
 * Includes command-line application plus Perl libraries
@@ -31,6 +32,7 @@ ExifTool is a platform-independent Perl library plus a command-line application 
 * Distribution packages provided for Unix, Windows and Mac
 
 #### Community
+
 * [Forum](http://u88.n24.queensu.ca/exiftool/forum/)
 
 * [FAQ](http://www.sno.phy.queensu.ca/~phil/exiftool/faq.html)

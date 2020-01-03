@@ -5,10 +5,12 @@ MariaDB is designed as a drop-in replacement of [MySQL](https://chocolatey.org/p
 MariaDB strives to be the logical choice for database professionals looking for a robust, scalable, and reliable SQL server. To accomplish this, the MariaDB Foundation work closely and cooperatively with the larger community of users and developers in the true spirit of Free and open source software, and release software in a manner that balances predictability with reliability.
 
 #### MariaDB comparison to MySQL
+
 * [Features](https://mariadb.com/kb/en/mariadb/mariadb-vs-mysql-features/)
 * [Compatibility](https://mariadb.com/kb/en/mariadb/mariadb-vs-mysql-compatibility/)
 
 #### Community
+
 * [Facebook](https://www.facebook.com/MariaDB.dbms)
 * [Google+](https://plus.google.com/+mariadb)
 * [Twitter](https://twitter.com/mariadb)

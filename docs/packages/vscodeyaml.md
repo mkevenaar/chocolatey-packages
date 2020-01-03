@@ -17,7 +17,8 @@ choco uninstall vscode-yaml
 ```
 
 ## Description
-# YAML Language Support by Red Hat
+## YAML Language Support by Red Hat
+
 Provides comprehensive YAML Language support to [Visual Studio Code](https://code.visualstudio.com/), via the [yaml-language-server](https://github.com/redhat-developer/yaml-language-server), with built-in Kubernetes and Kedge syntax support.
 
 **Please Note**: This is an automatically updated package. If you find it is

@@ -1,6 +1,5 @@
 # <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@a562571bebc3bd7f25660341bd2ab5db86f5ff25/icons/vlc-nightly.png" width="48" height="48"/> [vlc-nightly](https://chocolatey.org/packages/vlc-nightly)
 
-
 The Nightly version of VLC is the latest unstable and unsupported software as provided by VideoLAN
 
 VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVD, Audio CD, VCD, and various streaming protocols.

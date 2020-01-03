@@ -1,6 +1,6 @@
 # <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@3ee2ed79dfbbf068b13428131998092e84bc37b7/icons/zerotier-one.png" width="48" height="48"/> [zerotier-one](https://chocolatey.org/packages/zerotier-one)
 
-# ZeroTier - Global Area Networking
+## ZeroTier - Global Area Networking
 
 ZeroTier is a smart programmable Ethernet switch for planet Earth. It allows networked devices and applications to be managed as if the entire world is one data center or cloud region.
 
@@ -13,7 +13,7 @@ Visit [ZeroTier's site](https://www.zerotier.com/) for more information and [pre
 Everything in the ZeroTier world is controlled by two types of identifier: 40-bit/10-digit *ZeroTier addresses* and 64-bit/16-digit *network IDs*. A ZeroTier address identifies a node or "device" (laptop, phone, server, VM, app, etc.) while a network ID identifies a virtual Ethernet network that can be joined by devices.
 
 Another way of thinking about it is that ZeroTier addresses are port numbers on a giant planetary-sized smart switch while network IDs are VLANs to which these ports can be assigned. For more details read about VL1 and VL2 in [the ZeroTier manual](https://www.zerotier.com/manual/).
-ZeroTier is a smart switch for Earth with VLAN capability. See https://www.zerotier.com/ for more information.
+ZeroTier is a smart switch for Earth with VLAN capability. See [https://www.zerotier.com/](https://www.zerotier.com/) for more information.
 
 *Network controllers* are ZeroTier nodes that act as access control certificate authorities and configuration managers for virtual networks. The first 40 bits (or 10 digits) of a network ID is the ZeroTier address of its controller. You can create networks with our [hosted controllers](https://my.zerotier.com/) and web UI/API or [host your own](https://github.com/zerotier/ZeroTierOne/blob/master/controller/) if you don't mind posting some JSON configuration info or writing a script to do so.
 

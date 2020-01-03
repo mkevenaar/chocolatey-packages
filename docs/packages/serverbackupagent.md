@@ -17,7 +17,9 @@ choco uninstall server-backup-agent
 ```
 
 ## Description
-R1Soft Server Backup agent (CDP)
+## R1Soft Server Backup agent (CDP)
+
+The R1Soft Server Backup agent is a small application that runs on protected servers and communicates with the Server Backup Manager. The CDP Agent is sometimes referred to as the Backup Agent or "cdp-agent," which is the name of the startup script on Linux.
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and

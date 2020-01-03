@@ -1,22 +1,29 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@bc93d96ecdc80caa9c22bffddf7147ac8a132421/icons/google-hangouts-chat.png" width="48" height="48"/> [google-hangouts-chat](https://chocolatey.org/packages/google-hangouts-chat)
 
-# Hangouts Chat
-##### A messaging platform built for teams
+## Hangouts Chat
+
+### A messaging platform built for teams
+
 Whether in a 1:1 chat or a dedicated group workspace, Hangouts Chat makes it easy to collaborate with your team in an organized way. Share and discuss Docs, Sheets, and Slides all in one place.
 
-## Work seamlessly with other apps
+### Work seamlessly with other apps
+
 Schedule meetings, create tasks, or get updates from your team right within Chat. In addition to useful integrations with G Suite apps, Chat connects to several third-party tools, helping you manage all of your work in one place.
 
-## Securely message your team from any device
+### Securely message your team from any device
+
 Chat is built with leading enterprise-grade security including mobile device management, single-sign-on, two-factor authentication, admin settings, compliance, and Vault retention, holds, search & export.
 
-### Search with the power of Google
+#### Search with the power of Google
+
 Powerful, filterable search across Hangouts Chat threads makes it easy to find what you need, when you need it. Search acts as a collective team memory, allowing you to review past discussions and decisions.
 
-### Chime in from anywhere
+#### Chime in from anywhere
+
 Seamlessly use Hangouts Chat across your computer, phone, and tablet via a web browser or native apps, so you can connect to your team from wherever you are.
 
-### Smarter chat with bots
+#### Smarter chat with bots
+
 Make conversations more efficient by interacting directly with deeply integrated Google bots and 3rd party apps.
 
 [SEE MORE FEATURES ⇨](https://gsuite.google.com/compare-editions/?feature=chat)

@@ -45,7 +45,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/writage</packageSourceUrl>
     <docsUrl>http://www.writage.com/#overview</docsUrl>
     <summary>Markdown plugin for Microsoft Word</summary>
-    <description><![CDATA[** NOTE ** This package requires Word 2010 or higher to be installed.
+    <description><![CDATA[**NOTE** This package requires Word 2010 or higher to be installed.
 
 The main idea of Writage is providing opportunity to write in Markdown to those who like Microsoft Word. There are lots of Markdown editors such as iA Writer, Texts, WriteMonkey or Byword and online Markdown writing services, like StackEdit, Dillinger or Markable for people who like to have minimalistic, distraction-free interface. And there is nothing for those who prefer to use rich interface and features of Microsoft Word.
 

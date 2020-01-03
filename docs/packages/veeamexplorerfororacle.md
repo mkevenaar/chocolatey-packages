@@ -17,7 +17,7 @@ choco uninstall veeam-explorer-for-oracle
 ```
 
 ## Description
-Recovery tool for Oracle
+## Recovery tool for Oracle
 
 Veeam® Explorer™ for Oracle delivers low recovery time objectives (RTOs) and recovery point objectives (RPOs) with agentless transaction log backup and transaction-level recovery of Oracle databases — so you can restore your Oracle database to a precise point in time, even to a specific database transaction.
 

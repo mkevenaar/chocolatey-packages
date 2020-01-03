@@ -17,7 +17,7 @@ choco uninstall powertoys
 ```
 
 ## Description
-# PowerToys
+## PowerToys
 
 PowerToys is a set of utilities for power users to tune and streamline their Windows experience for greater productivity.
 

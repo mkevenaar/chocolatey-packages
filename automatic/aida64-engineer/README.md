@@ -3,14 +3,17 @@
 AIDA64 Engineer is a cutting-edge system information tool for IT technicians, which not only provides extremely detailed information about both hardware and installed software, but also helps users diagnose issues and offers benchmarks to measure the performance of both workstations and servers.
 
 #### Community
+
 * [Facebook](https://www.facebook.com/AIDA64)
 * [Google+](https://plus.google.com/+aida64)
 * [Twitter](https://twitter.com/FinalWire)
 
 #### Commercial software
+
 This package installs a 30-day trial version.
 
 #### AIDA64 [editions](http://www.aida64.com/compare-aida64-features)
+
 * [AIDA64 Extreme](https://chocolatey.org/packages/aida64-extreme)
 * [AIDA64 Network Audit](https://chocolatey.org/packages/aida64-networkaudit)
 * AIDA64 Engineer (you are here)

@@ -54,7 +54,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
 
 In technical terms, it is a network Client/Server based backup program. Bacula is relatively easy to use and efficient, while offering many advanced storage management features that make it easy to find and recover lost or damaged files. Due to its modular design, Bacula is scalable from small single computer systems to systems consisting of hundreds of computers located over a large network.
 
-**Note** Package uninstall is not silent! 
+**Note** Package uninstall is not silent!
 
 [Screenshots](http://blog.bacula.org/documentation/screenshots/)
 [Wiki](http://wiki.bacula.org/doku.php)

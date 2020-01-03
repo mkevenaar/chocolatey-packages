@@ -3,14 +3,17 @@
 Dedicated network audit solution for businesses that supports IT decision-making with essential statistics, and helps companies to reduce their IT costs. With AIDA64 Network Audit, system administrators can make a detailed inventory of the company PC fleet in an automated manner, and track changes in both hardware and software.
 
 #### Community
+
 * [Facebook](https://www.facebook.com/AIDA64)
 * [Google+](https://plus.google.com/+aida64)
 * [Twitter](https://twitter.com/FinalWire)
 
 #### Commercial software
+
 This package installs a 30-day trial version.
 
 #### AIDA64 [editions](http://www.aida64.com/compare-aida64-features)
+
 * [AIDA64 Extreme](https://chocolatey.org/packages/aida64-extreme)
 * AIDA64 Network Audit (you are here)
 * [AIDA64 Engineer](https://chocolatey.org/packages/aida64-engineer)

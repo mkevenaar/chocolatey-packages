@@ -61,7 +61,7 @@ Personal Edition (installed by default) is free for non-commercial, personal use
 * Has a limit of 10 virtual account entries.
 * GSSAPI authentication is disabled (Kerberos and NTLM).
 
-For any organizational use (non-commercial or commercial) or to remove the limitations of the Personal Edition, it is required to purchase a Standard Edition license and will require re-installing this package with the parameter -standardedition.  See http://www.bitvise.com/ssh-server-license for more information.
+For any organizational use (non-commercial or commercial) or to remove the limitations of the Personal Edition, it is required to purchase a Standard Edition license and will require re-installing this package with the parameter -standardedition.  See [ssh server license](http://www.bitvise.com/ssh-server-license) for more information.
 
 #### Package Parameters
 
@@ -83,6 +83,7 @@ For any organizational use (non-commercial or commercial) or to remove the limit
 Note: Use two single quotes when double quotes are desired."
 
 #### Example
+
 * `choco install bitvise-ssh-server -params '"/InstallLocation=C:\temp"'`
 
 **Please Note**: This is an automatically updated package. If you find it is

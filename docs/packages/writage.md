@@ -17,7 +17,7 @@ choco uninstall writage
 ```
 
 ## Description
-** NOTE ** This package requires Word 2010 or higher to be installed.
+**NOTE** This package requires Word 2010 or higher to be installed.
 
 The main idea of Writage is providing opportunity to write in Markdown to those who like Microsoft Word. There are lots of Markdown editors such as iA Writer, Texts, WriteMonkey or Byword and online Markdown writing services, like StackEdit, Dillinger or Markable for people who like to have minimalistic, distraction-free interface. And there is nothing for those who prefer to use rich interface and features of Microsoft Word.
 

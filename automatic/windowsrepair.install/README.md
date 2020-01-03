@@ -4,10 +4,12 @@ An all-in-one repair tool to help fix a large majority of known Windows problems
 
 This package installs the freeware version.
 
-#### Community
-* [Forum](http://www.tweaking.com/forums/)
-* [Facebook](https://www.facebook.com/tweakingdotcom)
-* [Twitter](https://twitter.com/tweaking_com)
+## Community
+
+- [Forum](http://www.tweaking.com/forums/)
+- [Facebook](https://www.facebook.com/tweakingdotcom)
+- [Twitter](https://twitter.com/tweaking_com)
+
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.

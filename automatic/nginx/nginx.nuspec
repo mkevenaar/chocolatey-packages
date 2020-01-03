@@ -50,8 +50,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <bugTrackerUrl>https://trac.nginx.org/nginx</bugTrackerUrl>
     <mailingListUrl>http://nginx.org/en/support.html</mailingListUrl>
     <summary>HTTP and reverse proxy server</summary>
-    <description><![CDATA[
-nginx [engine x] is an HTTP and reverse proxy server, a mail proxy server, a generic TCP/UDP proxy server, as well as a load balancer and an HTTP cache.
+    <description><![CDATA[nginx [engine x] is an HTTP and reverse proxy server, a mail proxy server, a generic TCP/UDP proxy server, as well as a load balancer and an HTTP cache.
 
 ## Package Parameters
 

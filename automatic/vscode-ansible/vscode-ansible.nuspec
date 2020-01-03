@@ -49,12 +49,14 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <docsUrl>https://github.com/VSChina/vscode-ansible/blob/master/README.md</docsUrl>
     <bugTrackerUrl>https://github.com/VSChina/vscode-ansible/issues</bugTrackerUrl>
     <summary>VSCode extension for Ansible</summary>
-    <description># Visual Studio Code extension for [Ansible](https://www.ansible.com/)
+    <description><![CDATA[## Visual Studio Code extension for [Ansible](https://www.ansible.com/)
+
 The VSCode ansible extension is designed to increase developer productivity authoring, testing and using Ansible with Azure. The extension provides cool features around playbook authoring and execution. It supports running playbook from various places e.g. Docker, local installation, remote machines via ssh and [Cloud Shell](https://azure.microsoft.com/en-us/features/cloud-shell/).
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.</description>
+let them know the package is no longer updating correctly.
+]]></description>
     <!-- =============================== -->  
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->

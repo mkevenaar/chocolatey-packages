@@ -22,14 +22,17 @@ AIDA64 Extreme is an industry-leading system information tool, loved by PC enthu
 Usage of this software for commercial purposes is not permitted.
 
 #### Community
+
 * [Facebook](https://www.facebook.com/AIDA64)
 * [Google+](https://plus.google.com/+aida64)
 * [Twitter](https://twitter.com/FinalWire)
 
 #### Commercial software
+
 This package installs a 30-day trial version.
 
 #### AIDA64 [editions](http://www.aida64.com/compare-aida64-features)
+
 * AIDA64 Extreme (you are here)
 * [AIDA64 Network Audit](https://chocolatey.org/packages/aida64-networkaudit)
 * [AIDA64 Engineer](https://chocolatey.org/packages/aida64-engineer)

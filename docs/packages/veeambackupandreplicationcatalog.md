@@ -17,11 +17,15 @@ choco uninstall veeam-backup-and-replication-catalog
 ```
 
 ## Description
+## Veeam Backup Catalog
+
 Veeam Backup Catalog is a feature that stands for VM guest OS file indexing. Veeam Backup Catalog comprises Veeam Guest Catalog services that run on the following servers in the backup infrastructure: Veeam backup server and Veeam Backup Enterprise Manager server.
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
 
 ### Package Parameters
+
 The package accepts the following optional parameters:
+
 * `/catalogLocation` - Specifies a path to the catalog folder where index files must be stored. By default, Veeam Backup & Replication creates the VBRCatalog folder on a volume with the maximum amount of free space
 * `/username` - Specifies a user account under which the Veeam Guest Catalog Service will run. If you do not specify this parameter, the Veeam Guest Catalog Service will run under the Local System account.
 * `/password` - This parameter must be used if you have specified the /username parameter. Specifies a password for the account under which the Veeam Guest Catalog Service will run.

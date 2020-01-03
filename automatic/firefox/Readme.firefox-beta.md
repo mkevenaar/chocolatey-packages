@@ -12,10 +12,10 @@ After spending six weeks in [Firefox Developer Edition](https://chocolatey.org/p
 
 Every 6 weeks, Firefox developers take the current stable features of each build and introduce them into the next stable channel for further development. The Developer Edition is a special build containing features never moved forward since they would be rarely used by the average user and needlessly consume resources.
 
-* [Firefox](https://chocolatey.org/packages/firefox)
-* Firefox Beta (you are here)
-* [Firefox Developer Edition](https://chocolatey.org/packages/firefox-dev)
-* [Firefox Nightly](https://chocolatey.org/packages/firefox-nightly)
+- [Firefox](https://chocolatey.org/packages/firefox)
+- Firefox Beta (you are here)
+- [Firefox Developer Edition](https://chocolatey.org/packages/firefox-dev)
+- [Firefox Nightly](https://chocolatey.org/packages/firefox-nightly)
 
 [Privacy policy](https://www.mozilla.org/en-US/privacy/firefox/)
 

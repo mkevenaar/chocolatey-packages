@@ -45,7 +45,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/dymo-connect</packageSourceUrl>
     <docsUrl>http://www.dymo.com/en-US/online-support</docsUrl>
     <summary>Dymo label printing software</summary>
-    <description><![CDATA[DYMO-Label
+    <description><![CDATA[## DYMO-Label
 
 Enables you to create and print labels - all without the hassles of printing sheet labels on a standard desktop printer.
 

@@ -19,13 +19,16 @@ choco uninstall pycharm-edu
 ## Description
 [![official JetBrains project](http://jb.gg/badges/official-plastic.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
 
-#Use a free & open source solution
+## Use a free & open source solution
+
 PyCharm Edu is totally free and open source. This includes unlimited learning, course creation and distribution, and even developing Python applications.
 
-#Everything you need, right out of the box
+## Everything you need, right out of the box
+
 PyCharm Edu offers a complete toolkit for both learners and educators of programming. This includes essential learning features like an integrated Python console, Debugger and VCS, along with unique educational features like “fill in the missing code” exercises, intelligent hints, checks, smart suggestions, code auto-completion, and much more.
 
-#Your intelligent assistant
+## Your intelligent assistant
+
 PyCharm Edu detects code problems and errors on the fly, as you go, and makes educated suggestions based on its deep understanding of Python code. Thanks to this instant feedback, you can save time and effort with both learning and teaching.
 
 **Please Note**: This is an automatically updated package. If you find it is

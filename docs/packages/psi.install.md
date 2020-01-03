@@ -26,15 +26,18 @@ Because XMPP allows gateways to other services, which many servers support, it c
 Psi has built in GnuPG support for message encryption.  With Psi's full Unicode support and localizations, easy file transfers, customizable iconsets, and many other great features, you'll learn why users around the world are making the switch to free, open instant messaging.
 
 #### User support forum
+
 * https://groups.google.com/forum/#!forum/psi-users
 
 ### Source code
+
 * https://github.com/psi-im/psi
 * https://groups.google.com/forum/#!forum/psi-users
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
+
 
 ## Links
 [Chocolatey Package Page](https://chocolatey.org/packages/psi.install)

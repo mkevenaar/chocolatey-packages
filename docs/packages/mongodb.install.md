@@ -22,7 +22,9 @@ MongoDB (from "humongous") is a scalable, high-performance, open source NoSQL da
 MongoDB stores data using a flexible document data model that is similar to JSON. Documents contain one or more fields, including arrays, binary data and sub-documents. Fields can vary from document to document. This flexibility allows development teams to evolve the data model rapidly as their application requirements change.
 
 Developers access documents through rich, idiomatic drivers available in all popular programming languages. Documents map naturally to the objects in modern languages, which allows developers to be extremely productive. Typically, there’s no need for an ORM layer.
+
 #### Package Parameters
+
 The following package parameters can be set:
 
 * `/dataPath:` - where MongoDB stores its database files - defaults to "$env:ProgramData\MongoDB\data\db"

@@ -17,6 +17,7 @@ choco uninstall sqlitebrowser.install
 ```
 
 ## Description
+## DB Browser for SQLite
 
 DB Browser for SQLite is a high quality, visual, open source tool to create, design, and edit database files compatible with SQLite.
 
@@ -35,7 +36,8 @@ Controls and wizards are available for users to:
 * Issue SQL queries and inspect the results
 * Examine a log of all SQL commands issued by the application
 
-#### Previous names
+### Previous names
+
 This project has previously been known as __SQLite Browser__ and __Database Browser for SQLite__.
 
 In August 2014, the project was renamed to __Database Browser for SQLite__ at the request of [Richard Hipp](http://www.hwaci.com/drh) (creator of [SQLite](http://sqlite.org/)), as the previous name was creating unintended support issues.
@@ -43,6 +45,7 @@ In August 2014, the project was renamed to __Database Browser for SQLite__ at th
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
+
 
 ## Links
 [Chocolatey Package Page](https://chocolatey.org/packages/sqlitebrowser.install)

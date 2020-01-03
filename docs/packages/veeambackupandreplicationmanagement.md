@@ -17,7 +17,7 @@ choco uninstall veeam-backup-and-replication-management
 ```
 
 ## Description
-Console for Veeam Backup & Replication.
+## Console for Veeam Backup & Replication
 
 Veeam® Backup & Replication™ is a backup solution developed for VMware vSphere and Microsoft Hyper-V virtual environments. Veeam Backup & Replication provides a set of features for performing data protection and disaster recovery tasks.
 

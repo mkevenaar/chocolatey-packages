@@ -17,7 +17,7 @@ choco uninstall dymo-connect
 ```
 
 ## Description
-DYMO-Label
+## DYMO-Label
 
 Enables you to create and print labels - all without the hassles of printing sheet labels on a standard desktop printer.
 

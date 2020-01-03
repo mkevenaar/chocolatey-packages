@@ -48,7 +48,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <projectSourceUrl>https://github.com/microsoft/PowerToys</projectSourceUrl>
     <bugTrackerUrl>https://github.com/microsoft/PowerToys/issues</bugTrackerUrl>
     <summary>Windows system utilities to maximize productivity</summary>
-    <description><![CDATA[# PowerToys
+    <description><![CDATA[## PowerToys
 
 PowerToys is a set of utilities for power users to tune and streamline their Windows experience for greater productivity.
 

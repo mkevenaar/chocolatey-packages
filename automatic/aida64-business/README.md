@@ -3,14 +3,17 @@
 A professional solution, based on the award-winning AIDA64 engine, which makes a detailed hardware and software inventory of the company PC fleet, and supports PC fleet management with remote functions. It also supports IT decision-making with essential statistics, and helps companies reduce their IT costs.
 
 #### Community
+
 * [Facebook](https://www.facebook.com/AIDA64)
 * [Google+](https://plus.google.com/+aida64)
 * [Twitter](https://twitter.com/FinalWire)
 
 #### Commercial software
+
 This package installs a 30-day trial version.
 
 #### AIDA64 [editions](http://www.aida64.com/compare-aida64-features)
+
 * [AIDA64 Extreme](https://chocolatey.org/packages/aida64-extreme)
 * [AIDA64 Network Audit](https://chocolatey.org/packages/aida64-networkaudit)
 * [AIDA64 Engineer](https://chocolatey.org/packages/aida64-engineer)

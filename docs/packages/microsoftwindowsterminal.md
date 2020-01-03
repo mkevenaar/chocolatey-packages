@@ -17,17 +17,17 @@ choco uninstall microsoft-windows-terminal
 ```
 
 ## Description
-# Terminal & Console Overview
+## Terminal & Console Overview
 
 Please take a few minutes to review the overview below before diving into the code:
 
-## Windows Terminal
+### Windows Terminal
 
 Windows Terminal is a new, modern, feature-rich, productive terminal application for command-line users. It includes many of the features most frequently requested by the Windows command-line community including support for tabs, rich text, globalization, configurability, theming & styling, and more.
 
 The Terminal will also need to meet our goals and measures to ensure it remains fast, and efficient, and doesn't consume vast amounts of memory or power.
 
-## The Windows console host
+### The Windows console host
 
 The Windows console host, `conhost.exe`, is Windows' original command-line user experience. It implements Windows' command-line infrastructure, and is responsible for hosting the Windows Console API, input engine, rendering engine, and user preferences. The console host code in this repository is the actual source from which the `conhost.exe` in Windows itself is built.
 
@@ -39,12 +39,11 @@ However, because the Console's primary goal is to maintain backward compatibilit
 
 These limitations led us to create the new Windows Terminal.
 
-## Shared Components
+### Shared Components
 
 While overhauling the Console, we've modernized its codebase considerably. We've cleanly separated logical entities into modules and classes, introduced some key extensibility points, replaced several old, home-grown collections and containers with safer, more efficient [STL containers](https://docs.microsoft.com/en-us/cpp/standard-library/stl-containers?view=vs-2019), and made the code simpler and safer by using Microsoft's [WIL](https://github.com/Microsoft/wil) header library.
 
 This overhaul work resulted in the creation of several key components that would be useful for any terminal implementation on Windows, including a new DirectWrite-based text layout and rendering engine, a text buffer capable of storing both UTF-16 and UTF-8, and a VT parser/emitter.
-
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and

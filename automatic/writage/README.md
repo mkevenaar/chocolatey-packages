@@ -1,6 +1,6 @@
 # <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@77922186ca474d25299d683ca4cdb586eb34825c/icons/writage.png" width="48" height="48"/> [writage](https://chocolatey.org/packages/writage)
 
-** NOTE ** This package requires Word 2010 or higher to be installed.
+**NOTE** This package requires Word 2010 or higher to be installed.
 
 The main idea of Writage is providing opportunity to write in Markdown to those who like Microsoft Word. There are lots of Markdown editors such as iA Writer, Texts, WriteMonkey or Byword and online Markdown writing services, like StackEdit, Dillinger or Markable for people who like to have minimalistic, distraction-free interface. And there is nothing for those who prefer to use rich interface and features of Microsoft Word.
 

@@ -50,14 +50,16 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <projectSourceUrl>https://www.igniterealtime.org/downloads/source.jsp</projectSourceUrl>
     <mailingListUrl>https://discourse.igniterealtime.org/c/spark</mailingListUrl>
     <summary>Cross-platform real-time collaboration client optimized for business and organizations.</summary>
-    <description>
+    <description><![CDATA[## Spark
+
 Spark is an Open Source, cross-platform IM client optimized for businesses and organizations. It features built-in support for group chat, telephony integration, and strong security. It also offers a great end-user experience with features like in-line spell checking, group chat room bookmarks, and tabbed conversations.
 
-Combined with the Openfire server, Spark is the easiest and best alternative to using un-secure public IM networks. 
+Combined with the Openfire server, Spark is the easiest and best alternative to using un-secure public IM networks.
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.</description>
+let them know the package is no longer updating correctly.
+]]></description>
     <!-- =============================== -->  
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->

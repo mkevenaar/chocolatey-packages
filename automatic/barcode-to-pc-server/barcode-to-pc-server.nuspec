@@ -50,18 +50,22 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <bugTrackerUrl>https://github.com/fttx/barcode-to-pc-server/issues</bugTrackerUrl>
     <mailingListUrl>https://barcodetopc.com/newsletter/</mailingListUrl>
     <summary>Scan a barcode with your smartphone and use them on your PC</summary>
-    <description><![CDATA[#Features
+    <description><![CDATA[# Features
 
-##Real-time key strokes
+## Real-time key strokes
+
 Thanks to the keyboard emulation, your smartphone sends keystrokes directly to your computer, no copy/paste required!
 
-##Wi-Fi ready
+## Wi-Fi ready
+
 You only need to connect your smartphone to the same network of your computer (LAN)
 
-##Save to file
+## Save to file
+
 You can append your scannings to a file in real-time. You can also export the scans all at once in a CSV file
 
-##QR Codes
+## QR Codes
+
 Almost any barcode format is supported, see the full list [here](https://github.com/phonegap/phonegap-plugin-barcodescanner#using-the-plugin)
 
 **Please Note**: This is an automatically updated package. If you find it is

@@ -48,7 +48,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <docsUrl>https://www.veeam.com/microsoft-exchange-recovery.html</docsUrl>
     <mailingListUrl>https://forums.veeam.com/</mailingListUrl>
     <summary>Veeam Backup &amp; Replication explorer for Exchange</summary>
-    <description><![CDATA[Recovery tool for Microsoft Exchange
+    <description><![CDATA[## Recovery tool for Microsoft Exchange
 
 Veeam® Explorer™ for Microsoft Exchange offers revolutionary technology that gives you instant visibility into Exchange backups, granular recovery of individual items and easy-to-use eDiscovery options — all without restoring the full Exchange database or entire server.
 

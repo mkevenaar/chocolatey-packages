@@ -17,7 +17,6 @@ choco uninstall vlc-nightly
 ```
 
 ## Description
-
 The Nightly version of VLC is the latest unstable and unsupported software as provided by VideoLAN
 
 VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVD, Audio CD, VCD, and various streaming protocols.

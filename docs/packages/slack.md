@@ -17,6 +17,8 @@ choco uninstall slack
 ```
 
 ## Description
+## Slack
+
 Slack is a collaboration hub for work, no matter what work you do. It’s a place where conversations happen, decisions are made, and information is always at your fingertips. With Slack, your team is better connected.
 
 **Please Note**: This is an automatically updated package. If you find it is

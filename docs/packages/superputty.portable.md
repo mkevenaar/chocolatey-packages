@@ -22,6 +22,7 @@ SuperPutty is a Windows GUI Application that allows the PuTTY SSH Client to be o
 SuperPutty is written in C# and runs on any Windows platform supporting the .NET Framework 3.5 or newer.
 
 ### Features
+
 * Docking user interface allows personalized workspace and managing multiple PuTTY sessions easy
 * Export/Import session configuration
 * Upload files securely using the scp or sftp protocols

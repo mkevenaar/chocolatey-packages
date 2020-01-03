@@ -17,7 +17,7 @@ choco uninstall vscode-vsliveshare
 ```
 
 ## Description
-# Microsoft Visual Studio Live Share
+## Microsoft Visual Studio Live Share
 
 Visual Studio Live Share enables you to collaboratively edit and debug with others in real time, regardless what [programming languages](https://docs.microsoft.com/en-us/visualstudio/liveshare/reference/platform-support#visual-studio-code) you're using or app types you're building. It allows you to instantly (and [securely](https://docs.microsoft.com/en-us/visualstudio/liveshare/reference/security)) share your current project, and then as needed, share [debugging sessions](https://docs.microsoft.com/en-us/visualstudio/liveshare/use/vscode#co-debugging), [terminal instances](https://docs.microsoft.com/en-us/visualstudio/liveshare/use/vscode#share-a-terminal), [localhost web apps](https://docs.microsoft.com/en-us/visualstudio/liveshare/use/vscode#share-a-server), [voice calls](https://aka.ms/vsls-audio), and more! Developers that join your sessions recieve all of their editor context from your environment (e.g. language services, debugging), which ensures they can start productively collaborating immediately, without needing to clone any repos or install any SDKs.
 

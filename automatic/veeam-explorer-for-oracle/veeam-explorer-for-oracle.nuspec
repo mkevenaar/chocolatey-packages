@@ -48,7 +48,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <docsUrl>https://www.veeam.com/oracle-backup-recovery-explorer.html</docsUrl>
     <mailingListUrl>https://forums.veeam.com/</mailingListUrl>
     <summary>Veeam Backup &amp; Replication explorer for Oracle</summary>
-    <description><![CDATA[Recovery tool for Oracle
+    <description><![CDATA[## Recovery tool for Oracle
 
 Veeam® Explorer™ for Oracle delivers low recovery time objectives (RTOs) and recovery point objectives (RPOs) with agentless transaction log backup and transaction-level recovery of Oracle databases — so you can restore your Oracle database to a precise point in time, even to a specific database transaction.
 
