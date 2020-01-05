@@ -8,6 +8,13 @@ $url64          = 'https://www.uvnc.eu/download/1230/UltraVNC_1_2_30_X64_Setup.e
 $checksum64     = 'fe3d1135ae0e7b72394a6f3cc137282cb5e6382a55b5ceee72140d28f5ffe961'
 $checksumType64 = 'sha256'
 
+$options = @{
+  Headers = @{
+    Referer = 'https://www.uvnc.com/';
+  }
+}
+
+
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $toolsDir
@@ -20,6 +27,7 @@ $packageArgs = @{
   checksumType64= $checksumType64
   softwareName  = 'UltraVnc*'
   silentArgs    = '/VERYSILENT /NORESTART /RESTARTEXITCODE=3010 /SP- /SUPPRESSMSGBOXES /CLOSEAPPLICATIONS /FORCECLOSEAPPLICATIONS'
+  options        = $options
   validExitCodes= @(0,3010)
 }
 
