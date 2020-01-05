@@ -11,25 +11,55 @@ $options =
   Headers = $headers
 }
 
-
-function global:au_SearchReplace {
-    @{
-        '.\tools\chocolateyInstall.ps1' = @{
-            "(^[$]url64\s*=\s*)('.*')"      = "`$1'$($Latest.URL64)'"
-            "(^[$]url32\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
-            "(^[$]checksum32\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
-            "(^[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
-            "(^[$]checksumType32\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
-            "(^[$]checksumType64\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
-        }
-     }
+function name4url($url) {
+  if ($FileNameBase) { return $FileNameBase }
+  $res = $url -split '/' | Select-Object -Last 1
+  $res -replace '\.[^.]+$'
 }
 
+# function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 function global:au_BeforeUpdate {
-  $Latest.Checksum32 = Get-RemoteChecksum $Latest.URL32 -Headers $headers
-  $Latest.ChecksumType32 = 'sha256'
-  $Latest.Checksum64 = Get-RemoteChecksum $Latest.URL64 -Headers $headers
-  $Latest.ChecksumType64 = 'sha256'
+  $ext = $Latest.FileType
+  $toolsPath = Resolve-Path tools
+  $NoSuffix = $true
+
+  Write-Host 'Purging' $ext
+  Remove-Item -Force "$toolsPath\*.$ext" -ea ignore
+
+  $Algorithm = 'sha256'
+
+  try {
+    $client = New-Object System.Net.WebClient
+
+    $Latest.Options.Headers.GetEnumerator() | ForEach-Object { $client.Headers.Add($_.Key, $_.Value) | Out-Null }
+
+    $base_name = name4url $Latest.Url32
+    $file_name = "{0}{2}.{1}" -f $base_name, $ext, $(if ($NoSuffix) { '' } else {'_x32'})
+    $file_path = "$toolsPath\$file_name"
+
+    Write-Host "Downloading to $file_name -" $Latest.Url32
+    $client.DownloadFile($Latest.URL32, $file_path)
+    $Latest.Checksum32 = Get-FileHash $file_path -Algorithm $Algorithm | ForEach-Object Hash
+    $Latest.ChecksumType32 = $Algorithm
+    $Latest.FileName32 = $file_name
+
+    $Latest.Options.Headers.GetEnumerator() | ForEach-Object { $client.Headers.Add($_.Key, $_.Value) | Out-Null }
+
+    $base_name = name4url $Latest.Url64
+    $file_name = "{0}{2}.{1}" -f $base_name, $ext, $(if ($NoSuffix) { '' } else {'_x64'})
+    $file_path = "$toolsPath\$file_name"
+
+    Write-Host "Downloading to $file_name -" $Latest.Url64
+    $client.DownloadFile($Latest.URL64, $file_path)
+    $Latest.Checksum64 = Get-FileHash $file_path -Algorithm $Algorithm | ForEach-Object Hash
+    $Latest.ChecksumType64 = $Algorithm
+    $Latest.FileName64 = $file_name
+
+  } catch {
+    throw $_
+  } finally {
+    $client.Dispose()
+  }
 }
 
 function global:au_GetLatest {
@@ -48,11 +78,28 @@ function global:au_GetLatest {
       URL32 = $url32
       URL64 = $url64
       Version = $version
+      FileType = 'exe'
       Options = $options
   }
 }
 
-if ($MyInvocation.InvocationName -ne '.') {
-  update -ChecksumFor none
+function global:au_SearchReplace {
+  return @{
+    ".\tools\chocolateyInstall.ps1" = @{
+      "(?i)(^\s*file\s*=\s*`"[$]toolsDir\\).*"   = "`${1}$($Latest.FileName32)`""
+      "(?i)(^\s*file64\s*=\s*`"[$]toolsDir\\).*" = "`${1}$($Latest.FileName64)`""
+    }
+    ".\legal\VERIFICATION.txt" = @{
+      "(?i)(listed on\s*)\<.*\>" = "`${1}<$releases>"
+      "(?i)(32-Bit.+)\<.*\>"     = "`${1}<$($Latest.URL32)>"
+      "(?i)(64-Bit.+)\<.*\>"     = "`${1}<$($Latest.URL64)>"
+      "(?i)(checksum type:).*"   = "`${1} $($Latest.ChecksumType32)"
+      "(?i)(checksum32:).*"      = "`${1} $($Latest.Checksum32)"
+      "(?i)(checksum64:).*"      = "`${1} $($Latest.Checksum64)"
+    }
+  }
 }
 
+if ($MyInvocation.InvocationName -ne '.') {
+  update -ChecksumFor None
+}

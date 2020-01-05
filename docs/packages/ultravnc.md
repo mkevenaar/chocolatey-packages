@@ -17,7 +17,6 @@ choco uninstall ultravnc
 ```
 
 ## Description
-
 UltraVNC is an open source application that uses the VNC protocol to control another computer remotely over a network connection.  UltraVNC allows the use of a remote computer as if the user were in front of it. This is achieved by sending mouse movements and key-presses to the remote computer, and replicating the remote computer's display (subject to differences in resolution) locally in real time. UltraVNC bears a strong resemblance to RealVNC Free Edition. However, in addition to remote control it adds various features, such as an encryption plugin to secure the client/server connection. It also supports file transfers, chat functionality and various authentication methods. The two computers must be able to communicate across a network, such as a local subnet, internal network, or the Internet.
 
 **Please Note**: This is an automatically updated package. If you find it is
