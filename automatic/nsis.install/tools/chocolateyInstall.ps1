@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = 'https://svwh.dl.sourceforge.net/project/nsis/NSIS%203/3.05/nsis-3.05-setup.exe'
+$url          = 'https://astuteinternet.dl.sourceforge.net/project/nsis/NSIS%203/3.05/nsis-3.05-setup.exe'
 $checksum     = '1a3cc9401667547b9b9327a177b13485f7c59c2303d4b6183e7bc9e6c8d6bfdb'
 $checksumType = 'sha256'
 
