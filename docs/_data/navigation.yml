@@ -243,6 +243,8 @@
         url: /packages/wc3270.install.html
       - page: "IBM 3270 terminal emulator (Portable)"
         url: /packages/wc3270.portable.html
+      - page: "WD Security for Windows"
+        url: /packages/wdsecurity.html
       - page: "WifiInfoView"
         url: /packages/wifiinfoview.html
       - page: "Win32 Disk Imager"
