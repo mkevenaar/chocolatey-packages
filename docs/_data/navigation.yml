@@ -245,6 +245,8 @@
         url: /packages/wc3270.portable.html
       - page: "WD Security for Windows"
         url: /packages/wdsecurity.html
+      - page: "WD Smartware for Windows"
+        url: /packages/wdsmartware.html
       - page: "WifiInfoView"
         url: /packages/wifiinfoview.html
       - page: "Win32 Disk Imager"
