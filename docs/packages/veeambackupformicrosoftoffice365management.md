@@ -1,0 +1,40 @@
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@6ebecc329e84460097d143636f21f1c899a8d4b9/icons/veeam-backup-for-microsoft-office-365-management.png" width="32" height="32"/> [![Veeam Backup for Microsoft Office 365 Management Console](https://img.shields.io/chocolatey/v/veeam-backup-for-microsoft-office-365-management.svg?label=Veeam+Backup+for+Microsoft+Office+365+Management+Console)](https://chocolatey.org/packages/veeam-backup-for-microsoft-office-365-management) [![Veeam Backup for Microsoft Office 365 Management Console](https://img.shields.io/chocolatey/dt/veeam-backup-for-microsoft-office-365-management.svg)](https://chocolatey.org/packages/veeam-backup-for-microsoft-office-365-management)
+
+## Usage
+To install Veeam Backup for Microsoft Office 365 Management Console, run the following command from the command line or from PowerShell:
+```powershell
+choco install veeam-backup-for-microsoft-office-365-management
+```
+
+To upgrade Veeam Backup for Microsoft Office 365 Management Console, run the following command from the command line or from PowerShell:
+```powershell
+choco upgrade veeam-backup-for-microsoft-office-365-management
+```
+
+To uninstall Veeam Backup for Microsoft Office 365 Management Console, run the following command from the command line or from PowerShell:
+```powershell
+choco uninstall veeam-backup-for-microsoft-office-365-management
+```
+
+## Description
+Veeam Backup for Microsoft Office 365 is a comprehensive solution that allows you to back up and restore data of your Microsoft Office 365, on-premises Microsoft Exchange and on-premises Microsoft SharePoint organizations, including Microsoft OneDrive for Business.
+
+This package installs the following software by default:
+
+* Veeam Backup for Microsoft Office 365 Console
+* Veeam Backup for Microsoft Office 365 PowerShell
+* Veeam Explorer for Microsoft Exchange
+* Veeam Explorer for Microsoft Sharepoint
+
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know the package is no longer updating correctly.
+
+
+## Links
+[Chocolatey Package Page](https://chocolatey.org/packages/veeam-backup-for-microsoft-office-365-management)
+
+[Software Site](http://www.veeam.com/)
+
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/veeam-backup-for-microsoft-office-365-management)
+

@@ -211,12 +211,20 @@
         url: /packages/veeambackupandreplicationserver.html
       - page: "Veeam Backup for Microsoft Office 365"
         url: /packages/veeambackupformicrosoftoffice365.html
+      - page: "Veeam Backup for Microsoft Office 365 Console"
+        url: /packages/veeambackupformicrosoftoffice365console.html
+      - page: "Veeam Backup for Microsoft Office 365 Management Console"
+        url: /packages/veeambackupformicrosoftoffice365management.html
       - page: "Veeam Explorer for Microsoft Active Directory"
         url: /packages/veeamexplorerformicrosoftactivedirectory.html
       - page: "Veeam Explorer for Microsoft Exchange"
         url: /packages/veeamexplorerformicrosoftexchange.html
+      - page: "Veeam Explorer for Microsoft Exchange for Microsoft o365"
+        url: /packages/veeamexplorerformicrosoftexchangeo365.html
       - page: "Veeam Explorer for Microsoft SharePoint"
         url: /packages/veeamexplorerformicrosoftsharepoint.html
+      - page: "Veeam Explorer for Microsoft SharePoint for Microsoft o365"
+        url: /packages/veeamexplorerformicrosoftsharepointo365.html
       - page: "Veeam Explorer for Microsoft SQL Server"
         url: /packages/veeamexplorerformicrosoftsqlserver.html
       - page: "Veeam Explorer for Oracle"
