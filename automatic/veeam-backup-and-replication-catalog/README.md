@@ -1,5 +1,9 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@dadb5921321fb56ca5a60149612bb0fba69daa84/icons/veeam-backup-and-replication-catalog.png" width="48" height="48"/> [veeam-backup-and-replication-catalog](https://chocolatey.org/packages/veeam-backup-and-replication-catalog)
 
+## Exit when reboot detected
+
+When installing / upgrading these packages, I would like to advice you to enable this feature `choco feature enable -n=exitOnRebootDetected`
+
 ## Veeam Backup Catalog
 
 Veeam Backup Catalog is a feature that stands for VM guest OS file indexing. Veeam Backup Catalog comprises Veeam Guest Catalog services that run on the following servers in the backup infrastructure: Veeam backup server and Veeam Backup Enterprise Manager server.
