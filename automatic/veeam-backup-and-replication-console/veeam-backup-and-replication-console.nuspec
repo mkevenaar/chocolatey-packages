@@ -48,7 +48,11 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <docsUrl>https://helpcenter.veeam.com/docs/backup/vsphere/overview.html</docsUrl>
     <mailingListUrl>https://forums.veeam.com/</mailingListUrl>
     <summary>Veeam Backup &amp; Replication console</summary>
-    <description><![CDATA[## Console for Veeam Backup & Replication
+    <description><![CDATA[## Exit when reboot detected
+
+When installing / upgrading these packages, I would like to advice you to enable this feature `choco feature enable -n=exitOnRebootDetected`
+
+## Console for Veeam Backup & Replication
 
 Veeam® Backup & Replication™ is a backup solution developed for VMware vSphere and Microsoft Hyper-V virtual environments. Veeam Backup & Replication provides a set of features for performing data protection and disaster recovery tasks.
 
@@ -62,7 +66,7 @@ let them know the package is no longer updating correctly.
     <dependencies>
       <dependency id="veeam-backup-and-replication-iso" version="[9.5.4.2866]" />
       <dependency id="chocolatey-isomount.extension" version="1.0" />
-      <dependency id="DotNet4.6.1" />
+      <dependency id="DotNet4.7.2" />
       <dependency id="SQL2014.SMO" />
     </dependencies>
 

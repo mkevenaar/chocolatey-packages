@@ -1,5 +1,9 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@35468483d729802d86fa643e6b99fcbed0ae353e/icons/veeam-explorer-for-microsoft-exchange.png" width="48" height="48"/> [veeam-explorer-for-microsoft-exchange](https://chocolatey.org/packages/veeam-explorer-for-microsoft-exchange)
 
+## Exit when reboot detected
+
+When installing / upgrading these packages, I would like to advice you to enable this feature `choco feature enable -n=exitOnRebootDetected`
+
 ## Recovery tool for Microsoft Exchange
 
 Veeam® Explorer™ for Microsoft Exchange offers revolutionary technology that gives you instant visibility into Exchange backups, granular recovery of individual items and easy-to-use eDiscovery options — all without restoring the full Exchange database or entire server.
