@@ -17,6 +17,10 @@ choco uninstall veeam-explorer-for-microsoft-sql-server
 ```
 
 ## Description
+## Exit when reboot detected
+
+When installing / upgrading these packages, I would like to advice you to enable this feature `choco feature enable -n=exitOnRebootDetected`
+
 ## Recovery tool for Microsoft SQL Server
 
 Veeam® Explorer™ for Microsoft SQL Server gives you fast, transaction-level recovery of SQL databases. With agentless transaction log backup and replay1, you can quickly perform point-in-time restores of your Microsoft SQL Server databases — down to an individual transaction — achieving Recovery Time Objectives (RTOs) and Recovery Point Objectives (RPOs) of < 15 minutes.

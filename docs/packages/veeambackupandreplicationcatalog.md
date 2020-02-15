@@ -17,6 +17,10 @@ choco uninstall veeam-backup-and-replication-catalog
 ```
 
 ## Description
+## Exit when reboot detected
+
+When installing / upgrading these packages, I would like to advice you to enable this feature `choco feature enable -n=exitOnRebootDetected`
+
 ## Veeam Backup Catalog
 
 Veeam Backup Catalog is a feature that stands for VM guest OS file indexing. Veeam Backup Catalog comprises Veeam Guest Catalog services that run on the following servers in the backup infrastructure: Veeam backup server and Veeam Backup Enterprise Manager server.

@@ -17,6 +17,10 @@ choco uninstall veeam-explorer-for-microsoft-exchange
 ```
 
 ## Description
+## Exit when reboot detected
+
+When installing / upgrading these packages, I would like to advice you to enable this feature `choco feature enable -n=exitOnRebootDetected`
+
 ## Recovery tool for Microsoft Exchange
 
 Veeam® Explorer™ for Microsoft Exchange offers revolutionary technology that gives you instant visibility into Exchange backups, granular recovery of individual items and easy-to-use eDiscovery options — all without restoring the full Exchange database or entire server.

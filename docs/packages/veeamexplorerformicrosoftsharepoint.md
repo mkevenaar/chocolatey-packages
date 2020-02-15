@@ -17,6 +17,10 @@ choco uninstall veeam-explorer-for-microsoft-sharepoint
 ```
 
 ## Description
+## Exit when reboot detected
+
+When installing / upgrading these packages, I would like to advice you to enable this feature `choco feature enable -n=exitOnRebootDetected`
+
 ## Quick and easy granular recovery for SharePoint
 
 Microsoft SharePoint has traditionally been one of the most difficult applications for performing granular recovery and eDiscovery. Veeam® turns this around with Veeam Explorer™ for Microsoft SharePoint, which is a free tool that enables fast, easy restores of SharePoint sites, documents, libraries and lists; all with no agents to manage and no additional licenses to buy
