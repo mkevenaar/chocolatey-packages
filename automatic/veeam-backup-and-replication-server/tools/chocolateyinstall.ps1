@@ -88,7 +88,7 @@ $packageArgs = @{
   softwareName  = 'Veeam Backup & Replication Server*'
   file           = $fileLocation
   fileType       = 'msi'
-  silentArgs     = "$($silentArgs) ACCEPTEULA=YES ACCEPT_THIRDPARTY_LICENSES=1 /qn /norestart /l*v `"$env:TEMP\$env:ChocolateyPackageName.$env:ChocolateyPackageVersion.log`""
+  silentArgs     = "$($silentArgs) VBR_AUTO_UPGRADE=1 ACCEPTEULA=YES ACCEPT_THIRDPARTY_LICENSES=1 /qn /norestart /l*v `"$env:TEMP\$env:ChocolateyPackageName.$env:ChocolateyPackageVersion.log`""
   validExitCodes = @(0,1638,1641,3010) #1638 was added to allow updating when an newer version is already installed.
   destination    = $toolsDir
 }
