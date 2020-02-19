@@ -6,7 +6,7 @@ $packageArgs = @{
   unzipLocation  = $toolsDir
   fileType       = 'exe'
   file           = "$toolsdir\MediaInfo_GUI_19.09_Windows.exe"
-  softwareName   = 'MariaDB *'
+  softwareName   = 'MediaInfo *'
   silentArgs     = "/S"
   validExitCodes = @(0)
 }
