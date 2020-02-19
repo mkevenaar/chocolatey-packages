@@ -5,7 +5,6 @@ $url = 'https://download2.veeam.com/VeeamBackupOffice365_4.0.0.2516.zip'
 $checksum = '71300aa032b544d0a080682e40da243b363e607745157a1d1e6754fa1b321b87'
 $checksumType = 'sha256'
 $version = '4.0.0.2516'
-$fileLocation = Join-Path $toolsDir "VeeamExplorerForExchange_$($version).msi"
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
@@ -16,6 +15,8 @@ $packageArgs = @{
 }
 
 Install-ChocolateyZipPackage @packageArgs
+
+$fileLocation = Get-ChildItem $toolsDir\VeeamExplorerForExchange*.msi
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
@@ -28,3 +29,4 @@ $packageArgs = @{
 
 Install-ChocolateyInstallPackage @packageArgs
 
+Get-ChildItem $toolsDir\*.msi | ForEach-Object { Remove-Item $_ -ea 0; if (Test-Path $_) { Set-Content "$_.ignore" } }
