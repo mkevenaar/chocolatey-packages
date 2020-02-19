@@ -103,6 +103,8 @@
         url: /packages/mbsa.html
       - page: "MediaInfo"
         url: /packages/mediainfo.html
+      - page: "MediaInfo CLI"
+        url: /packages/mediainfocli.html
       - page: "Windows Terminal"
         url: /packages/microsoftwindowsterminal.html
       - page: "MongoDB"
