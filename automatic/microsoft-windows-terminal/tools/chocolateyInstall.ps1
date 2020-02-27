@@ -17,10 +17,10 @@ if ($IsCorrectBuild -lt "18362") {
 if ((Get-AppxPackage -name Microsoft.WindowsTerminal).Version -Match $version) {
   if($env:ChocolateyForce) {
     # you can't install the same version of an appx package, you need to remove it first
-    Write-Host Removing allready installed version first.
+    Write-Host Removing already installed version first.
     Get-AppxPackage -Name Microsoft.WindowsTerminal | Remove-AppxPackage
   } else {
-    Write-Host The $version version of Windows-Terminal is allready installed. If you want to reinstall use --force
+    Write-Host The $version version of Windows-Terminal is already installed. If you want to reinstall use --force
     return
   }
 }
