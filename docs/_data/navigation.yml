@@ -233,6 +233,8 @@
         url: /packages/veeamexplorerformicrosoftsqlserver.html
       - page: "Veeam Explorer for Oracle"
         url: /packages/veeamexplorerfororacle.html
+      - page: "Veeam ONE ISO downloader"
+        url: /packages/veeamoneiso.html
       - page: "Veusz (Install)"
         url: /packages/veusz.html
       - page: "Viber"
