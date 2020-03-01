@@ -237,6 +237,8 @@
         url: /packages/veeamoneagent.html
       - page: "Veeam ONE ISO downloader"
         url: /packages/veeamoneiso.html
+      - page: "Veeam ONE Monitor Client"
+        url: /packages/veeamonemonitorclient.html
       - page: "Veusz (Install)"
         url: /packages/veusz.html
       - page: "Viber"
