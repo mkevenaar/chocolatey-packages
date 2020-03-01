@@ -43,6 +43,8 @@ By default, Veeam ONE agent client is deployed on Veeam Backup & Replication ser
 >
 > Veeam ONE agent server **must** be installed on the machine that runs Veeam ONE Monitor server.
 
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+
 ### Package Parameters
 
 The package accepts the following optional parameters:
