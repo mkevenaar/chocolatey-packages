@@ -21,9 +21,27 @@ choco uninstall veeam-one-agent
 
 When installing / upgrading these packages, I would like to advice you to enable this feature `choco feature enable -n=exitOnRebootDetected`
 
-## Veeam ONE Monitor
+## Veeam ONE Agent
 
-**Veeam ONE Monitor** is used for monitoring the virtual environment and Veeam Backup & Replication infrastructure. In the Veeam ONE Monitor console, you can manage, view and interact with alarms and monitoring data, analyze the performance of virtual and backup infrastructure components, track the efficiency of data protection operations, troubleshoot issues, group your virtual infrastructure and administer monitoring settings.
+**Veeam ONE Agent** is a component that enables communication with Veeam Backup & Replication servers, performs collection of logs, and sends remediation commands.
+
+Veeam ONE agent can work in the following modes:
+
+* Server:
+
+  In this mode, Veeam ONE agent is responsible for analyzing log data and signature updates.
+
+  Veeam ONE agent server is included into Veeam ONE installation package and deployed on the machine running Veeam ONE Monitor server during product installation.
+
+* Client
+
+  In this mode, Veeam ONE agent is responsible for collecting logs and executing remediation actions on Veeam Backup & Replication servers.By default,
+
+By default, Veeam ONE agent client is deployed on Veeam Backup & Replication servers when you connect these servers to Veeam ONE.
+
+> **IMPORTANT!**
+>
+> Veeam ONE agent server **must** be installed on the machine that runs Veeam ONE Monitor server.
 
 ### Package Parameters
 
