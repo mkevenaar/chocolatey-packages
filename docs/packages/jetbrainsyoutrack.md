@@ -1,22 +1,27 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@17ecf9871387731a8fc960d008cf2786efd83f6e/icons/jetbrains-youtrack.png" width="32" height="32"/> [![JetBrains YouTrack](https://img.shields.io/chocolatey/v/jetbrains-youtrack.svg?label=JetBrains+YouTrack)](https://chocolatey.org/packages/jetbrains-youtrack) [![JetBrains YouTrack](https://img.shields.io/chocolatey/dt/jetbrains-youtrack.svg)](https://chocolatey.org/packages/jetbrains-youtrack)
 
 ## Usage
+
 To install JetBrains YouTrack, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco install jetbrains-youtrack
 ```
 
 To upgrade JetBrains YouTrack, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco upgrade jetbrains-youtrack
 ```
 
 To uninstall JetBrains YouTrack, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco uninstall jetbrains-youtrack
 ```
 
 ## Description
+
 ## JetBrains YouTrack
 
 The issue tracker designed for agile software teams
@@ -77,6 +82,7 @@ let them know the package is no longer updating correctly.
 
 
 ## Links
+
 [Chocolatey Package Page](https://chocolatey.org/packages/jetbrains-youtrack)
 
 [Software Site](https://www.jetbrains.com/youtrack/)

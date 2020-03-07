@@ -1,22 +1,27 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@083dd15e52cd8b007dd76e7ec933436c910dbe83/icons/mongodb.png" width="32" height="32"/> [![MongoDB (Install)](https://img.shields.io/chocolatey/v/mongodb.install.svg?label=MongoDB+(Install))](https://chocolatey.org/packages/mongodb.install) [![MongoDB (Install)](https://img.shields.io/chocolatey/dt/mongodb.install.svg)](https://chocolatey.org/packages/mongodb.install)
 
 ## Usage
+
 To install MongoDB (Install), run the following command from the command line or from PowerShell:
+
 ```powershell
 choco install mongodb.install
 ```
 
 To upgrade MongoDB (Install), run the following command from the command line or from PowerShell:
+
 ```powershell
 choco upgrade mongodb.install
 ```
 
 To uninstall MongoDB (Install), run the following command from the command line or from PowerShell:
+
 ```powershell
 choco uninstall mongodb.install
 ```
 
 ## Description
+
 MongoDB (from "humongous") is a scalable, high-performance, open source NoSQL database written in C++.
 
 MongoDB stores data using a flexible document data model that is similar to JSON. Documents contain one or more fields, including arrays, binary data and sub-documents. Fields can vary from document to document. This flexibility allows development teams to evolve the data model rapidly as their application requirements change.
@@ -40,6 +45,7 @@ let them know the package is no longer updating correctly.
 
 
 ## Links
+
 [Chocolatey Package Page](https://chocolatey.org/packages/mongodb.install)
 
 [Software Site](http://www.mongodb.org)

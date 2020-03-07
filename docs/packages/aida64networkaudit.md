@@ -1,22 +1,27 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@fb6e804fefc774a7d346389efc5fcc741da1a6f9/icons/aida64-networkaudit.png" width="32" height="32"/> [![AIDA64 Network Audit](https://img.shields.io/chocolatey/v/aida64-networkaudit.svg?label=AIDA64+Network+Audit)](https://chocolatey.org/packages/aida64-networkaudit) [![AIDA64 Network Audit](https://img.shields.io/chocolatey/dt/aida64-networkaudit.svg)](https://chocolatey.org/packages/aida64-networkaudit)
 
 ## Usage
+
 To install AIDA64 Network Audit, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco install aida64-networkaudit
 ```
 
 To upgrade AIDA64 Network Audit, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco upgrade aida64-networkaudit
 ```
 
 To uninstall AIDA64 Network Audit, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco uninstall aida64-networkaudit
 ```
 
 ## Description
+
 Dedicated network audit solution for businesses that supports IT decision-making with essential statistics, and helps companies to reduce their IT costs. With AIDA64 Network Audit, system administrators can make a detailed inventory of the company PC fleet in an automated manner, and track changes in both hardware and software.
 
 #### Community
@@ -42,6 +47,7 @@ let them know the package is no longer updating correctly.
 
 
 ## Links
+
 [Chocolatey Package Page](https://chocolatey.org/packages/aida64-networkaudit)
 
 [Software Site](http://www.aida64.com/products/aida64-network-audit)

@@ -1,22 +1,27 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@320be0f0eca14083b7ba734b13a417b407225a8b/icons/mariadb.png" width="32" height="32"/> [![MariaDB (Portable)](https://img.shields.io/chocolatey/v/mariadb.portable.svg?label=MariaDB+(Portable))](https://chocolatey.org/packages/mariadb.portable) [![MariaDB (Portable)](https://img.shields.io/chocolatey/dt/mariadb.portable.svg)](https://chocolatey.org/packages/mariadb.portable)
 
 ## Usage
+
 To install MariaDB (Portable), run the following command from the command line or from PowerShell:
+
 ```powershell
 choco install mariadb.portable
 ```
 
 To upgrade MariaDB (Portable), run the following command from the command line or from PowerShell:
+
 ```powershell
 choco upgrade mariadb.portable
 ```
 
 To uninstall MariaDB (Portable), run the following command from the command line or from PowerShell:
+
 ```powershell
 choco uninstall mariadb.portable
 ```
 
 ## Description
+
 MariaDB is designed as a drop-in replacement of [MySQL](https://chocolatey.org/packages/mysql) with more features, new storage engines, fewer bugs, and better performance. MariaDB server is a community developed fork of MySQL server started by core members of the original MySQL team.
 
 MariaDB strives to be the logical choice for database professionals looking for a robust, scalable, and reliable SQL server. To accomplish this, the MariaDB Foundation work closely and cooperatively with the larger community of users and developers in the true spirit of Free and open source software, and release software in a manner that balances predictability with reliability.
@@ -38,6 +43,7 @@ let them know the package is no longer updating correctly.
 
 
 ## Links
+
 [Chocolatey Package Page](https://chocolatey.org/packages/mariadb.portable)
 
 [Software Site](https://mariadb.org)

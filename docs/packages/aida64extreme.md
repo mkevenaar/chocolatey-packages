@@ -1,22 +1,27 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@262e3148b0ba248ae30cb14e38416a5a6778ebc8/icons/aida64-extreme.png" width="32" height="32"/> [![AIDA64 Extreme](https://img.shields.io/chocolatey/v/aida64-extreme.svg?label=AIDA64+Extreme)](https://chocolatey.org/packages/aida64-extreme) [![AIDA64 Extreme](https://img.shields.io/chocolatey/dt/aida64-extreme.svg)](https://chocolatey.org/packages/aida64-extreme)
 
 ## Usage
+
 To install AIDA64 Extreme, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco install aida64-extreme
 ```
 
 To upgrade AIDA64 Extreme, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco upgrade aida64-extreme
 ```
 
 To uninstall AIDA64 Extreme, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco uninstall aida64-extreme
 ```
 
 ## Description
+
 AIDA64 Extreme is an industry-leading system information tool, loved by PC enthusiasts around the world, which not only provides extremely detailed information about both hardware and installed software, but also helps users diagnose issues and offers benchmarks to measure the performance of the computer.
 
 Usage of this software for commercial purposes is not permitted.
@@ -45,6 +50,7 @@ let them know the package is no longer updating correctly.
 
 
 ## Links
+
 [Chocolatey Package Page](https://chocolatey.org/packages/aida64-extreme)
 
 [Software Site](http://www.aida64.com/products/aida64-extreme)

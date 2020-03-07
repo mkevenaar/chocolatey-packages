@@ -1,22 +1,27 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ec5c8311275798f228e45671f705c3f693edc8bc/icons/veeam-backup-for-microsoft-office-365-console.png" width="32" height="32"/> [![Veeam Backup for Microsoft Office 365 Console](https://img.shields.io/chocolatey/v/veeam-backup-for-microsoft-office-365-console.svg?label=Veeam+Backup+for+Microsoft+Office+365+Console)](https://chocolatey.org/packages/veeam-backup-for-microsoft-office-365-console) [![Veeam Backup for Microsoft Office 365 Console](https://img.shields.io/chocolatey/dt/veeam-backup-for-microsoft-office-365-console.svg)](https://chocolatey.org/packages/veeam-backup-for-microsoft-office-365-console)
 
 ## Usage
+
 To install Veeam Backup for Microsoft Office 365 Console, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco install veeam-backup-for-microsoft-office-365-console
 ```
 
 To upgrade Veeam Backup for Microsoft Office 365 Console, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco upgrade veeam-backup-for-microsoft-office-365-console
 ```
 
 To uninstall Veeam Backup for Microsoft Office 365 Console, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco uninstall veeam-backup-for-microsoft-office-365-console
 ```
 
 ## Description
+
 Veeam Backup for Microsoft Office 365 is a comprehensive solution that allows you to back up and restore data of your Microsoft Office 365, on-premises Microsoft Exchange and on-premises Microsoft SharePoint organizations, including Microsoft OneDrive for Business.
 
 This package installs the following software by default:
@@ -41,6 +46,7 @@ let them know the package is no longer updating correctly.
 
 
 ## Links
+
 [Chocolatey Package Page](https://chocolatey.org/packages/veeam-backup-for-microsoft-office-365-console)
 
 [Software Site](http://www.veeam.com/)

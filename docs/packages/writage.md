@@ -1,22 +1,27 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@77922186ca474d25299d683ca4cdb586eb34825c/icons/writage.png" width="32" height="32"/> [![Writage](https://img.shields.io/chocolatey/v/writage.svg?label=Writage)](https://chocolatey.org/packages/writage) [![Writage](https://img.shields.io/chocolatey/dt/writage.svg)](https://chocolatey.org/packages/writage)
 
 ## Usage
+
 To install Writage, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco install writage
 ```
 
 To upgrade Writage, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco upgrade writage
 ```
 
 To uninstall Writage, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco uninstall writage
 ```
 
 ## Description
+
 **NOTE** This package requires Word 2010 or higher to be installed.
 
 The main idea of Writage is providing opportunity to write in Markdown to those who like Microsoft Word. There are lots of Markdown editors such as iA Writer, Texts, WriteMonkey or Byword and online Markdown writing services, like StackEdit, Dillinger or Markable for people who like to have minimalistic, distraction-free interface. And there is nothing for those who prefer to use rich interface and features of Microsoft Word.
@@ -40,6 +45,7 @@ let them know the package is no longer updating correctly.
 
 
 ## Links
+
 [Chocolatey Package Page](https://chocolatey.org/packages/writage)
 
 [Software Site](http://www.writage.com/)

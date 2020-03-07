@@ -1,22 +1,27 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@e8426dd00fd368cc7addcbb2b9e32bb3cee7cf11/icons/veeam-explorer-for-microsoft-sharepoint.png" width="32" height="32"/> [![Veeam Explorer for Microsoft SharePoint](https://img.shields.io/chocolatey/v/veeam-explorer-for-microsoft-sharepoint.svg?label=Veeam+Explorer+for+Microsoft+SharePoint)](https://chocolatey.org/packages/veeam-explorer-for-microsoft-sharepoint) [![Veeam Explorer for Microsoft SharePoint](https://img.shields.io/chocolatey/dt/veeam-explorer-for-microsoft-sharepoint.svg)](https://chocolatey.org/packages/veeam-explorer-for-microsoft-sharepoint)
 
 ## Usage
+
 To install Veeam Explorer for Microsoft SharePoint, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco install veeam-explorer-for-microsoft-sharepoint
 ```
 
 To upgrade Veeam Explorer for Microsoft SharePoint, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco upgrade veeam-explorer-for-microsoft-sharepoint
 ```
 
 To uninstall Veeam Explorer for Microsoft SharePoint, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco uninstall veeam-explorer-for-microsoft-sharepoint
 ```
 
 ## Description
+
 ## Exit when reboot detected
 
 When installing / upgrading these packages, I would like to advice you to enable this feature `choco feature enable -n=exitOnRebootDetected`
@@ -31,6 +36,7 @@ let them know the package is no longer updating correctly.
 
 
 ## Links
+
 [Chocolatey Package Page](https://chocolatey.org/packages/veeam-explorer-for-microsoft-sharepoint)
 
 [Software Site](http://www.veeam.com/)

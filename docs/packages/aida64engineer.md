@@ -1,22 +1,27 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4f65c53f100b466115e14fce7f20c8ae3a0cc838/icons/aida64-engineer.png" width="32" height="32"/> [![AIDA64 Engineer](https://img.shields.io/chocolatey/v/aida64-engineer.svg?label=AIDA64+Engineer)](https://chocolatey.org/packages/aida64-engineer) [![AIDA64 Engineer](https://img.shields.io/chocolatey/dt/aida64-engineer.svg)](https://chocolatey.org/packages/aida64-engineer)
 
 ## Usage
+
 To install AIDA64 Engineer, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco install aida64-engineer
 ```
 
 To upgrade AIDA64 Engineer, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco upgrade aida64-engineer
 ```
 
 To uninstall AIDA64 Engineer, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco uninstall aida64-engineer
 ```
 
 ## Description
+
 AIDA64 Engineer is a cutting-edge system information tool for IT technicians, which not only provides extremely detailed information about both hardware and installed software, but also helps users diagnose issues and offers benchmarks to measure the performance of both workstations and servers.
 
 #### Community
@@ -42,6 +47,7 @@ let them know the package is no longer updating correctly.
 
 
 ## Links
+
 [Chocolatey Package Page](https://chocolatey.org/packages/aida64-engineer)
 
 [Software Site](http://www.aida64.com/products/aida64-engineer)

@@ -1,22 +1,27 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@d8c446cc443361885a3ac97f172d559c02e5a713/icons/psi.png" width="32" height="32"/> [![Psi](https://img.shields.io/chocolatey/v/psi.svg?label=Psi)](https://chocolatey.org/packages/psi) [![Psi](https://img.shields.io/chocolatey/dt/psi.svg)](https://chocolatey.org/packages/psi)
 
 ## Usage
+
 To install Psi, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco install psi
 ```
 
 To upgrade Psi, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco upgrade psi
 ```
 
 To uninstall Psi, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco uninstall psi
 ```
 
 ## Description
+
 Psi is a free instant messaging application designed for the open protocol XMPP network. Fast and lightweight, Psi is fully open-source and compatible with Windows, Linux, and Mac OS X.
 
 Extensible Messaging and Presence Protocol (XMPP) is an open technology for real-time communication, which powers a wide range of applications including instant messaging, presence, multi-party chat, voice and video calls, collaboration, lightweight middleware, content syndication, and generalized routing of XML data.  See http://xmpp.org/
@@ -40,6 +45,7 @@ let them know the package is no longer updating correctly.
 
 
 ## Links
+
 [Chocolatey Package Page](https://chocolatey.org/packages/psi)
 
 [Software Site](http://psi-im.org/)

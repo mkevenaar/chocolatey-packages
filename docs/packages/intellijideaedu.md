@@ -1,22 +1,27 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@1a84d4bb32d44c7d8251d48471814ccd194dfc24/icons/intellijidea-edu.png" width="32" height="32"/> [![JetBrains IntelliJ IDEA (Educational)](https://img.shields.io/chocolatey/v/intellijidea-edu.svg?label=JetBrains+IntelliJ+IDEA+(Educational))](https://chocolatey.org/packages/intellijidea-edu) [![JetBrains IntelliJ IDEA (Educational)](https://img.shields.io/chocolatey/dt/intellijidea-edu.svg)](https://chocolatey.org/packages/intellijidea-edu)
 
 ## Usage
+
 To install JetBrains IntelliJ IDEA (Educational), run the following command from the command line or from PowerShell:
+
 ```powershell
 choco install intellijidea-edu
 ```
 
 To upgrade JetBrains IntelliJ IDEA (Educational), run the following command from the command line or from PowerShell:
+
 ```powershell
 choco upgrade intellijidea-edu
 ```
 
 To uninstall JetBrains IntelliJ IDEA (Educational), run the following command from the command line or from PowerShell:
+
 ```powershell
 choco uninstall intellijidea-edu
 ```
 
 ## Description
+
 [![official JetBrains project](http://jb.gg/badges/official-plastic.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
 
 ## ENJOY PRODUCTIVE JAVA
@@ -39,6 +44,7 @@ let them know the package is no longer updating correctly.
 
 
 ## Links
+
 [Chocolatey Package Page](https://chocolatey.org/packages/intellijidea-edu)
 
 [Software Site](https://www.jetbrains.com/education/)

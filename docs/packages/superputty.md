@@ -1,22 +1,27 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@218fd53341b8400391b0efdb75f313d01cdcf984/icons/superputty.png" width="32" height="32"/> [![SuperPutty](https://img.shields.io/chocolatey/v/superputty.svg?label=SuperPutty)](https://chocolatey.org/packages/superputty) [![SuperPutty](https://img.shields.io/chocolatey/dt/superputty.svg)](https://chocolatey.org/packages/superputty)
 
 ## Usage
+
 To install SuperPutty, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco install superputty
 ```
 
 To upgrade SuperPutty, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco upgrade superputty
 ```
 
 To uninstall SuperPutty, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco uninstall superputty
 ```
 
 ## Description
+
 SuperPutty is a Windows GUI Application that allows the PuTTY SSH Client to be opened in Tabs. Additionally there is support for SCP to transfer files.
 
 SuperPutty is written in C# and runs on any Windows platform supporting the .NET Framework 3.5 or newer.
@@ -38,6 +43,7 @@ let them know the package is no longer updating correctly.
 
 
 ## Links
+
 [Chocolatey Package Page](https://chocolatey.org/packages/superputty)
 
 [Software Site](https://www.facebook.com/superputty)

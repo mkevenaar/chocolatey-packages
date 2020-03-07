@@ -1,22 +1,27 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@012830bf1d08a51c5b0bf0d95884b1883d69da7b/icons/vscode-yaml.png" width="32" height="32"/> [![YAML VSCode Extension](https://img.shields.io/chocolatey/v/vscode-yaml.svg?label=YAML+VSCode+Extension)](https://chocolatey.org/packages/vscode-yaml) [![YAML VSCode Extension](https://img.shields.io/chocolatey/dt/vscode-yaml.svg)](https://chocolatey.org/packages/vscode-yaml)
 
 ## Usage
+
 To install YAML VSCode Extension, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco install vscode-yaml
 ```
 
 To upgrade YAML VSCode Extension, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco upgrade vscode-yaml
 ```
 
 To uninstall YAML VSCode Extension, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco uninstall vscode-yaml
 ```
 
 ## Description
+
 ## YAML Language Support by Red Hat
 
 Provides comprehensive YAML Language support to [Visual Studio Code](https://code.visualstudio.com/), via the [yaml-language-server](https://github.com/redhat-developer/yaml-language-server), with built-in Kubernetes and Kedge syntax support.
@@ -27,6 +32,7 @@ let them know the package is no longer updating correctly.
 
 
 ## Links
+
 [Chocolatey Package Page](https://chocolatey.org/packages/vscode-yaml)
 
 [Software Site](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)

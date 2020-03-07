@@ -1,22 +1,27 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@7d924f094e0faea8c264d6b973e7388c5f3a9ac8/icons/microsoft-windows-terminal.png" width="32" height="32"/> [![Windows Terminal](https://img.shields.io/chocolatey/v/microsoft-windows-terminal.svg?label=Windows+Terminal)](https://chocolatey.org/packages/microsoft-windows-terminal) [![Windows Terminal](https://img.shields.io/chocolatey/dt/microsoft-windows-terminal.svg)](https://chocolatey.org/packages/microsoft-windows-terminal)
 
 ## Usage
+
 To install Windows Terminal, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco install microsoft-windows-terminal
 ```
 
 To upgrade Windows Terminal, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco upgrade microsoft-windows-terminal
 ```
 
 To uninstall Windows Terminal, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco uninstall microsoft-windows-terminal
 ```
 
 ## Description
+
 ## Terminal & Console Overview
 
 Please take a few minutes to review the overview below before diving into the code:
@@ -51,6 +56,7 @@ let them know the package is no longer updating correctly.
 
 
 ## Links
+
 [Chocolatey Package Page](https://chocolatey.org/packages/microsoft-windows-terminal)
 
 [Software Site](https://github.com/microsoft/terminal)

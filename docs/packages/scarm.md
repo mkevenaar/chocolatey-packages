@@ -1,22 +1,27 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@9a3aec2cd14cadf9ff04d111fcc1ae400959b1c9/icons/scarm.png" width="32" height="32"/> [![SCARM](https://img.shields.io/chocolatey/v/scarm.svg?label=SCARM)](https://chocolatey.org/packages/scarm) [![SCARM](https://img.shields.io/chocolatey/dt/scarm.svg)](https://chocolatey.org/packages/scarm)
 
 ## Usage
+
 To install SCARM, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco install scarm
 ```
 
 To upgrade SCARM, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco upgrade scarm
 ```
 
 To uninstall SCARM, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco uninstall scarm
 ```
 
 ## Description
+
 SCARM means Simple Computer Aided Railway Modeller – software for easy and precise design of model train layouts and railroad track plans.
 
 **Please Note**: This is an automatically updated package. If you find it is
@@ -25,6 +30,7 @@ let them know the package is no longer updating correctly.
 
 
 ## Links
+
 [Chocolatey Package Page](https://chocolatey.org/packages/scarm)
 
 [Software Site](https://www.scarm.info)

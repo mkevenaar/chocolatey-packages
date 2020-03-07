@@ -1,22 +1,27 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@04dc5eb5743f7aec66c0fd7a583fe56cb80aa51a/icons/helio-workstation.png" width="32" height="32"/> [![Helio Workstation (Portable)](https://img.shields.io/chocolatey/v/helio-workstation.portable.svg?label=Helio+Workstation+(Portable))](https://chocolatey.org/packages/helio-workstation.portable) [![Helio Workstation (Portable)](https://img.shields.io/chocolatey/dt/helio-workstation.portable.svg)](https://chocolatey.org/packages/helio-workstation.portable)
 
 ## Usage
+
 To install Helio Workstation (Portable), run the following command from the command line or from PowerShell:
+
 ```powershell
 choco install helio-workstation.portable
 ```
 
 To upgrade Helio Workstation (Portable), run the following command from the command line or from PowerShell:
+
 ```powershell
 choco upgrade helio-workstation.portable
 ```
 
 To uninstall Helio Workstation (Portable), run the following command from the command line or from PowerShell:
+
 ```powershell
 choco uninstall helio-workstation.portable
 ```
 
 ## Description
+
 ## ![helio-workstation example](https://cdn.jsdelivr.net/gh/helio-fm/helio-workstation@30a8ba6b1ab4d5421887dce9fc0eae77e3c266fc/Resources/screen-v2.png)
 
 [Helio Workstation](https://helio.fm) is free and open-source music sequencer, designed to be used on all major platforms.
@@ -35,6 +40,7 @@ let them know the package is no longer updating correctly.
 
 
 ## Links
+
 [Chocolatey Package Page](https://chocolatey.org/packages/helio-workstation.portable)
 
 [Software Site](https://helio.fm/)

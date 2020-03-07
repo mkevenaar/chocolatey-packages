@@ -1,22 +1,27 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@aa837530f118c5c04eb24910a503865173952d25/icons/evernote.png" width="32" height="32"/> [![Evernote](https://img.shields.io/chocolatey/v/evernote.svg?label=Evernote)](https://chocolatey.org/packages/evernote) [![Evernote](https://img.shields.io/chocolatey/dt/evernote.svg)](https://chocolatey.org/packages/evernote)
 
 ## Usage
+
 To install Evernote, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco install evernote
 ```
 
 To upgrade Evernote, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco upgrade evernote
 ```
 
 To uninstall Evernote, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco uninstall evernote
 ```
 
 ## Description
+
 WRITE: From short lists to lengthy research, no matter what form your writing takes, Evernote keeps you focused on moving those ideas from inspiration to completion.
 
 COLLECT: Easily gather everything that matters. Clip web articles, capture handwritten notes, and snap photos to keep the physical and digital details of your projects with you at all times.
@@ -31,6 +36,7 @@ let them know the package is no longer updating correctly.
 
 
 ## Links
+
 [Chocolatey Package Page](https://chocolatey.org/packages/evernote)
 
 [Software Site](http://evernote.com/evernote/)

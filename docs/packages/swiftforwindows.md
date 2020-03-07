@@ -1,22 +1,27 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@0559168c31d243f6d0803426064a0513df5cd34b/icons/swiftforwindows.png" width="32" height="32"/> [![Swift for Windows](https://img.shields.io/chocolatey/v/swiftforwindows.svg?label=Swift+for+Windows)](https://chocolatey.org/packages/swiftforwindows) [![Swift for Windows](https://img.shields.io/chocolatey/dt/swiftforwindows.svg)](https://chocolatey.org/packages/swiftforwindows)
 
 ## Usage
+
 To install Swift for Windows, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco install swiftforwindows
 ```
 
 To upgrade Swift for Windows, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco upgrade swiftforwindows
 ```
 
 To uninstall Swift for Windows, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco uninstall swiftforwindows
 ```
 
 ## Description
+
 Swift for Windows is an open source project that provides an easy-to-use development environment for Swift programming for Windows applications.
 
 **Please Note**: This is an automatically updated package. If you find it is
@@ -25,6 +30,7 @@ let them know the package is no longer updating correctly.
 
 
 ## Links
+
 [Chocolatey Package Page](https://chocolatey.org/packages/swiftforwindows)
 
 [Software Site](https://swiftforwindows.github.io/)

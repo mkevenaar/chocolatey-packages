@@ -1,22 +1,27 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@8855d884e1b0fbe873de697d8f004dcea104c920/icons/bitvise-ssh-server.png" width="32" height="32"/> [![Bitvise SSH Server](https://img.shields.io/chocolatey/v/bitvise-ssh-server.svg?label=Bitvise+SSH+Server)](https://chocolatey.org/packages/bitvise-ssh-server) [![Bitvise SSH Server](https://img.shields.io/chocolatey/dt/bitvise-ssh-server.svg)](https://chocolatey.org/packages/bitvise-ssh-server)
 
 ## Usage
+
 To install Bitvise SSH Server, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco install bitvise-ssh-server
 ```
 
 To upgrade Bitvise SSH Server, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco upgrade bitvise-ssh-server
 ```
 
 To uninstall Bitvise SSH Server, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco uninstall bitvise-ssh-server
 ```
 
 ## Description
+
 Bitvise SSH Server (previously WinSSHD) provides secure remote login capabilities. Security is our SSH server's key feature: in contrast with Telnet and FTP servers, Bitvise SSH Server encrypts data during transmission. Thus, no one can sniff your password or see what files you are transferring when you access your computer over SSH.
 
 Bitvise SSH Server is ideal for remote administration of Windows servers; for advanced users who wish to access their home machine from work, or their work machine from home; as well as for a wide spectrum of advanced tasks, such as establishing a VPN using the SSH TCP/IP tunneling feature, or providing a secure file depository using SFTP.
@@ -61,6 +66,7 @@ let them know the package is no longer updating correctly.
 
 
 ## Links
+
 [Chocolatey Package Page](https://chocolatey.org/packages/bitvise-ssh-server)
 
 [Software Site](http://www.bitvise.com/ssh-server)

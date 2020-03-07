@@ -1,22 +1,27 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@047dcebf11a3a9a89dabcbebe2d091111382a619/icons/nsis.png" width="32" height="32"/> [![Nullsoft Scriptable Install System (Install)](https://img.shields.io/chocolatey/v/nsis.install.svg?label=Nullsoft+Scriptable+Install+System+(Install))](https://chocolatey.org/packages/nsis.install) [![Nullsoft Scriptable Install System (Install)](https://img.shields.io/chocolatey/dt/nsis.install.svg)](https://chocolatey.org/packages/nsis.install)
 
 ## Usage
+
 To install Nullsoft Scriptable Install System (Install), run the following command from the command line or from PowerShell:
+
 ```powershell
 choco install nsis.install
 ```
 
 To upgrade Nullsoft Scriptable Install System (Install), run the following command from the command line or from PowerShell:
+
 ```powershell
 choco upgrade nsis.install
 ```
 
 To uninstall Nullsoft Scriptable Install System (Install), run the following command from the command line or from PowerShell:
+
 ```powershell
 choco uninstall nsis.install
 ```
 
 ## Description
+
 
 NSIS (Nullsoft Scriptable Install System) is a professional open source system to create Windows installers. It is designed to be as small and flexible as possible and is therefore very suitable for internet distribution.
 
@@ -34,6 +39,7 @@ let them know the package is no longer updating correctly.
 
 
 ## Links
+
 [Chocolatey Package Page](https://chocolatey.org/packages/nsis.install)
 
 [Software Site](http://nsis.sourceforge.net/)

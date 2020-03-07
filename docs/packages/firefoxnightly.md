@@ -1,22 +1,27 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@972436b98f0066a91d8f6899e42a6ccf06c7acbf/icons/firefox-nightly.png" width="32" height="32"/> [![Firefox Nightly](https://img.shields.io/chocolatey/v/firefox-nightly.svg?label=Firefox+Nightly)](https://chocolatey.org/packages/firefox-nightly) [![Firefox Nightly](https://img.shields.io/chocolatey/dt/firefox-nightly.svg)](https://chocolatey.org/packages/firefox-nightly)
 
 ## Usage
+
 To install Firefox Nightly, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco install firefox-nightly
 ```
 
 To upgrade Firefox Nightly, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco upgrade firefox-nightly
 ```
 
 To uninstall Firefox Nightly, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco uninstall firefox-nightly
 ```
 
 ## Description
+
 Firefox Nightly builds are under active development and should be used only by advanced users for testing experimental features.
 
 ## Package Parameters
@@ -42,6 +47,7 @@ let them know the package is no longer updating correctly.
 
 
 ## Links
+
 [Chocolatey Package Page](https://chocolatey.org/packages/firefox-nightly)
 
 [Software Site](https://www.mozilla.org/firefox/nightly/)

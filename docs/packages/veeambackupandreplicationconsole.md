@@ -1,22 +1,27 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@29a67d5d4ac86374e36a35640ef7f869474bd1df/icons/veeam-backup-and-replication-console.png" width="32" height="32"/> [![Veeam Backup & Replication Console](https://img.shields.io/chocolatey/v/veeam-backup-and-replication-console.svg?label=Veeam+Backup+%26+Replication+Console)](https://chocolatey.org/packages/veeam-backup-and-replication-console) [![Veeam Backup & Replication Console](https://img.shields.io/chocolatey/dt/veeam-backup-and-replication-console.svg)](https://chocolatey.org/packages/veeam-backup-and-replication-console)
 
 ## Usage
+
 To install Veeam Backup & Replication Console, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco install veeam-backup-and-replication-console
 ```
 
 To upgrade Veeam Backup & Replication Console, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco upgrade veeam-backup-and-replication-console
 ```
 
 To uninstall Veeam Backup & Replication Console, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco uninstall veeam-backup-and-replication-console
 ```
 
 ## Description
+
 ## Exit when reboot detected
 
 When installing / upgrading these packages, I would like to advice you to enable this feature `choco feature enable -n=exitOnRebootDetected`
@@ -31,6 +36,7 @@ let them know the package is no longer updating correctly.
 
 
 ## Links
+
 [Chocolatey Package Page](https://chocolatey.org/packages/veeam-backup-and-replication-console)
 
 [Software Site](http://www.veeam.com/)

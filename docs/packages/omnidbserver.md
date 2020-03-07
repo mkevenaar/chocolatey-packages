@@ -1,22 +1,27 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@35a3c2c9405695b548d10666884abcf238e92e1e/icons/omnidb-server.png" width="32" height="32"/> [![OmniDB-server](https://img.shields.io/chocolatey/v/omnidb-server.svg?label=OmniDB-server)](https://chocolatey.org/packages/omnidb-server) [![OmniDB-server](https://img.shields.io/chocolatey/dt/omnidb-server.svg)](https://chocolatey.org/packages/omnidb-server)
 
 ## Usage
+
 To install OmniDB-server, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco install omnidb-server
 ```
 
 To upgrade OmniDB-server, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco upgrade omnidb-server
 ```
 
 To uninstall OmniDB-server, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco uninstall omnidb-server
 ```
 
 ## Description
+
 **OmniDB** is a web tool that simplifies database management focusing on interactivity, designed to be powerful and lightweight. Check-out some characteristics:
 
 - **Web Tool**: Accessible from any platform, using a browser as a medium
@@ -37,6 +42,7 @@ let them know the package is no longer updating correctly.
 
 
 ## Links
+
 [Chocolatey Package Page](https://chocolatey.org/packages/omnidb-server)
 
 [Software Site](https://omnidb.org/)

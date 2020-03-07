@@ -1,22 +1,27 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@6a88120fa3e1af45adf8c403dd8fe5af15997ee6/icons/pycharm.png" width="32" height="32"/> [![JetBrains Pycharm Professional](https://img.shields.io/chocolatey/v/pycharm.svg?label=JetBrains+Pycharm+Professional)](https://chocolatey.org/packages/pycharm) [![JetBrains Pycharm Professional](https://img.shields.io/chocolatey/dt/pycharm.svg)](https://chocolatey.org/packages/pycharm)
 
 ## Usage
+
 To install JetBrains Pycharm Professional, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco install pycharm
 ```
 
 To upgrade JetBrains Pycharm Professional, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco upgrade pycharm
 ```
 
 To uninstall JetBrains Pycharm Professional, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco uninstall pycharm
 ```
 
 ## Description
+
 [![official JetBrains project](http://jb.gg/badges/official-plastic.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
 
 ## ALL THE PYTHON TOOLS IN ONE PLACE
@@ -44,6 +49,7 @@ let them know the package is no longer updating correctly.
 
 
 ## Links
+
 [Chocolatey Package Page](https://chocolatey.org/packages/pycharm)
 
 [Software Site](http://www.jetbrains.com/pycharm/)

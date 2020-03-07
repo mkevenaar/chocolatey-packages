@@ -1,22 +1,27 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@3b43537c8f99e1ea08563dbe1587c158c4f52e3c/icons/veeam-backup-and-replication-server.png" width="32" height="32"/> [![Veeam Backup & Replication Server](https://img.shields.io/chocolatey/v/veeam-backup-and-replication-server.svg?label=Veeam+Backup+%26+Replication+Server)](https://chocolatey.org/packages/veeam-backup-and-replication-server) [![Veeam Backup & Replication Server](https://img.shields.io/chocolatey/dt/veeam-backup-and-replication-server.svg)](https://chocolatey.org/packages/veeam-backup-and-replication-server)
 
 ## Usage
+
 To install Veeam Backup & Replication Server, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco install veeam-backup-and-replication-server
 ```
 
 To upgrade Veeam Backup & Replication Server, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco upgrade veeam-backup-and-replication-server
 ```
 
 To uninstall Veeam Backup & Replication Server, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco uninstall veeam-backup-and-replication-server
 ```
 
 ## Description
+
 ## Exit when reboot detected
 
 When installing / upgrading these packages, I would like to advice you to enable this feature `choco feature enable -n=exitOnRebootDetected`
@@ -54,6 +59,7 @@ let them know the package is no longer updating correctly.
 
 
 ## Links
+
 [Chocolatey Package Page](https://chocolatey.org/packages/veeam-backup-and-replication-server)
 
 [Software Site](http://www.veeam.com/)

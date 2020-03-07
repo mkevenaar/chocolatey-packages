@@ -1,22 +1,27 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@d7949131bb33509ebc8294e210fd60c84af5b082/icons/pycharm-edu.png" width="32" height="32"/> [![JetBrains Pycharm Educational](https://img.shields.io/chocolatey/v/pycharm-edu.svg?label=JetBrains+Pycharm+Educational)](https://chocolatey.org/packages/pycharm-edu) [![JetBrains Pycharm Educational](https://img.shields.io/chocolatey/dt/pycharm-edu.svg)](https://chocolatey.org/packages/pycharm-edu)
 
 ## Usage
+
 To install JetBrains Pycharm Educational, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco install pycharm-edu
 ```
 
 To upgrade JetBrains Pycharm Educational, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco upgrade pycharm-edu
 ```
 
 To uninstall JetBrains Pycharm Educational, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco uninstall pycharm-edu
 ```
 
 ## Description
+
 [![official JetBrains project](http://jb.gg/badges/official-plastic.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
 
 ## Use a free & open source solution
@@ -37,6 +42,7 @@ let them know the package is no longer updating correctly.
 
 
 ## Links
+
 [Chocolatey Package Page](https://chocolatey.org/packages/pycharm-edu)
 
 [Software Site](https://www.jetbrains.com/pycharm-edu/)

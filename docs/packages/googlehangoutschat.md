@@ -1,22 +1,27 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@bc93d96ecdc80caa9c22bffddf7147ac8a132421/icons/google-hangouts-chat.png" width="32" height="32"/> [![Hangouts Chat (Install)](https://img.shields.io/chocolatey/v/google-hangouts-chat.svg?label=Hangouts+Chat+(Install))](https://chocolatey.org/packages/google-hangouts-chat) [![Hangouts Chat (Install)](https://img.shields.io/chocolatey/dt/google-hangouts-chat.svg)](https://chocolatey.org/packages/google-hangouts-chat)
 
 ## Usage
+
 To install Hangouts Chat (Install), run the following command from the command line or from PowerShell:
+
 ```powershell
 choco install google-hangouts-chat
 ```
 
 To upgrade Hangouts Chat (Install), run the following command from the command line or from PowerShell:
+
 ```powershell
 choco upgrade google-hangouts-chat
 ```
 
 To uninstall Hangouts Chat (Install), run the following command from the command line or from PowerShell:
+
 ```powershell
 choco uninstall google-hangouts-chat
 ```
 
 ## Description
+
 ## Hangouts Chat
 
 ### A messaging platform built for teams
@@ -51,6 +56,7 @@ let them know the package is no longer updating correctly.
 
 
 ## Links
+
 [Chocolatey Package Page](https://chocolatey.org/packages/google-hangouts-chat)
 
 [Software Site](https://gsuite.google.com/products/chat/)

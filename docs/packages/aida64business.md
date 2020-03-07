@@ -1,22 +1,27 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ac3929abb895484448ef48cf4d7b8a1760695f94/icons/aida64-business.png" width="32" height="32"/> [![AIDA64 Business](https://img.shields.io/chocolatey/v/aida64-business.svg?label=AIDA64+Business)](https://chocolatey.org/packages/aida64-business) [![AIDA64 Business](https://img.shields.io/chocolatey/dt/aida64-business.svg)](https://chocolatey.org/packages/aida64-business)
 
 ## Usage
+
 To install AIDA64 Business, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco install aida64-business
 ```
 
 To upgrade AIDA64 Business, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco upgrade aida64-business
 ```
 
 To uninstall AIDA64 Business, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco uninstall aida64-business
 ```
 
 ## Description
+
 A professional solution, based on the award-winning AIDA64 engine, which makes a detailed hardware and software inventory of the company PC fleet, and supports PC fleet management with remote functions. It also supports IT decision-making with essential statistics, and helps companies reduce their IT costs.
 
 #### Community
@@ -42,6 +47,7 @@ let them know the package is no longer updating correctly.
 
 
 ## Links
+
 [Chocolatey Package Page](https://chocolatey.org/packages/aida64-business)
 
 [Software Site](http://www.aida64.com/products/aida64-business)

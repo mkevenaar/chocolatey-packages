@@ -1,22 +1,27 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@116020c522e58af02510bf485189c60c1fd109d4/icons/pulumi.png" width="32" height="32"/> [![Pulumi (Portable)](https://img.shields.io/chocolatey/v/pulumi.svg?label=Pulumi+(Portable))](https://chocolatey.org/packages/pulumi) [![Pulumi (Portable)](https://img.shields.io/chocolatey/dt/pulumi.svg)](https://chocolatey.org/packages/pulumi)
 
 ## Usage
+
 To install Pulumi (Portable), run the following command from the command line or from PowerShell:
+
 ```powershell
 choco install pulumi
 ```
 
 To upgrade Pulumi (Portable), run the following command from the command line or from PowerShell:
+
 ```powershell
 choco upgrade pulumi
 ```
 
 To uninstall Pulumi (Portable), run the following command from the command line or from PowerShell:
+
 ```powershell
 choco uninstall pulumi
 ```
 
 ## Description
+
 ## Modern Infrastructure as Code
 
 Create, deploy, and manage infrastructure on any cloud using your favorite language.
@@ -31,6 +36,7 @@ let them know the package is no longer updating correctly.
 
 
 ## Links
+
 [Chocolatey Package Page](https://chocolatey.org/packages/pulumi)
 
 [Software Site](https://www.pulumi.com)

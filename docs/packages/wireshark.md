@@ -1,22 +1,27 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@faf506da98b6ae7e18f12faa1c0c30daa386db65/icons/wireshark.png" width="32" height="32"/> [![Wireshark](https://img.shields.io/chocolatey/v/wireshark.svg?label=Wireshark)](https://chocolatey.org/packages/wireshark) [![Wireshark](https://img.shields.io/chocolatey/dt/wireshark.svg)](https://chocolatey.org/packages/wireshark)
 
 ## Usage
+
 To install Wireshark, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco install wireshark
 ```
 
 To upgrade Wireshark, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco upgrade wireshark
 ```
 
 To uninstall Wireshark, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco uninstall wireshark
 ```
 
 ## Description
+
 Wireshark is the world’s foremost and widely-used network protocol analyzer. It lets you see what’s happening on your network at a microscopic level and is the de facto (and often de jure) standard across many commercial and non-profit enterprises, government agencies, and educational institutions. Wireshark development thrives thanks to the volunteer contributions of networking experts around the globe and is the continuation of a project started by Gerald Combs in 1998.
 
 Wireshark has a rich feature set which includes the following:
@@ -43,6 +48,7 @@ let them know the package is no longer updating correctly.
 
 
 ## Links
+
 [Chocolatey Package Page](https://chocolatey.org/packages/wireshark)
 
 [Software Site](http://www.wireshark.org)

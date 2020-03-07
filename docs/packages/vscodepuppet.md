@@ -1,22 +1,27 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@71b2b9bb77658ff645430f37851bc5a826b96cc7/icons/vscode-puppet.png" width="32" height="32"/> [![Puppet VSCode Extension](https://img.shields.io/chocolatey/v/vscode-puppet.svg?label=Puppet+VSCode+Extension)](https://chocolatey.org/packages/vscode-puppet) [![Puppet VSCode Extension](https://img.shields.io/chocolatey/dt/vscode-puppet.svg)](https://chocolatey.org/packages/vscode-puppet)
 
 ## Usage
+
 To install Puppet VSCode Extension, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco install vscode-puppet
 ```
 
 To upgrade Puppet VSCode Extension, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco upgrade vscode-puppet
 ```
 
 To uninstall Puppet VSCode Extension, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco uninstall vscode-puppet
 ```
 
 ## Description
+
 ## [Puppet](https://www.puppet.com) extension for Visual Studio Code
 
 ### Features
@@ -58,6 +63,7 @@ let them know the package is no longer updating correctly.
 
 
 ## Links
+
 [Chocolatey Package Page](https://chocolatey.org/packages/vscode-puppet)
 
 [Software Site](https://marketplace.visualstudio.com/items?itemName=jpogran.puppet-vscode)

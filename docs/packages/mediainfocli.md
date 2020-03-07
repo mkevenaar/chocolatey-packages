@@ -1,22 +1,27 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@010c95a08ae958860af2796ed0a3ad446109f5d7/icons/mediainfo-cli.svg" width="32" height="32"/> [![MediaInfo CLI](https://img.shields.io/chocolatey/v/mediainfo-cli.svg?label=MediaInfo+CLI)](https://chocolatey.org/packages/mediainfo-cli) [![MediaInfo CLI](https://img.shields.io/chocolatey/dt/mediainfo-cli.svg)](https://chocolatey.org/packages/mediainfo-cli)
 
 ## Usage
+
 To install MediaInfo CLI, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco install mediainfo-cli
 ```
 
 To upgrade MediaInfo CLI, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco upgrade mediainfo-cli
 ```
 
 To uninstall MediaInfo CLI, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco uninstall mediainfo-cli
 ```
 
 ## Description
+
 MediaInfo supplies technical and tag information about a video or audio file. Supports many audio and video formats, with different methods of viewing information.
 
 ## Display
@@ -54,6 +59,7 @@ let them know the package is no longer updating correctly.
 
 
 ## Links
+
 [Chocolatey Package Page](https://chocolatey.org/packages/mediainfo-cli)
 
 [Software Site](http://mediaarea.net/en/MediaInfo)

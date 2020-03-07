@@ -1,22 +1,27 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@a562571bebc3bd7f25660341bd2ab5db86f5ff25/icons/vlc-nightly.png" width="32" height="32"/> [![VLC Nightly](https://img.shields.io/chocolatey/v/vlc-nightly.svg?label=VLC+Nightly)](https://chocolatey.org/packages/vlc-nightly) [![VLC Nightly](https://img.shields.io/chocolatey/dt/vlc-nightly.svg)](https://chocolatey.org/packages/vlc-nightly)
 
 ## Usage
+
 To install VLC Nightly, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco install vlc-nightly
 ```
 
 To upgrade VLC Nightly, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco upgrade vlc-nightly
 ```
 
 To uninstall VLC Nightly, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco uninstall vlc-nightly
 ```
 
 ## Description
+
 The Nightly version of VLC is the latest unstable and unsupported software as provided by VideoLAN
 
 VLC is a free and open source cross-platform multimedia player and framework that plays most multimedia files as well as DVD, Audio CD, VCD, and various streaming protocols.
@@ -44,6 +49,7 @@ let them know the package is no longer updating correctly.
 
 
 ## Links
+
 [Chocolatey Package Page](https://chocolatey.org/packages/vlc-nightly)
 
 [Software Site](https://nightlies.videolan.org/index.html)

@@ -1,22 +1,27 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ab172920222bd8bb7e28a2f579b5e5d7e08de895/icons/simulide.png" width="32" height="32"/> [![SimulIDE](https://img.shields.io/chocolatey/v/simulide.svg?label=SimulIDE)](https://chocolatey.org/packages/simulide) [![SimulIDE](https://img.shields.io/chocolatey/dt/simulide.svg)](https://chocolatey.org/packages/simulide)
 
 ## Usage
+
 To install SimulIDE, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco install simulide
 ```
 
 To upgrade SimulIDE, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco upgrade simulide
 ```
 
 To uninstall SimulIDE, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco uninstall simulide
 ```
 
 ## Description
+
 ## SimulIDE
 
 Electronic Circuit Simulator
@@ -40,6 +45,7 @@ let them know the package is no longer updating correctly.
 
 
 ## Links
+
 [Chocolatey Package Page](https://chocolatey.org/packages/simulide)
 
 [Software Site](https://simulide.blogspot.com/)

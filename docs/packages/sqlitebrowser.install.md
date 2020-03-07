@@ -1,22 +1,27 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@326e9c0439d53d73fcc5ef931486c8ffbdfb016e/icons/sqlitebrowser.svg" width="32" height="32"/> [![DB Browser for SQLite (Install)](https://img.shields.io/chocolatey/v/sqlitebrowser.install.svg?label=DB+Browser+for+SQLite+(Install))](https://chocolatey.org/packages/sqlitebrowser.install) [![DB Browser for SQLite (Install)](https://img.shields.io/chocolatey/dt/sqlitebrowser.install.svg)](https://chocolatey.org/packages/sqlitebrowser.install)
 
 ## Usage
+
 To install DB Browser for SQLite (Install), run the following command from the command line or from PowerShell:
+
 ```powershell
 choco install sqlitebrowser.install
 ```
 
 To upgrade DB Browser for SQLite (Install), run the following command from the command line or from PowerShell:
+
 ```powershell
 choco upgrade sqlitebrowser.install
 ```
 
 To uninstall DB Browser for SQLite (Install), run the following command from the command line or from PowerShell:
+
 ```powershell
 choco uninstall sqlitebrowser.install
 ```
 
 ## Description
+
 ## DB Browser for SQLite
 
 DB Browser for SQLite is a high quality, visual, open source tool to create, design, and edit database files compatible with SQLite.
@@ -48,6 +53,7 @@ let them know the package is no longer updating correctly.
 
 
 ## Links
+
 [Chocolatey Package Page](https://chocolatey.org/packages/sqlitebrowser.install)
 
 [Software Site](http://sqlitebrowser.org/)

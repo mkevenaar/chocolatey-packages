@@ -1,22 +1,27 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@72d4273ca59988b456ffc543827642170797aeef/icons/wnetwatcher.png" width="32" height="32"/> [![Wireless Network Watcher (Install)](https://img.shields.io/chocolatey/v/wnetwatcher.install.svg?label=Wireless+Network+Watcher+(Install))](https://chocolatey.org/packages/wnetwatcher.install) [![Wireless Network Watcher (Install)](https://img.shields.io/chocolatey/dt/wnetwatcher.install.svg)](https://chocolatey.org/packages/wnetwatcher.install)
 
 ## Usage
+
 To install Wireless Network Watcher (Install), run the following command from the command line or from PowerShell:
+
 ```powershell
 choco install wnetwatcher.install
 ```
 
 To upgrade Wireless Network Watcher (Install), run the following command from the command line or from PowerShell:
+
 ```powershell
 choco upgrade wnetwatcher.install
 ```
 
 To uninstall Wireless Network Watcher (Install), run the following command from the command line or from PowerShell:
+
 ```powershell
 choco uninstall wnetwatcher.install
 ```
 
 ## Description
+
 Wireless Network Watcher is a small utility that scans your wireless network and displays the list of all computers and devices that are currently connected to your network.
 
 For every computer or device that is connected to your network, the following information is displayed: IP address, MAC address, the company that manufactured the network card, and optionally the computer name.
@@ -29,6 +34,7 @@ let them know the package is no longer updating correctly.
 
 
 ## Links
+
 [Chocolatey Package Page](https://chocolatey.org/packages/wnetwatcher.install)
 
 [Software Site](http://www.nirsoft.net/utils/wireless_network_watcher.html)

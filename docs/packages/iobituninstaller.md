@@ -1,22 +1,27 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@fa5af738fb52d32c4c8778f7ac39077787c4653e/icons/iobit-uninstaller.png" width="32" height="32"/> [![IObit Uninstaller](https://img.shields.io/chocolatey/v/iobit-uninstaller.svg?label=IObit+Uninstaller)](https://chocolatey.org/packages/iobit-uninstaller) [![IObit Uninstaller](https://img.shields.io/chocolatey/dt/iobit-uninstaller.svg)](https://chocolatey.org/packages/iobit-uninstaller)
 
 ## Usage
+
 To install IObit Uninstaller, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco install iobit-uninstaller
 ```
 
 To upgrade IObit Uninstaller, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco upgrade iobit-uninstaller
 ```
 
 To uninstall IObit Uninstaller, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco uninstall iobit-uninstaller
 ```
 
 ## Description
+
 ## Lighter & Cleaner PC
 
 Need to uninstall programs and free up disk space? IObit Uninstaller is the one you can trust, no matter programs no longer being used, can’t being uninstalled through standard uninstallation or bundled with other programs. It also introduces an easy way to uninstall programs. You can quickly remove programs via desk icon, opened window or system tray icon.
@@ -39,6 +44,7 @@ let them know the package is no longer updating correctly.
 
 
 ## Links
+
 [Chocolatey Package Page](https://chocolatey.org/packages/iobit-uninstaller)
 
 [Software Site](https://www.iobit.com/en/advanceduninstaller.php)

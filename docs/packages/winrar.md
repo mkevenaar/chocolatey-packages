@@ -1,22 +1,27 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@51247a81a30c4c8d14434fcbc61c7a0b750c0945/icons/winrar.png" width="32" height="32"/> [![WinRAR](https://img.shields.io/chocolatey/v/winrar.svg?label=WinRAR)](https://chocolatey.org/packages/winrar) [![WinRAR](https://img.shields.io/chocolatey/dt/winrar.svg)](https://chocolatey.org/packages/winrar)
 
 ## Usage
+
 To install WinRAR, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco install winrar
 ```
 
 To upgrade WinRAR, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco upgrade winrar
 ```
 
 To uninstall WinRAR, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco uninstall winrar
 ```
 
 ## Description
+
 **NOTE** When a new version is released, not all translations are avaialbe. Currently there is no solution to permanently fix this. For more information have a look at issue [#20](https://github.com/mkevenaar/chocolatey-packages/issues/20)
 
 ## WinRAR
@@ -45,6 +50,7 @@ let them know the package is no longer updating correctly.
 
 
 ## Links
+
 [Chocolatey Package Page](https://chocolatey.org/packages/winrar)
 
 [Software Site](http://www.win-rar.com/)

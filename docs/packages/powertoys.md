@@ -1,22 +1,27 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@783a3b629ad9948830e24567739a7a884537d9a4/icons/powertoys.png" width="32" height="32"/> [![PowerToys](https://img.shields.io/chocolatey/v/powertoys.svg?label=PowerToys)](https://chocolatey.org/packages/powertoys) [![PowerToys](https://img.shields.io/chocolatey/dt/powertoys.svg)](https://chocolatey.org/packages/powertoys)
 
 ## Usage
+
 To install PowerToys, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco install powertoys
 ```
 
 To upgrade PowerToys, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco upgrade powertoys
 ```
 
 To uninstall PowerToys, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco uninstall powertoys
 ```
 
 ## Description
+
 ## PowerToys
 
 PowerToys is a set of utilities for power users to tune and streamline their Windows experience for greater productivity.
@@ -29,6 +34,7 @@ let them know the package is no longer updating correctly.
 
 
 ## Links
+
 [Chocolatey Package Page](https://chocolatey.org/packages/powertoys)
 
 [Software Site](https://github.com/microsoft/PowerToys)

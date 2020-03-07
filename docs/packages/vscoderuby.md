@@ -1,22 +1,27 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4c92376717cc7ed4f3e733b98eed0fd4ee4e0535/icons/vscode-ruby.png" width="32" height="32"/> [![Ruby VSCode Extension](https://img.shields.io/chocolatey/v/vscode-ruby.svg?label=Ruby+VSCode+Extension)](https://chocolatey.org/packages/vscode-ruby) [![Ruby VSCode Extension](https://img.shields.io/chocolatey/dt/vscode-ruby.svg)](https://chocolatey.org/packages/vscode-ruby)
 
 ## Usage
+
 To install Ruby VSCode Extension, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco install vscode-ruby
 ```
 
 To upgrade Ruby VSCode Extension, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco upgrade vscode-ruby
 ```
 
 To uninstall Ruby VSCode Extension, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco uninstall vscode-ruby
 ```
 
 ## Description
+
 This extension provides Ruby language and debugging support for Visual Studio Code.
 
 ## Features
@@ -34,6 +39,7 @@ let them know the package is no longer updating correctly.
 
 
 ## Links
+
 [Chocolatey Package Page](https://chocolatey.org/packages/vscode-ruby)
 
 [Software Site](https://marketplace.visualstudio.com/items?itemName=rebornix.Ruby)

@@ -198,6 +198,10 @@ View the source for [$($_.Name)]($sourceFunctions/$($_.Name)`.ps1)
   foreach ($package in $packages) {
     #Write-Host "Working on package $package ..."
     $NuspecPath = "$($package.FullName)\$($package.Name).nuspec"
+    if (-not (Test-Path $NuspecPath)) {
+      #skip, nuspec file does not exists.
+      continue
+    }
     #Write-Host "Nuspec File $NuspecPath ..."
     $filename = Join-Path $packagesDocsFolder "$($package.Name.Replace('-','')).md"
     $url = "$($package.Name.Replace('-',''))"
