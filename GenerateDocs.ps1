@@ -154,6 +154,7 @@ try
 $(Replace-CommonItems $_.Synopsis)
 
 ## Syntax
+
 $( ($_.syntax.syntaxItem | % { Convert-Syntax $_ $hasCmdletBinding }) -join "$lineFeed$lineFeed")
 $( if ($_.description -ne $null) { $lineFeed + "## Description" + $lineFeed + $lineFeed + $(Replace-CommonItems $_.description.Text) })
 $( if ($_.alertSet -ne $null) { $lineFeed + "## Notes" + $lineFeed + $lineFeed +  $(Replace-CommonItems $_.alertSet.alert.Text) })
@@ -162,6 +163,7 @@ $( if ($_.alertSet -ne $null) { $lineFeed + "## Notes" + $lineFeed + $lineFeed +
 
 $(Get-Aliases $_.Name)
 $( if ($_.Examples -ne $null) { Write-Output "$lineFeed## Examples$lineFeed$lineFeed"; ($_.Examples.Example | % { Convert-Example $_ }) -join "$lineFeed$lineFeed"; Write-Output "$lineFeed" })
+
 ## Inputs
 
 $( if ($_.InputTypes -ne $null -and $_.InputTypes.Length -gt 0 -and -not $_.InputTypes.Contains('inputType')) { $lineFeed + " * $($_.InputTypes)" + $lineFeed} else { 'None'})
@@ -171,6 +173,7 @@ $( if ($_.InputTypes -ne $null -and $_.InputTypes.Length -gt 0 -and -not $_.Inpu
 $( if ($_.ReturnValues -ne $null -and $_.ReturnValues.Length -gt 0 -and -not $_.ReturnValues.StartsWith('returnValue')) { "$lineFeed * $($_.ReturnValues)$lineFeed"} else { 'None'})
 
 ## Parameters
+
 $( if ($_.parameters.parameter.count -gt 0) { $_.parameters.parameter | % { Convert-Parameter $_ $commandName }}) $( if ($hasCmdletBinding) { "$lineFeed### &lt;CommonParameters&gt;$lineFeed$($lineFeed)This cmdlet supports the common parameters: -Verbose, -Debug, -ErrorAction, -ErrorVariable, -OutBuffer, and -OutVariable. For more information, see ``about_CommonParameters`` http://go.microsoft.com/fwlink/p/?LinkID=113216 ." } )
 
 $( if ($_.relatedLinks -ne $null) {Write-Output "$lineFeed## Links$lineFeed$lineFeed"; $_.relatedLinks.navigationLink | ? { $_.linkText -ne $null} | % { Write-Output "* [[$($_.LinkText)|Helpers$($_.LinkText.Replace('-',''))]]$lineFeed" }})
@@ -193,11 +196,16 @@ View the source for [$($_.Name)]($sourceFunctions/$($_.Name)`.ps1)
   if(-not(Test-Path $packagesDocsFolder)){ mkdir $packagesDocsFolder -EA Continue | Out-Null }
 
   foreach ($package in $packages) {
-    Write-Host "Working on package $package ..."
+    #Write-Host "Working on package $package ..."
     $NuspecPath = "$($package.FullName)\$($package.Name).nuspec"
-    Write-Host "Nuspec File $NuspecPath ..."
+    #Write-Host "Nuspec File $NuspecPath ..."
     $filename = Join-Path $packagesDocsFolder "$($package.Name.Replace('-','')).md"
     $url = "$($package.Name.Replace('-',''))"
+
+    $parameters = ''
+    if(Test-Path "$($package.FullName)\PARAMETERS.md") {
+      $parameters = (Get-Content -Path "$($package.FullName)\PARAMETERS.md" | Select-Object -Skip 6 | Out-String)
+    }
 
     [xml]$nuspec = Get-Content "$NuspecPath" -Encoding UTF8
     $meta = $nuspec.package.metadata
@@ -205,32 +213,38 @@ View the source for [$($_.Name)]($sourceFunctions/$($_.Name)`.ps1)
 # $( if ( $meta.iconUrl ) { Write-Output "<img src=`"$($meta.iconUrl)`" width=`"32`" height=`"32`"/>" }) [![$($meta.title)](https://img.shields.io/chocolatey/v/$($meta.id).svg?label=$([System.Net.WebUtility]::UrlEncode($meta.title)))](https://chocolatey.org/packages/$($meta.id)) [![$($meta.title)](https://img.shields.io/chocolatey/dt/$($meta.id).svg)](https://chocolatey.org/packages/$($meta.id))
 
 ## Usage
+
 To install $($meta.title), run the following command from the command line or from PowerShell:
+
 ```````powershell
 choco install $($meta.id)
 ```````
 
 To upgrade $($meta.title), run the following command from the command line or from PowerShell:
+
 ```````powershell
 choco upgrade $($meta.id)
 ```````
 
 To uninstall $($meta.title), run the following command from the command line or from PowerShell:
+
 ```````powershell
 choco uninstall $($meta.id)
 ```````
 
 ## Description
+
 $( if($meta.description.InnerText) {$meta.description.InnerText} else {$meta.description} )
 
 ## Links
+
 [Chocolatey Package Page](https://chocolatey.org/packages/$($meta.id))
 
 [Software Site]($($meta.projectUrl))
 
 [Package Source]($($meta.packageSourceUrl))
 
-"@ | Out-File -Encoding UTF8 $filename
+"@ -replace "<!-- PARAMETERS.md -->", $parameters | Out-File -Encoding UTF8 $filename
 
     $navigation += "      - page: `"$($nuspec.package.metadata.title)`"$($lineFeed)"
     $navigation += "        url: /packages/$url.html$($lineFeed)"
