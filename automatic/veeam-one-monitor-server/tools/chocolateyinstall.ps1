@@ -60,7 +60,7 @@ if ($pp.vcSelectedType) {
       Write-Warning "vcHost, vcPort, vcHostUser and vcHostPass are required when vcSelectedType is 0 or 1"
       throw
     }
-    $silentArgs += " VM_VC_HOST=$($pp.vcHost) VM_VC_PORT=$($pp.vcPort) VM_VC_HOST_USER=$($pp.vcHostUser)  VM_VC_HOST_PWD=$($pp.vcHostPass)"
+    $silentArgs += " VM_VC_HOST=$($pp.vcHost) VM_VC_PORT=$($pp.vcPort) VM_VC_HOST_USER=$($pp.vcHostUser) VM_VC_HOST_PWD=$($pp.vcHostPass)"
 
     if ($pp.backupAddLater) {
       if (-not $validOptionsBool.Contains($pp.backupAddLater)) {

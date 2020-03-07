@@ -1,135 +1,25 @@
-﻿# <img src="" width="48" height="48"/> [veeam-one-reporter-server](https://chocolatey.org/packages/veeam-one-reporter-server)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@d6efae40c5d3947ca6f6de19ed8e1ac2b1444dff/icons/veeam-one-reporter-server.png" width="48" height="48"/> [veeam-one-reporter-server](https://chocolatey.org/packages/veeam-one-reporter-server)
 
-Veeam-ONE-Reporter-Server
+## Exit when reboot detected
 
-* Contact - Veeam Software Group GmbH
-### Package Specific
-#### Installer Properties
-The following install arguments can be passed:
-* `RESTARTSQL`
-* `VM_BACKUP_ADD_TYPE_STR`
-* `VM_HV_TYPE_STR`
-* `VM_VC_SELECTED_TYPE`
-* `VM_RP_IIS_SITE_PORT`
-* `RP_CERTNAME`
-* `VM_RP_SQL_AUTHENTICATION_TXT`
-* `VM_RP_SQL_DATABASE`
-* `VM_RP_VC_PORT`
-* `COMBOBOX_USER_ACCOUNTS_PROPERTY`
-* `ALLUSERS`
-* `CERTIFICATES_COMBOBOX_ADD_GENERATE_NEW`
-* `CERTIFICATES_COMBOBOX_PROPERTY`
-* `DWUSINTERVAL`
-* `DWUSLINK`
-* `INSTALLLEVEL`
-* `ISCHECKFORPRODUCTUPDATES`
-* `ISVROOT_PORT_NO`
-* `IS_COMPLUS_PROGRESSTEXT_COST`
-* `IS_COMPLUS_PROGRESSTEXT_INSTALL`
-* `IS_COMPLUS_PROGRESSTEXT_UNINSTALL`
-* `IS_PREVENT_DOWNGRADE_EXIT`
-* `IS_PROGMSG_TEXTFILECHANGS_REPLACE`
-* `IS_PROGMSG_XML_COSTING`
-* `IS_PROGMSG_XML_CREATE_FILE`
-* `IS_PROGMSG_XML_FILES`
-* `IS_PROGMSG_XML_REMOVE_FILE`
-* `IS_PROGMSG_XML_ROLLBACK_FILES`
-* `IS_PROGMSG_XML_UPDATE_FILE`
-* `MSIRESTARTMANAGERCONTROL`
-* `VM_RP_SERVICEPASSWORD`
-* `VM_RP_SQL_PASSWORD`
-* `VM_RP_VC_PWD`
-* `VM_RP_VC_PROXY_PWD`
-* `VM_RP_SQL_CONNECTION_STRING`
-* `VM_BSCW_PASSWORD`
-* `VM_VC_HOST_PWD`
-* `IS_SQLSERVER_CONNECTION_STR_NOCATALOG`
-* `VMONE_SQL_PASSWORD`
-* `VM_VC_HOST_PWD_TESTED`
-* `VM_BACKUP_ADD_PWD`
-* `VM_BSCW_SERVICEPASSWORD`
-* `VMONE_SERVICE_PASSWORD`
-* `PARTITIONS`
-* `PROGMSG_IIS_CREATEAPPPOOL`
-* `PROGMSG_IIS_CREATEAPPPOOLS`
-* `PROGMSG_IIS_CREATEVROOT`
-* `PROGMSG_IIS_CREATEVROOTS`
-* `PROGMSG_IIS_CREATEWEBSERVICEEXTENSION`
-* `PROGMSG_IIS_CREATEWEBSERVICEEXTENSIONS`
-* `PROGMSG_IIS_CREATEWEBSITE`
-* `PROGMSG_IIS_CREATEWEBSITES`
-* `PROGMSG_IIS_EXTRACT`
-* `PROGMSG_IIS_EXTRACTDONE`
-* `PROGMSG_IIS_REMOVEAPPPOOL`
-* `PROGMSG_IIS_REMOVEAPPPOOLS`
-* `PROGMSG_IIS_REMOVESITE`
-* `PROGMSG_IIS_REMOVEVROOT`
-* `PROGMSG_IIS_REMOVEVROOTS`
-* `PROGMSG_IIS_REMOVEWEBSERVICEEXTENSION`
-* `PROGMSG_IIS_REMOVEWEBSERVICEEXTENSIONS`
-* `PROGMSG_IIS_REMOVEWEBSITES`
-* `PROGMSG_IIS_ROLLBACKAPPPOOLS`
-* `PROGMSG_IIS_ROLLBACKVROOTS`
-* `PROGMSG_IIS_ROLLBACKWEBSERVICEEXTENSIONS`
-* `PSASNAPINNAME`
-* `SHOWLAUNCHPROGRAM`
-* `SITE_SHORTCUT_PROTOCOL`
-* `EDITLICFILEPATH`
-* `IISROOTFOLDER`
-* `IIS_VERSION`
-* `INSTALLDIR`
-* `ISFOUNDNEWERPRODUCTVERSION`
-* `ISMAJORUP`
-* `IS_SQLSERVER_LIST`
-* `PF_VEEAMONE`
-* `POWERSHELLSTATUS`
-* `RAWERRORTXT`
-* `SHOWSQLSETTINGS`
-* `SUPPORTDIR`
-* `VM_RP_IIS_SITE_ID`
-* `VM_RP_IIS_SITE_VDIR`
-* `VM_RP_LIC_FILE_PATH`
-* `VM_RP_SERVICEACCOUNT`
-* `VM_RP_SQLSERVER_ENC_STR`
-* `VM_RP_SQL_AUTHENTICATION`
-* `VM_RP_SQL_SERVER`
-* `VM_RP_SQL_SERVER_INSTANCE`
-* `VM_RP_SQL_SERVER_INSTANCE_PART`
-* `VM_RP_SQL_SERVER_NAME_PART`
-* `VM_RP_SQL_USER`
-* `VM_RP_VC_IS_VC`
-* `VM_RP_VC_PROXY_HOST`
-* `VM_RP_VC_PROXY_USER`
-* `VM_RP_VC_USE_PROXY`
-* `WEBSITEDIR_OLD`
-* `VO_INSTALLATION_TYPE`
-* `UNSUPPORTED_VERSION`
-* `ACCEPT_THIRDPARTY_LICENSES`
-* `UPDATE_HOST`
-* `UPDATE_TPL`
-* `VEEAM_COLLECT_OS_VERSION`
-* `VM_BACKUP_ADD_PORT`
-* `VM_BACKUP_ADD_TYPE`
-* `VM_BACKUP_ADD_TYPE_STR_1`
-* `VM_BACKUP_ADD_TYPE_STR_2`
-* `VM_HV_TYPE`
-* `VM_ISSITEUPGRADE`
-* `VM_ONE_WIZARD`
-* `VM_RP_DEFAULT_REGKEY`
-* `VM_RP_IIS_SITE_NAME`
-* `VM_RP_SITE_APPPOOL`
-* `VM_WEBCONFIG_EXTERNALDATASOURCE`
-* `IISROOTFOLDER_OLD`
-* `IIS_VERSION_OLD`
-* `INSTALLDIR_OLD`
-* `VM_RP_OLD_PORT_OLD`
-* `VM_RP_SQL_AUTHENTICATION_OLD`
-* `VM_RP_SQL_CONNECTION_STRING_OLD`
-* `VM_RP_SQL_DATABASE_OLD`
-* `VM_RP_SQL_SERVER_INSTANCE_OLD`
-* `VM_RP_SQL_SERVER_OLD`
-* `VM_RP_SQL_USER_OLD`
+When installing / upgrading these packages, I would like to advice you to enable this feature `choco feature enable -n=exitOnRebootDetected`
 
-To append install arguments to the current silent arguments passed to the installer, use `--install-arguments="''"` or `--install-arguments-sensitive="''"`. To completely override the silent arguments with your own, also pass `--override-arguments`.
-Example: `choco install packageId [other options] --install-arguments="'PROPERTY=value PROPERTY2=value2'"`
+## Veeam ONE Server
+
+**Veeam ONE Server** is responsible for collecting data from virtual servers, vCloud Director servers and Veeam Backup & Replication servers, and storing this data into the database. As part of Veeam ONE Server, the following components should be installed: Veeam ONE Monitor Server and Veeam ONE Reporter Server.
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+
+## Manual steps
+
+You'll need an SQL Server (express) installed. It's not required to have this installed on this server. You'll need to specify parameters to connect to the SQL Server.
+
+This package requires you to install the IIS Windows feature and WAS Configuration API feature. You can install these by executing `choco install IIS-WebServer WAS-ConfigurationAPI --source windowsfeatures`
+
+### Package Parameters
+
+This package accepts a lot of parameters. Some of them are required the installation. For the full list of parameters, please have a look at the [documentation](https://github.com/mkevenaar/chocolatey-packages/blob/master/automatic/veeam-one-reporter-server/PARAMETERS.md)
+
+<!-- PARAMETERS.md -->
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know the package is no longer updating correctly.
