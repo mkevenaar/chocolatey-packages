@@ -29,7 +29,6 @@ When installing / upgrading these packages, I would like to advice you to enable
 ## Veeam ONE Server
 
 **Veeam ONE Server** is responsible for collecting data from virtual servers, vCloud Director servers and Veeam Backup & Replication servers, and storing this data into the database. As part of Veeam ONE Server, the following components should be installed: Veeam ONE Monitor Server and Veeam ONE Reporter Server.
-To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
 
 ## Manual steps
 
@@ -40,6 +39,8 @@ This package requires you to install the IIS Windows feature and WAS Configurati
 After installing this package, the [Veeam ONE Reporter Server](https://chocolatey.org/packages/veeam-one-reporter-server) package must be installed. Package parameters are not passed to depended packages, therefore it's not added as a dependency. You must install this package manually on the same machine for Veeam ONE to work.
 
 ### Package Parameters
+
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
 
 This package accepts a lot of parameters. Some of them are required the installation. For the full list of parameters, please have a look at the [documentation](https://github.com/mkevenaar/chocolatey-packages/blob/master/automatic/veeam-one-monitor-server/PARAMETERS.md)
 
@@ -66,7 +67,7 @@ This package accepts a lot of parameters. Some of them are required the installa
 * `/password` - This parameter must be used if you have specified the `/username` parameter. Specifies a password for the account under which the Veeam ONE Services will run and that will be used to access Veeam ONE database. Example: `/password:p@ssw0rd`
 * `/create` - Create the requested user on this machine, this user will be added to the local Administrators group.
 
-Example: `choco install veeam-one-monitor-server --params "/perfCache:D:\Veeam\PerfCache`
+Example: `choco install veeam-one-monitor-server --params "/perfCache:D:\Veeam\PerfCache"`
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and

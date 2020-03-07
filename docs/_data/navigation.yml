@@ -243,6 +243,8 @@
         url: /packages/veeamonemonitorserver.html
       - page: "Veeam ONE Reporter Server"
         url: /packages/veeamonereporterserver.html
+      - page: "Veeam ONE Reporter Web UI"
+        url: /packages/veeamonereporterweb.html
       - page: "Veusz (Install)"
         url: /packages/veusz.html
       - page: "Viber"

@@ -58,13 +58,11 @@ Veeam ONE Monitor comes as a part of the integrated Veeam ONE solution. It is th
 
 This package is used as a dependency by other Chocolatey packages. To install any of the tools, please use one of the other packages.
 
-- [Veeam Backup & Replication Console](https://chocolatey.org/packages/veeam-backup-and-replication-console)
-- [Veeam Explorer for Microsoft Active Directory](https://chocolatey.org/packages/veeam-explorer-for-microsoft-active-directory)
-- [Veeam Explorer for Microsoft Exchange](https://chocolatey.org/packages/veeam-explorer-for-microsoft-exchange)
-- [Veeam Explorer for Microsoft SharePoint](https://chocolatey.org/packages/veeam-explorer-for-microsoft-sharepoint)
-- [Veeam Explorer for Microsoft SQL Server](https://chocolatey.org/packages/veeam-explorer-for-microsoft-sql-server)
-- [Veeam Explorer for Oracle](https://chocolatey.org/packages/veeam-explorer-for-oracle)
-- And more to come.
+- [Veeam ONE Agent](https://chocolatey.org/packages/veeam-one-agent)
+- [Veeam ONE Monitor Client](https://chocolatey.org/packages/veeam-one-monitor-client)
+- [Veeam ONE Monitor Server](https://chocolatey.org/packages/veeam-one-monitor-server)
+- [Veeam ONE Reporter Server](https://chocolatey.org/packages/veeam-one-reporter-server)
+- [Veeam ONE Reporter Web](https://chocolatey.org/packages/veeam-reporter-web)
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and

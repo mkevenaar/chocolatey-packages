@@ -132,7 +132,7 @@ if ($pp.licenseFile) {
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   isoFile        = $installPath
-  softwareName  = 'Veeam ONE Monitor Server*'
+  softwareName   = 'Veeam ONE Monitor Server*'
   file           = $fileLocation
   fileType       = 'msi'
   silentArgs     = "$($silentArgs) ACCEPTEULA=YES ACCEPT_THIRDPARTY_LICENSES=1 /qn /norestart /l*v `"$env:TEMP\$env:ChocolateyPackageName.$env:ChocolateyPackageVersion.log`""

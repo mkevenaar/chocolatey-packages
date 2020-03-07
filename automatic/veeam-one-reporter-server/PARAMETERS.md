@@ -26,4 +26,4 @@ The package accepts the following optional parameters:
 * `/password` - This parameter must be used if you have specified the `/username` parameter. Specifies a password for the account under which the Veeam ONE Services will run and that will be used to access Veeam ONE database. Example: `/password:p@ssw0rd`
 * `/create` - Create the requested user on this machine, this user will be added to the local Administrators group.
 
-Example: `choco install veeam-one-monitor-server --params "/perfCache:D:\Veeam\PerfCache`
+Example: `choco install veeam-one-reporter-server --params "/installationType:2"`
