@@ -1,22 +1,27 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4b35af30cee6ea1783efeceb996c1e4c4bdb34d6/icons/veeam-one-iso.png" width="32" height="32"/> [![Veeam ONE ISO downloader](https://img.shields.io/chocolatey/v/veeam-one-iso.svg?label=Veeam+ONE+ISO+downloader)](https://chocolatey.org/packages/veeam-one-iso) [![Veeam ONE ISO downloader](https://img.shields.io/chocolatey/dt/veeam-one-iso.svg)](https://chocolatey.org/packages/veeam-one-iso)
 
 ## Usage
+
 To install Veeam ONE ISO downloader, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco install veeam-one-iso
 ```
 
 To upgrade Veeam ONE ISO downloader, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco upgrade veeam-one-iso
 ```
 
 To uninstall Veeam ONE ISO downloader, run the following command from the command line or from PowerShell:
+
 ```powershell
 choco uninstall veeam-one-iso
 ```
 
 ## Description
+
 ## Exit when reboot detected
 
 When installing / upgrading these packages, I would like to advice you to enable this feature `choco feature enable -n=exitOnRebootDetected`
@@ -41,6 +46,7 @@ let them know the package is no longer updating correctly.
 
 
 ## Links
+
 [Chocolatey Package Page](https://chocolatey.org/packages/veeam-one-iso)
 
 [Software Site](http://www.veeam.com/)

@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@78ead485d7f00222fce9aa89c43771994ff6d49f/icons/veeam-one-monitor-server.png" width="48" height="48"/> [veeam-one-monitor-server](https://chocolatey.org/packages/veeam-one-monitor-server)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@aa04db8e6809ba3e4dc22d3320103be9ca70d4c4/icons/veeam-one-monitor-server.png" width="48" height="48"/> [veeam-one-monitor-server](https://chocolatey.org/packages/veeam-one-monitor-server)
 
 ## Exit when reboot detected
 
