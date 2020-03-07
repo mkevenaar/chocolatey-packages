@@ -47,7 +47,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/veeam-one-monitor-server</packageSourceUrl>
     <docsUrl>https://helpcenter.veeam.com/docs/one/qsg/index.html</docsUrl>
     <mailingListUrl>https://forums.veeam.com/</mailingListUrl>
-    <summary>Veeam ONE Agent</summary>
+    <summary>Veeam ONE Monitor Server</summary>
     <description><![CDATA[## Exit when reboot detected
 
 When installing / upgrading these packages, I would like to advice you to enable this feature `choco feature enable -n=exitOnRebootDetected`
