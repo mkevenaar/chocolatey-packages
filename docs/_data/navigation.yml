@@ -239,6 +239,8 @@
         url: /packages/veeamoneiso.html
       - page: "Veeam ONE Monitor Client"
         url: /packages/veeamonemonitorclient.html
+      - page: "Veeam ONE Monitor Server"
+        url: /packages/veeamonemonitorserver.html
       - page: "Veusz (Install)"
         url: /packages/veusz.html
       - page: "Viber"
