@@ -3,9 +3,9 @@ import-module au
 $releases = 'http://www.almico.com/sfdownload.php'
 
 $headers = @{
-  Referer = 'http://www.almico.com/sfdownload.php';
+  Referer = 'https://www.almico.com/sfdownload.php';
 }
-    
+
 $options =
 @{
   Headers = $headers
@@ -32,12 +32,12 @@ function global:au_GetLatest {
 
     $re = 'speedfan(.+).exe'
     $url = $download_page.Links | Where-Object href -match $re | Select-Object -First 1 -expand href
-    $url = 'http://www.almico.com/' + $url
-    
-    $version = ($download_page.Links | Where-Object href -match $re | Select-Object -First 1 -expand innerHTML) -replace "SpeedFan ", ""
-    
+    $url = 'https://www.almico.com/inst' + $url
 
-    return @{ 
+    $version = ($download_page.Links | Where-Object href -match $re | Select-Object -First 1 -expand innerHTML) -replace "SpeedFan ", ""
+
+
+    return @{
         URL32 = $url
         Version = $version
         Options = $options
