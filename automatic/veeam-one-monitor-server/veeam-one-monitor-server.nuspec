@@ -79,7 +79,7 @@ let them know the package is no longer updating correctly.
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
     <dependencies>
-      <dependency id="veeam-backup-and-replication-iso" version="[10.0.0.750]" />
+      <dependency id="veeam-one-iso" version="[10.0.0.750]" />
       <dependency id="chocolatey-isomount.extension" version="1.0" />
       <dependency id="DotNet4.7.2" />
       <dependency id="vcredist140" />

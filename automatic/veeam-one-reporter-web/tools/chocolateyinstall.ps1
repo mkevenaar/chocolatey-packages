@@ -19,7 +19,7 @@ $pp = Get-PackageParameters
 
 $silentArgs = ""
 
-$validOptionsTypes = 0,1,2
+$validOptionsTypes = '0','1','2'
 
 if ($pp.installationType) {
   if (-not $validOptionsTypes.Contains($pp.installationType)) {
@@ -82,7 +82,7 @@ $packageArgs = @{
   softwareName   = 'Veeam ONE Reporter Web*'
   file           = $fileLocation
   fileType       = 'msi'
-  silentArgs     = "$($silentArgs) ACCEPTEULA=YES ACCEPT_THIRDPARTY_LICENSES=1 /qn /norestart /l*v `"$env:TEMP\$env:ChocolateyPackageName.$env:ChocolateyPackageVersion.log`""
+  silentArgs     = "$($silentArgs) ACCEPT_EULA=1 ACCEPT_THIRDPARTY_LICENSES=1 /qn /norestart /l*v `"$env:TEMP\$env:ChocolateyPackageName.$env:ChocolateyPackageVersion.log`""
   validExitCodes = @(0,1638,1641,3010) #1638 was added to allow updating when an newer version is already installed.
   destination    = $toolsDir
 }

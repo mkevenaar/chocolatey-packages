@@ -19,8 +19,8 @@ $pp = Get-PackageParameters
 
 $silentArgs = ""
 
-$validOptionsTypes = 0,1,2
-$validOptionsBool = 0,1
+$validOptionsTypes = '0','1','2'
+$validOptionsBool = '0','1'
 
 if ($pp.installationType) {
   if (-not $validOptionsTypes.Contains($pp.installationType)) {
@@ -37,7 +37,7 @@ if ($pp.vcSelectedType) {
   }
   $silentArgs += " VM_VC_SELECTED_TYPE=$($pp.vcSelectedType)"
 
-  if ($pp.vcSelectedType == 1) {
+  if ($pp.vcSelectedType -eq '1') {
     if ($pp.hvType) {
       if (-not $validOptionsTypes.Contains($pp.hvType)) {
         Write-Warning "$($pp.hvType) is an invalid value for the hvType parameter."
@@ -48,12 +48,12 @@ if ($pp.vcSelectedType) {
     }
   }
 
-  if($pp.vcSelectedType == 0 -or $pp.vcSelectedType == 1) {
+  if($pp.vcSelectedType -eq '0' -or $pp.vcSelectedType -eq '1') {
     if(-not $pp.vcHost -or -not $pp.vcPort -or -not $pp.vcHostUser -or -not $pp.vcHostPass) {
       Write-Warning "vcHost, vcPort, vcHostUser and vcHostPass are required when vcSelectedType is 0 or 1"
       throw
     }
-    $silentArgs += " VM_RP_VC_HOST=$($pp.vcHost) VM_RP_VC_PORT=$($pp.vcPort) VM_RP_VC_USER=$($pp.vcHostUser) VM_RP_VC_PWD=$($pp.vcHostPass)"
+    $silentArgs += " VM_RP_VC_HOST=`"$($pp.vcHost)`" VM_RP_VC_PORT=$($pp.vcPort) VM_RP_VC_USER=`"$($pp.vcHostUser)`" VM_RP_VC_PWD=`"$($pp.vcHostPass)`""
 
     if ($pp.backupAddLater) {
       if (-not $validOptionsBool.Contains($pp.backupAddLater)) {
@@ -72,7 +72,7 @@ if ($pp.vcSelectedType) {
       Write-Warning "$($pp.backupAddType) is an invalid value for the backupAddType parameter."
       throw
     }
-    $silentArgs += " VM_BACKUP_ADD_TYPE=$($pp.backupAddType) VM_BACKUP_ADD_NAME=$($pp.backupAddHost) VM_BACKUP_ADD_USER=$($pp.backupAddUser) VM_BACKUP_ADD_PWD=$($pp.backupAddPass)"
+    $silentArgs += " VM_BACKUP_ADD_TYPE=$($pp.backupAddType) VM_BACKUP_ADD_NAME=`"$($pp.backupAddHost)`" VM_BACKUP_ADD_USER=`"$($pp.backupAddUser)`" VM_BACKUP_ADD_PWD=`"$($pp.backupAddPass)`""
   }
 }
 
@@ -128,7 +128,7 @@ $packageArgs = @{
   softwareName  = 'Veeam ONE Reporter Server*'
   file           = $fileLocation
   fileType       = 'msi'
-  silentArgs     = "$($silentArgs) ACCEPTEULA=YES ACCEPT_THIRDPARTY_LICENSES=1 /qn /norestart /l*v `"$env:TEMP\$env:ChocolateyPackageName.$env:ChocolateyPackageVersion.log`""
+  silentArgs     = "$($silentArgs) ACCEPT_EULA=1 ACCEPT_THIRDPARTY_LICENSES=1 /qn /norestart /l*v `"$env:TEMP\$env:ChocolateyPackageName.$env:ChocolateyPackageVersion.log`""
   validExitCodes = @(0,1638,1641,3010) #1638 was added to allow updating when an newer version is already installed.
   destination    = $toolsDir
 }

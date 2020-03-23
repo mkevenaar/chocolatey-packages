@@ -34,7 +34,7 @@ When installing / upgrading these packages, I would like to advice you to enable
 
 You'll need an SQL Server (express) installed. It's not required to have this installed on this server. You'll need to specify parameters to connect to the SQL Server.
 
-This package requires you to install the IIS Windows feature and WAS Configuration API feature. You can install these by executing `choco install IIS-WebServer WAS-ConfigurationAPI --source windowsfeatures`
+This package requires you to install the IIS Windows feature, WAS Configuration API feature and some ASP features. You can install these by executing `choco install IIS-WebServerRole IIS-WindowsAuthentication IIS-WebSockets IIS-ASPNET45 IIS-NetFxExtensibility45 WAS-ConfigurationAPI IIS-ManagementConsole IIS-ManagementService --source WindowsFeatures`
 
 ### Package Parameters
 
