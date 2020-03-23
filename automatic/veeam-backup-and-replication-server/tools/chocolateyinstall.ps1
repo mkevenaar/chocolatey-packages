@@ -17,8 +17,8 @@ $silentArgs = ""
 
 if ($pp.nfsDatastoreLocation) {
   $silentArgs += " VBR_NFSDATASTORE=`"$($pp.nfsDatastoreLocation)`""
-  if(!(Test-Path -Path $pp.catalogLocation )){
-    New-Item -Path $pp.catalogLocation -ItemType Directory
+  if(!(Test-Path -Path $pp.nfsDatastoreLocation )){
+    New-Item -Path $pp.nfsDatastoreLocation -ItemType Directory
   }
 }
 

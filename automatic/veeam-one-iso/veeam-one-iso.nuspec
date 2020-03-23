@@ -22,39 +22,47 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- This section is about this package, although id and version have ties back to the software -->
     <!-- id is lowercase and if you want a good separator for words, use '-', not '.'. Dots are only acceptable as suffixes for certain types of packages, e.g. .install, .portable, .extension, .template -->
     <!-- If the software is cross-platform, attempt to use the same id as the debian/rpm package(s) if possible. -->
-    <id>veeam-explorer-for-microsoft-exchange</id>
+    <id>veeam-one-iso</id>
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>10.0.0.4461</version>
+    <version>0.0</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Maurice Kevenaar</owners>
     <!-- ============================== -->
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
-    <title>Veeam Explorer for Microsoft Exchange</title>
+    <title>Veeam ONE ISO downloader</title>
     <authors>Veeam Software AG</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://www.veeam.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@79620c3dbe7f3f6a76f7ca918d5b59aa10a61438/icons/veeam-explorer-for-microsoft-exchange.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4b35af30cee6ea1783efeceb996c1e4c4bdb34d6/icons/veeam-one-iso.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Veeam Software AG</copyright>
-    <tags>veeam-explorer-for-microsoft-exchange veeam explorer exchange admin</tags>
-    <releaseNotes>https://www.veeam.com/veeam_backup_10_0_release_notes_rn.pdf</releaseNotes>
+    <tags>veeam-one-iso veeam-one veeam one monitoring admin</tags>
+    <releaseNotes>https://www.veeam.com/veeam_one_10_0_release_notes_rn.pdf</releaseNotes>
     <licenseUrl>https://www.veeam.com/eula.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/veeam-explorer-for-microsoft-exchange</packageSourceUrl>
-    <docsUrl>https://www.veeam.com/microsoft-exchange-recovery.html</docsUrl>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/veeam-one-iso</packageSourceUrl>
+    <docsUrl>https://helpcenter.veeam.com/docs/one/qsg/index.html</docsUrl>
     <mailingListUrl>https://forums.veeam.com/</mailingListUrl>
-    <summary>Veeam Backup &amp; Replication explorer for Exchange</summary>
+    <summary>Veeam ONE ISO</summary>
     <description><![CDATA[## Exit when reboot detected
 
 When installing / upgrading these packages, I would like to advice you to enable this feature `choco feature enable -n=exitOnRebootDetected`
 
-## Recovery tool for Microsoft Exchange
+## Veeam ONE
 
-Veeam® Explorer™ for Microsoft Exchange offers revolutionary technology that gives you instant visibility into Exchange backups, granular recovery of individual items and easy-to-use eDiscovery options — all without restoring the full Exchange database or entire server.
+Veeam ONE Monitor comes as a part of the integrated Veeam ONE solution. It is the primary tool for monitoring Veeam Backup & Replication, VMware vSphere, and Microsoft Hyper-V environments.
+
+This package is used as a dependency by other Chocolatey packages. To install any of the tools, please use one of the other packages.
+
+- [Veeam ONE Agent](https://chocolatey.org/packages/veeam-one-agent)
+- [Veeam ONE Monitor Client](https://chocolatey.org/packages/veeam-one-monitor-client)
+- [Veeam ONE Monitor Server](https://chocolatey.org/packages/veeam-one-monitor-server)
+- [Veeam ONE Reporter Server](https://chocolatey.org/packages/veeam-one-reporter-server)
+- [Veeam ONE Reporter Web](https://chocolatey.org/packages/veeam-reporter-web)
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
@@ -63,11 +71,13 @@ let them know the package is no longer updating correctly.
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
-    <dependencies>
-      <dependency id="veeam-backup-and-replication-iso" version="[10.0.0.4461]" />
-      <dependency id="veeam-backup-and-replication-console" version="[10.0.0.4461]" />
-      <dependency id="chocolatey-isomount.extension" version="1.0" />
-    </dependencies>
+    <!--<dependencies>
+      <dependency id="" version="__MINIMUM_VERSION__" />
+      <dependency id="" version="[__EXACT_VERSION__]" />
+      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_INCLUSIVE]" />
+      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_EXCLUSIVE)" />
+      <dependency id="" />
+    </dependencies>-->
 
     <!--<provides>NOT YET IMPLEMENTED</provides>-->
     <!--<conflicts>NOT YET IMPLEMENTED</conflicts>-->

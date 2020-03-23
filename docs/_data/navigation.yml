@@ -233,6 +233,18 @@
         url: /packages/veeamexplorerformicrosoftsqlserver.html
       - page: "Veeam Explorer for Oracle"
         url: /packages/veeamexplorerfororacle.html
+      - page: "Veeam ONE Agent"
+        url: /packages/veeamoneagent.html
+      - page: "Veeam ONE ISO downloader"
+        url: /packages/veeamoneiso.html
+      - page: "Veeam ONE Monitor Client"
+        url: /packages/veeamonemonitorclient.html
+      - page: "Veeam ONE Monitor Server"
+        url: /packages/veeamonemonitorserver.html
+      - page: "Veeam ONE Reporter Server"
+        url: /packages/veeamonereporterserver.html
+      - page: "Veeam ONE Reporter Web UI"
+        url: /packages/veeamonereporterweb.html
       - page: "Veusz (Install)"
         url: /packages/veusz.html
       - page: "Viber"

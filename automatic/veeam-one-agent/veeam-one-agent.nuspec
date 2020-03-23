@@ -22,39 +22,71 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- This section is about this package, although id and version have ties back to the software -->
     <!-- id is lowercase and if you want a good separator for words, use '-', not '.'. Dots are only acceptable as suffixes for certain types of packages, e.g. .install, .portable, .extension, .template -->
     <!-- If the software is cross-platform, attempt to use the same id as the debian/rpm package(s) if possible. -->
-    <id>veeam-explorer-for-microsoft-exchange</id>
+    <id>veeam-one-agent</id>
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>10.0.0.4461</version>
+    <version>0.0</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Maurice Kevenaar</owners>
     <!-- ============================== -->
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
-    <title>Veeam Explorer for Microsoft Exchange</title>
+    <title>Veeam ONE Agent</title>
     <authors>Veeam Software AG</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://www.veeam.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@79620c3dbe7f3f6a76f7ca918d5b59aa10a61438/icons/veeam-explorer-for-microsoft-exchange.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@07b0f3c76ddb3fda3a50d2e92aee9df2bb42aec2/icons/veeam-one-agent.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Veeam Software AG</copyright>
-    <tags>veeam-explorer-for-microsoft-exchange veeam explorer exchange admin</tags>
-    <releaseNotes>https://www.veeam.com/veeam_backup_10_0_release_notes_rn.pdf</releaseNotes>
+    <tags>veeam-one-agent veeam-one veeam one agent admin</tags>
+    <releaseNotes>https://www.veeam.com/veeam_one_10_0_release_notes_rn.pdf</releaseNotes>
     <licenseUrl>https://www.veeam.com/eula.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/veeam-explorer-for-microsoft-exchange</packageSourceUrl>
-    <docsUrl>https://www.veeam.com/microsoft-exchange-recovery.html</docsUrl>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/veeam-one-agent</packageSourceUrl>
+    <docsUrl>https://helpcenter.veeam.com/docs/one/qsg/index.html</docsUrl>
     <mailingListUrl>https://forums.veeam.com/</mailingListUrl>
-    <summary>Veeam Backup &amp; Replication explorer for Exchange</summary>
+    <summary>Veeam ONE Agent</summary>
     <description><![CDATA[## Exit when reboot detected
 
 When installing / upgrading these packages, I would like to advice you to enable this feature `choco feature enable -n=exitOnRebootDetected`
 
-## Recovery tool for Microsoft Exchange
+## Veeam ONE Agent
 
-Veeam® Explorer™ for Microsoft Exchange offers revolutionary technology that gives you instant visibility into Exchange backups, granular recovery of individual items and easy-to-use eDiscovery options — all without restoring the full Exchange database or entire server.
+**Veeam ONE Agent** is a component that enables communication with Veeam Backup & Replication servers, performs collection of logs, and sends remediation commands.
+
+Veeam ONE agent can work in the following modes:
+
+* Server:
+
+  In this mode, Veeam ONE agent is responsible for analyzing log data and signature updates.
+
+  Veeam ONE agent server is included into Veeam ONE installation package and deployed on the machine running Veeam ONE Monitor server during product installation.
+
+* Client
+
+  In this mode, Veeam ONE agent is responsible for collecting logs and executing remediation actions on Veeam Backup & Replication servers.By default,
+
+By default, Veeam ONE agent client is deployed on Veeam Backup & Replication servers when you connect these servers to Veeam ONE.
+
+> **IMPORTANT!**
+>
+> Veeam ONE agent server **must** be installed on the machine that runs Veeam ONE Monitor server.
+
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+
+### Package Parameters
+
+The package accepts the following optional parameters:
+
+* `/server` - Specifies the mode in which Veeam ONE agent will run. If you specify this parameter, the agent will be installed in Server mode. Only required for the Veeam ONE Server
+* `/username` - Specifies a user account under which the Veeam ONE Agent service will run. Example: `/username:ONESERVER\Administrator`
+* `/password` - This parameter must be used if you have specified the `/username` parameter. Specifies a password for the account that will be used to run Veeam ONE Agent. Example: `/password:p@ssw0rd`
+* `/create` - Create the requested user on this machine, this user will be added to the local Administrators group.
+* `/agentServicePort` - Specifies a port that will be used by Monitor to communicate with Veeam ONE Agent. By default, port number 2805 is used. Example: `/agentServicePort:2805`
+
+Example: `choco install veeam-one-agent --params "/server /agentServicePort:1234"`
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
@@ -64,9 +96,9 @@ let them know the package is no longer updating correctly.
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
     <dependencies>
-      <dependency id="veeam-backup-and-replication-iso" version="[10.0.0.4461]" />
-      <dependency id="veeam-backup-and-replication-console" version="[10.0.0.4461]" />
+      <dependency id="veeam-one-iso" version="[10.0.0.750]" />
       <dependency id="chocolatey-isomount.extension" version="1.0" />
+      <dependency id="DotNet4.7.2" />
     </dependencies>
 
     <!--<provides>NOT YET IMPLEMENTED</provides>-->

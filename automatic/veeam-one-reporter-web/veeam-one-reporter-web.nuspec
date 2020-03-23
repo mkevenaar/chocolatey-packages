@@ -22,40 +22,53 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- This section is about this package, although id and version have ties back to the software -->
     <!-- id is lowercase and if you want a good separator for words, use '-', not '.'. Dots are only acceptable as suffixes for certain types of packages, e.g. .install, .portable, .extension, .template -->
     <!-- If the software is cross-platform, attempt to use the same id as the debian/rpm package(s) if possible. -->
-    <id>veeam-explorer-for-microsoft-exchange</id>
+    <id>veeam-one-reporter-web</id>
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>10.0.0.4461</version>
+    <version>0.0</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Maurice Kevenaar</owners>
     <!-- ============================== -->
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
-    <title>Veeam Explorer for Microsoft Exchange</title>
+    <title>Veeam ONE Reporter Web UI</title>
     <authors>Veeam Software AG</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://www.veeam.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@79620c3dbe7f3f6a76f7ca918d5b59aa10a61438/icons/veeam-explorer-for-microsoft-exchange.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@f20a38e9ae4cd8756c2b3a3931d8b3bf22082f51/icons/veeam-one-reporter-web.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Veeam Software AG</copyright>
-    <tags>veeam-explorer-for-microsoft-exchange veeam explorer exchange admin</tags>
-    <releaseNotes>https://www.veeam.com/veeam_backup_10_0_release_notes_rn.pdf</releaseNotes>
+    <tags>veeam-one-reporter-web veeam-one veeam one reporter web admin</tags>
+    <releaseNotes>https://www.veeam.com/veeam_one_10_0_release_notes_rn.pdf</releaseNotes>
     <licenseUrl>https://www.veeam.com/eula.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/veeam-explorer-for-microsoft-exchange</packageSourceUrl>
-    <docsUrl>https://www.veeam.com/microsoft-exchange-recovery.html</docsUrl>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/veeam-one-reporter-web</packageSourceUrl>
+    <docsUrl>https://helpcenter.veeam.com/docs/one/qsg/index.html</docsUrl>
     <mailingListUrl>https://forums.veeam.com/</mailingListUrl>
-    <summary>Veeam Backup &amp; Replication explorer for Exchange</summary>
+    <summary>Veeam ONE Reporter Web UI</summary>
     <description><![CDATA[## Exit when reboot detected
 
 When installing / upgrading these packages, I would like to advice you to enable this feature `choco feature enable -n=exitOnRebootDetected`
 
-## Recovery tool for Microsoft Exchange
+## Veeam ONE Web UI
 
-Veeam® Explorer™ for Microsoft Exchange offers revolutionary technology that gives you instant visibility into Exchange backups, granular recovery of individual items and easy-to-use eDiscovery options — all without restoring the full Exchange database or entire server.
+**Veeam ONE Web UI** is a client part for Veeam ONE Reporter. Veeam ONE Web UI communicates with the database, processes and displays data in a web-based interface.
 
+## Manual steps
+
+You'll need an SQL Server (express) installed. It's not required to have this installed on this server. You'll need to specify parameters to connect to the SQL Server.
+
+This package requires you to install the IIS Windows feature, WAS Configuration API feature and some ASP features. You can install these by executing `choco install IIS-WebServerRole IIS-WindowsAuthentication IIS-WebSockets IIS-ASPNET45 IIS-NetFxExtensibility45 WAS-ConfigurationAPI IIS-ManagementConsole IIS-ManagementService --source WindowsFeatures`
+
+### Package Parameters
+
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+
+This package accepts a lot of parameters. Some of them are required the installation. For the full list of parameters, please have a look at the [documentation](https://github.com/mkevenaar/chocolatey-packages/blob/master/automatic/veeam-one-reporter-web/PARAMETERS.md)
+
+<!-- PARAMETERS.md -->
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
@@ -64,9 +77,12 @@ let them know the package is no longer updating correctly.
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
     <dependencies>
-      <dependency id="veeam-backup-and-replication-iso" version="[10.0.0.4461]" />
-      <dependency id="veeam-backup-and-replication-console" version="[10.0.0.4461]" />
+      <dependency id="veeam-one-iso" version="[10.0.0.750]" />
       <dependency id="chocolatey-isomount.extension" version="1.0" />
+      <dependency id="DotNet4.7.2" />
+      <dependency id="SQL2012.SMO" />
+      <dependency id="SQL2014.SMO" />
+      <dependency id="ms-reportviewer2015" />
     </dependencies>
 
     <!--<provides>NOT YET IMPLEMENTED</provides>-->
