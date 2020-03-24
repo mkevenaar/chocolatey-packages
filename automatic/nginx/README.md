@@ -8,6 +8,7 @@ nginx [engine x] is an HTTP and reverse proxy server, a mail proxy server, a gen
 * `/serviceName` - The name of the windows service which will be create. Default: `nginx`
 * `/port` - The port Nginx will listen to. Default: `80`
 * `/noService` - Don't install the nginx windows service
+* `/serviceAccount` - account to run Windows Service. One of `System`, `LocalService` or `NetworkService`. Default: `System`
 
 Example: `choco install nginx --params '"/installLocation:C:\nginx /port:433"'`
 

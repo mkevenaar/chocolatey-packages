@@ -5,10 +5,11 @@ $pp = Get-PackageParameters
 
 $arguments = @{
     packageName = $env:chocolateyPackageName
-    file        = "$toolsDir\nginx-1.17.8.zip"
+    file        = "$toolsDir\nginx-1.17.9.zip"
     destination = if ($pp.installLocation) { $pp.installLocation } else { Get-ToolsLocation }
     port        = if ($pp.Port) { $pp.Port } else { 80 }
     serviceName = if ($pp.NoService) { $null } elseif ($pp.serviceName) { $pp.serviceName } else { 'nginx' }
+    serviceAccount = if ($pp.ServiceAccount) { $pp.ServiceAccount } else { 'SYSTEM' }
 }
 
 if (-not (Assert-TcpPortIsOpen $arguments.port)) {
