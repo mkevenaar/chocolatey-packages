@@ -86,6 +86,7 @@ function Install-NginxService {
     nssm set $($arguments.serviceName) AppDirectory  "$($nginxPaths.NginxDir)" 2>&1 | Out-Null
     nssm set $($arguments.serviceName) AppNoConsole 1 2>&1 | Out-Null # Mentioned on top off http://nssm.cc/download
     nssm set $($arguments.serviceName) AppStopMethodSkip 7 2>&1 | Out-Null
+    nssm set $($arguments.serviceName) ObjectName "$($arguments.ServiceAccount)" 2>&1 | Out-Null
     nssm start $($arguments.serviceName) 2>&1 | Out-Null
 }
 
@@ -116,6 +117,7 @@ function Set-NginxInstallOptions {
         Destination = $nginxPaths.NginxDir
         BinPath   = $nginxPaths.BinPath
         ServiceName = $arguments.serviceName
+        ServiceAccount = $arguments.ServiceAccount
     }
 
     $configFile = Join-Path $env:chocolateyPackageFolder 'config.xml'
