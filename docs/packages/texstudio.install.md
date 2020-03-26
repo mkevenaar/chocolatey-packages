@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@9372f3ad64f05adc8d3e29742062733127789453/icons/texstudio.png" width="32" height="32"/> [![TeXstudio (Install)](https://img.shields.io/chocolatey/v/texstudio.install.svg?label=TeXstudio+(Install))](https://chocolatey.org/packages/texstudio.install) [![TeXstudio (Install)](https://img.shields.io/chocolatey/dt/texstudio.install.svg)](https://chocolatey.org/packages/texstudio.install)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@40810f199752424b7b3e7b70bf9a8a2a2d426518/icons/texstudio.png" width="32" height="32"/> [![TeXstudio (Install)](https://img.shields.io/chocolatey/v/texstudio.install.svg?label=TeXstudio+(Install))](https://chocolatey.org/packages/texstudio.install) [![TeXstudio (Install)](https://img.shields.io/chocolatey/dt/texstudio.install.svg)](https://chocolatey.org/packages/texstudio.install)
 
 ## Usage
 

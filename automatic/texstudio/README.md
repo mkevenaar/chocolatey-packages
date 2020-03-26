@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@9372f3ad64f05adc8d3e29742062733127789453/icons/texstudio.png" width="48" height="48"/> [texstudio](https://chocolatey.org/packages/texstudio)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@40810f199752424b7b3e7b70bf9a8a2a2d426518/icons/texstudio.png" width="48" height="48"/> [texstudio](https://chocolatey.org/packages/texstudio)
 
 TeXstudio is an integrated writing environment for creating LaTeX documents. Our goal is to make writing LaTeX as easy and comfortable as possible. Therefore TeXstudio has numerous features like syntax-highlighting, integrated viewer, reference checking and various assistants.
 
