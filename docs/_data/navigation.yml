@@ -195,6 +195,12 @@
         url: /packages/superputty.portable.html
       - page: "Swift for Windows"
         url: /packages/swiftforwindows.html
+      - page: "TeXstudio"
+        url: /packages/texstudio.html
+      - page: "TeXstudio (Install)"
+        url: /packages/texstudio.install.html
+      - page: "TeXstudio (Portable)"
+        url: /packages/texstudio.portable.html
       - page: "Thonny"
         url: /packages/thonny.html
       - page: "TomTom MyDrive Connect"
