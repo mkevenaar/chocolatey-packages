@@ -36,18 +36,18 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <title>Puppet VSCode Extension</title>
     <authors>Microsoft</authors>
     <!-- projectUrl is required for the community feed -->
-    <projectUrl>https://marketplace.visualstudio.com/items?itemName=jpogran.puppet-vscode</projectUrl>
+    <projectUrl>https://puppet-vscode.github.io/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@71b2b9bb77658ff645430f37851bc5a826b96cc7/icons/vscode-puppet.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>James Pogran</copyright>
+    <copyright>Puppet</copyright>
     <tags>vscode-puppet puppet extension vscode</tags>
-    <releaseNotes>https://marketplace.visualstudio.com/items/jpogran.puppet-vscode/changelog</releaseNotes>
-    <licenseUrl>https://github.com/lingua-pupuli/puppet-vscode/blob/master/LICENSE</licenseUrl>
+    <releaseNotes>https://marketplace.visualstudio.com/items/puppet.puppet-vscode/changelog</releaseNotes>
+    <licenseUrl>https://github.com/puppetlabs/puppet-vscode/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/vscode-puppet</packageSourceUrl>
-    <projectSourceUrl>https://github.com/lingua-pupuli/puppet-vscode</projectSourceUrl>
-    <docsUrl>https://github.com/lingua-pupuli/puppet-vscode/blob/master/README.md</docsUrl>
-    <bugTrackerUrl>https://github.com/lingua-pupuli/puppet-vscode/issues</bugTrackerUrl>
+    <projectSourceUrl>https://github.com/puppetlabs/puppet-vscode</projectSourceUrl>
+    <docsUrl>https://puppet-vscode.github.io/docs/</docsUrl>
+    <bugTrackerUrl>https://github.com/puppetlabs/puppet-vscode/issues</bugTrackerUrl>
     <summary>VSCode extension for Puppet</summary>
     <description><![CDATA[## [Puppet](https://www.puppet.com) extension for Visual Studio Code
 

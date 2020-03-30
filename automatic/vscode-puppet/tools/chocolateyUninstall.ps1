@@ -1,3 +1,3 @@
 ﻿ $ErrorActionPreference = 'Stop'
 
- Uninstall-VsCodeExtension -extensionId 'jpogran.puppet-vscode'
+ Uninstall-VsCodeExtension -extensionId 'puppet.puppet-vscode'

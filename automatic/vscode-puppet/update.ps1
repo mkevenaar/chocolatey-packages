@@ -1,9 +1,9 @@
 import-module au
 
-$releases = "https://marketplace.visualstudio.com/items?itemName=jpogran.puppet-vscode"
+$releases = "https://marketplace.visualstudio.com/items?itemName=puppet.puppet-vscode"
 
 function global:au_BeforeUpdate($Package) {
-  $vscode = $Package.nuspecXml.package.metadata.dependencies.dependency | ? id -Match '^vscode$'
+  $vscode = $Package.nuspecXml.package.metadata.dependencies.dependency | Where-Object id -Match '^vscode$'
 
   if (([version]$Latest.VsCodeVersion) -lt '1.30.0') {
     $vscode.version = '1.30.0'
