@@ -66,7 +66,7 @@ let them know the package is no longer updating correctly.
 
 [Chocolatey Package Page](https://chocolatey.org/packages/vscode-puppet)
 
-[Software Site](https://marketplace.visualstudio.com/items?itemName=jpogran.puppet-vscode)
+[Software Site](https://puppet-vscode.github.io/)
 
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/vscode-puppet)
 
