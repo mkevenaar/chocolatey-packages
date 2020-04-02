@@ -213,6 +213,8 @@
         url: /packages/veeambackupandreplicationcatalog.html
       - page: "Veeam Backup & Replication Console"
         url: /packages/veeambackupandreplicationconsole.html
+      - page: "Veeam Backup & Replication Extract Utility"
+        url: /packages/veeambackupandreplicationextract.html
       - page: "Veeam Backup & Replication ISO downloader"
         url: /packages/veeambackupandreplicationiso.html
       - page: "Veeam Backup & Replication Management Console"

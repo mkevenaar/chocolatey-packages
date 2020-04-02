@@ -5,7 +5,6 @@ $releases = 'https://forums.veeam.com/veeam-backup-replication-f2/current-versio
 function global:au_SearchReplace {
   @{
     'tools\chocolateyInstall.ps1' = @{
-      "(^[$]filename\s*=\s*)('.*')"     = "`$1'$($Latest.Filename)'"
       "(^[$]url\s*=\s*)('.*')"          = "`$1'$($Latest.URL32)'"
       "(^[$]checksum\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum32)'"
       "(^[$]checksumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
@@ -30,7 +29,7 @@ function global:au_GetLatest {
         $isoVersion = "$($isoVersion).$updateVersion"
     }
 
-    $filename = "VeeamBackup&Replication_$($isoVersion).iso"
+    $filename = "VeeamExtract_$($isoVersion).zip"
     $url = "https://download2.veeam.com/$($filename)"
     # -Replace ".iso", "_.iso"
 
