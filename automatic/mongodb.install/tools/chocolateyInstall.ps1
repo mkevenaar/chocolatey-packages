@@ -37,11 +37,3 @@ $packageArgs = @{
 }
 
 Install-ChocolateyPackage @packageArgs
-
-# start the service
-Start-Service -Name MongoDB -ErrorAction SilentlyContinue
-
-# service status
-if((Get-Service -Name MongoDB).Status -ne "Running") {
-  Write-Warning "  * MongoDB service is currenty not running, this could be due to an required reboot of one of the dependencies"
-}
