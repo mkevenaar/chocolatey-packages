@@ -24,7 +24,7 @@ choco uninstall veeam-backup-and-replication-management
 
 ## Exit when reboot detected
 
-When installing / upgrading these packages, I would like to advice you to enable this feature `choco feature enable -n=exitOnRebootDetected`
+When installing / upgrading these packages, I would like to advise you to enable this feature `choco feature enable -n=exitOnRebootDetected`
 
 ## Console for Veeam Backup & Replication
 
