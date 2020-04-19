@@ -57,7 +57,7 @@
         url: /packages/exiftool.html
       - page: "FileZilla Server"
         url: /packages/filezilla.server.html
-      - page: "Firefox Beta"
+      - page: "Firefox Developer Edition"
         url: /packages/firefox.html
       - page: "Firefox Nightly"
         url: /packages/firefoxnightly.html
@@ -275,6 +275,8 @@
         url: /packages/wc3270.install.html
       - page: "IBM 3270 terminal emulator (Portable)"
         url: /packages/wc3270.portable.html
+      - page: "WD Backup"
+        url: /packages/wdbackup.html
       - page: "WD Security for Windows"
         url: /packages/wdsecurity.html
       - page: "WD Smartware for Windows"
