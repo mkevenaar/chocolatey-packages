@@ -28,7 +28,7 @@ function global:au_GetLatest {
   $date = Get-Date  -Format yyyyMM
   #win64
   $download_page64 = Invoke-WebRequest -Uri "$releases/build/win64/" -UseBasicParsing
-  
+
   $folder64Bits = $download_page64.links | Where-Object href -Match "vlc-.+$date" | Select-Object -first 1
 
   $re    = '\.exe$'
@@ -37,9 +37,16 @@ function global:au_GetLatest {
 
   $folder64Bits | Sort-Object | Foreach-Object {
     # Get the version number from the current folder
+    [regex]$dotre = '\.'
     $version = $_.href -split '-' | Select-Object -first 1 -Skip 1
     $chocoDate = $_.href -split '-' | Select-Object -first 1 -Skip 2
-    $chocoVersion = $version + "." + $chocoDate
+
+    if ( $dotre.matches($version).count -eq 2 ) {
+      $version = $version + "."
+    }
+
+    $chocoVersion = $version + $chocoDate
+
     Write-Host $chocoVersion
 
     # 64 bit
