@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Read this before creating packages: https://chocolatey.org/docs/create-packages -->
+<!-- It is especially important to read the above link to understand additional requirements when publishing packages to the community feed aka dot org (https://chocolatey.org/packages). -->
+
+<!-- Test your packages in a test environment: https://github.com/chocolatey/chocolatey-test-environment -->
+
+<!--
+This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Reference. Chocolatey uses a special version of NuGet.Core that allows us to do more than was initially possible. As such there are certain things to be aware of:
+
+* the package xmlns schema url may cause issues with nuget.exe
+* Any of the following elements can ONLY be used by choco tools - projectSourceUrl, docsUrl, mailingListUrl, bugTrackerUrl, packageSourceUrl, provides, conflicts, replaces
+* nuget.exe can still install packages with those elements but they are ignored. Any authoring tools or commands will error on those elements
+-->
+
+<!-- You can embed software files directly into packages, as long as you are not bound by distribution rights. -->
+<!-- * If you are an organization making private packages, you probably have no issues here -->
+<!-- * If you are releasing to the community feed, you need to consider distribution rights. -->
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <!-- This section is about this package, although id and version have ties back to the software -->
+    <!-- id is lowercase and if you want a good separator for words, use '-', not '.'. Dots are only acceptable as suffixes for certain types of packages, e.g. .install, .portable, .extension, .template -->
+    <!-- If the software is cross-platform, attempt to use the same id as the debian/rpm package(s) if possible. -->
+    <id>musicbee</id>
+    <!-- version should MATCH as closely as possible with the underlying software -->
+    <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
+    <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
+    <version>3.3.7310</version>
+    <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
+    <owners>Maurice Kevenaar</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <!-- This section is about the software itself -->
+    <title>MusicBee</title>
+    <authors>Steven Mayall</authors>
+    <!-- projectUrl is required for the community feed -->
+    <projectUrl>http://getmusicbee.com/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@6b72cf334ff8fef0fb86aad0c1534f68a42a9855/icons/musicbee.png</iconUrl>
+    <!-- copyright is usually years and software vendor, but not required for internal feeds -->
+    <copyright>Copyright © Steven Mayall</copyright>
+    <tags>admin musicbee audio music player media mp3 tagger</tags>
+    <releaseNotes>https://www.getmusicbee.com/help/release-note/</releaseNotes>
+    <licenseUrl>http://musicbee.wikia.com/wiki/FAQ</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/musicbee</packageSourceUrl>
+    <docsUrl>http://musicbee.wikia.com/wiki/MusicBee_Wiki</docsUrl>
+    <bugTrackerUrl>http://getmusicbee.com/forum/index.php?board=3.1</bugTrackerUrl>
+    <summary>MusicBee makes it easy to organize, find and play music files on your computer, on portable devices and on the web.</summary>
+    <description><![CDATA[## The Ultimate Music Manager and Player
+
+MusicBee makes it easy to manage, find, and play music files on your computer. MusicBee also supports podcasts, web radio stations and SoundCloud integration
+MusicBee makes it easy to organize, find and play music files on your computer, on portable devices and on the web.
+
+### Simple, Powerful, and Fast
+
+Play your music the way you want. Turn your computer into a music jukebox. Use auto-tagging to clean up your messy music library. Enjoy a great music experience with MusicBee.
+
+### Sound Quality Matters
+
+Whether you play your music on an audiophile setup or on a laptop, MusicBee is designed with features to fulfill all your needs.
+
+### Beautiful Skins
+
+Change the appearance of MusicBee by choosing from the included skins or download more from our Add-on section.
+Skins are a great way to personalize MusicBee to your liking.
+
+You can also make your own skin and share it with others.
+
+### Sync with Devices
+
+Sync your music collection with devices you use. MusicBee supports playlist and podcast syncing, even supports audio books with 2 way syncing.
+Convert formats on the fly if your device does not support certain formats.
+
+You can also sync your Android and Windows Phone (8.1+) devices.
+
+### Groove Music Support
+
+MusicBee has native support for Groove Music (formerly Xbox Music). You can stream directly from MusicBee or add to your existing playlist, get song recommendations from the vast Groove catalog.
+
+Want to listen to a song before buy? You can listen to preview.
+
+### last.fm, CD Ripping, Tagging tools.... plus more
+
+MusicBee packs a comprehensive set of features to make your music experience better.
+
+Yet it is one of the most lightweight player using about 25-70 MB ram* with skins and add-ons, and packs all of these under 10 MB!
+
+*Tested with MusicBee 3 with a library of 200 albums, sized around 3GB.
+
+### The Best.... rated by reviewers and users
+
+MusicBee is rated one of the best music managers and players available for Windows. It packs features that will WOW you.
+
+We have a dedicated thread for users to share their experience or check reviews from trusted sources.
+
+Start using MusicBee today. You will never go back.
+
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know the package is no longer updating correctly.
+]]></description>
+    <!-- =============================== -->
+
+    <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
+    <dependencies>
+      <dependency id="dotnet4.6.1" version="4.6" />
+      <dependency id="autohotkey.portable" version="1.1" />
+    </dependencies>
+
+    <!--<provides>NOT YET IMPLEMENTED</provides>-->
+    <!--<conflicts>NOT YET IMPLEMENTED</conflicts>-->
+    <!--<replaces>NOT YET IMPLEMENTED</replaces>-->
+  </metadata>
+  <!-- this section controls what actually gets packaged into the Chocolatey package -->
+  <!-- Uncomment to limit what is packed in -->
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
