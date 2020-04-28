@@ -1,10 +1,10 @@
-$ErrorActionPreference = "Stop";
+﻿$ErrorActionPreference = "Stop";
 $packageName = "musicbee"
 $installerType = "exe"
 $silentArgs = "/S"
 $validExitCodes = @(0)
 
-$is64bit = Get-ProcessorBits 64
+$is64bit = Get-OSArchitectureWidth 64
 
 if ($is64bit) {
   $setupExePath = (Get-ItemProperty HKLM:\SOFTWARE\Wow6432Node\Microsoft\Windows\CurrentVersion\Uninstall\MusicBee).UninstallString
