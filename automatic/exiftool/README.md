@@ -18,8 +18,8 @@ ExifTool is a platform-independent Perl library plus a command-line application 
 
 * [Forum](http://u88.n24.queensu.ca/exiftool/forum/)
 
-* [FAQ](http://www.sno.phy.queensu.ca/~phil/exiftool/faq.html)
-* [Common usage mistakes](http://www.sno.phy.queensu.ca/~phil/exiftool/mistakes.html)
+* [FAQ](https://exiftool.org/faq.html)
+* [Common usage mistakes](https://exiftool.org/mistakes.html)
 * [Supported exif tag names](http://owl.phy.queensu.ca/~phil/exiftool/TagNames/index.html)
 * [Supported file types](http://owl.phy.queensu.ca/~phil/exiftool/#supported)
 * [Manual](http://owl.phy.queensu.ca/~phil/exiftool/exiftool_pod.html)

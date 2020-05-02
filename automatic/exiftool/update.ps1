@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'http://owl.phy.queensu.ca/~phil/exiftool/'
+$releases = 'https://exiftool.org/'
 
 function global:au_SearchReplace {
     @{
@@ -20,9 +20,9 @@ function global:au_GetLatest {
 
     $version = $url -split "-" | Select-Object -last 1 | ForEach-Object { $_ -replace ".zip", "" }
 
-    return @{ 
+    return @{
         URL32 = $url
-        Version = $version 
+        Version = $version
     }
 }
 

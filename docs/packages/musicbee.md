@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@8e2d1406e98513db3c7a0fd43d8c3a224ac08721/icons/musicbee.png" width="32" height="32"/> [![MusicBee](https://img.shields.io/chocolatey/v/musicbee.svg?label=MusicBee)](https://chocolatey.org/packages/musicbee) [![MusicBee](https://img.shields.io/chocolatey/dt/musicbee.svg)](https://chocolatey.org/packages/musicbee)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@6b72cf334ff8fef0fb86aad0c1534f68a42a9855/icons/musicbee.png" width="32" height="32"/> [![MusicBee](https://img.shields.io/chocolatey/v/musicbee.svg?label=MusicBee)](https://chocolatey.org/packages/musicbee) [![MusicBee](https://img.shields.io/chocolatey/dt/musicbee.svg)](https://chocolatey.org/packages/musicbee)
 
 ## Usage
 
