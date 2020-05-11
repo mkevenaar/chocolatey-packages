@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@326e9c0439d53d73fcc5ef931486c8ffbdfb016e/icons/sqlitebrowser.svg" width="32" height="32"/> [![DB Browser for SQLite (Install)](https://img.shields.io/chocolatey/v/sqlitebrowser.install.svg?label=DB+Browser+for+SQLite+(Install))](https://chocolatey.org/packages/sqlitebrowser.install) [![DB Browser for SQLite (Install)](https://img.shields.io/chocolatey/dt/sqlitebrowser.install.svg)](https://chocolatey.org/packages/sqlitebrowser.install)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@49cbd0915acb75d0b982b1a604a00498ff1e76e0/icons/sqlitebrowser.svg" width="32" height="32"/> [![DB Browser for SQLite (Install)](https://img.shields.io/chocolatey/v/sqlitebrowser.install.svg?label=DB+Browser+for+SQLite+(Install))](https://chocolatey.org/packages/sqlitebrowser.install) [![DB Browser for SQLite (Install)](https://img.shields.io/chocolatey/dt/sqlitebrowser.install.svg)](https://chocolatey.org/packages/sqlitebrowser.install)
 
 ## Usage
 

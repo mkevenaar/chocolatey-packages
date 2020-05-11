@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>René Peinthor,Martin Kleusberg ,Mauricio Piacentini,Justin Clift</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://sqlitebrowser.org/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@326e9c0439d53d73fcc5ef931486c8ffbdfb016e/icons/sqlitebrowser.svg</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@49cbd0915acb75d0b982b1a604a00498ff1e76e0/icons/sqlitebrowser.svg</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>René Peinthor,Martin Kleusberg ,Mauricio Piacentini,Justin Clift</copyright>
     <tags>sqlite database browser editor qt admin</tags>
