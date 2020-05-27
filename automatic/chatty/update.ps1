@@ -1,0 +1,39 @@
+Import-Module AU
+
+$releases = 'https://github.com/chatty/chatty/releases/latest'
+
+function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
+
+function global:au_GetLatest {
+  $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+
+  $re = "Chatty_(.+\d)_win_standalone.zip"
+  $url = $download_page.Links | Where-Object href -match $re | Select-Object -First 1 -expand href
+  $url = "https://github.com" + $url
+
+  $version = $url -split "/" | Select-Object -last 1 -skip 1
+  $version = Get-Version $version
+  return @{
+    URL32    = $url
+    Version  = $version
+    FileType = 'zip'
+  }
+}
+
+function global:au_SearchReplace {
+  return @{
+    ".\tools\chocolateyInstall.ps1" = @{
+      "(?i)(^\s*file\s*=\s*`"[$]toolsDir\\).*" = "`${1}$($Latest.FileName32)`""
+    }
+    ".\legal\VERIFICATION.txt"      = @{
+      "(?i)(listed on\s*)\<.*\>" = "`${1}<$releases>"
+      "(?i)(32-Bit.+)\<.*\>"     = "`${1}<$($Latest.URL32)>"
+      "(?i)(checksum type:).*"   = "`${1} $($Latest.ChecksumType32)"
+      "(?i)(checksum32:).*"      = "`${1} $($Latest.Checksum32)"
+    }
+  }
+}
+
+if ($MyInvocation.InvocationName -ne '.') {
+  update -ChecksumFor None
+}
