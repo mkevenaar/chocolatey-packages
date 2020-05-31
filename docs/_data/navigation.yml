@@ -33,6 +33,8 @@
         url: /packages/bitvisesshserver.html
       - page: "Book Collector"
         url: /packages/bookcollector.html
+      - page: "Chatty"
+        url: /packages/chatty.html
       - page: "Chocolatey ISO helpers extension"
         url: /packages/chocolateyisomount.extension.html
       - page: "ChromeCacheView"

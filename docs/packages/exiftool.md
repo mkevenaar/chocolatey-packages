@@ -42,9 +42,9 @@ ExifTool is a platform-independent Perl library plus a command-line application 
 
 * [FAQ](https://exiftool.org/faq.html)
 * [Common usage mistakes](https://exiftool.org/mistakes.html)
-* [Supported exif tag names](https://exiftool.org/TagNames/index.html)
-* [Supported file types](https://exiftool.org/#supported)
-* [Manual](https://exiftool.org/exiftool_pod.html)
+* [Supported exif tag names](http://owl.phy.queensu.ca/~phil/exiftool/TagNames/index.html)
+* [Supported file types](http://owl.phy.queensu.ca/~phil/exiftool/#supported)
+* [Manual](http://owl.phy.queensu.ca/~phil/exiftool/exiftool_pod.html)
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
