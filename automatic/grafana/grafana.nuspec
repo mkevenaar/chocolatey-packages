@@ -42,7 +42,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <copyright>Grafana Labs</copyright>
     <tags>grafana graphite influxdb prometheus elasticsearch opentsdb monitoring metric metrics analytics</tags>
     <releaseNotes>https://github.com/grafana/grafana/releases</releaseNotes>
-    <licenseUrl>https://github.com/grafana/grafana/blob/master/LICENSE.md</licenseUrl>
+    <licenseUrl>https://github.com/grafana/grafana/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/grafana</packageSourceUrl>
     <docsUrl>http://docs.grafana.org</docsUrl>
