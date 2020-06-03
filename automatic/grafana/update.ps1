@@ -1,15 +1,11 @@
 Import-Module AU
 
-$releases = 'https://grafana.com/grafana/download?platform=windows'
-
+$releases = 'https://github.com/grafana/grafana/releases/latest'
 function global:au_GetLatest {
   $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
-  $re = "grafana-(.+\d).windows-amd64.zip"
-  $url32 = $download_page.Links | Where-Object href -match $re | Select-Object -First 1 -expand href
-
-  $version = ([regex]::Match($url32,$re)).Captures.Groups[1].value
-  $version = Get-Version $version
+  $version = (($download_page.Links | Where-Object href -Match "releases/tag" | Select-Object -First 1 -ExpandProperty href) -Split "/" | Select-Object -Last 1) -replace "v"
+  $url32 = "https://dl.grafana.com/oss/release/grafana-$version.windows-amd64.zip"
 
   return @{
         URL32 = $url32
