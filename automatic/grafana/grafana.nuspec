@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>6.3.6</version>
+    <version>7.0.1</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Maurice Kevenaar, galeksandrp</owners>
     <!-- ============================== -->
@@ -44,16 +44,17 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <releaseNotes>https://github.com/grafana/grafana/releases</releaseNotes>
     <licenseUrl>https://github.com/grafana/grafana/blob/master/LICENSE.md</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <packageSourceUrl>https://github.com/galeksandrp/au-packages/tree/master/grafana</packageSourceUrl>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/grafana</packageSourceUrl>
     <docsUrl>http://docs.grafana.org</docsUrl>
     <projectSourceUrl>https://github.com/grafana/grafana</projectSourceUrl>
     <bugTrackerUrl>https://github.com/grafana/grafana/issues</bugTrackerUrl>
     <summary>The tool for beautiful monitoring and metric analytics &amp; dashboards for Graphite, InfluxDB &amp; Prometheus &amp; More</summary>
-    <description>Grafana is an open source, feature rich metrics dashboard and graph editor for Graphite, Elasticsearch, OpenTSDB, Prometheus and InfluxDB.
+    <description><![CDATA[Grafana is an open source, feature rich metrics dashboard and graph editor for Graphite, Elasticsearch, OpenTSDB, Prometheus and InfluxDB.
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.</description>
+let them know the package is no longer updating correctly.
+]]></description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
