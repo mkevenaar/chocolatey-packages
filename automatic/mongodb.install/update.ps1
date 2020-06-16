@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'https://www.mongodb.com/download-center/community'
+$releases = 'https://github.com/mongodb/mongo/releases'
 
 function global:au_SearchReplace {
    @{
@@ -13,19 +13,12 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    Add-Type -AssemblyName System.Web
-
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
-    $re = "(?smi)`"server-data`">window.__serverData = (.+?)`<"
-    $Results = ([regex]::Match($download_page.content,$re)).Captures.Groups[1].value.Trim()
+    $version = (($download_page.Links | Where-Object href -Match "releases/tag" | Select-Object -First 1 -ExpandProperty href) -Split "/" | Select-Object -Last 1) -replace "r"
 
-    $json = [System.Web.HttpUtility]::HtmlDecode($Results) | ConvertFrom-Json
+    $url = 'https://fastdl.mongodb.org/win32/mongodb-win32-x86_64-2012plus-' + $version + '-signed.msi'
 
-    $latest = $json.community.versions | Where-Object { $_.production_release -eq "True" } | Select-Object -first 1
-    $url = ($latest.downloads | Where-Object { $_.target -eq "windows_x86_64-2012plus" }).msi
-
-    $version = $latest.version
     $url64   = $url
     return @{ URL64=$url64; Version = $version }
 }
