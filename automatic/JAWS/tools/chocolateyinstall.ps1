@@ -1,11 +1,11 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32          = 'http://jaws2020.vfo.digital/2020.2004.66.400/FAE8BEBF-943F-4773-8446-17D7524E0F16/J2020.2004.66.400-Offline-x86.exe'
-$checksum32     = '948dca8d2ed14e12401a2d42281f3e1d215a2b8a2c13c3464ee90178676236cb'
+$url32          = 'http://jaws2020.vfo.digital/2020.2006.12.400/54A46703-8BC3-43F2-8CD1-EED20B3D9DC7/J2020.2006.12.400-Offline-x86.exe'
+$checksum32     = '520d4c516078e26f38126dc01dd1eb66c6b17d5be0c06a7c227a60899d96ba0a'
 $checksumType32 = 'sha256'
-$url64          = 'http://jaws2020.vfo.digital/2020.2004.66.400/FAE8BEBF-943F-4773-8446-17D7524E0F16/J2020.2004.66.400-Offline-x64.exe'
-$checksum64     = 'ce28fef3381f00fcd41ac1320c4a71950ebe27dce3326dc5e4120d3e9cc3c4b0'
+$url64          = 'http://jaws2020.vfo.digital/2020.2006.12.400/54A46703-8BC3-43F2-8CD1-EED20B3D9DC7/J2020.2006.12.400-Offline-x64.exe'
+$checksum64     = 'ee693b0455b067ee5d7dab3888f2640de25b7383596b39bd6375ff19ef1723a4'
 $checksumType64 = 'sha256'
 
 $packageArgs = @{
