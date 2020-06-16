@@ -43,6 +43,12 @@
         url: /packages/clionide.html
       - page: "Comic Collector"
         url: /packages/comiccollector.html
+      - page: "CrystalDiskInfo"
+        url: /packages/crystaldiskinfo.html
+      - page: "CrystalDiskInfo (Install)"
+        url: /packages/crystaldiskinfo.install.html
+      - page: "CrystalDiskInfo (Portable)"
+        url: /packages/crystaldiskinfo.portable.html
       - page: "DevManView"
         url: /packages/devmanview.html
       - page: "Driver Booster"
