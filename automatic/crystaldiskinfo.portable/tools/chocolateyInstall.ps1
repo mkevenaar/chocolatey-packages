@@ -16,7 +16,7 @@ Install-ChocolateyZipPackage  @packageArgs
 
 #install start menu shortcut
 $fileName = $fileName32
-$is64bit = Get-ProcessorBits 64
+$is64bit = Get-OSArchitectureWidth 64
 if ($is64bit) {
   $fileName = $fileName64
 }
