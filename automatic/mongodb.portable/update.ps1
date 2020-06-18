@@ -15,7 +15,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
   $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
-  $version = (($download_page.Links | Where-Object href -Match "releases/tag" | Select-Object -First 1 -ExpandProperty href) -Split "/" | Select-Object -Last 1) -replace "r"
+  $version = (($download_page.Links | Where-Object href -Match "releases/tag" | Where-Object href -NotMatch "rc" | Select-Object -First 1 -ExpandProperty href) -Split "/" | Select-Object -Last 1) -replace "^r"
 
   $url = 'https://fastdl.mongodb.org/win32/mongodb-win32-x86_64-2012plus-' + $version + '.zip'
 
