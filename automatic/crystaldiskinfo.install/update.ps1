@@ -11,7 +11,7 @@ function global:au_GetLatest {
 
   $re = "CrystalDiskInfo([_0-9]+)\.exe"
 
-  $url = ($feed.item[0].files.file | where-object "#text" -Match $re).url -Replace "https://osdn.net/projects/crystaldiskinfo/downloads/", "https://osdn.net/frs/redir.php?m=dotsrc&f=crystaldiskinfo/" -Replace "/$"
+  $url = ($feed.item[0].files.file | where-object "#text" -Match $re | Sort-Object | Select-Object -First 1).url -Replace "https://osdn.net/projects/crystaldiskinfo/downloads/", "https://osdn.net/frs/redir.php?m=dotsrc&f=crystaldiskinfo/" -Replace "/$"
 
   $url = Get-RedirectedUrl $url
 
