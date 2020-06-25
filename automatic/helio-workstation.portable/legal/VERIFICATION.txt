@@ -6,14 +6,14 @@ The installer have been downloaded from their official download link listed on <
 and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <https://ci.helio.fm/helio-2.5-x32.zip>
-  64-Bit: <https://ci.helio.fm/helio-2.5-x64.zip>
+  32-Bit: <https://ci.helio.fm/helio-3.0-x32.zip>
+  64-Bit: <https://ci.helio.fm/helio-3.0-x64.zip>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: 73DF558B5DAC32FFA14674D2847AB809DD63EC170E5B2F375EEF93608AC8BFB6
-  checksum64: CD1FBFAC25B8DEE12340989964E3A8CCE4C135AE8C4A7DC6C921EC93E456723A
+  checksum32: 7552A8F920890D57E557BB7AAF3D0BC647C0BBCFE7E81BA7467E6A6B397F3CD0
+  checksum64: 15ED3C5650458668B6544B30D8E78AC7B9EB3D1AB1BBD33858E849169B1553D9
 
 File 'LICENSE.txt' is obtained from <https://github.com/helio-fm/helio-workstation/blob/develop/LICENSE>
