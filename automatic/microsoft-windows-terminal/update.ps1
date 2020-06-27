@@ -1,19 +1,18 @@
 Import-Module au
 
-$releases = 'https://github.com/microsoft/terminal/releases'
+$releases = 'https://api.github.com/repos/microsoft/terminal/releases' # should variable name change?: releases_page instead of releases
 
 function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-
-    #Microsoft.WindowsTerminal_0.2.1831.0_8wekyb3d8bbwe.msixbundle
-    $re  = "Microsoft.WindowsTerminal_(.+)_.*.msixbundle"
-    $url = $download_page.links | Where-Object href -match $re | Select-Object -First 1 -expand href
-
-    $version = ([regex]::Match($url,$re)).Captures.Groups[1].value
-    $url = 'https://github.com' + $url
-
+    $download_page = Invoke-RestMethod -Uri $releases # should variable name change?: releases instead of download_page
+    forEach ($release in $download_page){
+        if (!$release.prerelease) {
+            $version = $release.tag_name.Remove(0,1) # Removes the character v from the tag_name
+            $url = $release.assets.browser_download_url
+            break
+        }
+    }
     return @{
         URL32 = $url
         Version = $version
