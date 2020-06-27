@@ -5,20 +5,24 @@ $releases = 'https://api.github.com/repos/microsoft/terminal/releases' # should 
 function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 
 function global:au_GetLatest {
-    $download_page = Invoke-RestMethod -Uri $releases # should variable name change?: releases instead of download_page
-    forEach ($release in $download_page){
-        if (!$release.prerelease) {
-            $version = $release.tag_name.Remove(0,1) # Removes the character v from the tag_name
-            $url = $release.assets.browser_download_url
-            break
+  $download_page = Invoke-RestMethod -Uri $releases # should variable name change?: releases instead of download_page
+  forEach ($release in $download_page) {
+    if (!$release.prerelease) {
+      forEach ($asset in $release.assets) {
+        if ($asset.name -like "Microsoft.WindowsTerminal_*") {
+          $url = $asset.browser_download_url
         }
+      }
+      $version = $release.tag_name.Remove(0, 1) # Removes the character v from the tag_name
+      break
     }
-    return @{
-        URL32 = $url
-        Version = $version
-        RemoteVersion  = $version
-        FileType = 'msixbundle'
-    }
+  }
+  return @{
+      URL32 = $url
+      Version = $version
+      RemoteVersion  = $version
+      FileType = 'msixbundle'
+  }
 }
 
 function global:au_SearchReplace {
