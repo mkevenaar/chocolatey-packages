@@ -10,13 +10,23 @@ function global:au_GetLatest {
   }
   $download_page = Invoke-RestMethod -Uri $releases -Headers $header
   forEach ($release in $download_page) {
-    if (!$release.prerelease) {
+    if ($release.prerelease) {
+      $version = $release.tag_name.Replace('v', '')
+      $version += '-beta'
       forEach ($asset in $release.assets) {
         if ($asset.name -like "Microsoft.WindowsTerminal_*") {
           $url = $asset.browser_download_url
         }
       }
-      $version = $release.tag_name.Remove(0, 1)
+      break
+    }
+    else {
+      $version = $release.tag_name.Replace('v', '')
+      forEach ($asset in $release.assets) {
+        if ($asset.name -like "Microsoft.WindowsTerminal_*") {
+          $url = $asset.browser_download_url
+        }
+      }
       break
     }
   }
