@@ -3,6 +3,7 @@
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $fileName       = "$toolsDir\Microsoft.WindowsTerminal_1.1.1671.0_8wekyb3d8bbwe.msixbundle"
 $version        = "1.1.1671.0"
+$PreRelease     = "True"
 
 $WindowsVersion=[Environment]::OSVersion.Version
 if ($WindowsVersion.Major -ne "10") {
@@ -14,7 +15,13 @@ if ($IsCorrectBuild -lt "18362") {
   throw "This package requires at least Windows 10 version 1903/OS build 18362.x."
 }
 
-if ((Get-AppxPackage -name Microsoft.WindowsTerminal).Version -Match $version) {
+$AppxPackageName = "Microsoft.WindowsTerminal"
+
+if ($PreRelease -match "True") {
+  $AppxPackageName += "Preview"
+}
+
+if ((Get-AppxPackage -name $AppxPackageName).Version -Match $version) {
   if($env:ChocolateyForce) {
     # you can't install the same version of an appx package, you need to remove it first
     Write-Host Removing already installed version first.
