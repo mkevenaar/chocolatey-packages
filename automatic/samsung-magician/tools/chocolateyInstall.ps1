@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = 'https://s3.ap-northeast-2.amazonaws.com/global.semi.static/SAMSUNG_SSD_v6_0_0_190917/OLD/675B9E5CD0C5F99B41D766B27C8E0055C3909ECE3AA2FB6B74A2A1EAC1BAC402/Samsung_Magician_Installer.zip'
-$checksum     = '9059b1ee42c5fa2251e36675807f8d94c5fd4a5e2887dcba7f94c8f4afd81375'
+$url          = 'https://s3.ap-northeast-2.amazonaws.com/global.semi.static/SAMSUNG_SSD_v6_1_0_200310/SW/675B9E5CD0C5F99B41D766B27C8E0055C3909ECE3AA2FB6B74A2A1EAC1BAC402/Samsung_Magician_Installer.zip'
+$checksum     = '9daeed4fdd5b4492442c706ee71d305b00824e716415fb616235e00174403dfd'
 $checksumType = 'sha256'
 
 $packageArgs = @{
