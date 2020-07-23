@@ -41,7 +41,7 @@ function global:au_GetLatest {
       }
 
       $version = Get-Version $version
-      $asset = $release.assets | Where-Object -Property name -like "${re}_*"
+      $asset = $release.assets | Where-Object -Property name -like "${re}_*.msixbundle"
       if ($asset) {
         $url = $asset.browser_download_url
         $streams.Add($re, (CreateStream $url $version))
