@@ -59,6 +59,8 @@
         url: /packages/dymoconnect.html
       - page: "DYMO Label"
         url: /packages/dymolabel.html
+      - page: "Elasticsearch"
+        url: /packages/elasticsearch.html
       - page: "Evernote"
         url: /packages/evernote.html
       - page: "ExifTool"
