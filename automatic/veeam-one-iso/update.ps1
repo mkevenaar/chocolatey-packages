@@ -34,6 +34,10 @@ function global:au_GetLatest {
     $url = "https://download2.veeam.com/$($filename)"
     # -Replace ".iso", "_.iso"
 
+    if($version -match "10.0.2.1094") {
+      $url = 'https://download2.veeam.com/VeeamONE_10.0.2.1094_20200716.iso'
+    }
+
     $ReleaseNotes = $download_page.Links | Where-Object href -match "release_notes" | Select-Object -First 1 -ExpandProperty href
 
     return @{
