@@ -4,11 +4,15 @@ $releases = 'https://nsis.sourceforge.io/Download'
 
 function global:au_SearchReplace {
     @{
-        'tools\chocolateyInstall.ps1' = @{
-            "(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
-            "(^[$]checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
-            "(^[$]checksumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
+        '.\tools\chocolateyInstall.ps1' = @{
+			"(?i)(^\s*FileFullPath\s*=\s*`"[$]toolsDir\\).*"   = "`${1}$($Latest.FileName32)`""
         }
+ 		".\legal\VERIFICATION.txt" = @{
+			"(?i)(listed on\s*)\<.*\>" = "`${1}<$releases>"
+			"(?i)(32-Bit.+)\<.*\>"     = "`${1}<$($Latest.URL32)>"
+			"(?i)(checksum type:).*"   = "`${1} $($Latest.ChecksumType32)"
+			"(?i)(checksum32:).*"      = "`${1} $($Latest.Checksum32)"
+		}
      }
 }
 
@@ -27,6 +31,8 @@ function global:au_GetLatest {
     }
 }
 
+function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
+
 if ($MyInvocation.InvocationName -ne '.') {
-    update -ChecksumFor 32
+    update -ChecksumFor none
 }
