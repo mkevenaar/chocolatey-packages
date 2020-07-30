@@ -1,8 +1,8 @@
-$ErrorActionPreference = 'Stop';
+﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url          = 'https://www.ultraiso.com/uiso9_pe.exe'
-$checksum     = 'E4B6A512B686BCD7EBD7297E6A991DA0A9A4B3367A08333A655A9FADA5723A04'
+$checksum     = '6390a7960c53466e561c990716c55f46e35a13159e23965a1c647dda49e04948'
 $checksumType = 'sha256'
 
 $packageArgs = @{

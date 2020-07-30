@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>9.7.1.3519</version>
+    <version>9.7.5.3716</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Maurice Kevenaar</owners>
     <!-- ============================== -->
@@ -46,7 +46,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/ultraiso</packageSourceUrl>
     <docsUrl>http://www.ezbsystems.com/ultraiso/faq.htm</docsUrl>
     <summary>Make a CD image or edit an ISO image file</summary>
-    <description>UltraISO  is an ISO CD/DVD image file creating/editing/converting tool and a bootable CD/DVD maker , it can directly edit the CD/DVD image file and extract files and folders from it, as well as directly make ISO files from your CD/DVD-ROM or  hard disk. At the same time, you can maintain the ISO bootable information, thus creating your own bootable CD/DVDs.	
+    <description><![CDATA[UltraISO  is an ISO CD/DVD image file creating/editing/converting tool and a bootable CD/DVD maker , it can directly edit the CD/DVD image file and extract files and folders from it, as well as directly make ISO files from your CD/DVD-ROM or  hard disk. At the same time, you can maintain the ISO bootable information, thus creating your own bootable CD/DVDs.
 
 #### Documentation
 * [FAQ](http://www.ezbsystems.com/ultraiso/faq.htm)
@@ -55,7 +55,12 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
 * [Forum](http://www.ezbsystems.com/cgi-bin/ikonboard.cgi?act=SF;f=2)
 
 #### Commercial software
-This package installs a limited version of the software with a nagscreen and 300MB document limit. [Purchase](http://www.ezbsystems.com/ultraiso/order.htm) removes these restrictions.</description>
+This package installs a limited version of the software with a nagscreen and 300MB document limit. [Purchase](http://www.ezbsystems.com/ultraiso/order.htm) removes these restrictions.
+
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know the package is no longer updating correctly.
+]]></description>
 
     <!-- =============================== -->  
 
