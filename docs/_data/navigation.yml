@@ -221,6 +221,8 @@
         url: /packages/tomtommydriveconnect.html
       - page: "Trillian"
         url: /packages/trillian.html
+      - page: "UltraISO"
+        url: /packages/ultraiso.html
       - page: "UltraVNC"
         url: /packages/ultravnc.html
       - page: "Veeam Backup & Replication Catalog"
