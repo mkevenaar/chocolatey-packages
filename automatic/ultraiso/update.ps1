@@ -3,13 +3,13 @@ import-module au
 $releases = 'https://www.ultraiso.com/download.html'
 
 function global:au_SearchReplace {
-	@{
-		'tools/chocolateyInstall.ps1' = @{
-			"(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
-			"(^[$]checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
-			"(^[$]checksumType\s*=\s*)('.*')" = "`$1'$($Latest.checksumType32)'"
-		}
-	}
+    @{
+        'tools\chocolateyInstall.ps1' = @{
+            "(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
+            "(^[$]checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
+            "(^[$]checksumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
+        }
+     }
 }
 
 function global:au_GetLatest {
@@ -20,8 +20,10 @@ function global:au_GetLatest {
 	Invoke-WebRequest -Uri $url32 -OutFile $File
 	$version=[System.Diagnostics.FileVersionInfo]::GetVersionInfo($File).FileVersion.trim()
 
-	$Latest = @{ URL32 = $url32; Version = $version }
-	return $Latest
+    return @{ 
+        URL32 = $url32
+        Version = $version 
+    }
 }
 
 update -ChecksumFor 32
