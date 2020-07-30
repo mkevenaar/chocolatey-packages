@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>ultraiso</id>
+    <version>9.7.3.3629</version>
+    <title>UltraISO</title>
+    <authors>EZB Systems,Inc</authors>
+    <owners>SUPERVISOR tunisiano</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectUrl>http://www.ezbsystems.com/ultraiso/</projectUrl>
+    <iconUrl>https://upload.wikimedia.org/wikipedia/en/b/b7/UltraISO_logo.png</iconUrl>
+    <description>UltraISO  is an ISO CD/DVD image file creating/editing/converting tool and a bootable CD/DVD maker , it can directly edit the CD/DVD image file and extract files and folders from it, as well as directly make ISO files from your CD/DVD-ROM or  hard disk. At the same time, you can maintain the ISO bootable information, thus creating your own bootable CD/DVDs.	
+
+#### Documentation
+* [FAQ](http://www.ezbsystems.com/ultraiso/faq.htm)
+
+#### Community
+* [Forum](http://www.ezbsystems.com/cgi-bin/ikonboard.cgi?act=SF;f=2)
+
+#### Commercial software
+This package installs a limited version of the software with a nagscreen and 300MB document limit. [Purchase](http://www.ezbsystems.com/ultraiso/order.htm) removes these restrictions.</description>
+    <summary>Make a CD image or edit an ISO image file</summary>
+    <releaseNotes>#### Program
+* [Changelog](http://www.ezbsystems.com/ultraiso/history.htm)
+
+#### Package
+* Automatically built and uploaded by [tunisiano](https://chocolatey.org/profiles/tunisiano)</releaseNotes>
+    <copyright>© 2002-2020 EZB Systems, Inc</copyright>
+    <tags>trial tools iso bootable-usb admin</tags>
+  </metadata>
+</package>
