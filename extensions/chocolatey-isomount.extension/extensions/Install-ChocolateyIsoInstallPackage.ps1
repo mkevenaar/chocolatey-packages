@@ -159,14 +159,15 @@ param(
 
     $file = "$($isoDrive)\$file"
 
-    Install-ChocolateyInstallPackage -PackageName $packageName `
-                                     -FileType $fileType `
-                                     -SilentArgs $silentArgs `
-                                     -File $file `
-                                     -File64 $file64 `
-                                     -ValidExitCodes $validExitCodes `
-                                     -UseOnlyPackageSilentArguments:$useOnlyPackageSilentArguments
-
-    Dismount-DiskImage -ImagePath $isoFile
-
+    try {
+      Install-ChocolateyInstallPackage -PackageName $packageName `
+                                       -FileType $fileType `
+                                       -SilentArgs $silentArgs `
+                                       -File $file `
+                                       -File64 $file64 `
+                                       -ValidExitCodes $validExitCodes `
+                                       -UseOnlyPackageSilentArguments:$useOnlyPackageSilentArguments
+    } finally {
+      Dismount-DiskImage -ImagePath $isoFile -ErrorAction SilentlyContinue
+    }
 }
