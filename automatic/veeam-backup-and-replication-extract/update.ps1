@@ -18,7 +18,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing -DisableKeepAlive
 
-    $reLatestbuild = "Current version is ([0-9]+\.[0-9]+\.[0-9]+(?:\.[0-9]+)(?:\.[0-9]+)?)( \((Update.*)\))?"
+    $reLatestbuild = "Current build is ([0-9]+\.[0-9]+\.[0-9]+(?:\.[0-9]+)(?:\.[0-9]+)?)( \((Update.*)\))?"
     $download_page.RawContent -imatch $reLatestbuild
     $version = $Matches[1]
 
