@@ -2,10 +2,10 @@
 
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url32          = 'http://www.nirsoft.net/utils/devmanview.zip'
-$checksum32     = '3924d8047ca2414e86e4afae1145611db38e3cf7e16ddbae62d6403bd580ec3b'
+$checksum32     = 'f1bbcab6ef04b1b9c4aa56b7f640b7e96255b6af883b284aa843c9a7080cfb0b'
 $checksumType32 = 'sha256'
 $url64          = 'http://www.nirsoft.net/utils/devmanview-x64.zip'
-$checksum64     = 'efbce6b8ed3a87ee2fc5453f30399ae444c88249228df8481affc6538f4b680a'
+$checksum64     = '34e4c907a1be85b30b1ce51f38ca26f5bb6ef92aa168cfd0198856c62c4ad51a'
 $checksumType64 = 'sha256'
 
 $packageArgs = @{
