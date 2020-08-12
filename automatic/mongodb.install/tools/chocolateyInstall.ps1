@@ -7,6 +7,11 @@ $silentArgs     = 'ADDLOCAL="Server,ServerService,Router,Client,MonitoringTools,
 $dataPath       = "$env:PROGRAMDATA\MongoDB\data\db"
 $logPath        = "$env:PROGRAMDATA\MongoDB\log"
 
+$WindowsVersion=[Environment]::OSVersion.Version
+if ($WindowsVersion.Major -ne "10") {
+  throw "This package requires Windows 10 or Windows Server 2016."
+}
+
 # Allow the user to specify the data and log path, falling back to sensible defaults
 $pp = Get-PackageParameters
 
