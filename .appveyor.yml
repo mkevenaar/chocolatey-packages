@@ -4,7 +4,7 @@ version: '{build}'
 pull_requests:
   do_not_increment_build_number: true
 max_jobs: 1
-#image: Visual Studio 2015
+image: Visual Studio 2017
 # History plugin requires complete log
 #clone_depth: 5
 branches:
@@ -48,7 +48,7 @@ environment:
 
   #Chocolatey version we want to use when checking for updates.
   choco_version: '0.10.15'
-  choco_version_pr: '0.10.9' # Should be kept to the version available one year ago
+  choco_version_pr: '0.10.11' # Should be kept to the version available one year ago
   nupkg_cache_path: C:\packages
 
 init:
