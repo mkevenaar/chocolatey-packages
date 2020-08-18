@@ -6,14 +6,14 @@ The installer have been downloaded from their official download link listed on <
 and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <http://x3270.bgp.nu/download/04.00/wc3270-4.0ga10-noinstall-32.zip>
-  64-Bit: <http://x3270.bgp.nu/download/04.00/wc3270-4.0ga10-noinstall-64.zip>
+  32-Bit: <http://x3270.bgp.nu/download/04.00/wc3270-4.0ga11-noinstall-32.zip>
+  64-Bit: <http://x3270.bgp.nu/download/04.00/wc3270-4.0ga11-noinstall-64.zip>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: CFF67FCDD6DBCDDEEEEA13EAD5AA78AE7947B83CC58234D7589AB23BBC620FCC
-  checksum64: 8C27F7C642F5B016F3B3ABBA090BE24509C641B5B59551A81E437894ACDCECAA
+  checksum32: ED044553DAD7CFE93093993E1D860691C45ECFC5D53727C24F2C46607376E3E4
+  checksum64: 6539861CD16F807D6F8E7E05271F2EC8E3BEAD487804676F459099E1D5B883C2
 
 File 'LICENSE.txt' is obtained from <http://x3270.bgp.nu/license.html>
