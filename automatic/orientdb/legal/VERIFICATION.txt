@@ -2,16 +2,16 @@ VERIFICATION
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
-The installer have been downloaded from their official download link listed on <https://orientdb.com/download-2/>
+The installer have been downloaded from their official download link listed on <https://orientdb.org/download/>
 and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <https://s3.us-east-2.amazonaws.com/orientdb3/releases/3.1.1/orientdb-3.1.1.zip>
+  32-Bit: <https://s3.us-east-2.amazonaws.com/orientdb3/releases/3.1.2/orientdb-3.1.2.zip>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: 1538BFCC5D1A83E8A686BE37950A69A2466D19EB824F754367A7B254C56B748F
+  checksum32: 14FDD2E2CA596F0336175590851FA3A10130A7265F4DF5EF8C0C1FAF8253F8DF
 
 File 'LICENSE.txt' is obtained from <https://github.com/orientechnologies/orientdb/blob/develop/license.txt>
