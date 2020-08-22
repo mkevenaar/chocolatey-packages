@@ -1,26 +1,57 @@
 import-module au
 
-$releases = 'https://github.com/mongodb/mongo/releases'
+$feed = 'http://downloads.mongodb.org.s3.amazonaws.com/current.json'
 
 function global:au_SearchReplace {
-   @{
+    @{
         '.\tools\chocolateyInstall.ps1' = @{
-            "(^[$]url64\s*=\s*)('.*')"      = "`$1'$($Latest.URL64)'"
-            "(^[$]checksum64\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
+            "(^[$]url64\s*=\s*)('.*')"          = "`$1'$($Latest.URL64)'"
+            "(^[$]checksum64\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum64)'"
             "(^[$]checksumType64\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
         }
-     }
+        "$($Latest.PackageName).nuspec" = @{
+            "(?i)(^\s*\<releaseNotes\>).*(\<\/releaseNotes\>)" = "`${1}$($Latest.ReleaseNotes)`${2}"
+        }
+    }
 }
 
+function CreateStream {
+    param($url64bit, $version, $releaseNotes)
+    
+    $Result = @{
+        Version      = $version
+        URL64        = $url64bit
+        ReleaseNotes = $releaseNotes
+    }
+    
+    return $Result
+}
+      
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+    $json = Invoke-WebRequest -Uri $feed -UseBasicParsing  | ConvertFrom-Json
 
-    $version = (($download_page.Links | Where-Object href -Match "releases/tag" | Where-Object href -NotMatch "rc" | Select-Object -First 1 -ExpandProperty href) -Split "/" | Select-Object -Last 1) -replace "^r"
+    $streams = @{ }
 
-    $url = 'https://fastdl.mongodb.org/windows/mongodb-windows-x86_64-' + $version + '-signed.msi'
+    $versions = $json.versions
 
-    $url64   = $url
-    return @{ URL64=$url64; Version = $version }
+    foreach ($version in $versions) {
+
+        $releaseversion = Get-Version($version.version)
+
+        $url = $version.downloads | Where-Object { $_.target -eq "windows" -and $_.edition -eq "base" } | Select-Object -ExpandProperty msi
+
+        $releaseNotes = $version.notes
+
+        $streamVersion = $releaseversion.toString(2)
+
+        if ($version.release_candidate) {
+            $streamVersion += '-rc'
+        }
+
+        $streams.Add($streamVersion, (CreateStream $url $releaseversion $releaseNotes))
+    }
+
+    return  @{ Streams = $streams }
 }
 
 if ($MyInvocation.InvocationName -ne '.') {
