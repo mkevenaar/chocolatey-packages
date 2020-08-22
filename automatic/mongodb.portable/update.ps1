@@ -48,7 +48,9 @@ function global:au_GetLatest {
             $streamVersion += '-rc'
         }
 
-        $streams.Add($streamVersion, (CreateStream $url $releaseversion $releaseNotes))
+        if ($url) {
+            $streams.Add($streamVersion, (CreateStream $url $releaseversion $releaseNotes))
+        }
     }
 
     return  @{ Streams = $streams }
