@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url = 'https://downloads.wdc.com/wdapp/WD_Backup_1.9.7375.5719.zip'
-$checksum = 'ecc9c4d8f790c2673e2e216ee5192cbe3bb6d3d36b016461aa7398e84d3eda6d'
+$url = 'https://downloads.wdc.com/wdapp/WD%20Backup_1.9.7435.38388.zip'
+$checksum = 'dc539227622d99803171ffa8915e287b44faa89fb725ea083b140fa9e002a1ab'
 $checksumType = 'sha256'
 $fileLocation = Join-Path $toolsDir "WD Backup.exe"
 

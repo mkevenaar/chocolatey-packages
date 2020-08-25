@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>1.9.7375.5719</version>
+    <version>1.9.7435.38388</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Maurice Kevenaar</owners>
     <!-- ============================== -->
@@ -41,7 +41,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Western Digital Technologies, Inc. All rights reserved.</copyright>
     <tags>wd-backup western digital wd westerndigital wdc admin</tags>
-    <releaseNotes>http://support.wdc.com/download/notes/Win_WD_Backup_SW_Release_Note_1.9.7375.pdf?v=778</releaseNotes>
+    <releaseNotes></releaseNotes>
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/wd-backup</packageSourceUrl>
     <docsUrl>https://support.wdc.com/knowledgebase/answer.aspx?ID=10408</docsUrl>
     <summary>WD Security for Windows</summary>
