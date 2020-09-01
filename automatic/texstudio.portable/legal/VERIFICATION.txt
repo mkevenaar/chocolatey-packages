@@ -6,11 +6,11 @@ The installer have been downloaded from their official download link listed on <
 and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <https://github.com/texstudio-org/texstudio/releases/download/3.0.0/texstudio-3.0.0-win-portable-qt5.zip>
+  32-Bit: <https://github.com/texstudio-org/texstudio/releases/download/3.0.1/texstudio-3.0.1-win-portable-qt5.zip>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: D5925AE24EFBAC53CF07B9CF98A3D1D039DC50BB45532E8081F0E5558385E248
+  checksum32: ADD5423CC32EB631C321C3C56FD514812E9A7DCD4C955EF33D56A8F2C9DF170D
 File 'LICENSE.txt' is obtained from <https://github.com/texstudio-org/texstudio/blob/master/COPYING>
