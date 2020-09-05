@@ -1,6 +1,6 @@
 Import-Module au
 
-$releases = 'https://github.com/sqlitebrowser/sqlitebrowser/releases/latest'
+$releases = 'https://download.sqlitebrowser.org/'
 
 function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 
@@ -9,10 +9,10 @@ function global:au_GetLatest {
 
     #DB.Browser.for.SQLite-3.11.2-win32.zip
     $re  = "DB.Browser.for.SQLite-(.+)-win32.zip"
-    $url32 = $download_page.links | ? href -match $re | select -First 1 -expand href
+    $url32 = $download_page.links | Where-Object href -match $re | Select-Object -First 1 -expand href
 
     $version = ([regex]::Match($url32,$re)).Captures.Groups[1].value
-    $url32 = 'https://github.com' + $url32
+    $url32 = 'https://download.sqlitebrowser.org' + $url32
 
     $url64 = $url32 -Replace "win32", "win64"
     return @{ 
