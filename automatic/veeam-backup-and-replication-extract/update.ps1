@@ -22,6 +22,10 @@ function global:au_GetLatest {
     $download_page.RawContent -imatch $reLatestbuild
     $version = $Matches[1]
 
+    if($version -match "10.0.1.4854") {
+      $version = "10.0.0.4461"
+    }
+
     $isoVersion = $version
 
     if($Matches.ContainsKey(3)) {
