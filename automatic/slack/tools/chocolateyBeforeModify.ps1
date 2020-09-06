@@ -1,1 +1,1 @@
-﻿Get-Process "slack" | Stop-Process -Force
+﻿Get-Process "slack" -ErrorAction SilentlyContinue | Stop-Process -Force
