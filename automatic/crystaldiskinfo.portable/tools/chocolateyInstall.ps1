@@ -9,7 +9,7 @@ $linkName = "CrystalDiskInfo.lnk"
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $toolsDir
-  file          = "$toolsDir\CrystalDiskInfo8_8_6.zip"
+  file          = "$toolsDir\CrystalDiskInfo8_8_7.zip"
 }
 
 Install-ChocolateyZipPackage  @packageArgs
