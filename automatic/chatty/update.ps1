@@ -1,6 +1,6 @@
 Import-Module AU
 
-$releases = 'https://github.com/chatty/chatty/releases/latest'
+$releases = 'https://github.com/chatty/chatty/releases'
 
 function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 
