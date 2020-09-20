@@ -17,14 +17,14 @@ $port = if ($pp.Port) { $pp.Port } else { 3306 }
 $serviceName = if ($pp.serviceName) { $pp.serviceName } else { "MySQL" }
 $dataDir = if ($pp.dataLocation) { Join-Path $pp.dataLocation "$packageName" } else { "C:\ProgramData\MySQL" }
 
-if (![System.IO.Directory]::Exists($installDir)) {[System.IO.Directory]::CreateDirectory($installDir) | Out-Null}
+if (![System.IO.Directory]::Exists($installDir)) { [System.IO.Directory]::CreateDirectory($installDir) | Out-Null }
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $installDir
-  url           = $url
-  checksum      = $checksum
-  checksumType  = $checksumType
+  url64          = $url
+  checksum64     = $checksum
+  checksumType64 = $checksumType
 }
 
 Install-ChocolateyZipPackage  @packageArgs
@@ -37,7 +37,8 @@ try {
   write-host "Shutting down MySQL if it is running"
   Start-ChocolateyProcessAsAdmin "cmd /c NET STOP $serviceName"
   Start-ChocolateyProcessAsAdmin "cmd /c sc delete $serviceName"
-} catch {
+}
+catch {
   # no service installed
 }
 
@@ -45,7 +46,7 @@ try {
 if ([System.IO.Directory]::Exists("$installDirBin")) {
   Write-Host "Clearing out the contents of `'$installDirBin`'."
   Start-Sleep 3
-  [System.IO.Directory]::Delete($installDirBin,$true)
+  [System.IO.Directory]::Delete($installDirBin, $true)
 }
 
 # copy the installed directory into the current dir
@@ -57,7 +58,7 @@ $iniFileDest = "$($installDir)\current\my.ini"
 if (!(Test-Path($iniFileDest))) {
   Write-Host "No existing my.ini. Creating default '$iniFileDest' with default locations for datadir."
 
-@"
+  @"
 [mysqld]
 basedir=$($installDir.Replace("\","\\"))\\current
 datadir=$($dataDir.Replace("\","\\"))\\data
@@ -70,10 +71,11 @@ port=$port
 Write-Host "Initializing MySQL if it hasn't already been initialized."
 try {
 
-  $defaultDataDir= Join-Path $dataDir "data"
-  if (![System.IO.Directory]::Exists($defaultDataDir)) {[System.IO.Directory]::CreateDirectory($defaultDataDir) | Out-Null}
+  $defaultDataDir = Join-Path $dataDir "data"
+  if (![System.IO.Directory]::Exists($defaultDataDir)) { [System.IO.Directory]::CreateDirectory($defaultDataDir) | Out-Null }
   Start-ChocolateyProcessAsAdmin "cmd /c '$($installDirBin)\mysqld' --defaults-file='$iniFileDest' --initialize-insecure"
-} catch {
+}
+catch {
   write-host "MySQL has already been initialized"
 }
 
