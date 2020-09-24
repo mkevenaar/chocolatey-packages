@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32          = 'https://github.com/fttx/barcode-to-pc-server/releases/download/v3.12.0/barcode-to-pc-server.v3.12.0.win.setup.exe'
-$checksum32     = '6530d020b8ffab489bef4cb471e36c7037bb9b47bea2b7018e8bb0d4c9627520'
+$url32          = 'https://github.com/fttx/barcode-to-pc-server/releases/download/v3.13.0/barcode-to-pc-server.v3.13.0.win.setup.exe'
+$checksum32     = '1c5aeb4181b6aac7e0010487af1afb97e51b1f25660460070e100e86b7caaec4'
 $checksumType32 = 'sha256'
 
 $packageArgs = @{
