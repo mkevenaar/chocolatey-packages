@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = 'https://dl.google.com/chat/20.8.301/InstallHangoutsChat.msi'
-$checksum     = '8ca8410ac4fcbc4b896006928e3616c8dc72303dccd7a9364b7a25f66d4e4398'
+$url          = 'https://dl.google.com/chat/20.9.281/InstallHangoutsChat.msi'
+$checksum     = '1b89afae1c7988be9d1ef37c337ffd93ff9cc56e04bc89736344077b031a9f5f'
 $checksumType = 'sha256'
 
 $packageArgs = @{
