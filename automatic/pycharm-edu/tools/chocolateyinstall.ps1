@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop';
+$ErrorActionPreference = 'Stop';
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url = 'https://download.jetbrains.com/python/pycharm-edu-2020.2.2.exe' 
@@ -11,7 +11,7 @@ New-Item -ItemType Directory -Force -Path $programfiles\JetBrains
  
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
-  softwareName   = "JetBrains PyCharm Edu*"
+  softwareName   = "*PyCharm Edu*"
   fileType      = 'exe'
   silentArgs    = "/S /CONFIG=$toolsDir\silent.config "
   validExitCodes = @(0)
@@ -19,6 +19,18 @@ $packageArgs = @{
   checksum       = $checksum
   checksumType   = $checksumType
   destination    = $toolsDir
+}
+
+[array]$key = Get-UninstallRegistryKey -SoftwareName $packageArgs['softwareName']
+
+if ($key.Count -gt 0) {
+    Get-Process PyCharm* | ForEach-Object { $_.CloseMainWindow() }
+  $key | ForEach-Object {
+    $packageArgs['file'] = "$($_.UninstallString)"
+    Uninstall-ChocolateyPackage @packageArgs
+  }
+} else {
+  Write-Warning "$packageName has already been uninstalled by other means."
 }
 
  Install-ChocolateyPackage @packageArgs	
