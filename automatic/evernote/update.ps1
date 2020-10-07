@@ -19,7 +19,7 @@ function global:au_BeforeUpdate {
 function global:au_GetLatest {
   $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
-  $re = "Evernote_(.+).exe"
+  $re = "Evernote[_-](.+)(-setup?).exe"
 
   $url32 = $download_page.Links | Where-Object href -match $re | Select-Object -First 1 -expand href
 
