@@ -2,7 +2,7 @@
 
 $packageArgs = @{
   PackageName     = $env:ChocolateyPackageName
-  softwareName    = "JetBrains PyCharm Community Edition*"
+  softwareName    = "PyCharm Community Edition*"
   FileType        = 'exe'
   Silent          = '/S'
 }

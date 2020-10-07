@@ -11,7 +11,7 @@ New-Item -ItemType Directory -Force -Path $programfiles\JetBrains
  
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
-  softwareName   = "JetBrains PyCharm Community Edition*"
+  softwareName   = "PyCharm Community Edition*"
   fileType      = 'exe'
   silentArgs    = "/S /CONFIG=$toolsDir\silent.config "
   validExitCodes = @(0)

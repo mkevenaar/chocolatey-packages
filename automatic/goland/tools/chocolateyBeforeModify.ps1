@@ -2,7 +2,7 @@
 
 $packageArgs = @{
   PackageName     = $env:ChocolateyPackageName
-  softwareName    = "JetBrains GoLand*"
+  softwareName    = "GoLand*"
   FileType        = 'exe'
   Silent          = '/S'
 }
