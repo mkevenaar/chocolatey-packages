@@ -17,7 +17,7 @@ function global:au_GetLatest {
 
     $re = ".msi"
     $url = $download_page.Links | Where-Object href -match $re | Select-Object -First 1 -expand href
-    $url = $releases + $url
+#    $url = $releases + $url
 
     $version = ([regex]::Match($url,'[Ww]ritage-(.+).msi')).Captures.Groups[1].value
 
