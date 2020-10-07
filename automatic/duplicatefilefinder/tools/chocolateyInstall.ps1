@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = 'https://downloads.auslogics.com/en/duplicate-file-finder/duplicate-file-finder-setup.exe?clientId=1127093319.1596010269'
-$checksum     = '70afd0dc7bd68062cee2518d1c4ca4eb5f176ee012ee88d0d335fe4506591748'
+$url          = 'https://downloads.auslogics.com/en/duplicate-file-finder/duplicate-file-finder-setup.exe?clientId=1351721623.1602058280'
+$checksum     = '080d55f422990b2b30f48bfcf79035a13e0615f570a64b17e36f8353ecbd652c'
 $checksumType = 'sha256'
 
 $packageArgs = @{
