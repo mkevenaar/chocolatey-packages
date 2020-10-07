@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop';
+$ErrorActionPreference = 'Stop';
 
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $fileName       = "$toolsDir\PowerToysSetup-0.21.1-x64.msi"
@@ -18,8 +18,8 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   softwareName  = 'PowerToys*'
   file          = $fileName
-  fileType      = 'msi'
-  silentArgs    = "/qn /norestart /l*v `"$env:TEMP\$env:ChocolateyPackageName.$env:ChocolateyPackageVersion.log`""
+  fileType      = 'exe'
+  silentArgs    = "--silent --skip_dotnet_install"
   validExitCodes= @(0,1641,3010)
 }
 
