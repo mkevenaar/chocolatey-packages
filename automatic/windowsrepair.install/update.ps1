@@ -15,7 +15,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
-    $re = '<br /><strong>(.+\d) - For all versions'
+    $re = '<br /><[strong|b]>(.+\d) - For all versions'
     $version = ([regex]::Match($download_page.content,$re)).Captures.Groups[1].value
     #$url = $download_page.Links | Where-Object href -match "setup.exe" | Select-Object -First 1 -expand href
     $url = 'http://www.tweaking.com/files/setups/tweaking.com_windows_repair_aio_setup.exe'
