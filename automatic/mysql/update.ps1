@@ -14,7 +14,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases
-    
+
     $version = ($download_page.ParsedHtml.getElementsByTagName('h1') | Where-Object innerhtml -match "^MySQL Community Server ").innerhtml -replace "^MySQL Community Server "
     $versiondata = Get-Version($version)
     $version = $versiondata.toString()
@@ -25,5 +25,5 @@ function global:au_GetLatest {
 }
 
 if ($MyInvocation.InvocationName -ne '.') {
-    update -ChecksumFor 32
+    update -ChecksumFor 64
 }
