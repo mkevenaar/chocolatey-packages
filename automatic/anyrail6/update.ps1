@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'https://www.anyrail.com/en/download'
+$releases = 'https://anyrail.com/en/download'
 
 function global:au_SearchReplace {
     @{
@@ -22,9 +22,9 @@ function global:au_GetLatest {
     $version = ([regex]::Match($url,'AnyRail/.+/AnyRail(.+).msi')).Captures.Groups[1].value
     $url = 'https://www.anyrail.com' + $url
 
-    return @{ 
+    return @{
         URL32 = $url
-        Version = $version 
+        Version = $version
     }
 }
 
