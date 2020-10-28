@@ -7,8 +7,7 @@ $commonPath = $(Split-Path -parent $(Split-Path -parent $scriptPath))
 $filename = 'VeeamONE.10.0.2.1094.iso'
 $installPath = Join-Path  (Join-Path $commonPath $isoPackageName) $filename
 
-$fileLocation = 'Monitor\VeeamONE.Monitor.Client.x86.msi'
-$fileLocation64 = 'Monitor\VeeamONE.Monitor.Client.x64.msi'
+$fileLocation = 'Monitor\VeeamONE.Monitor.Client.x64.msi'
 
 $pp = Get-PackageParameters
 
@@ -23,7 +22,6 @@ $packageArgs = @{
   isoFile        = $installPath
   softwareName   = 'Veeam ONE Monitor Client*'
   file           = $fileLocation
-  file64         = $fileLocation64
   fileType       = 'msi'
   silentArgs     = "$($silentArgs) ACCEPT_EULA=1 ACCEPT_THIRDPARTY_LICENSES=1 /qn /norestart /l*v `"$env:TEMP\$env:ChocolateyPackageName.$env:ChocolateyPackageVersion.log`""
   validExitCodes = @(0,1638,1641,3010) #1638 was added to allow updating when an newer version is already installed.
