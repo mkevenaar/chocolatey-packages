@@ -15,6 +15,7 @@ This package is a meta package. It will install the following software on your c
 - [Veeam Explorer for Microsoft Exchange](https://chocolatey.org/packages/veeam-explorer-for-microsoft-exchange)
 - [Veeam Explorer for Microsoft SharePoint](https://chocolatey.org/packages/veeam-explorer-for-microsoft-sharepoint)
 - [Veeam Explorer for Microsoft SQL Server](https://chocolatey.org/packages/veeam-explorer-for-microsoft-sql-server)
+- [Veeam Explorer for Microsoft Teams](https://chocolatey.org/packages/veeam-explorer-for-microsoft-teams)
 - [Veeam Explorer for Oracle](https://chocolatey.org/packages/veeam-explorer-for-oracle)
 
 **Please Note**: This is an automatically updated package. If you find it is

@@ -255,6 +255,8 @@
         url: /packages/veeamexplorerformicrosoftsharepointo365.html
       - page: "Veeam Explorer for Microsoft SQL Server"
         url: /packages/veeamexplorerformicrosoftsqlserver.html
+      - page: "Veeam Explorer for Microsoft Teams"
+        url: /packages/veeamexplorerformicrosoftteams.html
       - page: "Veeam Explorer for Oracle"
         url: /packages/veeamexplorerfororacle.html
       - page: "Veeam ONE Agent"
