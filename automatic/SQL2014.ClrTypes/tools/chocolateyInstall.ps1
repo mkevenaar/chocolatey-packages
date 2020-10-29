@@ -2,11 +2,11 @@
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url32          = 'https://download.microsoft.com/download/F/E/E/FEE62C90-E5A9-4746-8478-11980609E5C2/ENU/x86/SQLSysClrTypes.msi'
-$checksum32     = '5CA2CC72AA5B9D02014958A8BF664676672DE7D10EF4F4BD2658301210541867'
+$url32          = 'https://download.microsoft.com/download/6/7/8/67858AF1-B1B3-48B1-87C4-4483503E71DC/ENU/x86/SQLSysClrTypes.msi'
+$checksum32     = '36EA8FA58DAC4C713FFD9FC51E4C44519D80D991ACFF22BECBFFB74561C481ED'
 $checksumType32 = 'sha256'
-$url64          = 'https://download.microsoft.com/download/F/E/E/FEE62C90-E5A9-4746-8478-11980609E5C2/ENU/x64/SQLSysClrTypes.msi'
-$checksum64     = '74cb1bc8216b24acfbc643ea7555fc7d6067dfd39b7316e79203552c36282c8f'
+$url64          = 'https://download.microsoft.com/download/6/7/8/67858AF1-B1B3-48B1-87C4-4483503E71DC/ENU/x64/SQLSysClrTypes.msi'
+$checksum64     = '221f054daedf13096a8a04612e9a4d38cfe9b4988512538affc0bb6d7662fc7b'
 $checksumType64 = 'sha256'
 
 $packageArgs = @{
