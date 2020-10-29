@@ -4,5 +4,5 @@ $msiId64 = '{1F9EB3B6-AED7-4AA7-B8F1-8E314B74B2A5}'
 
 $package = 'SQL2014.SMO'
 
-Uninstall-ChocolateyPackage $package 'MSI' -SilentArgs "$msiId /qb" -validExitCodes @(0)
 if ([IntPtr]::Size -eq 8) { Uninstall-ChocolateyPackage $package 'MSI' -SilentArgs "$msiId64 /qb" -validExitCodes @(0) }
+else { Uninstall-ChocolateyPackage $package 'MSI' -SilentArgs "$msiId /qb" -validExitCodes @(0) }

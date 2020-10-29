@@ -16,7 +16,7 @@ function global:au_SearchReplace {
 }
 
 function GetResultInformation([string]$url32, [string]$url64) {
-  $dest = "$env:TEMP\SQLSysClrTypes.msi"
+  $dest = "$env:TEMP\SharedManagementObjects.msi"
 
   Get-WebFile $url32 $dest | Out-Null
   $checksumType = 'sha256'
@@ -36,8 +36,8 @@ function GetResultInformation([string]$url32, [string]$url64) {
 }
 
 function global:au_GetLatest {
-  $url32 = 'https://download.microsoft.com/download/6/7/8/67858AF1-B1B3-48B1-87C4-4483503E71DC/ENU/x86/SQLSysClrTypes.msi'
-  $url64 = 'https://download.microsoft.com/download/6/7/8/67858AF1-B1B3-48B1-87C4-4483503E71DC/ENU/x64/SQLSysClrTypes.msi'
+  $url32 = 'https://download.microsoft.com/download/6/7/8/67858AF1-B1B3-48B1-87C4-4483503E71DC/ENU/x86/SharedManagementObjects.msi'
+  $url64 = 'https://download.microsoft.com/download/6/7/8/67858AF1-B1B3-48B1-87C4-4483503E71DC/ENU/x64/SharedManagementObjects.msi'
 
   Update-OnETagChanged -execUrl $url64 `
     -OnETagChanged {

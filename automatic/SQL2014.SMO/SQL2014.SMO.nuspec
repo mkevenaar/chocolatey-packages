@@ -1,6 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <!-- Read this before creating packages: https://chocolatey.org/docs/create-packages -->
 <!-- It is especially important to read the above link to understand additional requirements when publishing packages to the community feed aka dot org (https://chocolatey.org/packages). -->
+
 <!-- Test your packages in a test environment: https://github.com/chocolatey/chocolatey-test-environment -->
 
 <!--
@@ -10,11 +11,11 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
 * Any of the following elements can ONLY be used by choco tools - projectSourceUrl, docsUrl, mailingListUrl, bugTrackerUrl, packageSourceUrl, provides, conflicts, replaces
 * nuget.exe can still install packages with those elements but they are ignored. Any authoring tools or commands will error on those elements
 -->
+
 <!-- You can embed software files directly into packages, as long as you are not bound by distribution rights. -->
 <!-- * If you are an organization making private packages, you probably have no issues here -->
 <!-- * If you are releasing to the community feed, you need to consider distribution rights. -->
 <!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
-
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
     <!-- == PACKAGE SPECIFIC SECTION == -->
@@ -35,18 +36,25 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <title>Microsoft SQL Server 2014 Management Objects</title>
     <authors>Microsoft Corporation</authors>
     <!-- projectUrl is required for the community feed -->
-    <projectUrl>http://www.microsoft.com/en-ca/download/details.aspx?id=42295</projectUrl>
+    <projectUrl>https://www.microsoft.com/en-us/download/details.aspx?id=53164</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@d7431aa700805ce218e635affdde122a93466b03/icons/SQL2014.ClrTypes.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Microsoft Corporation</copyright>
     <tags>microsoft-sql-server-2014-management-objects SQL SQL2014 SMO .NET XML CLR</tags>
     <licenseUrl>https://docs.microsoft.com/en-us/sql/relational-databases/server-management-objects-smo/smo-license-terms?view=sql-server-2014</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/manual/SQL2014.SMO</packageSourceUrl>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/SQL2014.SMO</packageSourceUrl>
     <docsUrl>https://docs.microsoft.com/en-us/sql/relational-databases/server-management-objects-smo/overview-smo?view=sql-server-2014</docsUrl>
     <summary>SQL Server Management Objects (SMO)</summary>
-    <description>The SQL Server Management Objects (SMO) is a .NET Framework object model that enables software developers to create client-side applications to manage and administer SQL Server objects and services. This object model will work with SQL Server 2000, SQL Server 2005, SQL Server 2008, SQL Server 2008 R2, SQL Server 2012, and SQL Server 2014.</description>
+    <description>The SQL Server Management Objects (SMO) is a .NET Framework object model that enables software developers to create client-side applications to manage and administer SQL Server objects and services. This object model will work with SQL Server 2000, SQL Server 2005, SQL Server 2008, SQL Server 2008 R2, SQL Server 2012, and SQL Server 2014.
+
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know the package is no longer updating correctly.</description>
+    <!-- =============================== -->
+
+    <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
     <dependencies>
-      <dependency id="SQL2012.NativeClient" />
       <dependency id="SQL2014.ClrTypes" />
     </dependencies>
 
