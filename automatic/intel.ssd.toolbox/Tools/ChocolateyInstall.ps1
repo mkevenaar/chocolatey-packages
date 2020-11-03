@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://downloadmirror.intel.com/29723/eng/Intel%20SSD%20Toolbox%20-%20v3.5.14.exe'
-$checksum     = 'ebeb0aff99aa3b09be23784437ede31367b392d0c3a6a7df8495fc608ed9412a'
+$url        = 'https://downloadmirror.intel.com/29981/eng/Intel%20SSD%20Toolbox%20-%20v3.5.15.exe'
+$checksum     = 'c413e0f323d63bbe7bc41befe9557e003ee440c32633b94ade1f632d3489f792'
 $checksumType = 'sha256'
 
 $packageArgs = @{

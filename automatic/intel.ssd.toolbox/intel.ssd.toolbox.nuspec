@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>3.5.14</version>
+    <version>3.5.15</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Maurice Kevenaar</owners>
     <!-- ============================== -->
@@ -41,7 +41,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Intel Corporation</copyright>
     <tags>intel ssd drive diag smart trim firmware</tags>
-    <releaseNotes>https://downloadmirror.intel.com/29723/eng/Intel_Solid_State_Drive_Toolbox_User_Guide.pdf</releaseNotes>
+    <releaseNotes>https://downloadmirror.intel.com/29981/eng/Intel_SSD_Toolbox_3_5_15_Release_Notes_325993-055US.pdf</releaseNotes>
     <licenseUrl>https://downloadcenter.intel.com/confirm.aspx?httpDown=http%3A//downloadmirror.intel.com/18455/eng/Intel%2520SSD%2520Toolbox%2520-%2520v3.1.9.exe%26lang%3Deng%26Dwnldid%3D18455</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/intel.ssd.toolbox</packageSourceUrl>
