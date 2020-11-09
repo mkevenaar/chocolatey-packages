@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'https://blog.bacula.org/binary-download-center/'
+$releases = 'https://www.bacula.org/binary-download-center/'
 
 function global:au_SearchReplace {
     @{
@@ -16,17 +16,17 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases
+    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
     $re = "Windows (.+\d) (64|32) bit"
-    $url = $download_page.Links | Where-Object innerhtml -match $re | Select-Object -First 2 -expand href
+    $url = $download_page.Links | Where-Object outerhtml -match $re | Select-Object -First 2 -expand href
 
-    $version = ([regex]::Match(($download_page.Links | Where-Object innerhtml -match $re | Select-Object -First 1 -expand innerhtml),$re)).Groups[1].value
+    $version = ([regex]::Match(($download_page.Links | Where-Object outerhtml -match $re | Select-Object -First 1 -expand outerhtml),$re)).Groups[1].value
 
-    return @{ 
+    return @{
         URL32 = $url[1]
         URL64 = $url[0]
-        Version = $version 
+        Version = $version
     }
 }
 
