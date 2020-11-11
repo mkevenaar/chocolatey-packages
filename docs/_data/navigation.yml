@@ -79,6 +79,8 @@
         url: /packages/googlehangoutschat.html
       - page: "Grafana"
         url: /packages/grafana.html
+      - page: "Grafana (Install)"
+        url: /packages/grafana.install.html
       - page: "Helio Workstation"
         url: /packages/helioworkstation.html
       - page: "Helio Workstation (Install)"
