@@ -6,8 +6,8 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $toolsDir
   fileType       = 'msi'
-  file           = "$toolsdir\mariadb-10.5.7-win32.msi"
-  file64         = "$toolsdir\mariadb-10.5.7-winx64.msi"
+  file           = "$toolsdir\mariadb-10.5.8-win32.msi"
+  file64         = "$toolsdir\mariadb-10.5.8-winx64.msi"
   softwareName   = 'MariaDB *'
   silentArgs     = "SERVICENAME=MySQL /qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
   validExitCodes = @(0,3010)
