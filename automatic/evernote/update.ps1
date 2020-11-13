@@ -23,7 +23,7 @@ function global:au_GetLatest {
 
   $url32 = $download_page.Links | Where-Object href -match $re | Select-Object -First 1 -expand href
 
-  $version = ([regex]::Match($url32,$re)).Captures.Groups[1].value
+  $version = Get-Version((([regex]::Match($url32,$re)).Captures.Groups[1].value) -Replace "-", ".")
 
   return @{
     URL32 = $url32
