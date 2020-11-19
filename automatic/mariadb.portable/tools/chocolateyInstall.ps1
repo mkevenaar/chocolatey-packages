@@ -1,12 +1,5 @@
 ﻿$ErrorActionPreference = 'Stop';
 
-$url32          = 'https://downloads.mariadb.org/f/mariadb-10.5.8/win32-packages/mariadb-10.5.8-win32.zip'
-$checksum32     = '8c89eafb5c0f0a42a115ccdacb321005ff6c523e139646f5505d883c608a16da'
-$checksumType32 = 'sha256'
-$url64          = 'https://downloads.mariadb.org/f/mariadb-10.5.8/winx64-packages/mariadb-10.5.8-winx64.zip'
-$checksum64     = '0cb42847637a321740b4776b630a0ab9fea226834db17923b3c8bef341c6b89d'
-$checksumType64 = 'sha256'
-
 $packageName = 'mariadb'
 $binRoot = Get-ToolsLocation
 $installDir = Join-Path $binRoot "$packageName"
@@ -20,14 +13,11 @@ if (![System.IO.Directory]::Exists($installDir)) {[System.IO.Directory]::CreateD
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $installDir
-  url           = $url32
-  checksum      = $checksum32
-  checksumType  = $checksumType32
-  url64bit      = $url64
-  checksum64    = $checksum64
-  checksumType64= $checksumType64
+  file           = "$toolsdir\mariadb-10.5.8-win32.zip"
+  file64         = "$toolsdir\mariadb-10.5.8-winx64.zip"
 }
 
+Write-Verbose "Downloading and installing program..."
 Install-ChocolateyZipPackage  @packageArgs
 
 # find the unpack directory
@@ -54,3 +44,5 @@ if (![System.IO.Directory]::Exists($defaultDataDir)) {
 }
 
 Start-Process $installDirBin\mysql_install_db.exe --datadir=$defaultDataDir
+
+Get-ChildItem $toolsPath\*.zip | ForEach-Object { Remove-Item $_ -ea 0; if (Test-Path $_) { Set-Content "$_.ignore" } }
