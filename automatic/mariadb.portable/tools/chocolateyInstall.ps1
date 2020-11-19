@@ -4,7 +4,7 @@ $url32          = 'https://downloads.mariadb.org/f/mariadb-10.5.8/win32-packages
 $checksum32     = '8c89eafb5c0f0a42a115ccdacb321005ff6c523e139646f5505d883c608a16da'
 $checksumType32 = 'sha256'
 $url64          = 'https://downloads.mariadb.org/f/mariadb-10.5.8/winx64-packages/mariadb-10.5.8-winx64.zip'
-$checksum64     = '63d868161446a7410b6e676a84d19a2fa4a8a9662f3c43c2b35433d1d9807843'
+$checksum64     = '0cb42847637a321740b4776b630a0ab9fea226834db17923b3c8bef341c6b89d'
 $checksumType64 = 'sha256'
 
 $packageName = 'mariadb'
