@@ -25,7 +25,7 @@ $packageArgs = @{
   checksum       = $checksum
   checksumType   = $checksumType
   softwareName   = 'Evernote*'
-  silentArgs     = '/quiet'
+  silentArgs     = '/S'
   validExitCodes= @(0,3010,-1073741819)
 }
 
