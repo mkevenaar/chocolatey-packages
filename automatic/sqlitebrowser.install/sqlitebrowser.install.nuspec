@@ -68,6 +68,14 @@ Controls and wizards are available for users to:
 * Issue SQL queries and inspect the results
 * Examine a log of all SQL commands issued by the application
 
+## Parameters
+
+- `/NoDesktopShortcut` - Do not create desktop shortcuts
+- `/NoStartmenuShortcut` - Do not create startmenu shortcuts
+
+These parameters can be passed to the installer with the use of `--params`.
+For example: `--params '"/NoDesktopShortcut /NoStartmenuShortcut"'`
+
 ### Previous names
 
 This project has previously been known as __SQLite Browser__ and __Database Browser for SQLite__.
