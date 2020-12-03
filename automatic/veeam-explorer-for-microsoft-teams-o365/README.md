@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@c824a8bb27044ab1d88f3a21a27377bb064d5906/icons/veeam-explorer-for-microsoft-teams.png" width="48" height="48"/> [veeam-explorer-for-microsoft-teams-o365](https://chocolatey.org/packages/veeam-explorer-for-microsoft-teams-o365)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@0da22fcc97ee2cb655413d53ffcb079bffb2013a/icons/veeam-explorer-for-microsoft-teams-o365.png" width="48" height="48"/> [veeam-explorer-for-microsoft-teams-o365](https://chocolatey.org/packages/veeam-explorer-for-microsoft-teams-o365)
 
 Exit when reboot detected
 

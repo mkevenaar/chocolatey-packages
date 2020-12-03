@@ -1,4 +1,4 @@
-﻿toc:
+toc:
   - title: chocolatey-isomount.extension
     subfolderitems:
       - page: Documentation
@@ -259,6 +259,8 @@
         url: /packages/veeamexplorerformicrosoftsqlserver.html
       - page: "Veeam Explorer for Microsoft Teams"
         url: /packages/veeamexplorerformicrosoftteams.html
+      - page: "Veeam Explorer for Microsoft Teams for Microsoft o365"
+        url: /packages/veeamexplorerformicrosoftteamso365.html
       - page: "Veeam Explorer for Oracle"
         url: /packages/veeamexplorerfororacle.html
       - page: "Veeam ONE Agent"
