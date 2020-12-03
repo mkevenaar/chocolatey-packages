@@ -5,7 +5,7 @@ $url = 'https://download2.veeam.com/VeeamBackupOffice365_4.0.1.531.zip'
 $checksum = '24e2b239d2e9a6f8c9c37051dd926be23bd752105e29f704f9da3a3f1ecef745'
 $checksumType = 'sha256'
 $version = '4.0.1.531'
-$fileLocation = Join-Path $toolsDir "Veeam.Backup365_$($version).msi"
+$fileLocation = Join-Path $toolsDir "Veeam.Backup365*.msi"
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName

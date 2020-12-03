@@ -16,7 +16,7 @@ $packageArgs = @{
 
 Install-ChocolateyZipPackage @packageArgs
 
-$fileLocation = Get-ChildItem $toolsDir\VeeamExplorerForSharePoint_*.msi
+$fileLocation = Get-ChildItem $toolsDir\VeeamExplorerForSharePoint*.msi
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName

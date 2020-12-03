@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <!-- Read this before creating packages: https://chocolatey.org/docs/create-packages -->
 <!-- It is especially important to read the above link to understand additional requirements when publishing packages to the community feed aka dot org (https://chocolatey.org/packages). -->
 
@@ -22,7 +22,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- This section is about this package, although id and version have ties back to the software -->
     <!-- id is lowercase and if you want a good separator for words, use '-', not '.'. Dots are only acceptable as suffixes for certain types of packages, e.g. .install, .portable, .extension, .template -->
     <!-- If the software is cross-platform, attempt to use the same id as the debian/rpm package(s) if possible. -->
-    <id>veeam-backup-for-microsoft-office-365-management</id>
+    <id>veeam-explorer-for-microsoft-teams-o365</id>
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
@@ -33,42 +33,36 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
-    <title>Veeam Backup for Microsoft Office 365 Management Console</title>
-    <authors>Veeam Software Group GmbH</authors>
+    <title>Veeam Explorer for Microsoft Teams for Microsoft o365</title>
+    <authors>Veeam Software AG</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://www.veeam.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@6ebecc329e84460097d143636f21f1c899a8d4b9/icons/veeam-backup-for-microsoft-office-365-management.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@c824a8bb27044ab1d88f3a21a27377bb064d5906/icons/veeam-explorer-for-microsoft-teams.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Veeam Software Group GmbH</copyright>
-    <tags>veeam-backup-for-microsoft-office-365 veeam backup o365 office microsoft admin</tags>
+    <copyright>Veeam Software AG</copyright>
+    <tags>veeam-explorer-for-microsoft-teams veeam explorer teams admin o365</tags>
     <releaseNotes>https://www.veeam.com/veeam_backup_microsoft_office_365_4c_release_notes_rn.pdf</releaseNotes>
     <licenseUrl>https://www.veeam.com/eula.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/veeam-backup-for-microsoft-office-365-management</packageSourceUrl>
-    <docsUrl>https://helpcenter.veeam.com/docs/vbo365/guide/vbo_introduction.html</docsUrl>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/veeam-explorer-for-microsoft-teams</packageSourceUrl>
+    <docsUrl>https://www.veeam.com/</docsUrl>
     <mailingListUrl>https://forums.veeam.com/</mailingListUrl>
-    <summary>Veeam Backup for Microsoft Office 365 Console and Explorers</summary>
-    <description><![CDATA[Veeam Backup for Microsoft Office 365 is a comprehensive solution that allows you to back up and restore data of your Microsoft Office 365, on-premises Microsoft Exchange and on-premises Microsoft SharePoint organizations, including Microsoft OneDrive for Business.
+    <summary>Veeam Backup &amp; Replication explorer for Teams</summary>
+    <description>Exit when reboot detected
 
-This package installs the following software by default:
+When installing / upgrading these packages, I would like to advise you to enable this feature `choco feature enable -n=exitOnRebootDetected`
 
-* Veeam Backup for Microsoft Office 365 Console
-* Veeam Backup for Microsoft Office 365 PowerShell
-* Veeam Explorer for Microsoft Exchange
-* Veeam Explorer for Microsoft Sharepoint
+## Quick and easy granular recovery for Teams
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.
-]]></description>
+let them know the package is no longer updating correctly.</description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
     <dependencies>
+      <dependency id="DotNet4.7.2" />
       <dependency id="veeam-backup-for-microsoft-office-365-console" version="[4.0.1.531]" />
-      <dependency id="veeam-explorer-for-microsoft-exchange-o365" version="[4.0.1.531]" />
-      <dependency id="veeam-explorer-for-microsoft-sharepoint-o365" version="[4.0.1.531]" />
-      <dependency id="veeam-explorer-for-microsoft-teams-o365" version="[4.0.1.531]" />
     </dependencies>
 
     <!--<provides>NOT YET IMPLEMENTED</provides>-->
@@ -78,6 +72,6 @@ let them know the package is no longer updating correctly.
   <!-- this section controls what actually gets packaged into the Chocolatey package -->
   <!-- Uncomment to limit what is packed in -->
   <files>
-    <!--<file src="tools\**" target="tools" />-->
+    <file src="tools\**" target="tools" />
   </files>
 </package>
