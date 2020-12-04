@@ -35,9 +35,10 @@ function global:au_GetLatest {
     $url = "https://download2.veeam.com/$($filename)"
     # -Replace ".iso", "_.iso"
 
-    if($isoVersion = '5.0.0.1061') {
-      $url = "https://download2.veeam.com/VBO/v5/GA/VeeamBackupOffice365_5.0.0.1061.zip"
+    if($isoVersion -match '5.0.0.1063') {
+      $url = "https://download2.veeam.com/VBO/v5/GA/VeeamBackupOffice365_5.0.0.1063.zip"
     }
+
 
     $ReleaseNotes = $download_page.Links | Where-Object href -match "release_notes" | Select-Object -First 1 -ExpandProperty href
 
