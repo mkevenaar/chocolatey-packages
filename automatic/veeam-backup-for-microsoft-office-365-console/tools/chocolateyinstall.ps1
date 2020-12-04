@@ -5,7 +5,6 @@ $url = 'https://download2.veeam.com/VBO/v5/GA/VeeamBackupOffice365_5.0.0.1061.zi
 $checksum = '0be53a85cfa1b8938c5fb8406e994226f0d059de2319f0ff01cfe0fb7a920fc3'
 $checksumType = 'sha256'
 $version = '5.0.0.1061'
-$fileLocation = Join-Path $toolsDir "Veeam.Backup365*.msi"
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
@@ -35,6 +34,8 @@ if ($silentArgs.Count -eq 0) {
 $silent = $silentArgs -join ','
 
 Install-ChocolateyZipPackage @packageArgs
+
+$fileLocation = Get-ChildItem $toolsDir\Veeam.Backup365*.msi
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
