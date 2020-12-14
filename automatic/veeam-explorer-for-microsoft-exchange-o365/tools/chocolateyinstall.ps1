@@ -1,10 +1,10 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url = 'https://download2.veeam.com/VBO/v5/GA/VeeamBackupOffice365_5.0.0.1063.zip'
-$checksum = 'c6e7a2d40403552a4d51d013d6ed80085be53702c1f131a463a0b2a11bdcb786'
+$url = 'https://download2.veeam.com/VBO/v5/GA/VeeamBackupOffice365_5.0.0.1070.zip'
+$checksum = 'fc864e73061b4e8d1a326eab8842061b9942d2d9d9fd476483822e37d969b8d2'
 $checksumType = 'sha256'
-$version = '5.0.0.1063'
+$version = '5.0.0.1070'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
