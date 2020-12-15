@@ -7,7 +7,7 @@ $toolsPath = Split-Path $MyInvocation.MyCommand.Definition
 $packageName = 'firefox-nightly'
 $softwareName = 'Nightly'
 
-#$alreadyInstalled = (AlreadyInstalled -product $softwareName -version '85.0a1')
+#$alreadyInstalled = (AlreadyInstalled -product $softwareName -version '86.0a1')
 
 if (Get-32bitOnlyInstalled -product $softwareName) {
   Write-Output $(
@@ -34,7 +34,7 @@ if (Get-32bitOnlyInstalled -product $softwareName) {
 
     Checksum = $checksums.Win32
     ChecksumType = 'sha512'
-    Url = "https://archive.mozilla.org/pub/firefox/nightly/2020/12/2020-12-14-09-10-23-mozilla-central/firefox-85.0a1.${locale}.win32.installer.exe"
+    Url = "https://archive.mozilla.org/pub/firefox/nightly/2020/12/2020-12-14-23-03-37-mozilla-central/firefox-86.0a1.${locale}.win32.installer.exe"
 
     silentArgs = '-ms'
     validExitCodes = @(0)
@@ -43,7 +43,7 @@ if (Get-32bitOnlyInstalled -product $softwareName) {
   if (!(Get-32bitOnlyInstalled($softwareName)) -and (Get-OSArchitectureWidth 64)) {
     $packageArgs.Checksum64 = $checksums.Win64
     $packageArgs.ChecksumType64 = 'sha512'
-    $packageArgs.Url64 = "https://archive.mozilla.org/pub/firefox/nightly/2020/12/2020-12-14-09-10-23-mozilla-central/firefox-85.0a1.${locale}.win64.installer.exe"
+    $packageArgs.Url64 = "https://archive.mozilla.org/pub/firefox/nightly/2020/12/2020-12-14-23-03-37-mozilla-central/firefox-86.0a1.${locale}.win64.installer.exe"
   }
 
   Install-ChocolateyPackage @packageArgs
