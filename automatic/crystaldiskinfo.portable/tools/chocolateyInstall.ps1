@@ -14,6 +14,8 @@ $packageArgs = @{
 
 Install-ChocolateyZipPackage  @packageArgs
 
+Remove-Item -ea 0 -Path $toolsDir\*.zip
+
 #install start menu shortcut
 $fileName = $fileName32
 $is64bit = Get-OSArchitectureWidth 64
