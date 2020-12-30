@@ -31,7 +31,7 @@ function GetResultInformation([string]$url32) {
 }
 
 function global:au_GetLatest {
-    $url32   = 'http://update.iobit.com/dl/driver_booster_setup.exe'
+    $url32   = 'https://cdn.iobit.com/dl/driver_booster_setup.exe'
 
   Update-OnETagChanged -execUrl $url32 `
     -OnETagChanged {
