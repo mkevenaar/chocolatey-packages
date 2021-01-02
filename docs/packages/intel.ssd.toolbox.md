@@ -1,20 +1,20 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@2a0d1b78a421771353d15c06da4341ae2b325cda/icons/intel.ssd.toolbox.png" width="32" height="32"/> [![Intel SSD Toolbox](https://img.shields.io/chocolatey/v/intel.ssd.toolbox.svg?label=Intel+SSD+Toolbox)](https://chocolatey.org/packages/intel.ssd.toolbox) [![Intel SSD Toolbox](https://img.shields.io/chocolatey/dt/intel.ssd.toolbox.svg)](https://chocolatey.org/packages/intel.ssd.toolbox)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@2a0d1b78a421771353d15c06da4341ae2b325cda/icons/intel.ssd.toolbox.png" width="32" height="32"/> [![[Deprecated] Intel SSD Toolbox](https://img.shields.io/chocolatey/v/intel.ssd.toolbox.svg?label=%5BDeprecated%5D+Intel+SSD+Toolbox)](https://chocolatey.org/packages/intel.ssd.toolbox) [![[Deprecated] Intel SSD Toolbox](https://img.shields.io/chocolatey/dt/intel.ssd.toolbox.svg)](https://chocolatey.org/packages/intel.ssd.toolbox)
 
 ## Usage
 
-To install Intel SSD Toolbox, run the following command from the command line or from PowerShell:
+To install [Deprecated] Intel SSD Toolbox, run the following command from the command line or from PowerShell:
 
 ```powershell
 choco install intel.ssd.toolbox
 ```
 
-To upgrade Intel SSD Toolbox, run the following command from the command line or from PowerShell:
+To upgrade [Deprecated] Intel SSD Toolbox, run the following command from the command line or from PowerShell:
 
 ```powershell
 choco upgrade intel.ssd.toolbox
 ```
 
-To uninstall Intel SSD Toolbox, run the following command from the command line or from PowerShell:
+To uninstall [Deprecated] Intel SSD Toolbox, run the following command from the command line or from PowerShell:
 
 ```powershell
 choco uninstall intel.ssd.toolbox
@@ -22,7 +22,11 @@ choco uninstall intel.ssd.toolbox
 
 ## Description
 
-SSD drive management software that allows you to:
+DEPRECATED!
+
+    The Intel® SSD Toolbox will reach End of Maintenance with no additional updates after September 2020. Intel® recommends that users migrate to the Intel® Memory and Storage Tool (GUI) as a replacement for Intel® SSD management and firmware updates.
+    
+    SSD drive management software that allows you to:
 
 - View current drive information for Intel® Solid-State Drives (Intel® SSDs), including:
   - Model number, capacity, and firmware version
@@ -48,7 +52,7 @@ let them know the package is no longer updating correctly.
 
 [Chocolatey Package Page](https://chocolatey.org/packages/intel.ssd.toolbox)
 
-[Software Site](https://downloadcenter.intel.com/Detail_Desc.aspx?DwnldID=18455)
+[Software Site](https://downloadcenter.intel.com/download/30058/Intel-Memory-and-Storage-Tool-GUI)
 
-[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/intel.ssd.toolbox)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/deprecated/intel.ssd.toolbox)
 

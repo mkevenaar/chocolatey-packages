@@ -1,4 +1,4 @@
-toc:
+﻿toc:
   - title: chocolatey-isomount.extension
     subfolderitems:
       - page: Documentation
@@ -89,10 +89,12 @@ toc:
         url: /packages/helioworkstation.portable.html
       - page: "Apple iCloud"
         url: /packages/icloud.html
-      - page: "Intel SSD Toolbox"
+      - page: "[Deprecated] Intel SSD Toolbox"
         url: /packages/intel.ssd.toolbox.html
       - page: "JetBrains IntelliJ IDEA (Educational)"
         url: /packages/intellijideaedu.html
+      - page: "Intel® Memory and Storage Tool"
+        url: /packages/intelmas.html
       - page: "IObit Malware Fighter Free"
         url: /packages/iobitmalwarefighter.html
       - page: "IObit Uninstaller"
