@@ -1,6 +1,6 @@
 Import-Module au
 
-$releases = 'https://omnidb.org/en/downloads-en'
+$releases = 'https://github.com/OmniDB/OmniDB/releases/latest'
 
 function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 
@@ -9,7 +9,7 @@ function global:au_GetLatest {
     #omnidb-app_2.13.0-windows-amd64.exe
     $re = "omnidb-app_(.+)-windows-amd64.exe"
     $url64 = $download_page.Links | Where-Object href -Match $re | Select-Object -First 1 -ExpandProperty href
-    $url64 = 'https://omnidb.org' + $url64
+    $url64 = 'https://github.com' + $url64
     
     $version = ([regex]::Match($url64,$re)).Captures.Groups[1].value
 
