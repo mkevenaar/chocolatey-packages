@@ -26,27 +26,28 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>3.5.15</version>
+    <version>3.5.15.20210102</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Maurice Kevenaar</owners>
     <!-- ============================== -->
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
-    <title>Intel SSD Toolbox</title>
+    <title>[Deprecated] Intel SSD Toolbox</title>
     <authors>Intel</authors>
     <!-- projectUrl is required for the community feed -->
-    <projectUrl>https://downloadcenter.intel.com/Detail_Desc.aspx?DwnldID=18455</projectUrl>
+    <projectUrl>https://downloadcenter.intel.com/download/30058/Intel-Memory-and-Storage-Tool-GUI</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@2a0d1b78a421771353d15c06da4341ae2b325cda/icons/intel.ssd.toolbox.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Intel Corporation</copyright>
     <tags>intel ssd drive diag smart trim firmware</tags>
-    <releaseNotes>https://downloadmirror.intel.com/29981/eng/Intel_SSD_Toolbox_3_5_15_Release_Notes_325993-055US.pdf</releaseNotes>
-    <licenseUrl>https://downloadcenter.intel.com/confirm.aspx?httpDown=http%3A//downloadmirror.intel.com/18455/eng/Intel%2520SSD%2520Toolbox%2520-%2520v3.1.9.exe%26lang%3Deng%26Dwnldid%3D18455</licenseUrl>
-    <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/intel.ssd.toolbox</packageSourceUrl>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/deprecated/intel.ssd.toolbox</packageSourceUrl>
     <summary>SSD drive management software</summary>
-    <description><![CDATA[SSD drive management software that allows you to:
+    <description><![CDATA[DEPRECATED!
+
+    The Intel® SSD Toolbox will reach End of Maintenance with no additional updates after September 2020. Intel® recommends that users migrate to the Intel® Memory and Storage Tool (GUI) as a replacement for Intel® SSD management and firmware updates.
+    
+    SSD drive management software that allows you to:
 
 - View current drive information for Intel® Solid-State Drives (Intel® SSDs), including:
   - Model number, capacity, and firmware version
@@ -70,13 +71,9 @@ let them know the package is no longer updating correctly.
     <!-- =============================== -->  
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
-    <!--<dependencies>
-      <dependency id="" version="__MINIMUM_VERSION__" />
-      <dependency id="" version="[__EXACT_VERSION__]" />
-      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_INCLUSIVE]" />
-      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_EXCLUSIVE)" />
-      <dependency id="" />
-    </dependencies>-->
+    <dependencies>
+      <dependency id="intel-mas" />
+    </dependencies>
 
     <!--<provides>NOT YET IMPLEMENTED</provides>-->
     <!--<conflicts>NOT YET IMPLEMENTED</conflicts>-->
@@ -85,6 +82,6 @@ let them know the package is no longer updating correctly.
   <!-- this section controls what actually gets packaged into the Chocolatey package -->
   <!-- Uncomment to limit what is packed in -->
   <files>
-    <file src="tools\**" target="tools" />
+    <!-- <file src="tools\**" target="tools" /> -->
   </files>
 </package>
