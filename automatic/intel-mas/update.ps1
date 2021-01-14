@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'https://downloadcenter.intel.com/Detail_Desc.aspx?DwnldID=30058'
+$releases = 'https://downloadcenter.intel.com/download/30161'
 
 function global:au_SearchReplace {
     @{
