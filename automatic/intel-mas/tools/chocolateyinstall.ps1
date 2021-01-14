@@ -1,9 +1,13 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = 'https://downloadmirror.intel.com/30058/eng/Intel%C2%AEMAS_Tool_GUI_1.4.zip'
-$checksum     = '4733b9519bdbedb69113fb1a62f1b54d23fa41543431ede50ac886b7d86bb5de'
+$url          = 'https://downloadmirror.intel.com/30161/eng/Intel%C2%AEMAS_Tool_GUI_1.5.zip'
+$checksum     = '51dc88e6770a7dec26de8107bb1d6c6533b02c0db37eb294f832f6c2b135223c'
 $checksumType = 'sha256'
+
+# Cleanup old files, if exist
+Get-ChildItem $toolsDir\*.exe | ForEach-Object { Remove-Item $_ -ea 0; if (Test-Path $_) { Set-Content "$_.ignore" } }
+Get-ChildItem $toolsDir\*.pdf | ForEach-Object { Remove-Item $_ -ea 0; if (Test-Path $_) { Set-Content "$_.ignore" } }
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
