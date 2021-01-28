@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = 'https://download.jetbrains.com/cpp/CLion-2020.3.1.exe'
-$checksum     = 'b1b9ce1e75de33af4b7e9e119528543e92b18f6e09dd74750e0a90b8905332e3'
+$url          = 'https://download.jetbrains.com/cpp/CLion-2020.3.2.exe'
+$checksum     = '85d435faf337720778f4e48ccead4acba644c08ad77ee05471b8427aa6de06b3'
 $checksumType = 'sha256'
 
 # Workaround for https://youtrack.jetbrains.com/issue/IDEA-202935
