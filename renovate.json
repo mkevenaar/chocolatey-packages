@@ -3,6 +3,11 @@
     "config:base"
   ],
   "assignees": ["mkevenaar"],
-  "reviewers": ["mkevenaar"],
-  "labels": ["renovate"]
+  "labels": ["renovate"],
+  "packageRules": [
+  {
+    "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+    "automerge": true
+  }
+ ]
 }
