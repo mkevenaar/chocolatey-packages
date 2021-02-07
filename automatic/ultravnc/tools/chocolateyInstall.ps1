@@ -12,5 +12,11 @@ $packageArgs = @{
   validExitCodes= @(0,3010)
 }
 
+$pp = Get-PackageParameters
+if ($pp['LoadInf']) {
+  if (!(Test-Path $pp['LoadInf'])) { throw "$($pp['LoadInf']) is not a valid file" }
+  $packageArgs['silentArgs'] += " /LOADINF:$($pp['LoadInf'])"
+}
+
 Install-ChocolateyInstallPackage @packageArgs
 Get-ChildItem $toolsPath\*.exe | ForEach-Object { Remove-Item $_ -ea 0; if (Test-Path $_) { Set-Content -Value "" -Path "$_.ignore" }}
