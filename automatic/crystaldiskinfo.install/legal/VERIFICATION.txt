@@ -6,12 +6,12 @@ The installer have been downloaded from their official download link listed on <
 and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <http://osdn.dl.osdn.net/crystaldiskinfo/74490/CrystalDiskInfo8_10_0.exe>
+  32-Bit: <http://osdn.dl.osdn.net/crystaldiskinfo/74602/CrystalDiskInfo8_11_0.exe>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: BC6FF42433E7E54F4FE02F897ED8A8CB9D79B7B8B0291B84B1674DFAED5EB86E
+  checksum32: A3D4305DF518A23E9C0C6BC3868520F5EC605BB943F3B727B3AB3FF8418AE951
 
 File 'LICENSE.txt' is obtained from <https://github.com/hiyohiyo/CrystalDiskInfo/blob/master/LICENSE.txt>
