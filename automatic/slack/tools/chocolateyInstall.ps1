@@ -1,11 +1,11 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32          = 'https://downloads.slack-edge.com/releases/windows/4.12.2/prod/ia32/slack-standalone-4.12.2.0.msi'
-$checksum32     = 'bca425a6e90660d8a1156f3cf4a55e9fc97d9a4f920086e4797c32b19fa3c950'
+$url32          = 'https://downloads.slack-edge.com/releases/windows/4.13.0/prod/ia32/slack-standalone-4.13.0.0.msi'
+$checksum32     = 'ba3815559645012ca70946d9ddfc753fe090dc7baa878ba4f2798953a9984708'
 $checksumType32 = 'sha256'
-$url64          = 'https://downloads.slack-edge.com/releases/windows/4.12.2/prod/x64/slack-standalone-4.12.2.0.msi'
-$checksum64     = '281b3b5bdda1fd7041e74f64659167816084c6869d5bf43dde31e0b578c35a38'
+$url64          = 'https://downloads.slack-edge.com/releases/windows/4.13.0/prod/x64/slack-standalone-4.13.0.0.msi'
+$checksum64     = 'd722c4b4a0ea402c0697424d33ef6544614ebf0facca73f64c9d9270674a62ff'
 $checksumType64 = 'sha256'
 
 $packageArgs = @{
