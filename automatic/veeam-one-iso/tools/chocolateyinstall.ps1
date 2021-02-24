@@ -10,7 +10,7 @@ $packagePath = $(Split-Path -parent $toolsDir)
 $installPath = Join-Path $packagePath $filename
 
 #cleanup any old ISO files from previous versions
-Get-ChildItem $packagePath\*.iso | Where-Object -NotMatch $filename | ForEach-Object { Remove-Item $_ -ea 0; if (Test-Path $_) { Set-Content "$_.ignore" } }
+Get-ChildItem $packagePath\*.iso | Where-Object Name -NotMatch $filename | ForEach-Object { Remove-Item $_ -ea 0; if (Test-Path $_) { Set-Content "$_.ignore" } }
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName

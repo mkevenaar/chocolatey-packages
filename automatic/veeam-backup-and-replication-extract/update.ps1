@@ -22,10 +22,6 @@ function global:au_GetLatest {
     $download_page.RawContent -imatch $reLatestbuild
     $version = $Matches[1]
 
-    if($version -match "10.0.1.4854") {
-      $version = "10.0.0.4461"
-    }
-
     $isoVersion = $version
 
     if($Matches.ContainsKey(3)) {
@@ -33,8 +29,11 @@ function global:au_GetLatest {
         $isoVersion = "$($isoVersion).$updateVersion"
     }
 
+    $version = Get-Version ($version)
+    $majversion = $version.ToString(1)
+    
     $filename = "VeeamExtract_$($isoVersion).zip"
-    $url = "https://download2.veeam.com/$($filename)"
+    $url = "https://download2.veeam.com/VBR/v$($majversion)/$($filename)"
     # -Replace ".iso", "_.iso"
 
     $ReleaseNotes = $download_page.Links | Where-Object href -match "release_notes" | Select-Object -First 1 -ExpandProperty href

@@ -30,13 +30,15 @@ function global:au_GetLatest {
         $isoVersion = "$($isoVersion).$updateVersion"
     }
 
-    $filename = "VeeamONE.$($isoVersion).iso"
-    $url = "https://download2.veeam.com/$($filename)"
-    # -Replace ".iso", "_.iso"
-
-    if($version -match "10.0.2.1094") {
-      $url = 'https://download2.veeam.com/VeeamONE_10.0.2.1094_20200716.iso'
+    if($version -eq "11.0.0.1379") {
+      $isoVersion = "11.0.0.1379_20210209"
     }
+
+    $version = Get-Version ($version)
+    $majversion = $version.ToString(1)
+
+    $filename = "VeeamONE_$($isoVersion).iso"
+    $url = "https://download2.veeam.com/VONE/v$($majversion)/$($filename)"
 
     $ReleaseNotes = $download_page.Links | Where-Object href -match "release_notes" | Select-Object -First 1 -ExpandProperty href
 
