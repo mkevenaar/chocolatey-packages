@@ -21,7 +21,7 @@ function global:au_GetLatest {
     $url32 = Get-RedirectedUrl 'https://slack.com/ssb/download-win-msi'
     $url64 = Get-RedirectedUrl 'https://slack.com/ssb/download-win64-msi'
 
-    $re = "<strong>Version (.+\d)</strong>"
+    $re = "Version (.+\d)</span>"
 
     $version = ([regex]::Match($download_page.RawContent, $re)).Captures.Groups[1].value
 
