@@ -1,5 +1,5 @@
 Get-ChildItem | Where-Object PSIsContainer | Where-Object { !(Test-Path $_\README.md) } | ForEach-Object {
-  [xml] $package = Get-Content $_\*.nuspec -ea -Encoding UTF8
+  [xml] $package = Get-Content $_\*.nuspec -ea 0 -Encoding UTF8
   if (!$package) { return }
 
   $meta = $package.package.metadata
