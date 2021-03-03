@@ -4,7 +4,7 @@ $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $isoPackageName = 'veeam-one-iso'
 $scriptPath = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 $commonPath = $(Split-Path -parent $(Split-Path -parent $scriptPath))
-$filename = 'VeeamONE.10.0.2.1094.iso'
+$filename = 'VeeamONE_11.0.0.1379_20210209.iso'
 $installPath = Join-Path  (Join-Path $commonPath $isoPackageName) $filename
 
 $fileLocation = 'Reporter\VeeamONE.Reporter.Server.x64.msi'
@@ -77,18 +77,18 @@ if ($pp.vcSelectedType) {
 }
 
 if ($pp.sqlServer) {
-  $silentArgs += " VM_RP_SQL_SERVER=$($pp.sqlServer)"
+  $silentArgs += " VO_REPORTER_SQL_SERVER_NAME=$($pp.sqlServer)"
 }
 
 if ($pp.sqlDatabase) {
-  $silentArgs += " VM_RP_SQL_DATABASE=$($pp.sqlDatabase)"
+  $silentArgs += " VO_REPORTER_DATABASE_NAME=$($pp.sqlDatabase)"
 }
 
 if ($pp.sqlAuthentication) {
   if(-not $pp.sqlPassword -or -not $pp.sqlUsername) {
     throw 'sqlUsername and sqlPassword are required when using sqlAuthentication...'
   }
-  $silentArgs += " VM_RP_SQL_AUTHENTICATION=$($pp.sqlAuthentication) VM_RP_SQL_USER=`"$($pp.sqlUsername)`" VM_RP_SQL_PASSWORD=`"$($pp.sqlPassword)`""
+  $silentArgs += " VO_REPORTER_AUTHENTICATION_TYPE_NAME=$($pp.sqlAuthentication) VO_REPORTER_SQL_USER_NAME=`"$($pp.sqlUsername)`" VO_REPORTER_SQL_PASSWORD=`"$($pp.sqlPassword)`""
 }
 
 if ($pp.username) {
@@ -112,7 +112,7 @@ if ($pp.username) {
       wmic UserAccount where ("Name='{0}'" -f $pp.username) set PasswordExpires=False
       net localgroup "Administrators" $pp.username /add    }
   }
-  $silentArgs += " VM_RP_SERVICEACCOUNT=`"$($fulluser)`" VM_RP_SERVICEPASSWORD=`"$($pp.password)`""
+  $silentArgs += " VO_REPORTER_SERVICE_ACCOUNT_NAME=`"$($fulluser)`" VO_REPORTER_SERVICE_ACCOUNT_PASSWORD=`"$($pp.password)`""
 }
 
 if ($pp.licenseFile) {

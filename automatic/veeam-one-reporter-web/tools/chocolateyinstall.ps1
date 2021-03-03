@@ -4,7 +4,7 @@ $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $isoPackageName = 'veeam-one-iso'
 $scriptPath = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 $commonPath = $(Split-Path -parent $(Split-Path -parent $scriptPath))
-$filename = 'VeeamONE.10.0.2.1094.iso'
+$filename = 'VeeamONE_11.0.0.1379_20210209.iso'
 $installPath = Join-Path  (Join-Path $commonPath $isoPackageName) $filename
 
 $fileLocation = 'Reporter\VeeamONE.Reporter.WebUI.x64.msi'
@@ -19,29 +19,8 @@ $pp = Get-PackageParameters
 
 $silentArgs = ""
 
-$validOptionsTypes = '0','1','2'
-
-if ($pp.installationType) {
-  if (-not $validOptionsTypes.Contains($pp.installationType)) {
-    Write-Warning "$($pp.installationType) is an invalid value for the installationType parameter."
-    throw
-  }
-  $silentArgs += " VO_INSTALLATION_TYPE=$($pp.installationType)"
-}
-
-if ($pp.sqlServer) {
-  $silentArgs += " VM_RP_SQL_SERVER=$($pp.sqlServer)"
-}
-
-if ($pp.sqlDatabase) {
-  $silentArgs += " VM_RP_SQL_DATABASE=$($pp.sqlDatabase)"
-}
-
-if ($pp.sqlAuthentication) {
-  if(-not $pp.sqlPassword -or -not $pp.sqlUsername) {
-    throw 'sqlUsername and sqlPassword are required when using sqlAuthentication...'
-  }
-  $silentArgs += " VM_RP_SQL_AUTHENTICATION=$($pp.sqlAuthentication) VM_RP_SQL_USER=`"$($pp.sqlUsername)`" VM_RP_SQL_PASSWORD=`"$($pp.sqlPassword)`""
+if ($pp.oneServer) {
+  $silentArgs += " VO_REPORTER_WEB_SERVER_NAME=$($pp.oneServer)"
 }
 
 if ($pp.username) {
@@ -65,15 +44,15 @@ if ($pp.username) {
       wmic UserAccount where ("Name='{0}'" -f $pp.username) set PasswordExpires=False
       net localgroup "Administrators" $pp.username /add    }
   }
-  $silentArgs += " VM_RP_SERVICEACCOUNT=`"$($fulluser)`" VM_RP_SERVICEPASSWORD=`"$($pp.password)`""
+  $silentArgs += " VO_REPORTER_WEB_CONNECTION_ACCOUNT_NAME=`"$($fulluser)`" VO_REPORTER_WEB_CONNECTION_ACCOUNT_PASSWORD=`"$($pp.password)`""
 }
 
 if ($pp.iisSitePort) {
-  $silentArgs += " VM_RP_IIS_SITE_PORT=`"$($pp.iisSitePort)`""
+  $silentArgs += " VO_REPORTER_WEB_SITE_PORT=`"$($pp.iisSitePort)`""
 }
 
 if ($pp.sslThumbprint) {
-  $silentArgs += " RP_THUMBPRINT=`"$($pp.sslThumbprint)`""
+  $silentArgs += " VO_REPORTER_WEB_SITE_CERTIFICATE_THUMBPRINT=`"$($pp.sslThumbprint)`""
 }
 
 $packageArgs = @{
