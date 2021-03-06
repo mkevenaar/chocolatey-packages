@@ -17,9 +17,9 @@ function GetResultInformation([string]$url32) {
 
   Get-WebFile $url32 $dest | Out-Null
   $checksumType = 'sha256'
-  $version = Get-Item $dest | % { $_.VersionInfo.ProductVersion }
-  $checksum32 = Get-FileHash $dest -Algorithm $checksumType | % Hash
-  rm -force $dest
+  $version = Get-Item $dest | ForEach-Object { $_.VersionInfo.ProductVersion }
+  $checksum32 = Get-FileHash $dest -Algorithm $checksumType | ForEach-Object Hash
+  Remove-Item -force $dest
 
   return @{
     URL32          = $url32
@@ -30,9 +30,9 @@ function GetResultInformation([string]$url32) {
 }
 
 function global:au_GetLatest {
-  $url32 = 'http://cdn.sa.services.tomtom.com/static/sa/Windows/InstallTomTomMyDriveConnect.exe'
+  $url32 = 'https://cdn.sa.services.tomtom.com/static/sa/Windows/InstallTomTomMyDriveConnect.exe'
 
-  Update-OnETagChanged -execUrl "http://cdn.sa.services.tomtom.com/static/sa/Windows/InstallTomTomMyDriveConnect.exe" `
+  Update-OnETagChanged -execUrl "https://cdn.sa.services.tomtom.com/static/sa/Windows/InstallTomTomMyDriveConnect.exe" `
     -OnETagChanged {
     GetResultInformation $url32
   } -OnUpdated { @{ URL32 = $url32; }}
