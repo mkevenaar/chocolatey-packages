@@ -18,14 +18,17 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
-    $re = "Windows (.+\d) (64|32) bit"
-    $url = $download_page.Links | Where-Object outerhtml -match $re | Select-Object -First 2 -expand href
+    $re = "Windows (.+\d) 64 bit"
+    $url64 = $download_page.Links | Where-Object outerhtml -match $re | Select-Object -First 1 -expand href
+
+    $re = "Windows (.+\d) 32 bit"
+    $url32 = $download_page.Links | Where-Object outerhtml -match $re | Select-Object -First 1 -expand href
 
     $version = ([regex]::Match(($download_page.Links | Where-Object outerhtml -match $re | Select-Object -First 1 -expand outerhtml),$re)).Groups[1].value
 
     return @{
-        URL32 = $url[1]
-        URL64 = $url[0]
+        URL32 = $url32
+        URL64 = $url64
         Version = $version
     }
 }
