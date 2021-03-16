@@ -6,12 +6,12 @@ The installer have been downloaded from their official download link listed on <
 and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <https://s3.us-east-2.amazonaws.com/orientdb3/releases/3.1.9/orientdb-3.1.9.zip>
+  32-Bit: <https://s3.us-east-2.amazonaws.com/orientdb3/releases/3.1.10/orientdb-3.1.10.zip>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: B1A3C5F7627745CCC98625F0E2523781574B57A398AE2A95BE6EDB8C60834474
+  checksum32: B3223FC265E737D612AAF8089DF3A153F2A68F920C8FF7AA1A3C682B087AA9D3
 
 File 'LICENSE.txt' is obtained from <https://github.com/orientechnologies/orientdb/blob/develop/license.txt>
