@@ -18,7 +18,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-    $url = $download_page.Links | Where-Object href -Match ".zip" | Select-Object -First 1 -ExpandProperty href
+    $url = $download_page.Links | Where-Object href -Match "wdapp.+.zip" | Select-Object -First 1 -ExpandProperty href
 
     $version = Get-Version $url
 
