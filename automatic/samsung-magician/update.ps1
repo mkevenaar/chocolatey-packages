@@ -17,13 +17,11 @@ function global:au_GetLatest {
 
     #Samsung_Magician_Installer.exe
     #http://downloadcenter.samsung.com/content/SW/201812/20181205162757370/Samsung_Magician_Installer.exe
-    $re  = "Samsung_Magician_Installer.zip"
-    $urlre = "fname=(.+\.zip)"
+    $re  = "Samsung_Magician_Installer_Official_(.+).zip"
 
     $url = $download_page.links | Where-Object href -match $re | Select-Object -First 1 -expand href
 
-    $version = $download_page.links | Where-Object href -match $re | Select-Object -First 1 -expand innerhtml
-    $version = (Get-Version $version).ToString()
+    $version = (Get-Version $url).ToString()
     
     return @{ 
         URL32 = $url
