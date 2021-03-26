@@ -6,14 +6,14 @@ The installer have been downloaded from their official download link listed on <
 and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <https://mediaarea.net/download/binary/mediainfo/20.09/MediaInfo_CLI_20.09_Windows_i386.zip>
-  64-Bit: <https://mediaarea.net/download/binary/mediainfo/20.09/MediaInfo_CLI_20.09_Windows_x64.zip>
+  32-Bit: <https://mediaarea.net/download/binary/mediainfo/21.03/MediaInfo_CLI_21.03_Windows_i386.zip>
+  64-Bit: <https://mediaarea.net/download/binary/mediainfo/21.03/MediaInfo_CLI_21.03_Windows_x64.zip>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: D0110F7AF4895719AA217CD4EC3A81199753C1068BFDF0072DB566967C0CE7AF
-  checksum64: 90C1F2067C305D2821286ED23FBA8E2AD20277D9DAC879357183B63A47BA9454
+  checksum32: 413E79DE9D75C294BFFFB7F215E978196909541FD92E3007781083933E3C997D
+  checksum64: 51C305214601F9A5A707756BDE64EFDA84BEB44DC91F36FB751CF31D8FE00FB8
 
 File 'LICENSE.txt' is obtained from <https://mediaarea.net/en/MediaInfo/License>
