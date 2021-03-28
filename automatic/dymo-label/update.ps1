@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'https://www.dymo.com/on/demandware.store/Sites-dymo-Site/en_US/Support-user-guides'
+$releases = 'https://www.dymo.com/on/demandware.store/Sites-dymo-Site/en_US/Support-Compatibility-Chart'
 
 function global:au_SearchReplace {
     @{
