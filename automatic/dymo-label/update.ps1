@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'http://www.dymo.com/en-US/online-support'
+$releases = 'https://www.dymo.com/on/demandware.store/Sites-dymo-Site/en_US/Support-user-guides'
 
 function global:au_SearchReplace {
     @{
@@ -13,12 +13,14 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+    Invoke-WebRequest -uri http://www.dymo.com -SessionVariable dl -method post
+
+    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing -WebSession $dl
 
     $re = "DL.+Setup.+.exe"
-    $url = $download_page.links | ? href -match $re | select -First 1 -expand href
+    $url = $download_page.links | Where-Object href -match $re | Select-Object -First 1 -expand href
 
-    $version = ([regex]::Match($url,'DL.+Setup.(.+).exe')).Captures.Groups[1].value
+    $version = ([regex]::Match($url,'DL.+Setup(.+).exe')).Captures.Groups[1].value
 
     return @{ 
         URL32 = $url
@@ -26,4 +28,4 @@ function global:au_GetLatest {
     }
 }
 
-update
+Update-Package -ChecksumFor 32
