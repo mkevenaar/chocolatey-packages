@@ -23,7 +23,7 @@ environment:
   # Github token to commit pushed packages to repository
   github_user_repo: mkevenaar/chocolatey-packages
   github_api_key:
-    secure: gS5AWBTk0ZRv4xaJVCWvbElR4U7WZLdeU2kWjJq3RTkIw2piL972moUclxPBFWaw
+    secure: 7oV5GC2DtX+5pFTHz3FnHijMV1LNjHyiyH/oUsVw9dMPh6r3AImgahHCbtHT+/d7
 
 
   # Mail credentials - for error notifications
