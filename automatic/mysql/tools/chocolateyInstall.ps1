@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop';
 
-$url = 'https://dev.mysql.com/get/Downloads/MySQL-8.0/mysql-8.0.23-winx64.zip'
+$url = 'https://dev.mysql.com/get/Downloads/MySQL-8.0/mysql-8.0.24-winx64.zip'
 $checksum = ''
 $checksumType = ''
 
