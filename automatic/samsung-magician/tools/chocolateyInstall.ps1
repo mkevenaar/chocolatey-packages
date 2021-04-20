@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = 'http://ssd.samsungsemi.com/ecomobile/ssd/update1.do?fname=/Samsung_Magician_Installer_Official_6.3.0.300.zip'
+$url          = 'https://p6wrew7f.azureedge.net/magician/202102/20210209_Magician_6.3_r26c7b0eafa6.zip/REAL/Samsung_Magician_Installer_Official_6.3.0.300.zip'
 $checksum     = '7017d74c5d2502b80d538c7fe5dd37b0d7cc12ad53f2437c633698e2a95c0be9'
 $checksumType = 'sha256'
 
