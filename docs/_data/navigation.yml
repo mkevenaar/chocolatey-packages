@@ -149,6 +149,8 @@
         url: /packages/nsis.install.html
       - page: "Nullsoft Scriptable Install System (Portable)"
         url: /packages/nsis.portable.html
+      - page: "OctoFarm"
+        url: /packages/octofarm.html
       - page: "OmniDB-app"
         url: /packages/omnidbapp.html
       - page: "OmniDB-server"
