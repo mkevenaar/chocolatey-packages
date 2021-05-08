@@ -2,7 +2,7 @@
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url          = 'https://www.ultraiso.com/uiso9_pe.exe'
-$checksum     = '0169aa94873f579455c6ba5993007f0830efbd00218fd8c43d1402262bca8d80'
+$checksum     = 'a49e945e5f6482b42c0e59e8187cddd4d736fcda0526768ca58a4411016d3e19'
 $checksumType = 'sha256'
 
 $packageArgs = @{
