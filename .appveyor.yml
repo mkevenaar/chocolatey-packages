@@ -63,7 +63,7 @@ install:
     @{
       'chocolatey' = $chocoVersion
       'wormies-au-helpers' = '0.4.1'
-      'autohotkey.portable' = '1.1.33.08'
+      'autohotkey.portable' = '1.1.33.09'
     }.GetEnumerator() | % {
       if (!(Test-Path "${env:nupkg_cache_path}\$($_.Key).$($_.Value).nupkg")) { rm "${env:nupkg_cache_path}\$($_.Key).*.nupkg" ; Invoke-WebRequest "https://chocolatey.org/api/v2/package/$($_.Key)/$($_.Value)" -OutFile "${env:nupkg_cache_path}\$($_.Key).$($_.Value).nupkg" }
       if ($_.Key -eq 'chocolatey') { cup $_.Key --version $_.Value --source "'${env:nupkg_cache_path};http://chocolatey.org/api/v2/'" --allow-downgrade }
