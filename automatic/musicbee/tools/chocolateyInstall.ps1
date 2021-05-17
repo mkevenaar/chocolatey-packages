@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = 'https://www.mediafire.com/file/w8bhvr9relceaxt/MusicBeeSetup_3_4.zip'
-$checksum     = 'dce5cbf8014849b1402c631f074c0a7f2884c3a5e58a0d39b71b407237bc3b38'
+$url          = 'https://www.mediafire.com/file/a2bnughg9i2sv4u/MusicBeeSetup_3_4_Update1.zip'
+$checksum     = '405010d8a387e20aa5754b14732f37008a7733e646aa9c4290cf8dcb53e4003f'
 $checksumType = 'sha256'
 
 
