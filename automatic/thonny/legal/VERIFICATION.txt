@@ -6,12 +6,12 @@ The installer have been downloaded from their official download link listed on <
 and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <https://github.com/thonny/thonny/releases/download/v3.3.7/thonny-3.3.7.exe>
+  32-Bit: <https://github.com/thonny/thonny/releases/download/v3.3.10/thonny-3.3.10.exe>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: 244ED6272DD369AB2985BAAA8528AF389EF4C0B058AD751BE7FF0DA199C56D36
+  checksum32: A28273CFB0CAB9FAC9ECDAD753F2A640CCD2441F654DFB6B960AA130D718E731
 
 File 'LICENSE.txt' is obtained from <https://github.com/thonny/thonny/blob/master/LICENSE.txt>
