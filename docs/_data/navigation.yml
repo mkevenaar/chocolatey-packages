@@ -107,6 +107,8 @@
         url: /packages/jetbrainstoolbox.html
       - page: "JetBrains YouTrack"
         url: /packages/jetbrainsyoutrack.html
+      - page: "Kibana"
+        url: /packages/kibana.html
       - page: "LastPass"
         url: /packages/lastpass.html
       - page: "MariaDB"
