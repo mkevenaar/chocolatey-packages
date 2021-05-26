@@ -2,18 +2,18 @@ VERIFICATION
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
-The installer have been downloaded from their official download link listed on <https://github.com/sqlitebrowser/sqlitebrowser/releases/latest>
+The installer have been downloaded from their official download link listed on <https://download.sqlitebrowser.org/>
 and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <https://github.com/sqlitebrowser/sqlitebrowser/releases/download/3.12.0/DB.Browser.for.SQLite-3.12.0-win32.zip>
-  64-Bit: <https://github.com/sqlitebrowser/sqlitebrowser/releases/download/3.12.0/DB.Browser.for.SQLite-3.12.0-win64.zip>
+  32-Bit: <https://download.sqlitebrowser.org/DB.Browser.for.SQLite-3.12.2-win32.zip>
+  64-Bit: <https://download.sqlitebrowser.org/DB.Browser.for.SQLite-3.12.2-win64.zip>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: 6A7676FB65027D7E808943D690E4211C8A0443BB32171F08827D8AFAE1F8D27C
-  checksum64: FCFBA5148EFE71D8717118CA56945CDEEA2F55A1177553F696CBC085C934F5F3
+  checksum32: 9344BCD50865663674F11C1D8297C0D2B4A4F7CED0A459C9E71E89382549454F
+  checksum64: 559EDC274A2823264E886159EAA36332FD5AF1F2F4B86BA2A5EF485B6420AB54
 
 File 'LICENSE.txt' is obtained from <https://github.com/sqlitebrowser/sqlitebrowser/blob/master/LICENSE>
