@@ -42,7 +42,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <copyright>Elasticsearch B.V.</copyright>
     <tags>data kibana visualization elastic admin</tags>
     <releaseNotes>https://www.elastic.co/guide/en/kibana/reference/7.13/release-notes-7.13.0.html</releaseNotes>
-    <licenseUrl>https://github.com/elastic/kibana/blob/master/LICENSE.md</licenseUrl>
+    <licenseUrl>https://github.com/elastic/kibana/blob/master/LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/kibana</packageSourceUrl>
     <docsUrl>https://www.elastic.co/guide/en/kibana/current/index.html</docsUrl>
