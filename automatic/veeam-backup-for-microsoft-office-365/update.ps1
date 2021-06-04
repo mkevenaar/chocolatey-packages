@@ -20,7 +20,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing -DisableKeepAlive
 
-    $reLatestbuild = "Current version is ([0-9]+\.[0-9]+\.[0-9]+(?:\.[0-9]+)(?:\.[0-9]+)?)( \((Update.*)\))?"
+    $reLatestbuild = "Current build is ([0-9]+\.[0-9]+\.[0-9]+(?:\.[0-9]+)(?:\.[0-9]+)?)( \((Update.*)\))?"
     $download_page.RawContent -imatch $reLatestbuild
     $version = $Matches[1]
 
@@ -37,6 +37,10 @@ function global:au_GetLatest {
     $filename = "VeeamBackupOffice365_$($isoVersion).zip"
     $url = "https://download2.veeam.com/VBO/v$($majversion)/GA/$($filename)"
     # -Replace ".iso", "_.iso"
+
+    if($isoVersion -eq "5.0.1.252") {
+      $url = "https://download2.veeam.com/VeeamKB/4158/VeeamBackupOffice365_5.0.1.252_KB4158.zip"
+    }
 
     $ReleaseNotes = $download_page.Links | Where-Object href -match "release_notes" | Select-Object -First 1 -ExpandProperty href
 
