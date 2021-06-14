@@ -1,22 +1,32 @@
 ﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@b40e08792b4d113bcb96960eaa184c093471a01e/icons/firefox-dev.png" width="48" height="48"/> [firefox-dev](https://chocolatey.org/packages/firefox-dev)
 
-Firefox Developer Edition replaces the Aurora channel in the Firefox Release Process. Like Aurora, features will land in the Developer Edition every six weeks, after they have stabilized in Nightly builds.
+Firefox Browser Developer Edition
 
-By using the Developer Edition, you gain access to tools and platform features at least 12 weeks before they reach the main Firefox release channel.
+Welcome to your new favorite browser. Get the latest features, fast performance, and the development tools you need to build for the open web.
+
+The browser made for developers. All the latest developer tools in beta, plus experimental features like the Multi-line Console Editor and WebSocket Inspector.
+
+A separate profile and path so you can easily run it alongside Release or Beta Firefox.
+
+Preferences tailored for web developers: Browser and remote debugging are enabled by default, as are the dark theme and developer toolbar button.
 
 Additionally, the following experimental developer tools are persistent features of Firefox Developer Edition:
 
-##### [WebIDE](https://developer.mozilla.org/docs/Tools/WebIDE)
+##### [Inactive CSS](https://hacks.mozilla.org/2019/10/firefox-70-a-bountiful-release-for-all/#developertools)
 
-Allows you to develop, deploy and debug Web apps directly in your browser, or on a Firefox OS device. It lets you create a new Firefox OS app (which is just a web app) from a template, or open up the code of an existing app. From there you can edit the app’s files. It’s one click to run the app in a simulator and one more to debug it with the developer tools. Web IDE - YouTube
+Firefox DevTools now grays out CSS declarations that don’t have an effect on the page. When you hover over the info icon, you’ll see a useful message about why the CSS is not being applied, including a hint about how to fix the problem.
 
-##### [Valence](https://developer.mozilla.org/docs/Tools/Firefox_Tools_Adapter) (previously called Firefox Tools Adapter)
+##### [Firefox DevTools](https://mozilladevelopers.github.io/playground/debugger/)
 
-Lets you develop and debug your app across multiple browsers and devices by connecting the Firefox dev tools to other major browser engines. Valence also extends the awesome tools we've built to debug Firefox OS and Firefox for Android to the other major mobile browsers including Chrome on Android and Safari on iOS. So far these tools include our Inspector, Debugger and Console and Style Editor.
+The new Firefox DevTools are powerful, flexible, and best of all, hackable. This includes a best-in-class JavaScript debugger, which can target multiple browsers and is built in React and Redux.
 
-#### [Web Audio Editor](https://developer.mozilla.org/docs/Tools/Web_Audio_Editor)
+#### [Master CSS Grid](https://mozilladevelopers.github.io/playground/css-grid/)
 
-Inspect and interact with Web Audio API in real time to ensure that all audio nodes are connected in the way you expect.
+Firefox is the only browser with tools built specifically for building and designing with CSS Grid. These tools allow you to visualize the grid, display associated area names, preview transformations on the grid and much more.
+
+#### [Fonts Panel](https://developer.mozilla.org/docs/Tools/Page_Inspector/How_to/Edit_fonts)
+
+The new fonts panel in Firefox DevTools gives developers quick access to all of the information they need about the fonts being used in an element. It also includes valuable information such as the font source, weight, style and more.
 
 Additional developer tools also available in the release build (via F12 key): [Responsive Design View](https://developer.mozilla.org/docs/Tools/Responsive_Design_View), [Page Inspector](https://developer.mozilla.org/docs/Tools/Page_Inspector), [Web Console](https://developer.mozilla.org/docs/Tools/Web_Console), [JavaScript Debugger](https://developer.mozilla.org/docs/Tools/Debugger), [Network Monitor](https://developer.mozilla.org/docs/Tools/Network_Monitor), and [Style Editor](https://developer.mozilla.org/docs/Tools/Style_Editor).
 
@@ -36,6 +46,4 @@ Every 6 weeks, Firefox developers take the current stable features of each build
 [Mozilla Developer Network documentation](https://developer.mozilla.org/en-US/Firefox/Developer_Edition)
 [Privacy policy](https://www.mozilla.org/en-US/privacy/firefox/)
 
-**Please Note**: This is an automatically updated package. If you find it is
-out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
