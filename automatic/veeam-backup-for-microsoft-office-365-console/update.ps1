@@ -35,7 +35,7 @@ function global:au_GetLatest {
     $majversion = $version.ToString(1)
 
     $filename = "VeeamBackupOffice365_$($isoVersion).zip"
-    $url = "https://download2.veeam.com/VBO/v$($majversion)/GA/$($filename)"
+    $url = "https://download2.veeam.com/VBO/v$($majversion)/$($filename)"
     # -Replace ".iso", "_.iso"
 
     if($isoVersion -eq "5.0.1.252") {
