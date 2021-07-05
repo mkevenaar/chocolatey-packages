@@ -2,9 +2,9 @@
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $url = 'https://download2.veeam.com/VBO/v5/VeeamBackupOffice365_5.0.2.22.zip'
-$checksum = 'd3eba9b999d39c9118881ff3d74b582b1be0e9ffb24c43f152905bb15e036b2f'
+$checksum = '64b5da0e271013b06f133b8e28cb267ce019185641939da4a0b3c866c48420c1'
 $checksumType = 'sha256'
-$version = '5.0.1.252'
+$version = '5.0.2.22'
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
