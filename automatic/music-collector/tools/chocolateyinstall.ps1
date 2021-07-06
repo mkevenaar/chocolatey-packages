@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = 'https://installers.collectorz.com/music-win/musiccollectorsetup2121.exe'
-$checksum     = '5d111398254fda0b55f05b8d4191f99514feef35a440a2d55232c25bfbf95b10'
+$url          = 'https://installers.collectorz.com/music-win/musiccollectorsetup2122.exe'
+$checksum     = '7c553e77c45ca9fa3017edb7b55f5198cce435d79c136ca99307e10d1c92ff83'
 $checksumType = 'sha256'
 
 $packageArgs = @{
