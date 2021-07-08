@@ -30,6 +30,10 @@ function global:au_GetLatest {
 
   $url = "https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-$($version)-windows-x86_64.zip"
 
+  if ($version.toString(1) -eq 6) {
+    $url = "https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-$($version).zip"
+  }
+
   $majmin = $version.toString(2)
 
   $releasenotes = "https://www.elastic.co/guide/en/elasticsearch/reference/$($majmin)/release-notes-$($version).html"
