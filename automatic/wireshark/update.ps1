@@ -1,6 +1,6 @@
 Import-Module au
 
-$version_page = 'https://www.wireshark.org/#download'
+$version_page = 'https://www.wireshark.org/download.html'
 # $releases64 = 'https://www.wireshark.org/download/win64/all-versions/'
 # $releases32 = 'https://www.wireshark.org/download/win32/all-versions/'
 
