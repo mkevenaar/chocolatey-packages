@@ -62,7 +62,7 @@ let them know the package is no longer updating correctly.
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
     <dependencies>
-      <dependency id="dotnetcore3-desktop-runtime" version="3.1.7" />
+      <dependency id="dotnetcore-desktopruntime" version="3.1.10" />
     </dependencies>
 
     <!--<provides>NOT YET IMPLEMENTED</provides>-->
