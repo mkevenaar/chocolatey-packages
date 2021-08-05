@@ -25,6 +25,9 @@ environment:
   github_api_key:
     secure: 7oV5GC2DtX+5pFTHz3FnHijMV1LNjHyiyH/oUsVw9dMPh6r3AImgahHCbtHT+/d7
 
+  # VT API Key
+  VT_APIKEY:
+    secure: MEUgRkA5U5KH8U9bfV6IvExA1QgTPDp57sCslnXDtri0n8qbaVcwThsxKeLQPjjRDE5urfec5xsspKd4lqD62DVAxPJMfwWmpGsgy6OCBgY
 
   # Mail credentials - for error notifications
   mail_user:
@@ -64,6 +67,7 @@ install:
       'chocolatey' = $chocoVersion
       'wormies-au-helpers' = '0.4.1'
       'autohotkey.portable' = '1.1.33.09'
+      'vt-cli' = '0.9.0'
     }.GetEnumerator() | % {
       if (!(Test-Path "${env:nupkg_cache_path}\$($_.Key).$($_.Value).nupkg")) { rm "${env:nupkg_cache_path}\$($_.Key).*.nupkg" ; Invoke-WebRequest "https://chocolatey.org/api/v2/package/$($_.Key)/$($_.Value)" -OutFile "${env:nupkg_cache_path}\$($_.Key).$($_.Value).nupkg" }
       if ($_.Key -eq 'chocolatey') { cup $_.Key --version $_.Value --source "'${env:nupkg_cache_path};http://chocolatey.org/api/v2/'" --allow-downgrade }
