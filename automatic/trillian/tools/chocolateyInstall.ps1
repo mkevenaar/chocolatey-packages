@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = 'https://www.ceruleanstudios.com/trillian-v6.4.0.5.msi'
-$checksum     = 'ba92118f85cf0b52905b3dcb1167a4a1a1ddeae9c622690763587e9a14d3dbdb'
+$url          = 'https://trillian.im/get/windows/6.5/trillian-v6.5.0.17.msi'
+$checksum     = 'd91d9402591b2ee567d0f4bc0332f38a96aba6caaf33ed6bdf77d2e72e29d897'
 $checksumType = 'sha256'
 
 $packageArgs = @{
