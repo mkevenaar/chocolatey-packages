@@ -17,12 +17,11 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-    $url = $download_page.Links | Where-Object href -Match ".zip" | Select-Object -First 1 -ExpandProperty data-direct-path
+    $download_page = Invoke-WebRequest -Uri $releases
+    $url = (($download_page.ParsedHtml.getElementsByTagName('button') | Where-Object innerHtml -Match ".zip").attributes | Where-Object name -eq "data-direct-path").nodeValue
     $url = [uri]::EscapeUriString($url) -replace "&#174;", "%C2%AE"
 
-    $versionregex = "<meta name=`"DownloadVersion`" content=`"(.+)`" />"
-    $version = ([regex]::Match($download_page.Content, $versionregex)).Captures.Groups[1].value
+    $version = $download_page.ParsedHtml.getElementsByName('DownloadVersion') | Select-Object -First 1 -ExpandProperty content
 
     $releaseNotes = $download_page.Links | Where-Object href -Match ".pdf" | Where-Object href -Match "Release" | Select-Object -First 1 -ExpandProperty href
 
