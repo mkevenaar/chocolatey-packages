@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@6156782c3987fd65b32361e135816bbda2bfe565/icons/octofarm.png" width="32" height="32"/> [![OctoFarm](https://img.shields.io/chocolatey/v/octofarm.svg?label=OctoFarm)](https://chocolatey.org/packages/octofarm) [![OctoFarm](https://img.shields.io/chocolatey/dt/octofarm.svg)](https://chocolatey.org/packages/octofarm)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@34c516e4abd5510c00334737fe156755adcbab72/icons/octofarm.png" width="32" height="32"/> [![OctoFarm](https://img.shields.io/chocolatey/v/octofarm.svg?label=OctoFarm)](https://chocolatey.org/packages/octofarm) [![OctoFarm](https://img.shields.io/chocolatey/dt/octofarm.svg)](https://chocolatey.org/packages/octofarm)
 
 ## Usage
 
