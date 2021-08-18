@@ -26,24 +26,24 @@ Meshmixer is state-of-the-art software for working with triangle meshes. Do you 
 
 ## Features
 
- - Drag-and-Drop Mesh Mixing
- - 3D Sculpting and Surface Stamping
- - Robust Convert-to-Solid for 3D printing
- - 3D Patterns and Lattices
- - Hollowing (with escape holes!)
- - Branching Support Structures for 3D printing
- - Automatic Print Bed Orientation Optimization, Layout and Packing
- - Advanced selection tools including brushing, surface-lasso, and constraints
- - Remeshing and Mesh Simplification/Reducing
- - Mesh Smoothing and Free-Form Deformations
- - Hole Filling, Bridging, Boundary Zippering, and Auto-Repair
- - Plane Cuts, Mirroring, and Booleans
- - Extrusions, Offset Surfaces, and Project-to-Target-Surface
- - Interior Tubes and Channels
- - Precise 3D Positioning with Pivots
- - Automatic Alignment of Surfaces
- - 3D Measurements
- - Stability and Thickness Analysis
+- Drag-and-Drop Mesh Mixing
+- 3D Sculpting and Surface Stamping
+- Robust Convert-to-Solid for 3D printing
+- 3D Patterns and Lattices
+- Hollowing (with escape holes!)
+- Branching Support Structures for 3D printing
+- Automatic Print Bed Orientation Optimization, Layout and Packing
+- Advanced selection tools including brushing, surface-lasso, and constraints
+- Remeshing and Mesh Simplification/Reducing
+- Mesh Smoothing and Free-Form Deformations
+- Hole Filling, Bridging, Boundary Zippering, and Auto-Repair
+- Plane Cuts, Mirroring, and Booleans
+- Extrusions, Offset Surfaces, and Project-to-Target-Surface
+- Interior Tubes and Channels
+- Precise 3D Positioning with Pivots
+- Automatic Alignment of Surfaces
+- 3D Measurements
+- Stability and Thickness Analysis
 
 ## Notes
 
@@ -52,6 +52,7 @@ This package will install in the default Windows program directory, and not in C
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
+
 
 ## Links
 
