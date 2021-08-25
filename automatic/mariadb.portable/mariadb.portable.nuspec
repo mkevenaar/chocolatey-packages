@@ -47,7 +47,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/mariadb.portable</packageSourceUrl>
     <docsUrl>https://mariadb.com/kb/</docsUrl>
     <projectSourceUrl>https://github.com/MariaDB/server</projectSourceUrl>
-    <bugTrackerUrl>https://mariadb.atlassian.net/issues/</bugTrackerUrl>
+    <bugTrackerUrl>https://mariadb.com/kb/en/mariadb-community-bug-reporting/</bugTrackerUrl>
     <summary>Enhanced drop-in replacement for MySQL</summary>
     <description><![CDATA[MariaDB is designed as a drop-in replacement of [MySQL](https://chocolatey.org/packages/mysql) with more features, new storage engines, fewer bugs, and better performance. MariaDB server is a community developed fork of MySQL server started by core members of the original MySQL team.
 
