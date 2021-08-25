@@ -16,6 +16,7 @@ Every 6 weeks, Firefox developers take the current stable features of each build
 - Firefox Nightly (you are here)
 
 [Forum](http://forums.mozillazine.org/viewforum.php?f=23)
+[Mozilla Developer Network documentation](https://developer.mozilla.org/en-US/docs/mozilla-central)
 [Privacy policy](https://www.mozilla.org/en-US/privacy/firefox/)
 
 **Please Note**: This is an automatically updated package. If you find it is
