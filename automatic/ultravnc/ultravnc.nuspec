@@ -42,11 +42,12 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <copyright>UltraVNC</copyright>
     <tags>vnc client server remote admin</tags>
     <!-- <releaseNotes>http://www.uvnc.com/general/whatsnew.html</releaseNotes> -->
-    <licenseUrl>http://www.gnu.org/licenses/gpl.html</licenseUrl>
+    <licenseUrl>https://github.com/ultravnc/UltraVNC/blob/main/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/ultravnc</packageSourceUrl>
     <docsUrl>https://www.uvnc.com/docs/uvnc-server.html</docsUrl>
-    <projectSourceUrl>https://sourceforge.net/p/ultravnc/code/</projectSourceUrl>
+    <projectSourceUrl>https://github.com/ultravnc/UltraVNC</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/ultravnc/UltraVNC/issues</bugTrackerUrl>
     <mailingListUrl>http://forum.ultravnc.info/</mailingListUrl>
     <summary>VNC client and server graphical desktop sharing via RFB protocol</summary>
     <description><![CDATA[UltraVNC is an open source application that uses the VNC protocol to control another computer remotely over a network connection.  UltraVNC allows the use of a remote computer as if the user were in front of it. This is achieved by sending mouse movements and key-presses to the remote computer, and replicating the remote computer's display (subject to differences in resolution) locally in real time. UltraVNC bears a strong resemblance to RealVNC Free Edition. However, in addition to remote control it adds various features, such as an encryption plugin to secure the client/server connection. It also supports file transfers, chat functionality and various authentication methods. The two computers must be able to communicate across a network, such as a local subnet, internal network, or the Internet.

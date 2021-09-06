@@ -16,5 +16,5 @@ and can be verified like this:
   checksum32: FF80BBD4CDA8430C5FA0441ADBBCB44C5B270277AE36A76E052311E6056A37B7
   checksum64: 3580B8C1EDBA58610F0FAB5BB3DA1F4CF7D5FF27304DCAF5E6B3D23E8B56A4B6
 
-File 'LICENSE.txt' is obtained from <https://github.com/pulumi/pulumi/blob/master/LICENSE>
+File 'LICENSE.txt' is obtained from <https://github.com/ultravnc/UltraVNC/blob/main/LICENSE>
 This is the official GPL License as shown here <https://www.uvnc.com/downloads/ultravnc/128-download-ultravnc-1230.html>
