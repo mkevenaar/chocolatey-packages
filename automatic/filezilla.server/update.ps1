@@ -7,15 +7,15 @@ function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix }
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
     #https://dl4.cdn.filezilla-project.org/server/FileZilla_Server-0_9_60_2.exe?h=l1hTG480fEy-Fg53U0NbAQ&x=1551182504
-    $re = "FileZilla_Server-(.+)\.exe"
+    $re = "FileZilla_Server_(.+)_.+\.exe"
 
-    $url = $download_page.Links | ? href -match $re | select -first 1 -expand href
-    
+    $url = $download_page.Links | Where-Object href -match $re | Select-Object -first 1 -expand href
+
     $version = (([regex]::Match($url, $re)).Captures.Groups[1].value).replace('_','.')
 
-    return @{ 
+    return @{
         URL32 = $url
-        Version = $version 
+        Version = $version
         FileType = 'exe'
     }
 }
