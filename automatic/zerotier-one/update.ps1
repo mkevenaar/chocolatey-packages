@@ -8,11 +8,17 @@ function global:au_GetLatest {
 
   $version = ($download_page.Links | Where-Object href -Match "releases/tag" | Select-Object -First 1 -ExpandProperty href) -Split "/" | Select-Object -Last 1
 
+  if ($version -eq '1.6.6-fixed-windows-inf') {
+    $version = '1.6.6'
+  }
+
+  $version = Get-Version($version)
+
   $url32 = 'https://download.zerotier.com/RELEASES/' + $version + '/dist/ZeroTier%20One.msi'
 
   return @{
         URL32 = $url32
-        Version = $version 
+        Version = $version
         FileType = 'msi'
     }
 }

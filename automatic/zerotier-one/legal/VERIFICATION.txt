@@ -12,7 +12,7 @@ and can be verified like this:
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: 9974E4524193270BAFF791621E6DB918B3CB2FC480B41D8F8CA0F36EE3355298
+  checksum32: 098C55C9477914F68D327073C0B58EF9FAE230FE6592FF60EAAA15765DD57683
 
 File 'LICENSE.txt' is obtained from <https://github.com/zerotier/ZeroTierOne/blob/master/COPYING>
 
