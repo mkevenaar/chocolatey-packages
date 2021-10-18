@@ -2,7 +2,7 @@
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $url = 'https://download2.veeam.com/VBO/v5/VeeamBackupOffice365_5.0.3.1033.zip'
-$checksum = '0ab3dc0ff56a84eca5440b5729dfa915a2bde3bbc858d37f3f653014519bc2dc'
+$checksum = '3aa6c9bd564f6362f33d5cec376fcae0ab45903b6db18a202e82e9a8059e2ae7'
 $checksumType = 'sha256'
 $version = '5.0.3.1033'
 
