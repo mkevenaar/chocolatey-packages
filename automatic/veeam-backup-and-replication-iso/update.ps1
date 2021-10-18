@@ -30,8 +30,8 @@ function global:au_GetLatest {
         $isoVersion = "$($isoVersion).$updateVersion"
     }
 
-    if($version -match "11.0.0.837") {
-      $isoVersion = "11.0.0.837_20210220"
+    if($version -match "11.0.1.1261") {
+      $isoVersion = "11.0.1.1261_20211005"
     }
 
     $version = Get-Version ($version)
@@ -49,6 +49,25 @@ function global:au_GetLatest {
         Version = $version
         ReleaseNotes = $ReleaseNotes
     }
+}
+
+function global:au_AfterUpdate ($Package) {
+
+  if ($Package.RemoteVersion -ne $Package.NuspecVersion) {
+
+      Get-RemoteFiles -NoSuffix
+
+      $file = [IO.Path]::Combine("tools", $Latest.FileName32)
+
+      Write-Output "Submitting file $file to VirusTotal"
+
+      # Assumes vt-cli Chocolatey package is installed!
+      vt.exe scan file $file --apikey $env:VT_APIKEY
+
+      Remove-Item $file -ErrorAction Ignore
+
+      $Latest.Remove("FileName32")
+  }
 }
 
 if ($MyInvocation.InvocationName -ne '.') {
