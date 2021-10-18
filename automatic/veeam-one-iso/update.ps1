@@ -19,7 +19,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing -DisableKeepAlive
 
-    $reLatestbuild = "Current version is ([0-9]+\.[0-9]+\.[0-9]+(?:\.[0-9]+)(?:\.[0-9]+)?)( \((Update.*)\))?"
+    $reLatestbuild = "Current build is ([0-9]+\.[0-9]+\.[0-9]+(?:\.[0-9]+)(?:\.[0-9]+)?)( \((Update.*)\))?"
     $download_page.RawContent -imatch $reLatestbuild
     $version = $Matches[1]
 
@@ -30,8 +30,8 @@ function global:au_GetLatest {
         $isoVersion = "$($isoVersion).$updateVersion"
     }
 
-    if($version -eq "11.0.0.1379") {
-      $isoVersion = "11.0.0.1379_20210209"
+    if($version -eq "11.0.1.1880") {
+      $isoVersion = "11.0.1.1880_20210922"
     }
 
     $version = Get-Version ($version)
@@ -48,6 +48,25 @@ function global:au_GetLatest {
         Version = $version
         ReleaseNotes = $ReleaseNotes
     }
+}
+
+function global:au_AfterUpdate ($Package) {
+
+  if ($Package.RemoteVersion -ne $Package.NuspecVersion) {
+
+      Get-RemoteFiles -NoSuffix
+
+      $file = [IO.Path]::Combine("tools", $Latest.FileName32)
+
+      Write-Output "Submitting file $file to VirusTotal"
+
+      # Assumes vt-cli Chocolatey package is installed!
+      vt.exe scan file $file --apikey $env:VT_APIKEY
+
+      Remove-Item $file -ErrorAction Ignore
+
+      $Latest.Remove("FileName32")
+  }
 }
 
 if ($MyInvocation.InvocationName -ne '.') {
