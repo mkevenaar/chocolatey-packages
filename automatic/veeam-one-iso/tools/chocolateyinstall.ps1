@@ -1,11 +1,11 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url = 'https://download2.veeam.com/VONE/v11/VeeamONE_11.0.0.1379_20210209.iso'
-$checksum = '6860dd3d9161d81eede7c515110907738a8090903d315bf0b26d54ef9bf78256'
+$url = 'https://download2.veeam.com/VONE/v11/VeeamONE_11.0.1.1880_20210922.iso'
+$checksum = 'b1724cd66a75b17911c43434f501ff5ecf8944b702d83e5d55fa5d0fd0ca0475'
 $checksumType = 'sha256'
 
-$filename = 'VeeamONE_11.0.0.1379_20210209.iso'
+$filename = 'VeeamONE_11.0.1.1880_20210922.iso'
 $packagePath = $(Split-Path -parent $toolsDir)
 $installPath = Join-Path $packagePath $filename
 

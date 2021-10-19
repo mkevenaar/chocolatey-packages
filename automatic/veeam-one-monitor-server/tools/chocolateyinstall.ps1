@@ -4,7 +4,7 @@ $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $isoPackageName = 'veeam-one-iso'
 $scriptPath = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 $commonPath = $(Split-Path -parent $(Split-Path -parent $scriptPath))
-$filename = 'VeeamONE_11.0.0.1379_20210209.iso'
+$filename = 'VeeamONE_11.0.1.1880_20210922.iso'
 $installPath = Join-Path  (Join-Path $commonPath $isoPackageName) $filename
 
 $fileLocation = 'Monitor\VeeamONE.Monitor.Server.x64.msi'

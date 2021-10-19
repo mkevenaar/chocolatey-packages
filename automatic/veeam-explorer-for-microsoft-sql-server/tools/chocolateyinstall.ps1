@@ -4,7 +4,7 @@ $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $isoPackageName = 'veeam-backup-and-replication-iso'
 $scriptPath = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 $commonPath = $(Split-Path -parent $(Split-Path -parent $scriptPath))
-$filename = 'VeeamBackup&Replication_10.0.1.4854.iso'
+$filename = 'VeeamBackup&Replication_11.0.1.1261_20211005.iso'
 $installPath = Join-Path  (Join-Path $commonPath $isoPackageName) $filename
 
 $fileLocation = 'Explorers\VeeamExplorerForSQL.msi'
