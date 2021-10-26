@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'https://www.trillian.im/download/'
+$releases = 'https://www.trillian.im/get/windows/msi/'
 
 function global:au_SearchReplace {
     @{
@@ -13,17 +13,14 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases
 
-    $url = $download_page.Links.FindById("download_link") | select -First 1 -expand href
-    $url = "https://www.trillian.im" + $url + "msi/"
-    $url = [System.Net.HttpWebRequest]::Create($url).GetResponse().ResponseUri.AbsoluteUri
+    $url = Get-RedirectedUrl $releases
 
     $version = ([regex]::Match($url,'-v([\d+\.]+).msi')).Captures.Groups[1].value
-    
-    return @{ 
+
+    return @{
         URL32 = $url
-        Version = $version 
+        Version = $version
     }
 }
 
