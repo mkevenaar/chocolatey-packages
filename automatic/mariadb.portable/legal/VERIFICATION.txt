@@ -2,18 +2,18 @@ VERIFICATION
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
-The installer have been downloaded from their official download link listed on <https://downloads.mariadb.org/mariadb/>
+The installer have been downloaded from their official download link listed on <https://mariadb.org/download>
 and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <https://downloads.mariadb.org/f/mariadb-10.6.4/win32-packages/mariadb-10.6.4-win32.zip>
-  64-Bit: <https://downloads.mariadb.org/f/mariadb-10.6.4/winx64-packages/mariadb-10.6.4-winx64.zip>
+  32-Bit: <http://downloads.mariadb.org/rest-api/mariadb/10.5.12/mariadb-10.5.12-win32.zip>
+  64-Bit: <http://downloads.mariadb.org/rest-api/mariadb/10.5.12/mariadb-10.5.12-winx64.zip>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
-  checksum type: sha256
-  checksum32: 1A2431B9D962CCC641FE76214A869E46E435F38BE4DDD862CEBDB0BD8A11FF47
-  checksum64: 25440575882FBE54A442C5FB8A7C76B70588E03A4BE093DFB1694CAD8FBDFDD7
+  checksum type: 
+  checksum32: 27cf5f8ac694be7f9e542c43ef410506cb9a9a91967467267690fdaaa64af114
+  checksum64: 839b38bdb75f3f17da9e8d081d0535ccf21a03d772c65a1f29e921bcc7bcdbda
 
 File 'LICENSE.txt' is obtained from <https://github.com/MariaDB/server/blob/10.3/COPYING>
