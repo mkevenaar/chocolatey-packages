@@ -5,7 +5,7 @@ $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $toolsDir
-  file           = "$toolsdir\texstudio-4.0.3-win-portable-qt5.zip"
+  file           = "$toolsdir\texstudio-4.0.4-win-portable-qt5.zip"
 }
 
 Install-ChocolateyZipPackage  @packageArgs
