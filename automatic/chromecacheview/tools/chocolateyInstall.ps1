@@ -2,7 +2,7 @@
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url          = 'http://www.nirsoft.net/utils/chromecacheview.zip'
-$checksum     = 'fcb8bb0ec64fefaf3ced4ccf2573fd61527fe9833a2a16ea04d66a2615747e08'
+$checksum     = 'e27e457bd881135a8ac18dab70086eb49cd66ef4752f9634ae5590e14f2f1b97'
 $checksumType = 'sha256'
 
 $packageArgs = @{
