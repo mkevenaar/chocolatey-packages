@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@674a50b9bcfbfdf756e5473b9aecd8522675bc41/icons/speedfan.png" width="32" height="32"/> [![SpeedFan](https://img.shields.io/chocolatey/v/speedfan.svg?label=SpeedFan)](https://chocolatey.org/packages/speedfan) [![SpeedFan](https://img.shields.io/chocolatey/dt/speedfan.svg)](https://chocolatey.org/packages/speedfan)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@674a50b9bcfbfdf756e5473b9aecd8522675bc41/icons/speedfan.png" width="32" height="32"/> [![SpeedFan](https://img.shields.io/chocolatey/v/speedfan.svg?label=SpeedFan)](https://community.chocolatey.org/packages/speedfan) [![SpeedFan](https://img.shields.io/chocolatey/dt/speedfan.svg)](https://community.chocolatey.org/packages/speedfan)
 
 ## Usage
 
@@ -34,7 +34,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/speedfan)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/speedfan)
 
 [Software Site](http://www.almico.com/speedfan.php)
 

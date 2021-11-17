@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@23f6b5d54a231690eec95199bc5ca82b208aabba/icons/omnidb-app.png" width="32" height="32"/> [![OmniDB-app](https://img.shields.io/chocolatey/v/omnidb-app.svg?label=OmniDB-app)](https://chocolatey.org/packages/omnidb-app) [![OmniDB-app](https://img.shields.io/chocolatey/dt/omnidb-app.svg)](https://chocolatey.org/packages/omnidb-app)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@23f6b5d54a231690eec95199bc5ca82b208aabba/icons/omnidb-app.png" width="32" height="32"/> [![OmniDB-app](https://img.shields.io/chocolatey/v/omnidb-app.svg?label=OmniDB-app)](https://community.chocolatey.org/packages/omnidb-app) [![OmniDB-app](https://img.shields.io/chocolatey/dt/omnidb-app.svg)](https://community.chocolatey.org/packages/omnidb-app)
 
 ## Usage
 
@@ -43,7 +43,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/omnidb-app)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/omnidb-app)
 
 [Software Site](https://omnidb.org/)
 

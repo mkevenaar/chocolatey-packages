@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@8b3048f63ff7034116beb3aa2dd82178f5eac3d8/icons/chatty.png" width="32" height="32"/> [![Chatty](https://img.shields.io/chocolatey/v/chatty.svg?label=Chatty)](https://chocolatey.org/packages/chatty) [![Chatty](https://img.shields.io/chocolatey/dt/chatty.svg)](https://chocolatey.org/packages/chatty)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@8b3048f63ff7034116beb3aa2dd82178f5eac3d8/icons/chatty.png" width="32" height="32"/> [![Chatty](https://img.shields.io/chocolatey/v/chatty.svg?label=Chatty)](https://community.chocolatey.org/packages/chatty) [![Chatty](https://img.shields.io/chocolatey/dt/chatty.svg)](https://community.chocolatey.org/packages/chatty)
 
 ## Usage
 
@@ -78,7 +78,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/chatty)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/chatty)
 
 [Software Site](http://chatty.github.io)
 

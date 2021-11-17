@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@05282da8fb86d53634363900131ef66e316ea144/icons/clion-ide.png" width="32" height="32"/> [![JetBrains Clion](https://img.shields.io/chocolatey/v/clion-ide.svg?label=JetBrains+Clion)](https://chocolatey.org/packages/clion-ide) [![JetBrains Clion](https://img.shields.io/chocolatey/dt/clion-ide.svg)](https://chocolatey.org/packages/clion-ide)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@05282da8fb86d53634363900131ef66e316ea144/icons/clion-ide.png" width="32" height="32"/> [![JetBrains Clion](https://img.shields.io/chocolatey/v/clion-ide.svg?label=JetBrains+Clion)](https://community.chocolatey.org/packages/clion-ide) [![JetBrains Clion](https://img.shields.io/chocolatey/dt/clion-ide.svg)](https://community.chocolatey.org/packages/clion-ide)
 
 ## Usage
 
@@ -34,7 +34,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/clion-ide)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/clion-ide)
 
 [Software Site](https://www.jetbrains.com/clion/)
 

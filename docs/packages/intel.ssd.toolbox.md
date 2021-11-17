@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@2a0d1b78a421771353d15c06da4341ae2b325cda/icons/intel.ssd.toolbox.png" width="32" height="32"/> [![[Deprecated] Intel SSD Toolbox](https://img.shields.io/chocolatey/v/intel.ssd.toolbox.svg?label=%5BDeprecated%5D+Intel+SSD+Toolbox)](https://chocolatey.org/packages/intel.ssd.toolbox) [![[Deprecated] Intel SSD Toolbox](https://img.shields.io/chocolatey/dt/intel.ssd.toolbox.svg)](https://chocolatey.org/packages/intel.ssd.toolbox)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@2a0d1b78a421771353d15c06da4341ae2b325cda/icons/intel.ssd.toolbox.png" width="32" height="32"/> [![[Deprecated] Intel SSD Toolbox](https://img.shields.io/chocolatey/v/intel.ssd.toolbox.svg?label=%5BDeprecated%5D+Intel+SSD+Toolbox)](https://community.chocolatey.org/packages/intel.ssd.toolbox) [![[Deprecated] Intel SSD Toolbox](https://img.shields.io/chocolatey/dt/intel.ssd.toolbox.svg)](https://community.chocolatey.org/packages/intel.ssd.toolbox)
 
 ## Usage
 
@@ -50,7 +50,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/intel.ssd.toolbox)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/intel.ssd.toolbox)
 
 [Software Site](https://downloadcenter.intel.com/download/30058/Intel-Memory-and-Storage-Tool-GUI)
 

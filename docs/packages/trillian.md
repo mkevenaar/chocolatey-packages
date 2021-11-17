@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@c52e6367f74d115a1311e51e2fac041fd8d54cc4/icons/trillian.png" width="32" height="32"/> [![Trillian](https://img.shields.io/chocolatey/v/trillian.svg?label=Trillian)](https://chocolatey.org/packages/trillian) [![Trillian](https://img.shields.io/chocolatey/dt/trillian.svg)](https://chocolatey.org/packages/trillian)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@c52e6367f74d115a1311e51e2fac041fd8d54cc4/icons/trillian.png" width="32" height="32"/> [![Trillian](https://img.shields.io/chocolatey/v/trillian.svg?label=Trillian)](https://community.chocolatey.org/packages/trillian) [![Trillian](https://img.shields.io/chocolatey/dt/trillian.svg)](https://community.chocolatey.org/packages/trillian)
 
 ## Usage
 
@@ -34,7 +34,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/trillian)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/trillian)
 
 [Software Site](https://www.trillian.im/download/)
 

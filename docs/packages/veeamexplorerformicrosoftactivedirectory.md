@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@cb0893d72601d24f5f6680fdf6b59b8cecc83a5f/icons/veeam-explorer-for-microsoft-active-directory.png" width="32" height="32"/> [![Veeam Explorer for Microsoft Active Directory](https://img.shields.io/chocolatey/v/veeam-explorer-for-microsoft-active-directory.svg?label=Veeam+Explorer+for+Microsoft+Active+Directory)](https://chocolatey.org/packages/veeam-explorer-for-microsoft-active-directory) [![Veeam Explorer for Microsoft Active Directory](https://img.shields.io/chocolatey/dt/veeam-explorer-for-microsoft-active-directory.svg)](https://chocolatey.org/packages/veeam-explorer-for-microsoft-active-directory)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@cb0893d72601d24f5f6680fdf6b59b8cecc83a5f/icons/veeam-explorer-for-microsoft-active-directory.png" width="32" height="32"/> [![Veeam Explorer for Microsoft Active Directory](https://img.shields.io/chocolatey/v/veeam-explorer-for-microsoft-active-directory.svg?label=Veeam+Explorer+for+Microsoft+Active+Directory)](https://community.chocolatey.org/packages/veeam-explorer-for-microsoft-active-directory) [![Veeam Explorer for Microsoft Active Directory](https://img.shields.io/chocolatey/dt/veeam-explorer-for-microsoft-active-directory.svg)](https://community.chocolatey.org/packages/veeam-explorer-for-microsoft-active-directory)
 
 ## Usage
 
@@ -37,7 +37,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/veeam-explorer-for-microsoft-active-directory)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/veeam-explorer-for-microsoft-active-directory)
 
 [Software Site](http://www.veeam.com/)
 

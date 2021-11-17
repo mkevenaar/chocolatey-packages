@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@5ba00a7d7af3ba4d40acabfaa8c37fa14d43fdce/icons/spark.png" width="32" height="32"/> [![Spark](https://img.shields.io/chocolatey/v/spark.svg?label=Spark)](https://chocolatey.org/packages/spark) [![Spark](https://img.shields.io/chocolatey/dt/spark.svg)](https://chocolatey.org/packages/spark)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@5ba00a7d7af3ba4d40acabfaa8c37fa14d43fdce/icons/spark.png" width="32" height="32"/> [![Spark](https://img.shields.io/chocolatey/v/spark.svg?label=Spark)](https://community.chocolatey.org/packages/spark) [![Spark](https://img.shields.io/chocolatey/dt/spark.svg)](https://community.chocolatey.org/packages/spark)
 
 ## Usage
 
@@ -35,7 +35,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/spark)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/spark)
 
 [Software Site](https://www.igniterealtime.org/projects/spark)
 

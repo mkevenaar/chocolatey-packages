@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@80cca03cb46a5447d642966a1fe87ab354ae8b3a/icons/book-collector.png" width="32" height="32"/> [![Book Collector](https://img.shields.io/chocolatey/v/book-collector.svg?label=Book+Collector)](https://chocolatey.org/packages/book-collector) [![Book Collector](https://img.shields.io/chocolatey/dt/book-collector.svg)](https://chocolatey.org/packages/book-collector)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@80cca03cb46a5447d642966a1fe87ab354ae8b3a/icons/book-collector.png" width="32" height="32"/> [![Book Collector](https://img.shields.io/chocolatey/v/book-collector.svg?label=Book+Collector)](https://community.chocolatey.org/packages/book-collector) [![Book Collector](https://img.shields.io/chocolatey/dt/book-collector.svg)](https://community.chocolatey.org/packages/book-collector)
 
 ## Usage
 
@@ -33,7 +33,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/book-collector)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/book-collector)
 
 [Software Site](https://www.collectorz.com/book/book-collector)
 

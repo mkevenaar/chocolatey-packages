@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.rawgit.com/dtgm/chocolatey-packages/8c6789d80411f69d6d706e202aebf1207805ec38/icons/mbsa.png" width="32" height="32"/> [![Microsoft Baseline Security Analyzer](https://img.shields.io/chocolatey/v/mbsa.svg?label=Microsoft+Baseline+Security+Analyzer)](https://chocolatey.org/packages/mbsa) [![Microsoft Baseline Security Analyzer](https://img.shields.io/chocolatey/dt/mbsa.svg)](https://chocolatey.org/packages/mbsa)
+﻿# <img src="https://cdn.rawgit.com/dtgm/chocolatey-packages/8c6789d80411f69d6d706e202aebf1207805ec38/icons/mbsa.png" width="32" height="32"/> [![Microsoft Baseline Security Analyzer](https://img.shields.io/chocolatey/v/mbsa.svg?label=Microsoft+Baseline+Security+Analyzer)](https://community.chocolatey.org/packages/mbsa) [![Microsoft Baseline Security Analyzer](https://img.shields.io/chocolatey/dt/mbsa.svg)](https://community.chocolatey.org/packages/mbsa)
 
 ## Usage
 
@@ -30,7 +30,7 @@ MBSA is built on the Windows Update Agent and Microsoft Update infrastructure, e
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/mbsa)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/mbsa)
 
 [Software Site](http://www.microsoft.com/download/details.aspx?id=7558)
 

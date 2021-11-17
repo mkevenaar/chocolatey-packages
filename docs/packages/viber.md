@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@3a055dbd4509673290e55aa9de2c53c9a4b6b7ed/icons/viber.png" width="32" height="32"/> [![Viber](https://img.shields.io/chocolatey/v/viber.svg?label=Viber)](https://chocolatey.org/packages/viber) [![Viber](https://img.shields.io/chocolatey/dt/viber.svg)](https://chocolatey.org/packages/viber)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@3a055dbd4509673290e55aa9de2c53c9a4b6b7ed/icons/viber.png" width="32" height="32"/> [![Viber](https://img.shields.io/chocolatey/v/viber.svg?label=Viber)](https://community.chocolatey.org/packages/viber) [![Viber](https://img.shields.io/chocolatey/dt/viber.svg)](https://community.chocolatey.org/packages/viber)
 
 ## Usage
 
@@ -33,7 +33,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/viber)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/viber)
 
 [Software Site](https://www.viber.com/en/products/windows)
 

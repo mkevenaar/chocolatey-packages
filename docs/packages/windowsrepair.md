@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@9ef7d8e2821d9e6865606c6f0796bd9c5c5c1683/icons/windowsrepair.png" width="32" height="32"/> [![Windows Repair](https://img.shields.io/chocolatey/v/windowsrepair.svg?label=Windows+Repair)](https://chocolatey.org/packages/windowsrepair) [![Windows Repair](https://img.shields.io/chocolatey/dt/windowsrepair.svg)](https://chocolatey.org/packages/windowsrepair)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@9ef7d8e2821d9e6865606c6f0796bd9c5c5c1683/icons/windowsrepair.png" width="32" height="32"/> [![Windows Repair](https://img.shields.io/chocolatey/v/windowsrepair.svg?label=Windows+Repair)](https://community.chocolatey.org/packages/windowsrepair) [![Windows Repair](https://img.shields.io/chocolatey/dt/windowsrepair.svg)](https://community.chocolatey.org/packages/windowsrepair)
 
 ## Usage
 
@@ -39,7 +39,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/windowsrepair)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/windowsrepair)
 
 [Software Site](http://www.tweaking.com/content/page/windows_repair_all_in_one.html)
 

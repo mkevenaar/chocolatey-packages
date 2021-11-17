@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@320be0f0eca14083b7ba734b13a417b407225a8b/icons/mariadb.png" width="32" height="32"/> [![MariaDB (Install)](https://img.shields.io/chocolatey/v/mariadb.install.svg?label=MariaDB+(Install))](https://chocolatey.org/packages/mariadb.install) [![MariaDB (Install)](https://img.shields.io/chocolatey/dt/mariadb.install.svg)](https://chocolatey.org/packages/mariadb.install)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@320be0f0eca14083b7ba734b13a417b407225a8b/icons/mariadb.png" width="32" height="32"/> [![MariaDB (Install)](https://img.shields.io/chocolatey/v/mariadb.install.svg?label=MariaDB+(Install))](https://community.chocolatey.org/packages/mariadb.install) [![MariaDB (Install)](https://img.shields.io/chocolatey/dt/mariadb.install.svg)](https://community.chocolatey.org/packages/mariadb.install)
 
 ## Usage
 
@@ -44,7 +44,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/mariadb.install)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/mariadb.install)
 
 [Software Site](https://mariadb.org)
 

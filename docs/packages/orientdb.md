@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@49cbd0915acb75d0b982b1a604a00498ff1e76e0/icons/orientdb.svg" width="32" height="32"/> [![OrientDB (Portable)](https://img.shields.io/chocolatey/v/orientdb.svg?label=OrientDB+(Portable))](https://chocolatey.org/packages/orientdb) [![OrientDB (Portable)](https://img.shields.io/chocolatey/dt/orientdb.svg)](https://chocolatey.org/packages/orientdb)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@49cbd0915acb75d0b982b1a604a00498ff1e76e0/icons/orientdb.svg" width="32" height="32"/> [![OrientDB (Portable)](https://img.shields.io/chocolatey/v/orientdb.svg?label=OrientDB+(Portable))](https://community.chocolatey.org/packages/orientdb) [![OrientDB (Portable)](https://img.shields.io/chocolatey/dt/orientdb.svg)](https://community.chocolatey.org/packages/orientdb)
 
 ## Usage
 
@@ -33,7 +33,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/orientdb)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/orientdb)
 
 [Software Site](https://orientdb.org)
 

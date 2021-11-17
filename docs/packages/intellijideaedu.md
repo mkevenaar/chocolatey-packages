@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@1a84d4bb32d44c7d8251d48471814ccd194dfc24/icons/intellijidea-edu.png" width="32" height="32"/> [![JetBrains IntelliJ IDEA (Educational)](https://img.shields.io/chocolatey/v/intellijidea-edu.svg?label=JetBrains+IntelliJ+IDEA+(Educational))](https://chocolatey.org/packages/intellijidea-edu) [![JetBrains IntelliJ IDEA (Educational)](https://img.shields.io/chocolatey/dt/intellijidea-edu.svg)](https://chocolatey.org/packages/intellijidea-edu)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@1a84d4bb32d44c7d8251d48471814ccd194dfc24/icons/intellijidea-edu.png" width="32" height="32"/> [![JetBrains IntelliJ IDEA (Educational)](https://img.shields.io/chocolatey/v/intellijidea-edu.svg?label=JetBrains+IntelliJ+IDEA+(Educational))](https://community.chocolatey.org/packages/intellijidea-edu) [![JetBrains IntelliJ IDEA (Educational)](https://img.shields.io/chocolatey/dt/intellijidea-edu.svg)](https://community.chocolatey.org/packages/intellijidea-edu)
 
 ## Usage
 
@@ -45,7 +45,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/intellijidea-edu)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/intellijidea-edu)
 
 [Software Site](https://www.jetbrains.com/education/)
 

@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ae9a5d45a8eb3a6276aad2f781b8cc2ccf86f267/icons/rocrail.png" width="32" height="32"/> [![Rocrail](https://img.shields.io/chocolatey/v/rocrail.svg?label=Rocrail)](https://chocolatey.org/packages/rocrail) [![Rocrail](https://img.shields.io/chocolatey/dt/rocrail.svg)](https://chocolatey.org/packages/rocrail)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ae9a5d45a8eb3a6276aad2f781b8cc2ccf86f267/icons/rocrail.png" width="32" height="32"/> [![Rocrail](https://img.shields.io/chocolatey/v/rocrail.svg?label=Rocrail)](https://community.chocolatey.org/packages/rocrail) [![Rocrail](https://img.shields.io/chocolatey/dt/rocrail.svg)](https://community.chocolatey.org/packages/rocrail)
 
 ## Usage
 
@@ -36,7 +36,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/rocrail)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/rocrail)
 
 [Software Site](https://wiki.rocrail.net/doku.php)
 

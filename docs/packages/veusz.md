@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ad615a27dbe925cf5030c597e0ffc54cd7e1028b/icons/veusz.png" width="32" height="32"/> [![Veusz (Install)](https://img.shields.io/chocolatey/v/veusz.svg?label=Veusz+(Install))](https://chocolatey.org/packages/veusz) [![Veusz (Install)](https://img.shields.io/chocolatey/dt/veusz.svg)](https://chocolatey.org/packages/veusz)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ad615a27dbe925cf5030c597e0ffc54cd7e1028b/icons/veusz.png" width="32" height="32"/> [![Veusz (Install)](https://img.shields.io/chocolatey/v/veusz.svg?label=Veusz+(Install))](https://community.chocolatey.org/packages/veusz) [![Veusz (Install)](https://img.shields.io/chocolatey/dt/veusz.svg)](https://community.chocolatey.org/packages/veusz)
 
 ## Usage
 
@@ -33,7 +33,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/veusz)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/veusz)
 
 [Software Site](https://veusz.github.io/)
 

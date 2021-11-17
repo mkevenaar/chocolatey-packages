@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@783a3b629ad9948830e24567739a7a884537d9a4/icons/powertoys.png" width="32" height="32"/> [![PowerToys](https://img.shields.io/chocolatey/v/powertoys.svg?label=PowerToys)](https://chocolatey.org/packages/powertoys) [![PowerToys](https://img.shields.io/chocolatey/dt/powertoys.svg)](https://chocolatey.org/packages/powertoys)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@783a3b629ad9948830e24567739a7a884537d9a4/icons/powertoys.png" width="32" height="32"/> [![PowerToys](https://img.shields.io/chocolatey/v/powertoys.svg?label=PowerToys)](https://community.chocolatey.org/packages/powertoys) [![PowerToys](https://img.shields.io/chocolatey/dt/powertoys.svg)](https://community.chocolatey.org/packages/powertoys)
 
 ## Usage
 
@@ -35,7 +35,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/powertoys)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/powertoys)
 
 [Software Site](https://github.com/microsoft/PowerToys)
 

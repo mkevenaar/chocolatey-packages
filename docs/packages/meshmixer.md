@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@6b940fe0b9134a855b5aa1c0f35ed69cb12ea13a/icons/meshmixer.png" width="32" height="32"/> [![Meshmixer](https://img.shields.io/chocolatey/v/meshmixer.svg?label=Meshmixer)](https://chocolatey.org/packages/meshmixer) [![Meshmixer](https://img.shields.io/chocolatey/dt/meshmixer.svg)](https://chocolatey.org/packages/meshmixer)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@6b940fe0b9134a855b5aa1c0f35ed69cb12ea13a/icons/meshmixer.png" width="32" height="32"/> [![Meshmixer](https://img.shields.io/chocolatey/v/meshmixer.svg?label=Meshmixer)](https://community.chocolatey.org/packages/meshmixer) [![Meshmixer](https://img.shields.io/chocolatey/dt/meshmixer.svg)](https://community.chocolatey.org/packages/meshmixer)
 
 ## Usage
 
@@ -56,7 +56,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/meshmixer)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/meshmixer)
 
 [Software Site](http://www.meshmixer.com/)
 

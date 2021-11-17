@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4d4a3bbed8b6b77e184e64522d9cd3247017391e/icons/mysql.png" width="32" height="32"/> [![MySQL (Community Server)](https://img.shields.io/chocolatey/v/mysql.svg?label=MySQL+(Community+Server))](https://chocolatey.org/packages/mysql) [![MySQL (Community Server)](https://img.shields.io/chocolatey/dt/mysql.svg)](https://chocolatey.org/packages/mysql)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4d4a3bbed8b6b77e184e64522d9cd3247017391e/icons/mysql.png" width="32" height="32"/> [![MySQL (Community Server)](https://img.shields.io/chocolatey/v/mysql.svg?label=MySQL+(Community+Server))](https://community.chocolatey.org/packages/mysql) [![MySQL (Community Server)](https://img.shields.io/chocolatey/dt/mysql.svg)](https://community.chocolatey.org/packages/mysql)
 
 ## Usage
 
@@ -42,7 +42,7 @@ Example: `choco install mysql --params "/port:3307 /serviceName:AltSQL"`
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/mysql)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/mysql)
 
 [Software Site](http://mysql.com/)
 

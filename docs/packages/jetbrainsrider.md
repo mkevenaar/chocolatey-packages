@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@8b10075560b75cfc85915b5d74b387c081850205/icons/jetbrains-rider.png" width="32" height="32"/> [![Jetbrains Rider](https://img.shields.io/chocolatey/v/jetbrains-rider.svg?label=Jetbrains+Rider)](https://chocolatey.org/packages/jetbrains-rider) [![Jetbrains Rider](https://img.shields.io/chocolatey/dt/jetbrains-rider.svg)](https://chocolatey.org/packages/jetbrains-rider)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@8b10075560b75cfc85915b5d74b387c081850205/icons/jetbrains-rider.png" width="32" height="32"/> [![Jetbrains Rider](https://img.shields.io/chocolatey/v/jetbrains-rider.svg?label=Jetbrains+Rider)](https://community.chocolatey.org/packages/jetbrains-rider) [![Jetbrains Rider](https://img.shields.io/chocolatey/dt/jetbrains-rider.svg)](https://community.chocolatey.org/packages/jetbrains-rider)
 
 ## Usage
 
@@ -31,7 +31,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/jetbrains-rider)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/jetbrains-rider)
 
 [Software Site](https://www.jetbrains.com/rider/)
 

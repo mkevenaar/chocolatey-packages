@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@81ff2d5f95d772fafbef2696261b9b9d5bc099ac/icons/thonny.png" width="32" height="32"/> [![Thonny](https://img.shields.io/chocolatey/v/thonny.svg?label=Thonny)](https://chocolatey.org/packages/thonny) [![Thonny](https://img.shields.io/chocolatey/dt/thonny.svg)](https://chocolatey.org/packages/thonny)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@81ff2d5f95d772fafbef2696261b9b9d5bc099ac/icons/thonny.png" width="32" height="32"/> [![Thonny](https://img.shields.io/chocolatey/v/thonny.svg?label=Thonny)](https://community.chocolatey.org/packages/thonny) [![Thonny](https://img.shields.io/chocolatey/dt/thonny.svg)](https://community.chocolatey.org/packages/thonny)
 
 ## Usage
 
@@ -73,7 +73,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/thonny)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/thonny)
 
 [Software Site](https://thonny.org/)
 

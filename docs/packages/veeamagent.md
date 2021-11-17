@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@1aa81f0b9fe0360a5736ecb9fa164bb3eb68cc35/icons/veeam-agent.png" width="32" height="32"/> [![Veeam Agent for Microsoft Windows](https://img.shields.io/chocolatey/v/veeam-agent.svg?label=Veeam+Agent+for+Microsoft+Windows)](https://chocolatey.org/packages/veeam-agent) [![Veeam Agent for Microsoft Windows](https://img.shields.io/chocolatey/dt/veeam-agent.svg)](https://chocolatey.org/packages/veeam-agent)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@1aa81f0b9fe0360a5736ecb9fa164bb3eb68cc35/icons/veeam-agent.png" width="32" height="32"/> [![Veeam Agent for Microsoft Windows](https://img.shields.io/chocolatey/v/veeam-agent.svg?label=Veeam+Agent+for+Microsoft+Windows)](https://community.chocolatey.org/packages/veeam-agent) [![Veeam Agent for Microsoft Windows](https://img.shields.io/chocolatey/dt/veeam-agent.svg)](https://community.chocolatey.org/packages/veeam-agent)
 
 ## Usage
 
@@ -34,9 +34,10 @@ Veeam® Agent for Microsoft Windows provides a simple solution for backing up Wi
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 
+
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/veeam-agent)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/veeam-agent)
 
 [Software Site](https://www.veeam.com/windows-cloud-server-backup-agent.html)
 

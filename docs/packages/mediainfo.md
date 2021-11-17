@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@2c59a4d1860a81ab2cc059a6d11f6c7cdc0b657a/icons/mediainfo.svg" width="32" height="32"/> [![MediaInfo](https://img.shields.io/chocolatey/v/mediainfo.svg?label=MediaInfo)](https://chocolatey.org/packages/mediainfo) [![MediaInfo](https://img.shields.io/chocolatey/dt/mediainfo.svg)](https://chocolatey.org/packages/mediainfo)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@2c59a4d1860a81ab2cc059a6d11f6c7cdc0b657a/icons/mediainfo.svg" width="32" height="32"/> [![MediaInfo](https://img.shields.io/chocolatey/v/mediainfo.svg?label=MediaInfo)](https://community.chocolatey.org/packages/mediainfo) [![MediaInfo](https://img.shields.io/chocolatey/dt/mediainfo.svg)](https://community.chocolatey.org/packages/mediainfo)
 
 ## Usage
 
@@ -60,7 +60,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/mediainfo)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/mediainfo)
 
 [Software Site](http://mediaarea.net/en/MediaInfo)
 

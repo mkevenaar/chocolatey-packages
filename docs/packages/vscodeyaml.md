@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@012830bf1d08a51c5b0bf0d95884b1883d69da7b/icons/vscode-yaml.png" width="32" height="32"/> [![YAML VSCode Extension](https://img.shields.io/chocolatey/v/vscode-yaml.svg?label=YAML+VSCode+Extension)](https://chocolatey.org/packages/vscode-yaml) [![YAML VSCode Extension](https://img.shields.io/chocolatey/dt/vscode-yaml.svg)](https://chocolatey.org/packages/vscode-yaml)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@012830bf1d08a51c5b0bf0d95884b1883d69da7b/icons/vscode-yaml.png" width="32" height="32"/> [![YAML VSCode Extension](https://img.shields.io/chocolatey/v/vscode-yaml.svg?label=YAML+VSCode+Extension)](https://community.chocolatey.org/packages/vscode-yaml) [![YAML VSCode Extension](https://img.shields.io/chocolatey/dt/vscode-yaml.svg)](https://community.chocolatey.org/packages/vscode-yaml)
 
 ## Usage
 
@@ -33,7 +33,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/vscode-yaml)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/vscode-yaml)
 
 [Software Site](https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml)
 

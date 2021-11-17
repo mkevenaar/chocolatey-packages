@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@c562e643a55262bbebbf8b0566cb4410fa9e06bc/icons/veeam-backup-for-microsoft-office-365.png" width="32" height="32"/> [![Veeam Backup for Microsoft Office 365](https://img.shields.io/chocolatey/v/veeam-backup-for-microsoft-office-365.svg?label=Veeam+Backup+for+Microsoft+Office+365)](https://chocolatey.org/packages/veeam-backup-for-microsoft-office-365) [![Veeam Backup for Microsoft Office 365](https://img.shields.io/chocolatey/dt/veeam-backup-for-microsoft-office-365.svg)](https://chocolatey.org/packages/veeam-backup-for-microsoft-office-365)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@c562e643a55262bbebbf8b0566cb4410fa9e06bc/icons/veeam-backup-for-microsoft-office-365.png" width="32" height="32"/> [![Veeam Backup for Microsoft Office 365](https://img.shields.io/chocolatey/v/veeam-backup-for-microsoft-office-365.svg?label=Veeam+Backup+for+Microsoft+Office+365)](https://community.chocolatey.org/packages/veeam-backup-for-microsoft-office-365) [![Veeam Backup for Microsoft Office 365](https://img.shields.io/chocolatey/dt/veeam-backup-for-microsoft-office-365.svg)](https://community.chocolatey.org/packages/veeam-backup-for-microsoft-office-365)
 
 ## Usage
 
@@ -49,7 +49,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/veeam-backup-for-microsoft-office-365)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/veeam-backup-for-microsoft-office-365)
 
 [Software Site](http://www.veeam.com/)
 

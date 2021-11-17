@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@8855d884e1b0fbe873de697d8f004dcea104c920/icons/bitvise-ssh-server.png" width="32" height="32"/> [![Bitvise SSH Server](https://img.shields.io/chocolatey/v/bitvise-ssh-server.svg?label=Bitvise+SSH+Server)](https://chocolatey.org/packages/bitvise-ssh-server) [![Bitvise SSH Server](https://img.shields.io/chocolatey/dt/bitvise-ssh-server.svg)](https://chocolatey.org/packages/bitvise-ssh-server)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@8855d884e1b0fbe873de697d8f004dcea104c920/icons/bitvise-ssh-server.png" width="32" height="32"/> [![Bitvise SSH Server](https://img.shields.io/chocolatey/v/bitvise-ssh-server.svg?label=Bitvise+SSH+Server)](https://community.chocolatey.org/packages/bitvise-ssh-server) [![Bitvise SSH Server](https://img.shields.io/chocolatey/dt/bitvise-ssh-server.svg)](https://community.chocolatey.org/packages/bitvise-ssh-server)
 
 ## Usage
 
@@ -67,7 +67,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/bitvise-ssh-server)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/bitvise-ssh-server)
 
 [Software Site](http://www.bitvise.com/ssh-server)
 

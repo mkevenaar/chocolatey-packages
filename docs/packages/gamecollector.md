@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4de82d783c8574401d9b506f1391a611db64c3e6/icons/game-collector.png" width="32" height="32"/> [![Game Collector](https://img.shields.io/chocolatey/v/game-collector.svg?label=Game+Collector)](https://chocolatey.org/packages/game-collector) [![Game Collector](https://img.shields.io/chocolatey/dt/game-collector.svg)](https://chocolatey.org/packages/game-collector)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4de82d783c8574401d9b506f1391a611db64c3e6/icons/game-collector.png" width="32" height="32"/> [![Game Collector](https://img.shields.io/chocolatey/v/game-collector.svg?label=Game+Collector)](https://community.chocolatey.org/packages/game-collector) [![Game Collector](https://img.shields.io/chocolatey/dt/game-collector.svg)](https://community.chocolatey.org/packages/game-collector)
 
 ## Usage
 
@@ -33,7 +33,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/game-collector)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/game-collector)
 
 [Software Site](https://www.collectorz.com/game/game-collector)
 

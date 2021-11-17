@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ce5072a74e3ef11e990f27453fafafd8881ecc70/icons/veeam-explorer-for-microsoft-exchange-o365.png" width="32" height="32"/> [![Veeam Explorer for Microsoft Exchange for Microsoft o365](https://img.shields.io/chocolatey/v/veeam-explorer-for-microsoft-exchange-o365.svg?label=Veeam+Explorer+for+Microsoft+Exchange+for+Microsoft+o365)](https://chocolatey.org/packages/veeam-explorer-for-microsoft-exchange-o365) [![Veeam Explorer for Microsoft Exchange for Microsoft o365](https://img.shields.io/chocolatey/dt/veeam-explorer-for-microsoft-exchange-o365.svg)](https://chocolatey.org/packages/veeam-explorer-for-microsoft-exchange-o365)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ce5072a74e3ef11e990f27453fafafd8881ecc70/icons/veeam-explorer-for-microsoft-exchange-o365.png" width="32" height="32"/> [![Veeam Explorer for Microsoft Exchange for Microsoft o365](https://img.shields.io/chocolatey/v/veeam-explorer-for-microsoft-exchange-o365.svg?label=Veeam+Explorer+for+Microsoft+Exchange+for+Microsoft+o365)](https://community.chocolatey.org/packages/veeam-explorer-for-microsoft-exchange-o365) [![Veeam Explorer for Microsoft Exchange for Microsoft o365](https://img.shields.io/chocolatey/dt/veeam-explorer-for-microsoft-exchange-o365.svg)](https://community.chocolatey.org/packages/veeam-explorer-for-microsoft-exchange-o365)
 
 ## Usage
 
@@ -33,7 +33,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/veeam-explorer-for-microsoft-exchange-o365)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/veeam-explorer-for-microsoft-exchange-o365)
 
 [Software Site](http://www.veeam.com/)
 

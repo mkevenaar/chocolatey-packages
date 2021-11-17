@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@04dc5eb5743f7aec66c0fd7a583fe56cb80aa51a/icons/helio-workstation.png" width="32" height="32"/> [![Helio Workstation (Install)](https://img.shields.io/chocolatey/v/helio-workstation.install.svg?label=Helio+Workstation+(Install))](https://chocolatey.org/packages/helio-workstation.install) [![Helio Workstation (Install)](https://img.shields.io/chocolatey/dt/helio-workstation.install.svg)](https://chocolatey.org/packages/helio-workstation.install)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@04dc5eb5743f7aec66c0fd7a583fe56cb80aa51a/icons/helio-workstation.png" width="32" height="32"/> [![Helio Workstation (Install)](https://img.shields.io/chocolatey/v/helio-workstation.install.svg?label=Helio+Workstation+(Install))](https://community.chocolatey.org/packages/helio-workstation.install) [![Helio Workstation (Install)](https://img.shields.io/chocolatey/dt/helio-workstation.install.svg)](https://community.chocolatey.org/packages/helio-workstation.install)
 
 ## Usage
 
@@ -41,7 +41,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/helio-workstation.install)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/helio-workstation.install)
 
 [Software Site](https://helio.fm/)
 

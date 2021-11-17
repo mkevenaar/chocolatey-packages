@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@972436b98f0066a91d8f6899e42a6ccf06c7acbf/icons/firefox-nightly.png" width="32" height="32"/> [![Firefox Nightly](https://img.shields.io/chocolatey/v/firefox-nightly.svg?label=Firefox+Nightly)](https://chocolatey.org/packages/firefox-nightly) [![Firefox Nightly](https://img.shields.io/chocolatey/dt/firefox-nightly.svg)](https://chocolatey.org/packages/firefox-nightly)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@972436b98f0066a91d8f6899e42a6ccf06c7acbf/icons/firefox-nightly.png" width="32" height="32"/> [![Firefox Nightly](https://img.shields.io/chocolatey/v/firefox-nightly.svg?label=Firefox+Nightly)](https://community.chocolatey.org/packages/firefox-nightly) [![Firefox Nightly](https://img.shields.io/chocolatey/dt/firefox-nightly.svg)](https://community.chocolatey.org/packages/firefox-nightly)
 
 ## Usage
 
@@ -48,7 +48,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/firefox-nightly)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/firefox-nightly)
 
 [Software Site](https://www.mozilla.org/firefox/nightly/)
 

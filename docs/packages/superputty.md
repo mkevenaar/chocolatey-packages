@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@218fd53341b8400391b0efdb75f313d01cdcf984/icons/superputty.png" width="32" height="32"/> [![SuperPutty](https://img.shields.io/chocolatey/v/superputty.svg?label=SuperPutty)](https://chocolatey.org/packages/superputty) [![SuperPutty](https://img.shields.io/chocolatey/dt/superputty.svg)](https://chocolatey.org/packages/superputty)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@218fd53341b8400391b0efdb75f313d01cdcf984/icons/superputty.png" width="32" height="32"/> [![SuperPutty](https://img.shields.io/chocolatey/v/superputty.svg?label=SuperPutty)](https://community.chocolatey.org/packages/superputty) [![SuperPutty](https://img.shields.io/chocolatey/dt/superputty.svg)](https://community.chocolatey.org/packages/superputty)
 
 ## Usage
 
@@ -44,7 +44,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/superputty)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/superputty)
 
 [Software Site](https://www.facebook.com/superputty)
 

@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@55b0b824aa79ab37ea68da3a5ad90ba0cd9e7e07/icons/movie-collector.png" width="32" height="32"/> [![Movie Collector](https://img.shields.io/chocolatey/v/movie-collector.svg?label=Movie+Collector)](https://chocolatey.org/packages/movie-collector) [![Movie Collector](https://img.shields.io/chocolatey/dt/movie-collector.svg)](https://chocolatey.org/packages/movie-collector)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@55b0b824aa79ab37ea68da3a5ad90ba0cd9e7e07/icons/movie-collector.png" width="32" height="32"/> [![Movie Collector](https://img.shields.io/chocolatey/v/movie-collector.svg?label=Movie+Collector)](https://community.chocolatey.org/packages/movie-collector) [![Movie Collector](https://img.shields.io/chocolatey/dt/movie-collector.svg)](https://community.chocolatey.org/packages/movie-collector)
 
 ## Usage
 
@@ -33,7 +33,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/movie-collector)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/movie-collector)
 
 [Software Site](https://www.collectorz.com/movie/movie-collector)
 

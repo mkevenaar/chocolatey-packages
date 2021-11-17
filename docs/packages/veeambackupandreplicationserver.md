@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@3b43537c8f99e1ea08563dbe1587c158c4f52e3c/icons/veeam-backup-and-replication-server.png" width="32" height="32"/> [![Veeam Backup & Replication Server](https://img.shields.io/chocolatey/v/veeam-backup-and-replication-server.svg?label=Veeam+Backup+%26+Replication+Server)](https://chocolatey.org/packages/veeam-backup-and-replication-server) [![Veeam Backup & Replication Server](https://img.shields.io/chocolatey/dt/veeam-backup-and-replication-server.svg)](https://chocolatey.org/packages/veeam-backup-and-replication-server)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@3b43537c8f99e1ea08563dbe1587c158c4f52e3c/icons/veeam-backup-and-replication-server.png" width="32" height="32"/> [![Veeam Backup & Replication Server](https://img.shields.io/chocolatey/v/veeam-backup-and-replication-server.svg?label=Veeam+Backup+%26+Replication+Server)](https://community.chocolatey.org/packages/veeam-backup-and-replication-server) [![Veeam Backup & Replication Server](https://img.shields.io/chocolatey/dt/veeam-backup-and-replication-server.svg)](https://community.chocolatey.org/packages/veeam-backup-and-replication-server)
 
 ## Usage
 
@@ -60,7 +60,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/veeam-backup-and-replication-server)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/veeam-backup-and-replication-server)
 
 [Software Site](http://www.veeam.com/)
 

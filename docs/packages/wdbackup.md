@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@a00d45ff3710fc93838077c18b700835e4a0ff0e/icons/wd-backup.png" width="32" height="32"/> [![WD Backup](https://img.shields.io/chocolatey/v/wd-backup.svg?label=WD+Backup)](https://chocolatey.org/packages/wd-backup) [![WD Backup](https://img.shields.io/chocolatey/dt/wd-backup.svg)](https://chocolatey.org/packages/wd-backup)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@a00d45ff3710fc93838077c18b700835e4a0ff0e/icons/wd-backup.png" width="32" height="32"/> [![WD Backup](https://img.shields.io/chocolatey/v/wd-backup.svg?label=WD+Backup)](https://community.chocolatey.org/packages/wd-backup) [![WD Backup](https://img.shields.io/chocolatey/dt/wd-backup.svg)](https://community.chocolatey.org/packages/wd-backup)
 
 ## Usage
 
@@ -31,7 +31,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/wd-backup)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/wd-backup)
 
 [Software Site](https://support.wdc.com/downloads.aspx?p=249)
 

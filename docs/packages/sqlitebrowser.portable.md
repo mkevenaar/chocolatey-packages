@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@49cbd0915acb75d0b982b1a604a00498ff1e76e0/icons/sqlitebrowser.svg" width="32" height="32"/> [![DB Browser for SQLite (Portable)](https://img.shields.io/chocolatey/v/sqlitebrowser.portable.svg?label=DB+Browser+for+SQLite+(Portable))](https://chocolatey.org/packages/sqlitebrowser.portable) [![DB Browser for SQLite (Portable)](https://img.shields.io/chocolatey/dt/sqlitebrowser.portable.svg)](https://chocolatey.org/packages/sqlitebrowser.portable)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@49cbd0915acb75d0b982b1a604a00498ff1e76e0/icons/sqlitebrowser.svg" width="32" height="32"/> [![DB Browser for SQLite (Portable)](https://img.shields.io/chocolatey/v/sqlitebrowser.portable.svg?label=DB+Browser+for+SQLite+(Portable))](https://community.chocolatey.org/packages/sqlitebrowser.portable) [![DB Browser for SQLite (Portable)](https://img.shields.io/chocolatey/dt/sqlitebrowser.portable.svg)](https://community.chocolatey.org/packages/sqlitebrowser.portable)
 
 ## Usage
 
@@ -54,7 +54,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/sqlitebrowser.portable)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/sqlitebrowser.portable)
 
 [Software Site](http://sqlitebrowser.org/)
 

@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@07b0f3c76ddb3fda3a50d2e92aee9df2bb42aec2/icons/veeam-one-agent.png" width="32" height="32"/> [![Veeam ONE Agent](https://img.shields.io/chocolatey/v/veeam-one-agent.svg?label=Veeam+ONE+Agent)](https://chocolatey.org/packages/veeam-one-agent) [![Veeam ONE Agent](https://img.shields.io/chocolatey/dt/veeam-one-agent.svg)](https://chocolatey.org/packages/veeam-one-agent)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@07b0f3c76ddb3fda3a50d2e92aee9df2bb42aec2/icons/veeam-one-agent.png" width="32" height="32"/> [![Veeam ONE Agent](https://img.shields.io/chocolatey/v/veeam-one-agent.svg?label=Veeam+ONE+Agent)](https://community.chocolatey.org/packages/veeam-one-agent) [![Veeam ONE Agent](https://img.shields.io/chocolatey/dt/veeam-one-agent.svg)](https://community.chocolatey.org/packages/veeam-one-agent)
 
 ## Usage
 
@@ -69,7 +69,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/veeam-one-agent)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/veeam-one-agent)
 
 [Software Site](http://www.veeam.com/)
 

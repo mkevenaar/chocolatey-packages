@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@0559168c31d243f6d0803426064a0513df5cd34b/icons/swiftforwindows.png" width="32" height="32"/> [![Swift for Windows](https://img.shields.io/chocolatey/v/swiftforwindows.svg?label=Swift+for+Windows)](https://chocolatey.org/packages/swiftforwindows) [![Swift for Windows](https://img.shields.io/chocolatey/dt/swiftforwindows.svg)](https://chocolatey.org/packages/swiftforwindows)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@0559168c31d243f6d0803426064a0513df5cd34b/icons/swiftforwindows.png" width="32" height="32"/> [![Swift for Windows](https://img.shields.io/chocolatey/v/swiftforwindows.svg?label=Swift+for+Windows)](https://community.chocolatey.org/packages/swiftforwindows) [![Swift for Windows](https://img.shields.io/chocolatey/dt/swiftforwindows.svg)](https://community.chocolatey.org/packages/swiftforwindows)
 
 ## Usage
 
@@ -31,7 +31,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/swiftforwindows)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/swiftforwindows)
 
 [Software Site](https://swiftforwindows.github.io/)
 

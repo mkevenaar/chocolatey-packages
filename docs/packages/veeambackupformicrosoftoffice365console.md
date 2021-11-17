@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ec5c8311275798f228e45671f705c3f693edc8bc/icons/veeam-backup-for-microsoft-office-365-console.png" width="32" height="32"/> [![Veeam Backup for Microsoft Office 365 Console](https://img.shields.io/chocolatey/v/veeam-backup-for-microsoft-office-365-console.svg?label=Veeam+Backup+for+Microsoft+Office+365+Console)](https://chocolatey.org/packages/veeam-backup-for-microsoft-office-365-console) [![Veeam Backup for Microsoft Office 365 Console](https://img.shields.io/chocolatey/dt/veeam-backup-for-microsoft-office-365-console.svg)](https://chocolatey.org/packages/veeam-backup-for-microsoft-office-365-console)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ec5c8311275798f228e45671f705c3f693edc8bc/icons/veeam-backup-for-microsoft-office-365-console.png" width="32" height="32"/> [![Veeam Backup for Microsoft Office 365 Console](https://img.shields.io/chocolatey/v/veeam-backup-for-microsoft-office-365-console.svg?label=Veeam+Backup+for+Microsoft+Office+365+Console)](https://community.chocolatey.org/packages/veeam-backup-for-microsoft-office-365-console) [![Veeam Backup for Microsoft Office 365 Console](https://img.shields.io/chocolatey/dt/veeam-backup-for-microsoft-office-365-console.svg)](https://community.chocolatey.org/packages/veeam-backup-for-microsoft-office-365-console)
 
 ## Usage
 
@@ -47,7 +47,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/veeam-backup-for-microsoft-office-365-console)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/veeam-backup-for-microsoft-office-365-console)
 
 [Software Site](http://www.veeam.com/)
 

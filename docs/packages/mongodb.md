@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@083dd15e52cd8b007dd76e7ec933436c910dbe83/icons/mongodb.png" width="32" height="32"/> [![MongoDB](https://img.shields.io/chocolatey/v/mongodb.svg?label=MongoDB)](https://chocolatey.org/packages/mongodb) [![MongoDB](https://img.shields.io/chocolatey/dt/mongodb.svg)](https://chocolatey.org/packages/mongodb)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@083dd15e52cd8b007dd76e7ec933436c910dbe83/icons/mongodb.png" width="32" height="32"/> [![MongoDB](https://img.shields.io/chocolatey/v/mongodb.svg?label=MongoDB)](https://community.chocolatey.org/packages/mongodb) [![MongoDB](https://img.shields.io/chocolatey/dt/mongodb.svg)](https://community.chocolatey.org/packages/mongodb)
 
 ## Usage
 
@@ -46,7 +46,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/mongodb)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/mongodb)
 
 [Software Site](http://www.mongodb.org)
 

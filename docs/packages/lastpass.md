@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@0411adaf8f882b9f2afe83ed6fa048135378742c/icons/lastpass.png" width="32" height="32"/> [![LastPass](https://img.shields.io/chocolatey/v/lastpass.svg?label=LastPass)](https://chocolatey.org/packages/lastpass) [![LastPass](https://img.shields.io/chocolatey/dt/lastpass.svg)](https://chocolatey.org/packages/lastpass)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@0411adaf8f882b9f2afe83ed6fa048135378742c/icons/lastpass.png" width="32" height="32"/> [![LastPass](https://img.shields.io/chocolatey/v/lastpass.svg?label=LastPass)](https://community.chocolatey.org/packages/lastpass) [![LastPass](https://img.shields.io/chocolatey/dt/lastpass.svg)](https://community.chocolatey.org/packages/lastpass)
 
 ## Usage
 
@@ -31,7 +31,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/lastpass)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/lastpass)
 
 [Software Site](https://lastpass.com/)
 

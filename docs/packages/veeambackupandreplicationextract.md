@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@d47fb7da33a696a72cd507a4f07547458b12720f/icons/veeam-backup-and-replication-extract.png" width="32" height="32"/> [![Veeam Backup & Replication Extract Utility](https://img.shields.io/chocolatey/v/veeam-backup-and-replication-extract.svg?label=Veeam+Backup+%26+Replication+Extract+Utility)](https://chocolatey.org/packages/veeam-backup-and-replication-extract) [![Veeam Backup & Replication Extract Utility](https://img.shields.io/chocolatey/dt/veeam-backup-and-replication-extract.svg)](https://chocolatey.org/packages/veeam-backup-and-replication-extract)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@d47fb7da33a696a72cd507a4f07547458b12720f/icons/veeam-backup-and-replication-extract.png" width="32" height="32"/> [![Veeam Backup & Replication Extract Utility](https://img.shields.io/chocolatey/v/veeam-backup-and-replication-extract.svg?label=Veeam+Backup+%26+Replication+Extract+Utility)](https://community.chocolatey.org/packages/veeam-backup-and-replication-extract) [![Veeam Backup & Replication Extract Utility](https://img.shields.io/chocolatey/dt/veeam-backup-and-replication-extract.svg)](https://community.chocolatey.org/packages/veeam-backup-and-replication-extract)
 
 ## Usage
 
@@ -45,7 +45,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/veeam-backup-and-replication-extract)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/veeam-backup-and-replication-extract)
 
 [Software Site](http://www.veeam.com/)
 

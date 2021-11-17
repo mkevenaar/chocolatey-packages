@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@d8c446cc443361885a3ac97f172d559c02e5a713/icons/psi.png" width="32" height="32"/> [![Psi (Install)](https://img.shields.io/chocolatey/v/psi.install.svg?label=Psi+(Install))](https://chocolatey.org/packages/psi.install) [![Psi (Install)](https://img.shields.io/chocolatey/dt/psi.install.svg)](https://chocolatey.org/packages/psi.install)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@d8c446cc443361885a3ac97f172d559c02e5a713/icons/psi.png" width="32" height="32"/> [![Psi (Install)](https://img.shields.io/chocolatey/v/psi.install.svg?label=Psi+(Install))](https://community.chocolatey.org/packages/psi.install) [![Psi (Install)](https://img.shields.io/chocolatey/dt/psi.install.svg)](https://community.chocolatey.org/packages/psi.install)
 
 ## Usage
 
@@ -46,7 +46,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/psi.install)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/psi.install)
 
 [Software Site](http://psi-im.org/)
 

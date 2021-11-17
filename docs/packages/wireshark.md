@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@faf506da98b6ae7e18f12faa1c0c30daa386db65/icons/wireshark.png" width="32" height="32"/> [![Wireshark](https://img.shields.io/chocolatey/v/wireshark.svg?label=Wireshark)](https://chocolatey.org/packages/wireshark) [![Wireshark](https://img.shields.io/chocolatey/dt/wireshark.svg)](https://chocolatey.org/packages/wireshark)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@faf506da98b6ae7e18f12faa1c0c30daa386db65/icons/wireshark.png" width="32" height="32"/> [![Wireshark](https://img.shields.io/chocolatey/v/wireshark.svg?label=Wireshark)](https://community.chocolatey.org/packages/wireshark) [![Wireshark](https://img.shields.io/chocolatey/dt/wireshark.svg)](https://community.chocolatey.org/packages/wireshark)
 
 ## Usage
 
@@ -49,7 +49,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/wireshark)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/wireshark)
 
 [Software Site](http://www.wireshark.org)
 

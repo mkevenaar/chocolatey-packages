@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@233dd82c27a73801f5ea03db4660a6a2d586c82b/icons/smartmontools.png" width="32" height="32"/> [![smartmontools](https://img.shields.io/chocolatey/v/smartmontools.svg?label=smartmontools)](https://chocolatey.org/packages/smartmontools) [![smartmontools](https://img.shields.io/chocolatey/dt/smartmontools.svg)](https://chocolatey.org/packages/smartmontools)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@233dd82c27a73801f5ea03db4660a6a2d586c82b/icons/smartmontools.png" width="32" height="32"/> [![smartmontools](https://img.shields.io/chocolatey/v/smartmontools.svg?label=smartmontools)](https://community.chocolatey.org/packages/smartmontools) [![smartmontools](https://img.shields.io/chocolatey/dt/smartmontools.svg)](https://community.chocolatey.org/packages/smartmontools)
 
 ## Usage
 
@@ -43,7 +43,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/smartmontools)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/smartmontools)
 
 [Software Site](http://www.smartmontools.org/)
 

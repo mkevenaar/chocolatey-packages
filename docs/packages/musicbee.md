@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@6b72cf334ff8fef0fb86aad0c1534f68a42a9855/icons/musicbee.png" width="32" height="32"/> [![MusicBee](https://img.shields.io/chocolatey/v/musicbee.svg?label=MusicBee)](https://chocolatey.org/packages/musicbee) [![MusicBee](https://img.shields.io/chocolatey/dt/musicbee.svg)](https://chocolatey.org/packages/musicbee)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@6b72cf334ff8fef0fb86aad0c1534f68a42a9855/icons/musicbee.png" width="32" height="32"/> [![MusicBee](https://img.shields.io/chocolatey/v/musicbee.svg?label=MusicBee)](https://community.chocolatey.org/packages/musicbee) [![MusicBee](https://img.shields.io/chocolatey/dt/musicbee.svg)](https://community.chocolatey.org/packages/musicbee)
 
 ## Usage
 
@@ -78,7 +78,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/musicbee)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/musicbee)
 
 [Software Site](http://getmusicbee.com/)
 

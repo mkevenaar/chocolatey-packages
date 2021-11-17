@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@083dd15e52cd8b007dd76e7ec933436c910dbe83/icons/mongodb.png" width="32" height="32"/> [![MongoDB (Install)](https://img.shields.io/chocolatey/v/mongodb.install.svg?label=MongoDB+(Install))](https://chocolatey.org/packages/mongodb.install) [![MongoDB (Install)](https://img.shields.io/chocolatey/dt/mongodb.install.svg)](https://chocolatey.org/packages/mongodb.install)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@083dd15e52cd8b007dd76e7ec933436c910dbe83/icons/mongodb.png" width="32" height="32"/> [![MongoDB (Install)](https://img.shields.io/chocolatey/v/mongodb.install.svg?label=MongoDB+(Install))](https://community.chocolatey.org/packages/mongodb.install) [![MongoDB (Install)](https://img.shields.io/chocolatey/dt/mongodb.install.svg)](https://community.chocolatey.org/packages/mongodb.install)
 
 ## Usage
 
@@ -46,7 +46,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/mongodb.install)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/mongodb.install)
 
 [Software Site](http://www.mongodb.org)
 

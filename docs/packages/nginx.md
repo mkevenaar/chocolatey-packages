@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ac7471b84549c0aaa0dc646044435bdcf692305e/icons/nginx.png" width="32" height="32"/> [![nginx](https://img.shields.io/chocolatey/v/nginx.svg?label=nginx)](https://chocolatey.org/packages/nginx) [![nginx](https://img.shields.io/chocolatey/dt/nginx.svg)](https://chocolatey.org/packages/nginx)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ac7471b84549c0aaa0dc646044435bdcf692305e/icons/nginx.png" width="32" height="32"/> [![nginx](https://img.shields.io/chocolatey/v/nginx.svg?label=nginx)](https://community.chocolatey.org/packages/nginx) [![nginx](https://img.shields.io/chocolatey/dt/nginx.svg)](https://community.chocolatey.org/packages/nginx)
 
 ## Usage
 
@@ -47,7 +47,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/nginx)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/nginx)
 
 [Software Site](http://nginx.org)
 

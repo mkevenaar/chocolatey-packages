@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4f1e4139cbcdc8cf88c4621fdd7a45f6c63790f8/icons/veeam-explorer-for-microsoft-sharepoint-o365.png" width="32" height="32"/> [![Veeam Explorer for Microsoft SharePoint for Microsoft o365](https://img.shields.io/chocolatey/v/veeam-explorer-for-microsoft-sharepoint-o365.svg?label=Veeam+Explorer+for+Microsoft+SharePoint+for+Microsoft+o365)](https://chocolatey.org/packages/veeam-explorer-for-microsoft-sharepoint-o365) [![Veeam Explorer for Microsoft SharePoint for Microsoft o365](https://img.shields.io/chocolatey/dt/veeam-explorer-for-microsoft-sharepoint-o365.svg)](https://chocolatey.org/packages/veeam-explorer-for-microsoft-sharepoint-o365)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4f1e4139cbcdc8cf88c4621fdd7a45f6c63790f8/icons/veeam-explorer-for-microsoft-sharepoint-o365.png" width="32" height="32"/> [![Veeam Explorer for Microsoft SharePoint for Microsoft o365](https://img.shields.io/chocolatey/v/veeam-explorer-for-microsoft-sharepoint-o365.svg?label=Veeam+Explorer+for+Microsoft+SharePoint+for+Microsoft+o365)](https://community.chocolatey.org/packages/veeam-explorer-for-microsoft-sharepoint-o365) [![Veeam Explorer for Microsoft SharePoint for Microsoft o365](https://img.shields.io/chocolatey/dt/veeam-explorer-for-microsoft-sharepoint-o365.svg)](https://community.chocolatey.org/packages/veeam-explorer-for-microsoft-sharepoint-o365)
 
 ## Usage
 
@@ -33,7 +33,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/veeam-explorer-for-microsoft-sharepoint-o365)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/veeam-explorer-for-microsoft-sharepoint-o365)
 
 [Software Site](http://www.veeam.com/)
 

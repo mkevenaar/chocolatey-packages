@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.rawgit.com/mkevenaar/chocolatey-packages/master/icons/QuickPar.png" width="32" height="32"/> [![QuickPar](https://img.shields.io/chocolatey/v/QuickPar.svg?label=QuickPar)](https://chocolatey.org/packages/QuickPar) [![QuickPar](https://img.shields.io/chocolatey/dt/QuickPar.svg)](https://chocolatey.org/packages/QuickPar)
+﻿# <img src="https://cdn.rawgit.com/mkevenaar/chocolatey-packages/master/icons/QuickPar.png" width="32" height="32"/> [![QuickPar](https://img.shields.io/chocolatey/v/QuickPar.svg?label=QuickPar)](https://community.chocolatey.org/packages/QuickPar) [![QuickPar](https://img.shields.io/chocolatey/dt/QuickPar.svg)](https://community.chocolatey.org/packages/QuickPar)
 
 ## Usage
 
@@ -30,7 +30,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/QuickPar)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/QuickPar)
 
 [Software Site](http://www.quickpar.org.uk)
 

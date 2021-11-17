@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@3ac63bf30efd773e83add28046b48de5dcf5334a/icons/kibana.svg" width="32" height="32"/> [![Kibana](https://img.shields.io/chocolatey/v/kibana.svg?label=Kibana)](https://chocolatey.org/packages/kibana) [![Kibana](https://img.shields.io/chocolatey/dt/kibana.svg)](https://chocolatey.org/packages/kibana)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@3ac63bf30efd773e83add28046b48de5dcf5334a/icons/kibana.svg" width="32" height="32"/> [![Kibana](https://img.shields.io/chocolatey/v/kibana.svg?label=Kibana)](https://community.chocolatey.org/packages/kibana) [![Kibana](https://img.shields.io/chocolatey/dt/kibana.svg)](https://community.chocolatey.org/packages/kibana)
 
 ## Usage
 
@@ -34,7 +34,7 @@ This is an automatic package.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/kibana)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/kibana)
 
 [Software Site](https://www.elastic.co/kibana/)
 

@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@72d4273ca59988b456ffc543827642170797aeef/icons/wnetwatcher.png" width="32" height="32"/> [![Wireless Network Watcher (Portable)](https://img.shields.io/chocolatey/v/wnetwatcher.portable.svg?label=Wireless+Network+Watcher+(Portable))](https://chocolatey.org/packages/wnetwatcher.portable) [![Wireless Network Watcher (Portable)](https://img.shields.io/chocolatey/dt/wnetwatcher.portable.svg)](https://chocolatey.org/packages/wnetwatcher.portable)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@72d4273ca59988b456ffc543827642170797aeef/icons/wnetwatcher.png" width="32" height="32"/> [![Wireless Network Watcher (Portable)](https://img.shields.io/chocolatey/v/wnetwatcher.portable.svg?label=Wireless+Network+Watcher+(Portable))](https://community.chocolatey.org/packages/wnetwatcher.portable) [![Wireless Network Watcher (Portable)](https://img.shields.io/chocolatey/dt/wnetwatcher.portable.svg)](https://community.chocolatey.org/packages/wnetwatcher.portable)
 
 ## Usage
 
@@ -35,7 +35,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/wnetwatcher.portable)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/wnetwatcher.portable)
 
 [Software Site](http://www.nirsoft.net/utils/wireless_network_watcher.html)
 

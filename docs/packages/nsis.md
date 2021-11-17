@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@047dcebf11a3a9a89dabcbebe2d091111382a619/icons/nsis.png" width="32" height="32"/> [![Nullsoft Scriptable Install System](https://img.shields.io/chocolatey/v/nsis.svg?label=Nullsoft+Scriptable+Install+System)](https://chocolatey.org/packages/nsis) [![Nullsoft Scriptable Install System](https://img.shields.io/chocolatey/dt/nsis.svg)](https://chocolatey.org/packages/nsis)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@047dcebf11a3a9a89dabcbebe2d091111382a619/icons/nsis.png" width="32" height="32"/> [![Nullsoft Scriptable Install System](https://img.shields.io/chocolatey/v/nsis.svg?label=Nullsoft+Scriptable+Install+System)](https://community.chocolatey.org/packages/nsis) [![Nullsoft Scriptable Install System](https://img.shields.io/chocolatey/dt/nsis.svg)](https://community.chocolatey.org/packages/nsis)
 
 ## Usage
 
@@ -39,7 +39,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/nsis)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/nsis)
 
 [Software Site](http://nsis.sourceforge.net/)
 

@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@d6efae40c5d3947ca6f6de19ed8e1ac2b1444dff/icons/veeam-one-reporter-server.png" width="32" height="32"/> [![Veeam ONE Reporter Server](https://img.shields.io/chocolatey/v/veeam-one-reporter-server.svg?label=Veeam+ONE+Reporter+Server)](https://chocolatey.org/packages/veeam-one-reporter-server) [![Veeam ONE Reporter Server](https://img.shields.io/chocolatey/dt/veeam-one-reporter-server.svg)](https://chocolatey.org/packages/veeam-one-reporter-server)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@d6efae40c5d3947ca6f6de19ed8e1ac2b1444dff/icons/veeam-one-reporter-server.png" width="32" height="32"/> [![Veeam ONE Reporter Server](https://img.shields.io/chocolatey/v/veeam-one-reporter-server.svg?label=Veeam+ONE+Reporter+Server)](https://community.chocolatey.org/packages/veeam-one-reporter-server) [![Veeam ONE Reporter Server](https://img.shields.io/chocolatey/dt/veeam-one-reporter-server.svg)](https://community.chocolatey.org/packages/veeam-one-reporter-server)
 
 ## Usage
 
@@ -73,7 +73,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/veeam-one-reporter-server)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/veeam-one-reporter-server)
 
 [Software Site](http://www.veeam.com/)
 

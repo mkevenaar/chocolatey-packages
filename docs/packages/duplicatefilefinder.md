@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4bbb0dafc56bfb1020c6d2b1d8ad05ea8e90d0b5/icons/duplicatefilefinder.png" width="32" height="32"/> [![Duplicate File Finder](https://img.shields.io/chocolatey/v/duplicatefilefinder.svg?label=Duplicate+File+Finder)](https://chocolatey.org/packages/duplicatefilefinder) [![Duplicate File Finder](https://img.shields.io/chocolatey/dt/duplicatefilefinder.svg)](https://chocolatey.org/packages/duplicatefilefinder)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4bbb0dafc56bfb1020c6d2b1d8ad05ea8e90d0b5/icons/duplicatefilefinder.png" width="32" height="32"/> [![Duplicate File Finder](https://img.shields.io/chocolatey/v/duplicatefilefinder.svg?label=Duplicate+File+Finder)](https://community.chocolatey.org/packages/duplicatefilefinder) [![Duplicate File Finder](https://img.shields.io/chocolatey/dt/duplicatefilefinder.svg)](https://community.chocolatey.org/packages/duplicatefilefinder)
 
 ## Usage
 
@@ -37,7 +37,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/duplicatefilefinder)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/duplicatefilefinder)
 
 [Software Site](https://www.auslogics.com/en/software/duplicate-file-finder/)
 

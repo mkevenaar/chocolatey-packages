@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@9a3aec2cd14cadf9ff04d111fcc1ae400959b1c9/icons/scarm.png" width="32" height="32"/> [![SCARM](https://img.shields.io/chocolatey/v/scarm.svg?label=SCARM)](https://chocolatey.org/packages/scarm) [![SCARM](https://img.shields.io/chocolatey/dt/scarm.svg)](https://chocolatey.org/packages/scarm)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@9a3aec2cd14cadf9ff04d111fcc1ae400959b1c9/icons/scarm.png" width="32" height="32"/> [![SCARM](https://img.shields.io/chocolatey/v/scarm.svg?label=SCARM)](https://community.chocolatey.org/packages/scarm) [![SCARM](https://img.shields.io/chocolatey/dt/scarm.svg)](https://community.chocolatey.org/packages/scarm)
 
 ## Usage
 
@@ -31,7 +31,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/scarm)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/scarm)
 
 [Software Site](https://www.scarm.info)
 

@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@460f3840913659bcfe3189d151ecf3e6fa3efcc6/icons/bacula.png" width="32" height="32"/> [![Bacula](https://img.shields.io/chocolatey/v/bacula.svg?label=Bacula)](https://chocolatey.org/packages/bacula) [![Bacula](https://img.shields.io/chocolatey/dt/bacula.svg)](https://chocolatey.org/packages/bacula)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@460f3840913659bcfe3189d151ecf3e6fa3efcc6/icons/bacula.png" width="32" height="32"/> [![Bacula](https://img.shields.io/chocolatey/v/bacula.svg?label=Bacula)](https://community.chocolatey.org/packages/bacula) [![Bacula](https://img.shields.io/chocolatey/dt/bacula.svg)](https://community.chocolatey.org/packages/bacula)
 
 ## Usage
 
@@ -38,7 +38,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/bacula)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/bacula)
 
 [Software Site](http://www.bacula.org/)
 

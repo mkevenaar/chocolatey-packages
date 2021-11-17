@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@0da22fcc97ee2cb655413d53ffcb079bffb2013a/icons/veeam-explorer-for-microsoft-teams-o365.png" width="32" height="32"/> [![Veeam Explorer for Microsoft Teams for Microsoft o365](https://img.shields.io/chocolatey/v/veeam-explorer-for-microsoft-teams-o365.svg?label=Veeam+Explorer+for+Microsoft+Teams+for+Microsoft+o365)](https://chocolatey.org/packages/veeam-explorer-for-microsoft-teams-o365) [![Veeam Explorer for Microsoft Teams for Microsoft o365](https://img.shields.io/chocolatey/dt/veeam-explorer-for-microsoft-teams-o365.svg)](https://chocolatey.org/packages/veeam-explorer-for-microsoft-teams-o365)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@0da22fcc97ee2cb655413d53ffcb079bffb2013a/icons/veeam-explorer-for-microsoft-teams-o365.png" width="32" height="32"/> [![Veeam Explorer for Microsoft Teams for Microsoft o365](https://img.shields.io/chocolatey/v/veeam-explorer-for-microsoft-teams-o365.svg?label=Veeam+Explorer+for+Microsoft+Teams+for+Microsoft+o365)](https://community.chocolatey.org/packages/veeam-explorer-for-microsoft-teams-o365) [![Veeam Explorer for Microsoft Teams for Microsoft o365](https://img.shields.io/chocolatey/dt/veeam-explorer-for-microsoft-teams-o365.svg)](https://community.chocolatey.org/packages/veeam-explorer-for-microsoft-teams-o365)
 
 ## Usage
 
@@ -35,7 +35,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/veeam-explorer-for-microsoft-teams-o365)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/veeam-explorer-for-microsoft-teams-o365)
 
 [Software Site](http://www.veeam.com/)
 

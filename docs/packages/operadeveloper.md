@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@2d6548eb36c1599d8d5da98c79e1772f75d081e6/icons/opera-developer.png" width="32" height="32"/> [![Opera Developer](https://img.shields.io/chocolatey/v/opera-developer.svg?label=Opera+Developer)](https://chocolatey.org/packages/opera-developer) [![Opera Developer](https://img.shields.io/chocolatey/dt/opera-developer.svg)](https://chocolatey.org/packages/opera-developer)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@2d6548eb36c1599d8d5da98c79e1772f75d081e6/icons/opera-developer.png" width="32" height="32"/> [![Opera Developer](https://img.shields.io/chocolatey/v/opera-developer.svg?label=Opera+Developer)](https://community.chocolatey.org/packages/opera-developer) [![Opera Developer](https://img.shields.io/chocolatey/dt/opera-developer.svg)](https://community.chocolatey.org/packages/opera-developer)
 
 ## Usage
 
@@ -39,7 +39,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/opera-developer)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/opera-developer)
 
 [Software Site](http://www.opera.com/computer/beta)
 

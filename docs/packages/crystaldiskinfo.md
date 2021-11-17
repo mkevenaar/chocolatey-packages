@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@01831f507ebdb56a77672d83934175202e1d1dbd/icons/crystaldiskinfo.png" width="32" height="32"/> [![CrystalDiskInfo](https://img.shields.io/chocolatey/v/crystaldiskinfo.svg?label=CrystalDiskInfo)](https://chocolatey.org/packages/crystaldiskinfo) [![CrystalDiskInfo](https://img.shields.io/chocolatey/dt/crystaldiskinfo.svg)](https://chocolatey.org/packages/crystaldiskinfo)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@01831f507ebdb56a77672d83934175202e1d1dbd/icons/crystaldiskinfo.png" width="32" height="32"/> [![CrystalDiskInfo](https://img.shields.io/chocolatey/v/crystaldiskinfo.svg?label=CrystalDiskInfo)](https://community.chocolatey.org/packages/crystaldiskinfo) [![CrystalDiskInfo](https://img.shields.io/chocolatey/dt/crystaldiskinfo.svg)](https://community.chocolatey.org/packages/crystaldiskinfo)
 
 ## Usage
 
@@ -33,7 +33,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/crystaldiskinfo)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/crystaldiskinfo)
 
 [Software Site](https://crystalmark.info/en/software/crystaldiskinfo/)
 

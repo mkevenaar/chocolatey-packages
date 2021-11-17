@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@b3e4c2b4dd49738c36e16499fd75c396a85315b6/icons/veeam-explorer-for-microsoft-sql-server.png" width="32" height="32"/> [![Veeam Explorer for Microsoft SQL Server](https://img.shields.io/chocolatey/v/veeam-explorer-for-microsoft-sql-server.svg?label=Veeam+Explorer+for+Microsoft+SQL+Server)](https://chocolatey.org/packages/veeam-explorer-for-microsoft-sql-server) [![Veeam Explorer for Microsoft SQL Server](https://img.shields.io/chocolatey/dt/veeam-explorer-for-microsoft-sql-server.svg)](https://chocolatey.org/packages/veeam-explorer-for-microsoft-sql-server)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@b3e4c2b4dd49738c36e16499fd75c396a85315b6/icons/veeam-explorer-for-microsoft-sql-server.png" width="32" height="32"/> [![Veeam Explorer for Microsoft SQL Server](https://img.shields.io/chocolatey/v/veeam-explorer-for-microsoft-sql-server.svg?label=Veeam+Explorer+for+Microsoft+SQL+Server)](https://community.chocolatey.org/packages/veeam-explorer-for-microsoft-sql-server) [![Veeam Explorer for Microsoft SQL Server](https://img.shields.io/chocolatey/dt/veeam-explorer-for-microsoft-sql-server.svg)](https://community.chocolatey.org/packages/veeam-explorer-for-microsoft-sql-server)
 
 ## Usage
 
@@ -37,7 +37,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/veeam-explorer-for-microsoft-sql-server)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/veeam-explorer-for-microsoft-sql-server)
 
 [Software Site](http://www.veeam.com/)
 

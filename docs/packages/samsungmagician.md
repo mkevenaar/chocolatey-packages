@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@e1ad9513cb5d8d6c79ce23c9023f141ac1b8df2d/icons/samsung-magician.png" width="32" height="32"/> [![Samsung Magician](https://img.shields.io/chocolatey/v/samsung-magician.svg?label=Samsung+Magician)](https://chocolatey.org/packages/samsung-magician) [![Samsung Magician](https://img.shields.io/chocolatey/dt/samsung-magician.svg)](https://chocolatey.org/packages/samsung-magician)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@e1ad9513cb5d8d6c79ce23c9023f141ac1b8df2d/icons/samsung-magician.png" width="32" height="32"/> [![Samsung Magician](https://img.shields.io/chocolatey/v/samsung-magician.svg?label=Samsung+Magician)](https://community.chocolatey.org/packages/samsung-magician) [![Samsung Magician](https://img.shields.io/chocolatey/dt/samsung-magician.svg)](https://community.chocolatey.org/packages/samsung-magician)
 
 ## Usage
 
@@ -32,7 +32,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/samsung-magician)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/samsung-magician)
 
 [Software Site](https://www.samsung.com/semiconductor/minisite/ssd/product/consumer/magician/)
 

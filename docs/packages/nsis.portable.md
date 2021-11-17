@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@047dcebf11a3a9a89dabcbebe2d091111382a619/icons/nsis.png" width="32" height="32"/> [![Nullsoft Scriptable Install System (Portable)](https://img.shields.io/chocolatey/v/nsis.portable.svg?label=Nullsoft+Scriptable+Install+System+(Portable))](https://chocolatey.org/packages/nsis.portable) [![Nullsoft Scriptable Install System (Portable)](https://img.shields.io/chocolatey/dt/nsis.portable.svg)](https://chocolatey.org/packages/nsis.portable)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@047dcebf11a3a9a89dabcbebe2d091111382a619/icons/nsis.png" width="32" height="32"/> [![Nullsoft Scriptable Install System (Portable)](https://img.shields.io/chocolatey/v/nsis.portable.svg?label=Nullsoft+Scriptable+Install+System+(Portable))](https://community.chocolatey.org/packages/nsis.portable) [![Nullsoft Scriptable Install System (Portable)](https://img.shields.io/chocolatey/dt/nsis.portable.svg)](https://community.chocolatey.org/packages/nsis.portable)
 
 ## Usage
 
@@ -39,7 +39,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/nsis.portable)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/nsis.portable)
 
 [Software Site](http://nsis.sourceforge.net/)
 

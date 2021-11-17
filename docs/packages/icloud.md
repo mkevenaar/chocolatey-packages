@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@e55b3c228cf6b5fd2088d60a69320fc278f6e030/icons/icloud.png" width="32" height="32"/> [![Apple iCloud](https://img.shields.io/chocolatey/v/iCloud.svg?label=Apple+iCloud)](https://chocolatey.org/packages/iCloud) [![Apple iCloud](https://img.shields.io/chocolatey/dt/iCloud.svg)](https://chocolatey.org/packages/iCloud)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@e55b3c228cf6b5fd2088d60a69320fc278f6e030/icons/icloud.png" width="32" height="32"/> [![Apple iCloud](https://img.shields.io/chocolatey/v/iCloud.svg?label=Apple+iCloud)](https://community.chocolatey.org/packages/iCloud) [![Apple iCloud](https://img.shields.io/chocolatey/dt/iCloud.svg)](https://community.chocolatey.org/packages/iCloud)
 
 ## Usage
 
@@ -31,7 +31,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/iCloud)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/iCloud)
 
 [Software Site](http://www.apple.com/icloud/)
 

@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@50186ee4bb8d49a525e485cfbbb88d2167d93c29/icons/mysql.workbench.png" width="32" height="32"/> [![MySQL Workbench](https://img.shields.io/chocolatey/v/mysql.workbench.svg?label=MySQL+Workbench)](https://chocolatey.org/packages/mysql.workbench) [![MySQL Workbench](https://img.shields.io/chocolatey/dt/mysql.workbench.svg)](https://chocolatey.org/packages/mysql.workbench)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@50186ee4bb8d49a525e485cfbbb88d2167d93c29/icons/mysql.workbench.png" width="32" height="32"/> [![MySQL Workbench](https://img.shields.io/chocolatey/v/mysql.workbench.svg?label=MySQL+Workbench)](https://community.chocolatey.org/packages/mysql.workbench) [![MySQL Workbench](https://img.shields.io/chocolatey/dt/mysql.workbench.svg)](https://community.chocolatey.org/packages/mysql.workbench)
 
 ## Usage
 
@@ -35,7 +35,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/mysql.workbench)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/mysql.workbench)
 
 [Software Site](http://mysql.com/)
 

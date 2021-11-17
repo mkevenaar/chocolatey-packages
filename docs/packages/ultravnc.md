@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@793b0f9445b2258a192e23bba3d482e7df9db46b/icons/ultravnc.png" width="32" height="32"/> [![UltraVNC](https://img.shields.io/chocolatey/v/ultravnc.svg?label=UltraVNC)](https://chocolatey.org/packages/ultravnc) [![UltraVNC](https://img.shields.io/chocolatey/dt/ultravnc.svg)](https://chocolatey.org/packages/ultravnc)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@793b0f9445b2258a192e23bba3d482e7df9db46b/icons/ultravnc.png" width="32" height="32"/> [![UltraVNC](https://img.shields.io/chocolatey/v/ultravnc.svg?label=UltraVNC)](https://community.chocolatey.org/packages/ultravnc) [![UltraVNC](https://img.shields.io/chocolatey/dt/ultravnc.svg)](https://community.chocolatey.org/packages/ultravnc)
 
 ## Usage
 
@@ -40,7 +40,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/ultravnc)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/ultravnc)
 
 [Software Site](http://www.uvnc.com/)
 

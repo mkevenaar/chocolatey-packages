@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@116020c522e58af02510bf485189c60c1fd109d4/icons/pulumi.png" width="32" height="32"/> [![Pulumi (Portable)](https://img.shields.io/chocolatey/v/pulumi.svg?label=Pulumi+(Portable))](https://chocolatey.org/packages/pulumi) [![Pulumi (Portable)](https://img.shields.io/chocolatey/dt/pulumi.svg)](https://chocolatey.org/packages/pulumi)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@116020c522e58af02510bf485189c60c1fd109d4/icons/pulumi.png" width="32" height="32"/> [![Pulumi (Portable)](https://img.shields.io/chocolatey/v/pulumi.svg?label=Pulumi+(Portable))](https://community.chocolatey.org/packages/pulumi) [![Pulumi (Portable)](https://img.shields.io/chocolatey/dt/pulumi.svg)](https://community.chocolatey.org/packages/pulumi)
 
 ## Usage
 
@@ -37,7 +37,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/pulumi)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/pulumi)
 
 [Software Site](https://www.pulumi.com)
 

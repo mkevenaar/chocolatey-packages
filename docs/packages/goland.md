@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@00f9c74ebe44c475727c6e7f63dc593e9ab1b746/icons/goland.png" width="32" height="32"/> [![JetBrains GoLand](https://img.shields.io/chocolatey/v/goland.svg?label=JetBrains+GoLand)](https://chocolatey.org/packages/goland) [![JetBrains GoLand](https://img.shields.io/chocolatey/dt/goland.svg)](https://chocolatey.org/packages/goland)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@00f9c74ebe44c475727c6e7f63dc593e9ab1b746/icons/goland.png" width="32" height="32"/> [![JetBrains GoLand](https://img.shields.io/chocolatey/v/goland.svg?label=JetBrains+GoLand)](https://community.chocolatey.org/packages/goland) [![JetBrains GoLand](https://img.shields.io/chocolatey/dt/goland.svg)](https://community.chocolatey.org/packages/goland)
 
 ## Usage
 
@@ -33,7 +33,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/goland)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/goland)
 
 [Software Site](https://www.jetbrains.com/go/)
 

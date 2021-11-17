@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@010c95a08ae958860af2796ed0a3ad446109f5d7/icons/mediainfo-cli.svg" width="32" height="32"/> [![MediaInfo CLI](https://img.shields.io/chocolatey/v/mediainfo-cli.svg?label=MediaInfo+CLI)](https://chocolatey.org/packages/mediainfo-cli) [![MediaInfo CLI](https://img.shields.io/chocolatey/dt/mediainfo-cli.svg)](https://chocolatey.org/packages/mediainfo-cli)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@010c95a08ae958860af2796ed0a3ad446109f5d7/icons/mediainfo-cli.svg" width="32" height="32"/> [![MediaInfo CLI](https://img.shields.io/chocolatey/v/mediainfo-cli.svg?label=MediaInfo+CLI)](https://community.chocolatey.org/packages/mediainfo-cli) [![MediaInfo CLI](https://img.shields.io/chocolatey/dt/mediainfo-cli.svg)](https://community.chocolatey.org/packages/mediainfo-cli)
 
 ## Usage
 
@@ -60,7 +60,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/mediainfo-cli)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/mediainfo-cli)
 
 [Software Site](http://mediaarea.net/en/MediaInfo)
 

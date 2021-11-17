@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@218fd53341b8400391b0efdb75f313d01cdcf984/icons/superputty.png" width="32" height="32"/> [![SuperPutty (Install)](https://img.shields.io/chocolatey/v/superputty.install.svg?label=SuperPutty+(Install))](https://chocolatey.org/packages/superputty.install) [![SuperPutty (Install)](https://img.shields.io/chocolatey/dt/superputty.install.svg)](https://chocolatey.org/packages/superputty.install)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@218fd53341b8400391b0efdb75f313d01cdcf984/icons/superputty.png" width="32" height="32"/> [![SuperPutty (Install)](https://img.shields.io/chocolatey/v/superputty.install.svg?label=SuperPutty+(Install))](https://community.chocolatey.org/packages/superputty.install) [![SuperPutty (Install)](https://img.shields.io/chocolatey/dt/superputty.install.svg)](https://community.chocolatey.org/packages/superputty.install)
 
 ## Usage
 
@@ -44,7 +44,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/superputty.install)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/superputty.install)
 
 [Software Site](https://www.facebook.com/superputty)
 

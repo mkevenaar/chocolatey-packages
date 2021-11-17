@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ab172920222bd8bb7e28a2f579b5e5d7e08de895/icons/simulide.png" width="32" height="32"/> [![SimulIDE](https://img.shields.io/chocolatey/v/simulide.svg?label=SimulIDE)](https://chocolatey.org/packages/simulide) [![SimulIDE](https://img.shields.io/chocolatey/dt/simulide.svg)](https://chocolatey.org/packages/simulide)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ab172920222bd8bb7e28a2f579b5e5d7e08de895/icons/simulide.png" width="32" height="32"/> [![SimulIDE](https://img.shields.io/chocolatey/v/simulide.svg?label=SimulIDE)](https://community.chocolatey.org/packages/simulide) [![SimulIDE](https://img.shields.io/chocolatey/dt/simulide.svg)](https://community.chocolatey.org/packages/simulide)
 
 ## Usage
 
@@ -46,7 +46,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/simulide)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/simulide)
 
 [Software Site](https://simulide.blogspot.com/)
 

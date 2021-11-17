@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@79620c3dbe7f3f6a76f7ca918d5b59aa10a61438/icons/veeam-explorer-for-microsoft-exchange.png" width="32" height="32"/> [![Veeam Explorer for Microsoft Exchange](https://img.shields.io/chocolatey/v/veeam-explorer-for-microsoft-exchange.svg?label=Veeam+Explorer+for+Microsoft+Exchange)](https://chocolatey.org/packages/veeam-explorer-for-microsoft-exchange) [![Veeam Explorer for Microsoft Exchange](https://img.shields.io/chocolatey/dt/veeam-explorer-for-microsoft-exchange.svg)](https://chocolatey.org/packages/veeam-explorer-for-microsoft-exchange)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@79620c3dbe7f3f6a76f7ca918d5b59aa10a61438/icons/veeam-explorer-for-microsoft-exchange.png" width="32" height="32"/> [![Veeam Explorer for Microsoft Exchange](https://img.shields.io/chocolatey/v/veeam-explorer-for-microsoft-exchange.svg?label=Veeam+Explorer+for+Microsoft+Exchange)](https://community.chocolatey.org/packages/veeam-explorer-for-microsoft-exchange) [![Veeam Explorer for Microsoft Exchange](https://img.shields.io/chocolatey/dt/veeam-explorer-for-microsoft-exchange.svg)](https://community.chocolatey.org/packages/veeam-explorer-for-microsoft-exchange)
 
 ## Usage
 
@@ -37,7 +37,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/veeam-explorer-for-microsoft-exchange)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/veeam-explorer-for-microsoft-exchange)
 
 [Software Site](http://www.veeam.com/)
 

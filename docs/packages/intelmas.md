@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4222ecff31a588907bd4290d5106e8cfc84a4745/icons/intel-mas.png" width="32" height="32"/> [![Intel® Memory and Storage Tool](https://img.shields.io/chocolatey/v/intel-mas.svg?label=Intel%C2%AE+Memory+and+Storage+Tool)](https://chocolatey.org/packages/intel-mas) [![Intel® Memory and Storage Tool](https://img.shields.io/chocolatey/dt/intel-mas.svg)](https://chocolatey.org/packages/intel-mas)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4222ecff31a588907bd4290d5106e8cfc84a4745/icons/intel-mas.png" width="32" height="32"/> [![Intel® Memory and Storage Tool](https://img.shields.io/chocolatey/v/intel-mas.svg?label=Intel%C2%AE+Memory+and+Storage+Tool)](https://community.chocolatey.org/packages/intel-mas) [![Intel® Memory and Storage Tool](https://img.shields.io/chocolatey/dt/intel-mas.svg)](https://community.chocolatey.org/packages/intel-mas)
 
 ## Usage
 
@@ -37,7 +37,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/intel-mas)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/intel-mas)
 
 [Software Site](https://downloadcenter.intel.com/Detail_Desc.aspx?DwnldID=30058)
 

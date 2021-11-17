@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@04dc5eb5743f7aec66c0fd7a583fe56cb80aa51a/icons/helio-workstation.png" width="32" height="32"/> [![Helio Workstation](https://img.shields.io/chocolatey/v/helio-workstation.svg?label=Helio+Workstation)](https://chocolatey.org/packages/helio-workstation) [![Helio Workstation](https://img.shields.io/chocolatey/dt/helio-workstation.svg)](https://chocolatey.org/packages/helio-workstation)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@04dc5eb5743f7aec66c0fd7a583fe56cb80aa51a/icons/helio-workstation.png" width="32" height="32"/> [![Helio Workstation](https://img.shields.io/chocolatey/v/helio-workstation.svg?label=Helio+Workstation)](https://community.chocolatey.org/packages/helio-workstation) [![Helio Workstation](https://img.shields.io/chocolatey/dt/helio-workstation.svg)](https://community.chocolatey.org/packages/helio-workstation)
 
 ## Usage
 
@@ -41,7 +41,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/helio-workstation)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/helio-workstation)
 
 [Software Site](https://helio.fm/)
 

@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@be994ab8a840e0ada1e68cef1674288eef7e685c/icons/wifiinfoview.png" width="32" height="32"/> [![WifiInfoView](https://img.shields.io/chocolatey/v/wifiinfoview.svg?label=WifiInfoView)](https://chocolatey.org/packages/wifiinfoview) [![WifiInfoView](https://img.shields.io/chocolatey/dt/wifiinfoview.svg)](https://chocolatey.org/packages/wifiinfoview)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@be994ab8a840e0ada1e68cef1674288eef7e685c/icons/wifiinfoview.png" width="32" height="32"/> [![WifiInfoView](https://img.shields.io/chocolatey/v/wifiinfoview.svg?label=WifiInfoView)](https://community.chocolatey.org/packages/wifiinfoview) [![WifiInfoView](https://img.shields.io/chocolatey/dt/wifiinfoview.svg)](https://community.chocolatey.org/packages/wifiinfoview)
 
 ## Usage
 
@@ -35,7 +35,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/wifiinfoview)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/wifiinfoview)
 
 [Software Site](http://www.nirsoft.net/utils/wifi_information_view.html)
 

@@ -1,4 +1,4 @@
-﻿#  [![Chocolatey ISO helpers extension](https://img.shields.io/chocolatey/v/chocolatey-isomount.extension.svg?label=Chocolatey+ISO+helpers+extension)](https://chocolatey.org/packages/chocolatey-isomount.extension) [![Chocolatey ISO helpers extension](https://img.shields.io/chocolatey/dt/chocolatey-isomount.extension.svg)](https://chocolatey.org/packages/chocolatey-isomount.extension)
+﻿#  [![Chocolatey ISO helpers extension](https://img.shields.io/chocolatey/v/chocolatey-isomount.extension.svg?label=Chocolatey+ISO+helpers+extension)](https://community.chocolatey.org/packages/chocolatey-isomount.extension) [![Chocolatey ISO helpers extension](https://img.shields.io/chocolatey/dt/chocolatey-isomount.extension.svg)](https://community.chocolatey.org/packages/chocolatey-isomount.extension)
 
 ## Usage
 
@@ -30,7 +30,7 @@ These functions may be used in Chocolatey install/uninstall scripts by declaring
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/chocolatey-isomount.extension)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/chocolatey-isomount.extension)
 
 [Software Site](https://github.com/mkevenaar/chocolatey-packages)
 

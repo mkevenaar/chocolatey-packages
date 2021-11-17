@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@9ef7d8e2821d9e6865606c6f0796bd9c5c5c1683/icons/windowsrepair.png" width="32" height="32"/> [![Windows Repair (Install)](https://img.shields.io/chocolatey/v/windowsrepair.install.svg?label=Windows+Repair+(Install))](https://chocolatey.org/packages/windowsrepair.install) [![Windows Repair (Install)](https://img.shields.io/chocolatey/dt/windowsrepair.install.svg)](https://chocolatey.org/packages/windowsrepair.install)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@9ef7d8e2821d9e6865606c6f0796bd9c5c5c1683/icons/windowsrepair.png" width="32" height="32"/> [![Windows Repair (Install)](https://img.shields.io/chocolatey/v/windowsrepair.install.svg?label=Windows+Repair+(Install))](https://community.chocolatey.org/packages/windowsrepair.install) [![Windows Repair (Install)](https://img.shields.io/chocolatey/dt/windowsrepair.install.svg)](https://community.chocolatey.org/packages/windowsrepair.install)
 
 ## Usage
 
@@ -39,7 +39,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/windowsrepair.install)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/windowsrepair.install)
 
 [Software Site](http://www.tweaking.com/content/page/windows_repair_all_in_one.html)
 

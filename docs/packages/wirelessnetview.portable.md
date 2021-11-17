@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@355d7ce6ca37378aa523127e7f4200685ad58121/icons/wirelessnetview.png" width="32" height="32"/> [![WirelessNetView (Portable)](https://img.shields.io/chocolatey/v/wirelessnetview.portable.svg?label=WirelessNetView+(Portable))](https://chocolatey.org/packages/wirelessnetview.portable) [![WirelessNetView (Portable)](https://img.shields.io/chocolatey/dt/wirelessnetview.portable.svg)](https://chocolatey.org/packages/wirelessnetview.portable)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@355d7ce6ca37378aa523127e7f4200685ad58121/icons/wirelessnetview.png" width="32" height="32"/> [![WirelessNetView (Portable)](https://img.shields.io/chocolatey/v/wirelessnetview.portable.svg?label=WirelessNetView+(Portable))](https://community.chocolatey.org/packages/wirelessnetview.portable) [![WirelessNetView (Portable)](https://img.shields.io/chocolatey/dt/wirelessnetview.portable.svg)](https://community.chocolatey.org/packages/wirelessnetview.portable)
 
 ## Usage
 
@@ -37,7 +37,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/wirelessnetview.portable)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/wirelessnetview.portable)
 
 [Software Site](http://www.nirsoft.net/utils/wireless_network_view.html)
 

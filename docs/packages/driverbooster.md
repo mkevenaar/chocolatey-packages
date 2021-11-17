@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@67806fe7af712974358b5cae3b59ce3cfbbd1c0a/icons/driverbooster.png" width="32" height="32"/> [![Driver Booster](https://img.shields.io/chocolatey/v/driverbooster.svg?label=Driver+Booster)](https://chocolatey.org/packages/driverbooster) [![Driver Booster](https://img.shields.io/chocolatey/dt/driverbooster.svg)](https://chocolatey.org/packages/driverbooster)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@67806fe7af712974358b5cae3b59ce3cfbbd1c0a/icons/driverbooster.png" width="32" height="32"/> [![Driver Booster](https://img.shields.io/chocolatey/v/driverbooster.svg?label=Driver+Booster)](https://community.chocolatey.org/packages/driverbooster) [![Driver Booster](https://img.shields.io/chocolatey/dt/driverbooster.svg)](https://community.chocolatey.org/packages/driverbooster)
 
 ## Usage
 
@@ -31,7 +31,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/driverbooster)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/driverbooster)
 
 [Software Site](http://www.iobit.com/driver-booster.php)
 

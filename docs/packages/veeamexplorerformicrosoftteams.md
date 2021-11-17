@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@c824a8bb27044ab1d88f3a21a27377bb064d5906/icons/veeam-explorer-for-microsoft-teams.png" width="32" height="32"/> [![Veeam Explorer for Microsoft Teams](https://img.shields.io/chocolatey/v/veeam-explorer-for-microsoft-teams.svg?label=Veeam+Explorer+for+Microsoft+Teams)](https://chocolatey.org/packages/veeam-explorer-for-microsoft-teams) [![Veeam Explorer for Microsoft Teams](https://img.shields.io/chocolatey/dt/veeam-explorer-for-microsoft-teams.svg)](https://chocolatey.org/packages/veeam-explorer-for-microsoft-teams)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@c824a8bb27044ab1d88f3a21a27377bb064d5906/icons/veeam-explorer-for-microsoft-teams.png" width="32" height="32"/> [![Veeam Explorer for Microsoft Teams](https://img.shields.io/chocolatey/v/veeam-explorer-for-microsoft-teams.svg?label=Veeam+Explorer+for+Microsoft+Teams)](https://community.chocolatey.org/packages/veeam-explorer-for-microsoft-teams) [![Veeam Explorer for Microsoft Teams](https://img.shields.io/chocolatey/dt/veeam-explorer-for-microsoft-teams.svg)](https://community.chocolatey.org/packages/veeam-explorer-for-microsoft-teams)
 
 ## Usage
 
@@ -35,7 +35,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/veeam-explorer-for-microsoft-teams)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/veeam-explorer-for-microsoft-teams)
 
 [Software Site](http://www.veeam.com/)
 

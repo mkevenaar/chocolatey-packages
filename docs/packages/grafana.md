@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@0462688e26372e1922bd13142072fac888eb9b3f/icons/grafana.svg" width="32" height="32"/> [![Grafana](https://img.shields.io/chocolatey/v/grafana.svg?label=Grafana)](https://chocolatey.org/packages/grafana) [![Grafana](https://img.shields.io/chocolatey/dt/grafana.svg)](https://chocolatey.org/packages/grafana)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@0462688e26372e1922bd13142072fac888eb9b3f/icons/grafana.svg" width="32" height="32"/> [![Grafana](https://img.shields.io/chocolatey/v/grafana.svg?label=Grafana)](https://community.chocolatey.org/packages/grafana) [![Grafana](https://img.shields.io/chocolatey/dt/grafana.svg)](https://community.chocolatey.org/packages/grafana)
 
 ## Usage
 
@@ -31,7 +31,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/grafana)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/grafana)
 
 [Software Site](https://grafana.com)
 

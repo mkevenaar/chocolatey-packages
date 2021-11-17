@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@a562571bebc3bd7f25660341bd2ab5db86f5ff25/icons/vlc-nightly.png" width="32" height="32"/> [![VLC Nightly](https://img.shields.io/chocolatey/v/vlc-nightly.svg?label=VLC+Nightly)](https://chocolatey.org/packages/vlc-nightly) [![VLC Nightly](https://img.shields.io/chocolatey/dt/vlc-nightly.svg)](https://chocolatey.org/packages/vlc-nightly)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@a562571bebc3bd7f25660341bd2ab5db86f5ff25/icons/vlc-nightly.png" width="32" height="32"/> [![VLC Nightly](https://img.shields.io/chocolatey/v/vlc-nightly.svg?label=VLC+Nightly)](https://community.chocolatey.org/packages/vlc-nightly) [![VLC Nightly](https://img.shields.io/chocolatey/dt/vlc-nightly.svg)](https://community.chocolatey.org/packages/vlc-nightly)
 
 ## Usage
 
@@ -50,7 +50,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/vlc-nightly)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/vlc-nightly)
 
 [Software Site](https://nightlies.videolan.org/index.html)
 

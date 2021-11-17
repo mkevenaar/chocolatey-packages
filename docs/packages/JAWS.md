@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@e8482fd8d4d0eb2ec196902b39a85218f67c361b/icons/JAWS.png" width="32" height="32"/> [![Freedom Scientific JAWS](https://img.shields.io/chocolatey/v/JAWS.svg?label=Freedom+Scientific+JAWS)](https://chocolatey.org/packages/JAWS) [![Freedom Scientific JAWS](https://img.shields.io/chocolatey/dt/JAWS.svg)](https://chocolatey.org/packages/JAWS)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@e8482fd8d4d0eb2ec196902b39a85218f67c361b/icons/JAWS.png" width="32" height="32"/> [![Freedom Scientific JAWS](https://img.shields.io/chocolatey/v/JAWS.svg?label=Freedom+Scientific+JAWS)](https://community.chocolatey.org/packages/JAWS) [![Freedom Scientific JAWS](https://img.shields.io/chocolatey/dt/JAWS.svg)](https://community.chocolatey.org/packages/JAWS)
 
 ## Usage
 
@@ -31,7 +31,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/JAWS)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/JAWS)
 
 [Software Site](https://www.freedomscientific.com/products/software/jaws/)
 

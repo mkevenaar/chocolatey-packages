@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@0fe0f922978b905028efc1219ce4010667d9ad6f/icons/vscode-ansible.png" width="32" height="32"/> [![Ansible VSCode Extension](https://img.shields.io/chocolatey/v/vscode-ansible.svg?label=Ansible+VSCode+Extension)](https://chocolatey.org/packages/vscode-ansible) [![Ansible VSCode Extension](https://img.shields.io/chocolatey/dt/vscode-ansible.svg)](https://chocolatey.org/packages/vscode-ansible)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@0fe0f922978b905028efc1219ce4010667d9ad6f/icons/vscode-ansible.png" width="32" height="32"/> [![Ansible VSCode Extension](https://img.shields.io/chocolatey/v/vscode-ansible.svg?label=Ansible+VSCode+Extension)](https://community.chocolatey.org/packages/vscode-ansible) [![Ansible VSCode Extension](https://img.shields.io/chocolatey/dt/vscode-ansible.svg)](https://community.chocolatey.org/packages/vscode-ansible)
 
 ## Usage
 
@@ -33,7 +33,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/vscode-ansible)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/vscode-ansible)
 
 [Software Site](https://marketplace.visualstudio.com/items?itemName=vscoss.vscode-ansible)
 

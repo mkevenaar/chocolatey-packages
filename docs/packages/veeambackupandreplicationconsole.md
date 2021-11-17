@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@96276f2fee6fb9febe308d4397ec4b5427a62093/icons/veeam-backup-and-replication-console.png" width="32" height="32"/> [![Veeam Backup & Replication Console](https://img.shields.io/chocolatey/v/veeam-backup-and-replication-console.svg?label=Veeam+Backup+%26+Replication+Console)](https://chocolatey.org/packages/veeam-backup-and-replication-console) [![Veeam Backup & Replication Console](https://img.shields.io/chocolatey/dt/veeam-backup-and-replication-console.svg)](https://chocolatey.org/packages/veeam-backup-and-replication-console)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@96276f2fee6fb9febe308d4397ec4b5427a62093/icons/veeam-backup-and-replication-console.png" width="32" height="32"/> [![Veeam Backup & Replication Console](https://img.shields.io/chocolatey/v/veeam-backup-and-replication-console.svg?label=Veeam+Backup+%26+Replication+Console)](https://community.chocolatey.org/packages/veeam-backup-and-replication-console) [![Veeam Backup & Replication Console](https://img.shields.io/chocolatey/dt/veeam-backup-and-replication-console.svg)](https://community.chocolatey.org/packages/veeam-backup-and-replication-console)
 
 ## Usage
 
@@ -37,7 +37,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/veeam-backup-and-replication-console)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/veeam-backup-and-replication-console)
 
 [Software Site](http://www.veeam.com/)
 

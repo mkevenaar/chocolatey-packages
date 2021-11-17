@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@45b6442b0d0c415ad584853927c001eb20301f04/icons/vscode-vsliveshare.png" width="32" height="32"/> [![Live Share VSCode Extension](https://img.shields.io/chocolatey/v/vscode-vsliveshare.svg?label=Live+Share+VSCode+Extension)](https://chocolatey.org/packages/vscode-vsliveshare) [![Live Share VSCode Extension](https://img.shields.io/chocolatey/dt/vscode-vsliveshare.svg)](https://chocolatey.org/packages/vscode-vsliveshare)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@45b6442b0d0c415ad584853927c001eb20301f04/icons/vscode-vsliveshare.png" width="32" height="32"/> [![Live Share VSCode Extension](https://img.shields.io/chocolatey/v/vscode-vsliveshare.svg?label=Live+Share+VSCode+Extension)](https://community.chocolatey.org/packages/vscode-vsliveshare) [![Live Share VSCode Extension](https://img.shields.io/chocolatey/dt/vscode-vsliveshare.svg)](https://community.chocolatey.org/packages/vscode-vsliveshare)
 
 ## Usage
 
@@ -35,7 +35,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/vscode-vsliveshare)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/vscode-vsliveshare)
 
 [Software Site](https://marketplace.visualstudio.com/items?itemName=ms-vsliveshare.vsliveshare)
 

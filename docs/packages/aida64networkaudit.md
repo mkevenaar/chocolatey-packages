@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@fb6e804fefc774a7d346389efc5fcc741da1a6f9/icons/aida64-networkaudit.png" width="32" height="32"/> [![AIDA64 Network Audit](https://img.shields.io/chocolatey/v/aida64-networkaudit.svg?label=AIDA64+Network+Audit)](https://chocolatey.org/packages/aida64-networkaudit) [![AIDA64 Network Audit](https://img.shields.io/chocolatey/dt/aida64-networkaudit.svg)](https://chocolatey.org/packages/aida64-networkaudit)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@fb6e804fefc774a7d346389efc5fcc741da1a6f9/icons/aida64-networkaudit.png" width="32" height="32"/> [![AIDA64 Network Audit](https://img.shields.io/chocolatey/v/aida64-networkaudit.svg?label=AIDA64+Network+Audit)](https://community.chocolatey.org/packages/aida64-networkaudit) [![AIDA64 Network Audit](https://img.shields.io/chocolatey/dt/aida64-networkaudit.svg)](https://community.chocolatey.org/packages/aida64-networkaudit)
 
 ## Usage
 
@@ -48,7 +48,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/aida64-networkaudit)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/aida64-networkaudit)
 
 [Software Site](http://www.aida64.com/products/aida64-network-audit)
 

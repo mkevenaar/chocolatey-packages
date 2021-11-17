@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@d7949131bb33509ebc8294e210fd60c84af5b082/icons/pycharm-edu.png" width="32" height="32"/> [![JetBrains Pycharm Educational](https://img.shields.io/chocolatey/v/pycharm-edu.svg?label=JetBrains+Pycharm+Educational)](https://chocolatey.org/packages/pycharm-edu) [![JetBrains Pycharm Educational](https://img.shields.io/chocolatey/dt/pycharm-edu.svg)](https://chocolatey.org/packages/pycharm-edu)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@d7949131bb33509ebc8294e210fd60c84af5b082/icons/pycharm-edu.png" width="32" height="32"/> [![JetBrains Pycharm Educational](https://img.shields.io/chocolatey/v/pycharm-edu.svg?label=JetBrains+Pycharm+Educational)](https://community.chocolatey.org/packages/pycharm-edu) [![JetBrains Pycharm Educational](https://img.shields.io/chocolatey/dt/pycharm-edu.svg)](https://community.chocolatey.org/packages/pycharm-edu)
 
 ## Usage
 
@@ -43,7 +43,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/pycharm-edu)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/pycharm-edu)
 
 [Software Site](https://www.jetbrains.com/pycharm-edu/)
 

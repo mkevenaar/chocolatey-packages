@@ -42,7 +42,7 @@ function Replace-CommonItems($text) {
   if ($text -eq $null) {return $text}
 
   $text = $text.Replace("`n",$lineFeed)
-  $text = $text -replace '(community feed[s]?|community repository)', '[$1](https://chocolatey.org/packages)'
+  $text = $text -replace '(community feed[s]?|community repository)', '[$1](https://community.chocolatey.org/packages)'
   $text = $text -replace '(Chocolatey for Business|Chocolatey Professional|Chocolatey Pro)(?=[^\w])', '[$1](https://chocolatey.org/compare)'
   $text = $text -replace '(Pro[fessional]\s?/\s?Business)', '[$1](https://chocolatey.org/compare)'
   $text = $text -replace '([Ll]icensed editions)', '[$1](https://chocolatey.org/compare)'
@@ -214,7 +214,7 @@ View the source for [$($_.Name)]($sourceFunctions/$($_.Name)`.ps1)
     [xml]$nuspec = Get-Content "$NuspecPath" -Encoding UTF8
     $meta = $nuspec.package.metadata
     $readme += @"
-# $( if ( $meta.iconUrl ) { Write-Output "<img src=`"$($meta.iconUrl)`" width=`"32`" height=`"32`"/>" }) [![$($meta.title)](https://img.shields.io/chocolatey/v/$($meta.id).svg?label=$([System.Net.WebUtility]::UrlEncode($meta.title)))](https://chocolatey.org/packages/$($meta.id)) [![$($meta.title)](https://img.shields.io/chocolatey/dt/$($meta.id).svg)](https://chocolatey.org/packages/$($meta.id))
+# $( if ( $meta.iconUrl ) { Write-Output "<img src=`"$($meta.iconUrl)`" width=`"32`" height=`"32`"/>" }) [![$($meta.title)](https://img.shields.io/chocolatey/v/$($meta.id).svg?label=$([System.Net.WebUtility]::UrlEncode($meta.title)))](https://community.chocolatey.org/packages/$($meta.id)) [![$($meta.title)](https://img.shields.io/chocolatey/dt/$($meta.id).svg)](https://community.chocolatey.org/packages/$($meta.id))
 
 ## Usage
 
@@ -242,7 +242,7 @@ $( if($meta.description.InnerText) {$meta.description.InnerText} else {$meta.des
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/$($meta.id))
+[Chocolatey Package Page](https://community.chocolatey.org/packages/$($meta.id))
 
 [Software Site]($($meta.projectUrl))
 

@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@56f4b3fcae72ad65ec8184b0dc79d3d9954b8d42/icons/exiftool.png" width="32" height="32"/> [![ExifTool](https://img.shields.io/chocolatey/v/exiftool.svg?label=ExifTool)](https://chocolatey.org/packages/exiftool) [![ExifTool](https://img.shields.io/chocolatey/dt/exiftool.svg)](https://chocolatey.org/packages/exiftool)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@56f4b3fcae72ad65ec8184b0dc79d3d9954b8d42/icons/exiftool.png" width="32" height="32"/> [![ExifTool](https://img.shields.io/chocolatey/v/exiftool.svg?label=ExifTool)](https://community.chocolatey.org/packages/exiftool) [![ExifTool](https://img.shields.io/chocolatey/dt/exiftool.svg)](https://community.chocolatey.org/packages/exiftool)
 
 ## Usage
 
@@ -53,7 +53,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/exiftool)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/exiftool)
 
 [Software Site](https://exiftool.org/)
 

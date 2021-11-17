@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4f65c53f100b466115e14fce7f20c8ae3a0cc838/icons/aida64-engineer.png" width="32" height="32"/> [![AIDA64 Engineer](https://img.shields.io/chocolatey/v/aida64-engineer.svg?label=AIDA64+Engineer)](https://chocolatey.org/packages/aida64-engineer) [![AIDA64 Engineer](https://img.shields.io/chocolatey/dt/aida64-engineer.svg)](https://chocolatey.org/packages/aida64-engineer)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4f65c53f100b466115e14fce7f20c8ae3a0cc838/icons/aida64-engineer.png" width="32" height="32"/> [![AIDA64 Engineer](https://img.shields.io/chocolatey/v/aida64-engineer.svg?label=AIDA64+Engineer)](https://community.chocolatey.org/packages/aida64-engineer) [![AIDA64 Engineer](https://img.shields.io/chocolatey/dt/aida64-engineer.svg)](https://community.chocolatey.org/packages/aida64-engineer)
 
 ## Usage
 
@@ -48,7 +48,7 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://chocolatey.org/packages/aida64-engineer)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/aida64-engineer)
 
 [Software Site](http://www.aida64.com/products/aida64-engineer)
 
