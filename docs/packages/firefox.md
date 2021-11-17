@@ -65,7 +65,6 @@ Every 6 weeks, Firefox developers take the current stable features of each build
 - Firefox Developer Edition (you are here)
 - [Firefox Nightly](https://chocolatey.org/packages/firefox-nightly)
 
-[Mozilla Developer Network documentation](https://developer.mozilla.org/en-US/Firefox/Developer_Edition)
 [Privacy policy](https://www.mozilla.org/en-US/privacy/firefox/)
 
 **Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.

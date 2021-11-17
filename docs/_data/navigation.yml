@@ -235,6 +235,8 @@
         url: /packages/ultraiso.html
       - page: "UltraVNC"
         url: /packages/ultravnc.html
+      - page: "Veeam Agent for Microsoft Windows"
+        url: /packages/veeamagent.html
       - page: "Veeam Backup & Replication Catalog"
         url: /packages/veeambackupandreplicationcatalog.html
       - page: "Veeam Backup & Replication Console"
