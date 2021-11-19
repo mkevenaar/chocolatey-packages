@@ -31,6 +31,7 @@ function global:au_BeforeUpdate {
       Write-Host "Downloading to $file_name -" $Latest.Url32
       $url32 = $Latest.URL32  + "?mirror=${mirror}"
       Invoke-WebRequest -Uri $url32 -OutFile $file_path
+      (Get-MsiInformation -Path $file_path).ProductVersion
       $Latest.FileName32 = $file_name
     }
 
@@ -42,6 +43,7 @@ function global:au_BeforeUpdate {
         Write-Host "Downloading to $file_name -" $Latest.Url64
         $url64 = $Latest.URL64  + "?mirror=${mirror}"
         Invoke-WebRequest -Uri $url64 -OutFile $file_path
+        (Get-MsiInformation -Path $file_path).ProductVersion
         $Latest.FileName64 = $file_name
     }
   } catch {
