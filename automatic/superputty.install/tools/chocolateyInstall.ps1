@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = 'https://github.com/jimradford/superputty/releases/download/1.4.0.9/SuperPuttySetup-1.4.0.9.msi'
-$checksum     = '1298e59665d02387c6f13b87507b07feaf03e705e95de60bc5841e61bcc7ae27'
+$url          = 'https://github.com/jimradford/superputty/releases/download/1.4.10/SuperPuttySetup-1.4.10.msi'
+$checksum     = '99dacc2a0d1e09c404c97e5557337f2b1691f01dcd57e11166598102e90b2464'
 $checksumType = 'sha256'
 
 $packageArgs = @{
