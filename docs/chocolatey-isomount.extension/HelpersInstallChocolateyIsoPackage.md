@@ -74,7 +74,7 @@ $packageArgs = @{
 }
 
 Install-ChocolateyIsoPackage @packageArgs
-~~~
+~~~ 
 
 
 ## Inputs
@@ -94,12 +94,12 @@ recommended that it matches the package id.
 
 Property               | Value
 ---------------------- | -----
-Aliases                |
+Aliases                | 
 Required?              | true
 Position?              | 1
-Default Value          |
+Default Value          | 
 Accept Pipeline Input? | false
-
+ 
 ###  -Url &lt;String&gt;
 This is the url to download the resource from.
 
@@ -107,12 +107,12 @@ Prefer HTTPS when available. Can be HTTP, FTP, or File URIs.
 
 Property               | Value
 ---------------------- | -----
-Aliases                |
+Aliases                | 
 Required?              | true
 Position?              | 2
-Default Value          |
+Default Value          | 
 Accept Pipeline Input? | false
-
+ 
 ###  -FileType [&lt;String&gt;]
 This is the extension of the file. This can be 'exe', 'msi', or 'msu'.
 [Licensed editions](https://chocolatey.org/compare) of Chocolatey use this to automatically determine
@@ -126,7 +126,7 @@ Required?              | false
 Position?              | 3
 Default Value          | exe
 Accept Pipeline Input? | false
-
+ 
 ###  -SilentArgs [&lt;String[]&gt;]
 OPTIONAL - These are the parameters to pass to the native installer,
 including any arguments to make the installer silent/unattended.
@@ -162,23 +162,23 @@ everything you call against that file, as in
 
 Property               | Value
 ---------------------- | -----
-Aliases                |
+Aliases                | 
 Required?              | false
 Position?              | 4
-Default Value          |
+Default Value          | 
 Accept Pipeline Input? | false
-
+ 
 ###  -ValidExitCodes [&lt;Object&gt;]
 Array of exit codes indicating success. Defaults to `@(0)`.
 
 Property               | Value
 ---------------------- | -----
-Aliases                |
+Aliases                | 
 Required?              | false
 Position?              | named
 Default Value          | @(0)
 Accept Pipeline Input? | false
-
+ 
 ###  -Checksum [&lt;String&gt;]
 The checksum hash value of the Url resource. This allows a checksum to
 be validated for files that are not local. The checksum type is covered
@@ -204,12 +204,12 @@ provide checksums for all remote resources used.
 
 Property               | Value
 ---------------------- | -----
-Aliases                |
+Aliases                | 
 Required?              | false
 Position?              | named
-Default Value          |
+Default Value          | 
 Accept Pipeline Input? | false
-
+ 
 ###  -ChecksumType [&lt;String&gt;]
 The type of checkum that the file is validated with - valid
 values are 'md5', 'sha1', 'sha256' or 'sha512' - defaults to 'md5'.
@@ -222,23 +222,23 @@ The recommendation is to use at least SHA256.
 
 Property               | Value
 ---------------------- | -----
-Aliases                |
+Aliases                | 
 Required?              | false
 Position?              | named
-Default Value          |
+Default Value          | 
 Accept Pipeline Input? | false
-
+ 
 ###  -Options [&lt;Hashtable&gt;]
 OPTIONAL - Specify custom headers. Available in 0.9.10+.
 
 Property               | Value
 ---------------------- | --------------
-Aliases                |
+Aliases                | 
 Required?              | false
 Position?              | named
 Default Value          | @{Headers=@{}}
 Accept Pipeline Input? | false
-
+ 
 ###  -File [&lt;String&gt;]
 The locatation of the 32bit file inside the ISO.
 
@@ -247,9 +247,9 @@ Property               | Value
 Aliases                | fileFullPath
 Required?              | false
 Position?              | named
-Default Value          |
+Default Value          | 
 Accept Pipeline Input? | false
-
+ 
 ###  -File64 [&lt;String&gt;]
 The locatation of the 64bit file inside the ISO.
 
@@ -258,9 +258,9 @@ Property               | Value
 Aliases                | fileFullPath64
 Required?              | false
 Position?              | named
-Default Value          |
+Default Value          | 
 Accept Pipeline Input? | false
-
+ 
 ###  -UseOnlyPackageSilentArguments
 Do not allow choco to provide/merge additional silent arguments and only
 use the ones available with the package. Available in 0.9.10+.
@@ -272,29 +272,29 @@ Required?              | false
 Position?              | named
 Default Value          | False
 Accept Pipeline Input? | false
-
+ 
 ###  -IsoCache [&lt;String&gt;]
 OPTIONAL - Full path to a cache location. Defaults to `$env:Temp`.
 
 Property               | Value
 ---------------------- | ---------
-Aliases                |
+Aliases                | 
 Required?              | false
 Position?              | named
 Default Value          | $env:TEMP
 Accept Pipeline Input? | false
-
+ 
 ###  -IgnoredArguments [&lt;Object[]&gt;]
 Allows splatting with arguments that do not apply. Do not use directly.
 
 Property               | Value
 ---------------------- | -----
-Aliases                |
+Aliases                | 
 Required?              | false
 Position?              | named
-Default Value          |
+Default Value          | 
 Accept Pipeline Input? | false
-
+ 
 ### &lt;CommonParameters&gt;
 
 This cmdlet supports the common parameters: -Verbose, -Debug, -ErrorAction, -ErrorVariable, -OutBuffer, and -OutVariable. For more information, see `about_CommonParameters` http://go.microsoft.com/fwlink/p/?LinkID=113216 .

@@ -26,17 +26,17 @@ choco uninstall octofarm
 
 OctoFarm is a web server and client combo for unifying multiple instances of Octoprint. You can manage and monitor as many instances as you want from a single interface giving you full control over your 3D printer farm.
 
-* 100% FREE AND OPEN SOURCE  
+* 100% FREE AND OPEN SOURCE
 All source code is available to check out and you get the entire feature set for free!
-* MANAGEMENT  
+* MANAGEMENT
 Manage and control every aspect of your OctoPrint run farm.
-* MONITORING  
+* MONITORING
 Keep an eye your entire farm from a selection of views.
-* HISTORY  
+* HISTORY
 Keep track of historical successful, failed or cancelled prints.
-* FILE MANAGER  
+* FILE MANAGER
 Quickly switch and manage all your printers file lists.
-* FILAMENT MANAGER  
+* FILAMENT MANAGER
 Keep track of your spool inventory and assign to print jobs.
 
 **Please Note**: This is an automatically updated package. If you find it is

@@ -25,7 +25,7 @@ choco uninstall intel.ssd.toolbox
 DEPRECATED!
 
     The Intel® SSD Toolbox will reach End of Maintenance with no additional updates after September 2020. Intel® recommends that users migrate to the Intel® Memory and Storage Tool (GUI) as a replacement for Intel® SSD management and firmware updates.
-    
+
     SSD drive management software that allows you to:
 
 - View current drive information for Intel® Solid-State Drives (Intel® SSDs), including:
