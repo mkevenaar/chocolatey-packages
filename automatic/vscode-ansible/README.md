@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@0fe0f922978b905028efc1219ce4010667d9ad6f/icons/vscode-ansible.png" width="48" height="48"/> [vscode-ansible](https://chocolatey.org/packages/vscode-ansible)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@0fe0f922978b905028efc1219ce4010667d9ad6f/icons/vscode-ansible.png" width="48" height="48"/> [vscode-ansible](https://community.chocolatey.org/packages/vscode-ansible)
 
 ## Visual Studio Code extension for [Ansible](https://www.ansible.com/)
 

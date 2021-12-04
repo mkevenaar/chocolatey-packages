@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@45b6442b0d0c415ad584853927c001eb20301f04/icons/vscode-vsliveshare.png" width="48" height="48"/> [vscode-vsliveshare](https://chocolatey.org/packages/vscode-vsliveshare)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@45b6442b0d0c415ad584853927c001eb20301f04/icons/vscode-vsliveshare.png" width="48" height="48"/> [vscode-vsliveshare](https://community.chocolatey.org/packages/vscode-vsliveshare)
 
 ## Microsoft Visual Studio Live Share
 

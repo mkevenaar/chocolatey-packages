@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@6a88120fa3e1af45adf8c403dd8fe5af15997ee6/icons/pycharm.png" width="48" height="48"/> [pycharm](https://chocolatey.org/packages/pycharm)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@6a88120fa3e1af45adf8c403dd8fe5af15997ee6/icons/pycharm.png" width="48" height="48"/> [pycharm](https://community.chocolatey.org/packages/pycharm)
 
 [![official JetBrains project](http://jb.gg/badges/official-plastic.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
 

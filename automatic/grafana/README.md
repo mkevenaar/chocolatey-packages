@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@0462688e26372e1922bd13142072fac888eb9b3f/icons/grafana.svg" width="48" height="48"/> [grafana](https://chocolatey.org/packages/grafana)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@0462688e26372e1922bd13142072fac888eb9b3f/icons/grafana.svg" width="48" height="48"/> [grafana](https://community.chocolatey.org/packages/grafana)
 
 Grafana is an open source, feature rich metrics dashboard and graph editor for Graphite, Elasticsearch, OpenTSDB, Prometheus and InfluxDB.
 

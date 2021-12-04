@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@96276f2fee6fb9febe308d4397ec4b5427a62093/icons/veeam-backup-and-replication-console.png" width="48" height="48"/> [veeam-backup-and-replication-console](https://chocolatey.org/packages/veeam-backup-and-replication-console)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@96276f2fee6fb9febe308d4397ec4b5427a62093/icons/veeam-backup-and-replication-console.png" width="48" height="48"/> [veeam-backup-and-replication-console](https://community.chocolatey.org/packages/veeam-backup-and-replication-console)
 
 ## Exit when reboot detected
 

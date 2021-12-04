@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@49cbd0915acb75d0b982b1a604a00498ff1e76e0/icons/sqlitebrowser.svg" width="48" height="48"/> [sqlitebrowser](https://chocolatey.org/packages/sqlitebrowser)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@49cbd0915acb75d0b982b1a604a00498ff1e76e0/icons/sqlitebrowser.svg" width="48" height="48"/> [sqlitebrowser](https://community.chocolatey.org/packages/sqlitebrowser)
 
 ## DB Browser for SQLite
 

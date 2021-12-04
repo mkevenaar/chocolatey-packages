@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@8b9ee59469e746e1cf7a79392ea983f6c20d001d/icons/alternatestreamview.png" width="48" height="48"/> [alternatestreamview](https://chocolatey.org/packages/alternatestreamview)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@8b9ee59469e746e1cf7a79392ea983f6c20d001d/icons/alternatestreamview.png" width="48" height="48"/> [alternatestreamview](https://community.chocolatey.org/packages/alternatestreamview)
 
 AlternateStreamView is a small utility that allows you to scan your NTFS drive, and find all hidden alternate streams stored in the file system.
 

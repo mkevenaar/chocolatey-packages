@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@e8426dd00fd368cc7addcbb2b9e32bb3cee7cf11/icons/veeam-explorer-for-microsoft-sharepoint.png" width="48" height="48"/> [veeam-explorer-for-microsoft-sharepoint](https://chocolatey.org/packages/veeam-explorer-for-microsoft-sharepoint)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@e8426dd00fd368cc7addcbb2b9e32bb3cee7cf11/icons/veeam-explorer-for-microsoft-sharepoint.png" width="48" height="48"/> [veeam-explorer-for-microsoft-sharepoint](https://community.chocolatey.org/packages/veeam-explorer-for-microsoft-sharepoint)
 
 ## Exit when reboot detected
 

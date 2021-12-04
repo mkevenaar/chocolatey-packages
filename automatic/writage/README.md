@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@77922186ca474d25299d683ca4cdb586eb34825c/icons/writage.png" width="48" height="48"/> [writage](https://chocolatey.org/packages/writage)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@77922186ca474d25299d683ca4cdb586eb34825c/icons/writage.png" width="48" height="48"/> [writage](https://community.chocolatey.org/packages/writage)
 
 **NOTE** This package requires Word 2010 or higher to be installed.
 

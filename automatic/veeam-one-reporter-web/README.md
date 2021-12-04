@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@f20a38e9ae4cd8756c2b3a3931d8b3bf22082f51/icons/veeam-one-reporter-web.png" width="48" height="48"/> [veeam-one-reporter-web](https://chocolatey.org/packages/veeam-one-reporter-web)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@f20a38e9ae4cd8756c2b3a3931d8b3bf22082f51/icons/veeam-one-reporter-web.png" width="48" height="48"/> [veeam-one-reporter-web](https://community.chocolatey.org/packages/veeam-one-reporter-web)
 
 ## Exit when reboot detected
 

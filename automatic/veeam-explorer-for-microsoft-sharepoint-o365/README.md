@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4f1e4139cbcdc8cf88c4621fdd7a45f6c63790f8/icons/veeam-explorer-for-microsoft-sharepoint-o365.png" width="48" height="48"/> [veeam-explorer-for-microsoft-sharepoint-o365](https://chocolatey.org/packages/veeam-explorer-for-microsoft-sharepoint-o365)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4f1e4139cbcdc8cf88c4621fdd7a45f6c63790f8/icons/veeam-explorer-for-microsoft-sharepoint-o365.png" width="48" height="48"/> [veeam-explorer-for-microsoft-sharepoint-o365](https://community.chocolatey.org/packages/veeam-explorer-for-microsoft-sharepoint-o365)
 
 ## Quick and easy granular recovery for SharePoint
 

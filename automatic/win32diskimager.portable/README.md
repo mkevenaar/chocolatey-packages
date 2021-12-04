@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@3559cef4d1eb00218748abd0fdf44ace62344147/icons/win32diskimager.png" width="48" height="48"/> [win32diskimager.portable](https://chocolatey.org/packages/win32diskimager.portable)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@3559cef4d1eb00218748abd0fdf44ace62344147/icons/win32diskimager.png" width="48" height="48"/> [win32diskimager.portable](https://community.chocolatey.org/packages/win32diskimager.portable)
 
 This program is designed to write a raw disk image to removable SD or USB flash devices or backup these devices to a raw image file. It is very useful for embedded development, namely Arm development projects (Android, Ubuntu on Arm, etc). Anyone is free to branch and modify this program. Patches are always welcome.
 

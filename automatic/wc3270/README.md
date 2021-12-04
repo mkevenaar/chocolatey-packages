@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@272cf81eb8f4d8b09d22cbd0d96c803153010f24/icons/wc3270.png" width="48" height="48"/> [wc3270](https://chocolatey.org/packages/wc3270)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@272cf81eb8f4d8b09d22cbd0d96c803153010f24/icons/wc3270.png" width="48" height="48"/> [wc3270](https://community.chocolatey.org/packages/wc3270)
 
 **x3270** is an IBM 3270 terminal emulator for the X Window System and Windows. It runs on most Unix-like operating systems -- e.g., Linux, Mac OS X, Solaris and Cygwin. It also runs natively on Windows.
 

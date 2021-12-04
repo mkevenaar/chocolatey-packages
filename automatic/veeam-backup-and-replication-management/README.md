@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@9c945e67b686ffd19927bdf96fcdf4f264a6dc41/icons/veeam-backup-and-replication-management.png" width="48" height="48"/> [veeam-backup-and-replication-management](https://chocolatey.org/packages/veeam-backup-and-replication-management)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@9c945e67b686ffd19927bdf96fcdf4f264a6dc41/icons/veeam-backup-and-replication-management.png" width="48" height="48"/> [veeam-backup-and-replication-management](https://community.chocolatey.org/packages/veeam-backup-and-replication-management)
 
 ## Exit when reboot detected
 
@@ -10,13 +10,13 @@ Veeam® Backup & Replication™ is a backup solution developed for VMware vSpher
 
 This package is a meta package. It will install the following software on your computer:
 
-- [Veeam Backup & Replication Console](https://chocolatey.org/packages/veeam-backup-and-replication-console)
-- [Veeam Explorer for Microsoft Active Directory](https://chocolatey.org/packages/veeam-explorer-for-microsoft-active-directory)
-- [Veeam Explorer for Microsoft Exchange](https://chocolatey.org/packages/veeam-explorer-for-microsoft-exchange)
-- [Veeam Explorer for Microsoft SharePoint](https://chocolatey.org/packages/veeam-explorer-for-microsoft-sharepoint)
-- [Veeam Explorer for Microsoft SQL Server](https://chocolatey.org/packages/veeam-explorer-for-microsoft-sql-server)
-- [Veeam Explorer for Microsoft Teams](https://chocolatey.org/packages/veeam-explorer-for-microsoft-teams)
-- [Veeam Explorer for Oracle](https://chocolatey.org/packages/veeam-explorer-for-oracle)
+- [Veeam Backup & Replication Console](https://community.chocolatey.org/packages/veeam-backup-and-replication-console)
+- [Veeam Explorer for Microsoft Active Directory](https://community.chocolatey.org/packages/veeam-explorer-for-microsoft-active-directory)
+- [Veeam Explorer for Microsoft Exchange](https://community.chocolatey.org/packages/veeam-explorer-for-microsoft-exchange)
+- [Veeam Explorer for Microsoft SharePoint](https://community.chocolatey.org/packages/veeam-explorer-for-microsoft-sharepoint)
+- [Veeam Explorer for Microsoft SQL Server](https://community.chocolatey.org/packages/veeam-explorer-for-microsoft-sql-server)
+- [Veeam Explorer for Microsoft Teams](https://community.chocolatey.org/packages/veeam-explorer-for-microsoft-teams)
+- [Veeam Explorer for Oracle](https://community.chocolatey.org/packages/veeam-explorer-for-oracle)
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and

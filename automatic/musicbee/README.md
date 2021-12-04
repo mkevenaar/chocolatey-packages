@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@6b72cf334ff8fef0fb86aad0c1534f68a42a9855/icons/musicbee.png" width="48" height="48"/> [musicbee](https://chocolatey.org/packages/musicbee)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@6b72cf334ff8fef0fb86aad0c1534f68a42a9855/icons/musicbee.png" width="48" height="48"/> [musicbee](https://community.chocolatey.org/packages/musicbee)
 
 ## The Ultimate Music Manager and Player
 

@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@460f3840913659bcfe3189d151ecf3e6fa3efcc6/icons/bacula.png" width="48" height="48"/> [bacula](https://chocolatey.org/packages/bacula)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@460f3840913659bcfe3189d151ecf3e6fa3efcc6/icons/bacula.png" width="48" height="48"/> [bacula](https://community.chocolatey.org/packages/bacula)
 
 Bacula is a set of computer programs that permits the system administrator to manage backup, recovery, and verification of computer data across a network of computers of different kinds. Bacula can also run entirely upon a single computer and can backup to various types of media, including tape and disk.
 

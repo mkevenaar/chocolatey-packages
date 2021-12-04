@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@b740eda125847cf997405fd3c7e8c470218f2292/icons/dymo-label.png" width="48" height="48"/> [dymo-label](https://chocolatey.org/packages/dymo-label)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@b740eda125847cf997405fd3c7e8c470218f2292/icons/dymo-label.png" width="48" height="48"/> [dymo-label](https://community.chocolatey.org/packages/dymo-label)
 
 DYMO-Label
 

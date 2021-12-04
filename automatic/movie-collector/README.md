@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@55b0b824aa79ab37ea68da3a5ad90ba0cd9e7e07/icons/movie-collector.png" width="48" height="48"/> [movie-collector](https://chocolatey.org/packages/movie-collector)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@55b0b824aa79ab37ea68da3a5ad90ba0cd9e7e07/icons/movie-collector.png" width="48" height="48"/> [movie-collector](https://community.chocolatey.org/packages/movie-collector)
 
 Movie Database Software - catalog your DVD / Blu-ray collection
 

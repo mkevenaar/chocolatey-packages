@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@35a3c2c9405695b548d10666884abcf238e92e1e/icons/omnidb-server.png" width="48" height="48"/> [omnidb-server](https://chocolatey.org/packages/omnidb-server)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@35a3c2c9405695b548d10666884abcf238e92e1e/icons/omnidb-server.png" width="48" height="48"/> [omnidb-server](https://community.chocolatey.org/packages/omnidb-server)
 
 **OmniDB** is a web tool that simplifies database management focusing on interactivity, designed to be powerful and lightweight. Check-out some characteristics:
 

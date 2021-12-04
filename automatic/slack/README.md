@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@63378edac68e986a45f67eb8ac2eb845fc502321/icons/slack.png" width="48" height="48"/> [slack](https://chocolatey.org/packages/slack)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@63378edac68e986a45f67eb8ac2eb845fc502321/icons/slack.png" width="48" height="48"/> [slack](https://community.chocolatey.org/packages/slack)
 
 ## Slack
 

@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@7d924f094e0faea8c264d6b973e7388c5f3a9ac8/icons/microsoft-windows-terminal.png" width="48" height="48"/> [microsoft-windows-terminal](https://chocolatey.org/packages/microsoft-windows-terminal)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@7d924f094e0faea8c264d6b973e7388c5f3a9ac8/icons/microsoft-windows-terminal.png" width="48" height="48"/> [microsoft-windows-terminal](https://community.chocolatey.org/packages/microsoft-windows-terminal)
 
 ## Terminal & Console Overview
 

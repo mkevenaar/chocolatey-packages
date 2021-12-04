@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ce5072a74e3ef11e990f27453fafafd8881ecc70/icons/veeam-explorer-for-microsoft-exchange-o365.png" width="48" height="48"/> [veeam-explorer-for-microsoft-exchange-o365](https://chocolatey.org/packages/veeam-explorer-for-microsoft-exchange-o365)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ce5072a74e3ef11e990f27453fafafd8881ecc70/icons/veeam-explorer-for-microsoft-exchange-o365.png" width="48" height="48"/> [veeam-explorer-for-microsoft-exchange-o365](https://community.chocolatey.org/packages/veeam-explorer-for-microsoft-exchange-o365)
 
 ## Recovery tool for Microsoft Exchange
 

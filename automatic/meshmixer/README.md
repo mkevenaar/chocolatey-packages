@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@6b940fe0b9134a855b5aa1c0f35ed69cb12ea13a/icons/meshmixer.png" width="48" height="48"/> [meshmixer](https://chocolatey.org/packages/meshmixer)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@6b940fe0b9134a855b5aa1c0f35ed69cb12ea13a/icons/meshmixer.png" width="48" height="48"/> [meshmixer](https://community.chocolatey.org/packages/meshmixer)
 
 Meshmixer is state-of-the-art software for working with triangle meshes. Do you need to clean up a 3D scan, do some 3D printing, or design an object that fits something else? Meshmixer can help. Think of it as a sort of "Swiss Army Knife" for 3D meshes. Oh, and it's free, for Windows and macOS!
 

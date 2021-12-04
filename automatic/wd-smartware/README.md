@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@85080cd8d1b6a862fb4ebf61ad63632819ffe416/icons/wd-smartware.png" width="48" height="48"/> [wd-smartware](https://chocolatey.org/packages/wd-smartware)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@85080cd8d1b6a862fb4ebf61ad63632819ffe416/icons/wd-smartware.png" width="48" height="48"/> [wd-smartware](https://community.chocolatey.org/packages/wd-smartware)
 
 WD SmartWare software is an easy-to-use backup application that enables users to automatically protect their data through continuous or scheduled backups. These backups can be performed by categories or the selection of the desired files.
 

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Read this before creating packages: https://chocolatey.org/docs/create-packages -->
-<!-- It is especially important to read the above link to understand additional requirements when publishing packages to the community feed aka dot org (https://chocolatey.org/packages). -->
+<!-- It is especially important to read the above link to understand additional requirements when publishing packages to the community feed aka dot org (https://community.chocolatey.org/packages). -->
 
 <!-- Test your packages in a test environment: https://github.com/chocolatey/chocolatey-test-environment -->
 
@@ -60,9 +60,9 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
 
 Every 6 weeks, Firefox developers take the current stable features of each build and introduce them into the next stable channel for further development. The Developer Edition is a special build containing features never moved forward since they would be rarely used by the average user and needlessly consume resources.
 
-- [Firefox](https://chocolatey.org/packages/firefox)
-- [Firefox Beta](https://chocolatey.org/packages/firefox-beta)
-- [Firefox Developer Edition](https://chocolatey.org/packages/firefox-dev)
+- [Firefox](https://community.chocolatey.org/packages/firefox)
+- [Firefox Beta](https://community.chocolatey.org/packages/firefox-beta)
+- [Firefox Developer Edition](https://community.chocolatey.org/packages/firefox-dev)
 - Firefox Nightly (you are here)
 
 [Forum](http://forums.mozillazine.org/viewforum.php?f=23)

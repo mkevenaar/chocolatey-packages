@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ac7471b84549c0aaa0dc646044435bdcf692305e/icons/nginx.png" width="48" height="48"/> [nginx](https://chocolatey.org/packages/nginx)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ac7471b84549c0aaa0dc646044435bdcf692305e/icons/nginx.png" width="48" height="48"/> [nginx](https://community.chocolatey.org/packages/nginx)
 
 nginx [engine x] is an HTTP and reverse proxy server, a mail proxy server, a generic TCP/UDP proxy server, as well as a load balancer and an HTTP cache.
 

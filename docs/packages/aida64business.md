@@ -36,9 +36,9 @@ This package installs a 30-day trial version.
 
 #### AIDA64 [editions](http://www.aida64.com/compare-aida64-features)
 
-* [AIDA64 Extreme](https://chocolatey.org/packages/aida64-extreme)
-* [AIDA64 Network Audit](https://chocolatey.org/packages/aida64-networkaudit)
-* [AIDA64 Engineer](https://chocolatey.org/packages/aida64-engineer)
+* [AIDA64 Extreme](https://community.chocolatey.org/packages/aida64-extreme)
+* [AIDA64 Network Audit](https://community.chocolatey.org/packages/aida64-networkaudit)
+* [AIDA64 Engineer](https://community.chocolatey.org/packages/aida64-engineer)
 * AIDA64 Business (you are here)
 
 **Please Note**: This is an automatically updated package. If you find it is

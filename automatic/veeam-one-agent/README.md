@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@07b0f3c76ddb3fda3a50d2e92aee9df2bb42aec2/icons/veeam-one-agent.png" width="48" height="48"/> [veeam-one-agent](https://chocolatey.org/packages/veeam-one-agent)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@07b0f3c76ddb3fda3a50d2e92aee9df2bb42aec2/icons/veeam-one-agent.png" width="48" height="48"/> [veeam-one-agent](https://community.chocolatey.org/packages/veeam-one-agent)
 
 ## Exit when reboot detected
 

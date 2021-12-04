@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@17b3b29c939b3bb27dad563e97b6408a99878c90/icons/wd-security.png" width="48" height="48"/> [wd-security](https://chocolatey.org/packages/wd-security)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@17b3b29c939b3bb27dad563e97b6408a99878c90/icons/wd-security.png" width="48" height="48"/> [wd-security](https://community.chocolatey.org/packages/wd-security)
 
 WD Security allows password protection and hardware encryption to be set to protect the drive from unauthorized use or access.
 

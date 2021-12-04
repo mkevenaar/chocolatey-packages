@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Read this before creating packages: https://chocolatey.org/docs/create-packages -->
-<!-- It is especially important to read the above link to understand additional requirements when publishing packages to the community feed aka dot org (https://chocolatey.org/packages). -->
+<!-- It is especially important to read the above link to understand additional requirements when publishing packages to the community feed aka dot org (https://community.chocolatey.org/packages). -->
 
 <!-- Test your packages in a test environment: https://github.com/chocolatey/chocolatey-test-environment -->
 
@@ -53,17 +53,17 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
 
 OctoFarm is a web server and client combo for unifying multiple instances of Octoprint. You can manage and monitor as many instances as you want from a single interface giving you full control over your 3D printer farm.
 
-* 100% FREE AND OPEN SOURCE  
+* 100% FREE AND OPEN SOURCE
 All source code is available to check out and you get the entire feature set for free!
-* MANAGEMENT  
+* MANAGEMENT
 Manage and control every aspect of your OctoPrint run farm.
-* MONITORING  
+* MONITORING
 Keep an eye your entire farm from a selection of views.
-* HISTORY  
+* HISTORY
 Keep track of historical successful, failed or cancelled prints.
-* FILE MANAGER  
+* FILE MANAGER
 Quickly switch and manage all your printers file lists.
-* FILAMENT MANAGER  
+* FILAMENT MANAGER
 Keep track of your spool inventory and assign to print jobs.
 
 **Please Note**: This is an automatically updated package. If you find it is

@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@d8c446cc443361885a3ac97f172d559c02e5a713/icons/psi.png" width="48" height="48"/> [psi](https://chocolatey.org/packages/psi)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@d8c446cc443361885a3ac97f172d559c02e5a713/icons/psi.png" width="48" height="48"/> [psi](https://community.chocolatey.org/packages/psi)
 
 Psi is a free instant messaging application designed for the open protocol XMPP network. Fast and lightweight, Psi is fully open-source and compatible with Windows, Linux, and Mac OS X.
 

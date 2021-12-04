@@ -32,9 +32,9 @@ Firefox Nightly builds are under active development and should be used only by a
 
 Every 6 weeks, Firefox developers take the current stable features of each build and introduce them into the next stable channel for further development. The Developer Edition is a special build containing features never moved forward since they would be rarely used by the average user and needlessly consume resources.
 
-- [Firefox](https://chocolatey.org/packages/firefox)
-- [Firefox Beta](https://chocolatey.org/packages/firefox-beta)
-- [Firefox Developer Edition](https://chocolatey.org/packages/firefox-dev)
+- [Firefox](https://community.chocolatey.org/packages/firefox)
+- [Firefox Beta](https://community.chocolatey.org/packages/firefox-beta)
+- [Firefox Developer Edition](https://community.chocolatey.org/packages/firefox-dev)
 - Firefox Nightly (you are here)
 
 [Forum](http://forums.mozillazine.org/viewforum.php?f=23)

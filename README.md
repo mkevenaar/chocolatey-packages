@@ -18,7 +18,7 @@ You can choose to use one or both of the different methods currently supported i
 
 ### Folder Structure
 
-* automatic - where automatic packaging and packages are kept. These are packages that are automatically maintained using either [AU](https://chocolatey.org/packages/au) or [Ketarin](https://chocolatey.org/packages/ketarin)/[ChocolateyPackageUpdater](https://chocolatey.org/packages/chocolateypackageupdater) combo.
+* automatic - where automatic packaging and packages are kept. These are packages that are automatically maintained using either [AU](https://community.chocolatey.org/packages/au) or [Ketarin](https://community.chocolatey.org/packages/ketarin)/[ChocolateyPackageUpdater](https://community.chocolatey.org/packages/chocolateypackageupdater) combo.
 * icons - Where you keep icon files for the packages. This is done to reduce issues when packages themselves move around.
 * ketarin - where ketarin jobs (aka applications or searches) exported as XML are kept. This is done to allow ease of contribution.
 * manual - where packages that are not automatic are kept.
@@ -34,14 +34,14 @@ For setting up your own automatic package repository, please see [Automatic Pack
 #### Ketarin / ChocolateyPackageUpdater
 
 * PowerShell v2+
-* [Ketarin](https://chocolatey.org/packages/ketarin)
-* [Chocolatey Package Updater](https://chocolatey.org/packages/chocolateypackageupdater)
+* [Ketarin](https://community.chocolatey.org/packages/ketarin)
+* [Chocolatey Package Updater](https://community.chocolatey.org/packages/chocolateypackageupdater)
 * A Windows box somewhere - to run the updater on - appveyor can't work until the import of the settings can be automated
 
 #### AU
 
 * PowerShell v5+.
-* The [AU module](https://chocolatey.org/packages/au).
+* The [AU module](https://community.chocolatey.org/packages/au).
 
 For daily operations check out the AU packages [template README](https://github.com/majkinetor/au-packages-template/blob/master/README.md).
 

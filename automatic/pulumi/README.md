@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@116020c522e58af02510bf485189c60c1fd109d4/icons/pulumi.png" width="48" height="48"/> [pulumi](https://chocolatey.org/packages/pulumi)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@116020c522e58af02510bf485189c60c1fd109d4/icons/pulumi.png" width="48" height="48"/> [pulumi](https://community.chocolatey.org/packages/pulumi)
 
 ## Modern Infrastructure as Code
 

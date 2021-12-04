@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@fa5af738fb52d32c4c8778f7ac39077787c4653e/icons/iobit-uninstaller.png" width="48" height="48"/> [iobit-uninstaller](https://chocolatey.org/packages/iobit-uninstaller)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@fa5af738fb52d32c4c8778f7ac39077787c4653e/icons/iobit-uninstaller.png" width="48" height="48"/> [iobit-uninstaller](https://community.chocolatey.org/packages/iobit-uninstaller)
 
 ## Lighter & Cleaner PC
 

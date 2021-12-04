@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@1a068bd63ced80de8635921175bc0bfc18c97485/icons/dymo-connect.png" width="48" height="48"/> [dymo-connect](https://chocolatey.org/packages/dymo-connect)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@1a068bd63ced80de8635921175bc0bfc18c97485/icons/dymo-connect.png" width="48" height="48"/> [dymo-connect](https://community.chocolatey.org/packages/dymo-connect)
 
 ## DYMO-Label
 

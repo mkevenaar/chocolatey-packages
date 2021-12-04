@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Read this before creating packages: https://chocolatey.org/docs/create-packages -->
-<!-- It is especially important to read the above link to understand additional requirements when publishing packages to the community feed aka dot org (https://chocolatey.org/packages). -->
+<!-- It is especially important to read the above link to understand additional requirements when publishing packages to the community feed aka dot org (https://community.chocolatey.org/packages). -->
 
 <!-- Test your packages in a test environment: https://github.com/chocolatey/chocolatey-test-environment -->
 
@@ -62,7 +62,7 @@ You'll need an SQL Server (express) installed. It's not required to have this in
 
 This package requires you to install the IIS Windows feature and WAS Configuration API feature. You can install these by executing `choco install IIS-WebServer WAS-ConfigurationAPI --source windowsfeatures`
 
-After installing this package, the [Veeam ONE Reporter Server](https://chocolatey.org/packages/veeam-one-reporter-server) package must be installed. Package parameters are not passed to depended packages, therefore it's not added as a dependency. You must install this package manually on the same machine for Veeam ONE to work.
+After installing this package, the [Veeam ONE Reporter Server](https://community.chocolatey.org/packages/veeam-one-reporter-server) package must be installed. Package parameters are not passed to depended packages, therefore it's not added as a dependency. You must install this package manually on the same machine for Veeam ONE to work.
 
 ### Package Parameters
 

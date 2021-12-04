@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@047dcebf11a3a9a89dabcbebe2d091111382a619/icons/nsis.png" width="48" height="48"/> [nsis.install](https://chocolatey.org/packages/nsis.install)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@047dcebf11a3a9a89dabcbebe2d091111382a619/icons/nsis.png" width="48" height="48"/> [nsis.install](https://community.chocolatey.org/packages/nsis.install)
 
 
 NSIS (Nullsoft Scriptable Install System) is a professional open source system to create Windows installers. It is designed to be as small and flexible as possible and is therefore very suitable for internet distribution.

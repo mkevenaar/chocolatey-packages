@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@2a0d1b78a421771353d15c06da4341ae2b325cda/icons/intel.ssd.toolbox.png" width="48" height="48"/> [intel.ssd.toolbox](https://chocolatey.org/packages/intel.ssd.toolbox)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@2a0d1b78a421771353d15c06da4341ae2b325cda/icons/intel.ssd.toolbox.png" width="48" height="48"/> [intel.ssd.toolbox](https://community.chocolatey.org/packages/intel.ssd.toolbox)
 
 DEPRECATED!
 

@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@b40e08792b4d113bcb96960eaa184c093471a01e/icons/firefox-dev.png" width="48" height="48"/> [firefox-dev](https://chocolatey.org/packages/firefox-dev)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@b40e08792b4d113bcb96960eaa184c093471a01e/icons/firefox-dev.png" width="48" height="48"/> [firefox-dev](https://community.chocolatey.org/packages/firefox-dev)
 
 Firefox Browser Developer Edition
 
@@ -38,10 +38,10 @@ Additional developer tools also available in the release build (via F12 key): [R
 
 Every 6 weeks, Firefox developers take the current stable features of each build and introduce them into the next stable channel for further development. The Developer Edition is a special build containing features never moved forward since they would be rarely used by the average user and needlessly consume resources.
 
-- [Firefox](https://chocolatey.org/packages/firefox)
-- [Firefox Beta](https://chocolatey.org/packages/firefox-beta)
+- [Firefox](https://community.chocolatey.org/packages/firefox)
+- [Firefox Beta](https://community.chocolatey.org/packages/firefox-beta)
 - Firefox Developer Edition (you are here)
-- [Firefox Nightly](https://chocolatey.org/packages/firefox-nightly)
+- [Firefox Nightly](https://community.chocolatey.org/packages/firefox-nightly)
 
 [Privacy policy](https://www.mozilla.org/en-US/privacy/firefox/)
 

@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@11fc26adf401e7d7c62ee06da6838c469aa5eb3b/icons/tomtom-mydrive-connect.png" width="48" height="48"/> [tomtom-mydrive-connect](https://chocolatey.org/packages/tomtom-mydrive-connect)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@11fc26adf401e7d7c62ee06da6838c469aa5eb3b/icons/tomtom-mydrive-connect.png" width="48" height="48"/> [tomtom-mydrive-connect](https://community.chocolatey.org/packages/tomtom-mydrive-connect)
 
 ## Update your TomTom navigation device
 

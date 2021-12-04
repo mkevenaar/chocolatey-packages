@@ -1,6 +1,6 @@
 # Contributing
 
-    [Packages](#1-packages)                                                                                 [Source Files](#2-source-files)    [Teamwork](#3-teamwork)  
+    [Packages](#1-packages)                                                                                 [Source Files](#2-source-files)    [Teamwork](#3-teamwork)
     [Basics](#11-basics) - [Metadata](#12-metadata) - [AU Script](#13-au-script) - [UI Automation](#14-ui-automation)
 
 ---
@@ -84,7 +84,7 @@ Chocolatey extension [chocolatey-core.extension](https://github.com/chocolatey/c
 ### 1.1.8 Set `softwareName`
 
 If the package uses [Install-ChocolateyPackage](https://github.com/chocolatey/choco/wiki/HelpersInstallChocolateyPackage)
-`softwareName` should be set to represent software _Display Name_ correctly. You can use [myuninstaller](https://chocolatey.org/packages/myuninst) package to quickly determine it (it's called _Entry Name_ here).
+`softwareName` should be set to represent software _Display Name_ correctly. You can use [myuninstaller](https://community.chocolatey.org/packages/myuninst) package to quickly determine it (it's called _Entry Name_ here).
 
 This information is used for the licensed edition of chocolatey to detect if the software is installed (Business edition) and when the software have been uninstalled (Pro edition).
 
@@ -184,7 +184,7 @@ __NOTE__: Automatic fix version doesn't work if package is using the _revision_ 
 
 Some installers do not provide silent arguments and can be difficult to automate.
 
-If the package needs to perform tasks that cannot be done with command line switches, e.g. clicking away a prompt during installation that cannot be suppressed like for example in the [dropbox](https://chocolatey.org/packages/dropbox) package, you can use [AutoHotkey](https://chocolatey.org/packages/autohotkey.portable). Make [autohotkey.portable](https://chocolatey.org/packages/autohotkey.portable) a dependency of the package. Prefer AutoHotkey over [AutoIt](https://chocolatey.org/packages/autoit.commandline), because AutoHotkey is more lightweight, FOS and more actively developed than AutoIt.
+If the package needs to perform tasks that cannot be done with command line switches, e.g. clicking away a prompt during installation that cannot be suppressed like for example in the [dropbox](https://community.chocolatey.org/packages/dropbox) package, you can use [AutoHotkey](https://community.chocolatey.org/packages/autohotkey.portable). Make [autohotkey.portable](https://community.chocolatey.org/packages/autohotkey.portable) a dependency of the package. Prefer AutoHotkey over [AutoIt](https://community.chocolatey.org/packages/autoit.commandline), because AutoHotkey is more lightweight, FOS and more actively developed than AutoIt.
 
 ### 1.4.1 Work on all locales
 

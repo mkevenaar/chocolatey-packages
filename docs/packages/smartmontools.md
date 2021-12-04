@@ -28,7 +28,7 @@ Smartmontools was originally derived from the Linux ​smartsuite package and ac
 
 Due to OS-specific issues and also depending on the different state of smartmontools development on the platforms, device support is not the same for all OS platforms. We provide info about RAID-controller support here on the homepage and of course in the manpages.
 
-See [GSmartControl](https://chocolatey.org/packages/gsmartcontrol) for a GTK GUI interface.
+See [GSmartControl](https://community.chocolatey.org/packages/gsmartcontrol) for a GTK GUI interface.
 
 #### Documentation
 

@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@79620c3dbe7f3f6a76f7ca918d5b59aa10a61438/icons/veeam-explorer-for-microsoft-exchange.png" width="48" height="48"/> [veeam-explorer-for-microsoft-exchange](https://chocolatey.org/packages/veeam-explorer-for-microsoft-exchange)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@79620c3dbe7f3f6a76f7ca918d5b59aa10a61438/icons/veeam-explorer-for-microsoft-exchange.png" width="48" height="48"/> [veeam-explorer-for-microsoft-exchange](https://community.chocolatey.org/packages/veeam-explorer-for-microsoft-exchange)
 
 ## Exit when reboot detected
 

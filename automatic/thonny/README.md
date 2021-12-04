@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@81ff2d5f95d772fafbef2696261b9b9d5bc099ac/icons/thonny.png" width="48" height="48"/> [thonny](https://chocolatey.org/packages/thonny)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@81ff2d5f95d772fafbef2696261b9b9d5bc099ac/icons/thonny.png" width="48" height="48"/> [thonny](https://community.chocolatey.org/packages/thonny)
 
 ## Features
 

@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@2c59a4d1860a81ab2cc059a6d11f6c7cdc0b657a/icons/mediainfo.svg" width="48" height="48"/> [mediainfo](https://chocolatey.org/packages/mediainfo)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@2c59a4d1860a81ab2cc059a6d11f6c7cdc0b657a/icons/mediainfo.svg" width="48" height="48"/> [mediainfo](https://community.chocolatey.org/packages/mediainfo)
 
 MediaInfo supplies technical and tag information about a video or audio file. Supports many audio and video formats, with different methods of viewing information.
 

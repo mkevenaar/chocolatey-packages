@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@d47fb7da33a696a72cd507a4f07547458b12720f/icons/veeam-backup-and-replication-extract.png" width="48" height="48"/> [veeam-backup-and-replication-extract](https://chocolatey.org/packages/veeam-backup-and-replication-extract)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@d47fb7da33a696a72cd507a4f07547458b12720f/icons/veeam-backup-and-replication-extract.png" width="48" height="48"/> [veeam-backup-and-replication-extract](https://community.chocolatey.org/packages/veeam-backup-and-replication-extract)
 
 Veeam Backup & Replication comes with an extract utility that can be used to recover machines from backup files. The extract utility does not require any interaction with Veeam Backup & Replication and can be used as an independent tool.
 

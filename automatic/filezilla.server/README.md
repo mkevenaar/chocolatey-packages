@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@715a1639b4122317e68f360d5e48f89ead28698e/icons/filezilla.server.png" width="48" height="48"/> [filezilla.server](https://chocolatey.org/packages/filezilla.server)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@715a1639b4122317e68f360d5e48f89ead28698e/icons/filezilla.server.png" width="48" height="48"/> [filezilla.server](https://community.chocolatey.org/packages/filezilla.server)
 
 FileZilla Server is a server that supports FTP and FTP over TLS which provides secure encrypted connections to the server.
 

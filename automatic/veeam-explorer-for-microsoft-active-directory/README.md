@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@cb0893d72601d24f5f6680fdf6b59b8cecc83a5f/icons/veeam-explorer-for-microsoft-active-directory.png" width="48" height="48"/> [veeam-explorer-for-microsoft-active-directory](https://chocolatey.org/packages/veeam-explorer-for-microsoft-active-directory)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@cb0893d72601d24f5f6680fdf6b59b8cecc83a5f/icons/veeam-explorer-for-microsoft-active-directory.png" width="48" height="48"/> [veeam-explorer-for-microsoft-active-directory](https://community.chocolatey.org/packages/veeam-explorer-for-microsoft-active-directory)
 
 ## Exit when reboot detected
 

@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ad615a27dbe925cf5030c597e0ffc54cd7e1028b/icons/veusz.png" width="48" height="48"/> [veusz](https://chocolatey.org/packages/veusz)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ad615a27dbe925cf5030c597e0ffc54cd7e1028b/icons/veusz.png" width="48" height="48"/> [veusz](https://community.chocolatey.org/packages/veusz)
 
 ## Veusz – a scientific plotting package
 
