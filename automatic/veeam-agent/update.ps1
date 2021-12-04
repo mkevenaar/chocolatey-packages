@@ -3,6 +3,7 @@ Import-Module au
 $releases = 'https://www.veeam.com/download-version.html'
 $releaseNotesFeed = 'https://www.veeam.com/services/veeam/technical-documents?resourceType=resourcetype:techdoc/releasenotes&productId=41'
 $productName = 'for Microsoft Windows'
+
 function global:au_SearchReplace {
   @{
     'tools\chocolateyInstall.ps1' = @{
