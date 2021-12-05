@@ -1,0 +1,26 @@
+{
+  // THe following is needed to force vscode-powershell
+  // to use the same settings as the editor config file.
+  "editor.tabSize": 2,
+  "[powershell]": {
+    "files.encoding": "utf8bom",
+  },
+  "markdownlint.config": {
+    "MD033": false,
+  }
+    "workbench.colorCustomizations": {
+      "activityBar.background": "#aacdec",
+      "activityBar.activeBorder": "#6F3215",
+      "activityBar.foreground": "#242c5c",
+      "activityBar.inactiveForeground": "#242c5c99",
+      "activityBarBadge.background": "#6F3215",
+      "activityBarBadge.foreground": "#e7e7e7",
+      "titleBar.activeBackground": "#80b5e3",
+      "titleBar.inactiveBackground": "#80b5e399",
+      "titleBar.activeForeground": "#242c5c",
+      "titleBar.inactiveForeground": "#242c5c99",
+      "statusBar.background": "#884B2E",
+      "statusBarItem.hoverBackground": "#6F3215",
+      "statusBar.foreground": "#FDCEA5"
+    }
+}
