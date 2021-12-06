@@ -309,6 +309,18 @@
         url: /packages/veeamonereporterserver.html
       - page: "Veeam ONE Reporter Web UI"
         url: /packages/veeamonereporterweb.html
+      - page: "Veeam Service Provider Console ConnectWise Automate Plugin"
+        url: /packages/veeamserviceproviderconsoleconnectwiseautomateplugin.html
+      - page: "Veeam Service Provider Console Application Server for Veeam ConnectWise Manage Plugin"
+        url: /packages/veeamserviceproviderconsoleconnectwisemanageservice.html
+      - page: "Veeam Service Provider Console Application Server Web UI for Veeam ConnectWise Manage Plugin"
+        url: /packages/veeamserviceproviderconsoleconnectwisemanagewebui.html
+      - page: "Veeam Service Provider Console ISO downloader"
+        url: /packages/veeamserviceproviderconsoleiso.html
+      - page: "Veeam Service Provider Console Application Server"
+        url: /packages/veeamserviceproviderconsoleserver.html
+      - page: "Veeam Service Provider Console WebUI"
+        url: /packages/veeamserviceproviderconsolewebui.html
       - page: "Veusz (Install)"
         url: /packages/veusz.html
       - page: "Viber"
