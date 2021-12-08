@@ -71,7 +71,7 @@ if ($pp.username) {
       wmic UserAccount where ("Name='{0}'" -f $pp.username) set PasswordExpires=False
       net localgroup "Administrators" $pp.username /add    }
   }
-  $silentArgs += " VAC_SERVICE_ACCOUNT_NAME=`"$($fulluser)`" VAC_SERVICE_ACCOUNT_PASSWORD=`"$($pp.password)`""
+  $silentArgs += " VAC_SERVER_ACCOUNT_NAME=`"$($fulluser)`" VAC_SERVER_ACCOUNT_PASSWORD=`"$($pp.password)`""
 }
 
 $packageArgs = @{

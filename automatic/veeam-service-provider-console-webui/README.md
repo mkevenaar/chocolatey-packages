@@ -10,7 +10,7 @@ When installing / upgrading these packages, I would like to advise you to enable
 
 ## Manual steps
 
-This package requires you to install the IIS Windows feature. You can install these by executing `choco install IIS-WebServer --source windowsfeatures`
+This package requires you to install the IIS Windows feature. You can install these by executing `choco install IIS-WebServer IIS-NetFxExtensibility45 IIS-ASPNET45 --source windowsfeatures`
 
 ### Package Parameters
 
