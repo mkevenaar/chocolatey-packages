@@ -61,6 +61,8 @@
         url: /packages/dymolabel.html
       - page: "Elasticsearch"
         url: /packages/elasticsearch.html
+      - page: "Etcher"
+        url: /packages/etcher.html
       - page: "Evernote"
         url: /packages/evernote.html
       - page: "ExifTool"
