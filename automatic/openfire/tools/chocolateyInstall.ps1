@@ -1,11 +1,11 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32          = 'https://www.igniterealtime.org/downloadServlet?filename=openfire/openfire_4_6_4.exe'
-$checksum32     = 'd0ed570cdfc97fc3b91dc262ee9c74a4e325f6bed8ca85fa917dabae1a5b5acb'
+$url32          = 'https://www.igniterealtime.org/downloadServlet?filename=openfire/openfire_4_6_5.exe'
+$checksum32     = 'cb1c4a5f888cbeeb6bbfd29460c8095941cecddd8c5f03b3d3f1ca412a995e81'
 $checksumType32 = 'sha256'
-$url64          = 'https://www.igniterealtime.org/downloadServlet?filename=openfire/openfire_4_6_4_x64.exe'
-$checksum64     = '001163e4322435e2fb4aae703776c491f6c0a0fb24f21c895ade1ea15d5e5948'
+$url64          = 'https://www.igniterealtime.org/downloadServlet?filename=openfire/openfire_4_6_5_x64.exe'
+$checksum64     = 'fe216d1eecb23050ebbf28f7afa8930ca167d99516051c3f5e03d545e183cf4c'
 $checksumType64 = 'sha256'
 
 $packageArgs = @{
