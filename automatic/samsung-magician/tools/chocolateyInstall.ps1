@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = 'https://p6wrew7f.azureedge.net/magician/202109/20210916_Magician_7.0_rc6273c39692.zip/REAL/Samsung_Magician_Installer_Official_7.0.0.510.zip'
+$url          = 'https://p6wrew7f.azureedge.net/magician/202112/20211209_Magician_7.0_re223137d3cb.zip/REAL/Samsung_Magician_Installer_Official_7.0.1.630.zip'
 $checksum     = '138140918780ec8083d3a13b1700c3ecccba5a79745e658b6b84b82338e374ef'
 $checksumType = 'sha256'
 
