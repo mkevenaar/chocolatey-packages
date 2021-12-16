@@ -21,11 +21,12 @@ function global:au_GetLatest {
 
     $url = $download_page.links | Where-Object href -match $re | Select-Object -First 1 -expand href
 
-    $version = (Get-Version $url).ToString()
-    
-    return @{ 
+    $version = (([regex]::Match($url,$re)).Captures.Groups[1].value)
+    $version = (Get-Version $version).ToString()
+
+    return @{
         URL32 = $url
-        Version = $version 
+        Version = $version
     }
 }
 
