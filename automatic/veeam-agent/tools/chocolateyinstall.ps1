@@ -3,8 +3,8 @@ $PackageParameters = Get-PackageParameters
 
 $toolsDir     = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 
-$url          = 'https://download5.veeam.com/VAW/v5/VeeamAgentWindows_5.0.1.4584.zip'
-$checksum     = '444e90a85f9a08f8ed35fdb1182a161bef7ca062e4fe6cc6d51ed8131ca3fc1b'
+$url          = 'https://download5.veeam.com/VAW/v5/VeeamAgentWindows_5.0.2.4680.zip'
+$checksum     = 'dd0326416e68684856b8384461dac84d9600520b1f74a6d7d4b3fae71eeea66c'
 $checksumType = 'sha256'
 
 Import-Module -Name "$($toolsDir)\helpers.ps1"
