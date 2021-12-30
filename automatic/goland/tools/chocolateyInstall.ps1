@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = 'https://download.jetbrains.com/go/goland-2021.3.1.exe'
-$checksum     = '16d07987d1cd90acd4603c71c412f77105708a83c1350aae602ffcaa75f006b1'
+$url          = 'https://download.jetbrains.com/go/goland-2021.3.2.exe'
+$checksum     = '2500f98cf0432b1626ccc133168e19a808ae4f1e2d4a526521e693dd7880ab88'
 $checksumType = 'sha256'
 
 # Workaround for https://youtrack.jetbrains.com/issue/IDEA-202935
