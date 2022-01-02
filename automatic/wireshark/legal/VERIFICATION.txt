@@ -16,4 +16,4 @@ and can be verified like this:
   checksum32: F2A315F304156B7B0874CE6971A3C526264B35F515F58F27B622F9509CFCD26C
   checksum64: 1BEC695388724CE8D40D0403B150706DAA9991E088D240779B9B16E60241EC31
 
-File 'LICENSE.txt' is obtained from <https://code.wireshark.org/review/gitweb?p=wireshark.git;a=blob;f=COPYING;hb=HEAD>
+File 'LICENSE.txt' is obtained from <https://gitlab.com/wireshark/wireshark/-/blob/master/COPYING>

@@ -42,11 +42,11 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <copyright>Wireshark Foundation</copyright>
     <tags>wireshark network protocol analyzer sniffer admin</tags>
     <releaseNotes>https://www.wireshark.org/docs/relnotes/</releaseNotes>
-    <licenseUrl>https://code.wireshark.org/review/gitweb?p=wireshark.git;a=blob;f=COPYING;hb=HEAD</licenseUrl>
+    <licenseUrl>https://gitlab.com/wireshark/wireshark/-/blob/master/COPYING</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/wireshark</packageSourceUrl>
     <docsUrl>https://wiki.wireshark.org/</docsUrl>
-    <projectSourceUrl>https://code.wireshark.org/review/gitweb?p=wireshark.git;a=tree</projectSourceUrl>
+    <projectSourceUrl>https://gitlab.com/wireshark/wireshark/-/tree/master</projectSourceUrl>
     <bugTrackerUrl>https://bugs.wireshark.org/bugzilla/</bugTrackerUrl>
     <mailingListUrl>https://www.wireshark.org/lists/</mailingListUrl>
     <summary>Wireshark</summary>
