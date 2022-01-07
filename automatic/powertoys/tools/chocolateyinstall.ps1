@@ -19,7 +19,7 @@ $packageArgs = @{
   softwareName  = 'PowerToys*'
   file          = $fileName
   fileType      = 'exe'
-  silentArgs    = "--silent --skip_dotnet_install"
+  silentArgs    = "--silent"
   validExitCodes= @(0,1641,3010)
 }
 
