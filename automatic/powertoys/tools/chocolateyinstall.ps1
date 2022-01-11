@@ -19,7 +19,7 @@ $packageArgs = @{
   softwareName  = 'PowerToys*'
   file          = $fileName
   fileType      = 'exe'
-  silentArgs    = "--silent"
+  silentArgs    = "-silent"
   validExitCodes= @(0,1641,3010)
 }
 
