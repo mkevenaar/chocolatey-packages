@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = 'https://download.jetbrains.com/charisma/youtrack-2021.4.36872.msi'
-$checksum     = 'b617080d714c6a381e69c7f032c8ade6d589a8e1b69e72b02a255dde96cdc3c8'
+$url          = 'https://download.jetbrains.com/charisma/youtrack-2021.4.38425.msi'
+$checksum     = '00bfc1a153ea8bac83fbbd35fa5fef6fbdc2ad6b071b9934548418be1654c298'
 $checksumType = 'sha256'
 
 $packageArgs = @{
