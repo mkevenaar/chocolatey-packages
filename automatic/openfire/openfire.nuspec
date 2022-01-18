@@ -46,7 +46,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/openfire</packageSourceUrl>
     <docsUrl>http://www.igniterealtime.org/projects/openfire/documentation.jsp</docsUrl>
-    <bugTrackerUrl>https://igniterealtime.org/issues/projects/OF</bugTrackerUrl>
+    <bugTrackerUrl>https://igniterealtime.atlassian.net/jira/software/c/projects/OF/issues</bugTrackerUrl>
     <projectSourceUrl>http://www.igniterealtime.org/downloads/source.jsp</projectSourceUrl>
     <mailingListUrl>https://discourse.igniterealtime.org/c/openfire</mailingListUrl>
     <summary>Cross-platform real-time collaboration server optimized for business and organizations.</summary>
