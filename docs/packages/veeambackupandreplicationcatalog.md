@@ -29,11 +29,12 @@ When installing / upgrading these packages, I would like to advise you to enable
 ## Veeam Backup Catalog
 
 Veeam Backup Catalog is a feature that stands for VM guest OS file indexing. Veeam Backup Catalog comprises Veeam Guest Catalog services that run on the following servers in the backup infrastructure: Veeam backup server and Veeam Backup Enterprise Manager server.
-To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
 
 ### Package Parameters
 
-The package accepts the following optional parameters:
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+
+This package accepts a lot of parameters. Some of them are required the installation. For the full list of parameters, please have a look at the [documentation](https://github.com/mkevenaar/chocolatey-packages/blob/master/automatic/veeam-backup-and-replication-catalog/PARAMETERS.md)
 
 * `/catalogLocation` - Specifies a path to the catalog folder where index files must be stored. By default, Veeam Backup & Replication creates the VBRCatalog folder on a volume with the maximum amount of free space
 * `/username` - Specifies a user account under which the Veeam Guest Catalog Service will run. If you do not specify this parameter, the Veeam Guest Catalog Service will run under the Local System account.

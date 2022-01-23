@@ -47,7 +47,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/veeam-backup-and-replication-iso</packageSourceUrl>
     <docsUrl>https://helpcenter.veeam.com/docs/backup/vsphere/overview.html</docsUrl>
     <mailingListUrl>https://forums.veeam.com/</mailingListUrl>
-    <summary>Veeam Backup &amp; Replication console</summary>
+    <summary>Veeam Backup &amp; Replication ISO file</summary>
     <description><![CDATA[## Exit when reboot detected
 
 When installing / upgrading these packages, I would like to advise you to enable this feature `choco feature enable -n=exitOnRebootDetected`
