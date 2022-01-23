@@ -40,7 +40,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@e8426dd00fd368cc7addcbb2b9e32bb3cee7cf11/icons/veeam-explorer-for-microsoft-sharepoint.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Veeam Software AG</copyright>
-    <tags>veeam-explorer-for-microsoft-sharepoint veeam explorer sharepoint admin</tags>
+    <tags>veeam-explorer-for-microsoft-sharepoint vbr veeam explorer sharepoint admin</tags>
     <releaseNotes>https://www.veeam.com/veeam_backup_11_0_release_notes_rn.pdf</releaseNotes>
     <licenseUrl>https://www.veeam.com/eula.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
