@@ -5,8 +5,8 @@ Veeam® Agent for Microsoft Windows provides a simple solution for backing up Wi
 
 ## Package Parameters
 
-- `/NoAutostartHard` Disables Veeam Agent Gui when starting Windows.
-- `/CleanStartmenu` Removes frequently used Veeam shortcuts from the Startmenu.
+* `/NoAutostartHard` - Disables Veeam Agent Gui when starting Windows.
+* `/CleanStartmenu` - Removes frequently used Veeam shortcuts from the Startmenu.
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
