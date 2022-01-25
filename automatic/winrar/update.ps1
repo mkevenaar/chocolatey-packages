@@ -12,7 +12,7 @@ function global:au_AfterUpdate {
 
   foreach ($url64 in $urls) {
     $url64 = 'https://www.rarlab.com' + $url64.href
-    $url32 = $url64.Replace("winrar-x64-","wrar")
+    $url32 = $url64.Replace("winrar-x64-","winrar-x32-")
     $locale = ([regex]::Match($url64,$re)).Captures.Groups[1].value
     if ($locale -eq '') {
       $locale = $defaultLocale
@@ -37,7 +37,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases
-    $version = $download_page.Links | Where-Object href -Match "wrar\d+.exe" | Select-Object -First 1 -ExpandProperty innerhtml
+    $version = $download_page.Links | Where-Object href -Match "winrar-x32-\d+.exe" | Select-Object -First 1 -ExpandProperty innerhtml
     $version = ([regex]::Match($version,'\(32 bit\) (.+)</[bB]>')).Captures.Groups[1].value
     $fileVersion = $version.Replace('.','')
     @{
