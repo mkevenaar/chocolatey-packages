@@ -2,7 +2,7 @@
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url = 'https://download.jetbrains.com/python/pycharm-professional-2021.3.2.exe' 
-$checksum     = '88ebf9145b1b3c1e942045204eec4e96f1605152e5936a179b27faf46ad88598'
+$checksum     = '938aec9e21507459576b5a1a231a0442f5d83d4b5cff65bbac715be286a89205'
 $checksumType = 'sha256'
 
 # Workaround for https://youtrack.jetbrains.com/issue/IDEA-202935
