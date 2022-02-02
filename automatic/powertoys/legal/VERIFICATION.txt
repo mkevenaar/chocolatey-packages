@@ -6,12 +6,12 @@ The installer have been downloaded from their official download link listed on <
 and can be verified like this:
 
 1. Download the following installers:
-  64-Bit: <https://github.com/microsoft/PowerToys/releases/download/v0.55.0/PowerToysSetup-0.55.0-x64.exe>
+  64-Bit: <https://github.com/microsoft/PowerToys/releases/download/v0.55.1/PowerToysSetup-0.55.1-x64.exe>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum64: 2241C78386D6347AAE2EDA9AD16A980DB00F596038FDE1A176838F24302A2D07
+  checksum64: C470EECA26AEBBDB28BF7D35694065C1897A123A64FB5103033FC23207D6C4A5
 
 File 'LICENSE.txt' is obtained from <https://github.com/microsoft/PowerToys/blob/master/LICENSE>
