@@ -69,7 +69,7 @@
         url: /packages/exiftool.html
       - page: "FileZilla Server"
         url: /packages/filezilla.server.html
-      - page: "Firefox Developer Edition"
+      - page: "Firefox Beta"
         url: /packages/firefox.html
       - page: "Firefox Nightly"
         url: /packages/firefoxnightly.html
@@ -77,6 +77,8 @@
         url: /packages/gamecollector.html
       - page: "JetBrains GoLand"
         url: /packages/goland.html
+      - page: "Google Drive"
+        url: /packages/googledrive.html
       - page: "Hangouts Chat (Install)"
         url: /packages/googlehangoutschat.html
       - page: "Grafana"
