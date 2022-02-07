@@ -35,13 +35,14 @@ function global:au_GetLatest {
   foreach($re in $regexes) {
     foreach ($release in $download_page) {
       Clear-Variable -Name "asset" -ErrorAction SilentlyContinue
+      $fileVersion = $release.tag_name.Replace('v', '')
       $version = $release.tag_name.Replace('v', '')
       if ($release.prerelease -and $re -like "*Preview") {
         $version += '-beta'
       }
 
       $version = Get-Version $version
-      $asset = $release.assets | Where-Object -Property name -like "${re}_*.msixbundle" | Where-Object -Property name -Match $version
+      $asset = $release.assets | Where-Object -Property name -like "${re}_*.msixbundle" | Where-Object -Property name -Match $fileVersion
       if ($asset) {
         $url = $asset.browser_download_url
         $streams.Add($re, (CreateStream $url $version))
