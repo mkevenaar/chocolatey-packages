@@ -6,12 +6,12 @@ The installer have been downloaded from their official download link listed on <
 and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <https://github.com/Zettlr/Zettlr/releases/download/v2.2.0/Zettlr-2.2.0-x64.exe>
+  32-Bit: <https://github.com/Zettlr/Zettlr/releases/download/v2.2.1/Zettlr-2.2.1-x64.exe>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: BC69A3147A68EA21AF1070F71DD22A77AD6E9C058F1E8EF7C55F2355F66B0656
+  checksum32: 7AC8C195EE958506E4D7FAA5D24CF337BB0243D046E3012B007B5CAA6DA3BE7E
 
 File 'LICENSE.txt' is obtained from <https://github.com/Zettlr/Zettlr/blob/master/LICENSE>
