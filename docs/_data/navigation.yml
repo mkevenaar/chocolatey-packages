@@ -111,6 +111,8 @@
         url: /packages/jetbrainstoolbox.html
       - page: "JetBrains YouTrack"
         url: /packages/jetbrainsyoutrack.html
+      - page: "KeyStore Explorer (Portable)"
+        url: /packages/keystoreexplorer.portable.html
       - page: "Kibana"
         url: /packages/kibana.html
       - page: "LastPass"
