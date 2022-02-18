@@ -10,12 +10,11 @@ function global:au_GetLatest {
     $re  = ".zip"
     $url = $download_page.links | Where-Object href -match $re | Select-Object -First 1 -expand href
 
-    $version = ([regex]::Match($url,'/releases/(.+)/orientdb')).Captures.Groups[1].value
-    
-    
-    return @{ 
+    $version = Get-Version ($url)
+
+    return @{
         URL32 = $url
-        Version = $version 
+        Version = $version
         FileType = 'zip'
     }
 }
