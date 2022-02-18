@@ -13,7 +13,6 @@ if (![System.IO.Directory]::Exists($installDir)) {[System.IO.Directory]::CreateD
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $installDir
-  file           = "$toolsdir\mariadb-10.7.1-win32.zip"
   file64         = "$toolsdir\mariadb-10.7.1-winx64.zip"
 }
 

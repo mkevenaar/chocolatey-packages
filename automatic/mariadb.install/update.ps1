@@ -72,12 +72,11 @@ function global:au_GetLatest {
 
     $releaseversion = $release_json.releases.psobject.properties.name | Select-Object -First 1
 
-    if ($major_release.release_status -eq 'Alpha') {
+    if (-not $major_release.release_status -eq 'Stable' -or -not $major_release.release_status -eq 'Old Stable' ) {
       $version = ($release_json.releases.psobject.properties.name | Select-Object -First 1) + "-" + $major_release.release_status
       $releaseversion = Get-Version($version)
     }
 
-    $32bit = $release_json.releases.$releaseversion.files | Where-Object { ($_.os -eq "Windows") -and ($_.package_type -eq "MSI Package") -and ($_.cpu -eq "x86") }
     $64bit = $release_json.releases.$releaseversion.files | Where-Object { ($_.os -eq "Windows") -and ($_.package_type -eq "MSI Package") -and ($_.cpu -eq "x86_64") }
 
     $releaseNotes = $release_json.releases.$releaseversion.release_notes_url
@@ -89,9 +88,6 @@ function global:au_GetLatest {
 
     $Result = @{
       Version        = $releaseversion
-      URL32          = $32bit.file_download_url
-      Checksum32     = $32bit.checksum.sha256sum
-      Checksum32Type = 'sha256'
       URL64          = $64bit.file_download_url
       Checksum64     = $64bit.checksum.sha256sum
       Checksum64Type = 'sha256'
@@ -110,15 +106,12 @@ function global:au_GetLatest {
 function global:au_SearchReplace {
   return @{
     ".\tools\chocolateyInstall.ps1" = @{
-      "(?i)(^\s*file\s*=\s*`"[$]toolsDir\\).*"   = "`${1}$($Latest.FileName32)`""
       "(?i)(^\s*file64\s*=\s*`"[$]toolsDir\\).*" = "`${1}$($Latest.FileName64)`""
     }
     ".\legal\VERIFICATION.txt" = @{
       "(?i)(listed on\s*)\<.*\>" = "`${1}<$releases>"
-      "(?i)(32-Bit.+)\<.*\>"     = "`${1}<$($Latest.URL32)>"
       "(?i)(64-Bit.+)\<.*\>"     = "`${1}<$($Latest.URL64)>"
-      "(?i)(checksum type:).*"   = "`${1} $($Latest.ChecksumType32)"
-      "(?i)(checksum32:).*"      = "`${1} $($Latest.Checksum32)"
+      "(?i)(checksum type:).*"   = "`${1} $($Latest.ChecksumType64)"
       "(?i)(checksum64:).*"      = "`${1} $($Latest.Checksum64)"
     }
     "$($Latest.PackageName).nuspec" = @{
