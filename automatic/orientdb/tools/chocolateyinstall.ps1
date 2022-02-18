@@ -5,7 +5,7 @@ $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   destination    = $toolsDir
-  fileFullPath   = "$toolsdir\orientdb-3.2.4.zip"
+  fileFullPath   = "$toolsdir\orientdb-community-3.2.5.zip"
 }
 
 Get-ChocolateyUnzip @packageArgs
