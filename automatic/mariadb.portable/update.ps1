@@ -90,11 +90,11 @@ function global:au_GetLatest {
       Version        = $releaseversion
       URL64          = $64bit.file_download_url
       Checksum64     = $64bit.checksum.sha256sum
-      Checksum64Type = 'sha256'
+      ChecksumType64 = 'sha256'
       ReleaseNotes   = $releaseNotes
       FileType       = 'zip'
     }
-    if (-not $null -eq $32bit.file_name) {
+    if (-not $null -eq $64bit.file_name) {
       $streams.Add($streamVersion, $Result)
     }
   }
