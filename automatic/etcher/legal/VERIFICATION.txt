@@ -6,13 +6,13 @@ The installer have been downloaded from their official download link listed on <
 and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <https://github.com/balena-io/etcher/releases/download/v1.7.4/balenaEtcher-Setup-1.7.4.exe>
+  32-Bit: <https://github.com/balena-io/etcher/releases/download/v1.7.5/balenaEtcher-Setup-1.7.5.exe>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: 4047A76CB269A143D98DBA3838006B24DB189FC7DCBC57550C50B082BCC6E511
+  checksum32: 62AE9AEF83C720A59C996150EDD6BDD7861982495F4A0475A0925AE088C93E25
 
 File 'LICENSE.txt' is obtained from <https://raw.githubusercontent.com/resin-io/etcher/master/LICENSE>
 
