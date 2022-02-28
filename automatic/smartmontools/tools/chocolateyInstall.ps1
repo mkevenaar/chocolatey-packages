@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = 'https://sourceforge.net/projects/smartmontools/files/smartmontools/7.2/smartmontools-7.2-1.win32-setup.exe/download'
-$checksum     = '83a577757bac76d48c3999b097bac4cd94e7ed3cb3456560aa511c5ac28fb859'
+$url          = 'https://sourceforge.net/projects/smartmontools/files/smartmontools/7.3/smartmontools-7.3-1.win32-setup.exe/download'
+$checksum     = '6fcdfd72f486f74700810ff1b8016ec842a3495990f356c2f76b984cbbc89e2a'
 $checksumType = 'sha256'
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
