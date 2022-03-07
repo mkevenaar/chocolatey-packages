@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop';
-$url64          = 'https://fastdl.mongodb.org/windows/mongodb-windows-x86_64-5.3.0-rc2.zip'
-$checksum64     = '5e2ab5da3a7ac72d93d342045fe02fdbd3abd2fbc0fb7e76dd5a3f5d5981f245'
+$url64          = 'https://fastdl.mongodb.org/windows/mongodb-windows-x86_64-4.4.13.zip'
+$checksum64     = '09dfc7afbc062fc3c8b2226f59cdceda54a6ed752878ec751528d5b2ec361328'
 $checksumType64 = 'sha256'
 
 $binRoot = Get-ToolsLocation
