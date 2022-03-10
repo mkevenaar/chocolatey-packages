@@ -6,13 +6,13 @@ The installer have been downloaded from their official download link listed on <
 and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <https://download.zerotier.com/RELEASES/1.8.5/dist/ZeroTier%20One.msi>
+  32-Bit: <https://download.zerotier.com/RELEASES/1.8.6/dist/ZeroTier%20One.msi>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: 4517378F979858C9A7C86543C211D0496C3A892121670E42946F7FF1E7079186
+  checksum32: 002C44CD246A9DA6868D34CC9F85A6FC343F423DBC5C946B4CD8A55720181F94
 
 File 'LICENSE.txt' is obtained from <https://github.com/zerotier/ZeroTierOne/blob/master/COPYING>
 
