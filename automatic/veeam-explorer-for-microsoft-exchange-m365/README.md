@@ -1,0 +1,9 @@
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@df05ac24d9d11844318df004b2f9c130bc74a25e/icons/veeam-explorer-for-microsoft-exchange-m365.png" width="48" height="48"/> [veeam-explorer-for-microsoft-exchange-m365](https://community.chocolatey.org/packages/veeam-explorer-for-microsoft-exchange-m365)
+
+## Recovery tool for Microsoft Exchange
+
+Veeam® Explorer™ for Microsoft Exchange offers revolutionary technology that gives you instant visibility into Exchange backups, granular recovery of individual items and easy-to-use eDiscovery options — all without restoring the full Exchange database or entire server.
+
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know the package is no longer updating correctly.

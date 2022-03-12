@@ -255,6 +255,18 @@
         url: /packages/veeambackupandreplicationmanagement.html
       - page: "Veeam Backup & Replication Server"
         url: /packages/veeambackupandreplicationserver.html
+      - page: "Veeam Backup for Microsoft 365"
+        url: /packages/veeambackupformicrosoft365.html
+      - page: "Veeam Backup for Microsoft 365 Console"
+        url: /packages/veeambackupformicrosoft365console.html
+      - page: "Veeam Backup Microsoft 365 ISO downloader"
+        url: /packages/veeambackupformicrosoft365iso.html
+      - page: "Veeam Backup for Microsoft 365 Management Console"
+        url: /packages/veeambackupformicrosoft365management.html
+      - page: "Veeam Backup for Microsoft 365 REST API & Restore Portal"
+        url: /packages/veeambackupformicrosoft365restapi.html
+      - page: "Veeam Backup for Microsoft 365 Server"
+        url: /packages/veeambackupformicrosoft365server.html
       - page: "Veeam Backup for Microsoft Office 365"
         url: /packages/veeambackupformicrosoftoffice365.html
       - page: "Veeam Backup for Microsoft Office 365 Console"
@@ -265,16 +277,22 @@
         url: /packages/veeamexplorerformicrosoftactivedirectory.html
       - page: "Veeam Explorer for Microsoft Exchange"
         url: /packages/veeamexplorerformicrosoftexchange.html
+      - page: "Veeam Explorer for Microsoft Exchange for Microsoft 365"
+        url: /packages/veeamexplorerformicrosoftexchangem365.html
       - page: "Veeam Explorer for Microsoft Exchange for Microsoft o365"
         url: /packages/veeamexplorerformicrosoftexchangeo365.html
       - page: "Veeam Explorer for Microsoft SharePoint"
         url: /packages/veeamexplorerformicrosoftsharepoint.html
+      - page: "Veeam Explorer for Microsoft SharePoint for Microsoft 365"
+        url: /packages/veeamexplorerformicrosoftsharepointm365.html
       - page: "Veeam Explorer for Microsoft SharePoint for Microsoft o365"
         url: /packages/veeamexplorerformicrosoftsharepointo365.html
       - page: "Veeam Explorer for Microsoft SQL Server"
         url: /packages/veeamexplorerformicrosoftsqlserver.html
       - page: "Veeam Explorer for Microsoft Teams"
         url: /packages/veeamexplorerformicrosoftteams.html
+      - page: "Veeam Explorer for Microsoft Teams for Microsoft 365"
+        url: /packages/veeamexplorerformicrosoftteamsm365.html
       - page: "Veeam Explorer for Microsoft Teams for Microsoft o365"
         url: /packages/veeamexplorerformicrosoftteamso365.html
       - page: "Veeam Explorer for Oracle"
