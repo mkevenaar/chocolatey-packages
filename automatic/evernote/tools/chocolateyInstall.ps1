@@ -13,8 +13,8 @@ elseif ($osInfo.ProductType -ne 1) {
 }
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = 'https://cdn1.evernote.com/boron/win/builds/Evernote-10.32.4-win-ddl-ga-3265-c8b59ac451-setup.exe'
-$checksum     = 'fe9f237c428a8deb0faee6b7471cd95ca1e15bfa3d1076849d05c4dea5e6e6d2'
+$url          = 'https://cdn1.evernote.com/boron/win/builds/Evernote-10.33.4-win-ddl-ga-3285-c3c0da8cee-setup.exe'
+$checksum     = '36c7f402e8d1650c197ced7e27541b6b87740e0caf9719c507e2d369b1b4c9fd'
 $checksumType = 'sha256'
 
 $packageArgs = @{
