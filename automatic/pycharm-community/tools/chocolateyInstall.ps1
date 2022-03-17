@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = 'https://download.jetbrains.com/python/pycharm-community-2021.3.2.exe'
-$checksum     = '50fd098e7ee6e34e8bd32b665c0fdf5947538a68097c20f76f6c7788bb9c6be7'
+$url          = 'https://download.jetbrains.com/python/pycharm-community-2021.3.3.exe'
+$checksum     = '64c779b80902e7a4c7551f6146e8c4814f86dbf22393d2e14f83c64b25a0e197'
 $checksumType = 'sha256'
 
 # Workaround for https://youtrack.jetbrains.com/issue/IDEA-202935
