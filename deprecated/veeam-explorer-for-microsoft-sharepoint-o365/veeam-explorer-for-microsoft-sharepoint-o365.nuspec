@@ -44,7 +44,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <releaseNotes>https://www.veeam.com/veeam_backup_microsoft_office_365_5d_release_notes_rn.pdf</releaseNotes>
     <licenseUrl>https://www.veeam.com/eula.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/..\deprecated\/veeam-explorer-for-microsoft-sharepoint-o365</packageSourceUrl>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/deprecated/veeam-explorer-for-microsoft-sharepoint-o365</packageSourceUrl>
     <docsUrl>https://www.veeam.com/microsoft-sharepoint-recovery-explorer.html</docsUrl>
     <mailingListUrl>https://forums.veeam.com/</mailingListUrl>
     <summary>Veeam Backup &amp; Replication explorer for SharePoint o365 edition</summary>

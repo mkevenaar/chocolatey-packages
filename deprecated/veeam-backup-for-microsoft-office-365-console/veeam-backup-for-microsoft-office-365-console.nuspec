@@ -44,7 +44,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <releaseNotes>https://www.veeam.com/veeam_backup_microsoft_office_365_5d_release_notes_rn.pdf</releaseNotes>
     <licenseUrl>https://www.veeam.com/eula.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/..\deprecated\/veeam-backup-for-microsoft-office-365-console</packageSourceUrl>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/deprecated/veeam-backup-for-microsoft-office-365-console</packageSourceUrl>
     <docsUrl>https://helpcenter.veeam.com/docs/vbo365/guide/vbo_introduction.html</docsUrl>
     <mailingListUrl>https://forums.veeam.com/</mailingListUrl>
     <summary>Veeam Backup for Microsoft Office 365 Console</summary>
