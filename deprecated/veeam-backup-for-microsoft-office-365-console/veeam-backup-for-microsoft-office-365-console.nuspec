@@ -22,40 +22,51 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- This section is about this package, although id and version have ties back to the software -->
     <!-- id is lowercase and if you want a good separator for words, use '-', not '.'. Dots are only acceptable as suffixes for certain types of packages, e.g. .install, .portable, .extension, .template -->
     <!-- If the software is cross-platform, attempt to use the same id as the debian/rpm package(s) if possible. -->
-    <id>veeam-backup-for-microsoft-office-365-management</id>
+    <id>veeam-backup-for-microsoft-office-365-console</id>
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>5.0.3.1033</version>
+    <version>6.0.0</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Maurice Kevenaar</owners>
     <!-- ============================== -->
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
-    <title>Veeam Backup for Microsoft Office 365 Management Console</title>
+    <title>[Deprecated] Veeam Backup for Microsoft Office 365 Console</title>
     <authors>Veeam Software Group GmbH</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://www.veeam.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@6ebecc329e84460097d143636f21f1c899a8d4b9/icons/veeam-backup-for-microsoft-office-365-management.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ec5c8311275798f228e45671f705c3f693edc8bc/icons/veeam-backup-for-microsoft-office-365-console.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Veeam Software Group GmbH</copyright>
     <tags>veeam-backup-for-microsoft-office-365 vbo veeam backup o365 office microsoft admin</tags>
     <releaseNotes>https://www.veeam.com/veeam_backup_microsoft_office_365_5d_release_notes_rn.pdf</releaseNotes>
     <licenseUrl>https://www.veeam.com/eula.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/veeam-backup-for-microsoft-office-365-management</packageSourceUrl>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/..\deprecated\/veeam-backup-for-microsoft-office-365-console</packageSourceUrl>
     <docsUrl>https://helpcenter.veeam.com/docs/vbo365/guide/vbo_introduction.html</docsUrl>
     <mailingListUrl>https://forums.veeam.com/</mailingListUrl>
-    <summary>Veeam Backup for Microsoft Office 365 Console and Explorers</summary>
-    <description><![CDATA[Veeam Backup for Microsoft Office 365 is a comprehensive solution that allows you to back up and restore data of your Microsoft Office 365, on-premises Microsoft Exchange and on-premises Microsoft SharePoint organizations, including Microsoft OneDrive for Business.
+    <summary>Veeam Backup for Microsoft Office 365 Console</summary>
+    <description><![CDATA[DEPRECATED!
+
+Veeam Backup for Microsoft Office 365 is a comprehensive solution that allows you to back up and restore data of your Microsoft Office 365, on-premises Microsoft Exchange and on-premises Microsoft SharePoint organizations, including Microsoft OneDrive for Business.
 
 This package installs the following software by default:
 
 * Veeam Backup for Microsoft Office 365 Console
 * Veeam Backup for Microsoft Office 365 PowerShell
-* Veeam Explorer for Microsoft Exchange
-* Veeam Explorer for Microsoft Sharepoint
+
+To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+
+### Package Parameters
+
+The package accepts the following optional parameters:
+
+* `/console` - Only install Veeam Backup for Microsoft Office 365 Console
+* `/powershell` - Only install Veeam Backup for Microsoft Office 365 PowerShell
+
+**NOTE** These parameters can be combined. e.g. `-params '"/console"'` to only install the Console part.
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
@@ -65,10 +76,7 @@ let them know the package is no longer updating correctly.
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
     <dependencies>
-      <dependency id="veeam-backup-for-microsoft-office-365-console" version="[5.0.3.1033]" />
-      <dependency id="veeam-explorer-for-microsoft-exchange-o365" version="[5.0.3.1033]" />
-      <dependency id="veeam-explorer-for-microsoft-sharepoint-o365" version="[5.0.3.1033]" />
-      <dependency id="veeam-explorer-for-microsoft-teams-o365" version="[5.0.3.1033]" />
+      <dependency id="veeam-backup-for-microsoft-365-console" />
     </dependencies>
 
     <!--<provides>NOT YET IMPLEMENTED</provides>-->
@@ -78,6 +86,6 @@ let them know the package is no longer updating correctly.
   <!-- this section controls what actually gets packaged into the Chocolatey package -->
   <!-- Uncomment to limit what is packed in -->
   <files>
-    <!--<file src="tools\**" target="tools" />-->
+    <file src="tools\**" target="tools" />
   </files>
 </package>

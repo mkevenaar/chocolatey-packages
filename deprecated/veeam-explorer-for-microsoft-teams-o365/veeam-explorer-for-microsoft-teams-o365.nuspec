@@ -26,14 +26,14 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>5.0.3.1033</version>
+    <version>6.0.0</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Maurice Kevenaar</owners>
     <!-- ============================== -->
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
-    <title>Veeam Explorer for Microsoft Teams for Microsoft o365</title>
+    <title>[Deprecated] Veeam Explorer for Microsoft Teams for Microsoft o365</title>
     <authors>Veeam Software AG</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://www.veeam.com/</projectUrl>
@@ -44,11 +44,13 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <releaseNotes>https://www.veeam.com/veeam_backup_microsoft_office_365_5d_release_notes_rn.pdf</releaseNotes>
     <licenseUrl>https://www.veeam.com/eula.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/veeam-explorer-for-microsoft-teams-o365</packageSourceUrl>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/..\deprecated\/veeam-explorer-for-microsoft-teams-o365</packageSourceUrl>
     <docsUrl>https://www.veeam.com/</docsUrl>
     <mailingListUrl>https://forums.veeam.com/</mailingListUrl>
     <summary>Veeam Backup &amp; Replication explorer for Teams</summary>
-    <description><![CDATA[Exit when reboot detected
+    <description><![CDATA[DEPRECATED!
+
+Exit when reboot detected
 
 When installing / upgrading these packages, I would like to advise you to enable this feature `choco feature enable -n=exitOnRebootDetected`
 
@@ -62,8 +64,7 @@ let them know the package is no longer updating correctly.
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
     <dependencies>
-      <dependency id="DotNet4.7.2" />
-      <dependency id="veeam-backup-for-microsoft-office-365-console" version="[5.0.3.1033]" />
+      <dependency id="veeam-explorer-for-microsoft-teams-m365" />
     </dependencies>
 
     <!--<provides>NOT YET IMPLEMENTED</provides>-->
@@ -73,6 +74,6 @@ let them know the package is no longer updating correctly.
   <!-- this section controls what actually gets packaged into the Chocolatey package -->
   <!-- Uncomment to limit what is packed in -->
   <files>
-    <file src="tools\**" target="tools" />
+    <!-- <file src="tools\**" target="tools" /> -->
   </files>
 </package>

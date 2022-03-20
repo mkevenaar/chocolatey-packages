@@ -41,7 +41,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Intel Corporation</copyright>
     <tags>intel ssd drive diag smart trim firmware</tags>
-    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/deprecated/intel.ssd.toolbox</packageSourceUrl>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/..\deprecated\/intel.ssd.toolbox</packageSourceUrl>
     <summary>SSD drive management software</summary>
     <description><![CDATA[DEPRECATED!
 

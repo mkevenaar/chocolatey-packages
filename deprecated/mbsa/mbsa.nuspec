@@ -12,7 +12,7 @@ Microsoft Baseline Security Analyzer (MBSA) lets administrators scan local and r
 
 MBSA is built on the Windows Update Agent and Microsoft Update infrastructure, ensuring consistency across Microsoft management products, including Microsoft Update (MU), Windows Server Update Services 2.0 and 3.0 (WSUS), Systems Management Server Inventory Tool for Microsoft Update (ITMU) (SMS), System Center Configuration Manager (SCCM) 2007, and Small Business Server (SBS.)
     </description>
-    <packageSourceUrl>https://github.com/dtgm/chocolatey-packages/tree/master/manual/mbsa</packageSourceUrl>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/..\deprecated\/mbsa</packageSourceUrl>
     <projectUrl>http://www.microsoft.com/download/details.aspx?id=7558</projectUrl>
     <docsUrl>http://www.microsoft.com/technet/security/tools/mbsa2/qa.mspx</docsUrl>
     <mailingListUrl>http://social.technet.microsoft.com/forums/en-us/mbsa</mailingListUrl>
