@@ -69,7 +69,7 @@
         url: /packages/exiftool.html
       - page: "FileZilla Server"
         url: /packages/filezilla.server.html
-      - page: "Firefox Developer Edition"
+      - page: "Firefox Beta"
         url: /packages/firefox.html
       - page: "Firefox Nightly"
         url: /packages/firefoxnightly.html
