@@ -12,6 +12,7 @@ $fileLocation = 'Backup\Veeam.Backup365.msi'
 [System.Collections.ArrayList]$silentArgs = @()
 
 $silentArgs.Add('BR_OFFICE365')
+$silentArgs.Add('PS_OFFICE365')
 
 $silent = $silentArgs -join ','
 
