@@ -45,7 +45,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <licenseUrl>https://www.mongodb.com/community/licensing</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/mongodb.install</packageSourceUrl>
-    <docsUrl>https://docs.mongodb.com/</docsUrl>
+    <docsUrl>https://www.mongodb.com/docs/</docsUrl>
     <projectSourceUrl>https://github.com/mongodb/mongo</projectSourceUrl>
     <bugTrackerUrl>https://github.com/mongodb/mongo/wiki/Submit-Bug-Reports</bugTrackerUrl>
     <mailingListUrl>https://groups.google.com/forum/#!forum/mongodb-user</mailingListUrl>
