@@ -2,7 +2,7 @@
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url          = 'https://dl.google.com/drive-file-stream/GoogleDriveSetup.exe'
-$checksum     = '9239ACF95CC5B675EEA0D9525C3C40C9C44808C82548E9325ED3AA74A33E9A08'
+$checksum     = 'D8899D5529747DE9418B9768DF2619A639B3F61B93DCB955E69D705805DB6752'
 $checksumType = 'sha256'
 
 $packageArgs = @{
