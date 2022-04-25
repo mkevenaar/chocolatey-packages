@@ -41,5 +41,5 @@ let them know the package is no longer updating correctly.
 
 [Software Site](http://www.veeam.com/)
 
-[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/..\deprecated\/veeam-explorer-for-microsoft-teams-o365)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/deprecated/veeam-explorer-for-microsoft-teams-o365)
 

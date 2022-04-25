@@ -34,5 +34,5 @@ MBSA is built on the Windows Update Agent and Microsoft Update infrastructure, e
 
 [Software Site](http://www.microsoft.com/download/details.aspx?id=7558)
 
-[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/..\deprecated\/mbsa)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/deprecated/mbsa)
 

@@ -54,5 +54,5 @@ let them know the package is no longer updating correctly.
 
 [Software Site](https://downloadcenter.intel.com/download/30058/Intel-Memory-and-Storage-Tool-GUI)
 
-[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/..\deprecated\/intel.ssd.toolbox)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/deprecated/intel.ssd.toolbox)
 

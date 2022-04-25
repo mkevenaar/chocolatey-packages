@@ -44,5 +44,5 @@ let them know the package is no longer updating correctly.
 
 [Software Site](http://www.veeam.com/)
 
-[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/..\deprecated\/veeam-backup-for-microsoft-office-365-management)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/deprecated/veeam-backup-for-microsoft-office-365-management)
 

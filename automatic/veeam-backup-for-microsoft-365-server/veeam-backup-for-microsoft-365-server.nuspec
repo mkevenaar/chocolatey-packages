@@ -57,8 +57,6 @@ This package installs the following software by default:
 * Veeam Backup for Microsoft 365 Console
 * Veeam Backup for Microsoft 365 PowerShell
 
-To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
-
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
