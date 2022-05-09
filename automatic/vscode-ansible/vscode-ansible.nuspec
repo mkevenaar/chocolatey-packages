@@ -34,24 +34,29 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
     <title>Ansible VSCode Extension</title>
-    <authors>Microsoft</authors>
+    <authors>Red Hat</authors>
     <!-- projectUrl is required for the community feed -->
-    <projectUrl>https://marketplace.visualstudio.com/items?itemName=vscoss.vscode-ansible</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@0fe0f922978b905028efc1219ce4010667d9ad6f/icons/vscode-ansible.png</iconUrl>
+    <projectUrl>https://marketplace.visualstudio.com/items?itemName=redhat.ansible</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@436d3ec48c11e068a351c98590a9b3a54076829f/icons/vscode-ansible.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Microsoft</copyright>
+    <copyright>Red Hat</copyright>
     <tags>vscode-ansible ansible extension vscode</tags>
-    <releaseNotes>https://marketplace.visualstudio.com/items/vscoss.vscode-ansible/changelog</releaseNotes>
-    <licenseUrl>https://marketplace.visualstudio.com/items/vscoss.vscode-ansible/license</licenseUrl>
+    <releaseNotes>https://marketplace.visualstudio.com/items/redhat.ansible/changelog</releaseNotes>
+    <licenseUrl>https://marketplace.visualstudio.com/items/redhat.ansible/license</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/vscode-ansible</packageSourceUrl>
-    <projectSourceUrl>https://github.com/VSChina/vscode-ansible</projectSourceUrl>
-    <docsUrl>https://github.com/VSChina/vscode-ansible/blob/master/README.md</docsUrl>
-    <bugTrackerUrl>https://github.com/VSChina/vscode-ansible/issues</bugTrackerUrl>
+    <projectSourceUrl>https://github.com/ansible/vscode-ansible</projectSourceUrl>
+    <docsUrl>https://github.com/ansible/vscode-ansible/blob/main/README.md</docsUrl>
+    <bugTrackerUrl>https://github.com/ansible/vscode-ansible/issues</bugTrackerUrl>
     <summary>VSCode extension for Ansible</summary>
-    <description><![CDATA[## Visual Studio Code extension for [Ansible](https://www.ansible.com/)
+    <description><![CDATA[## Ansible VS Code Extension by Red Hat
 
-The VSCode ansible extension is designed to increase developer productivity authoring, testing and using Ansible with Azure. The extension provides cool features around playbook authoring and execution. It supports running playbook from various places e.g. Docker, local installation, remote machines via ssh and [Cloud Shell](https://azure.microsoft.com/en-us/features/cloud-shell/).
+This extension adds language support for Ansible to
+[Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=redhat.ansible)
+and [OpenVSX](https://open-vsx.org/extension/redhat/ansible) compatible editors
+by leveraging
+[ansible-language-server](https://github.com/ansible/ansible-language-server).
+
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and

@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@0fe0f922978b905028efc1219ce4010667d9ad6f/icons/vscode-ansible.png" width="32" height="32"/> [![Ansible VSCode Extension](https://img.shields.io/chocolatey/v/vscode-ansible.svg?label=Ansible+VSCode+Extension)](https://community.chocolatey.org/packages/vscode-ansible) [![Ansible VSCode Extension](https://img.shields.io/chocolatey/dt/vscode-ansible.svg)](https://community.chocolatey.org/packages/vscode-ansible)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@436d3ec48c11e068a351c98590a9b3a54076829f/icons/vscode-ansible.png" width="32" height="32"/> [![Ansible VSCode Extension](https://img.shields.io/chocolatey/v/vscode-ansible.svg?label=Ansible+VSCode+Extension)](https://community.chocolatey.org/packages/vscode-ansible) [![Ansible VSCode Extension](https://img.shields.io/chocolatey/dt/vscode-ansible.svg)](https://community.chocolatey.org/packages/vscode-ansible)
 
 ## Usage
 
@@ -22,9 +22,14 @@ choco uninstall vscode-ansible
 
 ## Description
 
-## Visual Studio Code extension for [Ansible](https://www.ansible.com/)
+## Ansible VS Code Extension by Red Hat
 
-The VSCode ansible extension is designed to increase developer productivity authoring, testing and using Ansible with Azure. The extension provides cool features around playbook authoring and execution. It supports running playbook from various places e.g. Docker, local installation, remote machines via ssh and [Cloud Shell](https://azure.microsoft.com/en-us/features/cloud-shell/).
+This extension adds language support for Ansible to
+[Visual Studio Code](https://marketplace.visualstudio.com/items?itemName=redhat.ansible)
+and [OpenVSX](https://open-vsx.org/extension/redhat/ansible) compatible editors
+by leveraging
+[ansible-language-server](https://github.com/ansible/ansible-language-server).
+
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
@@ -35,7 +40,7 @@ let them know the package is no longer updating correctly.
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/vscode-ansible)
 
-[Software Site](https://marketplace.visualstudio.com/items?itemName=vscoss.vscode-ansible)
+[Software Site](https://marketplace.visualstudio.com/items?itemName=redhat.ansible)
 
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/vscode-ansible)
 

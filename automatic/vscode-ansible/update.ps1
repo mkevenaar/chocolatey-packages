@@ -1,6 +1,6 @@
 import-module au
 
-$releases = "https://marketplace.visualstudio.com/items?itemName=vscoss.vscode-ansible"
+$releases = "https://marketplace.visualstudio.com/items?itemName=redhat.ansible"
 
 function global:au_BeforeUpdate($Package) {
   $vscode = $Package.nuspecXml.package.metadata.dependencies.dependency | ? id -Match '^vscode$'
@@ -16,7 +16,7 @@ function global:au_BeforeUpdate($Package) {
 function global:au_SearchReplace {
   @{
     ".\tools\chocolateyInstall.ps1" = @{
-      "(vscode-ansible@)[^']*" = "`${1}$($Latest.RemoteVersion)"
+      "(redhat.ansible@)[^']*" = "`${1}$($Latest.RemoteVersion)"
     }
   }
 }

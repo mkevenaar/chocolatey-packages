@@ -1,3 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-Install-VsCodeExtension -extensionId 'vscoss.vscode-ansible@0.6.0'
+# clean up old extension
+Uninstall-VsCodeExtension -extensionId 'vscoss.vscode-ansible'
+
+Install-VsCodeExtension -extensionId 'redhat.ansible@0.6.0'
