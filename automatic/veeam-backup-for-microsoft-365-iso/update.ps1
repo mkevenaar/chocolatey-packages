@@ -29,11 +29,15 @@ function global:au_GetLatest {
 
     $isoVersion = $version
 
+    if($version -match "6.0.0.379") {
+      $isoVersion = "6.0.0.379_P20220413"
+    }
+
     $version = Get-Version ($version)
     $majversion = $version.ToString(1)
 
     $filename = "Veeam.Backup365_$($isoVersion).iso"
-    $url = "https://download2.veeam.com/VBO/v$($majversion)/GA/$($filename)"
+    $url = "https://download2.veeam.com/VBO/v$($majversion)/$($filename)"
 
     $releaseNotesPage = Invoke-WebRequest $releaseNotesFeed | ConvertFrom-Json
 
