@@ -41,7 +41,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Western Digital Technologies, Inc. All rights reserved.</copyright>
     <tags>wd-security western digital wd westerndigital wdc admin</tags>
-    <releaseNotes></releaseNotes>
+    <releaseNotes>https://support-en.wd.com/app/products/downloads/release-notes/note_id/29495</releaseNotes>
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/wd-security</packageSourceUrl>
     <docsUrl>https://support.wdc.com/knowledgebase/answer.aspx?ID=10408</docsUrl>
     <summary>WD Security for Windows</summary>
