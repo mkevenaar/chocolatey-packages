@@ -17,14 +17,19 @@ function global:au_GetLatest {
 
     #SCARMsetup_1_4_0.exe
     $re  = "SCARMsetup_.+.exe"
-    $url = $download_page.links | ? href -match $re | select -First 1 -expand href
+    $url = $download_page.links | Where-Object href -match $re | Select-Object -First 1 -expand href
 
     $version = (([regex]::Match($url,'SCARMsetup_(.+).exe')).Captures.Groups[1].value).replace('_','.')
+
+    if($version -match "1.9.1a") {
+      $version = "1.9.1.20220509"
+    }
+
     $url = 'https:' + $url
 
-    return @{ 
+    return @{
         URL32 = $url
-        Version = $version 
+        Version = $version
     }
 }
 
