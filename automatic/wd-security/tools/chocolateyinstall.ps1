@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url = 'https://downloads.wdc.com/wdapp/WDSecuritySetup_for_web_2.0.0.76.zip'
-$checksum = '814722631e8d689d55ea055d17b09af9fda1a8b446042f48ffd149422fece558'
+$url = 'https://downloads.wdc.com/wdapp/WDSecurity_WIN.zip'
+$checksum = '58f93f0dcdcaa40e5196ef95373e0671232e175ab4c14363f6d30ee907deb1ed'
 $checksumType = 'sha256'
 $fileLocation = Join-Path $toolsDir "WDSecuritySetup.exe"
 
