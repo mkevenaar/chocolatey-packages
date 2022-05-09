@@ -1,32 +1,39 @@
 Import-Module au
 
-$releases = 'https://github.com/thonny/thonny/releases'
+$releases = 'https://api.github.com/repos/thonny/thonny/releases'
 
 function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+  $header = @{
+    "Authorization" = "token $env:github_api_key"
+  }
+  $download_page = Invoke-RestMethod -Uri $releases -Headers $header
+  $release = $download_page[0]
 
-    $re  = "thonny-.+.exe"
-    $url = $download_page.links | ? href -match $re | select -First 1 -expand href
+  $version = $release.tag_name.Replace('v', '')
 
-    $version = ([regex]::Match($url,'/thonny-(.+).exe')).Captures.Groups[1].value
-    $version = $version -replace "b", "-beta"
-    $url = 'https://github.com' + $url
+  $re = "thonny-.+.exe"
+  $asset = $release.assets | Where-Object -Property name -match $re | Where-Object -Property name -Match $version | Where-Object -Property name -NotMatch '32bit'
+  if ($asset) {
+    $url = $asset.browser_download_url
+  }
 
-    return @{
-        URL32 = $url
-        Version = $version
-        FileType = 'exe'
-    }
+  $version = $version -replace "b", "-beta"
+
+  return @{
+    URL32    = $url
+    Version  = $version
+    FileType = 'exe'
+  }
 }
 
 function global:au_SearchReplace {
   return @{
     ".\tools\chocolateyInstall.ps1" = @{
-      "(?i)(^\s*file\s*=\s*`"[$]toolsDir\\).*"   = "`${1}$($Latest.FileName32)`""
+      "(?i)(^\s*file\s*=\s*`"[$]toolsDir\\).*" = "`${1}$($Latest.FileName32)`""
     }
-    ".\legal\VERIFICATION.txt" = @{
+    ".\legal\VERIFICATION.txt"      = @{
       "(?i)(listed on\s*)\<.*\>" = "`${1}<$releases>"
       "(?i)(32-Bit.+)\<.*\>"     = "`${1}<$($Latest.URL32)>"
       "(?i)(checksum type:).*"   = "`${1} $($Latest.ChecksumType32)"
