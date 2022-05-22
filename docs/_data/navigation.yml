@@ -1,4 +1,4 @@
-﻿toc:
+toc:
   - title: chocolatey-isomount.extension
     subfolderitems:
       - page: Documentation
@@ -85,6 +85,8 @@
         url: /packages/grafana.html
       - page: "Grafana (Install)"
         url: /packages/grafana.install.html
+      - page: "Hadoop"
+        url: /packages/hadoop.html
       - page: "Helio Workstation"
         url: /packages/helioworkstation.html
       - page: "Helio Workstation (Install)"
