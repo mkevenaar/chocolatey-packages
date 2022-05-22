@@ -45,7 +45,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <licenseUrl>https://github.com/OctoFarm/OctoFarm/blob/master/LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/octofarm</packageSourceUrl>
-    <docsUrl>https://octofarm.net/installation</docsUrl>
+    <docsUrl>https://docs.octofarm.net/</docsUrl>
     <projectSourceUrl>https://github.com/OctoFarm/OctoFarm</projectSourceUrl>
     <bugTrackerUrl>https://github.com/OctoFarm/OctoFarm/issues</bugTrackerUrl>
     <summary>Web server and client combo for managing and monitoring multiple Octoprint instances.</summary>
