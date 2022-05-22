@@ -14,7 +14,7 @@ function global:au_GetLatest {
   $version = $release.tag_name.Replace('v', '')
 
   $re = "thonny-.+.exe"
-  $asset = $release.assets | Where-Object -Property name -match $re | Where-Object -Property name -Match $version | Where-Object -Property name -NotMatch '32bit'
+  $asset = $release.assets | Where-Object -Property name -match $re | Where-Object -Property name -Match $version | Where-Object -Property name -NotMatch '32bit' | Where-Object -Property name -NotMatch 'py38'
   if ($asset) {
     $url = $asset.browser_download_url
   }
