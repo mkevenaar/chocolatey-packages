@@ -2,7 +2,7 @@
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url          = 'https://downloadmirror.intel.com/690883/Intel_MAS_GUI_Tool_Win_2.0.zip'
-$checksum     = '92cd6ef69560fe8fa77a1d9d8f3d52c4c87160c00f2514b19289ec90448c69b9'
+$checksum     = '00f641e1ec7823c9a4bdb8fe5a7d641b1744e9a802f3ffe11fe2cf3324bc2090'
 $checksumType = 'sha256'
 
 # Cleanup old files, if exist

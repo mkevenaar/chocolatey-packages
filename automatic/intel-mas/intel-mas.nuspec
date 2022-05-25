@@ -41,7 +41,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Intel</copyright>
     <tags>intel-memory-and-storage-tool ssd firmware memroy admin</tags>
-    <releaseNotes>https://downloadmirror.intel.com/690883/343568-GUI-Intel-MAS-Release-Notes-014US.pdf</releaseNotes>
+    <releaseNotes>https://downloadmirror.intel.com/690883/343568-GUI-Intel-MAS-Release-Notes-rev014US.pdf</releaseNotes>
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/intel-mas</packageSourceUrl>
     <summary>Intel® Memory and Storage Tool (GUI)</summary>
     <description><![CDATA[The Intel® Memory and Storage Tool (Intel® MAS) is drive management software with a Graphical User Interface for Windows* that allows you to view current drive information, perform firmware updates, run full diagnostic scans, perform secure erase processes, and provide SMART attributes from Intel® SSDs.
