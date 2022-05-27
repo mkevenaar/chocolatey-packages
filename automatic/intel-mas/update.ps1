@@ -18,7 +18,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases
-    $url = (($download_page.ParsedHtml.getElementsByTagName('button') | Where-Object innerHtml -Match ".zip").attributes | Where-Object name -eq "data-direct-path").nodeValue
+    $url = (($download_page.ParsedHtml.getElementsByTagName('button') | Where-Object innerHtml -Match ".zip").attributes | Where-Object name -eq "data-href").nodeValue
     $url = [uri]::EscapeUriString($url) -replace "&#174;", "%C2%AE"
 
     $version = $download_page.ParsedHtml.getElementsByName('DownloadVersion') | Select-Object -First 1 -ExpandProperty content
