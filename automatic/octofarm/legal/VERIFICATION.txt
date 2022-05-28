@@ -6,13 +6,13 @@ The installer have been downloaded from their official download link listed on <
 and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <https://github.com/OctoFarm/OctoFarm/archive/refs/tags/1.2.2.zip>
+  32-Bit: <https://github.com/OctoFarm/OctoFarm/archive/refs/tags/1.2.3.zip>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: CC0E4C3D2FC8A1D6AD0FA648C6BCECF17A9C5FD0F862531AAFF66B9C0B433871
+  checksum32: 5E450FA1018E133A8F741C9FD6196B3320ECEFC6B21CE5095E8865D0166E2492
 
 File 'LICENSE.txt' is obtained from <https://github.com/OctoFarm/OctoFarm/blob/master/LICENSE.txt>
 
