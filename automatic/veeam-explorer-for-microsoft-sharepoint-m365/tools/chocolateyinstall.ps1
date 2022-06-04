@@ -4,7 +4,7 @@ $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $isoPackageName = 'veeam-backup-for-microsoft-365-iso'
 $scriptPath = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 $commonPath = $(Split-Path -parent $(Split-Path -parent $scriptPath))
-$filename = 'Veeam.Backup365_6.0.0.379_P20220413.iso'
+$filename = 'VeeamBackupMicrosoft365_6.0.0.385_P20220524.iso'
 $installPath = Join-Path  (Join-Path $commonPath $isoPackageName) $filename
 
 $fileLocation = 'Explorers\VeeamExplorerForSharePoint.msi'
