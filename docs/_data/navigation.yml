@@ -171,6 +171,8 @@ toc:
         url: /packages/operabeta.html
       - page: "Opera Developer"
         url: /packages/operadeveloper.html
+      - page: "Orca"
+        url: /packages/orca.html
       - page: "OrientDB (Portable)"
         url: /packages/orientdb.html
       - page: "PowerToys"
