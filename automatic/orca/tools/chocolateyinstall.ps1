@@ -8,7 +8,6 @@ $checksumType = 'sha256'
 # This just downloads a bunch of files onto the machine, including the Orca MSI
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  unzipLocation  = $toolsDir
   fileType       = 'exe'
   url            = $url
   checksum       = $checksum
