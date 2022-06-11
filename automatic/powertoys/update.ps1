@@ -7,7 +7,7 @@ function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
-    $re  = "PowerToysSetup(.+)?.exe"
+    $re  = "PowerToysSetup(.+)?-x64.exe"
     $url = $download_page.links | Where-Object href -match $re | Select-Object -First 1 -expand href
 
     $version = (($download_page.Links | Where-Object href -Match "releases/tag" | Select-Object -First 1 -ExpandProperty href) -Split "/" | Select-Object -Last 1) -Replace "v"
