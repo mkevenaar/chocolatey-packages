@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$fileName       = "$toolsDir\PowerToysSetup-0.59.0-arm64.exe"
+$fileName       = "$toolsDir\PowerToysSetup-0.59.0-x64.exe"
 $version        = "0.59.0"
 
 $WindowsVersion=[Environment]::OSVersion.Version
