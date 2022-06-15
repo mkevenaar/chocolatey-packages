@@ -8,16 +8,16 @@ function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
     #veusz-3.0.1.1-windows-setup.exe
-    $re  = "/veusz-(.+\d)-windows-setup.exe"
-    $versionre  = "download/.+/veusz-(.+\d)-windows-setup.exe"
+    $re  = "/veusz-(.+\d)-x64-windows-setup.exe"
+    $versionre  = "download/.+/veusz-(.+\d)-x64-windows-setup.exe"
     $url = $download_page.links | Where-Object href -match $re | Select-Object -First 1 -expand href
     $url = $url -replace "\n"
 
     $version = ([regex]::Match($url,$versionre)).Captures.Groups[1].value
 
-    return @{ 
+    return @{
         URL32 = $url
-        Version = $version 
+        Version = $version
         FileType = 'exe'
     }
 }
