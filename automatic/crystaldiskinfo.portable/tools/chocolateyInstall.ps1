@@ -27,3 +27,5 @@ $programs = [environment]::GetFolderPath([environment+specialfolder]::Programs)
 $shortcutFilePath = Join-Path $programs $linkName 
 $targetPath = Join-Path $toolsDir $fileName
 Install-ChocolateyShortcut -shortcutFilePath $shortcutFilePath -targetPath $targetPath
+
+Get-ChildItem $toolsDir\CdiResource\AlertMail*.exe | ForEach-Object { Set-Content -Path "$_.ignore" -Value $null }
