@@ -1,6 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+. $toolsDir\helpers.ps1
+
+Stop-CrystalDiskInfo
 
 $fileName32 = "DiskInfo32.exe"
 $fileName64 = "DiskInfo64.exe"
