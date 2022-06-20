@@ -28,4 +28,8 @@ $shortcutFilePath = Join-Path $programs $linkName
 $targetPath = Join-Path $toolsDir $fileName
 Install-ChocolateyShortcut -shortcutFilePath $shortcutFilePath -targetPath $targetPath
 
-Get-ChildItem $toolsDir\CdiResource\AlertMail*.exe | ForEach-Object { Set-Content -Path "$_.ignore" -Value $null }
+Get-ChildItem $toolsDir\CdiResource\AlertMail*.exe | ForEach-Object {
+  #Ensure any shims that may have accidentally been generated with previous versions are removed
+  Uninstall-BinFile -Name $_.BaseName
+  Set-Content -Path "$_.ignore" -Value $null
+}
