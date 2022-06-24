@@ -32,5 +32,5 @@ try {
 } catch {
   # no service installed
 }
-nssm install $ServiceName $(Join-Path $toolsDir "kibana-$($version)-windows-x86_64\bin\kibana.bat")
+nssm install $ServiceName $(Join-Path $toolsDir "kibana-$($version)\bin\kibana.bat")
 nssm set $ServiceName Start SERVICE_DEMAND_START
