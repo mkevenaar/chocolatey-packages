@@ -4,7 +4,7 @@ $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url          = 'https://artifacts.elastic.co/downloads/kibana/kibana-8.2.3-windows-x86_64.zip'
 $checksum     = 'f1edddfa100fd2da4ce8c53a3f28f204244c61bdbb62303872918e94268235c8'
 $checksumType = 'sha256'
-$version      = "8.2.3"
+$version      = "8.2.3.20220624"
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
