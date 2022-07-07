@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url = 'https://download.jetbrains.com/idea/ideaIE-2022.1.1.exe' 
+$url = 'https://download.jetbrains.com/idea/ideaIE-2022.1.2.exe' 
 $checksum     = 'e27ca1484f2a573cae026fc22a561331fbbd876f461584fe9af2f02d6bc1d804'
 $checksumType = 'sha256'
 
