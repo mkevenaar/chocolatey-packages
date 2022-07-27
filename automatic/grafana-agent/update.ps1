@@ -8,7 +8,7 @@ function global:au_GetLatest {
   $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
   $version = (($download_page.Links | Where-Object href -Match "releases/tag" | Select-Object -First 1 -ExpandProperty href) -Split "/" | Select-Object -Last 1) -replace "v"
-  $url = "https://github.com/grafana/agent/releases/download/$version/grafana-agent-installer.exe"
+  $url = "https://github.com/grafana/agent/releases/download/v$version/grafana-agent-installer.exe"
 
   return @{
     URL32    = $url
