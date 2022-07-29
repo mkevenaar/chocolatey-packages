@@ -6,12 +6,12 @@ The installer have been downloaded from their official download link listed on <
 and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <https://dl3.cdn.filezilla-project.org/server/FileZilla_Server_1.5.0_win64-setup.exe?h=UgnQ7Nr7uZG0s8NAXuaXag&x=1658340746>
+  32-Bit: <https://dl4.cdn.filezilla-project.org/server/FileZilla_Server_1.5.1_win64-setup.exe?h=qwhD1bt-3FWYAdGB9-eNWg&x=1659111157>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: BD6538311AF3C9AB3DE348F061E06FC5B13133314A70BEAA4F4C4138BC622664
+  checksum32: CCA80BBFE71EFB94D0F9A30F948BEFE00B9726ADB8D52DDE1B09AA9AADDFB496
 
 File 'LICENSE.txt' is obtained from <https://filezilla-project.org/misc/gpl-2.0-standalone.html>
