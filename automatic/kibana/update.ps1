@@ -43,15 +43,11 @@ function global:au_GetLatest {
     $version = $release.tag_name.Replace('v', '')
     $version = Get-Version($version)
 
-  $url = "https://artifacts.elastic.co/downloads/kibana/kibana-$($version)-windows-x86_64.zip"
-
-    if ($version.toString(1) -eq 6) {
-      $url = "https://artifacts.elastic.co/downloads/kibana/kibana-$($version).zip"
-    }
+    $url = "https://artifacts.elastic.co/downloads/kibana/kibana-$($version)-windows-x86_64.zip"
 
     $majmin = $version.toString(2)
 
-  $releasenotes = "https://www.elastic.co/guide/en/kibana/reference/$($majmin)/release-notes-$($version).html"
+    $releasenotes = "https://www.elastic.co/guide/en/kibana/reference/$($majmin)/release-notes-$($version).html"
 
 
     $streamVersion = $version.toString(2)
