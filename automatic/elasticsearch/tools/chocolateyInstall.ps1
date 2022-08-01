@@ -1,10 +1,10 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = 'https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-8.0.0-rc2-windows-x86_64.zip'
-$checksum     = '79eee5991e04a5ea29f2ac479bc54aa1b1a592f620ceefe1fca114cf5409a751'
+$url          = 'https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-8.3.3-windows-x86_64.zip'
+$checksum     = '4ed84909c5877eb81c3548063c123b980f4aadfecf9789393a732591b4df8382'
 $checksumType = 'sha256'
-$version      = "8.0.0-rc2"
+$version      = "8.3.3"
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
@@ -20,4 +20,5 @@ $binPath = Join-Path $toolsDir "elasticsearch-$($version)\bin"
 
 Install-ChocolateyPath $binPath 'Machine'
 
+$ErrorActionPreference = "SilentlyContinue";
 elasticsearch-service.bat install
