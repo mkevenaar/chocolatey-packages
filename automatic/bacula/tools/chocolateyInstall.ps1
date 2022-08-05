@@ -1,11 +1,11 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32          = 'https://www.bacula.org/download/11119/'
-$checksum32     = '7aca733f28ff8a55c98f4758863d7e76e29a4889e4c0a749e05ff9083a797cb8'
+$url32          = 'https://www.bacula.org/download/11148/'
+$checksum32     = '0ab4c00c02e01903320bcac6f7caf8abee58b01888c1ea67bcd05a751fa4ffe6'
 $checksumType32 = 'sha256'
-$url64          = 'https://www.bacula.org/download/11121/'
-$checksum64     = 'f1fd1788be17d300b0d52eae2354ea32f35aff07c3305ef46d1a1d75315faa0e'
+$url64          = 'https://www.bacula.org/download/11150/'
+$checksum64     = 'b78d492d2d60fe206b9d9478099b33a7e928f65e36b7d686eedfad2e17900621'
 $checksumType64 = 'sha256'
 
 $packageArgs = @{
