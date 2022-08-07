@@ -11,7 +11,7 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $installDir
   fileType       = 'exe'
-  file           = "$toolsdir\1.6.0.zip"
+  file           = "$toolsdir\1.6.1.zip"
   validExitCodes = @(0)
 }
 
