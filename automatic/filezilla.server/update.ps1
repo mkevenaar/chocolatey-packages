@@ -5,8 +5,7 @@ $releases = 'https://filezilla-project.org/download.php?show_all=1&type=server'
 function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-    #https://dl4.cdn.filezilla-project.org/server/FileZilla_Server-0_9_60_2.exe?h=l1hTG480fEy-Fg53U0NbAQ&x=1551182504
+    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing -UserAgent "Chocolatey"
     $re = "FileZilla_Server_(.+)_.+\.exe"
 
     $url = $download_page.Links | Where-Object href -match $re | Select-Object -first 1 -expand href
