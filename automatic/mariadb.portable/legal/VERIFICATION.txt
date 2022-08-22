@@ -6,12 +6,12 @@ The installer have been downloaded from their official download link listed on <
 and can be verified like this:
 
 1. Download the following installers:
-  64-Bit: <http://downloads.mariadb.org/rest-api/mariadb/10.8.4/mariadb-10.8.4-winx64.zip>
+  64-Bit: <http://downloads.mariadb.org/rest-api/mariadb/10.9.2/mariadb-10.9.2-winx64.zip>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum64: e2e96f54fab094c771c71367d1294802a34c11831ea5c790529480fa0499741c
+  checksum64: ba332c8a5fbf52434580c4cf15ed2fe208defd28f8d306cb2803acbba4036fbb
 
 File 'LICENSE.txt' is obtained from <https://github.com/MariaDB/server/blob/10.3/COPYING>
