@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url = 'https://download.jetbrains.com/python/pycharm-edu-2022.1.3.exe' 
-$checksum     = 'a43e2b9a4dce88431f3759ec1b5c1d57ac85e6a291cef1b3dc9dc865d7465c7c'
+$url = 'https://download.jetbrains.com/python/pycharm-edu-2022.2.exe' 
+$checksum     = 'cc63ba34732993e94c4b553c22b4be64235025ed4adbb05bf9c5e0c2d5177c75'
 $checksumType = 'sha256'
 
 # Workaround for https://youtrack.jetbrains.com/issue/IDEA-202935
