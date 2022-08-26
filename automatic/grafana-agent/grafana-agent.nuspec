@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Grafana Labs</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://github.com/grafana/agent</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages/icons/grafana.svg</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@b3faf99e19313ecb817ca631f3c8c4b301ee13c8/icons/grafana-agent.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Grafana Labs</copyright>
     <tags>grafana grafana-agent agent</tags>
