@@ -12,7 +12,7 @@ and can be verified like this:
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: 865B7DA0783B5C5877AA2272A4A9AE700FE7BC3745495D16FD741F960459C1EB
+  checksum32: F87B26D007C9A262EA448856FCABA5868AE86767FDEF389CA0ADEC396952BD4B
 
 File 'LICENSE.txt' is obtained from <https://github.com/grafana/agent/blob/master/LICENSE>
 
