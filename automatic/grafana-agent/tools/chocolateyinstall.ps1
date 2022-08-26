@@ -12,4 +12,3 @@ $packageArgs = @{
 Write-Verbose "Installing program..."
 Install-ChocolateyPackage  @packageArgs
 
-Get-ChildItem $toolsPath\*.zip | ForEach-Object { Remove-Item $_ -ea 0; if (Test-Path $_) { Set-Content "$_.ignore" } }

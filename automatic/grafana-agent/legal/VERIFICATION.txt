@@ -15,3 +15,4 @@ and can be verified like this:
   checksum32: 865B7DA0783B5C5877AA2272A4A9AE700FE7BC3745495D16FD741F960459C1EB
 
 File 'LICENSE.txt' is obtained from <https://github.com/grafana/agent/blob/master/LICENSE>
+

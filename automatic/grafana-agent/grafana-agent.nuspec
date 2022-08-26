@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>0.26.1</version>
+    <version>0.0</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Maurice Kevenaar, Simon Baerlocher</owners>
     <!-- ============================== -->
@@ -41,6 +41,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Grafana Labs</copyright>
     <tags>grafana grafana-agent agent</tags>
+    <releaseNotes>https://github.com/grafana/agent/releases</releaseNotes>
     <licenseUrl>https://github.com/grafana/grafana-agent/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/grafana-agent</packageSourceUrl>
@@ -55,9 +56,11 @@ Grafana Agent collects and forwards telemetry data to open source deployments of
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 ]]></description>
+    <!-- =============================== -->
+
+    <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
     <dependencies>
       <dependency id="dotnet4.7.2" />
-      <!--dependency id="dotnet" version="[4.5.2]" /-->
     </dependencies>
 
     <!--<provides>NOT YET IMPLEMENTED</provides>-->
@@ -68,5 +71,6 @@ let them know the package is no longer updating correctly.
   <!-- Uncomment to limit what is packed in -->
   <files>
     <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
   </files>
 </package>
