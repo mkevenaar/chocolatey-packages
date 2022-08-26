@@ -42,12 +42,12 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <copyright>Grafana Labs</copyright>
     <tags>grafana grafana-agent agent</tags>
     <releaseNotes>https://github.com/grafana/agent/releases</releaseNotes>
-    <licenseUrl>https://github.com/grafana/grafana-agent/blob/master/LICENSE</licenseUrl>
+    <licenseUrl>https://github.com/grafana/agent/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/grafana-agent</packageSourceUrl>
     <docsUrl>https://grafana.com/docs/agent/latest/</docsUrl>
-    <projectSourceUrl>https://github.com/grafana/grafana-agent</projectSourceUrl>
-    <bugTrackerUrl>https://github.com/grafana/grafana-agent/issues</bugTrackerUrl>
+    <projectSourceUrl>https://github.com/grafana/agent</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/grafana/agent/issues</bugTrackerUrl>
     <summary>Grafana Agent collects and forwards telemetry data to open source deployments of the Grafana Stack, Grafana Cloud, or Grafana Enterprise, where your data can then be analyzed.</summary>
     <description><![CDATA[Grafana Agent collects and forwards telemetry data to open source deployments of the Grafana Stack, Grafana Cloud, or Grafana Enterprise, where your data can then be analyzed.
 
