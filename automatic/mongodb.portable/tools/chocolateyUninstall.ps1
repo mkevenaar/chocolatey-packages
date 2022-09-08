@@ -2,7 +2,6 @@
 $toolsPath = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $unPath = Join-Path $toolsPath 'Uninstall-ChocolateyPath.psm1'
 
-Write-Verbose "Default install location is `'$env:ChocolateyToolsLocation`'"
 $binRoot = Get-ToolsLocation
 $installDir = Join-Path $binRoot "$packageName"
 $installDirBin = "$($installDir)\current\bin"
