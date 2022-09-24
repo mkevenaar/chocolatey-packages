@@ -1,24 +1,6 @@
-Import-Module au
+Import-Module AU
 
-$releases = 'https://github.com/OmniDB/OmniDB/releases/latest'
-
-function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
-
-function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-    #omnidb-app_2.13.0-windows-amd64.exe
-    $re = "omnidb-app_(.+)-windows-amd64.exe"
-    $url64 = $download_page.Links | Where-Object href -Match $re | Select-Object -First 1 -ExpandProperty href
-    $url64 = 'https://github.com' + $url64
-    
-    $version = ([regex]::Match($url64,$re)).Captures.Groups[1].value
-
-    return @{ 
-        URL64 = $url64
-        Version = $version 
-        FileType = 'exe'
-    }
-}
+$releases = 'https://api.github.com/repos/OmniDB/OmniDB/releases/latest'
 
 function global:au_SearchReplace {
   return @{
@@ -30,6 +12,29 @@ function global:au_SearchReplace {
       "(?i)(64-Bit.+)\<.*\>"     = "`${1}<$($Latest.URL64)>"
       "(?i)(checksum type:).*"   = "`${1} $($Latest.ChecksumType64)"
       "(?i)(checksum64:).*"      = "`${1} $($Latest.Checksum64)"
+    }
+  }
+}
+
+function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
+
+
+function global:au_GetLatest {
+  $header = @{
+    "Authorization" = "token $env:github_api_key"
+  }
+  $download_page = Invoke-RestMethod -Uri $releases -Headers $header
+
+  $version = $download_page.tag_name.Replace('v', '')
+  $version = Get-Version($version)
+  $asset = $download_page.assets | Where-Object -Property name -Like "omnidb-app*-windows-amd64.exe"
+
+  if ($asset) {
+    $url = $asset.browser_download_url
+    return @{
+          URL64 = $url
+          Version = $version
+          FileType = 'exe'
     }
   }
 }
