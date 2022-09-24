@@ -1,24 +1,6 @@
 Import-Module AU
 
-$releases = 'https://github.com/chatty/chatty/releases'
-
-function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
-
-function global:au_GetLatest {
-  $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-
-  $re = "Chatty_(.+\d)_win_standalone.zip"
-  $url = $download_page.Links | Where-Object href -match $re | Select-Object -First 1 -expand href
-  $url = "https://github.com" + $url
-
-  $version = $url -split "/" | Select-Object -last 1 -skip 1
-  $version = Get-Version $version
-  return @{
-    URL32    = $url
-    Version  = $version
-    FileType = 'zip'
-  }
-}
+$releases = 'https://api.github.com/repos/chatty/chatty/releases'
 
 function global:au_SearchReplace {
   return @{
@@ -32,6 +14,48 @@ function global:au_SearchReplace {
       "(?i)(checksum32:).*"      = "`${1} $($Latest.Checksum32)"
     }
   }
+}
+
+function CreateStream {
+  param($url32bit, $version)
+
+  $Result = @{
+    Version  = $version
+    URL32    = $url32bit
+    FileType = 'zip'
+  }
+
+  return $Result
+}
+
+function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
+
+function global:au_GetLatest {
+  $header = @{
+    "Authorization" = "token $env:github_api_key"
+  }
+  $json = Invoke-RestMethod -Uri $releases -Headers $header
+
+  $streams = @{ }
+
+  foreach ($release in $json) {
+    $version = $release.tag_name.Replace('v', '')
+    $version = Get-Version($version)
+
+    $asset = $release.assets | Where-Object -Property name -Like "*_win_standalone.zip"
+
+    $streamVersion = $version.toString(2)
+    if ($release.prerelease) {
+      $streamVersion += '-rc'
+    }
+    if ($asset) {
+      $url = $asset.browser_download_url
+      if (!$streams.ContainsKey("$streamVersion")) {
+        $streams.Add($streamVersion, (CreateStream $url $version))
+      }
+    }
+  }
+  return  @{ Streams = $streams }
 }
 
 if ($MyInvocation.InvocationName -ne '.') {
