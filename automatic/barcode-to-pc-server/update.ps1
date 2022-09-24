@@ -1,32 +1,43 @@
-import-module au
+Import-Module AU
 
-$releases = 'https://github.com/fttx/barcode-to-pc-server/releases/latest'
+$releases = 'https://api.github.com/repos/fttx/barcode-to-pc-server/releases/latest'
 
 function global:au_SearchReplace {
-    @{
-        'tools\chocolateyInstall.ps1' = @{
-            "(^[$]url32\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
-            "(^[$]checksum32\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
-            "(^[$]checksumType32\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
-        }
-     }
+  return @{
+    'tools\chocolateyInstall.ps1' = @{
+      "(?i)(^\s*file\s*=\s*`"[$]toolsDir\\).*" = "`${1}$($Latest.FileName32)`""
+    }
+    ".\legal\VERIFICATION.txt"    = @{
+      "(?i)(listed on\s*)\<.*\>" = "`${1}<$releases>"
+      "(?i)(32-Bit.+)\<.*\>"     = "`${1}<$($Latest.URL32)>"
+      "(?i)(checksum type:).*"   = "`${1} $($Latest.ChecksumType32)"
+      "(?i)(checksum32:).*"      = "`${1} $($Latest.Checksum32)"
+    }
+  }
 }
 
+function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
+
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+  $header = @{
+    "Authorization" = "token $env:github_api_key"
+  }
+  $download_page = Invoke-RestMethod -Uri $releases -Headers $header
 
-    $re = "barcode-to-pc-server.v(.+\d).win.setup.exe"
-    $url = $download_page.Links | Where-Object href -match $re | Select-Object -First 1 -expand href
-    $url = "https://github.com" + $url
+  $asset = $download_page.assets | Where-Object -Property name -Like "*.win.setup.exe"
 
-    $version = $url -split "/" | Select-Object -last 1 -skip 1
-    $version = Get-Version $version
+  $version = $download_page.tag_name.Replace('v', '')
+  $version = Get-Version($version)
+  if ($asset) {
+    $url = $asset.browser_download_url
     return @{
-        URL32 = $url
-        Version = $version
+      URL32    = $url
+      Version  = $version
+      FileType = 'exe'
     }
+  }
 }
 
 if ($MyInvocation.InvocationName -ne '.') {
-    update -ChecksumFor 32
+  update -ChecksumFor None
 }
