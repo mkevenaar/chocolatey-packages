@@ -5,8 +5,8 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $toolsDir
   fileType       = 'exe'
-  file           = "$toolsdir\MediaInfo_CLI_22.06_Windows_i386.zip"
-  file64         = "$toolsdir\MediaInfo_CLI_22.06_Windows_x64.zip"
+  file           = "$toolsdir\MediaInfo_CLI_22.09_Windows_i386.zip"
+  file64         = "$toolsdir\MediaInfo_CLI_22.09_Windows_x64.zip"
   validExitCodes = @(0)
 }
 
