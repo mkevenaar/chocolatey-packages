@@ -6,8 +6,8 @@ $checksum     = '6780971b02edd180a9c5142c0e3592f5d843684962ec4f9367ba64e29868dec
 $checksumType = 'sha256'
 
 $packageArgs = @{
-  packageName    = $env:ChocolateyPackageName
-  unzipLocation  = $toolsDir
+  packageName   = $env:ChocolateyPackageName
+  unzipLocation = $toolsDir
   url           = $url
   checksum      = $checksum
   checksumType  = $checksumType
@@ -15,4 +15,4 @@ $packageArgs = @{
 
 Install-ChocolateyZipPackage  @packageArgs
 
-Move-Item "$(Join-Path $toolsDir 'exiftool(-k).exe')" "$(Join-Path $toolsDir 'exiftool.exe')" -Force
+New-Item -ItemType SymbolicLink -Path "$(Join-Path $toolsDir 'exiftool.exe')" -Target "$(Join-Path $toolsDir 'exiftool(-k).exe')" -Force
