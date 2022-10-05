@@ -2,10 +2,10 @@
 
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url32          = 'http://www.nirsoft.net/utils/alternatestreamview.zip'
-$checksum32     = '81002363eaf793c149927677a2ccb073554e632013c0b3b1d231b4590c78fb73'
+$checksum32     = '922308e42762c7fb7ff31984f308a6294ed210907b40adf79c743ca83ebe6c59'
 $checksumType32 = 'sha256'
 $url64          = 'http://www.nirsoft.net/utils/alternatestreamview-x64.zip'
-$checksum64     = '9b7d09b3db143585b3ff06fedf954a2ae8d40a704952620927420cddc28759e3'
+$checksum64     = 'c0c5fa2e055e0774e1976d78b9f87c20b657504ef764adc31c03ef4c88513631'
 $checksumType64 = 'sha256'
 
 $packageArgs = @{
