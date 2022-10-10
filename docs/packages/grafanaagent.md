@@ -22,7 +22,6 @@ choco uninstall grafana-agent
 
 ## Description
 
-
 Grafana Agent collects and forwards telemetry data to open source deployments of the Grafana Stack, Grafana Cloud, or Grafana Enterprise, where your data can then be analyzed.
 
 **Please Note**: This is an automatically updated package. If you find it is
