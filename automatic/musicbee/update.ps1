@@ -14,7 +14,7 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases
-    $url = ((Invoke-WebRequest 'https://www.majorgeeks.com/mg/getmirror/musicbee,1.html').Content) -Match 'https:.+\.zip'
+    $url = ((Invoke-WebRequest 'https://www.majorgeeks.com/mg/getmirror/musicbee,1.html').Content) -Match 'https://files\d?\.majorgeeks\.com/\S+\.zip'
     $url = $Matches[0]
 
     $version = $download_page.Content -Match 'MusicBee ([\d.]+)'
