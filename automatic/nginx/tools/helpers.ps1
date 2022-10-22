@@ -25,7 +25,8 @@ function Assert-TcpPortIsOpen {
 }
 
 function Get-NginxInstallOptions {
-    $configFile = Join-Path $env:chocolateyPackageFolder 'config.xml'
+    $toolsDir = Split-Path -parent $MyInvocation.PSScriptRoot
+    $configFile = Join-Path $toolsDir 'config.xml'
     $config = Import-CliXml $configFile
 
     return $config
@@ -120,7 +121,8 @@ function Set-NginxInstallOptions {
         ServiceAccount = $arguments.ServiceAccount
     }
 
-    $configFile = Join-Path $env:chocolateyPackageFolder 'config.xml'
+    $toolsDir = Split-Path -parent $MyInvocation.PSScriptRoot
+    $configFile = Join-Path $toolsDir 'config.xml'
     Export-Clixml -Path $configFile -InputObject $config
 }
 
