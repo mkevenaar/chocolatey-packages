@@ -25,7 +25,7 @@ function Assert-TcpPortIsOpen {
 }
 
 function Get-NginxInstallOptions {
-    $toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
+    $toolsDir = Split-Path -parent $MyInvocation.PSScriptRoot
     $configFile = Join-Path $toolsDir 'config.xml'
     $config = Import-CliXml $configFile
 
@@ -121,7 +121,7 @@ function Set-NginxInstallOptions {
         ServiceAccount = $arguments.ServiceAccount
     }
 
-    $toolsDir = Split-Path -parent $MyInvocation.MyCommand.Definition
+    $toolsDir = Split-Path -parent $MyInvocation.PSScriptRoot
     $configFile = Join-Path $toolsDir 'config.xml'
     Export-Clixml -Path $configFile -InputObject $config
 }
