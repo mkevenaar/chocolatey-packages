@@ -6,12 +6,12 @@ The installer have been downloaded from their official download link listed on <
 and can be verified like this:
 
 1. Download the following installers:
-  64-Bit: <https://1.na.dl.wireshark.org/win64/Wireshark-win64-3.6.8.exe>
+  64-Bit: <https://1.na.dl.wireshark.org/win64/Wireshark-win64-4.0.0.exe>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
-  checksum type: sha256
-  checksum64: 17CE19DEF77592D4C0FB0B680E77E4712DD6C8C4AF79C6D58A281EB509A4F34B
+  checksum type: 
+  checksum64: AA4C3AE9D50113785C83B441CFDFDF484A308AA7D37BACB5803561E4D1C12902
 
 File 'LICENSE.txt' is obtained from <https://gitlab.com/wireshark/wireshark/-/blob/master/COPYING>
