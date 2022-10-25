@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>7.3.2</version>
+    <version>8.10.1</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Maurice Kevenaar</owners>
     <!-- ============================== -->
@@ -37,14 +37,14 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Axosoft</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://www.gitkraken.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@c18413cfa5790b0ad244e28784d1f8a4fe794284/icons/gitkraken.jpg</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@6a9b0994ee75696e53493f5b9c6ee3717d7de164/icons/gitkraken.jpg</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Axosoft, LLC</copyright>
     <tags>git client gui admin</tags>
     <releaseNotes>http://www.gitkraken.com/release-notes</releaseNotes>
     <licenseUrl>https://www.gitkraken.com/eula</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/aida64-business</packageSourceUrl>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/gitkraken</packageSourceUrl>
     <docsUrl>https://help.gitkraken.com/gitkraken-client/gitkraken-client-home/</docsUrl>
     <bugTrackerUrl>https://help.gitkraken.com/gitkraken-client/contact-support/</bugTrackerUrl>
     <summary>The intuitive, fast, and beautiful cross-platform Git client.</summary>
