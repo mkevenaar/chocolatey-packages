@@ -75,6 +75,8 @@
         url: /packages/firefoxnightly.html
       - page: "Game Collector"
         url: /packages/gamecollector.html
+      - page: "GitKraken"
+        url: /packages/gitkraken.html
       - page: "JetBrains GoLand"
         url: /packages/goland.html
       - page: "Google Drive"
