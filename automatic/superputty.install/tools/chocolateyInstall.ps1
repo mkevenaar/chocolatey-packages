@@ -1,20 +1,16 @@
-﻿$ErrorActionPreference = 'Stop';
+﻿$ErrorActionPreference = 'Stop'
 
-$toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = 'https://github.com/jimradford/superputty/releases/download/1.4.10/SuperPuttySetup-1.4.10.msi'
-$checksum     = '99dacc2a0d1e09c404c97e5557337f2b1691f01dcd57e11166598102e90b2464'
-$checksumType = 'sha256'
+$toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $packageArgs = @{
-  packageName    = $env:ChocolateyPackageName
-  unzipLocation  = $toolsDir
+  packageName   = $env:ChocolateyPackageName
   fileType       = 'msi'
-  url            = $url
-  checksum       = $checksum
-  checksumType   = $checksumType
-  softwareName   = 'SuperPuTTY*'
+  file          = "$toolsDir\SuperPuttySetup-1.4.10.msi"
   silentArgs     = "/quiet /qn /norestart /l*v `"$($env:TEMP)\$($packageName).$($env:chocolateyPackageVersion).MsiInstall.log`""
+  softwareName   = 'SuperPuTTY*'
   validExitCodes = @(0, 3010, 1641)
 }
 
-Install-ChocolateyPackage @packageArgs
+Install-ChocolateyInstallPackage @packageArgs
+
+Get-ChildItem $toolsDir\*.msi | ForEach-Object { Remove-Item $_ -ea 0; if (Test-Path $_) { Set-Content "$_.ignore" } }

@@ -1,0 +1,18 @@
+VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The installer have been downloaded from their official download link listed on <https://api.github.com/repos/jimradford/superputty/releases/latest>
+and can be verified like this:
+
+1. Download the following installers:
+  32-Bit: <https://github.com/jimradford/superputty/releases/download/1.4.10/SuperPuTTY-1.4.10.zip>
+2. You can use one of the following methods to obtain the checksum
+  - Use powershell function 'Get-Filehash'
+  - Use chocolatey utility 'checksum.exe'
+
+  checksum type: sha256
+  checksum32: BCCFC1C289D42DCAFA55D859EF6E8FDD15692561266AAC27DA852A22CF08AAA5
+
+File 'LICENSE.txt' is obtained from <https://github.com/superputty/superputty/blob/master/LICENSE>
+
