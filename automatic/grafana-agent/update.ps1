@@ -1,32 +1,39 @@
 Import-Module AU
 
-$releases = 'https://github.com/grafana/agent/releases/latest'
-
-function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
-
-function global:au_GetLatest {
-  $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-
-  $version = (($download_page.Links | Where-Object href -Match "releases/tag" | Select-Object -First 1 -ExpandProperty href) -Split "/" | Select-Object -Last 1) -replace "v"
-  $url = "https://github.com/grafana/agent/releases/download/v$version/grafana-agent-installer.exe"
-
-  return @{
-    URL32    = $url
-    Version  = $version
-    FileType = 'exe'
-  }
-}
+$releases = 'https://api.github.com/repos/grafana/agent/releases/latest'
 
 function global:au_SearchReplace {
   return @{
-    ".\tools\chocolateyInstall.ps1" = @{
+    'tools\chocolateyInstall.ps1' = @{
       "(?i)(^\s*file\s*=\s*`"[$]toolsDir\\).*" = "`${1}$($Latest.FileName32)`""
     }
-    ".\legal\VERIFICATION.txt"      = @{
+    ".\legal\VERIFICATION.txt"    = @{
       "(?i)(listed on\s*)\<.*\>" = "`${1}<$releases>"
       "(?i)(32-Bit.+)\<.*\>"     = "`${1}<$($Latest.URL32)>"
       "(?i)(checksum type:).*"   = "`${1} $($Latest.ChecksumType32)"
       "(?i)(checksum32:).*"      = "`${1} $($Latest.Checksum32)"
+    }
+  }
+}
+
+function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
+
+function global:au_GetLatest {
+  $header = @{
+    "Authorization" = "token $env:github_api_key"
+  }
+  $download_page = Invoke-RestMethod -Uri $releases -Headers $header
+
+  $asset = $download_page.assets | Where-Object -Property name -Like "*.exe"
+
+  $version = $download_page.tag_name.Replace('v', '')
+  $version = Get-Version($version)
+  if ($asset) {
+    $url = $asset.browser_download_url
+    return @{
+      URL32    = $url
+      Version  = $version
+      FileType = 'exe'
     }
   }
 }
