@@ -13,7 +13,7 @@ function global:au_SearchReplace {
 }
 function global:au_GetLatest {
   $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing -DisableKeepAlive
-  $url32 = 'https:' + ($download_page.links | Where-Object OuterHTML -match "Download the installer" | Select-Object -First 1 -expand href)
+  $url32 = $download_page.links | Where-Object OuterHTML -match "Download the installer" | Select-Object -First 1 -expand href
   $url32 = Get-RedirectedUrl $url32
 
   $re = 'Windows SDK \((.+\d)\)'
