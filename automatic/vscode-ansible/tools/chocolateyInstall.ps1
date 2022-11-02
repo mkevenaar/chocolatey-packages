@@ -3,4 +3,4 @@
 # clean up old extension
 Uninstall-VsCodeExtension -extensionId 'vscoss.vscode-ansible'
 
-Install-VsCodeExtension -extensionId 'redhat.ansible@1.0.93'
+Install-VsCodeExtension -extensionId 'redhat.ansible@1.0.94'
