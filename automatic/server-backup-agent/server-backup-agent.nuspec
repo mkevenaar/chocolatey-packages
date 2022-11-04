@@ -43,7 +43,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <tags>r1soft server-backup-agent admin</tags>
     <releaseNotes>wiki.r1soft.com/display/ServerBackupManager/Release+Notes</releaseNotes>
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/server-backup-agent</packageSourceUrl>
-    <docsUrl>http://wiki.r1soft.com/display/ServerBackupManager/Home</docsUrl>
+    <docsUrl>http://wiki.r1soft.com/display/ServerBackupManager</docsUrl>
     <summary>R1Soft Server Backup agent</summary>
     <description><![CDATA[## R1Soft Server Backup agent (CDP)
 
