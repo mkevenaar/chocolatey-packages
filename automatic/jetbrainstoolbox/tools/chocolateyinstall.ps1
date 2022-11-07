@@ -6,15 +6,15 @@ $checksum     = 'f46dd9d9873dea886ad2be6ee3d131e1fa3d6659b06e1923b25f616a99e8795
 $checksumType = 'sha256'
 
 $packageArgs = @{
-  packageName   = $env:ChocolateyPackageName
-  softwareName  = 'JetBrains Toolbox*'
-  fileType      = 'exe'
-  silentArgs   = '/S'
-  validExitCodes= @(0)
+  packageName    = $env:ChocolateyPackageName
+  softwareName   = 'JetBrains Toolbox*'
+  fileType       = 'exe'
+  silentArgs     = '/S /ju'
+  validExitCodes = @(0)
   url            = $url
   checksum       = $checksum
   checksumType   = $checksumType
-  destination   = $toolsDir
+  destination    = $toolsDir
 }
 
 Install-ChocolateyPackage @packageArgs
