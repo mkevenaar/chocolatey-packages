@@ -6,13 +6,13 @@ The installer have been downloaded from their official download link listed on <
 and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <https://github.com/grafana/agent/releases/download/v0.28.1/grafana-agent-installer.exe>
+  32-Bit: <https://github.com/grafana/agent/releases/download/v0.29.0/grafana-agent-installer.exe>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: EF115FFB5FC87D73D87A0F91E4886C56C54313E3743967B627D13975CD51F8A5
+  checksum32: 25FDFED23B94815F41AC38CE318954EB6417AF8230F6434D32991D952E86FFE1
 
 File 'LICENSE.txt' is obtained from <https://github.com/grafana/agent/blob/master/LICENSE>
 
