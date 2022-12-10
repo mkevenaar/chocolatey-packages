@@ -1,1 +1,1 @@
-﻿Get-AppxPackage -Name Microsoft.WindowsTerminal | Remove-AppxPackage
+﻿Get-AppxProvisionedPackage -Name Microsoft.WindowsTerminal | Remove-AppxProvisionedPackage
