@@ -1,0 +1,3 @@
+'LICENSE.txt' is incomplete as unlike <https://github.com/hiyohiyo/CrystalDiskInfo/blob/master/LICENSE.txt>, there is no <https://github.com/hiyohiyo/CrystalDiskMark/blob/master/LICENSE.txt> or other license file in <https://github.com/hiyohiyo/CrystalDiskMark>.
+
+<https://crystalmark.info/en/software/crystaldiskmark/crystaldiskmark-license/> hints that <https://github.com/hiyohiyo/CrystalDiskInfo/blob/master/LICENSE.txt> so there is an open issue at <https://github.com/hiyohiyo/CrystalDiskMark/issues/24> asking for a license file within the repository.
