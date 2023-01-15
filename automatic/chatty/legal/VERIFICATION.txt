@@ -6,13 +6,13 @@ The installer have been downloaded from their official download link listed on <
 and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <https://github.com/chatty/chatty/releases/download/v0.22-b4/Chatty_0.22-b4_win_standalone.zip>
+  32-Bit: <https://github.com/chatty/chatty/releases/download/v0.22/Chatty_0.22_win_standalone.zip>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: D8CD28B56571697635956EC36167EB387561DFBE05F2466CAB60CB9FFEA903B3
+  checksum32: 07FF24EAF96A90CB3A195B947F7EC06A1E362C6FAE2412BAF76837731E772D5A
 
 File 'LICENSE.txt' is obtained from <https://github.com/chatty/chatty/blob/master/LICENSE>
 
