@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@01831f507ebdb56a77672d83934175202e1d1dbd/icons/crystaldiskinfo.png" width="48" height="48"/> [crystaldiskinfo.install](https://community.chocolatey.org/packages/crystaldiskinfo.install)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4d349e0b09441183caae77f7edd748f216ab7d21/icons/crystaldiskinfo.png" width="48" height="48"/> [crystaldiskinfo.install](https://community.chocolatey.org/packages/crystaldiskinfo.install)
 
 CrystalDiskInfo is a HDD/SSD utility software which shows the health status much more clearly than similar tools.
 The "Function / Graph" is especially interesting for the "Reallocated Sectors Count".
