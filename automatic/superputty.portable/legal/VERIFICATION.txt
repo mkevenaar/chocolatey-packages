@@ -6,13 +6,13 @@ The installer have been downloaded from their official download link listed on <
 and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <https://github.com/jimradford/superputty/releases/download/1.4.10/SuperPuTTY-1.4.10.zip>
+  32-Bit: <https://github.com/jimradford/superputty/releases/download/1.5.0.0/SuperPuTTY-1.5.0.0.zip>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: BCCFC1C289D42DCAFA55D859EF6E8FDD15692561266AAC27DA852A22CF08AAA5
+  checksum32: 4D96C6E42C1A1191455960580FDC610027C69CBD0D3477EF8B757C8512F0947C
 
 File 'LICENSE.txt' is obtained from <https://github.com/superputty/superputty/blob/master/LICENSE>
 

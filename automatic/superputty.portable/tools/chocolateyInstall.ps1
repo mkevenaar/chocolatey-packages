@@ -5,7 +5,7 @@ $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation  = $toolsDir
-  file          = "$toolsDir\SuperPuTTY-1.4.10.zip"
+  file          = "$toolsDir\SuperPuTTY-1.5.0.0.zip"
 }
 
 Install-ChocolateyZipPackage @packageArgs
