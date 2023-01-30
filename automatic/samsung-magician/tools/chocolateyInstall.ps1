@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = 'https://download.semiconductor.samsung.com/resources/software-resources/Samsung_Magician_installer_Official_7.2.0.930.zip'
-$checksum     = '2ea7aa83db4a18f203d07d20b5f552600fe1b60ebbfe3522a72b8af8140ab6f3'
+$url          = 'https://download.semiconductor.samsung.com/resources/software-resources/Samsung_Magician_installer_Official_7.2.1.980.zip'
+$checksum     = '67f3d26d0b6df9fe04684a888bf6a8d0dbd6b733c1ef67f989102bb4547929cc'
 $checksumType = 'sha256'
 
 $packageArgs = @{
