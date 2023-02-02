@@ -1,6 +1,8 @@
 Import-Module au
 
-$releases = 'https://forums.veeam.com/veeam-backup-replication-f2/current-version-t9456.html'
+$releases = 'https://www.veeam.com/download-version.html'
+$releaseNotesFeed = 'https://www.veeam.com/services/veeam/technical-documents?resourceType=resourcetype:techdoc/releasenotes&productId=8'
+$productName = 'Veeam Backup &amp; Replication'
 
 function global:au_SearchReplace {
   @{
@@ -17,20 +19,20 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing -DisableKeepAlive
+    $CurrentProgressPreference = $ProgressPreference
+    $ProgressPreference = 'SilentlyContinue'
 
-    $reLatestbuild = "Current build is ([0-9]+\.[0-9]+\.[0-9]+(?:\.[0-9]+)(?:\.[0-9]+)?)( \((Update.*)\))?"
-    $download_page.RawContent -imatch $reLatestbuild
+    $download_page = Invoke-WebRequest -Uri $releases -DisableKeepAlive
+    $table = $download_page.ParsedHtml.getElementsByTagName('tbody') | Where-Object innerhtml -Match $productName | Select-Object -First 1
+
+    $re = "Version\s+:\s+([0-9]+\.[0-9]+\.[0-9]+(?:\.[0-9]+)(?:\.[0-9]+)?)"
+
+    $table.innerHTML -imatch $re
     $version = $Matches[1]
 
     $isoVersion = $version
 
-    if($Matches.ContainsKey(3)) {
-        $updateVersion = $Matches[3] -replace " "
-        $isoVersion = "$($isoVersion).$updateVersion"
-    }
-
-    if($version -match "11.0.1.1261") {
+    if($version -eq "11.0.1.1261") {
       $isoVersion = "11.0.1.1261_20211005"
     }
 
@@ -39,9 +41,12 @@ function global:au_GetLatest {
     
     $filename = "VeeamBackup&Replication_$($isoVersion).iso"
     $url = "https://download2.veeam.com/VBR/v$($majversion)/$($filename)"
-    # -Replace ".iso", "_.iso"
 
-    $ReleaseNotes = $download_page.Links | Where-Object href -match "release_notes" | Select-Object -First 1 -ExpandProperty href
+    $releaseNotesPage = Invoke-WebRequest $releaseNotesFeed | ConvertFrom-Json
+
+    $ReleaseNotes = $releaseNotesPage.payload.products[0].documentGroups[0].documents[0].links.pdf
+
+    $ProgressPreference = $CurrentProgressPreference
 
     return @{
         Filename = $filename
