@@ -15,10 +15,6 @@ WinActivate
 ; Language selection
 ControlClick, OK, Select Setup Language,,,, NA
 
-; GDPR or not license
-WinWait, Setup, European
-ControlClick, &No, Setup,,,, NA
-
 ; Welcome screen
 WinWait, %winTitleInstall%
 ControlClick, &Next >, %winTitleInstall%,,,, NA
