@@ -3,7 +3,7 @@
 #Warn  ; Enable warnings to assist with detecting common errors.
 SendMode Input  ; Recommended for new scripts due to its superior speed and reliability.
 SetWorkingDir %A_ScriptDir%  ; Ensures a consistent starting directory.
-SetTitleMatchMode, 1
+SetTitleMatchMode, Regex
 SetControlDelay -1
 
 winTitleInstall = Setup - Samsung Magician
@@ -15,8 +15,16 @@ WinActivate
 ; Language selection
 ControlClick, OK, Select Setup Language,,,, NA
 
-; Welcome screen
-WinWait, %winTitleInstall%
+; Wait for either the overwrite confirmation dialog (for existing installs) or the Welcome screen (for new installs)
+WinWait, ahk_class i)#32770|TWizardForm ahk_exe Samsung_Magician_installer.tmp
+if WinExist("ahk_class #32770 ahk_exe Samsung_Magician_installer.tmp") {
+  ; Overwrite confirmation dialog
+  ControlClick, Button1, ahk_class #32770 ahk_exe Samsung_Magician_installer.tmp,,,, NA
+
+  ; Welcome screen
+  WinWait, ahk_class TWizardForm ahk_exe Samsung_Magician_installer.tmp
+}
+
 ControlClick, &Next, %winTitleInstall%,,,, NA
 
 ; License terms
