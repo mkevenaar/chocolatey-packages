@@ -17,21 +17,21 @@ ControlClick, OK, Select Setup Language,,,, NA
 
 ; Welcome screen
 WinWait, %winTitleInstall%
-ControlClick, &Next >, %winTitleInstall%,,,, NA
+ControlClick, &Next, %winTitleInstall%,,,, NA
 
 ; License terms
 WinWait, %winTitleInstall%, License Agreement
 ControlClick, I &accept the agreement, %winTitleInstall%,,,, NA
-ControlClick, &Next >, %winTitleInstall%,,,, NA
+ControlClick, &Next, %winTitleInstall%,,,, NA
 
 ; Collection and Use of Personal Information
 WinWait, %winTitleInstall%, Collection and Use
 ControlClick, I &accept the agreement, %winTitleInstall%,,,, NA
-ControlClick, &Next >, %winTitleInstall%,,,, NA
+ControlClick, &Next, %winTitleInstall%,,,, NA
 
 ; Icons
 WinWait, %winTitleInstall%, Select Additional
-ControlClick, &Next >, %winTitleInstall%,,,, NA
+ControlClick, &Next, %winTitleInstall%,,,, NA
 
 WinWait, %winTitleInstall%, Ready to Install
 ControlClick, &Install, %winTitleInstall%,,,, NA
