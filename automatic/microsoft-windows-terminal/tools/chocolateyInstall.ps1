@@ -37,4 +37,4 @@ if ($AppxVer -gt [version]$version) {
   }
 }
 
-Add-AppxPackage -Path $fileName
+DISM.EXE /Online /Add-ProvisionedAppxPackage /PackagePath:$fileName /SkipLicense
