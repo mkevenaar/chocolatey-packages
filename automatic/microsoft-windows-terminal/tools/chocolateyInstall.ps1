@@ -21,7 +21,7 @@ if ($PreRelease -match "True") {
   $AppxPackageName += "Preview"
 }
 
-[version]$AppxVer = (Get-AppxProvisionedPackage -Online | Where-Object -Property DisplayName -EQ $AppxPackageName).Version
+[version]$AppxVer = (Get-AppxPackage -Name $AppxPackageName -AllUsers -PackageTypeFilter Bundle).Version
 
 if ($AppxVer -gt [version]$version) {
   # you can't install an older version of an installed appx package, you'd need to remove it first
@@ -30,7 +30,7 @@ if ($AppxVer -gt [version]$version) {
     if($env:ChocolateyForce) {
       # you can't install the same version of an appx package, you need to remove it first
       Write-Host Removing already installed version first.
-      Remove-AppxProvisionedPackage -Online -AllUsers -PackageName $AppxPackageName
+      Remove-AppxPackage -AllUsers -Package (Get-AppxPackage -Name $AppxPackageName -AllUsers -PackageTypeFilter Bundle)
     } else {
     Write-Host The $version version of Windows-Terminal is already installed. If you want to reinstall use --force
     return

@@ -6,4 +6,4 @@ if ($PreRelease -match "True") {
   $AppxPackageName += "Preview"
 }
 
-Remove-AppxProvisionedPackage -Online -AllUsers -PackageName $AppxPackageName
+Remove-AppxPackage -AllUsers -Package (Get-AppxPackage -Name $AppxPackageName -AllUsers -PackageTypeFilter Bundle)
