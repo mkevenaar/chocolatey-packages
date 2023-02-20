@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = 'https://files1.majorgeeks.com/10afebdbffcd4742c81a3cb0f6ce4092156b4375/multimedia/MusicBeeSetup_3_4_Update2.zip'
-$checksum     = '367a2672dcbe0531c2b1d2bf8ee2eabf96755a130f014ae0a8ea84ad59a451dc'
+$url          = 'https://files1.majorgeeks.com/10afebdbffcd4742c81a3cb0f6ce4092156b4375/multimedia/MusicBeeSetup_3_5.zip'
+$checksum     = '640de4f6f809a1d8c6f5759d88bba3ed0befc21a7546dfcc254580b2fcf7ce1a'
 $checksumType = 'sha256'
 
 
