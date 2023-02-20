@@ -42,7 +42,7 @@ function global:au_GetLatest {
       }
 
       $version = Get-Version $version
-      $asset = $release.assets | Where-Object -Property name -like "${re}_*.msixbundle" | Where-Object -Property name -Match $fileVersion
+      $asset = $release.assets | Where-Object -Property name -like "${re}_Win10_*.msixbundle" | Where-Object -Property name -Match $fileVersion
       if ($asset) {
         $url = $asset.browser_download_url
         $streams.Add($re, (CreateStream $url $version))
@@ -59,6 +59,9 @@ function global:au_SearchReplace {
     ".\tools\chocolateyInstall.ps1" = @{
       "(^[$]fileName\s*=\s*`"[$]toolsDir\\).*" = "`${1}$($Latest.FileName32)`""
       "(^[$]version\s*=\s*)`".*`""             = "`${1}`"$($Latest.RemoteVersion)`""
+      "(^[$]PreRelease\s*=\s*)`".*`""             = "`${1}`"$($Latest.PreRelease)`""
+    }
+    ".\tools\chocolateyUninstall.ps1" = @{
       "(^[$]PreRelease\s*=\s*)`".*`""             = "`${1}`"$($Latest.PreRelease)`""
     }
     ".\legal\VERIFICATION.txt" = @{

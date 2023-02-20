@@ -1,1 +1,9 @@
-﻿Get-AppxProvisionedPackage -Name Microsoft.WindowsTerminal | Remove-AppxProvisionedPackage
+﻿$PreRelease     = "False"
+
+$AppxPackageName = "Microsoft.WindowsTerminal"
+
+if ($PreRelease -match "True") {
+  $AppxPackageName += "Preview"
+}
+
+Remove-AppxProvisionedPackage -Online -AllUsers -PackageName $AppxPackageName
