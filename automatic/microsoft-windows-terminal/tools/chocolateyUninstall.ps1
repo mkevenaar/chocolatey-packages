@@ -1,4 +1,4 @@
-﻿$PreRelease     = "False"
+﻿$PreRelease     = "True"
 
 $AppxPackageName = "Microsoft.WindowsTerminal"
 
