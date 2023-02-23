@@ -1,4 +1,4 @@
-Import-Module AU
+﻿Import-Module AU
 
 $releases = 'https://www.samsung.com/semiconductor/minisite/ssd/download/tools/'
 
@@ -15,8 +15,6 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases
 
-    #Samsung_Magician_Installer.exe
-    #http://downloadcenter.samsung.com/content/SW/201812/20181205162757370/Samsung_Magician_Installer.exe
     $re  = "Samsung_Magician_installer_Official_(.+).zip"
 
     $url = $download_page.links | Where-Object href -match $re | Select-Object -First 1 -expand href
