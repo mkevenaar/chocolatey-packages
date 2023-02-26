@@ -88,8 +88,9 @@ let them know the package is no longer updating correctly.
       <dependency id="sql2012.nativeclient" />
       <dependency id="sql2014.clrtypes" />
       <dependency id="ms-reportviewer2015" />
-      <dependency id="dotnetcore-2.2-windowshosting" />
+      <dependency id="dotnetcore-3.1-runtime" version="3.1.21" />
       <dependency id="UrlRewrite" />
+      <dependency id="iis-arr" />
     </dependencies>
 
     <!--<provides>NOT YET IMPLEMENTED</provides>-->

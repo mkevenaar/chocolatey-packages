@@ -52,6 +52,7 @@ This package accepts a lot of parameters. Some of them are required the installa
 * `/serverPassword` - This parameter must be used if you have specified the `/serverUsername` parameter. Specifies a password for the account under which the _ConnectWise Manage plugin_ will connect to _Veeam Service Provider Console server_. Example: `/serverPassword:p@ssw0rd`
 * `/serverName` - Specifies FQDN or IP address of the server where _Veeam Service Provider Console server_ is deployed. Example: `/serverName:vspc.cloudprovider.com`
 * `/cwCommunicationPort` - Specifies the port number that _ConnectWise Manage plugin_ uses to communicate with _Veeam Service Provider Console_. This parameter must be used for both _ConnectWise Manage server_ and _ConnectWise Manage UI_ components. If you do not use this parameter, _ConnectWise Manage plugin_ will use the default port 9996. Example: `/cwCommunicationPort:102`
+* `/vacServerManagementPort` - Specifies the port number that the ConnectWise Manage Server component uses to communicate with the Veeam Service Provider Console Server component. If you have customized this parameter during Veeam Service Provider Console installation, make sure to specify the customized port number. If you do not use this parameter, ConnectWise Manage Server component will use the default port 1989.Example: `/vacServerManagementPort:102`
 
 Example: `choco install veeam-service-provider-console-connectwise-manage-service --params "/installdir:C:\Veeam"`
 

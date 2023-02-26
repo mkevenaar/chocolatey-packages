@@ -22,13 +22,6 @@ if ($pp.installDir) {
 }
 
 if ($pp.serverUsername) {
-  if(-not $pp.serverPassword) {
-    throw 'Remote password is required when setting a remote username...'
-  }
-  if(-not $pp.serverName) {
-    throw 'Servername is required when setting a remote user...'
-  }
-
   $silentArgs += " SERVER_ACCOUNT_NAME=`"$($pp.serverUsername)`" SERVER_ACCOUNT_PASSWORD=`"$($pp.serverPassword)`""
   $silentArgs += " SERVER_ACCOUNT_PASSWORD=`"$($pp.serverPassword)`""
   $silentArgs += " SERVER_NAME=`"$($pp.serverName)`""
@@ -36,6 +29,10 @@ if ($pp.serverUsername) {
 
 if ($pp.cwCommunicationPort) {
   $silentArgs += " VAC_CW_COMMUNICATION_PORT=`"$($pp.cwCommunicationPort)`""
+}
+
+if ($pp.vacServerManagementPort) {
+  $silentArgs += " VAC_SERVER_MANAGEMENT_PORT=`"$($pp.vacServerManagementPort)`""
 }
 
 if ($pp.username) {
@@ -67,7 +64,7 @@ $packageArgs = @{
   softwareName  = 'Application Server for Veeam ConnectWise Manage Plugin*'
   file           = $fileLocation
   fileType       = 'msi'
-  silentArgs     = "$($silentArgs) ACCEPT_EULA=1 ACCEPT_THIRDPARTY_LICENSES=1 /qn /norestart /l*v `"$env:TEMP\$env:ChocolateyPackageName.$env:ChocolateyPackageVersion.log`""
+  silentArgs     = "$($silentArgs) ACCEPT_THIRDPARTY_LICENSES=1 ACCEPT_EULA=1 ACCEPT_REQUIRED_SOFTWARE=1 ACCEPT_LICENSING_POLICY=1 /qn /norestart /l*v `"$env:TEMP\$env:ChocolateyPackageName.$env:ChocolateyPackageVersion.log`""
   validExitCodes = @(0,1638,1641,3010) #1638 was added to allow updating when an newer version is already installed.
   destination    = $toolsDir
 }

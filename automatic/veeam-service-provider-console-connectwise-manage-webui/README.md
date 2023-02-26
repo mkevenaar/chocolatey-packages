@@ -7,6 +7,7 @@ When installing / upgrading these packages, I would like to advise you to enable
 ## VSPC Integration with ConnectWise Manage
 
 _Veeam Service Provider Console_ offers built-in integration with _ConnectWise Manage_ to combine the functionality of both products and consolidate client data in one place.
+
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.

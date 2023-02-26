@@ -1,4 +1,4 @@
-# Veeam ONE Monitor Server package parameters
+# Veeam Service Provider Console Server package parameters
 
 ## Package Parameters
 
@@ -6,6 +6,7 @@ The package accepts the following optional parameters:
 
 * `/installDir` - Installs the component to the specified location. By default, _Veeam Service Provider Console_ uses the `ApplicationServer` subfolder of the `C:\Program Files\Veeam\Availability Console` folder. Example: `/installDir="C:\Veeam\"` **NOTE:** The component will be installed to the `C:\Veeam\ApplicationServer` folder.
 * `/licenseFile` - Specifies a full path to the license file. For details on license requirements, see section [Licensed Objects](https://helpcenter.veeam.com/docs/vac/provider_admin/licensed_objects.html) of the Veeam Service Provider Console Guide for Service Providers. Example: `/licenseFile="C:\Users\Administrator\Desktop\license.lic"`
+* `/licenseAutoUpdate` - Specifies if you want to enable automatic license update and usage reporting. By default, license auto update is enabled. Note that for _Evaluation_ and _NFR_ licenses automatic license update must be enabled. For details on license types, see section [License Types](https://helpcenter.veeam.com/docs/vac/provider_admin/license_types.html) of the Guide for Service Providers. Example: `licenseAutoUpdate="1"`
 * `/username` - Specifies a user account under which the _Veeam Service Provider Console Services_ will run and that will be used to access _Veeam Service Provider Console_ database in the Microsoft Windows authentication mode. Example: `/username:VAC\Administrator`
 * `/password` - This parameter must be used if you have specified the `/username` parameter. Specifies a password for the account under which the _Veeam Service Provider Console Services_ will run and that will be used to access _Veeam Service Provider Console_ database. Example: `/password:p@ssw0rd`
 * `/create` - Create the requested user on this machine, this user will be added to the local Administrators group.
