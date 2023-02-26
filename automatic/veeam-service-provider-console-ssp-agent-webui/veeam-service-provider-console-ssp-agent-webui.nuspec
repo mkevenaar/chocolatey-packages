@@ -21,37 +21,37 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- This section is about this package, although id and version have ties back to the software -->
     <!-- id is lowercase and if you want a good separator for words, use '-', not '.'. Dots are only acceptable as suffixes for certain types of packages, e.g. .install, .portable, .extension, .template -->
     <!-- If the software is cross-platform, attempt to use the same id as the debian/rpm package(s) if possible. -->
-    <id>veeam-service-provider-console-self-service-portal-agent-service</id>
+    <id>veeam-service-provider-console-ssp-agent-webui</id>
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>7.0.0.12777</version>
+    <version>0.0</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Maurice Kevenaar</owners>
     <!-- ============================== -->
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
-    <title>Veeam Service Provider Console Application Server for Self-Service Portal for Veeam Agents</title>
+    <title>Veeam Service Provider Console Self-Service Portal APIs for Veeam Agents</title>
     <authors>Veeam Software AG</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://www.veeam.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@9a2716b60dc8e877e38a1cfbc371e08b5974754d/icons/veeam-service-provider-console-self-service-portal-agent-service.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@130e1e4c169be56bac93bff6a4be9595f54b7309/icons/veeam-service-provider-console-ssp-agent-webui.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Veeam Software AG</copyright>
-    <tags>veeam-service-provider-console-self-service-portal-agent-service veeam-service-provider-console vspc veeam admin</tags>
+    <tags>veeam-service-provider-console-ssp-agent-webui veeam-service-provider-console vspc veeam admin</tags>
     <releaseNotes>https://www.veeam.com/vspc_7_0_release_notes_rn.pdf</releaseNotes>
     <licenseUrl>https://www.veeam.com/eula.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/veeam-service-provider-console-self-service-portal-agent-service</packageSourceUrl>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/veeam-service-provider-console-ssp-agent-webui</packageSourceUrl>
     <docsUrl>http://www.veeam.com/support.html</docsUrl>
     <mailingListUrl>https://forums.veeam.com/</mailingListUrl>
-    <summary>Veeam Service Provider Console Application Server for Self-Service Portal for Veeam Agents</summary>
+    <summary>Veeam Service Provider Console Application Server</summary>
     <description><![CDATA[Exit when reboot detected
 
 When installing / upgrading these packages, I would like to advise you to enable this feature `choco feature enable -n=exitOnRebootDetected`
 
-## Veeam Service Provider Console Application Server for Self-Service Portal for Veeam Agents
+## Veeam Service Provider Console Self-Service Portal APIs for Veeam Agents
 
 In _Veeam Service Provider Console_, you can restore files and folders to their initial location or download restored data to your computer. When you perform a file-level restore, Veeam Service Provider Console displays the backup content in the **file-level restore portal**. You can browse the guest OS files and folders, restore them to original location and overwrite or keep original objects or download ZIP archive with restored objects to your computer. When you restore guest OS files and folders, Veeam Service Provider Console connects to the Veeam backup agent installed on remote computer which performs the restore process.
 
@@ -59,12 +59,13 @@ In _Veeam Service Provider Console_, you can restore files and folders to their 
 
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
 
-This package accepts a lot of parameters. Some of them are required the installation. For the full list of parameters, please have a look at the [documentation](https://github.com/mkevenaar/chocolatey-packages/blob/master/automatic/veeam-service-provider-console-self-service-portal-agent-service/PARAMETERS.md)
+This package accepts a lot of parameters. Some of them are required the installation. For the full list of parameters, please have a look at the [documentation](https://github.com/mkevenaar/chocolatey-packages/blob/master/automatic/veeam-service-provider-console-ssp-agent-webui/PARAMETERS.md)
 
 #### Required parameters
 
-* `/vacFLRServiceUserName`
-* `/vacFLRServicePassword`
+* `/vacFLRWebAPIHostName`
+* `/vacFLRWebAPIUserName`
+* `/vacFLRWebAPIPassword`
 
 <!-- PARAMETERS.md -->
 **Please Note**: This is an automatically updated package. If you find it is
@@ -78,6 +79,7 @@ let them know the package is no longer updating correctly.
       <dependency id="veeam-service-provider-console-iso" version="[7.0.0.12777]" />
       <dependency id="chocolatey-isomount.extension" version="1.0" />
       <dependency id="dotnetcore-3.1-runtime" version="3.1.21" />
+      <dependency id="dotnetcore-3.1-aspnetruntime" version="3.1.21" />
     </dependencies>
 
     <!--<provides>NOT YET IMPLEMENTED</provides>-->
@@ -85,6 +87,7 @@ let them know the package is no longer updating correctly.
     <!--<replaces>NOT YET IMPLEMENTED</replaces>-->
   </metadata>
   <!-- this section controls what actually gets packaged into the Chocolatey package -->
+  <!-- Uncomment to limit what is packed in -->
   <files>
     <file src="tools\**" target="tools" />
   </files>

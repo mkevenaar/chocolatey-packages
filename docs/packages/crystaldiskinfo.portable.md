@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@01831f507ebdb56a77672d83934175202e1d1dbd/icons/crystaldiskinfo.png" width="32" height="32"/> [![CrystalDiskInfo (Portable)](https://img.shields.io/chocolatey/v/crystaldiskinfo.portable.svg?label=CrystalDiskInfo+(Portable))](https://community.chocolatey.org/packages/crystaldiskinfo.portable) [![CrystalDiskInfo (Portable)](https://img.shields.io/chocolatey/dt/crystaldiskinfo.portable.svg)](https://community.chocolatey.org/packages/crystaldiskinfo.portable)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4d349e0b09441183caae77f7edd748f216ab7d21/icons/crystaldiskinfo.png" width="32" height="32"/> [![CrystalDiskInfo (Portable)](https://img.shields.io/chocolatey/v/crystaldiskinfo.portable.svg?label=CrystalDiskInfo+(Portable))](https://community.chocolatey.org/packages/crystaldiskinfo.portable) [![CrystalDiskInfo (Portable)](https://img.shields.io/chocolatey/dt/crystaldiskinfo.portable.svg)](https://community.chocolatey.org/packages/crystaldiskinfo.portable)
 
 ## Usage
 

@@ -1,4 +1,4 @@
-﻿toc:
+toc:
   - title: chocolatey-isomount.extension
     subfolderitems:
       - page: Documentation
@@ -325,12 +325,12 @@
         url: /packages/veeamserviceproviderconsoleconnectwisemanagewebui.html
       - page: "Veeam Service Provider Console ISO downloader"
         url: /packages/veeamserviceproviderconsoleiso.html
-      - page: "Veeam Service Provider Console Application Server for Self-Service Portal for Veeam Agents"
-        url: /packages/veeamserviceproviderconsoleselfserviceportalagentservice.html
-      - page: "Veeam Service Provider Console Self-Service Portal APIs for Veeam Agents"
-        url: /packages/veeamserviceproviderconsoleselfserviceportalagentwebui.html
       - page: "Veeam Service Provider Console Application Server"
         url: /packages/veeamserviceproviderconsoleserver.html
+      - page: "Veeam Service Provider Console Application Server for Self-Service Portal for Veeam Agents"
+        url: /packages/veeamserviceproviderconsolesspagentservice.html
+      - page: "Veeam Service Provider Console Self-Service Portal APIs for Veeam Agents"
+        url: /packages/veeamserviceproviderconsolesspagentwebui.html
       - page: "Veeam Service Provider Console WebUI"
         url: /packages/veeamserviceproviderconsolewebui.html
       - page: "Veusz (Install)"

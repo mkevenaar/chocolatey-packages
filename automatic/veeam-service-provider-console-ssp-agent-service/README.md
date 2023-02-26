@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@9a2716b60dc8e877e38a1cfbc371e08b5974754d/icons/veeam-service-provider-console-self-service-portal-agent-service.png" width="48" height="48"/> [veeam-service-provider-console-self-service-portal-agent-service](https://community.chocolatey.org/packages/veeam-service-provider-console-self-service-portal-agent-service)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@f9f7eb3458af4193d66d522e0bc27501fe1a23a7/icons/veeam-service-provider-console-ssp-agent-service.png" width="48" height="48"/> [veeam-service-provider-console-self-service-portal-agent-service](https://community.chocolatey.org/packages/veeam-service-provider-console-self-service-portal-agent-service)
 
 Exit when reboot detected
 

@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@c18413cfa5790b0ad244e28784d1f8a4fe794284/icons/gitkraken.jpg" width="32" height="32"/> [![GitKraken](https://img.shields.io/chocolatey/v/gitkraken.svg?label=GitKraken)](https://community.chocolatey.org/packages/gitkraken) [![GitKraken](https://img.shields.io/chocolatey/dt/gitkraken.svg)](https://community.chocolatey.org/packages/gitkraken)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@6a9b0994ee75696e53493f5b9c6ee3717d7de164/icons/gitkraken.jpg" width="32" height="32"/> [![GitKraken](https://img.shields.io/chocolatey/v/gitkraken.svg?label=GitKraken)](https://community.chocolatey.org/packages/gitkraken) [![GitKraken](https://img.shields.io/chocolatey/dt/gitkraken.svg)](https://community.chocolatey.org/packages/gitkraken)
 
 ## Usage
 
@@ -35,5 +35,5 @@ let them know the package is no longer updating correctly.
 
 [Software Site](http://www.gitkraken.com/)
 
-[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/aida64-business)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/gitkraken)
 

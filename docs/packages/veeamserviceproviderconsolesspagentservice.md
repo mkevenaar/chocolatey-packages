@@ -1,23 +1,23 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@9a2716b60dc8e877e38a1cfbc371e08b5974754d/icons/veeam-service-provider-console-self-service-portal-agent-service.png" width="32" height="32"/> [![Veeam Service Provider Console Application Server for Self-Service Portal for Veeam Agents](https://img.shields.io/chocolatey/v/veeam-service-provider-console-self-service-portal-agent-service.svg?label=Veeam+Service+Provider+Console+Application+Server+for+Self-Service+Portal+for+Veeam+Agents)](https://community.chocolatey.org/packages/veeam-service-provider-console-self-service-portal-agent-service) [![Veeam Service Provider Console Application Server for Self-Service Portal for Veeam Agents](https://img.shields.io/chocolatey/dt/veeam-service-provider-console-self-service-portal-agent-service.svg)](https://community.chocolatey.org/packages/veeam-service-provider-console-self-service-portal-agent-service)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@f9f7eb3458af4193d66d522e0bc27501fe1a23a7/icons/veeam-service-provider-console-ssp-agent-service.png" width="32" height="32"/> [![Veeam Service Provider Console Application Server for Self-Service Portal for Veeam Agents](https://img.shields.io/chocolatey/v/veeam-service-provider-console-ssp-agent-service.svg?label=Veeam+Service+Provider+Console+Application+Server+for+Self-Service+Portal+for+Veeam+Agents)](https://community.chocolatey.org/packages/veeam-service-provider-console-ssp-agent-service) [![Veeam Service Provider Console Application Server for Self-Service Portal for Veeam Agents](https://img.shields.io/chocolatey/dt/veeam-service-provider-console-ssp-agent-service.svg)](https://community.chocolatey.org/packages/veeam-service-provider-console-ssp-agent-service)
 
 ## Usage
 
 To install Veeam Service Provider Console Application Server for Self-Service Portal for Veeam Agents, run the following command from the command line or from PowerShell:
 
 ```powershell
-choco install veeam-service-provider-console-self-service-portal-agent-service
+choco install veeam-service-provider-console-ssp-agent-service
 ```
 
 To upgrade Veeam Service Provider Console Application Server for Self-Service Portal for Veeam Agents, run the following command from the command line or from PowerShell:
 
 ```powershell
-choco upgrade veeam-service-provider-console-self-service-portal-agent-service
+choco upgrade veeam-service-provider-console-ssp-agent-service
 ```
 
 To uninstall Veeam Service Provider Console Application Server for Self-Service Portal for Veeam Agents, run the following command from the command line or from PowerShell:
 
 ```powershell
-choco uninstall veeam-service-provider-console-self-service-portal-agent-service
+choco uninstall veeam-service-provider-console-ssp-agent-service
 ```
 
 ## Description
@@ -34,7 +34,7 @@ In _Veeam Service Provider Console_, you can restore files and folders to their 
 
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
 
-This package accepts a lot of parameters. Some of them are required the installation. For the full list of parameters, please have a look at the [documentation](https://github.com/mkevenaar/chocolatey-packages/blob/master/automatic/veeam-service-provider-console-self-service-portal-agent-service/PARAMETERS.md)
+This package accepts a lot of parameters. Some of them are required the installation. For the full list of parameters, please have a look at the [documentation](https://github.com/mkevenaar/chocolatey-packages/blob/master/automatic/veeam-service-provider-console-ssp-service/PARAMETERS.md)
 
 #### Required parameters
 
@@ -53,9 +53,9 @@ let them know the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://community.chocolatey.org/packages/veeam-service-provider-console-self-service-portal-agent-service)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/veeam-service-provider-console-ssp-agent-service)
 
 [Software Site](http://www.veeam.com/)
 
-[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/veeam-service-provider-console-self-service-portal-agent-service)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/veeam-service-provider-console-ssp-service)
 
