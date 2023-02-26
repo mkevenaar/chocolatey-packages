@@ -1,10 +1,10 @@
-$ErrorActionPreference = 'Stop';
+﻿$ErrorActionPreference = 'Stop';
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $isoPackageName = 'veeam-service-provider-console-iso'
 $scriptPath = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 $commonPath = $(Split-Path -parent $(Split-Path -parent $scriptPath))
-$filename = 'VeeamServiceProviderConsole_6.0.0.7739_20210917.iso'
+$filename = 'VeeamServiceProviderConsole_7.0.0.12777_20230123.iso'
 $installPath = Join-Path  (Join-Path $commonPath $isoPackageName) $filename
 
 $fileLocation = 'Plugins\VeeamAgent\FLRPortal\VSPC.VeeamAgentsSelfServicePortal.x64.msi'
