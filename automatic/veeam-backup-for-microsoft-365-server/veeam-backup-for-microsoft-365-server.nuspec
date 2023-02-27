@@ -40,7 +40,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@80c8efc0b96a2bc551b51ec89ff96f3326027b38/icons/veeam-backup-for-microsoft-365-server.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Veeam Software Group GmbH</copyright>
-    <tags>veeam-backup-for-microsoft-365-server vbm veeam backup m365 office microsoft admin</tags>
+    <tags>veeam-backup-for-microsoft-365-server vb365 veeam backup m365 office microsoft admin</tags>
     <releaseNotes>https://www.veeam.com/veeam_backup_m365_6a_release_notes_rn.pdf</releaseNotes>
     <licenseUrl>https://www.veeam.com/eula.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>

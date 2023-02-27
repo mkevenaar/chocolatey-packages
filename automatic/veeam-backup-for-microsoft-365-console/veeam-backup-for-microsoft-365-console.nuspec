@@ -40,7 +40,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@5f87ccdedd262837aaf45bcd766de6dc5291da78/icons/veeam-backup-for-microsoft-365-console.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Veeam Software Group GmbH</copyright>
-    <tags>veeam-backup-for-microsoft-365-console vbm veeam backup m365 office microsoft admin</tags>
+    <tags>veeam-backup-for-microsoft-365-console vb365 veeam backup m365 office microsoft admin</tags>
     <releaseNotes>https://www.veeam.com/veeam_backup_m365_6a_release_notes_rn.pdf</releaseNotes>
     <licenseUrl>https://www.veeam.com/eula.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -72,7 +72,7 @@ The package accepts the following optional parameters:
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 ]]></description>
-    <!-- =============================== -->  
+    <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
     <dependencies>

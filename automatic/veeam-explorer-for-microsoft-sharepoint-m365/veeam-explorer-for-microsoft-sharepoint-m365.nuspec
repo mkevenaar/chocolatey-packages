@@ -41,7 +41,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@60e450727876fdaf617f12730af3045c4e10aede/icons/veeam-explorer-for-microsoft-sharepoint-m365.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Veeam Software AG</copyright>
-    <tags>veeam-explorer-for-microsoft-sharepoint-m365 vbm veeam expolorer sharepoint admin</tags>
+    <tags>veeam-explorer-for-microsoft-sharepoint-m365 vb365 veeam expolorer sharepoint admin</tags>
     <releaseNotes>https://www.veeam.com/veeam_backup_m365_6a_release_notes_rn.pdf</releaseNotes>
     <licenseUrl>https://www.veeam.com/eula.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -57,7 +57,7 @@ Microsoft SharePoint has traditionally been one of the most difficult applicatio
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 ]]></description>
-    <!-- =============================== -->  
+    <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
     <dependencies>
