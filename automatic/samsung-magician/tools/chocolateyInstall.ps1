@@ -1,4 +1,4 @@
-﻿$ErrorActionPreference = 'Stop';
+﻿$ErrorActionPreference = 'Stop'
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url          = 'https://download.semiconductor.samsung.com/resources/software-resources/Samsung_Magician_installer_Official_7.2.1.980.zip'
@@ -18,7 +18,7 @@ Install-ChocolateyZipPackage @packageArgs
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'exe'
-  file           = Get-Item $toolsDir\*.exe
+  file           = Get-Item $toolsDir\*.exe
   softwareName   = 'Samsung Magician*'
   silentArgs     = ""
   validExitCodes = @(0,3010)
@@ -27,7 +27,7 @@ $packageArgs = @{
 # silent install requires AutoHotKey
 $ahkFile = Join-Path $toolsDir 'chocolateyInstall.ahk'
 $ahkEXE = Get-ChildItem "$env:ChocolateyInstall\lib\autohotkey.portable" -Recurse -filter autohotkey.exe
-$ahkProc = Start-Process -FilePath $ahkEXE.FullName -ArgumentList "$ahkFile" -PassThru
+$ahkProc = Start-Process -FilePath $ahkEXE.FullName -ArgumentList $ahkFile -PassThru
 Write-Debug "AutoHotKey start time:`t$($ahkProc.StartTime.ToShortTimeString())"
 Write-Debug "Process ID:`t$($ahkProc.Id)"
 
