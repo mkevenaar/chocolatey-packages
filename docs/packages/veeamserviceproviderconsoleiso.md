@@ -38,8 +38,8 @@ This package is used as a dependency by other Chocolatey packages. To install an
 - [Veeam Service Provider Console WebUI](https://community.chocolatey.org/packages/veeam-service-provider-console-webui)
 - [Veeam Service Provider Console Application Server for Veeam ConnectWise Manage Plugin](https://community.chocolatey.org/packages/veeam-service-provider-console-connectwise-manage-service)
 - [Veeam Service Provider Console Application Server Web UI for Veeam ConnectWise Manage Plugin](https://community.chocolatey.org/packages/veeam-service-provider-console-connectwise-manage-webui)
-- [Veeam Service Provider Console Application Server for Self-Service Portal for Veeam Agents](https://community.chocolatey.org/packages/veeam-service-provider-console-self-service-portal-agent-service)
-- [Veeam Service Provider Console Self-Service Portal APIs for Veeam Agents](https://community.chocolatey.org/packages/veeam-service-provider-console-self-service-portal-agent-webui)
+- [Veeam Service Provider Console Application Server for Self-Service Portal for Veeam Agents](https://community.chocolatey.org/packages/veeam-service-provider-console-ssp-agent-service)
+- [Veeam Service Provider Console Self-Service Portal APIs for Veeam Agents](https://community.chocolatey.org/packages/veeam-service-provider-console-ssp-agent-webui)
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and

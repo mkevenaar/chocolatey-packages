@@ -9,4 +9,4 @@ The package accepts the following optional parameters:
 * `/vacFLRWebAPIUserName` - Specifies a user account under which the file-level restore plugin will connect to Veeam Service Provider Console server. The account must have local Administrator permissions on the machine where Veeam Service Provider Console server is installed. Example: `/vacFLRWebAPIUserName:"Administrator"`
 * `/vacFLRWebAPIPassword` - Specifies a password for the account under which the file-level restore plugin will connect to Veeam Service Provider Console server. Example: `/vacFLRWebAPIPassword:"p@ssw0rd"`
 
-Example: `choco install veeam-service-provider-console-self-service-portal-agent-webui --params "/vacFLRWebAPIHostName:vspc.mydomain.tld"`
+Example: `choco install veeam-service-provider-console-ssp-agent-webui --params "/vacFLRWebAPIHostName:vspc.mydomain.tld"`

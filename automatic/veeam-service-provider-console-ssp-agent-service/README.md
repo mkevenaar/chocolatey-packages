@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@f9f7eb3458af4193d66d522e0bc27501fe1a23a7/icons/veeam-service-provider-console-ssp-agent-service.png" width="48" height="48"/> [veeam-service-provider-console-self-service-portal-agent-service](https://community.chocolatey.org/packages/veeam-service-provider-console-self-service-portal-agent-service)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@f9f7eb3458af4193d66d522e0bc27501fe1a23a7/icons/veeam-service-provider-console-ssp-agent-service.png" width="48" height="48"/> [veeam-service-provider-console-ssp-agent-service](https://community.chocolatey.org/packages/veeam-service-provider-console-ssp-agent-service)
 
 Exit when reboot detected
 
@@ -12,7 +12,7 @@ In _Veeam Service Provider Console_, you can restore files and folders to their 
 
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
 
-This package accepts a lot of parameters. Some of them are required the installation. For the full list of parameters, please have a look at the [documentation](https://github.com/mkevenaar/chocolatey-packages/blob/master/automatic/veeam-service-provider-console-self-service-portal-agent-service/PARAMETERS.md)
+This package accepts a lot of parameters. Some of them are required the installation. For the full list of parameters, please have a look at the [documentation](https://github.com/mkevenaar/chocolatey-packages/blob/master/automatic/veeam-service-provider-console-ssp-agent-service/PARAMETERS.md)
 
 #### Required parameters
 

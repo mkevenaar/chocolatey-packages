@@ -34,7 +34,7 @@ In _Veeam Service Provider Console_, you can restore files and folders to their 
 
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
 
-This package accepts a lot of parameters. Some of them are required the installation. For the full list of parameters, please have a look at the [documentation](https://github.com/mkevenaar/chocolatey-packages/blob/master/automatic/veeam-service-provider-console-ssp-service/PARAMETERS.md)
+This package accepts a lot of parameters. Some of them are required the installation. For the full list of parameters, please have a look at the [documentation](https://github.com/mkevenaar/chocolatey-packages/blob/master/automatic/veeam-service-provider-console-ssp-agent-service/PARAMETERS.md)
 
 #### Required parameters
 
@@ -44,7 +44,7 @@ This package accepts a lot of parameters. Some of them are required the installa
 * `/vacFLRServiceUserName` - Specifies a user account under which the file-level restore service will run. The account must have local Administrator permissions on the machine where Veeam Service Provider Console server is installed. Example: `/vacFLRServiceUserName:"VAC\flr.admin"`
 * `/vacFLRServicePassword` - This parameter must be used if you have specified the `/vacFLRServiceUserName` parameter. Specifies a password for the account under which the file-level restore service will run. Example: `/vacFLRServicePassword:"p@ssw0rd"`
 
-Example: `choco install veeam-service-provider-console-self-service-portal-agent-service --params "/vacFLRServiceUserName:VAC\flr.admin"`
+Example: `choco install veeam-service-provider-console-ssp-agent-service --params "/vacFLRServiceUserName:VAC\flr.admin"`
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
@@ -57,5 +57,5 @@ let them know the package is no longer updating correctly.
 
 [Software Site](http://www.veeam.com/)
 
-[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/veeam-service-provider-console-ssp-service)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/veeam-service-provider-console-ssp-agent-service)
 
