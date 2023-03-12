@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@aa04db8e6809ba3e4dc22d3320103be9ca70d4c4/icons/veeam-one-monitor-server.png" width="48" height="48"/> [veeam-one-monitor-server](https://community.chocolatey.org/packages/veeam-one-monitor-server)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@389832e99573a88fd092dd63dc75280ee55b7ff4/icons/veeam-one-monitor-server.png" width="48" height="48"/> [veeam-one-monitor-server](https://community.chocolatey.org/packages/veeam-one-monitor-server)
 
 ## Exit when reboot detected
 
@@ -21,6 +21,11 @@ After installing this package, the [Veeam ONE Reporter Server](https://community
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
 
 This package accepts a lot of parameters. Some of them are required the installation. For the full list of parameters, please have a look at the [documentation](https://github.com/mkevenaar/chocolatey-packages/blob/master/automatic/veeam-one-monitor-server/PARAMETERS.md)
+
+#### Required parameters
+
+* `/username`
+* `/password`
 
 <!-- PARAMETERS.md -->
 **Please Note**: This is an automatically updated package. If you find it is

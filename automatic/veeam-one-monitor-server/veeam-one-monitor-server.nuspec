@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Veeam Software AG</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://www.veeam.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@aa04db8e6809ba3e4dc22d3320103be9ca70d4c4/icons/veeam-one-monitor-server.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@389832e99573a88fd092dd63dc75280ee55b7ff4/icons/veeam-one-monitor-server.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Veeam Software AG</copyright>
     <tags>veeam-one-monitor-server vone veeam-one veeam one monitor server admin</tags>
@@ -70,6 +70,11 @@ To have choco remember parameters on upgrade, be sure to set `choco feature enab
 
 This package accepts a lot of parameters. Some of them are required the installation. For the full list of parameters, please have a look at the [documentation](https://github.com/mkevenaar/chocolatey-packages/blob/master/automatic/veeam-one-monitor-server/PARAMETERS.md)
 
+#### Required parameters
+
+* `/username`
+* `/password`
+
 <!-- PARAMETERS.md -->
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
@@ -83,9 +88,7 @@ let them know the package is no longer updating correctly.
       <dependency id="chocolatey-isomount.extension" version="1.0" />
       <dependency id="DotNet4.7.2" />
       <dependency id="vcredist140" />
-      <dependency id="SQL2012.SMO" />
       <dependency id="SQL2014.SMO" />
-      <dependency id="ms-reportviewer2015" />
       <dependency id="msoledbsql" />
     </dependencies>
 

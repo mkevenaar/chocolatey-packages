@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@d6efae40c5d3947ca6f6de19ed8e1ac2b1444dff/icons/veeam-one-reporter-server.png" width="48" height="48"/> [veeam-one-reporter-server](https://community.chocolatey.org/packages/veeam-one-reporter-server)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@2ee2fcd53cc3763c730d67ed56857053d503baa0/icons/veeam-one-reporter-server.png" width="48" height="48"/> [veeam-one-reporter-server](https://community.chocolatey.org/packages/veeam-one-reporter-server)
 
 ## Exit when reboot detected
 
@@ -19,6 +19,11 @@ This package requires you to install the IIS Windows feature and WAS Configurati
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
 
 This package accepts a lot of parameters. Some of them are required the installation. For the full list of parameters, please have a look at the [documentation](https://github.com/mkevenaar/chocolatey-packages/blob/master/automatic/veeam-one-reporter-server/PARAMETERS.md)
+
+#### Required parameters
+
+* `/username`
+* `/password`
 
 <!-- PARAMETERS.md -->
 **Please Note**: This is an automatically updated package. If you find it is

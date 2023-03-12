@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Veeam Software AG</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://www.veeam.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@f20a38e9ae4cd8756c2b3a3931d8b3bf22082f51/icons/veeam-one-reporter-web.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@3c7e8c21ee2dcb440643a882debf29a88f6b6034/icons/veeam-one-reporter-web.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Veeam Software AG</copyright>
     <tags>veeam-one-reporter-web vone veeam-one veeam one reporter web admin</tags>
@@ -60,13 +60,19 @@ When installing / upgrading these packages, I would like to advise you to enable
 
 You'll need an SQL Server (express) installed. It's not required to have this installed on this server. You'll need to specify parameters to connect to the SQL Server.
 
-This package requires you to install the IIS Windows feature, WAS Configuration API feature and some ASP features. You can install these by executing `choco install IIS-WebServerRole IIS-WindowsAuthentication IIS-WebSockets IIS-ASPNET45 IIS-NetFxExtensibility45 WAS-ConfigurationAPI IIS-ManagementConsole IIS-ManagementService --source WindowsFeatures`
+This package requires you to install the IIS Windows feature, WAS Configuration API feature, some ASP features and Client Certificate Mapping Authentication. You can install these by executing `choco install IIS-WebServerRole IIS-WindowsAuthentication IIS-WebSockets IIS-ASPNET45 IIS-NetFxExtensibility45 WAS-ConfigurationAPI IIS-ManagementConsole IIS-ManagementService IIS-ClientCertificateMappingAuthentication --source WindowsFeatures`
 
 ### Package Parameters
 
 To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
 
 This package accepts a lot of parameters. Some of them are required the installation. For the full list of parameters, please have a look at the [documentation](https://github.com/mkevenaar/chocolatey-packages/blob/master/automatic/veeam-one-reporter-web/PARAMETERS.md)
+
+#### Required parameters
+
+* `/username`
+* `/password`
+* `/oneServer`
 
 <!-- PARAMETERS.md -->
 **Please Note**: This is an automatically updated package. If you find it is
@@ -79,10 +85,8 @@ let them know the package is no longer updating correctly.
     <dependencies>
       <dependency id="veeam-one-iso" version="[11.0.1.1880]" />
       <dependency id="chocolatey-isomount.extension" version="1.0" />
-      <dependency id="DotNet4.7.2" />
-      <dependency id="SQL2012.SMO" />
+      <dependency id="vcredist140" />
       <dependency id="SQL2014.SMO" />
-      <dependency id="ms-reportviewer2015" />
       <dependency id="iis-arr" />
       <dependency id="UrlRewrite" />
     </dependencies>

@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Veeam Software AG</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://www.veeam.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@d6efae40c5d3947ca6f6de19ed8e1ac2b1444dff/icons/veeam-one-reporter-server.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@2ee2fcd53cc3763c730d67ed56857053d503baa0/icons/veeam-one-reporter-server.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Veeam Software AG</copyright>
     <tags>veeam-one-reporter-server vone veeam-one veeam one reporter server admin</tags>
@@ -68,6 +68,11 @@ To have choco remember parameters on upgrade, be sure to set `choco feature enab
 
 This package accepts a lot of parameters. Some of them are required the installation. For the full list of parameters, please have a look at the [documentation](https://github.com/mkevenaar/chocolatey-packages/blob/master/automatic/veeam-one-reporter-server/PARAMETERS.md)
 
+#### Required parameters
+
+* `/username`
+* `/password`
+
 <!-- PARAMETERS.md -->
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
@@ -79,13 +84,10 @@ let them know the package is no longer updating correctly.
     <dependencies>
       <dependency id="veeam-one-iso" version="[11.0.1.1880]" />
       <dependency id="chocolatey-isomount.extension" version="1.0" />
-      <dependency id="DotNet4.7.2" />
       <dependency id="vcredist140" />
-      <dependency id="SQL2012.SMO" />
       <dependency id="SQL2014.SMO" />
-      <dependency id="ms-reportviewer2015" />
-      <dependency id="dotnetcore-runtime" version="3.1.10" />
-      <dependency id="dotnetcore-aspnetruntime" version="3.1.10" />
+      <dependency id="dotnetcore-runtime" version="3.1.16" />
+      <dependency id="dotnetcore-aspnetruntime" version="3.1.16" />
     </dependencies>
 
     <!--<provides>NOT YET IMPLEMENTED</provides>-->

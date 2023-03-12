@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Veeam Software AG</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://www.veeam.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@5a7e97e58c57f2b5d464291c6823f698ed3d1e70/icons/veeam-one-monitor-client.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@2c17d55938a86437948931982a3b91345fbf65ef/icons/veeam-one-monitor-client.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Veeam Software AG</copyright>
     <tags>veeam-one-monitor-client vone veeam-one veeam one monitor client admin</tags>
@@ -62,6 +62,7 @@ To have choco remember parameters on upgrade, be sure to set `choco feature enab
 
 The package accepts the following optional parameters:
 
+* `/installDir` - Installs the component to the specified location. By default, Veeam ONE uses the **Veeam ONE Monitor Client** subfolder of the `C:\Program Files\Veeam\Veeam ONE` folder. Example: `/installDir:"C:\Veeam\"` The component will be installed to the `C:\Veeam\Veeam ONE Monitor Client` folder.
 * `/monitorServer` - Specifies FQDN or IP address of the server where Veeam ONE Monitor is deployed. Example: `/monitorServer:oneserver.tech.local`
 
 Example: `choco install veeam-one-monitor-client --params "/monitorServer:oneserver.tech.local"`
@@ -76,8 +77,8 @@ let them know the package is no longer updating correctly.
     <dependencies>
       <dependency id="veeam-one-iso" version="[11.0.1.1880]" />
       <dependency id="chocolatey-isomount.extension" version="1.0" />
-      <dependency id="DotNet4.7.2" />
       <dependency id="MSXML6.SP1" />
+      <dependency id="vcredist140" />
     </dependencies>
 
     <!--<provides>NOT YET IMPLEMENTED</provides>-->

@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@5a7e97e58c57f2b5d464291c6823f698ed3d1e70/icons/veeam-one-monitor-client.png" width="32" height="32"/> [![Veeam ONE Monitor Client](https://img.shields.io/chocolatey/v/veeam-one-monitor-client.svg?label=Veeam+ONE+Monitor+Client)](https://community.chocolatey.org/packages/veeam-one-monitor-client) [![Veeam ONE Monitor Client](https://img.shields.io/chocolatey/dt/veeam-one-monitor-client.svg)](https://community.chocolatey.org/packages/veeam-one-monitor-client)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@2c17d55938a86437948931982a3b91345fbf65ef/icons/veeam-one-monitor-client.png" width="32" height="32"/> [![Veeam ONE Monitor Client](https://img.shields.io/chocolatey/v/veeam-one-monitor-client.svg?label=Veeam+ONE+Monitor+Client)](https://community.chocolatey.org/packages/veeam-one-monitor-client) [![Veeam ONE Monitor Client](https://img.shields.io/chocolatey/dt/veeam-one-monitor-client.svg)](https://community.chocolatey.org/packages/veeam-one-monitor-client)
 
 ## Usage
 
@@ -36,6 +36,7 @@ To have choco remember parameters on upgrade, be sure to set `choco feature enab
 
 The package accepts the following optional parameters:
 
+* `/installDir` - Installs the component to the specified location. By default, Veeam ONE uses the **Veeam ONE Monitor Client** subfolder of the `C:\Program Files\Veeam\Veeam ONE` folder. Example: `/installDir:"C:\Veeam\"` The component will be installed to the `C:\Veeam\Veeam ONE Monitor Client` folder.
 * `/monitorServer` - Specifies FQDN or IP address of the server where Veeam ONE Monitor is deployed. Example: `/monitorServer:oneserver.tech.local`
 
 Example: `choco install veeam-one-monitor-client --params "/monitorServer:oneserver.tech.local"`

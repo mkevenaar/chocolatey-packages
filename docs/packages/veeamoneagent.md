@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@07b0f3c76ddb3fda3a50d2e92aee9df2bb42aec2/icons/veeam-one-agent.png" width="32" height="32"/> [![Veeam ONE Agent](https://img.shields.io/chocolatey/v/veeam-one-agent.svg?label=Veeam+ONE+Agent)](https://community.chocolatey.org/packages/veeam-one-agent) [![Veeam ONE Agent](https://img.shields.io/chocolatey/dt/veeam-one-agent.svg)](https://community.chocolatey.org/packages/veeam-one-agent)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@0a1dc3da07e8ad824bdb1ea2fadb450b256ad551/icons/veeam-one-agent.png" width="32" height="32"/> [![Veeam ONE Agent](https://img.shields.io/chocolatey/v/veeam-one-agent.svg?label=Veeam+ONE+Agent)](https://community.chocolatey.org/packages/veeam-one-agent) [![Veeam ONE Agent](https://img.shields.io/chocolatey/dt/veeam-one-agent.svg)](https://community.chocolatey.org/packages/veeam-one-agent)
 
 ## Usage
 
@@ -54,11 +54,17 @@ To have choco remember parameters on upgrade, be sure to set `choco feature enab
 
 The package accepts the following optional parameters:
 
+* `/installDir`- Installs the component to the specified location. By default, Veeam ONE uses the **Veeam ONE Agent** subfolder of the `C:\Program Files\Veeam\Veeam ONE folder`. Example: `/installDir="C:\Veeam\"` The component will be installed to the `C:\Veeam\Veeam ONE Agent` folder.
 * `/server` - Specifies the mode in which Veeam ONE agent will run. If you specify this parameter, the agent will be installed in Server mode. Only required for the Veeam ONE Server
 * `/username` - Specifies a user account under which the Veeam ONE Agent service will run. Example: `/username:ONESERVER\Administrator`
 * `/password` - This parameter must be used if you have specified the `/username` parameter. Specifies a password for the account that will be used to run Veeam ONE Agent. Example: `/password:p@ssw0rd`
 * `/create` - Create the requested user on this machine, this user will be added to the local Administrators group.
 * `/agentServicePort` - Specifies a port that will be used by Monitor to communicate with Veeam ONE Agent. By default, port number 2805 is used. Example: `/agentServicePort:2805`
+
+#### Required parameters
+
+* `/username`
+* `/password`
 
 Example: `choco install veeam-one-agent --params "/server /agentServicePort:1234"`
 

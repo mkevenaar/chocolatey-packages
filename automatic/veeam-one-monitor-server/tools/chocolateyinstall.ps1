@@ -17,6 +17,10 @@ if(!$service) {
 
 $pp = Get-PackageParameters
 
+if (-not $pp.username -or -not $pp.password) {
+  throw "A Required package parameter is missing, please provide the 'username','password' parameters"
+}
+
 $silentArgs = ""
 
 $validOptionsTypes = '0','1','2'
@@ -29,58 +33,27 @@ if ($pp.perfCache) {
   }
 }
 
+if ($pp.autoUpdate) {
+  if (-not $validOptionsBool.Contains($pp.autoUpdate)) {
+    throw "$($pp.autoUpdate) is an invalid value for the autoUpdate parameter."
+  }
+  $silentArgs += " VM_MN_SERVER_AUTOUPDATE_ENABLED=`"$($pp.autoUpdate)`""
+}
+
+if ($pp.installDir) {
+  $silentArgs += " PF_VEEAMONE=`"$($pp.installDir)`""
+}
+
+if ($pp.grpcServerPort) {
+  $silentArgs += " VM_GRPC_SERVER_PORT=`"$($pp.grpcServerPort)`""
+}
+
 if ($pp.installationType) {
   if (-not $validOptionsTypes.Contains($pp.installationType)) {
     Write-Warning "$($pp.installationType) is an invalid value for the installationType parameter."
     throw
   }
   $silentArgs += " VO_INSTALLATION_TYPE=$($pp.installationType)"
-}
-
-if ($pp.vcSelectedType) {
-  if (-not $validOptionsTypes.Contains($pp.vcSelectedType)) {
-    Write-Warning "$($pp.vcSelectedType) is an invalid value for the vcSelectedType parameter."
-    throw
-  }
-  $silentArgs += " VM_VC_SELECTED_TYPE=`"$($pp.vcSelectedType)`""
-
-  if ($pp.vcSelectedType -eq '1') {
-    if ($pp.hvType) {
-      if (-not $validOptionsTypes.Contains($pp.hvType)) {
-        Write-Warning "$($pp.hvType) is an invalid value for the hvType parameter."
-        throw
-      }
-      $silentArgs += " VM_HV_TYPE=$($pp.hvType)"
-
-    }
-  }
-
-  if($pp.vcSelectedType -eq '0' -or $pp.vcSelectedType -eq '1') {
-    if(-not $pp.vcHost -or -not $pp.vcPort -or -not $pp.vcHostUser -or -not $pp.vcHostPass) {
-      Write-Warning "vcHost, vcPort, vcHostUser and vcHostPass are required when vcSelectedType is 0 or 1"
-      throw
-    }
-    $silentArgs += " VM_VC_HOST=`"$($pp.vcHost)`" VM_VC_PORT=$($pp.vcPort) VM_VC_HOST_USER=`"$($pp.vcHostUser)`" VM_VC_HOST_PWD=`"$($pp.vcHostPass)`""
-
-    if ($pp.backupAddLater) {
-      if (-not $validOptionsBool.Contains($pp.backupAddLater)) {
-        Write-Warning "$($pp.backupAddLater) is an invalid value for the backupAddLater parameter."
-        throw
-      }
-      $silentArgs += " VM_BACKUP_ADD_LATER=$($pp.backupAddLater)"
-    }
-
-    if(-not $pp.backupAddLater -and (-not $pp.backupAddType -or -not $pp.backupAddHost -or -not $pp.backupAddUser -or -not $pp.backupAddPass)) {
-      Write-Warning "backupAddType, backupAddHost, backupAddUser and backupAddPass are required when vcSelectedType is 0 or 1 and backupAddLater is not 1"
-      throw
-    }
-
-    if (-not $validOptionsBool.Contains($pp.backupAddType)) {
-      Write-Warning "$($pp.backupAddType) is an invalid value for the backupAddType parameter."
-      throw
-    }
-    $silentArgs += " VM_BACKUP_ADD_TYPE=$($pp.backupAddType) VM_BACKUP_ADD_NAME=`"$($pp.backupAddHost)`" VM_BACKUP_ADD_USER=`"$($pp.backupAddUser)`" VM_BACKUP_ADD_PWD=`"$($pp.backupAddPass)`""
-  }
 }
 
 if ($pp.sqlServer) {
@@ -135,7 +108,7 @@ $packageArgs = @{
   softwareName   = 'Veeam ONE Monitor Server*'
   file           = $fileLocation
   fileType       = 'msi'
-  silentArgs     = "$($silentArgs) ACCEPT_EULA=1 ACCEPT_THIRDPARTY_LICENSES=1 /qn /norestart /l*v `"$env:TEMP\$env:ChocolateyPackageName.$env:ChocolateyPackageVersion.log`""
+  silentArgs     = "$($silentArgs) ACCEPT_THIRDPARTY_LICENSES=1 ACCEPT_EULA=1 ACCEPT_REQUIRED_SOFTWARE=1 ACCEPT_LICENSING_POLICY=1 /qn /norestart /l*v `"$env:TEMP\$env:ChocolateyPackageName.$env:ChocolateyPackageVersion.log`""
   validExitCodes = @(0,1638,1641,3010) #1638 was added to allow updating when an newer version is already installed.
   destination    = $toolsDir
 }
