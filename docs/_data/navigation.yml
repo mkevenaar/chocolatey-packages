@@ -1,4 +1,4 @@
-toc:
+﻿toc:
   - title: chocolatey-isomount.extension
     subfolderitems:
       - page: Documentation
@@ -179,6 +179,8 @@ toc:
         url: /packages/orca.html
       - page: "OrientDB (Portable)"
         url: /packages/orientdb.html
+      - page: "Plex Media Server"
+        url: /packages/plexmediaserver.html
       - page: "PowerToys"
         url: /packages/powertoys.html
       - page: "Psi"
