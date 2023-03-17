@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'https://www.meshmixer.com/download.html'
+$releases = 'https://meshmixer.com/download.html'
 
 function global:au_SearchReplace {
     @{
