@@ -36,12 +36,12 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <title>Meshmixer</title>
     <authors>Autodesk Inc</authors>
     <!-- projectUrl is required for the community feed -->
-    <projectUrl>http://www.meshmixer.com/</projectUrl>
+    <projectUrl>https://meshmixer.com/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@6b940fe0b9134a855b5aa1c0f35ed69cb12ea13a/icons/meshmixer.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Autodesk Inc</copyright>
     <tags>meshmixer autodesk modeling 3d surface solid print design</tags>
-    <releaseNotes>http://www.meshmixer.com/download.html</releaseNotes>
+    <releaseNotes>https://meshmixer.com/download.html</releaseNotes>
     <licenseUrl>https://www.autodesk.com/company/terms-of-use/en/general-terms</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/meshmixer</packageSourceUrl>
