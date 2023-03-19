@@ -5,9 +5,9 @@ Import-Module "$PSScriptRoot\..\..\scripts/au_extensions.psm1"
 function global:au_SearchReplace {
   @{
     '.\tools\chocolateyInstall.ps1' = @{
-      "(^[$]url\s*=\s*)('.*')"                         = "`$1'$($Latest.URL32)'"
-      "(^[$]checksum\s*=\s*)('.*')"                    = "`$1'$($Latest.Checksum32)'"
-      "(^[$]checksumType\s*=\s*)('.*')"                = "`$1'$($Latest.ChecksumType32)'"
+      "(^\s*[$]url\s*=\s*)('.*')"                      = "`$1'$($Latest.URL32)'"
+      "(^\s*[$]checksum\s*=\s*)('.*')"                 = "`$1'$($Latest.Checksum32)'"
+      "(^\s*[$]checksumType\s*=\s*)('.*')"             = "`$1'$($Latest.ChecksumType32)'"
       "(^\[version\] [$]softwareVersion\s*=\s*)('.*')" = "`$1'$($Latest.RemoteVersion)'"
     }
   }
