@@ -52,6 +52,7 @@ Choose folders on your computer to sync with Google Drive or backup to Google Ph
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
 ]]></description>
+    <releaseNotes>https://support.google.com/a/answer/7577057</releaseNotes>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
