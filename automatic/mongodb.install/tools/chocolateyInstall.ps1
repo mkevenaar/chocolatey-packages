@@ -3,7 +3,7 @@ $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url64          = 'https://fastdl.mongodb.org/windows/mongodb-windows-x86_64-6.3.0-rc1-signed.msi'
 $checksum64     = 'c5bd93e51def6c3a5cf45296cdbf96b85d2cd638fa417cc137d39f1d2bcd4320'
 $checksumType64 = 'sha256'
-$silentArgs     = 'ADDLOCAL="ServerService,Server,ProductFeature,Client,Router,MiscellaneousTools" /qn /norestart'
+$silentArgs     = 'ADDLOCAL="ServerService,Server,ProductFeature,Router,MiscellaneousTools" /qn /norestart'
 $dataPath       = "$env:PROGRAMDATA\MongoDB\data\db"
 $logPath        = "$env:PROGRAMDATA\MongoDB\log"
 
