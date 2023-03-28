@@ -15,7 +15,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases
 
-    $re  = "Samsung_Magician_Installer_Official_(.+).zip"
+    $re  = "Samsung_Magician_[iI]nstaller_Official_(.+).zip"
 
     $url = $download_page.links | Where-Object href -match $re | Select-Object -First 1 -expand href
 
