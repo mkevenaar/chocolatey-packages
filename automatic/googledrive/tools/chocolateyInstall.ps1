@@ -13,7 +13,7 @@ $packageArgs = @{
   checksum       = $checksum
   checksumType   = $checksumType
   softwareName  = 'Google Drive*'
-  silentArgs    = "--silent --desktop_shortcut"
+  silentArgs    = "--silent --desktop_shortcut --skip_launch_new"
   validExitCodes= @(0,1641,3010)
 }
 
