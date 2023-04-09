@@ -1,9 +1,18 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = 'https://download.semiconductor.samsung.com/resources/software-resources/Samsung_Magician_Installer_Official_7.3.0.1100.zip'
-$checksum     = 'e8883664bb305619cd024de4fa8804b0c7a1d4a4987762afe4d22a033fa46b04'
-$checksumType = 'sha256'
+$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+. $toolsDir\helpers.ps1
+
+$url                       = 'https://download.semiconductor.samsung.com/resources/software-resources/Samsung_Magician_Installer_Official_7.3.0.1100.zip'
+$checksum                  = 'e8883664bb305619cd024de4fa8804b0c7a1d4a4987762afe4d22a033fa46b04'
+$checksumType              = 'sha256'
+[version] $softwareVersion = '7.3.0.1100'
+
+$installedVersion = Get-InstalledVersion
+if ($installedVersion -gt $softwareVersion) {
+  Write-Output "Current installed version (v$installedVersion) must be uninstalled first..."
+  Uninstall-CurrentVersion
+}
 
 $packageArgs = @{
   PackageName    = $env:ChocolateyPackageName

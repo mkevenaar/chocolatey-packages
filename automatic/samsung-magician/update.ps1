@@ -8,6 +8,7 @@ function global:au_SearchReplace {
             "(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
             "(^[$]checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
             "(^[$]checksumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
+            "(^\[version\] [$]softwareVersion\s*=\s*)('.*')" = "`$1'$($Latest.RemoteVersion)'"
         }
      }
 }
@@ -23,6 +24,7 @@ function global:au_GetLatest {
     $version = (Get-Version $version).ToString()
 
     return @{
+        RemoteVersion = $version
         URL32 = $url
         Version = $version
     }
