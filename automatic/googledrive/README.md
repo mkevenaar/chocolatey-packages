@@ -4,6 +4,10 @@ Google Drive – All your files – everywhere.
 Safely store your files and access them from any device
 Choose folders on your computer to sync with Google Drive or backup to Google Photos, and access all of your content directly from your PC or Mac
 
+## Package Parameters
+
+* `/NoStart` - Do not start Google Drive after installation.
+
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
