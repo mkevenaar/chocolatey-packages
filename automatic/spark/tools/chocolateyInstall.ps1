@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = 'https://www.igniterealtime.org/downloadServlet?filename=spark/spark_3_0_1-with-jre.exe'
-$checksum     = 'bf9ba305aaf5e763eca5fc8332c73b5c155b49e03a28c5352777aa577bf66a41'
+$url          = 'https://www.igniterealtime.org/downloadServlet?filename=spark/spark_3_0_2-with-jre.exe'
+$checksum     = 'ef3ba8eef5b88edc5e4ce9e13e9fa41ef2fad136cc6b518c52da79051c2a7c39'
 $checksumType = 'sha256'
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName

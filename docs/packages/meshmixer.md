@@ -58,7 +58,7 @@ let them know the package is no longer updating correctly.
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/meshmixer)
 
-[Software Site](http://www.meshmixer.com/)
+[Software Site](https://meshmixer.com/)
 
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/meshmixer)
 
