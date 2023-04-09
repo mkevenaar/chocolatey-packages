@@ -64,6 +64,7 @@ Regular uninstall cannot delete programs completely. With IObit Uninstaller, you
 Outdated software is risky. Attacker can easy find weakness in it resulting whole system at danger. IObit Uninstaller 8 Free is there keeping over 60 critical programs up to date for you. You can easily update software via secure download links to the latest version on publishers’ websites.
 
 ## Package parameters
+
 * `/NoDesktopIcon` - Don't add a desktop icon.
 Example: `choco install iobit-uninstaller --params "/NoDesktopIcon"`
 
