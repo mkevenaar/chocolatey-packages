@@ -25,22 +25,20 @@ function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -DisableKeepAlive
     $table = $download_page.ParsedHtml.getElementsByTagName('tbody') | Where-Object innerhtml -Match $productName | Select-Object -First 1
 
-    $re = "Version\s+:\s+([0-9]+\.[0-9]+\.[0-9]+(?:\.[0-9]+)(?:.+P[0-9]+)?)"
+    $re = "Version\s+:\s+([0-9]+\.[0-9]+\.[0-9]+(?:\.[0-9]+)(?:\.[0-9]+)?)"
 
     $table.innerHTML -imatch $re
-    $versionData = $Matches[1] -replace "&nbsp;", ' '
+    $version = $Matches[1]
 
-    $versionObject = Get-Version($versionData)
+    $isoVersion = $version
 
-    $isoVersion = $versionObject.toString() -replace "-P", "_"
-    $version = $versionObject.ToString(3) + "." + $versionObject.Prerelease -Replace "P"
+    if($version -eq "12.0.1.2591") {
+      $isoVersion = "12.0.1.2591_20230314"
+      $version = "12.0.1.20230314"
+    }
 
-    # if($version -eq "12.0.0.2498") {
-    #   $isoVersion = "12.0.0.2498_20230125"
-    #   $version = "12.0.0.20230125"
-    # }
-
-    $majversion = $versionObject.ToString(1)
+    $version = Get-Version ($version)
+    $majversion = $version.ToString(1)
 
     $filename = "VeeamONE_$($isoVersion).iso"
     $url = "https://download2.veeam.com/VONE/v$($majversion)/$($filename)"
