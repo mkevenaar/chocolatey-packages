@@ -4,6 +4,8 @@ $url          = 'https://cdn.iobit.com/dl/iobituninstaller.exe'
 $checksum     = '8E36F365AA367D174901B6ADD2966F4CFAC58039A4C6724B3DD07C57B001C8D0'
 $checksumType = 'sha256'
 
+. $toolsDir\helpers.ps1
+
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   softwareName  = 'IObit Uninstaller*'
@@ -15,5 +17,9 @@ $packageArgs = @{
   checksumType  = $checksumType
   destination   = $toolsDir
 }
+
+$pp = Get-PackageParameters
+$mergeTasks = Get-MergeTasks $pp
+$packageArgs.silentArgs += ' /MERGETASKS="{0}"' -f $mergeTasks
 
 Install-ChocolateyPackage @packageArgs
