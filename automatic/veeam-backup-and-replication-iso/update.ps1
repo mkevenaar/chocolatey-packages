@@ -38,7 +38,7 @@ function global:au_GetLatest {
 
     $version = Get-Version ($version)
     $majversion = $version.ToString(1)
-    
+
     $filename = "VeeamBackup&Replication_$($isoVersion).iso"
     $url = "https://download2.veeam.com/VBR/v$($majversion)/$($filename)"
 
