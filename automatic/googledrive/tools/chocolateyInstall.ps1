@@ -31,5 +31,10 @@ else {
     validExitCodes = @(0, 1641, 3010)
   }
 
+  $pp = Get-PackageParameters
+  if ($pp.NoStart) {
+    $packageArgs['silentArgs'] += ' --skip_launch_new'
+  }
+
   Install-ChocolateyPackage @packageArgs
 }
