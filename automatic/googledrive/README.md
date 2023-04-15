@@ -6,7 +6,8 @@ Choose folders on your computer to sync with Google Drive or backup to Google Ph
 
 ## Package Parameters
 
-* `/NoStart` - Do not start Google Drive after installation.
+- `/NoStart` - Do not start Google Drive after installation.
+- `/NoGsuiteIcons` - Do not create Google Suite shortcuts on desktop.
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
