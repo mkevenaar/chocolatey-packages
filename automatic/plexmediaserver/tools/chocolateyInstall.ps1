@@ -1,11 +1,11 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32          = 'https://downloads.plex.tv/plex-media-server-new/1.32.0.6918-6f393eda1/windows/PlexMediaServer-1.32.0.6918-6f393eda1-x86.exe'
-$checksum32     = '95a4fb7775c9d7c314f68d1882dae929a114a9d72c7b5975fa89d743663e61f3'
+$url32          = 'https://downloads.plex.tv/plex-media-server-new/1.32.0.6950-8521b7d99/windows/PlexMediaServer-1.32.0.6950-8521b7d99-x86.exe'
+$checksum32     = 'bb4bd85e8c527cbc1a02435c0f36682aec13c161206897aa2ffe64f44b958c0d'
 $checksumType32 = 'sha256'
-$url64          = 'https://downloads.plex.tv/plex-media-server-new/1.32.0.6918-6f393eda1/windows/PlexMediaServer-1.32.0.6918-6f393eda1-x86_64.exe'
-$checksum64     = '7d2e9f46f013844dd22ef186a7b3e43845de01b138fef44d96f9e7f7b9330c04'
+$url64          = 'https://downloads.plex.tv/plex-media-server-new/1.32.0.6950-8521b7d99/windows/PlexMediaServer-1.32.0.6950-8521b7d99-x86_64.exe'
+$checksum64     = '6fb3b26e609c8016cf6216e3954f2efbc757702fda9a0c38d8bc27f9bd88bd48'
 $checksumType64 = 'sha256'
 
 Start-CheckandStop "Plex Media Server"
