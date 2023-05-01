@@ -9,7 +9,7 @@ function global:au_GetLatest {
   $download_page = Invoke-WebRequest -Uri $feed -UseBasicParsing
   $feed = ([xml]$download_page.Content).rss.channel
 
-  $re = "CrystalDiskInfo([_0-9]+)\.exe"
+  $re = "CrystalDiskInfo([_0-9]+(RC\d+)?)\.exe"
 
   $url = ($feed.item[0].files.file | where-object "#text" -Match $re | Sort-Object url -Descending | Select-Object -First 1).url -Replace "https://osdn.net/projects/crystaldiskinfo/downloads/", "https://osdn.net/frs/redir.php?m=dotsrc&f=crystaldiskinfo/" -Replace "/$"
 
