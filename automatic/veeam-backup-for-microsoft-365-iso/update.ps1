@@ -29,8 +29,8 @@ function global:au_GetLatest {
 
     $isoVersion = $version
 
-    if($version -match "7.0.0.2914") {
-      $isoVersion = "7.0.0.2914_P20230302"
+    if($version -match "7.0.0.3007") {
+      $isoVersion = "7.0.0.3007_P20230421"
     }
 
     $version = Get-Version ($version)
