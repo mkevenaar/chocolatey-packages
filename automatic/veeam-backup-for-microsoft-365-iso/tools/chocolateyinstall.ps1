@@ -1,11 +1,11 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url = 'https://download2.veeam.com/VBO/v7/VeeamBackupMicrosoft365_7.0.0.2914_P20230302.iso'
-$checksum = 'dec639ce0d03863d398c183b604da5aa83f98b620c17fca5fcf6f69b615735f4'
+$url = 'https://download2.veeam.com/VBO/v7/VeeamBackupMicrosoft365_7.0.0.3007_P20230421.iso'
+$checksum = 'ea4e7499743b54945985d25c449c4585d5b30fc64aa398d0355833d6235ae982'
 $checksumType = 'sha256'
 
-$filename = 'VeeamBackupMicrosoft365_7.0.0.2914_P20230302.iso'
+$filename = 'VeeamBackupMicrosoft365_7.0.0.3007_P20230421.iso'
 $packagePath = $(Split-Path -parent $toolsDir)
 $installPath = Join-Path $packagePath $filename
 
