@@ -35,6 +35,9 @@ else {
   if ($pp.NoStart) {
     $packageArgs['silentArgs'] += ' --skip_launch_new'
   }
+  if ($pp.NoGsuiteIcons) {
+    $packageArgs['silentArgs'] += ' --gsuite_shortcuts=false'
+  }
 
   Install-ChocolateyPackage @packageArgs
 }
