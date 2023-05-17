@@ -5,19 +5,12 @@ $releases = 'https://api.github.com/repos/microsoft/PowerToys/releases/latest'
 function global:au_SearchReplace {
   return @{
     'tools\chocolateyInstall.ps1' = @{
-      "(^[$]fileName\s*=\s*`"[$]toolsDir\\).*" = "`${1}$($Latest.FileName64)`""
       "(^[$]version\s*=\s*)`".*`""             = "`${1}`"$($Latest.RemoteVersion)`""
-    }
-    ".\legal\VERIFICATION.txt"    = @{
-      "(?i)(listed on\s*)\<.*\>" = "`${1}<$releases>"
-      "(?i)(64-Bit.+)\<.*\>"     = "`${1}<$($Latest.URL64)>"
-      "(?i)(checksum type:).*"   = "`${1} $($Latest.ChecksumType64)"
-      "(?i)(checksum64:).*"      = "`${1} $($Latest.Checksum64)"
+      "(^\s*[$]url64\s*=\s*)('.*')"                      = "`$1'$($Latest.URL64)'"
+      "(^\s*[$]checksum64\s*=\s*)('.*')"                 = "`$1'$($Latest.Checksum64)'"
     }
   }
 }
-
-function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 
 function global:au_GetLatest {
   $header = @{
@@ -41,5 +34,5 @@ function global:au_GetLatest {
 }
 
 if ($MyInvocation.InvocationName -ne '.') {
-  update -ChecksumFor None
+  update -ChecksumFor 64
 }
