@@ -12,6 +12,8 @@ function global:au_SearchReplace {
   }
 }
 
+function global:au_BeforeUpdate { $Latest.Checksum64 = Get-RemoteChecksum $Latest.URL64 }
+
 function global:au_GetLatest {
   $header = @{
     "Authorization" = "token $env:github_api_key"
@@ -34,5 +36,5 @@ function global:au_GetLatest {
 }
 
 if ($MyInvocation.InvocationName -ne '.') {
-  update -ChecksumFor 64
+  update -ChecksumFor none
 }
