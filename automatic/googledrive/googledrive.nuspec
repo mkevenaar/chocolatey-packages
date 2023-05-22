@@ -25,7 +25,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>74.0.3.0</version>
+    <version>75.0.2.0</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Maurice Kevenaar</owners>
     <!-- ============================== -->
@@ -50,7 +50,8 @@ Choose folders on your computer to sync with Google Drive or backup to Google Ph
 
 ## Package Parameters
 
-* `/NoStart` - Do not start Google Drive after installation.
+- `/NoStart` - Do not start Google Drive after installation.
+- `/NoGsuiteIcons` - Do not create Google Suite shortcuts on desktop.
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
