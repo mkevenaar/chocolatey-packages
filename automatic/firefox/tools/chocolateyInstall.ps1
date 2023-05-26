@@ -4,8 +4,8 @@
 $toolsPath = Split-Path $MyInvocation.MyCommand.Definition
 . $toolsPath\helpers.ps1
 
-$packageName = 'firefox-beta'
-$softwareName = 'Mozilla Firefox'
+$packageName = 'firefox-dev'
+$softwareName = 'Firefox Developer Edition'
 
 $alreadyInstalled = (AlreadyInstalled -product $softwareName -version '114.0b9')
 
@@ -34,7 +34,7 @@ if ($alreadyInstalled -and ($env:ChocolateyForce -ne $true)) {
 
     Checksum = $checksums.Win32
     ChecksumType = 'sha512'
-    Url = "https://download-installer.cdn.mozilla.net/pub/firefox/releases/114.0b9/win32/${locale}/Firefox%20Setup%20114.0b9.exe"
+    Url = "https://download-installer.cdn.mozilla.net/pub/devedition/releases/114.0b9/win32/${locale}/Firefox%20Setup%20114.0b9.exe"
 
     silentArgs = '-ms'
     validExitCodes = @(0)
@@ -43,7 +43,7 @@ if ($alreadyInstalled -and ($env:ChocolateyForce -ne $true)) {
   if (!(Get-32bitOnlyInstalled($softwareName)) -and (Get-OSArchitectureWidth 64)) {
     $packageArgs.Checksum64 = $checksums.Win64
     $packageArgs.ChecksumType64 = 'sha512'
-    $packageArgs.Url64 = "https://download-installer.cdn.mozilla.net/pub/firefox/releases/114.0b9/win64/${locale}/Firefox%20Setup%20114.0b9.exe"
+    $packageArgs.Url64 = "https://download-installer.cdn.mozilla.net/pub/devedition/releases/114.0b9/win64/${locale}/Firefox%20Setup%20114.0b9.exe"
   }
 
   Install-ChocolateyPackage @packageArgs
