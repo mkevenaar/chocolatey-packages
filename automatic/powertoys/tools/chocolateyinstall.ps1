@@ -1,9 +1,9 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$version        = "0.70.0"
-$url64 = 'https://github.com/microsoft/PowerToys/releases/download/v0.70.0/PowerToysSetup-0.70.0-x64.exe'
-$checksum64 = '2dbe97e599aa4ed5363f2a15d581113bbf13035fe503d9e9ed71650b1cee7771'
+$version        = "0.70.1"
+$url64 = 'https://github.com/microsoft/PowerToys/releases/download/v0.70.1/PowerToysSetup-0.70.1-x64.exe'
+$checksum64 = '1be4760558765ef363e12126282f1e3340a8adff657c5c51714f7e096f86ee50'
 
 $WindowsVersion=[Environment]::OSVersion.Version
 if ($WindowsVersion.Major -ne "10") {
