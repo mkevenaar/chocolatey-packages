@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64          = 'https://jaws2023.vfo.digital/2023.2303.144.400/1B0E21E2-168A-4D3E-85EE-DD449C3C17D0/J2023.2303.144.400-Offline-x64.exe'
-$checksum64     = '1804508eb24bcec5b700bdb3ce116bcf01807737e27e825f38f86cb51718f8ba'
+$url64          = 'https://jaws2023.vfo.digital/2023.2306.38.400/775C5615-98F0-4BCD-82B5-0D749FE94734/J2023.2306.38.400-Offline-x64.exe'
+$checksum64     = 'ad1292864d2f499e10d78b7142fb20a7b36c29ccefa28bb7c8a36772329a584f'
 $checksumType64 = 'sha256'
 
 $packageArgs = @{
