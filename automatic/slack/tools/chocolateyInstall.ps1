@@ -34,6 +34,5 @@ if ($SlackPresent) {
 # Only Attempt an install if the existing version is the same or newer than the package version
 if (-not $SlackPresent -or ($SlackPresent -and $SlackOutdated))
 {
-  $packageArgs["UseOriginalLocation"] = $true
-  Install-ChocolateyPackageCmdlet @packageArgs
+  Install-ChocolateyPackage @packageArgs
 }
