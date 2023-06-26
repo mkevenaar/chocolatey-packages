@@ -31,8 +31,9 @@ if ($SlackPresent) {
   $SlackOutdated = [Version]$($Env:ChocolateyPackageVersion) -gt [Version]$InstalledVersion
 }
 
-# Only Attempt an install if the existing version is the same or newer than the package version
-if (-not $SlackPresent -or ($SlackPresent -and $SlackOutdated))
+# Only Attempt an install if the existing version is the same or newer than the package version, or if forced
+if (-not $SlackPresent -or ($SlackPresent -and $SlackOutdated) -or $Env:ChocolateyForce)
 {
+  Get-Process 'slack' -ErrorAction SilentlyContinue | Stop-Process -Force
   Install-ChocolateyPackage @packageArgs
 }
