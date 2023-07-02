@@ -6,12 +6,12 @@ The installer have been downloaded from their official download link listed on <
 and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <https://sourceforge.net/projects/nsis/files/NSIS%203/3.08/nsis-3.08.zip/download>
+  32-Bit: <https://sourceforge.net/projects/nsis/files/NSIS%203/3.09/nsis-3.09.zip/download>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: 1BB9FC85EE5B220D3869325DBB9D191DFE6537070F641C30FBB275C97051FD0C
+  checksum32: F5DC52EEF1F3884230520199BAC6F36B82D643D86B003CE51BD24B05C6BA7C91
 
 File 'LICENSE.txt' is obtained from <https://nsis.sourceforge.io/License>
