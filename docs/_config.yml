@@ -1,6 +1,7 @@
 title: Chocolatey Packages
 description: Documentation about My Chocolatey Packages.
-google_analytics: UA-142557186-1
+#google_analytics: UA-142557186-1
+google_analytics: G-EM8C1E035E
 
 remote_theme: pages-themes/architect
 
