@@ -5,7 +5,7 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $toolsDir
   fileType       = 'exe'
-  file           = "$toolsdir\grafana-10.0.1.windows-amd64.zip"
+  file           = "$toolsdir\grafana-10.0.2.windows-amd64.zip"
   validExitCodes = @(0)
 }
 
