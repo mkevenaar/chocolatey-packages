@@ -395,6 +395,12 @@
         url: /packages/wnetwatcher.portable.html
       - page: "Writage"
         url: /packages/writage.html
+      - page: "Zabbix Agent"
+        url: /packages/zabbixagent.html
+      - page: "Zabbix Agent (Install)"
+        url: /packages/zabbixagent.install.html
+      - page: "Zabbix Agent 2"
+        url: /packages/zabbixagent2.html
       - page: "zerotier-one (Install)"
         url: /packages/zerotierone.html
       - page: "Zettlr"

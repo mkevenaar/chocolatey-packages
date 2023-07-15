@@ -1,0 +1,26 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+Package can be verified like this:
+
+1. Go to
+
+   x32 url: https://cdn.zabbix.com/zabbix/binaries/stable/6.0/6.0.15/zabbix_agent-6.0.15-windows-i386-openssl.zip
+   x64 url: https://cdn.zabbix.com/zabbix/binaries/stable/6.0/6.0.15/zabbix_agent-6.0.15-windows-amd64-openssl.zip
+
+   to download the installer.
+
+2. You can use one of the following methods to obtain the SHA256 checksum:
+   - Use powershell function 'Get-FileHash'
+   - Use Chocolatey utility 'checksum.exe'
+
+   checksum32: b6f6c3b8d85328ed2311e660085ab3bdae3f8682f72169f5edaeeebd9e5514a9
+   checksum64: 105c0ef0845774bc58942d29af5c094aca36f87304e790d286c500d99f0fd570
+
+Using AU:
+
+   x32: Get-RemoteChecksum https://cdn.zabbix.com/zabbix/binaries/stable/6.0/6.0.15/zabbix_agent-6.0.15-windows-i386-openssl.zip
+   x64: Get-RemoteChecksum https://cdn.zabbix.com/zabbix/binaries/stable/6.0/6.0.15/zabbix_agent-6.0.15-windows-amd64-openssl.zip
+   
