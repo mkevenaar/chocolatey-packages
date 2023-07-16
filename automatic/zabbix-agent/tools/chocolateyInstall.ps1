@@ -26,9 +26,8 @@ $PackageArgs = @{
   ValidExitCodes = @(0, 3010, 1641)
 }
 
-
 try {
-  Install-ChocolateyInstallPackage @PackageArgs
+  Get-ChocolateyUnzip @PackageArgs
 
   if (!(Test-Path $configDir)) {
     New-Item $configDir -type directory
