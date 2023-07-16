@@ -21,9 +21,6 @@ $PackageArgs = @{
   unzipLocation = $tempDir
   file          = "$toolsDir\zabbix_agent-6.4.4-windows-i386-openssl.zip"
   file64        = "$toolsDir\zabbix_agent-6.4.4-windows-amd64-openssl.zip"
-
-  SilentArgs     = $SilentArgs
-  ValidExitCodes = @(0, 3010, 1641)
 }
 
 try {
