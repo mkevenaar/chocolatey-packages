@@ -2,7 +2,7 @@
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url          = 'https://dl.bitvise.com/BvSshServer-Inst.exe'
-$checksum     = '43def6010a9f7350506a9a2f40f0f640841bc39c7775d9864760e54e927d8bb8'
+$checksum     = '3a3e592648806f4abd2ab73b987cdd142a3f0dd6599463e614fb1c565e48dfa2'
 $checksumType = 'sha256'
 
 $silentArgs = ''
