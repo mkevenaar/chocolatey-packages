@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = 'https://download.jetbrains.com/toolbox/jetbrains-toolbox-2.0.1.16621.exe'
-$checksum     = '25c538cbf8c4437b24dad3b2bc0bef27097faf075aaf06c06cdd5aee98429882'
+$url          = 'https://download.jetbrains.com/toolbox/jetbrains-toolbox-2.0.2.16660.exe'
+$checksum     = '4d642ac91ab7920086373d9b90574fc058fa50812ccad5d9853a6b5a27949acf'
 $checksumType = 'sha256'
 
 $packageArgs = @{
