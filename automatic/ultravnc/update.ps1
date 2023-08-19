@@ -69,7 +69,9 @@ function global:au_GetLatest {
     $version = ([regex]::Match($version_page.content,$re)).Captures.Groups[1].value.Trim()
     $version_short = $version -replace '\.',''
 
-    $url32 = "https://www.uvnc.eu/download/" + $version_short + "/UltraVNC_" + ($version -replace '(\d).(\d).(\d).?(\d)?','$1_$2_$3$4') + "_X86_Setup.exe"
+    # $url32 = "https://www.uvnc.eu/download/" + $version_short + "/UltraVNC_" + ($version -replace '(\d).(\d).(\d).?(\d)?','$1_$2_$3$4') + "_X86_Setup.exe"
+    # $url64 = $url32 -Replace "X86","X64"
+    $url32 = "https://www.uvnc.eu/download/" + ($version -replace '(\d).(\d).(\d).?(\d)?','$1$2$3') + "0/UltraVNC_" + $version_short + "_X86_Setup.exe"
     $url64 = $url32 -Replace "X86","X64"
 
     $version = ($version -replace '(\d).(\d).(\d).?(\d)?','$1.$2$3$4')
