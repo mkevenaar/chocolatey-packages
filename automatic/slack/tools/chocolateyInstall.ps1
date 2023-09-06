@@ -23,5 +23,17 @@ $packageArgs = @{
   validExitCodes= @(0)
 }
 
-Install-ChocolateyPackage @packageArgs
+$SlackPath = Join-Path -Path $Env:ProgramFiles -ChildPath 'Slack\slack.exe'
+$SlackPresent = Test-Path -Path $SlackPath
 
+if ($SlackPresent) {
+  $InstalledVersion = (Get-ItemProperty -Path $SlackPath -ErrorAction:SilentlyContinue).VersionInfo.ProductVersion
+  $SlackOutdated = [Version]$($Env:ChocolateyPackageVersion) -gt [Version]$InstalledVersion
+}
+
+# Only Attempt an install if the existing version is the same or newer than the package version, or if forced
+if (-not $SlackPresent -or ($SlackPresent -and $SlackOutdated) -or $Env:ChocolateyForce)
+{
+  Get-Process 'slack' -ErrorAction SilentlyContinue | Stop-Process -Force
+  Install-ChocolateyPackage @packageArgs
+}
