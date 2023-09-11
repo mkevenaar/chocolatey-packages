@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = 'http://download.aida64.com/aida64extreme690.exe'
-$checksum     = '466a002b31db8ccd114af8423acbe6336cd23232ec1e6bb4a46a2dee956a7278'
+$url          = 'http://download.aida64.com/aida64extreme692.exe'
+$checksum     = 'c18d190c44c6f02a9d4be71bbe33d500a40d4e3afa1135f9126f5b3982f7358f'
 $checksumType = 'sha256'
 
 $packageArgs = @{
