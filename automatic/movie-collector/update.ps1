@@ -4,27 +4,31 @@ $releases = 'https://www.collectorz.com/movie/movie-collector/signup-completed'
 $softwareurl = 'https://www.collectorz.com/download?pf=w&p=movie'
 
 function global:au_SearchReplace {
-    @{
-        'tools\chocolateyInstall.ps1' = @{
-            "(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL32)'"
-            "(^[$]checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum32)'"
-            "(^[$]checksumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
-        }
-     }
+  @{
+    'tools\chocolateyInstall.ps1' = @{
+      "(^[$]url\s*=\s*)('.*')"          = "`$1'$($Latest.URL32)'"
+      "(^[$]checksum\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum32)'"
+      "(^[$]checksumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
+    }
+  }
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases
+  $header = @{
+    "User-Agent" = "Chocolatey AU update check. https://chocolatey.org"
+  }
 
-    $url = [System.Net.HttpWebRequest]::Create($softwareurl).GetResponse().ResponseUri.AbsoluteUri
-    $versiondata = $download_page.ParsedHtml.getElementsByTagName('b') | ? innerhtml -match "^Version" | select -First 1 -expand innerhtml
-    $versionregex = "([0-9]+.[0-9]+.[0-9]+)"
-    $version = ([regex]::Match($versiondata, $versionregex)).Captures.Groups[1].value
+  $download_page = Invoke-WebRequest -Uri $releases -Headers $header
 
-    return @{
-        URL32 = $url
-        Version = $version
-    }
+  $url = [System.Net.HttpWebRequest]::Create($softwareurl).GetResponse().ResponseUri.AbsoluteUri
+  $versiondata = $download_page.ParsedHtml.getElementsByTagName('b') | Where-Object innerhtml -match "^Version" | Select-Object -First 1 -expand innerhtml
+  $versionregex = "([0-9]+.[0-9]+.[0-9]+)"
+  $version = ([regex]::Match($versiondata, $versionregex)).Captures.Groups[1].value
+
+  return @{
+    URL32   = $url
+    Version = $version
+  }
 }
 
 update
