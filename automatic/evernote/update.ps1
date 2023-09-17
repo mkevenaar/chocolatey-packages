@@ -1,6 +1,6 @@
 ﻿Import-Module AU
 
-$releases = 'https://evernote.com/download/'
+$releases = 'https://evernote.com/download'
 
 function global:au_SearchReplace {
     @{
