@@ -3,10 +3,10 @@
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 . $toolsDir\helpers.ps1
 
-$url                       = 'https://download.semiconductor.samsung.com/resources/software-resources/Samsung_Magician_Installer_Official_7.3.0.1100.zip'
-$checksum                  = 'e8883664bb305619cd024de4fa8804b0c7a1d4a4987762afe4d22a033fa46b04'
+$url                       = 'https://download.semiconductor.samsung.com/resources/software-resources/Samsung_Magician_installer_Official_8.0.0.900_Windows.zip'
+$checksum                  = 'c786d822e1442d30bf63480a3c3a31c779e087753a060f4359f9f1351d44f311'
 $checksumType              = 'sha256'
-[version] $softwareVersion = '7.3.0.1100'
+[version] $softwareVersion = '8.0.0.900'
 
 $installedVersion = Get-InstalledVersion
 if ($installedVersion -gt $softwareVersion) {
