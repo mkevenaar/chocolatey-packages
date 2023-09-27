@@ -24,7 +24,7 @@ $PackageArgs = @{
 }
 
 try {
-  Get-ChocolateyUnzip @PackageArgs
+  Install-ChocolateyInstallPackage @PackageArgs
 
   if (!(Test-Path $configDir)) {
     New-Item $configDir -type directory
