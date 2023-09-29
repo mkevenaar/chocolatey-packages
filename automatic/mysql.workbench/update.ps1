@@ -1,6 +1,7 @@
 import-module au
 
-$releases = 'http://dev.mysql.com/downloads/tools/workbench/'
+$releases = 'https://github.com/mysql/mysql-workbench/tags'
+$mainlineVersionPrefix = '8.0.'
 
 function global:au_SearchReplace {
     @{
@@ -14,9 +15,9 @@ function global:au_SearchReplace {
 
 function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases
-    
-    $version = ($download_page.ParsedHtml.getElementsByTagName('h1') | ? innerhtml -match "^MySQL Workbench").innerhtml -replace "^MySQL Workbench "
-    $version = $version.Trim()
+
+    $versiondata = $download_page.Links.Href | Where-Object { $_ -match '^/mysql/mysql-workbench/releases/tag/(\d+\.\d+\.\d+)$' -and $Matches[1].StartsWith($mainlineVersionPrefix) } | ForEach-Object { Get-Version $_ } | Sort-Object -Property Version -Descending | Select-Object -First 1
+    $version = $versiondata.toString()
 
     $url = 'https://cdn.mysql.com/Downloads/MySQLGUITools/mysql-workbench-community-' + $version + '-winx64.msi'
     $Latest = @{ URL32 = $url; Version = $version }
