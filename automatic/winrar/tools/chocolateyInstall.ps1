@@ -5,7 +5,7 @@ $toolsPath = Split-Path $MyInvocation.MyCommand.Definition
 . $toolsPath\helpers.ps1
 
 $LCID = (Get-UICulture).LCID
-$url_version = '623'
+$url_version = '624'
 
 $checksumType32 = 'sha256'
 $checksumType64 = 'sha256'
