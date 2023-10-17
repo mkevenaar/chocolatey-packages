@@ -24,6 +24,11 @@ $PackageArgs = @{
 }
 
 try {
+
+  if ($service) {
+    $service.StopService()
+  }
+  
   Get-ChocolateyUnzip @PackageArgs
 
   if (!(Test-Path $configDir)) {
