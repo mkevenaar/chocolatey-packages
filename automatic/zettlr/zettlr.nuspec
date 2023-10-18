@@ -48,7 +48,6 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <docsUrl>https://docs.zettlr.com/</docsUrl>
     <projectSourceUrl>https://github.com/Zettlr/Zettlr</projectSourceUrl>
     <bugTrackerUrl>https://github.com/Zettlr/Zettlr/issues</bugTrackerUrl>
-    <mailingListUrl>https://forum.zettlr.com/</mailingListUrl>
     <summary>A Markdown Editor for the 21st Century</summary>
     <description><![CDATA[![The central window of Zettlr](https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@5e55e33f3550ffba353990103f9a0ffadda9adc7/automatic/zettlr/screenshot.png)
 
