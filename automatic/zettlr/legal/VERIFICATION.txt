@@ -2,16 +2,16 @@ VERIFICATION
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
-The installer have been downloaded from their official download link listed on <https://github.com/Zettlr/Zettlr/releases/latest>
+The installer have been downloaded from their official download link listed on <https://api.github.com/repos/Zettlr/Zettlr/releases/latest>
 and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <https://github.com/Zettlr/Zettlr/releases/download/v2.3.0/Zettlr-2.3.0-x64.exe>
+  32-Bit: <https://github.com/Zettlr/Zettlr/releases/download/v3.0.2/Zettlr-3.0.2-x64.exe>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: D7D6EC230F16BC2D57433325EEB2E883F541B634E1E76BAA8195E35E6B62A9CD
+  checksum32: 16F8AC57EA5925D0C79140D53C3FA475D045B433B1F89DD62192B9E6E82E036F
 
 File 'LICENSE.txt' is obtained from <https://github.com/Zettlr/Zettlr/blob/master/LICENSE>
