@@ -45,7 +45,8 @@ function global:au_GetLatest {
     try {
       $majVersionFolder = $_.href
       $version_download_page = Invoke-WebRequest -UseBasicParsing -Uri "$releases$majVersionFolder"
-      $version = $version_download_page.Links | Select-Object -ExpandProperty href | ForEach-Object{ Get-Version ($_) -ErrorAction SilentlyContinue } | Sort-Object | Select-Object -Last 1
+      $majVersion = Get-Version $majVersionFolder
+      $version = $version_download_page.Links | Where-Object -Property href -Match $majVersion|  Select-Object -ExpandProperty href | ForEach-Object{ Get-Version ($_) } | Sort-Object | Select-Object -Last 1
 
       $url32Bit = "${releases}${majVersionFolder}${version}/zabbix_agent2-${version}-windows-i386-openssl.msi"
       $url64Bit = "${releases}${majVersionFolder}${version}/zabbix_agent2-${version}-windows-amd64-openssl.msi"
