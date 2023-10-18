@@ -5,21 +5,6 @@
 [![](http://transparent-favicon.info/favicon.ico)](#)
 [![chocolatey/mkevenaar](https://img.shields.io/badge/Chocolatey-mkevenaar-yellowgreen.svg)](https://chocolatey.org/profiles/mkevenaar)
 
-<!-- markdownlint-disable -->
-<!-- START doctoc generated TOC please keep comment here to allow auto update -->
-<!-- DON'T EDIT THIS SECTION, INSTEAD RE-RUN doctoc TO UPDATE -->
-<details>
-<summary>Table of Contents</summary>
-
-- [Description](#description)
-- [Etiquette Regarding Communication](#etiquette-regarding-communication)
-- [Where This Fits into Chocolatey](#where-this-fits-into-chocolatey)
-
-</details>
-<!-- END doctoc generated TOC please keep comment here to allow auto update -->
-
-<!-- markdownlint-enable -->
-
 ### Description
 
 If you have any issues with one of the packages hosted in this repository, please feel free to open an issue (preferred instead of using `Contact Maintainers` on chocolatey.org).
