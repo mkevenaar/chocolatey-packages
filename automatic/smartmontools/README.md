@@ -10,9 +10,9 @@ See [GSmartControl](https://community.chocolatey.org/packages/gsmartcontrol) for
 
 #### Documentation
 
-* [FAQ](http://www.smartmontools.org/wiki/FAQ)
-* [Manual](http://www.smartmontools.org/wiki/TocDoc)
-* [Developer](http://www.smartmontools.org/wiki/TocDeveloper)
+* [FAQ](https://www.smartmontools.org/wiki/FAQ)
+* [Manual](https://www.smartmontools.org/wiki/TocDoc)
+* [Developer](https://www.smartmontools.org/wiki/TocDeveloper)
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and

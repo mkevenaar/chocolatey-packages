@@ -36,23 +36,23 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <title>smartmontools</title>
     <authors>Bruce Allen,Christian Franke</authors>
     <!-- projectUrl is required for the community feed -->
-    <projectUrl>http://www.smartmontools.org/</projectUrl>
+    <projectUrl>https://www.smartmontools.org/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@233dd82c27a73801f5ea03db4660a6a2d586c82b/icons/smartmontools.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Bruce Allen</copyright>
     <tags>cli s.m.a.r.t. disk reporting monitoring daemon admin</tags>
-    <releaseNotes>http://www.smartmontools.org/browser/trunk/smartmontools/ChangeLog</releaseNotes>
-    <licenseUrl>http://www.smartmontools.org/browser/trunk/smartmontools/COPYING</licenseUrl>
+    <releaseNotes>https://www.smartmontools.org/browser/trunk/smartmontools/ChangeLog</releaseNotes>
+    <licenseUrl>https://www.smartmontools.org/browser/trunk/smartmontools/COPYING</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/smartmontools</packageSourceUrl>
-    <docsUrl>http://www.smartmontools.org/wiki/Help</docsUrl>
-    <bugTrackerUrl>http://www.smartmontools.org/report/19</bugTrackerUrl>
-    <projectSourceUrl>http://www.smartmontools.org/browser/trunk/smartmontools</projectSourceUrl>
-    <mailingListUrl>http://www.smartmontools.org/wiki/Help#Mailinglist</mailingListUrl>
+    <docsUrl>https://www.smartmontools.org/wiki/Help</docsUrl>
+    <bugTrackerUrl>https://www.smartmontools.org/report/19</bugTrackerUrl>
+    <projectSourceUrl>https://www.smartmontools.org/browser/trunk/smartmontools</projectSourceUrl>
+    <mailingListUrl>https://www.smartmontools.org/wiki/Help#Mailinglist</mailingListUrl>
     <summary>Self-Monitoring, Analysis and Reporting Technology System for storage systems</summary>
     <description><![CDATA[S.M.A.R.T. Monitoring Tools (smartmontools) package contains two utility programs (smartctl and smartd) to control and monitor storage systems using the Self-Monitoring, Analysis and Reporting Technology System (SMART) built into most modern ATA and SCSI harddisks.
 
-Smartmontools was originally derived from the Linux ​smartsuite package and actually supports ATA/ATAPI/SATA-3 to -8 disks and SCSI disks and tape devices. It should run on any modern Darwin (Mac OS X), Linux, FreeBSD, NetBSD, OpenBSD, Solaris, OS/2, Cygwin, QNX, eComStation or Windows system. Smartmontools can also be run from one of many different Live CDs/DVDs.
+Smartmontools was originally derived from the Linux smartsuite package and actually supports ATA/ATAPI/SATA-3 to -8 disks and SCSI disks and tape devices. It should run on any modern Darwin (Mac OS X), Linux, FreeBSD, NetBSD, OpenBSD, Solaris, OS/2, Cygwin, QNX, eComStation or Windows system. Smartmontools can also be run from one of many different Live CDs/DVDs.
 
 Due to OS-specific issues and also depending on the different state of smartmontools development on the platforms, device support is not the same for all OS platforms. We provide info about RAID-controller support here on the homepage and of course in the manpages.
 
@@ -60,9 +60,9 @@ See [GSmartControl](https://community.chocolatey.org/packages/gsmartcontrol) for
 
 #### Documentation
 
-* [FAQ](http://www.smartmontools.org/wiki/FAQ)
-* [Manual](http://www.smartmontools.org/wiki/TocDoc)
-* [Developer](http://www.smartmontools.org/wiki/TocDeveloper)
+* [FAQ](https://www.smartmontools.org/wiki/FAQ)
+* [Manual](https://www.smartmontools.org/wiki/TocDoc)
+* [Developer](https://www.smartmontools.org/wiki/TocDeveloper)
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
