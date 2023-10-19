@@ -1,6 +1,6 @@
 import-module au
 
-$releases = 'http://dev.mysql.com/downloads/tools/workbench/'
+$releases = 'http://dev.mysql.com/downloads/workbench/'
 
 function global:au_SearchReplace {
     @{
