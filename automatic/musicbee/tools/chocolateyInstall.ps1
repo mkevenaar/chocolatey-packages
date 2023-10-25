@@ -2,7 +2,7 @@
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url          = 'https://files1.majorgeeks.com/10afebdbffcd4742c81a3cb0f6ce4092156b4375/multimedia/MusicBeeSetup_3_5.zip'
-$checksum     = '640de4f6f809a1d8c6f5759d88bba3ed0befc21a7546dfcc254580b2fcf7ce1a'
+$checksum     = 'be27f1149654924dddd106254493137280f3e8098ec1029435c02fdda092bdb5'
 $checksumType = 'sha256'
 
 
