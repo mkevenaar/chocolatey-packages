@@ -22,26 +22,26 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- This section is about this package, although id and version have ties back to the software -->
     <!-- id is lowercase and if you want a good separator for words, use '-', not '.'. Dots are only acceptable as suffixes for certain types of packages, e.g. .install, .portable, .extension, .template -->
     <!-- If the software is cross-platform, attempt to use the same id as the debian/rpm package(s) if possible. -->
-    <id>firefox-dev</id>
+    <id>firefox-beta</id>
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>120.0.5-beta</version>
+    <version>120.0.6-beta</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Maurice Kevenaar</owners>
     <!-- ============================== -->
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
-    <title>Firefox Developer Edition</title>
+    <title>Firefox Beta</title>
     <authors>Mozilla</authors>
     <!-- projectUrl is required for the community feed -->
-    <projectUrl>https://www.mozilla.org/firefox/developer</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@b40e08792b4d113bcb96960eaa184c093471a01e/icons/firefox-dev.png</iconUrl>
+    <projectUrl>https://www.mozilla.org/firefox/beta</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@92fc1201bdb7d7deb90a0b4ec4b12f26e6e5412c/icons/firefox-beta.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Mozilla Foundation</copyright>
-    <tags>browser mozilla firefox developmer admin foss cross-platform</tags>
-    <releaseNotes>https://www.mozilla.org/en-US/firefox/developer/notes/</releaseNotes>
+    <tags>browser mozilla firefox beta admin foss cross-platform</tags>
+    <releaseNotes>https://www.mozilla.org/firefox/beta/notes/</releaseNotes>
     <licenseUrl>https://www.mozilla.org/en-US/MPL/2.0/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/firefox</packageSourceUrl>
@@ -49,35 +49,9 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <projectSourceUrl>http://hg.mozilla.org/releases/mozilla-beta/</projectSourceUrl>
     <bugTrackerUrl>https://bugzilla.mozilla.org/</bugTrackerUrl>
     <summary>Web browser of the latest features in a more stable environment</summary>
-    <description><![CDATA[Firefox Browser Developer Edition
+    <description><![CDATA[Firefox Beta builds are for Firefox enthusiasts to test what's destined to become the next stable release of [Firefox](https://community.chocolatey.org/packages/firefox).
 
-Welcome to your new favorite browser. Get the latest features, fast performance, and the development tools you need to build for the open web.
-
-The browser made for developers. All the latest developer tools in beta, plus experimental features like the Multi-line Console Editor and WebSocket Inspector.
-
-A separate profile and path so you can easily run it alongside Release or Beta Firefox.
-
-Preferences tailored for web developers: Browser and remote debugging are enabled by default, as are the dark theme and developer toolbar button.
-
-Additionally, the following experimental developer tools are persistent features of Firefox Developer Edition:
-
-##### [Inactive CSS](https://hacks.mozilla.org/2019/10/firefox-70-a-bountiful-release-for-all/#developertools)
-
-Firefox DevTools now grays out CSS declarations that don’t have an effect on the page. When you hover over the info icon, you’ll see a useful message about why the CSS is not being applied, including a hint about how to fix the problem.
-
-##### [Firefox DevTools](https://mozilladevelopers.github.io/playground/debugger/)
-
-The new Firefox DevTools are powerful, flexible, and best of all, hackable. This includes a best-in-class JavaScript debugger, which can target multiple browsers and is built in React and Redux.
-
-#### [Master CSS Grid](https://mozilladevelopers.github.io/playground/css-grid/)
-
-Firefox is the only browser with tools built specifically for building and designing with CSS Grid. These tools allow you to visualize the grid, display associated area names, preview transformations on the grid and much more.
-
-#### [Fonts Panel](https://developer.mozilla.org/docs/Tools/Page_Inspector/How_to/Edit_fonts)
-
-The new fonts panel in Firefox DevTools gives developers quick access to all of the information they need about the fonts being used in an element. It also includes valuable information such as the font source, weight, style and more.
-
-Additional developer tools also available in the release build (via F12 key): [Responsive Design View](https://developer.mozilla.org/docs/Tools/Responsive_Design_View), [Page Inspector](https://developer.mozilla.org/docs/Tools/Page_Inspector), [Web Console](https://developer.mozilla.org/docs/Tools/Web_Console), [JavaScript Debugger](https://developer.mozilla.org/docs/Tools/Debugger), [Network Monitor](https://developer.mozilla.org/docs/Tools/Network_Monitor), and [Style Editor](https://developer.mozilla.org/docs/Tools/Style_Editor).
+After spending six weeks in [Firefox Developer Edition](https://community.chocolatey.org/packages/firefox-dev), we take the features that are stable enough, and create a new version of Firefox Beta.
 
 ## Package Parameters
 
@@ -88,13 +62,15 @@ Additional developer tools also available in the release build (via F12 key): [R
 Every 6 weeks, Firefox developers take the current stable features of each build and introduce them into the next stable channel for further development. The Developer Edition is a special build containing features never moved forward since they would be rarely used by the average user and needlessly consume resources.
 
 - [Firefox](https://community.chocolatey.org/packages/firefox)
-- [Firefox Beta](https://community.chocolatey.org/packages/firefox-beta)
-- Firefox Developer Edition (you are here)
+- Firefox Beta (you are here)
+- [Firefox Developer Edition](https://community.chocolatey.org/packages/firefox-dev)
 - [Firefox Nightly](https://community.chocolatey.org/packages/firefox-nightly)
 
 [Privacy policy](https://www.mozilla.org/en-US/privacy/firefox/)
 
-**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know the package is no longer updating correctly.
 ]]></description>
     <!-- =============================== -->
 
