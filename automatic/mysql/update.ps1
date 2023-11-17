@@ -31,18 +31,18 @@ if ($MyInvocation.InvocationName -ne '.') {
 function global:au_AfterUpdate ($Package) {
 
     if ($Package.RemoteVersion -ne $Package.NuspecVersion) {
-  
+
         Get-RemoteFiles -NoSuffix
-  
+
         $file = [IO.Path]::Combine("tools", $Latest.FileName32)
-  
+
         Write-Output "Submitting file $file to VirusTotal"
-  
+
         # Assumes vt-cli Chocolatey package is installed!
         vt.exe scan file $file --apikey $env:VT_APIKEY
-  
+
         Remove-Item $file -ErrorAction Ignore
-  
+
         $Latest.Remove("FileName32")
     }
   }
