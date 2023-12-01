@@ -10,9 +10,13 @@ function global:au_GetLatest {
 
     $version_page = Invoke-WebRequest -Uri $version_page
 
-    $re64  = '(http[s]?|[s]?)(:\/\/)([^\s,]+)\/win64\/[Ww]ire[Ss]hark-win64-[\d\.]+\.exe$'
+    # e.g. https://1.eu.dl.wireshark.org/win64/Wireshark-4.2.0-x64.exe
+    $re64  = 'https:\/\/[^\s,]+\/win64\/wireshark-(?<version>[\d\.]+)-x64\.exe$'
     $url64 = $version_page.links | Where-Object href -match $re64 | Select-Object -First 1 -expand href
-    $version = $url64 -split '-|.exe' | Select-Object -Last 1 -Skip 1
+    if ($url64 -notmatch $re64) {
+      throw "failed to extract the version from the url $url64"
+    }
+    $version = $Matches['version']
 
     return @{
         URL64 = $url64
