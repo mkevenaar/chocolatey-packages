@@ -6,11 +6,11 @@ The installer have been downloaded from their official download link listed on <
 and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <https://github.com/texstudio-org/texstudio/releases/download/4.6.3/texstudio-4.6.3-win-portable-qt6.zip>
+  32-Bit: <https://github.com/texstudio-org/texstudio/releases/download/4.7.0/texstudio-4.7.0-win-portable-qt6.zip>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: 828D62BD1DB102C3A31A5CAD3048B18C7D88FC7E68EF852D60E9B158656A49AC
+  checksum32: EF4DEEEA00CB04ACBAFF8594F9A1DB751BF984B03434FD228F1A6229BBA73096
 File 'LICENSE.txt' is obtained from <https://github.com/texstudio-org/texstudio/blob/master/COPYING>
