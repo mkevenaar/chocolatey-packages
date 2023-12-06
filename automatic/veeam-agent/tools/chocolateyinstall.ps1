@@ -21,7 +21,7 @@ $packageArgs = @{
     packageName    = $env:ChocolateyPackageName
     fileType       = 'EXE'
     file           = "$($ENV:TMP)\VeeamAgentWindows_$($packageVersion).exe"
-    silentArgs     = '/silent /accepteula /acceptthirdpartylicenses'
+    silentArgs     = '/silent /accepteula /acceptthirdpartylicenses /acceptlicensingpolicy /acceptrequiredsoftware'
     validExitCodes = @(0, 1000, 1101)
 }
 
