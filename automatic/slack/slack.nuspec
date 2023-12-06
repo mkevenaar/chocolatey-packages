@@ -36,16 +36,16 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <title>Slack for Windows</title>
     <authors>Slack Technologies, Inc.</authors>
     <!-- projectUrl is required for the community feed -->
-    <projectUrl>https://slack.com/</projectUrl>
+    <projectUrl>https://slack.com</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@63378edac68e986a45f67eb8ac2eb845fc502321/icons/slack.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Slack Technologies, Inc.</copyright>
     <tags>slack</tags>
     <releaseNotes>https://slack.com/intl/en-nl/release-notes/windows</releaseNotes>
-    <licenseUrl>https://slack.com/intl/en-nl/terms-of-service</licenseUrl>
+    <licenseUrl>https://slack.com/main-services-agreement</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/slack</packageSourceUrl>
-    <docsUrl>https://get.slack.help/hc/en-us</docsUrl>
+    <docsUrl>https://slack.com/help</docsUrl>
     <summary>Slack for Windows</summary>
     <description><![CDATA[## Slack
 
