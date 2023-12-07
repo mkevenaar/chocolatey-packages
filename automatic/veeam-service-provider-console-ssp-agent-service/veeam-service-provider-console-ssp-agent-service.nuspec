@@ -77,7 +77,7 @@ let them know the package is no longer updating correctly.
     <dependencies>
       <dependency id="veeam-service-provider-console-iso" version="[8.0.0.20231130]" />
       <dependency id="chocolatey-isomount.extension" version="1.0" />
-      <dependency id="dotnetcore-3.1-runtime" version="3.1.21" />
+      <dependency id="dotnet-6.0-runtime" version="6.0.24" />
     </dependencies>
 
     <!--<provides>NOT YET IMPLEMENTED</provides>-->
