@@ -5,7 +5,7 @@ $url32          = 'https://release.gitkraken.com/win32/GitKrakenSetup.exe'
 $checksum32     = '5328d2cac7e2ba4b8436df01f11d8a011fc009ea099dbacf5b3b2c062bd12d08'
 $checksumType32 = 'sha256'
 $url64          = 'https://release.gitkraken.com/win64/GitKrakenSetup.exe'
-$checksum64     = '0f3cef6f2d734330601a8da1f3598c0222f3c6ab1ca832b1ad51b4ff29ec8a07'
+$checksum64     = 'ec3a637cf9f678fefc1a73b636b947ba1ded020728d5db90399bbc6d51db216e'
 $checksumType64 = 'sha256'
 
 $packageArgs = @{
