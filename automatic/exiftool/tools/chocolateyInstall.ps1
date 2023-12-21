@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = 'https://exiftool.org/exiftool-12.70.zip'
-$checksum     = '4e9a35aaece243aa681d7ca92e1c53a031822ad52e6cb77de2f15ba45ed4e2c3'
+$url          = 'https://exiftool.org/exiftool-12.71.zip'
+$checksum     = '0e38df5a5f9e68f104ba6cc3f3c13890c8af7402a5db12bcb6fe73d7378b4a24'
 $checksumType = 'sha256'
 
 $packageArgs = @{
