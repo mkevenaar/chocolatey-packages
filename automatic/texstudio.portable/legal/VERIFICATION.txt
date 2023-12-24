@@ -6,11 +6,11 @@ The installer have been downloaded from their official download link listed on <
 and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <https://github.com/texstudio-org/texstudio/releases/download/4.7.1/texstudio-4.7.1-win-portable-qt6.zip>
+  32-Bit: <https://github.com/texstudio-org/texstudio/releases/download/4.7.2/texstudio-4.7.2-win-portable-qt6.zip>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: FCB232BACC79B77832D10E8C91DD43309A6C4D01D75A21E982F5499BB7180FF7
+  checksum32: 8FFA1964B88F26E425FBED6D6D1EEB981DA2BAD0F9EBD8E16A53E43A05DD81B5
 File 'LICENSE.txt' is obtained from <https://github.com/texstudio-org/texstudio/blob/master/COPYING>
