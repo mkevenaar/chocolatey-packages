@@ -35,7 +35,7 @@ let them know the package is no longer updating correctly.
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/slack)
 
-[Software Site](https://slack.com/)
+[Software Site](https://slack.com)
 
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/slack)
 

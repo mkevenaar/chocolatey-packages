@@ -1,4 +1,4 @@
-﻿toc:
+toc:
   - title: chocolatey-isomount.extension
     subfolderitems:
       - page: Documentation
@@ -235,6 +235,8 @@
         url: /packages/superputty.portable.html
       - page: "Swift for Windows"
         url: /packages/swiftforwindows.html
+      - page: "TCPVcon"
+        url: /packages/tcpvcon.html
       - page: "TeXstudio"
         url: /packages/texstudio.html
       - page: "TeXstudio (Install)"

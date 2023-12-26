@@ -36,7 +36,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <title>TCPVcon</title>
     <authors>Mark Russinovich</authors>
     <!-- projectUrl is required for the community feed -->
-    <projectUrl>http://technet.microsoft.com/sysinternals/bb897437</projectUrl>
+    <projectUrl>https://learn.microsoft.com/en-us/sysinternals/downloads/tcpview</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@063ff9b74c2db9c04d9fd1fb9a239adbea3c0d71/icons/tcpvcon.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Mark Russinovich</copyright>
