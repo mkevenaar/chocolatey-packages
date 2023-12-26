@@ -201,6 +201,8 @@ toc:
         url: /packages/pycharmedu.html
       - page: "QuickPar"
         url: /packages/QuickPar.html
+      - page: "RegDelNull"
+        url: /packages/regdelnull.html
       - page: "Rocrail"
         url: /packages/rocrail.html
       - page: "Samsung Magician"
