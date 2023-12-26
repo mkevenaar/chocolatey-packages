@@ -59,6 +59,8 @@ toc:
         url: /packages/dymoconnect.html
       - page: "DYMO Label"
         url: /packages/dymolabel.html
+      - page: "EFSDump"
+        url: /packages/efsdump.html
       - page: "Elasticsearch"
         url: /packages/elasticsearch.html
       - page: "Etcher"
