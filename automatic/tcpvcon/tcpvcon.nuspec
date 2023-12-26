@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Read this before creating packages: https://chocolatey.org/docs/create-packages -->
+<!-- It is especially important to read the above link to understand additional requirements when publishing packages to the community feed aka dot org (https://community.chocolatey.org/packages). -->
+
+<!-- Test your packages in a test environment: https://github.com/chocolatey/chocolatey-test-environment -->
+
+<!--
+This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Reference. Chocolatey uses a special version of NuGet.Core that allows us to do more than was initially possible. As such there are certain things to be aware of:
+
+* the package xmlns schema url may cause issues with nuget.exe
+* Any of the following elements can ONLY be used by choco tools - projectSourceUrl, docsUrl, mailingListUrl, bugTrackerUrl, packageSourceUrl, provides, conflicts, replaces
+* nuget.exe can still install packages with those elements but they are ignored. Any authoring tools or commands will error on those elements
+-->
+
+<!-- You can embed software files directly into packages, as long as you are not bound by distribution rights. -->
+<!-- * If you are an organization making private packages, you probably have no issues here -->
+<!-- * If you are releasing to the community feed, you need to consider distribution rights. -->
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <!-- This section is about this package, although id and version have ties back to the software -->
+    <!-- id is lowercase and if you want a good separator for words, use '-', not '.'. Dots are only acceptable as suffixes for certain types of packages, e.g. .install, .portable, .extension, .template -->
+    <!-- If the software is cross-platform, attempt to use the same id as the debian/rpm package(s) if possible. -->
+    <id>tcpvcon</id>
+    <!-- version should MATCH as closely as possible with the underlying software -->
+    <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
+    <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
+    <version>0.0</version>
+    <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
+    <owners>Maurice Kevenaar</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <!-- This section is about the software itself -->
+    <title>TCPVcon</title>
+    <authors>Mark Russinovich</authors>
+    <!-- projectUrl is required for the community feed -->
+    <projectUrl>http://technet.microsoft.com/sysinternals/bb897437</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@063ff9b74c2db9c04d9fd1fb9a239adbea3c0d71/icons/tcpvcon.png</iconUrl>
+    <!-- copyright is usually years and software vendor, but not required for internal feeds -->
+    <copyright>Mark Russinovich</copyright>
+    <tags>network socket sysinternals netstat cli</tags>
+    <releaseNotes>https://techcommunity.microsoft.com/t5/sysinternals-blog/bg-p/Sysinternals-Blog/label-name/tcpview</releaseNotes>
+    <licenseUrl>https://learn.microsoft.com/en-us/sysinternals/license-terms</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/tcpvcon</packageSourceUrl>
+    <docsUrl>https://learn.microsoft.com/en-us/sysinternals/downloads/tcpview</docsUrl>
+    <summary>Active socket command-line viewer</summary>
+    <description><![CDATA[
+TCPVcon will show you detailed listings of all TCP and UDP endpoints on your system, including the local and remote addresses and state of TCP connections. On Windows Server 2008, Vista, and XP, TCPVcon also reports the name of the process that owns the endpoint. TCPVcon provides a more informative and conveniently presented subset of the Netstat program that ships with Windows.
+
+#### Command line usage
+
+Tcpvcon usage is similar to that of the built-in Windows netstat utility:
+
+__tcpvcon__ [__-a__] [__-c__] [__-n__] [[process name] [PID]]
+
+__-a__  Show all endpoints (default is to show established TCP connections)
+
+__-c__  Print output as CSV
+
+__-n__  Don't resolve addresses
+
+]]></description>
+    <!-- =============================== -->
+
+    <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
+    <!--<dependencies>
+      <dependency id="" version="__MINIMUM_VERSION__" />
+      <dependency id="" version="[__EXACT_VERSION__]" />
+      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_INCLUSIVE]" />
+      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_EXCLUSIVE)" />
+      <dependency id="" />
+    </dependencies>-->
+
+    <!--<provides>NOT YET IMPLEMENTED</provides>-->
+    <!--<conflicts>NOT YET IMPLEMENTED</conflicts>-->
+    <!--<replaces>NOT YET IMPLEMENTED</replaces>-->
+  </metadata>
+  <!-- this section controls what actually gets packaged into the Chocolatey package -->
+  <!-- Uncomment to limit what is packed in -->
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
