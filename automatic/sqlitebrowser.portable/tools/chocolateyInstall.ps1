@@ -9,5 +9,5 @@ $packageArgs = @{
   file64         = "$toolsdir\DB.Browser.for.SQLite-3.12.2-win64.zip"
 }
 
-Install-ChocolateyZipPackage  @packageArgs
+Get-ChocolateyUnzip  @packageArgs
 

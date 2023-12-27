@@ -9,5 +9,5 @@ $packageArgs = @{
   file64        = "$toolsDir\wc3270-4.3ga4-noinstall-64.zip"
 }
 
-Install-ChocolateyZipPackage @packageArgs
+Get-ChocolateyUnzip @packageArgs
 

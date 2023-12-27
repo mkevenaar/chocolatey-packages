@@ -5,7 +5,7 @@ $installDir             = Join-Path $binRoot $env:ChocolateyPackageName
 $installDirBin          = "$($installDir)\current"
 
 # pm2 is a required NodeJS package for OctoFarm
-Start-Process npm -ArgumentList "install pm2 -g" -NoNewWindow -Wait -ErrorAction SilentlyContinue 
+Start-Process npm -ArgumentList "install pm2 -g" -NoNewWindow -Wait -ErrorAction SilentlyContinue
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
@@ -15,7 +15,7 @@ $packageArgs = @{
   validExitCodes = @(0)
 }
 
-Install-ChocolateyZipPackage  @packageArgs
+Get-ChocolateyUnzip  @packageArgs
 
 Get-ChildItem $toolsPath\*.zip | ForEach-Object { Remove-Item $_ -ea 0; if (Test-Path $_) { Set-Content "$_.ignore" } }
 

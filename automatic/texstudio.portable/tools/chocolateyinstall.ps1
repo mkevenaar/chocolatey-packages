@@ -8,7 +8,7 @@ $packageArgs = @{
   file           = "$toolsdir\texstudio-4.7.2-win-portable-qt6.zip"
 }
 
-Install-ChocolateyZipPackage  @packageArgs
+Get-ChocolateyUnzip  @packageArgs
 
 Get-ChildItem $toolsPath\*.zip | ForEach-Object { Remove-Item $_ -ea 0; if (Test-Path $_) { Set-Content "$_.ignore" } }
 

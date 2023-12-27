@@ -9,7 +9,7 @@ $packageArgs = @{
   file64        = "$toolsDir\psi-portable-1.4_win7_x86_64.7z"
 }
 
-Install-ChocolateyZipPackage  @packageArgs
+Get-ChocolateyUnzip  @packageArgs
 
 # create empty sidecar so shimgen creates shim for GUI rather than console
 $installFile = Join-Path -Path $toolsDir `

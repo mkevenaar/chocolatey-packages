@@ -9,7 +9,7 @@ $packageArgs = @{
   file          = "$toolsDir\kse-552.zip"
 }
 
-Install-ChocolateyZipPackage  @packageArgs
+Get-ChocolateyUnzip  @packageArgs
 
 if (Test-ProcessAdminRights) {
     $specialFolder = [Environment+SpecialFolder]::CommonPrograms
