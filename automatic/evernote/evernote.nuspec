@@ -41,7 +41,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Evernote Corporation</copyright>
     <tags>evernote notes admin</tags>
-    <releaseNotes>https://discussion.evernote.com/forum/224-evernote-for-windows/?sortby=start_date</releaseNotes>
+    <releaseNotes>https://evernote.com/release-notes</releaseNotes>
     <licenseUrl>https://evernote.com/eula/</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/evernote</packageSourceUrl>

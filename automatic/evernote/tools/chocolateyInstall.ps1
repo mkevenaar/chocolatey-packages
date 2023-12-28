@@ -2,7 +2,7 @@
 
 $osInfo = Get-WmiObject Win32_OperatingSystem | Select-Object Version, ProductType, Caption, OperatingSystemSKU, BuildNumber
 
-Write-host "Detected:  $($osInfo.Caption)" -ForegroundColor Cyan
+Write-host "Detected: $($osInfo.Caption)" -ForegroundColor Cyan
 
 $osInfo.Version = [version]$osInfo.Version
 if ($osInfo.Version -lt [version]'6.1') {
@@ -26,7 +26,7 @@ $packageArgs = @{
   checksumType   = $checksumType
   softwareName   = 'Evernote*'
   silentArgs     = '/S'
-  validExitCodes= @(0,3010,-1073741819)
+  validExitCodes = @(0, 3010, -1073741819)
 }
 
 Install-ChocolateyPackage @packageArgs
