@@ -11,13 +11,17 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
+    $header = @{
+      "User-Agent" = "Chocolatey AU update check. https://chocolatey.org"
+    }
+
     $ED=[Math]::Floor([decimal](Get-Date(Get-Date).ToUniversalTime()-uformat "%s"))
 
     $majorversionsurl = 'https://support.freedomscientific.com/Downloads/OfflineInstallers/GetVersionsWithOfflineInstallers?product=JAWS&_=' + $ED
-    $majorversionsjson = Invoke-WebRequest $majorversionsurl | ConvertFrom-Json
+    $majorversionsjson = Invoke-WebRequest $majorversionsurl -Headers $header | ConvertFrom-Json
     $majorversion = ($majorversionsjson | Select-Object -First 1).MajorVersion
     $verisonsurl = 'https://support.freedomscientific.com/Downloads/OfflineInstallers/GetInstallers?product=JAWS&version='+$majorversion+'&language=mul&releaseType=Offline&_=' + $ED
-    $verisonsjson = Invoke-WebRequest $verisonsurl | ConvertFrom-Json
+    $verisonsjson = Invoke-WebRequest $verisonsurl -Headers $header | ConvertFrom-Json
 
     $url64 = ($verisonsjson | Where-Object InstallerPlatform -Match "64" | Sort-Object -Property FileName -Descending | Select-Object -First 1 ).InstallerLocationHTTP
 
