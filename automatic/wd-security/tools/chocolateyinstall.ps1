@@ -2,7 +2,7 @@
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url = 'https://downloads.wdc.com/wdapp/WDSecurity_WIN.zip'
-$checksum = '612c9714e7d204abeabfc3d46c154ff5b801a4c65a682a8eb92268261799ba5d'
+$checksum = 'e2106adf4cf93d077650182299f0c5d33f7396dbd756fb56abfa026b0f0f4533'
 $checksumType = 'sha256'
 $fileLocation = Join-Path $toolsDir "WDSecuritySetup.exe"
 
