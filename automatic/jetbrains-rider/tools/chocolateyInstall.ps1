@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = 'https://download.jetbrains.com/rider/JetBrains.Rider-2023.3.2.exe'
-$checksum     = '896a8aa94f8bc2a80d66a77a7463ed3d31eedc8ef9de0c8b3d13a8bf4210ed58'
+$url          = 'https://download.jetbrains.com/rider/JetBrains.Rider-2023.3.3.exe'
+$checksum     = 'db990f86ae763b6c45d5d86fd278fd68c7dc8238492420eba22d564f2e622595'
 $checksumType = 'sha256'
 
 # Workaround for https://youtrack.jetbrains.com/issue/IDEA-202935
