@@ -181,6 +181,8 @@ toc:
         url: /packages/orca.html
       - page: "OrientDB (Portable)"
         url: /packages/orientdb.html
+      - page: "Plexamp"
+        url: /packages/plexamp.html
       - page: "Plex Media Player for Windows"
         url: /packages/plexmediaplayer.html
       - page: "Plex Media Server"
