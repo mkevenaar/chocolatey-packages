@@ -33,7 +33,7 @@ let them know the package is no longer updating correctly.
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/plexmediaserver)
 
-[Software Site](http://plex.tv/)
+[Software Site](https://plex.tv/)
 
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/plexmediaserver)
 

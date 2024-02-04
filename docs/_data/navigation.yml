@@ -181,6 +181,8 @@ toc:
         url: /packages/orca.html
       - page: "OrientDB (Portable)"
         url: /packages/orientdb.html
+      - page: "Plex Media Player for Windows"
+        url: /packages/plexmediaplayer.html
       - page: "Plex Media Server"
         url: /packages/plexmediaserver.html
       - page: "PowerToys"
@@ -191,8 +193,6 @@ toc:
         url: /packages/psi.install.html
       - page: "Psi (Portable)"
         url: /packages/psi.portable.html
-      - page: "Pulumi (Portable)"
-        url: /packages/pulumi.html
       - page: "JetBrains Pycharm Professional"
         url: /packages/pycharm.html
       - page: "JetBrains PyCharm (Install)"
