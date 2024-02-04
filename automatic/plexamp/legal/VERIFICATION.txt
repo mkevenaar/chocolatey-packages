@@ -14,5 +14,5 @@ and can be verified like this:
   checksum type: sha256
   checksum64: 325CE15F181ECA16522A8A597F338E4A2C0B6AA5D9838A08A79AE38A37ED84FC
 
-File 'LICENSE.txt' is obtained from <https://raw.githubusercontent.com/fttx/barcode-to-pc-server/master/LICENSE.md>
+File 'LICENSE.txt' is obtained from Plexamp program Settings/About/Licenses
 
