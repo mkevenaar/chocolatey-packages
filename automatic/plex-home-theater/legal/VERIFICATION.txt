@@ -1,0 +1,18 @@
+VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The installer have been downloaded from their official download link listed on <https://www.plex.tv/>
+and can be verified like this:
+
+1. Download the following installers:
+  32-Bit: <https://downloads.plex.tv/plex-home-theater/1.4.1.469-47a90f01/PlexHomeTheater-1.4.1.469-47a90f01-windows-x86.exe>
+2. You can use one of the following methods to obtain the checksum
+  - Use powershell function 'Get-Filehash'
+  - Use chocolatey utility 'checksum.exe'
+
+  checksum type: sha256
+  checksum32: DFA9144CEDB77ECD62B001A4685EFA8EE2F9144217AF5DE9D0B3E8E90D63BE6D
+
+File 'LICENSE.txt' is obtained from <https://github.com/plexinc/plex-home-theater-public/blob/master/LICENSE.GPL>
+
