@@ -96,5 +96,6 @@ let them know the package is no longer updating correctly.
   <!-- Uncomment to limit what is packed in -->
   <files>
     <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
   </files>
 </package>

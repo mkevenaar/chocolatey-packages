@@ -1,0 +1,4 @@
+From: https://exiftool.org/#license
+
+This is free software; you can redistribute it and/or modify it under the same terms as Perl itself. (https://dev.perl.org/licenses/)
+
