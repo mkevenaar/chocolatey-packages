@@ -5,7 +5,7 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $toolsDir
   fileType       = 'exe'
-  file           = "$toolsdir\Chatty_0.26-b5_win_standalone.zip"
+  file           = "$toolsdir\Chatty_0.26-b6_win_standalone.zip"
   validExitCodes = @(0)
 }
 
