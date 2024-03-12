@@ -4,7 +4,7 @@
 function Take-Screenshot {
   param(
     [string]$file,
-    [ValidateSet('bmp','jpeg','png')]
+    [ValidateSet('bmp', 'jpeg', 'png')]
     [string]$imagetype = 'png'
   )
   [void][Reflection.Assembly]::LoadWithPartialName("System.Windows.Forms")
@@ -23,5 +23,5 @@ function Take-Screenshot {
   $screen = [System.Windows.Forms.Screen]::PrimaryScreen
   $bounds = $screen.Bounds
 
-  screenshot $bounds $file $imagetype
+  screenshot -bounds $bounds -path $file -imageFormat $imagetype
 }

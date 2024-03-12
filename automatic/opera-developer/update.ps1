@@ -26,7 +26,7 @@ function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
     $versionSort = { [version]$_.href.TrimEnd('/') }
-    $versionLink = $download_page.links | ? href -match '^[\d]+[\d\.]+\/$' | sort $versionSort | select -Last 1
+    $versionLink = $download_page.links | Where-Object href -match '^[\d]+[\d\.]+\/$' | sort $versionSort | Select-Object -Last 1
 
     [version] $version = $versionLink.href -replace '/', ''
 
@@ -38,8 +38,8 @@ function global:au_GetLatest {
         throw $_
     }
 
-    $url32 = $download_page.Links | ? href -NotMatch 'x64' | ? href -Match 'Setup\.exe$' | select -First 1 -expand href | % { $url + $_ }
-    $url64 = $download_page.Links | ? href -Match "(x64.*Setup|Setup_x64)\.exe$" | select -First 1 -expand href | % { $url + $_ }
+    $url32 = $download_page.Links | Where-Object href -NotMatch 'x64' | Where-Object href -Match 'Setup\.exe$' | Select-Object -First 1 -expand href | ForEach-Object { $url + $_ }
+    $url64 = $download_page.Links | Where-Object href -Match "(x64.*Setup|Setup_x64)\.exe$" | Select-Object -First 1 -expand href | ForEach-Object { $url + $_ }
 
     if (!$url32 -or !$url64) {
       throw "32bit or 64bit url was not found, investigate or ignore."

@@ -9,7 +9,7 @@ function global:au_GetLatest {
 
     #http://x3270.bgp.nu/download/03.06/wc3270-3.6ga8-setup.exe
     $re  = "wc3270-(.+)-noinstall-64.zip$"
-    $url64 = $download_page.links | ? href -match $re | select -First 1 -expand href
+    $url64 = $download_page.links | Where-Object href -match $re | Select-Object -First 1 -expand href
     $url32 = $url64 -Replace "-64", "-32"
 
     $version = ([regex]::Match($url64,$re)).Captures.Groups[1].value

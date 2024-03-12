@@ -9,7 +9,7 @@ function global:au_GetLatest {
 
     #http://x3270.bgp.nu/download/03.06/wc3270-3.6ga8-setup.exe
     $re  = "wc3270-(.+)-setup.exe$"
-    $url = $download_page.links | ? href -match $re | select -First 1 -expand href
+    $url = $download_page.links | Where-Object href -match $re | Select-Object -First 1 -expand href
 
     $version = ([regex]::Match($url,$re)).Captures.Groups[1].value
     $version = $version -Replace "ga", "."

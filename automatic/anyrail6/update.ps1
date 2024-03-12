@@ -17,7 +17,7 @@ function global:au_GetLatest {
 
     #AnyRail6.17.4.msi
     $re  = "AnyRail.+.msi"
-    $url = $download_page.links | ? href -match $re | select -First 1 -expand href
+    $url = $download_page.links | Where-Object href -match $re | Select-Object -First 1 -expand href
 
     $version = ([regex]::Match($url,'AnyRail/.+/AnyRail(.+).msi')).Captures.Groups[1].value
     $url = 'https://www.anyrail.com' + $url

@@ -64,14 +64,14 @@ param(
 
 if (!$GithubRepository) {
   $allRemotes = . git remote
-  $remoteName = if ($allRemotes | ? { $_ -eq 'upstream' }) { "upstream" }
-                elseif ($allRemotes | ? { $_ -eq 'origin' }) { 'origin' }
-                else { $allRemotes | select -first 1 }
+  $remoteName = if ($allRemotes | Where-Object { $_ -eq 'upstream' }) { "upstream" }
+  elseif ($allRemotes | Where-Object { $_ -eq 'origin' }) { 'origin' }
+  else { $allRemotes | Select-Object -First 1 }
 
   if ($remoteName) { $remoteUrl = . git remote get-url $remoteName }
 
   if ($remoteUrl) {
-    $GithubRepository = ($remoteUrl -split '\/' | select -last 2) -replace '\.git$','' -join '/'
+    $GithubRepository = ($remoteUrl -split '\/' | Select-Object -Last 2) -replace '\.git$', '' -join '/'
   } else {
     Write-Warning "Unable to get repository and user, setting dummy values..."
     $GithubRepository = "USERNAME/REPOSITORY-NAME"
@@ -87,7 +87,7 @@ $missingIcons = New-Object System.Collections.Generic.List[object];
 
 $encoding = New-Object System.Text.UTF8Encoding($false)
 
-function Replace-PackageSourceUrl{
+function Replace-PackageSourceUrl {
   param(
     [string]$NuspecPath,
     [string]$PackageName,
@@ -97,14 +97,14 @@ function Replace-PackageSourceUrl{
 
   $nuspec = Get-Content "$NuspecPath" -Encoding UTF8
 
-  $oldContent = ($nuspec | Out-String) -replace '\r\n?',"`n"
+  $oldContent = ($nuspec | Out-String) -replace '\r\n?', "`n"
 
-  $url = "https://github.com/${GithubRepository}/tree/master/$PackagesDirectory/$PackageName"
+  $url = "https://github.com/$($GithubRepository.ToLowerInvariant())/tree/master/$PackagesDirectory/$PackageName"
 
-  $nuspec = $nuspec -replace '<packageSourceUrl>.*',"<packageSourceUrl>$url</packageSourceUrl>"
+  $nuspec = $nuspec -replace '<packageSourceUrl>.*', "<packageSourceUrl>$url</packageSourceUrl>"
 
-  $output = ($nuspec | Out-String) -replace '\r\n?',"`n"
-  if ($oldContent -eq $output) {
+  $output = ($nuspec | Out-String) -replace '\r\n?', "`n"
+  if ($oldContent -ceq $output) {
     $counts.uptodate++;
     return;
   }
@@ -113,7 +113,7 @@ function Replace-PackageSourceUrl{
   $counts.replaced++;
 }
 
-function Update-PackageSourceUrl{
+function Update-PackageSourceUrl {
   param(
     [string]$Name,
     [string]$GithubRepository,
@@ -146,8 +146,7 @@ if ($UseStopwatch) {
 
 If ($Name) {
   Update-PackageSourceUrl -Name $Name -GithubRepository $GithubRepository -Quiet $Quiet
-}
-else {
+} else {
   $directories = Get-ChildItem -Path "$PSScriptRoot/$PackagesDirectory" -Directory;
 
   foreach ($directory in $directories) {

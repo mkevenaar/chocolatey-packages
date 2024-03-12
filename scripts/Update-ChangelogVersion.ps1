@@ -6,7 +6,7 @@ function Update-ChangelogVersion([string]$version, [string]$format = '## Version
   Write-Host "Updating changelog version."
 
   $path = (Resolve-Path "Changelog.md")
-  [string[]]$changelog = gc $path -Encoding UTF8 | % {
+  [string[]]$changelog = Get-Content  $path -Encoding UTF8 | ForEach-Object {
     if ($_.StartsWith('## Upcoming')) {
       $line = ($format -replace '\{VERSION\}',$version -replace '\{DATE\}',(Get-Date -Format 'yyyy-MM-dd'))
     } else {

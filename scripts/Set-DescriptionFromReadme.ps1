@@ -20,14 +20,14 @@ function Set-DescriptionFromReadme([int]$SkipFirst=0, [int]$SkipLast=0) {
     if (!(Test-Path README.md)) { throw 'Set-DescriptionFromReadme: README.md not found' }
 
     Write-Host 'Setting README.md to Nuspec description tag'
-    $description = gc README.md -Encoding UTF8
+    $description = Get-Content  README.md -Encoding UTF8
     $endIdx = $description.Length - $SkipLast
-    $description = $description | select -Index ($SkipFirst..$endIdx) | Out-String
+    $description = $description | Select-Object -Index ($SkipFirst..$endIdx) | Out-String
 
     $nuspecFileName = Resolve-Path "*.nuspec"
-    # We force gc to read as UTF8, otherwise nuspec files will be treated as ANSI
+    # We force Get-Content  to read as UTF8, otherwise nuspec files will be treated as ANSI
     # causing bogus/invalid characters to appear when non-ANSI characters are used.
-    $nu = gc $nuspecFileName -Encoding UTF8 -Raw
+    $nu = Get-Content  $nuspecFileName -Encoding UTF8 -Raw
     $nu = $nu -replace "(?smi)(\<description\>).*?(\</description\>)", "`${1}$($description)`$2"
 
     $Utf8NoBomEncoding = New-Object System.Text.UTF8Encoding($False)

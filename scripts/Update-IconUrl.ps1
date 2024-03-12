@@ -91,7 +91,7 @@
 #>
 
 param(
-  [string]$Name,
+  [string]$Name = $null,
   [string]$IconName = $null,
   [string]$GithubRepository = $null,
   [string]$RelativeIconDir = "../icons",
@@ -106,14 +106,14 @@ param(
 
 if (!$GithubRepository) {
   $allRemotes = . git remote
-  $remoteName = if ($allRemotes | ? { $_ -eq 'upstream' }) { "upstream" }
-                elseif ($allRemotes | ? { $_ -eq 'origin' }) { 'origin' }
-                else { $allRemotes | select -first 1 }
+  $remoteName = if ($allRemotes | Where-Object { $_ -eq 'upstream' }) { "upstream" }
+                elseif ($allRemotes | Where-Object { $_ -eq 'origin' }) { 'origin' }
+                else { $allRemotes | Select-Object -first 1 }
 
   if ($remoteName) { $remoteUrl = . git remote get-url $remoteName }
 
   if ($remoteUrl) {
-    $GithubRepository = ($remoteUrl -split '\/' | select -last 2) -replace '\.git$','' -join '/'
+    $GithubRepository = ($remoteUrl -split '\/' | Select-Object -last 2) -replace '\.git$','' -join '/'
   } else {
     $GithubRepository = "USERNAME/REPOSITORY-NAME"
   }
@@ -121,7 +121,7 @@ if (!$GithubRepository) {
 
 $counts = @{
   replaced = 0
-  missing = 0
+  missing  = 0
   uptodate = 0
 }
 
@@ -152,7 +152,7 @@ function Format-Size {
   }
   $format = if ($index -eq 0) { "{0:0} {1}" } else { "{0:2} {1}" }
 
-  return $format -f $size,$suffixes[$index]
+  return $format -f $size, $suffixes[$index]
 }
 
 function Optimize-Image {
@@ -163,48 +163,48 @@ function Optimize-Image {
   $supportedOptimizers = @(
     @{
       DisplayName = "pngquant"
-      Arguments   = @('--strip','--force','--output',"`"$iconPath`"", "`"$iconPath`"")
-      Extensions = @('.png')
+      Arguments   = @('--strip', '--force', '--output', "`"$iconPath`"", "`"$iconPath`"")
+      Extensions  = @('.png')
     }
     @{
       DisplayName = "optipng"
-      Arguments   = @('-o7','--strip','all','--quiet', "`"$iconPath`"")
-      Extensions  = @('.png', '.bmp','.gif','.pnm','.tiff')
+      Arguments   = @('-o7', '--strip', 'all', '--quiet', "`"$iconPath`"")
+      Extensions  = @('.png', '.bmp', '.gif', '.pnm', '.tiff')
     }
     @{
       DisplayName = "jpegoptim"
-      Arguments = @('--strip-all', '--preserve', '--quiet','--max=90', "`"$iconPath`"")
-      Extensions = @('.jpg', '.jpeg')
+      Arguments   = @('--strip-all', '--preserve', '--quiet', '--max=90', "`"$iconPath`"")
+      Extensions  = @('.jpg', '.jpeg')
     }
   )
   $extension = [System.IO.Path]::GetExtension($iconPath)
-  $fileName  = [System.IO.Path]::GetFileName($iconPath)
+  $fileName = [System.IO.Path]::GetFileName($iconPath)
 
-  $supportedOptimizers | ? {
+  $supportedOptimizers | Where-Object {
     $name = if ($_.ExeName) { $_.ExeName } else { $_.DisplayName }
     return $_.Extensions.Contains($extension) -and (Get-Command $name -ea 0)
-  } | % {
+  } | ForEach-Object {
     Write-Host "Optimizing the icon $fileName using $($_.DisplayName)"
-    $originalSize = Get-Item $iconPath | % Length
+    $originalSize = Get-Item $iconPath | ForEach-Object Length
     $name = if ($_.ExeName) { $_.ExeName } else { $_.DisplayName }
     $path = Get-Command $name
     do {
-      $sizeBefore = Get-Item $iconPath | % Length
+      $sizeBefore = Get-Item $iconPath | ForEach-Object Length
       Start-Process -FilePath $path -ArgumentList $_.Arguments -Wait -NoNewWindow
-      $sizeAfter = Get-Item $iconPath | % Length
+      $sizeAfter = Get-Item $iconPath | ForEach-Object Length
     } while ($sizeAfter -lt $sizeBefore)
 
     if ($sizeAfter -lt $originalSize) {
       $format = Format-Size ($originalSize - $sizeAfter)
       Write-Host "$fileName size decreased by $format"
-    } elseif($sizeAfter -gt $originalSize) {
+    } elseif ($sizeAfter -gt $originalSize) {
       $format = Format-Size ($sizeAfter - $originalSize)
       Write-Warning "$fileName size increased by $format"
     }
   }
 }
 
-function Test-Icon{
+function Test-Icon {
   param(
     [string]$Name,
     [string]$Extension,
@@ -239,14 +239,14 @@ function Update-Readme {
   $content = Get-Content $ReadmePath -Encoding UTF8
   $re = "(^\#+.*\<img.*src=)`"[^`"]*`""
   if ($content.Length -ge 1 -and $content[0] -match $re) {
-    $content[0] = $content[0] -replace $re,"`${1}`"$Url`""
+    $content[0] = $content[0] -replace $re, "`${1}`"$Url`""
   }
 
   $output = $content | Out-String
   [System.IO.File]::WriteAllText("$ReadmePath", $output, $encoding)
 }
 
-function Replace-IconUrl{
+function Replace-IconUrl {
   param(
     [string]$NuspecPath,
     [string]$CommitHash,
@@ -255,9 +255,9 @@ function Replace-IconUrl{
     [switch]$NoReadme
   )
 
-  $nuspec = gc "$NuspecPath" -Encoding UTF8
+  $nuspec = Get-Content "$NuspecPath" -Encoding UTF8
 
-  $oldContent = ($nuspec | Out-String) -replace '\r\n?',"`n"
+  $oldContent = ($nuspec | Out-String) -replace '\r\n?', "`n"
 
   # Old rawgit url, just for history purposes
   # $url = "https://cdn.rawgit.com/$GithubRepository/$CommitHash/$iconPath"
@@ -268,9 +268,9 @@ function Replace-IconUrl{
     Default { throw "$template is Unsupported" }
   }
 
-  $nuspec = $nuspec -replace '<iconUrl>.*',"<iconUrl>$url</iconUrl>"
+  $nuspec = $nuspec -replace '<iconUrl>.*', "<iconUrl>$url</iconUrl>"
 
-  $output = ($nuspec | Out-String) -replace '\r\n?',"`n"
+  $output = ($nuspec | Out-String) -replace '\r\n?', "`n"
   if ($oldContent -eq $output) {
     $counts.uptodate++;
     return;
@@ -284,7 +284,7 @@ function Replace-IconUrl{
   $counts.replaced++;
 }
 
-function Update-IconUrl{
+function Update-IconUrl {
   param(
     [string]$Name,
     [string]$IconName,
@@ -302,16 +302,16 @@ function Update-IconUrl{
   }
 
   # Let check if the package already contains a url, and get the filename from that
-  $content = gc "$PSScriptRoot/$PackagesDirectory/$Name/$Name.nuspec" -Encoding UTF8
+  $content = Get-Content "$PSScriptRoot/$PackagesDirectory/$Name/$Name.nuspec" -Encoding UTF8
 
-  if ($content | ? { $_ -match 'Icon(Url)?:\s*Skip( check)?' }) {
+  if ($content | Where-Object { $_ -match 'Icon(Url)?:\s*Skip( check)?' }) {
     if (!($Quiet)) {
       Write-Warning "Skipping icon check for $Name"
     }
     return;
   }
 
-  $content | ? { $_ -match "\<iconUrl\>(.+)\<\/iconUrl\>" } | Out-Null
+  $content | Where-Object { $_ -match "\<iconUrl\>(.+)\<\/iconUrl\>" } | Out-Null
   if ($Matches) {
     $url = $Matches[1]
     $index = $url.LastIndexOf('/')
@@ -342,7 +342,7 @@ function Update-IconUrl{
   }
   $resolvedPath = Resolve-Path $IconDir/$iconNameWithExtension -Relative;
   $trimming = @(".", "\")
-  $iconPath = $resolvedPath.TrimStart($trimming) -replace '\\','/';
+  $iconPath = $resolvedPath.TrimStart($trimming) -replace '\\', '/';
   Replace-IconUrl `
     -NuspecPath "$PSScriptRoot/$PackagesDirectory/$Name/$Name.nuspec" `
     -CommitHash $commitHash `
@@ -357,8 +357,7 @@ if ($UseStopwatch) {
 
 If ($Name) {
   Update-IconUrl -Name $Name -IconName $IconName -IconDir "$PSScriptRoot/$RelativeIconDir" -GithubRepository $GithubRepository -Quiet $Quiet -Optimize $Optimize
-}
-else {
+} else {
   $directories = Get-ChildItem -Path "$PSScriptRoot/$PackagesDirectory" -Directory;
 
   foreach ($directory in $directories) {
@@ -386,12 +385,12 @@ if ($counts.missing -gt 1) {
   Write-Warning "$($counts.missing) icon(s) was not found!"
   if (!$PrintMissingIcons -and !$Quiet) {
     $yes = New-Object System.Management.Automation.Host.ChoiceDescription "&Yes", "Hell Yeah"
-    $no  = New-Object System.Management.Automation.Host.ChoiceDescription "&No","No WAY"
+    $no = New-Object System.Management.Automation.Host.ChoiceDescription "&No", "No WAY"
     $options = [System.Management.Automation.Host.ChoiceDescription[]]($yes, $no)
     [int]$defaultChoice = 1
     $message = "Do you want to view the package names?";
     $choice = $host.ui.PromptForChoice($caption, $message, $options, $defaultChoice);
-  } elseif($Quiet) {
+  } elseif ($Quiet) {
     $choice = 1
   } else {
     $choice = 0
@@ -400,7 +399,7 @@ if ($counts.missing -gt 1) {
     Write-Warning "We did not found an icon for the following packages"
     $missingIcons -join "`n";
   }
-}elseif ($counts.missing -eq 1) {
+} elseif ($counts.missing -eq 1) {
   $package = $missingIcons[0]
   if ($ThrowErrorOnIconNotFound) {
     throw "Unable to find icon url for $package"

@@ -17,7 +17,7 @@ function global:au_GetLatest {
 
     #https://dl.bitvise.com/BvSshServer-Inst.exe
     $re  = ".+Inst.exe"
-    $url = $download_page.links | ? href -match $re | select -First 1 -expand href
+    $url = $download_page.links | Where-Object href -match $re | Select-Object -First 1 -expand href
 
     $version = ([regex]::Match($download_page.RawContent,'Current version: ([\d+\.]+)')).Captures.Groups[1].value
     

@@ -17,7 +17,7 @@ function global:au_GetLatest {
 
     #SwiftForWindows-2.0.exe
     $re  = "SwiftForWindows-.+.exe"
-    $url = $download_page.links | ? href -match $re | select -First 1 -expand href
+    $url = $download_page.links | Where-Object href -match $re | Select-Object -First 1 -expand href
 
     $version = ([regex]::Match($url,'/SwiftForWindows-(.+).exe')).Captures.Groups[1].value
     $url = 'https://github.com' + $url

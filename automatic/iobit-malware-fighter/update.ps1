@@ -17,10 +17,10 @@ function GetResultInformation([string]$url32) {
 
   Get-WebFile $url32 $dest | Out-Null
   $checksumType = 'sha256'
-  $version = Get-Item $dest | % { $_.VersionInfo.FileVersion }
+  $version = Get-Item $dest | ForEach-Object { $_.VersionInfo.FileVersion }
   $version = $version.Trim()
-  $checksum32 = Get-FileHash $dest -Algorithm $checksumType | % Hash
-  rm -force $dest
+  $checksum32 = Get-FileHash $dest -Algorithm $checksumType | ForEach-Object Hash
+  Remove-Item -force $dest
 
   return @{
     URL32          = $url32

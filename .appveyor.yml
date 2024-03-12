@@ -72,7 +72,7 @@ install:
       'chocolatey-misc-helpers.extension' = '0.0.4'
       'vt-cli' = '1.0.0'
       'chocolatey-community-validation.extension' = '0.1.0'
-    }.GetEnumerator() | % {
+    }.GetEnumerator() | ForEach-Object {
       if (!(Test-Path "${env:nupkg_cache_path}\$($_.Key).$($_.Value).nupkg")) { rm "${env:nupkg_cache_path}\$($_.Key).*.nupkg" ; Invoke-WebRequest "https://chocolatey.org/api/v2/package/$($_.Key)/$($_.Value)" -OutFile "${env:nupkg_cache_path}\$($_.Key).$($_.Value).nupkg" }
       if ($_.Key -eq 'chocolatey') { choco upgrade $_.Key --version $_.Value --source ${env:nupkg_cache_path} --allow-downgrade --pre }
       else { choco install $_.Key --version $_.Value --source ${env:nupkg_cache_path} --ignore-dependencies }
@@ -115,7 +115,7 @@ build_script:
                 Write-Host "PUSHING PACKAGES: $packages"
                 foreach ($package in $packages) {
                     Write-Host ("{0}`n{1}`n" -f ('-'*60), "PACKAGE: $package")
-                    $package_dir = ls -recurse | ? { $_.Name -eq "$package.nuspec"} | select -First 1 | % Directory
+                    $package_dir = ls -recurse | Where-Object { $_.Name -eq "$package.nuspec"} | select -First 1 | ForEach-Object Directory
 
                     if (!$package_dir) { Write-Warning "Can't find package '$package'"; continue }
                     pushd $package_dir
@@ -129,7 +129,7 @@ build_script:
     }
 
     ./update_all.ps1 -ForcedPackages $forced
-    Get-EventLogs * | ? Source -eq 'Schannel' | fl * |  out-file eventlogs.txt
+    Get-EventLogs * | Where-Object Source -eq 'Schannel' | fl * |  out-file eventlogs.txt
 on_finish:
 - ps: |
     if (Test-Path $Env:TEMP\chocolatey\au) { 7z a  -mx9 au_temp.7z $Env:TEMP\chocolatey\au\* }
@@ -142,7 +142,7 @@ on_finish:
       'Update-History.md'
       'eventlogs.txt'
     )
-    $paths | ? { Test-Path $_ } | % { Push-AppveyorArtifact $_ }
+    $paths | Where-Object { Test-Path $_ } | ForEach-Object { Push-AppveyorArtifact $_ }
 #- ps: $blockRdp = $true; iex ((new-object net.webclient).DownloadString('https://raw.githubusercontent.com/appveyor/ci/master/scripts/enable-rdp.ps1'))
 
 notifications:
