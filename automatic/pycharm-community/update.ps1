@@ -1,4 +1,4 @@
-import-module au
+Import-Module Chocolatey-AU
 
 $releases = 'https://data.services.jetbrains.com/products/releases?code=PCC&latest=true&type=release'
 

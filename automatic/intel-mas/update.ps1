@@ -1,4 +1,4 @@
-import-module au
+Import-Module Chocolatey-AU
 
 $releases = 'https://downloadcenter.intel.com/download/30161'
 

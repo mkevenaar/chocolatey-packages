@@ -1,6 +1,6 @@
 [CmdletBinding()]
 param($IncludeStream, [switch] $Force)
-import-module au
+Import-Module Chocolatey-AU
 . "$PSScriptRoot\update_helper.ps1"
 
 $releasesNIGHTLY = 'https://releases.mozilla.org/pub/firefox/nightly/latest-mozilla-central-l10n/'

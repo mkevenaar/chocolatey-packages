@@ -1,6 +1,6 @@
 [CmdletBinding()]
 param($IncludeStream, [switch] $Force)
-import-module au
+Import-Module Chocolatey-AU
 . "$PSScriptRoot\update_helper.ps1"
 
 $releasesBETA    = 'https://www.mozilla.org/en-US/firefox/beta/all/'

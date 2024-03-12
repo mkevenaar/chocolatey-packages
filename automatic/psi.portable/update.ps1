@@ -1,4 +1,4 @@
-Import-Module au
+Import-Module Chocolatey-AU
 
 $releases = 'https://sourceforge.net/projects/psi/files/Psi/'
 $feed = 'https://sourceforge.net/projects/psi/rss?path=/Psi'

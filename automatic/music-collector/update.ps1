@@ -1,4 +1,4 @@
-import-module au
+Import-Module Chocolatey-AU
 
 $releases = 'https://www.collectorz.com/music/music-collector/signup-completed'
 $softwareurl = 'https://www.collectorz.com/download?pf=w&p=music'

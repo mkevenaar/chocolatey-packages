@@ -1,4 +1,4 @@
-Import-Module au
+Import-Module Chocolatey-AU
 
 $releases = 'https://mariadb.org/download'
 $feed = 'https://downloads.mariadb.org/rest-api/mariadb/'

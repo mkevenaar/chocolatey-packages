@@ -1,4 +1,4 @@
-Import-Module au
+Import-Module Chocolatey-AU
 
 $version_page = 'https://www.wireshark.org/download.html'
 # $releases64 = 'https://www.wireshark.org/download/win64/all-versions/'

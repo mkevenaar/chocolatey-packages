@@ -1,4 +1,4 @@
-import-module au
+Import-Module Chocolatey-AU
 
 $releases = 'https://support.wdc.com/downloads.aspx?p=249'
 

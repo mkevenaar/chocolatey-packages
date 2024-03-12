@@ -1,4 +1,4 @@
-Import-Module au
+Import-Module Chocolatey-AU
 
 #Virtual package uses dependency updater to get the version
 . $PSScriptRoot\..\veeam-backup-for-microsoft-365-iso\update.ps1

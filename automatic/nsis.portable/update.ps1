@@ -1,4 +1,4 @@
-Import-Module au
+Import-Module Chocolatey-AU
 
 $releases = 'https://nsis.sourceforge.io/Download'
 $feed = 'https://sourceforge.net/projects/nsis/rss?path=/'

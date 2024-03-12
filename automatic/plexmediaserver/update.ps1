@@ -1,4 +1,4 @@
-Import-Module AU
+Import-Module Chocolatey-AU
 
 $timestamp = [DateTimeOffset]::UtcNow.ToUnixTimeMilliseconds()
 

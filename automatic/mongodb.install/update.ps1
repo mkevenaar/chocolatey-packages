@@ -1,4 +1,4 @@
-import-module au
+Import-Module Chocolatey-AU
 
 $feed = 'http://downloads.mongodb.org.s3.amazonaws.com/current.json'
 

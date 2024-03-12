@@ -1,4 +1,4 @@
-Import-Module au
+Import-Module Chocolatey-AU
 
 $releases = 'https://crystalmark.info/redirect.php?product=CrystalDiskInfoInstaller'
 $feed = 'https://osdn.net/projects/crystaldiskinfo/releases/rss'

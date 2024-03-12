@@ -1,4 +1,4 @@
-import-module au
+Import-Module Chocolatey-AU
 
 $releases = 'https://www.auslogics.com/en/software/duplicate-file-finder/after-download/'
 $versions = 'http://www.auslogics.com/en/software/duplicate-file-finder/'

@@ -1,4 +1,4 @@
-import-module au
+Import-Module Chocolatey-AU
 
 #Virtual package uses dependency updater to get the version
 . $PSScriptRoot\..\wnetwatcher.install\update.ps1

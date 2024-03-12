@@ -1,4 +1,4 @@
-Import-Module AU
+Import-Module Chocolatey-AU
 
 $releases = 'https://developer.microsoft.com/en-us/windows/downloads/windows-sdk/'
 

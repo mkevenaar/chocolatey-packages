@@ -1,4 +1,4 @@
-Import-Module au
+Import-Module Chocolatey-AU
 
 $releases = 'https://forums.veeam.com/veeam-backup-replication-f2/current-version-t9456.html'
 

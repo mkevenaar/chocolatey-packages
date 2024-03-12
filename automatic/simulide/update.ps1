@@ -1,4 +1,4 @@
-Import-Module au
+Import-Module Chocolatey-AU
 
 $releases = 'https://simulide.blogspot.com/p/downloads.html'
 $feed = 'https://sourceforge.net/projects/simulide/rss?path=/'

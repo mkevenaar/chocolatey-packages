@@ -1,4 +1,4 @@
-﻿Import-Module au
+﻿Import-Module Chocolatey-AU
 
 $releases = 'https://cdn.zabbix.com/zabbix/binaries/stable/'
 

@@ -1,4 +1,4 @@
-import-module au
+Import-Module Chocolatey-AU
 
 $releases = 'https://www.dymo.com/on/demandware.store/Sites-dymo-Site/en_US/Support-Compatibility-Chart'
 

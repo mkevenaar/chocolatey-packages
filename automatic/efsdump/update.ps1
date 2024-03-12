@@ -1,4 +1,4 @@
-import-module au
+Import-Module Chocolatey-AU
 
 $releases = 'https://learn.microsoft.com/en-us/sysinternals/downloads/efsdump'
 $download = 'https://download.sysinternals.com/files/EFSDump.zip'

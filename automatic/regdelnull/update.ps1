@@ -1,4 +1,4 @@
-import-module au
+Import-Module Chocolatey-AU
 
 $releases = 'https://learn.microsoft.com/en-us/sysinternals/downloads/regdelnull'
 $download = 'https://download.sysinternals.com/files/Regdelnull.zip'

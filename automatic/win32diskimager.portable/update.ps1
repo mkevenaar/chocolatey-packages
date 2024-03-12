@@ -1,4 +1,4 @@
-import-module au
+Import-Module Chocolatey-AU
 
 $releases = 'https://sourceforge.net/projects/win32diskimager/files/Archive/'
 

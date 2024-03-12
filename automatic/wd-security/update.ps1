@@ -1,4 +1,4 @@
-import-module au
+Import-Module Chocolatey-AU
 
 $releases = 'https://support.wdc.com/downloads.aspx?p=172'
 $versionPage = 'https://support-en.wd.com/app/products/downloads/release-notes/note_id/29495'

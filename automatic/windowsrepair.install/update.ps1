@@ -1,4 +1,4 @@
-import-module au
+Import-Module Chocolatey-AU
 
 $releases = 'https://www.tweaking.com/content/page/windows_repair_all_in_one.html'
 

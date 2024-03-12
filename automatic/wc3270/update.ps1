@@ -1,4 +1,4 @@
-Import-Module au
+Import-Module Chocolatey-AU
 
 #Virtual package uses dependency updater to get the version
 . $PSScriptRoot\..\wc3270.install\update.ps1
