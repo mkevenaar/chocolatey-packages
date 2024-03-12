@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>lidarr</id>
+    <version>2.2.2.4090</version>
+    <packageSourceUrl>https://github.com/journeyover/chocolatey-packages/tree/master/automatic/lidarr</packageSourceUrl>
+    <owners>JourneyOver</owners>
+    <title>Lidarr</title>
+    <authors>https://github.com/lidarr/Lidarr/graphs/contributors</authors>
+    <projectUrl>https://lidarr.audio/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/JourneyOver/chocolatey-packages@76c7b31b4ba90b90decfbc40c928a9b939973555/automatic/lidarr/icons/128x128.png</iconUrl>
+    <copyright>© 2020 Lidarr. All rights reserved.</copyright>
+    <licenseUrl>https://github.com/Lidarr/Lidarr/blob/develop/LICENSE.md</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/lidarr/Lidarr</projectSourceUrl>
+    <docsUrl>https://wiki.servarr.com/lidarr</docsUrl>
+    <mailingListUrl>https://www.reddit.com/r/Lidarr</mailingListUrl>
+    <bugTrackerUrl>https://github.com/lidarr/Lidarr/issues</bugTrackerUrl>
+    <tags>lidarr pvr p2p filesharing torrent nntp admin</tags>
+    <summary>Looks and smells like Sonarr but made for music</summary>
+    <description><![CDATA[Lidarr is a music collection manager for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new tracks from your favorite artists and will grab, sort and rename them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available.
+
+## Features
+
+- Support for major platforms: Windows, Linux, macOS, Raspberry Pi, etc.
+- Automatically detects new tracks.
+- Can scan your existing library and download any missing tracks.
+- Can watch for better quality of the tracks you already have and do an automatic upgrade.
+- Automatic failed download handling will try another release if one fails
+- Manual search so you can pick any release or to see why a release was not downloaded automatically
+- Fully configurable track renaming
+- Full integration with SABnzbd and NZBGet
+- Full integration with Kodi, Plex (notification, library update, metadata)
+- Full support for specials and multi-album releases
+- And a beautiful UI
+
+## Community
+
+- [Discord](https://discord.gg/8Y7rDc9)
+- [Reddit](https://www.reddit.com/r/Lidarr)
+
+## Notes
+
+Installs as a service, to get to Lidarr open browser and go to [localhost]:8686 (remove the brackets)
+]]></description>
+    <releaseNotes>
+#### Program
+* [Changelog](https://github.com/lidarr/Lidarr/releases)
+
+#### Package
+* Automatically built and uploaded by [JourneyOver](https://chocolatey.org/profiles/JourneyOver)
+* If you have any requests or issues with this package please make an issue [here](https://github.com/JourneyOver/chocolatey-packages) instead of "Contact Maintainers"</releaseNotes>
+    <dependencies>
+      <dependency id="dotnet4.6.1" version="4.6.01055.20170308" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>

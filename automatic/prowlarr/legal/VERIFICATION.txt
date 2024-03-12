@@ -1,0 +1,28 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The embedded software has been downloaded from the listed download
+location on <https://github.com/Prowlarr/Prowlarr/releases/tag/v1.14.2.4318>
+and can be verified by doing the following:
+
+1. Download the following:
+
+  url: <https://github.com/Prowlarr/Prowlarr/releases/download/v1.14.2.4318/Prowlarr.develop.1.14.2.4318.windows-core-x86-installer.exe>
+  url64: <https://github.com/Prowlarr/Prowlarr/releases/download/v1.14.2.4318/Prowlarr.develop.1.14.2.4318.windows-core-x64-installer.exe>
+
+2. You can obtain the checksum using one of the following methods:
+  - Use powershell function 'Get-FileHash'
+  - Use Chocolatey utility 'checksum.exe'
+
+  checksum type: sha256
+  checksum:C38016E6F4C557AA9F9B4F4283CF085FACD91FC90ACBB21250DEA9C71626358F
+  checksum64:89BEB55223B63D63DA531E7C0A410FA8481FBC1FFDA7DF5CA8C73CC703BE48EF
+
+Using AU:
+
+  Get-RemoteChecksum
+
+The file 'license.txt' is obtained from:
+  <https://github.com/Prowlarr/Prowlarr/blob/develop/LICENSE>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- Read this before publishing packages to chocolatey.org: https://github.com/chocolatey/chocolatey/wiki/CreatePackages -->
+    <id>prowlarr</id>
+    <version>1.14.2.4318</version>
+    <packageSourceUrl>https://github.com/journeyover/chocolatey-packages/tree/master/automatic/prowlarr</packageSourceUrl>
+    <owners>JourneyOver</owners>
+    <title>Prowlarr</title>
+    <authors>https://github.com/Prowlarr/Prowlarr/graphs/contributors</authors>
+    <projectUrl>https://prowlarr.com/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/JourneyOver/chocolatey-packages@6095413768de0bd32f182d4f06c13da0e2471942/automatic/prowlarr/icons/512x512.png</iconUrl>
+    <copyright>Copyright 2010-2022</copyright>
+    <licenseUrl>https://github.com/Prowlarr/Prowlarr/blob/develop/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/Prowlarr/Prowlarr</projectSourceUrl>
+    <docsUrl>https://wiki.servarr.com/prowlarr</docsUrl>
+    <mailingListUrl>https://www.reddit.com/r/prowlarr/</mailingListUrl>
+    <bugTrackerUrl>https://github.com/Prowlarr/Prowlarr/issues</bugTrackerUrl>
+    <tags>prowlarr indexer torrent-search-engine torrent-management torrent-downloader torznab newznab rss rss-proxy p2p filesharing torrent nntp proxy server sonarr radarr lidarr arr admin</tags>
+    <summary>Indexer manager/proxy built on the popular *arr .net/reactjs base stack to integrate with your various PVR apps</summary>
+    <description><![CDATA[[Prowlarr](https://github.com/Prowlarr/Prowlarr) is a indexer manager/proxy built on the popular arr .net/reactjs base stack to integrate with your various PVR apps. Prowlarr supports both Torrent Trackers and Usenet Indexers. It integrates seamlessly with Sonarr, Radarr, Lidarr, and Readarr offering complete management of your indexers with no per app Indexer setup required (we do it all).
+
+## Major Features Include
+
+- Usenet support for 24 indexers natively, including Headphones VIP
+- Usenet support for any Newznab compatible indexer via "Generic Newznab"
+- Torrent support for over 500 trackers with more added all the time
+- Torrent support for any Torznab compatible tracker via "Generic Torznab"
+- Support for custom YML definitions via Cardigann that includes JSON and XML parsing
+- Indexer Sync to Lidarr/Mylar3/Radarr/Readarr/Sonarr, so no manual configuration of the other applications are required
+- Indexer history and statistics
+- Manual searching of Trackers & Indexers at a category level
+- Parameter based manual searching
+- Support for pushing multiple releases at once directly to your download clients from Prowlarr
+- Indexer health and status notifications
+- Per Indexer proxy support (SOCKS4, SOCKS5, HTTP, Flaresolverr)
+
+## Community
+
+- [Discord](https://prowlarr.com/discord)
+- [Reddit](https://www.reddit.com/r/prowlarr)
+
+## Notes
+
+Installs as a service, to get to Prowlarr open browser and go to [localhost]:9696 (remove the brackets)
+]]></description>
+    <releaseNotes>
+#### Program
+* [Changelog](https://github.com/Prowlarr/Prowlarr/releases)
+
+#### Package
+* Automatically built and uploaded by [JourneyOver](https://chocolatey.org/profiles/JourneyOver)
+* If you have any requests or issues with this package please make an issue [here](https://github.com/JourneyOver/chocolatey-packages) instead of "Contact Maintainers"</releaseNotes>
+    <!-- <dependencies>
+    </dependencies> -->
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>

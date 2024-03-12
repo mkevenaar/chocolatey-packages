@@ -1,0 +1,28 @@
+VERIFICATION
+
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The embedded software has been downloaded from the listed download
+location on <https://github.com/Lidarr/Lidarr/releases/tag/v2.2.2.4090>
+and can be verified by doing the following:
+
+1. Download the following:
+
+  url: <https://github.com/Lidarr/Lidarr/releases/download/v2.2.2.4090/Lidarr.develop.2.2.2.4090.windows-core-x86-installer.exe>
+  url64: <https://github.com/Lidarr/Lidarr/releases/download/v2.2.2.4090/Lidarr.develop.2.2.2.4090.windows-core-x64-installer.exe>
+
+2. You can obtain the checksum using one of the following methods:
+  - Use powershell function 'Get-FileHash'
+  - Use Chocolatey utility 'checksum.exe'
+
+  checksum type: sha256
+  checksum:8F0B75FFB895771E116BBDE1DAEB339570D3E74652435B18FF5848F3834E23BA
+  checksum64:C741E4C0105366EB216D62225E119C3ECC3876012314491CEFC1AA9C092D197C
+
+Using AU:
+
+  Get-RemoteChecksum
+
+The file 'license.txt' is obtained from:
+  <https://github.com/lidarr/Lidarr/blob/develop/LICENSE.md>
