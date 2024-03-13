@@ -2,7 +2,7 @@
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url          = 'http://download.aida64.com/aida64business720.zip'
-$checksum     = '3731815c48062a80419ce65afd21c276c62c380ca7876c0f5c5913c4d495a6bf'
+$checksum     = '74c96740e706eb36bd64a4d6e44c92b3ba782d51c3239887f99903d1157ae30a'
 $checksumType = 'sha256'
 
 $packageArgs = @{
