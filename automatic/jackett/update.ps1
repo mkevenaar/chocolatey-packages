@@ -1,16 +1,19 @@
-﻿Import-Module au
+﻿Import-Module Chocolatey-AU
 Import-Module "$PSScriptRoot\..\..\scripts\au_extensions.psm1"
 
 $repoUser = "Jackett"
 $repoName = "Jackett"
 
 function global:au_SearchReplace {
-  @{
-    ".\legal\VERIFICATION.txt" = @{
-      "(?i)(^\s*location on\:?\s*)\<.*\>" = "`${1}<$($Latest.ReleaseUri)>"
-      "(?i)(^\s*url(32)?\:\s*).*"         = "`${1}<$($Latest.URL32)>"
-      "(?i)(^\s*checksum(32)?\:\s*).*"    = "`${1}$($Latest.Checksum32)"
-      "(?i)(^\s*checksum\s*type\:\s*).*"  = "`${1}$($Latest.ChecksumType32)"
+  return @{
+    'tools\chocolateyInstall.ps1' = @{
+      "(?i)(^\s*file\s*=\s*`"[$]toolsDir\\).*" = "`${1}$($Latest.FileName32)`""
+    }
+    ".\legal\VERIFICATION.txt"   = @{
+      "(?i)(listed on\s*)\<.*\>" = "`${1}<$($Latest.ReleaseUri)>"
+      "(?i)(32-Bit.+)\<.*\>"     = "`${1}<$($Latest.URL32)>"
+      "(?i)(checksum type:).*"   = "`${1} $($Latest.ChecksumType32)"
+      "(?i)(checksum32:).*"      = "`${1} $($Latest.Checksum32)"
     }
   }
 }
@@ -36,8 +39,12 @@ function global:au_GetLatest {
 
   $url32 = $release.latest.Assets | Where-Object { $_ -match 'Windows\.exe$' } | Select-Object -First 1
 
-  $Latest = @{ URL32 = $url32; Version = $release.latest.Version; ReleaseUri = $release.latest.ReleaseUrl }
+  $Latest = @{
+    URL32      = $url32;
+    Version    = $release.latest.Version;
+    ReleaseUri = $release.latest.ReleaseUrl
+  }
   return $Latest
 }
 
-update -ChecksumFor none
+update -ChecksumFor None

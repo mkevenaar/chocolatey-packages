@@ -1,29 +1,27 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-$packageName = 'jackett'
-
-$toolsDir = Split-Path $MyInvocation.MyCommand.Definition
-$fileLocation = Get-Item "$toolsDir\*.exe"
+$toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$servicename    = "jackett"
 
 $packageArgs = @{
-  packageName    = $packageName
-  fileType       = 'exe'
-  file           = $fileLocation
+  packageName   = $env:ChocolateyPackageName
+  fileType      = 'exe'
+  file          = "$toolsDir\Jackett.Installer.Windows.exe"
+  softwareName  = 'Jackett*'
   silentArgs     = "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /LOG=`"$($env:TEMP)\$($env:chocolateyPackageName).$($env:chocolateyPackageVersion).InnoInstall.log`""
   validExitCodes = @(0)
 }
 
 Install-ChocolateyInstallPackage @packageArgs
 
-# Remove the installers as there is no more need for it
-Remove-Item $toolsDir\*.exe -ea 0 -Force
+Get-ChildItem $toolsDir\*.exe | ForEach-Object { Remove-Item $_ -ea 0; if (Test-Path $_) { Set-Content "$_.ignore" } }
 
 # Start service if it's not running
-if (Get-Service "$packageName" -ErrorAction SilentlyContinue) {
-  $running = Get-Service $packageName
+if (Get-Service "$servicename" -ErrorAction SilentlyContinue) {
+  $running = Get-Service $servicename
   if ($running.Status -eq "Running") {
     Write-Host 'Service is already running'
   } elseif ($running.Status -eq "Stopped") {
-    Start-Service $packageName
+    Start-Service $servicename
   }
 }
