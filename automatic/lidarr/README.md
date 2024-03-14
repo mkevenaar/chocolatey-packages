@@ -24,3 +24,7 @@ Lidarr is a music collection manager for Usenet and BitTorrent users. It can mon
 ## Notes
 
 Installs as a service, to get to Lidarr open browser and go to [localhost]:8686 (remove the brackets)
+
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know the package is no longer updating correctly.

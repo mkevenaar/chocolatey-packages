@@ -1,18 +1,22 @@
-﻿Import-Module au
+﻿Import-Module Chocolatey-AU
 Import-Module "$PSScriptRoot\..\..\scripts\au_extensions.psm1"
 
 $repoUser = "Lidarr"
 $repoName = "Lidarr"
 
 function global:au_SearchReplace {
-  @{
-    ".\legal\VERIFICATION.txt" = @{
-      "(?i)(^\s*location on\:?\s*)\<.*\>" = "`${1}<$($Latest.ReleaseUri)>"
-      "(?i)(^\s*url(32)?\:\s*).*"         = "`${1}<$($Latest.URL32)>"
-      "(?i)(^\s*url64?\:\s*).*"           = "`${1}<$($Latest.URL64)>"
-      "(?i)(^\s*checksum(32)?\:\s*).*"    = "`${1}$($Latest.Checksum32)"
-      "(?i)(^\s*checksum64?\:\s*).*"      = "`${1}$($Latest.Checksum64)"
-      "(?i)(^\s*checksum\s*type\:\s*).*"  = "`${1}$($Latest.ChecksumType32)"
+  return @{
+    'tools\chocolateyInstall.ps1' = @{
+      "(?i)(^\s*file\s*=\s*`"[$]toolsDir\\).*"   = "`${1}$($Latest.FileName32)`""
+      "(?i)(^\s*file64\s*=\s*`"[$]toolsDir\\).*" = "`${1}$($Latest.FileName64)`""
+    }
+    ".\legal\VERIFICATION.txt"   = @{
+      "(?i)(listed on\s*)\<.*\>" = "`${1}<$($Latest.ReleaseUri)>"
+      "(?i)(32-Bit.+)\<.*\>"     = "`${1}<$($Latest.URL32)>"
+      "(?i)(64-Bit.+)\<.*\>"     = "`${1}<$($Latest.URL64)>"
+      "(?i)(checksum type:).*"   = "`${1} $($Latest.ChecksumType32)"
+      "(?i)(checksum32:).*"      = "`${1} $($Latest.Checksum32)"
+      "(?i)(checksum64:).*"      = "`${1} $($Latest.Checksum64)"
     }
   }
 }
@@ -39,8 +43,12 @@ function global:au_GetLatest {
   $url32 = $release.latest.Assets | Where-Object { $_ -match 'x86-installer\.exe$' } | Select-Object -First 1
   $url64 = $release.latest.Assets | Where-Object { $_ -match 'x64-installer\.exe$' } | Select-Object -First 1
 
-  $Latest = @{ URL32 = $url32; URL64 = $url64; Version = $release.latest.Version; ReleaseUri = $release.latest.ReleaseUrl }
+  $Latest = @{
+    URL32      = $url32;
+    URL64      = $url64;
+    Version    = $release.latest.Version;
+    ReleaseUri = $release.latest.ReleaseUrl }
   return $Latest
 }
 
-update -ChecksumFor none
+update -ChecksumFor None
