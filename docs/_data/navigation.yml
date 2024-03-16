@@ -213,6 +213,8 @@
         url: /packages/QuickPar.html
       - page: "Radarr"
         url: /packages/radarr.html
+      - page: "Readarr"
+        url: /packages/readarr.html
       - page: "RegDelNull"
         url: /packages/regdelnull.html
       - page: "Rocrail"
