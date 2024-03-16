@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4728cb699d6dc13c7c8ea5fe4fabd24fc9b0678d/icons/chromecacheview.png" width="48" height="48"/> [chromecacheview](https://community.chocolatey.org/packages/chromecacheview)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@02cb0f9840085af5af579771da19ff025d88058f/icons/chromecacheview.png" width="48" height="48"/> [chromecacheview](https://community.chocolatey.org/packages/chromecacheview)
 
 ChromeCacheView is a small utility that reads the cache folder of Google Chrome Web browser, and displays the list of all files currently stored in the cache.
 

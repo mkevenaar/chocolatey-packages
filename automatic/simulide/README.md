@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ab172920222bd8bb7e28a2f579b5e5d7e08de895/icons/simulide.png" width="48" height="48"/> [simulide](https://community.chocolatey.org/packages/simulide)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@00a90c0bf02817f373a69ed52b56380955e43d58/icons/simulide.png" width="48" height="48"/> [simulide](https://community.chocolatey.org/packages/simulide)
 
 ## SimulIDE
 

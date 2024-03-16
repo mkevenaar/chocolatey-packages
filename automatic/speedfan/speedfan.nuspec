@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Alfredo Milani Comparetti</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://www.almico.com/speedfan.php</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@674a50b9bcfbfdf756e5473b9aecd8522675bc41/icons/speedfan.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@014e3dda4ace9d5a4c8b8846c795969a36429bd2/icons/speedfan.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Alfredo Milani Comparetti</copyright>
     <tags>system-monitor smart temperature overclock sensor voltage fan-speed control-fan admin</tags>

@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>JetBrains</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://www.jetbrains.com/education/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@1a84d4bb32d44c7d8251d48471814ccd194dfc24/icons/intellijidea-edu.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@3de4fb6dde6ea37044ebb1ef8199b72473e9f108/icons/intellijidea-edu.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>JetBrains s.r.o.</copyright>
     <tags>java jetbrains idea edu IDE admin</tags>

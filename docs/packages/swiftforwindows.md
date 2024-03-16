@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@0559168c31d243f6d0803426064a0513df5cd34b/icons/swiftforwindows.png" width="32" height="32"/> [![Swift for Windows](https://img.shields.io/chocolatey/v/swiftforwindows.svg?label=Swift+for+Windows)](https://community.chocolatey.org/packages/swiftforwindows) [![Swift for Windows](https://img.shields.io/chocolatey/dt/swiftforwindows.svg)](https://community.chocolatey.org/packages/swiftforwindows)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@8ba289a64004642764c363e674e1e2548e6040e6/icons/swiftforwindows.png" width="32" height="32"/> [![Swift for Windows](https://img.shields.io/chocolatey/v/swiftforwindows.svg?label=Swift+for+Windows)](https://community.chocolatey.org/packages/swiftforwindows) [![Swift for Windows](https://img.shields.io/chocolatey/dt/swiftforwindows.svg)](https://community.chocolatey.org/packages/swiftforwindows)
 
 ## Usage
 

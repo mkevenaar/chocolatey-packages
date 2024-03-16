@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@0411adaf8f882b9f2afe83ed6fa048135378742c/icons/lastpass.png" width="48" height="48"/> [lastpass](https://community.chocolatey.org/packages/lastpass)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@c2affb9ae13977187e7d845905b0c203fd51a970/icons/lastpass.png" width="48" height="48"/> [lastpass](https://community.chocolatey.org/packages/lastpass)
 
 LastPass is a password manager that makes web browsing easier and more secure.
 

@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>JetBrains</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://www.jetbrains.com/rider/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@8b10075560b75cfc85915b5d74b387c081850205/icons/jetbrains-rider.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@133f6f90e6e314bf853a18be3c869623472abba2/icons/jetbrains-rider.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>JetBrains s.r.o.</copyright>
     <tags>jetbrainsrider jetbrains rider admin</tags>

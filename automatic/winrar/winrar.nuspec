@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>win.rar GmbH</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://www.win-rar.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@51247a81a30c4c8d14434fcbc61c7a0b750c0945/icons/winrar.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@646ffab0085403b1476d1d7e4ad50a1a82203e67/icons/winrar.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>win.rar GmbH</copyright>
     <tags>trial rar compression archive nagware admin</tags>

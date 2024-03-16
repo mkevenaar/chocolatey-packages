@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@355d7ce6ca37378aa523127e7f4200685ad58121/icons/wirelessnetview.png" width="48" height="48"/> [wirelessnetview.install](https://community.chocolatey.org/packages/wirelessnetview.install)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@0829aab856da9e9de83c0d20f962b01f934171cf/icons/wirelessnetview.png" width="48" height="48"/> [wirelessnetview.install](https://community.chocolatey.org/packages/wirelessnetview.install)
 
 WirelessNetView is a small utility that runs in the background, and monitor the activity of wireless networks around you.
 

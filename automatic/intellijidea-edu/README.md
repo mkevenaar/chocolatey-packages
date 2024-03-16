@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@1a84d4bb32d44c7d8251d48471814ccd194dfc24/icons/intellijidea-edu.png" width="48" height="48"/> [intellijidea-edu](https://community.chocolatey.org/packages/intellijidea-edu)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@3de4fb6dde6ea37044ebb1ef8199b72473e9f108/icons/intellijidea-edu.png" width="48" height="48"/> [intellijidea-edu](https://community.chocolatey.org/packages/intellijidea-edu)
 
 [![official JetBrains project](http://jb.gg/badges/official-plastic.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
 

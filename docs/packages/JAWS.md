@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@e8482fd8d4d0eb2ec196902b39a85218f67c361b/icons/JAWS.png" width="32" height="32"/> [![Freedom Scientific JAWS](https://img.shields.io/chocolatey/v/JAWS.svg?label=Freedom+Scientific+JAWS)](https://community.chocolatey.org/packages/JAWS) [![Freedom Scientific JAWS](https://img.shields.io/chocolatey/dt/JAWS.svg)](https://community.chocolatey.org/packages/JAWS)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@7eda158bcaa9de58f845434ce5925435274c6637/icons/JAWS.png" width="32" height="32"/> [![Freedom Scientific JAWS](https://img.shields.io/chocolatey/v/JAWS.svg?label=Freedom+Scientific+JAWS)](https://community.chocolatey.org/packages/JAWS) [![Freedom Scientific JAWS](https://img.shields.io/chocolatey/dt/JAWS.svg)](https://community.chocolatey.org/packages/JAWS)
 
 ## Usage
 

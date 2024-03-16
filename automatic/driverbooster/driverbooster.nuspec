@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>IObit</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://www.iobit.com/driver-booster.php</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@67806fe7af712974358b5cae3b59ce3cfbbd1c0a/icons/driverbooster.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@580b0e631ec03613aef37d7ef4140ed3c091cf28/icons/driverbooster.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>IObit. All rights reserved.</copyright>
     <tags>driver-update driver-download</tags>

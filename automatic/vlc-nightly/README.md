@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@a562571bebc3bd7f25660341bd2ab5db86f5ff25/icons/vlc-nightly.png" width="48" height="48"/> [vlc-nightly](https://community.chocolatey.org/packages/vlc-nightly)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@6df622a4cab687cecd53a762025616155896faff/icons/vlc-nightly.png" width="48" height="48"/> [vlc-nightly](https://community.chocolatey.org/packages/vlc-nightly)
 
 The Nightly version of VLC is the latest unstable and unsupported software as provided by VideoLAN
 

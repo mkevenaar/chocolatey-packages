@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4222ecff31a588907bd4290d5106e8cfc84a4745/icons/intel-mas.png" width="32" height="32"/> [![Intel® Memory and Storage Tool](https://img.shields.io/chocolatey/v/intel-mas.svg?label=Intel%C2%AE+Memory+and+Storage+Tool)](https://community.chocolatey.org/packages/intel-mas) [![Intel® Memory and Storage Tool](https://img.shields.io/chocolatey/dt/intel-mas.svg)](https://community.chocolatey.org/packages/intel-mas)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@794b72b6a786e5a0f6084b242f65586e60ba6c83/icons/intel-mas.png" width="32" height="32"/> [![Intel® Memory and Storage Tool](https://img.shields.io/chocolatey/v/intel-mas.svg?label=Intel%C2%AE+Memory+and+Storage+Tool)](https://community.chocolatey.org/packages/intel-mas) [![Intel® Memory and Storage Tool](https://img.shields.io/chocolatey/dt/intel-mas.svg)](https://community.chocolatey.org/packages/intel-mas)
 
 ## Usage
 

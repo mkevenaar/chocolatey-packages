@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@34c516e4abd5510c00334737fe156755adcbab72/icons/octofarm.png" width="48" height="48"/> [octofarm](https://community.chocolatey.org/packages/octofarm)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4a723bf6cc46868cfaf015793080af8c921a4469/icons/octofarm.png" width="48" height="48"/> [octofarm](https://community.chocolatey.org/packages/octofarm)
 
 ## What is OctoFarm?
 

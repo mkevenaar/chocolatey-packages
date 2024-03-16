@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@80cca03cb46a5447d642966a1fe87ab354ae8b3a/icons/book-collector.png" width="48" height="48"/> [book-collector](https://community.chocolatey.org/packages/book-collector)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@071922fa972ca9a30d0e061e88f4721429b9f8dd/icons/book-collector.png" width="48" height="48"/> [book-collector](https://community.chocolatey.org/packages/book-collector)
 
 Book Database Software - catalog your book collection
 

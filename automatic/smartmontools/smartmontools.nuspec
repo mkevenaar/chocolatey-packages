@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Bruce Allen,Christian Franke</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://www.smartmontools.org/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@233dd82c27a73801f5ea03db4660a6a2d586c82b/icons/smartmontools.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@3a4dd0d9974844d8314af5ab64c42003132e4fe1/icons/smartmontools.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Bruce Allen</copyright>
     <tags>cli s.m.a.r.t. disk reporting monitoring daemon admin</tags>

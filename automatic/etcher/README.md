@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@d9b0daf3c9830ec580c70bb5d0b018736e73adde/icons/etcher.png" width="48" height="48"/> [etcher](https://community.chocolatey.org/packages/etcher)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@1d7d171cf348280ab9a726c33f980843b9bd1757/icons/etcher.png" width="48" height="48"/> [etcher](https://community.chocolatey.org/packages/etcher)
 
 Etcher is a powerful OS image flasher built with web technologies to ensure flashing an SDCard or USB drive is a pleasant and safe experience. It protects you from accidentally writing to your hard-drives, ensures every byte of data was written correctly and much more.
 

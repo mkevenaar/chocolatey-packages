@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@3f16690efbb345ead0514729720b357d6c0540ac/icons/music-collector.png" width="48" height="48"/> [music-collector](https://community.chocolatey.org/packages/music-collector)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@a06d6a19bb5dcb0ef64e72a8336d7e4cb0fe88e0/icons/music-collector.png" width="48" height="48"/> [music-collector](https://community.chocolatey.org/packages/music-collector)
 
 Music Database Software - Catalog your CDs and vinyl records
 

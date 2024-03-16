@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4fa07822efa981d198c0dd8801a7a98219c5184c/icons/zettlr.png" width="32" height="32"/> [![Zettlr](https://img.shields.io/chocolatey/v/zettlr.svg?label=Zettlr)](https://community.chocolatey.org/packages/zettlr) [![Zettlr](https://img.shields.io/chocolatey/dt/zettlr.svg)](https://community.chocolatey.org/packages/zettlr)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@5a78e1ccfc8614c8b11e7e7cc17434ee55bedd15/icons/zettlr.png" width="32" height="32"/> [![Zettlr](https://img.shields.io/chocolatey/v/zettlr.svg?label=Zettlr)](https://community.chocolatey.org/packages/zettlr) [![Zettlr](https://img.shields.io/chocolatey/dt/zettlr.svg)](https://community.chocolatey.org/packages/zettlr)
 
 ## Usage
 

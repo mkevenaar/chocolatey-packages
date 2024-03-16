@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@e1d9a5ea9725b2f50f96ef7550d6537ea4450768/icons/devmanview.png" width="48" height="48"/> [devmanview](https://community.chocolatey.org/packages/devmanview)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4738ff100a5877c872df119fa7062165c6a824c0/icons/devmanview.png" width="48" height="48"/> [devmanview](https://community.chocolatey.org/packages/devmanview)
 
 DevManView is an alternative to the standard Device Manager of Windows, which displays all devices and their properties in flat table, instead of tree viewer.
 

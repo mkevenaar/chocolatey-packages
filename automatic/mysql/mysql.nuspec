@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Oracle Corporation and/or its affiliates</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://mysql.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4d4a3bbed8b6b77e184e64522d9cd3247017391e/icons/mysql.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@f8a062579b8201cc49022144e353496dd6bd03b0/icons/mysql.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Oracle Corporation and/or its affiliates</copyright>
     <tags>mysql database admin</tags>

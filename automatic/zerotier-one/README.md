@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@3ee2ed79dfbbf068b13428131998092e84bc37b7/icons/zerotier-one.png" width="48" height="48"/> [zerotier-one](https://community.chocolatey.org/packages/zerotier-one)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@e7851264332cc37999853075275cb39cc7ffa227/icons/zerotier-one.png" width="48" height="48"/> [zerotier-one](https://community.chocolatey.org/packages/zerotier-one)
 
 ## ZeroTier - Global Area Networking
 

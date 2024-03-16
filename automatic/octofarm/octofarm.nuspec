@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>NotExpectedYet - OctoFarm</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://octofarm.net/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@34c516e4abd5510c00334737fe156755adcbab72/icons/octofarm.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4a723bf6cc46868cfaf015793080af8c921a4469/icons/octofarm.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>NotExpectedYet - OctoFarm</copyright>
     <tags>octofarm octoprint printfarm</tags>

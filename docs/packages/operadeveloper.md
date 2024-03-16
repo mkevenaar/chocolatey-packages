@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@2d6548eb36c1599d8d5da98c79e1772f75d081e6/icons/opera-developer.png" width="32" height="32"/> [![Opera Developer](https://img.shields.io/chocolatey/v/opera-developer.svg?label=Opera+Developer)](https://community.chocolatey.org/packages/opera-developer) [![Opera Developer](https://img.shields.io/chocolatey/dt/opera-developer.svg)](https://community.chocolatey.org/packages/opera-developer)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@8ec9f8788da2c63d293690b04b0b5c90e66e8d12/icons/opera-developer.png" width="32" height="32"/> [![Opera Developer](https://img.shields.io/chocolatey/v/opera-developer.svg?label=Opera+Developer)](https://community.chocolatey.org/packages/opera-developer) [![Opera Developer](https://img.shields.io/chocolatey/dt/opera-developer.svg)](https://community.chocolatey.org/packages/opera-developer)
 
 ## Usage
 

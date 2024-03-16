@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>FinalWire Ltd</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://www.aida64.com/products/aida64-network-audit</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@fb6e804fefc774a7d346389efc5fcc741da1a6f9/icons/aida64-networkaudit.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@8dfe3299e5b7de5397d0255d1ffec8ca00e41cf1/icons/aida64-networkaudit.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>FinalWire Ltd</copyright>
     <tags>trial diagnostic benchmark audit inventory</tags>

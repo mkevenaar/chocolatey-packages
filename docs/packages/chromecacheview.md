@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4728cb699d6dc13c7c8ea5fe4fabd24fc9b0678d/icons/chromecacheview.png" width="32" height="32"/> [![ChromeCacheView](https://img.shields.io/chocolatey/v/chromecacheview.svg?label=ChromeCacheView)](https://community.chocolatey.org/packages/chromecacheview) [![ChromeCacheView](https://img.shields.io/chocolatey/dt/chromecacheview.svg)](https://community.chocolatey.org/packages/chromecacheview)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@02cb0f9840085af5af579771da19ff025d88058f/icons/chromecacheview.png" width="32" height="32"/> [![ChromeCacheView](https://img.shields.io/chocolatey/v/chromecacheview.svg?label=ChromeCacheView)](https://community.chocolatey.org/packages/chromecacheview) [![ChromeCacheView](https://img.shields.io/chocolatey/dt/chromecacheview.svg)](https://community.chocolatey.org/packages/chromecacheview)
 
 ## Usage
 

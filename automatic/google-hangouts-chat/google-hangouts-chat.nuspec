@@ -36,7 +36,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Google Inc.</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://gsuite.google.com/products/chat/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@bc93d96ecdc80caa9c22bffddf7147ac8a132421/icons/google-hangouts-chat.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@b9054dd3d6b57c32290183f96cf1f93c1def7925/icons/google-hangouts-chat.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Google Inc.</copyright>
     <tags>google hangout hangouts chat hangout-chat hangouts-chat google-hangout google-hangouts google-hangouts-chat google-hangout-chat google-chat gsuite admin</tags>

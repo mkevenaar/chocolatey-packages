@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Jeremy Sanders</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://veusz.github.io/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ad615a27dbe925cf5030c597e0ffc54cd7e1028b/icons/veusz.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@97a2d35fa32f3cd0d4ebd0eb163ff267dc12c298/icons/veusz.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Jeremy Sanders</copyright>
     <tags>veusz admin</tags>

@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@81eadd12de9d8a24796945af00e35f86ebc48d08/icons/veeam-explorer-for-oracle.png" width="32" height="32"/> [![Veeam Explorer for Oracle](https://img.shields.io/chocolatey/v/veeam-explorer-for-oracle.svg?label=Veeam+Explorer+for+Oracle)](https://community.chocolatey.org/packages/veeam-explorer-for-oracle) [![Veeam Explorer for Oracle](https://img.shields.io/chocolatey/dt/veeam-explorer-for-oracle.svg)](https://community.chocolatey.org/packages/veeam-explorer-for-oracle)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@d2b72044aa2db02988a4b0cf809ad1ea309f4d0c/icons/veeam-explorer-for-oracle.png" width="32" height="32"/> [![Veeam Explorer for Oracle](https://img.shields.io/chocolatey/v/veeam-explorer-for-oracle.svg?label=Veeam+Explorer+for+Oracle)](https://community.chocolatey.org/packages/veeam-explorer-for-oracle) [![Veeam Explorer for Oracle](https://img.shields.io/chocolatey/dt/veeam-explorer-for-oracle.svg)](https://community.chocolatey.org/packages/veeam-explorer-for-oracle)
 
 ## Usage
 

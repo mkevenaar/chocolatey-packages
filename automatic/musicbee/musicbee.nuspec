@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Steven Mayall</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://getmusicbee.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@6b72cf334ff8fef0fb86aad0c1534f68a42a9855/icons/musicbee.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@774466a53c0152fcdb457d21654663bf2eff9e04/icons/musicbee.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Copyright © Steven Mayall</copyright>
     <tags>admin musicbee audio music player media mp3 tagger</tags>

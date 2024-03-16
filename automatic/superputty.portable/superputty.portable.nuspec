@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Jim Radford</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://www.facebook.com/superputty</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@218fd53341b8400391b0efdb75f313d01cdcf984/icons/superputty.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@16c9865113a11ca6482f97f0092c3482896afe02/icons/superputty.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Jim Radford</copyright>
     <tags>tabs putty admin</tags>

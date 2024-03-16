@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@971b30499daa016c8c9e3a7c249639e3b0d2c274/icons/jetbrainstoolbox.png" width="48" height="48"/> [jetbrainstoolbox](https://community.chocolatey.org/packages/jetbrainstoolbox)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@fe58b3eef131f858f8ac788a44cf8bde8d9b1fe4/icons/jetbrainstoolbox.png" width="48" height="48"/> [jetbrainstoolbox](https://community.chocolatey.org/packages/jetbrainstoolbox)
 
 A control panel for your JetBrains tools and projects
 

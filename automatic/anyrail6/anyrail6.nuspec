@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>DRail Modelspoor Software</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://www.anyrail.com</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@16daac3bcdef0a76bb57a232ebc1e12069a243f2/icons/AnyRail6.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@5712adee33554c45a60ccea484a87fed0fd5a595/icons/AnyRail6.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>DRail Modelspoor Software</copyright>
     <tags>anyrail admin</tags>

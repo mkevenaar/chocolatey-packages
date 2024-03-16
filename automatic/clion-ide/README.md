@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@05282da8fb86d53634363900131ef66e316ea144/icons/clion-ide.png" width="48" height="48"/> [clion-ide](https://community.chocolatey.org/packages/clion-ide)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ae7413fd5316d97465e796f3fd823d2ed9f7c861/icons/clion-ide.png" width="48" height="48"/> [clion-ide](https://community.chocolatey.org/packages/clion-ide)
 
 ## A POWER TOOL FOR A POWER LANGUAGE
 

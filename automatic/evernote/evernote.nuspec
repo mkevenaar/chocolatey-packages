@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Evernote Corporation</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://evernote.com/evernote/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@aa837530f118c5c04eb24910a503865173952d25/icons/evernote.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@27fed6f8dd2798ffab4521d990b1b8d893e65a62/icons/evernote.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Evernote Corporation</copyright>
     <tags>evernote notes admin</tags>

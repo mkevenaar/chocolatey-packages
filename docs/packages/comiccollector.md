@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@1c27c1d5ae9df85268fe4c15e231693166f627f5/icons/comic-collector.png" width="32" height="32"/> [![Comic Collector](https://img.shields.io/chocolatey/v/comic-collector.svg?label=Comic+Collector)](https://community.chocolatey.org/packages/comic-collector) [![Comic Collector](https://img.shields.io/chocolatey/dt/comic-collector.svg)](https://community.chocolatey.org/packages/comic-collector)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@196f45fcb5d2f1678981ea7d99518d53a9a47cf3/icons/comic-collector.png" width="32" height="32"/> [![Comic Collector](https://img.shields.io/chocolatey/v/comic-collector.svg?label=Comic+Collector)](https://community.chocolatey.org/packages/comic-collector) [![Comic Collector](https://img.shields.io/chocolatey/dt/comic-collector.svg)](https://community.chocolatey.org/packages/comic-collector)
 
 ## Usage
 

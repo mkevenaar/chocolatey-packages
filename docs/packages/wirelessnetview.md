@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@355d7ce6ca37378aa523127e7f4200685ad58121/icons/wirelessnetview.png" width="32" height="32"/> [![WirelessNetView](https://img.shields.io/chocolatey/v/wirelessnetview.svg?label=WirelessNetView)](https://community.chocolatey.org/packages/wirelessnetview) [![WirelessNetView](https://img.shields.io/chocolatey/dt/wirelessnetview.svg)](https://community.chocolatey.org/packages/wirelessnetview)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@0829aab856da9e9de83c0d20f962b01f934171cf/icons/wirelessnetview.png" width="32" height="32"/> [![WirelessNetView](https://img.shields.io/chocolatey/v/wirelessnetview.svg?label=WirelessNetView)](https://community.chocolatey.org/packages/wirelessnetview) [![WirelessNetView](https://img.shields.io/chocolatey/dt/wirelessnetview.svg)](https://community.chocolatey.org/packages/wirelessnetview)
 
 ## Usage
 

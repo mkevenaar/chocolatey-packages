@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>JetBrains</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://www.jetbrains.com/pycharm/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@e2f83487f2aa24e89cc9af1ad396f7eaa4bec5bb/icons/PyCharm-community.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@081d7b0b59739e4d377150098854a2244235fe01/icons/PyCharm-community.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>JetBrains s.r.o.</copyright>
     <tags>PyCharm jetbrains python IDE admin</tags>

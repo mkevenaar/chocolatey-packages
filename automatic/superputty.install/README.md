@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@218fd53341b8400391b0efdb75f313d01cdcf984/icons/superputty.png" width="48" height="48"/> [superputty.install](https://community.chocolatey.org/packages/superputty.install)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@16c9865113a11ca6482f97f0092c3482896afe02/icons/superputty.png" width="48" height="48"/> [superputty.install](https://community.chocolatey.org/packages/superputty.install)
 
 SuperPutty is a Windows GUI Application that allows the PuTTY SSH Client to be opened in Tabs. Additionally there is support for SCP to transfer files.
 

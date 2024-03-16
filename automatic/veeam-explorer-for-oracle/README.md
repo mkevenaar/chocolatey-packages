@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@81eadd12de9d8a24796945af00e35f86ebc48d08/icons/veeam-explorer-for-oracle.png" width="48" height="48"/> [veeam-explorer-for-oracle](https://community.chocolatey.org/packages/veeam-explorer-for-oracle)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@d2b72044aa2db02988a4b0cf809ad1ea309f4d0c/icons/veeam-explorer-for-oracle.png" width="48" height="48"/> [veeam-explorer-for-oracle](https://community.chocolatey.org/packages/veeam-explorer-for-oracle)
 
 ## Exit when reboot detected
 

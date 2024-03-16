@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@855b0e8af6bfa3130897fcd125809c10721a7d23/icons/ultraiso.png" width="32" height="32"/> [![UltraISO](https://img.shields.io/chocolatey/v/ultraiso.svg?label=UltraISO)](https://community.chocolatey.org/packages/ultraiso) [![UltraISO](https://img.shields.io/chocolatey/dt/ultraiso.svg)](https://community.chocolatey.org/packages/ultraiso)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ddcedfafe242553f39b101b695d2d7b4c348f342/icons/ultraiso.png" width="32" height="32"/> [![UltraISO](https://img.shields.io/chocolatey/v/ultraiso.svg?label=UltraISO)](https://community.chocolatey.org/packages/ultraiso) [![UltraISO](https://img.shields.io/chocolatey/dt/ultraiso.svg)](https://community.chocolatey.org/packages/ultraiso)
 
 ## Usage
 

@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>rocrail.net</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://wiki.rocrail.net/doku.php</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ae9a5d45a8eb3a6276aad2f781b8cc2ccf86f267/icons/rocrail.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@fabf3f9b3fb2f1e2308ad7d2aa376c99db3dc39b/icons/rocrail.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Robert Jan Versluis</copyright>
     <tags>rocrail</tags>

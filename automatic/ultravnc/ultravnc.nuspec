@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Rudi De Vos,Sam Liarfo</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://www.uvnc.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@793b0f9445b2258a192e23bba3d482e7df9db46b/icons/ultravnc.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@f3646baccfb720a0999612d163766ead103022e3/icons/ultravnc.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>UltraVNC</copyright>
     <tags>vnc client server remote admin</tags>

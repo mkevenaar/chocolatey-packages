@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@012830bf1d08a51c5b0bf0d95884b1883d69da7b/icons/vscode-yaml.png" width="48" height="48"/> [vscode-yaml](https://community.chocolatey.org/packages/vscode-yaml)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@d2dd0d0fb9b676251bcd26d3b1988a1815b85f10/icons/vscode-yaml.png" width="48" height="48"/> [vscode-yaml](https://community.chocolatey.org/packages/vscode-yaml)
 
 ## YAML Language Support by Red Hat
 

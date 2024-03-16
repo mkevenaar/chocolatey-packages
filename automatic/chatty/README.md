@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@8b3048f63ff7034116beb3aa2dd82178f5eac3d8/icons/chatty.png" width="48" height="48"/> [chatty](https://community.chocolatey.org/packages/chatty)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@213ec784de199ff3b5e66b899992b257b1bd20c5/icons/chatty.png" width="48" height="48"/> [chatty](https://community.chocolatey.org/packages/chatty)
 
 Chatty is a Twitch Chat Client for Desktop written in Java featuring many Twitch specific features. Standalone version.
 

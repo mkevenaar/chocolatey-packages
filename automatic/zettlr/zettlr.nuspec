@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Hendrik Erz</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://www.zettlr.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4fa07822efa981d198c0dd8801a7a98219c5184c/icons/zettlr.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@5a78e1ccfc8614c8b11e7e7cc17434ee55bedd15/icons/zettlr.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Hendrik Erz</copyright>
     <tags>zettlr admin</tags>

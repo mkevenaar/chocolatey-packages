@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>JetBrains</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://www.jetbrains.com/toolbox/app/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@971b30499daa016c8c9e3a7c249639e3b0d2c274/icons/jetbrainstoolbox.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@fe58b3eef131f858f8ac788a44cf8bde8d9b1fe4/icons/jetbrainstoolbox.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>JetBrains s.r.o.</copyright>
     <tags>toolbox jetbrains rubymine rider resharper webstorm clion datagrip intellij pycharm phpstorm goland appcode ide</tags>

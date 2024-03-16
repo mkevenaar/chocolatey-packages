@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@51247a81a30c4c8d14434fcbc61c7a0b750c0945/icons/winrar.png" width="48" height="48"/> [winrar](https://community.chocolatey.org/packages/winrar)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@646ffab0085403b1476d1d7e4ad50a1a82203e67/icons/winrar.png" width="48" height="48"/> [winrar](https://community.chocolatey.org/packages/winrar)
 
 **NOTE** When a new version is released, not all translations are avaialbe. Currently there is no solution to permanently fix this. For more information have a look at issue [#20](https://github.com/mkevenaar/chocolatey-packages/issues/20)
 

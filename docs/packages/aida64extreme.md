@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@262e3148b0ba248ae30cb14e38416a5a6778ebc8/icons/aida64-extreme.png" width="32" height="32"/> [![AIDA64 Extreme](https://img.shields.io/chocolatey/v/aida64-extreme.svg?label=AIDA64+Extreme)](https://community.chocolatey.org/packages/aida64-extreme) [![AIDA64 Extreme](https://img.shields.io/chocolatey/dt/aida64-extreme.svg)](https://community.chocolatey.org/packages/aida64-extreme)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@48dedc97eb0373fe3a042b1c6aca269f26c27111/icons/aida64-extreme.png" width="32" height="32"/> [![AIDA64 Extreme](https://img.shields.io/chocolatey/v/aida64-extreme.svg?label=AIDA64+Extreme)](https://community.chocolatey.org/packages/aida64-extreme) [![AIDA64 Extreme](https://img.shields.io/chocolatey/dt/aida64-extreme.svg)](https://community.chocolatey.org/packages/aida64-extreme)
 
 ## Usage
 

@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Nir Sofer</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://www.nirsoft.net/utils/chrome_cache_view.html</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4728cb699d6dc13c7c8ea5fe4fabd24fc9b0678d/icons/chromecacheview.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@02cb0f9840085af5af579771da19ff025d88058f/icons/chromecacheview.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>NirSoft</copyright>
     <tags>chrome web browser viewer</tags>

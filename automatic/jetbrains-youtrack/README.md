@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@17ecf9871387731a8fc960d008cf2786efd83f6e/icons/jetbrains-youtrack.png" width="48" height="48"/> [jetbrains-youtrack](https://community.chocolatey.org/packages/jetbrains-youtrack)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@6f8418a61a76541dcc9981ce90a711263755043a/icons/jetbrains-youtrack.png" width="48" height="48"/> [jetbrains-youtrack](https://community.chocolatey.org/packages/jetbrains-youtrack)
 
 ## JetBrains YouTrack
 

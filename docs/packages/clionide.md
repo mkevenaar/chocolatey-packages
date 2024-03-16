@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@05282da8fb86d53634363900131ef66e316ea144/icons/clion-ide.png" width="32" height="32"/> [![JetBrains Clion](https://img.shields.io/chocolatey/v/clion-ide.svg?label=JetBrains+Clion)](https://community.chocolatey.org/packages/clion-ide) [![JetBrains Clion](https://img.shields.io/chocolatey/dt/clion-ide.svg)](https://community.chocolatey.org/packages/clion-ide)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ae7413fd5316d97465e796f3fd823d2ed9f7c861/icons/clion-ide.png" width="32" height="32"/> [![JetBrains Clion](https://img.shields.io/chocolatey/v/clion-ide.svg?label=JetBrains+Clion)](https://community.chocolatey.org/packages/clion-ide) [![JetBrains Clion](https://img.shields.io/chocolatey/dt/clion-ide.svg)](https://community.chocolatey.org/packages/clion-ide)
 
 ## Usage
 

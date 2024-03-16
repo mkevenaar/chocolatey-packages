@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Autodesk Inc</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://meshmixer.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@6b940fe0b9134a855b5aa1c0f35ed69cb12ea13a/icons/meshmixer.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ae6d78dcd1f2f8cf131384eb08f9dd59ae933802/icons/meshmixer.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Autodesk Inc</copyright>
     <tags>meshmixer autodesk modeling 3d surface solid print design</tags>

@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Nir Sofer</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://www.nirsoft.net/utils/wireless_network_view.html</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@355d7ce6ca37378aa523127e7f4200685ad58121/icons/wirelessnetview.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@0829aab856da9e9de83c0d20f962b01f934171cf/icons/wirelessnetview.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>NirSoft</copyright>
     <tags>wifi network monitor</tags>

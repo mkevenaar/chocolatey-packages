@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Nir Sofer</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://www.nirsoft.net/utils/wireless_network_watcher.html</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@72d4273ca59988b456ffc543827642170797aeef/icons/wnetwatcher.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@80cc04e4beaa57a22111d64f65b878ebd32964de/icons/wnetwatcher.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>NirSoft</copyright>
     <tags>wifi network watcher connected devices computers who</tags>

@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Newell Rubbermaid</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://www.dymo.com</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@b740eda125847cf997405fd3c7e8c470218f2292/icons/dymo-label.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@8775790b1ebc1c983f60998157dbd5ed7cfcf361/icons/dymo-label.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Newell Rubbermaid</copyright>
     <tags>dymo-label dymo label admin</tags>

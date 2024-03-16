@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@233dd82c27a73801f5ea03db4660a6a2d586c82b/icons/smartmontools.png" width="48" height="48"/> [smartmontools](https://community.chocolatey.org/packages/smartmontools)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@3a4dd0d9974844d8314af5ab64c42003132e4fe1/icons/smartmontools.png" width="48" height="48"/> [smartmontools](https://community.chocolatey.org/packages/smartmontools)
 
 S.M.A.R.T. Monitoring Tools (smartmontools) package contains two utility programs (smartctl and smartd) to control and monitor storage systems using the Self-Monitoring, Analysis and Reporting Technology System (SMART) built into most modern ATA and SCSI harddisks.
 

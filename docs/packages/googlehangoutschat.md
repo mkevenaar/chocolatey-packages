@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@bc93d96ecdc80caa9c22bffddf7147ac8a132421/icons/google-hangouts-chat.png" width="32" height="32"/> [![Hangouts Chat (Install)](https://img.shields.io/chocolatey/v/google-hangouts-chat.svg?label=Hangouts+Chat+(Install))](https://community.chocolatey.org/packages/google-hangouts-chat) [![Hangouts Chat (Install)](https://img.shields.io/chocolatey/dt/google-hangouts-chat.svg)](https://community.chocolatey.org/packages/google-hangouts-chat)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@b9054dd3d6b57c32290183f96cf1f93c1def7925/icons/google-hangouts-chat.png" width="32" height="32"/> [![Hangouts Chat (Install)](https://img.shields.io/chocolatey/v/google-hangouts-chat.svg?label=Hangouts+Chat+(Install))](https://community.chocolatey.org/packages/google-hangouts-chat) [![Hangouts Chat (Install)](https://img.shields.io/chocolatey/dt/google-hangouts-chat.svg)](https://community.chocolatey.org/packages/google-hangouts-chat)
 
 ## Usage
 

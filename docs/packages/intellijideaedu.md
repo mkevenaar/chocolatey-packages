@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@1a84d4bb32d44c7d8251d48471814ccd194dfc24/icons/intellijidea-edu.png" width="32" height="32"/> [![JetBrains IntelliJ IDEA (Educational)](https://img.shields.io/chocolatey/v/intellijidea-edu.svg?label=JetBrains+IntelliJ+IDEA+(Educational))](https://community.chocolatey.org/packages/intellijidea-edu) [![JetBrains IntelliJ IDEA (Educational)](https://img.shields.io/chocolatey/dt/intellijidea-edu.svg)](https://community.chocolatey.org/packages/intellijidea-edu)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@3de4fb6dde6ea37044ebb1ef8199b72473e9f108/icons/intellijidea-edu.png" width="32" height="32"/> [![JetBrains IntelliJ IDEA (Educational)](https://img.shields.io/chocolatey/v/intellijidea-edu.svg?label=JetBrains+IntelliJ+IDEA+(Educational))](https://community.chocolatey.org/packages/intellijidea-edu) [![JetBrains IntelliJ IDEA (Educational)](https://img.shields.io/chocolatey/dt/intellijidea-edu.svg)](https://community.chocolatey.org/packages/intellijidea-edu)
 
 ## Usage
 

@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Veeam Software AG</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://www.veeam.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@b3e4c2b4dd49738c36e16499fd75c396a85315b6/icons/veeam-explorer-for-microsoft-sql-server.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@05b27e901fca790661514e9bcf95d4a86f374e31/icons/veeam-explorer-for-microsoft-sql-server.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Veeam Software AG</copyright>
     <tags>veeam-explorer-for-microsoft-sql-server vbr veeam explorer sqlserver sql admin</tags>

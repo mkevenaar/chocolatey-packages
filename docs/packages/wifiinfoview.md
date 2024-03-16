@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@be994ab8a840e0ada1e68cef1674288eef7e685c/icons/wifiinfoview.png" width="32" height="32"/> [![WifiInfoView](https://img.shields.io/chocolatey/v/wifiinfoview.svg?label=WifiInfoView)](https://community.chocolatey.org/packages/wifiinfoview) [![WifiInfoView](https://img.shields.io/chocolatey/dt/wifiinfoview.svg)](https://community.chocolatey.org/packages/wifiinfoview)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@72f2d5a6dbdc0bf699b52b3716cfb15079ff7d53/icons/wifiinfoview.png" width="32" height="32"/> [![WifiInfoView](https://img.shields.io/chocolatey/v/wifiinfoview.svg?label=WifiInfoView)](https://community.chocolatey.org/packages/wifiinfoview) [![WifiInfoView](https://img.shields.io/chocolatey/dt/wifiinfoview.svg)](https://community.chocolatey.org/packages/wifiinfoview)
 
 ## Usage
 

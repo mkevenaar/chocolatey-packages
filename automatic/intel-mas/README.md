@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4222ecff31a588907bd4290d5106e8cfc84a4745/icons/intel-mas.png" width="48" height="48"/> [intel-mas](https://community.chocolatey.org/packages/intel-mas)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@794b72b6a786e5a0f6084b242f65586e60ba6c83/icons/intel-mas.png" width="48" height="48"/> [intel-mas](https://community.chocolatey.org/packages/intel-mas)
 
 The Intel® Memory and Storage Tool (Intel® MAS) is drive management software with a Graphical User Interface for Windows* that allows you to view current drive information, perform firmware updates, run full diagnostic scans, perform secure erase processes, and provide SMART attributes from Intel® SSDs.
 

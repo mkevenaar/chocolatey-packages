@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Tweaking.com</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://www.tweaking.com/content/page/windows_repair_all_in_one.html</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@9ef7d8e2821d9e6865606c6f0796bd9c5c5c1683/icons/windowsrepair.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@c4a2bf81dfb064ee796b2ef3671927fe56a3c7a3/icons/windowsrepair.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Tweaking.com</copyright>
     <tags>fix-error system-repair fix-registry</tags>

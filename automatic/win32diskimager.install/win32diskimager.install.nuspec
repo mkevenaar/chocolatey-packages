@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Justin Davis,Tobin Davis</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://sourceforge.net/projects/win32diskimager/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@3559cef4d1eb00218748abd0fdf44ace62344147/icons/win32diskimager.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@53a78b40edf1142be12cfb9bd87deeecf9f8c6a2/icons/win32diskimager.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>ImageWriter developers</copyright>
     <tags>disk raw image usb flash qt admin</tags>

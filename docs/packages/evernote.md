@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@aa837530f118c5c04eb24910a503865173952d25/icons/evernote.png" width="32" height="32"/> [![Evernote](https://img.shields.io/chocolatey/v/evernote.svg?label=Evernote)](https://community.chocolatey.org/packages/evernote) [![Evernote](https://img.shields.io/chocolatey/dt/evernote.svg)](https://community.chocolatey.org/packages/evernote)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@27fed6f8dd2798ffab4521d990b1b8d893e65a62/icons/evernote.png" width="32" height="32"/> [![Evernote](https://img.shields.io/chocolatey/v/evernote.svg?label=Evernote)](https://community.chocolatey.org/packages/evernote) [![Evernote](https://img.shields.io/chocolatey/dt/evernote.svg)](https://community.chocolatey.org/packages/evernote)
 
 ## Usage
 

@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ab4abd1824f796fcb99d2770b9ab5ca4bd89eb2d/icons/server-backup-agent.png" width="48" height="48"/> [server-backup-agent](https://community.chocolatey.org/packages/server-backup-agent)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@eda90ffd96828fa4763837c49f376c8eec8e12a3/icons/server-backup-agent.png" width="48" height="48"/> [server-backup-agent](https://community.chocolatey.org/packages/server-backup-agent)
 
 ## R1Soft Server Backup agent (CDP)
 

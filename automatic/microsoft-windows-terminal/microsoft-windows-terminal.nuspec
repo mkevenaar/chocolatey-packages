@@ -36,7 +36,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Microsoft Corporation</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://github.com/microsoft/terminal</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@7d924f094e0faea8c264d6b973e7388c5f3a9ac8/icons/microsoft-windows-terminal.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@c22c9a3e3dd59ab1181cb729c7853f205478c3ea/icons/microsoft-windows-terminal.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Microsoft Corporation</copyright>
     <tags>microsoft-windows-terminal terminal windows10 admin</tags>

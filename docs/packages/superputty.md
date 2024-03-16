@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@218fd53341b8400391b0efdb75f313d01cdcf984/icons/superputty.png" width="32" height="32"/> [![SuperPutty](https://img.shields.io/chocolatey/v/superputty.svg?label=SuperPutty)](https://community.chocolatey.org/packages/superputty) [![SuperPutty](https://img.shields.io/chocolatey/dt/superputty.svg)](https://community.chocolatey.org/packages/superputty)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@16c9865113a11ca6482f97f0092c3482896afe02/icons/superputty.png" width="32" height="32"/> [![SuperPutty](https://img.shields.io/chocolatey/v/superputty.svg?label=SuperPutty)](https://community.chocolatey.org/packages/superputty) [![SuperPutty](https://img.shields.io/chocolatey/dt/superputty.svg)](https://community.chocolatey.org/packages/superputty)
 
 ## Usage
 

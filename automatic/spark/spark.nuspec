@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Ignite Realtime</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://www.igniterealtime.org/projects/spark</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@5ba00a7d7af3ba4d40acabfaa8c37fa14d43fdce/icons/spark.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@f6c41139d3f0dc5d0bef6076b3de43e1508b4c3a/icons/spark.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Ignite Realtime</copyright>
     <tags>chat group video xmpp jabber admin</tags>

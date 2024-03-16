@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@e2f83487f2aa24e89cc9af1ad396f7eaa4bec5bb/icons/PyCharm-community.png" width="32" height="32"/> [![JetBrains PyCharm (Install)](https://img.shields.io/chocolatey/v/pycharm-community.svg?label=JetBrains+PyCharm+(Install))](https://community.chocolatey.org/packages/pycharm-community) [![JetBrains PyCharm (Install)](https://img.shields.io/chocolatey/dt/pycharm-community.svg)](https://community.chocolatey.org/packages/pycharm-community)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@081d7b0b59739e4d377150098854a2244235fe01/icons/PyCharm-community.png" width="32" height="32"/> [![JetBrains PyCharm (Install)](https://img.shields.io/chocolatey/v/pycharm-community.svg?label=JetBrains+PyCharm+(Install))](https://community.chocolatey.org/packages/pycharm-community) [![JetBrains PyCharm (Install)](https://img.shields.io/chocolatey/dt/pycharm-community.svg)](https://community.chocolatey.org/packages/pycharm-community)
 
 ## Usage
 

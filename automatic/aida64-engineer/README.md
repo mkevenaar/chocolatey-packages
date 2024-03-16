@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4f65c53f100b466115e14fce7f20c8ae3a0cc838/icons/aida64-engineer.png" width="48" height="48"/> [aida64-engineer](https://community.chocolatey.org/packages/aida64-engineer)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@64bddbe0f873166c0a28485eb187f2be34bdb686/icons/aida64-engineer.png" width="48" height="48"/> [aida64-engineer](https://community.chocolatey.org/packages/aida64-engineer)
 
 AIDA64 Engineer is a cutting-edge system information tool for IT technicians, which not only provides extremely detailed information about both hardware and installed software, but also helps users diagnose issues and offers benchmarks to measure the performance of both workstations and servers.
 

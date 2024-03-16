@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@3f16690efbb345ead0514729720b357d6c0540ac/icons/music-collector.png" width="32" height="32"/> [![Music Collector](https://img.shields.io/chocolatey/v/music-collector.svg?label=Music+Collector)](https://community.chocolatey.org/packages/music-collector) [![Music Collector](https://img.shields.io/chocolatey/dt/music-collector.svg)](https://community.chocolatey.org/packages/music-collector)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@a06d6a19bb5dcb0ef64e72a8336d7e4cb0fe88e0/icons/music-collector.png" width="32" height="32"/> [![Music Collector](https://img.shields.io/chocolatey/v/music-collector.svg?label=Music+Collector)](https://community.chocolatey.org/packages/music-collector) [![Music Collector](https://img.shields.io/chocolatey/dt/music-collector.svg)](https://community.chocolatey.org/packages/music-collector)
 
 ## Usage
 

@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@0be2256749eb0618e325047a83c26f63ec96aeb9/icons/barcode-to-pc-server.png" width="32" height="32"/> [![Barcode to PC server](https://img.shields.io/chocolatey/v/barcode-to-pc-server.svg?label=Barcode+to+PC+server)](https://community.chocolatey.org/packages/barcode-to-pc-server) [![Barcode to PC server](https://img.shields.io/chocolatey/dt/barcode-to-pc-server.svg)](https://community.chocolatey.org/packages/barcode-to-pc-server)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@6f120c251069046e7b3cf022fb7e603f23e3668a/icons/barcode-to-pc-server.png" width="32" height="32"/> [![Barcode to PC server](https://img.shields.io/chocolatey/v/barcode-to-pc-server.svg?label=Barcode+to+PC+server)](https://community.chocolatey.org/packages/barcode-to-pc-server) [![Barcode to PC server](https://img.shields.io/chocolatey/dt/barcode-to-pc-server.svg)](https://community.chocolatey.org/packages/barcode-to-pc-server)
 
 ## Usage
 

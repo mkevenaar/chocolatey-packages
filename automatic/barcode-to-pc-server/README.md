@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@0be2256749eb0618e325047a83c26f63ec96aeb9/icons/barcode-to-pc-server.png" width="48" height="48"/> [barcode-to-pc-server](https://community.chocolatey.org/packages/barcode-to-pc-server)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@6f120c251069046e7b3cf022fb7e603f23e3668a/icons/barcode-to-pc-server.png" width="48" height="48"/> [barcode-to-pc-server](https://community.chocolatey.org/packages/barcode-to-pc-server)
 
 # Features
 

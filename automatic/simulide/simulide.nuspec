@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>SimulIDE</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://simulide.blogspot.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ab172920222bd8bb7e28a2f579b5e5d7e08de895/icons/simulide.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@00a90c0bf02817f373a69ed52b56380955e43d58/icons/simulide.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>SimulIDE</copyright>
     <tags>simulide simulator</tags>

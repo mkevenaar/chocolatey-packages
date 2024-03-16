@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@faf506da98b6ae7e18f12faa1c0c30daa386db65/icons/wireshark.png" width="32" height="32"/> [![Wireshark](https://img.shields.io/chocolatey/v/wireshark.svg?label=Wireshark)](https://community.chocolatey.org/packages/wireshark) [![Wireshark](https://img.shields.io/chocolatey/dt/wireshark.svg)](https://community.chocolatey.org/packages/wireshark)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@dd87af3c120e66d0910e9bb71a0c2b9a7acdd334/icons/wireshark.png" width="32" height="32"/> [![Wireshark](https://img.shields.io/chocolatey/v/wireshark.svg?label=Wireshark)](https://community.chocolatey.org/packages/wireshark) [![Wireshark](https://img.shields.io/chocolatey/dt/wireshark.svg)](https://community.chocolatey.org/packages/wireshark)
 
 ## Usage
 

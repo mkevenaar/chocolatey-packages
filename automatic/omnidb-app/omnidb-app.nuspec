@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>OmniDB</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://omnidb.org/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@23f6b5d54a231690eec95199bc5ca82b208aabba/icons/omnidb-app.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@8668581037bf14d6b31bcfb70156f8a01c816c6a/icons/omnidb-app.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>OmniDB</copyright>
     <tags>omnidb-app admin</tags>

@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ac3929abb895484448ef48cf4d7b8a1760695f94/icons/aida64-business.png" width="32" height="32"/> [![AIDA64 Business](https://img.shields.io/chocolatey/v/aida64-business.svg?label=AIDA64+Business)](https://community.chocolatey.org/packages/aida64-business) [![AIDA64 Business](https://img.shields.io/chocolatey/dt/aida64-business.svg)](https://community.chocolatey.org/packages/aida64-business)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@c81b24be45c733d678c120410c5c099719a080d6/icons/aida64-business.png" width="32" height="32"/> [![AIDA64 Business](https://img.shields.io/chocolatey/v/aida64-business.svg?label=AIDA64+Business)](https://community.chocolatey.org/packages/aida64-business) [![AIDA64 Business](https://img.shields.io/chocolatey/dt/aida64-business.svg)](https://community.chocolatey.org/packages/aida64-business)
 
 ## Usage
 

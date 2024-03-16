@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Nir Sofer</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://www.nirsoft.net/utils/wifi_information_view.html</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@be994ab8a840e0ada1e68cef1674288eef7e685c/icons/wifiinfoview.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@72f2d5a6dbdc0bf699b52b3716cfb15079ff7d53/icons/wifiinfoview.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>NirSoft</copyright>
     <tags>network summary info scan channel frequency</tags>

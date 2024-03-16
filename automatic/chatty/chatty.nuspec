@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Chatty</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://chatty.github.io</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@8b3048f63ff7034116beb3aa2dd82178f5eac3d8/icons/chatty.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@213ec784de199ff3b5e66b899992b257b1bd20c5/icons/chatty.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Chatty</copyright>
     <tags>chatty livestreamer streamlink twitch</tags>

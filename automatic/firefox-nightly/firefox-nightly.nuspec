@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Mozilla</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://www.mozilla.org/firefox/nightly/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@972436b98f0066a91d8f6899e42a6ccf06c7acbf/icons/firefox-nightly.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@8ecd254744fba13d72ef044bb50a01bfec89755b/icons/firefox-nightly.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Mozilla Foundation</copyright>
     <tags>browser mozilla firefox alpha admin foss cross-platform</tags>

@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Opera</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://www.opera.com/computer/beta</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@2d6548eb36c1599d8d5da98c79e1772f75d081e6/icons/opera-developer.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@8ec9f8788da2c63d293690b04b0b5c90e66e8d12/icons/opera-developer.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Opera Software</copyright>
     <tags>browser opera developer cross-platform internet admin</tags>

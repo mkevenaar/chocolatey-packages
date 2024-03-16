@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@6a9b0994ee75696e53493f5b9c6ee3717d7de164/icons/gitkraken.jpg" width="32" height="32"/> [![GitKraken](https://img.shields.io/chocolatey/v/gitkraken.svg?label=GitKraken)](https://community.chocolatey.org/packages/gitkraken) [![GitKraken](https://img.shields.io/chocolatey/dt/gitkraken.svg)](https://community.chocolatey.org/packages/gitkraken)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@e79a1cb3d5eeda949226195b6119fe41a511b9ce/icons/gitkraken.jpg" width="32" height="32"/> [![GitKraken](https://img.shields.io/chocolatey/v/gitkraken.svg?label=GitKraken)](https://community.chocolatey.org/packages/gitkraken) [![GitKraken](https://img.shields.io/chocolatey/dt/gitkraken.svg)](https://community.chocolatey.org/packages/gitkraken)
 
 ## Usage
 

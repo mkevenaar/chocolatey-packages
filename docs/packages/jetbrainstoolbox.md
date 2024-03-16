@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@971b30499daa016c8c9e3a7c249639e3b0d2c274/icons/jetbrainstoolbox.png" width="32" height="32"/> [![JetBrains Toolbox App (Install)](https://img.shields.io/chocolatey/v/jetbrainstoolbox.svg?label=JetBrains+Toolbox+App+(Install))](https://community.chocolatey.org/packages/jetbrainstoolbox) [![JetBrains Toolbox App (Install)](https://img.shields.io/chocolatey/dt/jetbrainstoolbox.svg)](https://community.chocolatey.org/packages/jetbrainstoolbox)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@fe58b3eef131f858f8ac788a44cf8bde8d9b1fe4/icons/jetbrainstoolbox.png" width="32" height="32"/> [![JetBrains Toolbox App (Install)](https://img.shields.io/chocolatey/v/jetbrainstoolbox.svg?label=JetBrains+Toolbox+App+(Install))](https://community.chocolatey.org/packages/jetbrainstoolbox) [![JetBrains Toolbox App (Install)](https://img.shields.io/chocolatey/dt/jetbrainstoolbox.svg)](https://community.chocolatey.org/packages/jetbrainstoolbox)
 
 ## Usage
 

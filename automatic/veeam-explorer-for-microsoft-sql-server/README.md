@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@b3e4c2b4dd49738c36e16499fd75c396a85315b6/icons/veeam-explorer-for-microsoft-sql-server.png" width="48" height="48"/> [veeam-explorer-for-microsoft-sql-server](https://community.chocolatey.org/packages/veeam-explorer-for-microsoft-sql-server)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@05b27e901fca790661514e9bcf95d4a86f374e31/icons/veeam-explorer-for-microsoft-sql-server.png" width="48" height="48"/> [veeam-explorer-for-microsoft-sql-server](https://community.chocolatey.org/packages/veeam-explorer-for-microsoft-sql-server)
 
 ## Exit when reboot detected
 

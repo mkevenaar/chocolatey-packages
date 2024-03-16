@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@9ef7d8e2821d9e6865606c6f0796bd9c5c5c1683/icons/windowsrepair.png" width="32" height="32"/> [![Windows Repair (Install)](https://img.shields.io/chocolatey/v/windowsrepair.install.svg?label=Windows+Repair+(Install))](https://community.chocolatey.org/packages/windowsrepair.install) [![Windows Repair (Install)](https://img.shields.io/chocolatey/dt/windowsrepair.install.svg)](https://community.chocolatey.org/packages/windowsrepair.install)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@c4a2bf81dfb064ee796b2ef3671927fe56a3c7a3/icons/windowsrepair.png" width="32" height="32"/> [![Windows Repair (Install)](https://img.shields.io/chocolatey/v/windowsrepair.install.svg?label=Windows+Repair+(Install))](https://community.chocolatey.org/packages/windowsrepair.install) [![Windows Repair (Install)](https://img.shields.io/chocolatey/dt/windowsrepair.install.svg)](https://community.chocolatey.org/packages/windowsrepair.install)
 
 ## Usage
 

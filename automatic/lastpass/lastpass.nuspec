@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>LogMeIn, Inc.</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://lastpass.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@0411adaf8f882b9f2afe83ed6fa048135378742c/icons/lastpass.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@c2affb9ae13977187e7d845905b0c203fd51a970/icons/lastpass.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>LogMeIn, Inc.</copyright>
     <tags>lastpass password admin</tags>

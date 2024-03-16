@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@3559cef4d1eb00218748abd0fdf44ace62344147/icons/win32diskimager.png" width="32" height="32"/> [![Win32 Disk Imager](https://img.shields.io/chocolatey/v/win32diskimager.svg?label=Win32+Disk+Imager)](https://community.chocolatey.org/packages/win32diskimager) [![Win32 Disk Imager](https://img.shields.io/chocolatey/dt/win32diskimager.svg)](https://community.chocolatey.org/packages/win32diskimager)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@53a78b40edf1142be12cfb9bd87deeecf9f8c6a2/icons/win32diskimager.png" width="32" height="32"/> [![Win32 Disk Imager](https://img.shields.io/chocolatey/v/win32diskimager.svg?label=Win32+Disk+Imager)](https://community.chocolatey.org/packages/win32diskimager) [![Win32 Disk Imager](https://img.shields.io/chocolatey/dt/win32diskimager.svg)](https://community.chocolatey.org/packages/win32diskimager)
 
 ## Usage
 

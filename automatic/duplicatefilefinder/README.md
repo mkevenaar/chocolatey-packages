@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4bbb0dafc56bfb1020c6d2b1d8ad05ea8e90d0b5/icons/duplicatefilefinder.png" width="48" height="48"/> [duplicatefilefinder](https://community.chocolatey.org/packages/duplicatefilefinder)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@a2f72310c47a30845d22ffef9f4c75b065d5e077/icons/duplicatefilefinder.png" width="48" height="48"/> [duplicatefilefinder](https://community.chocolatey.org/packages/duplicatefilefinder)
 
 Duplicate File Finder will help you locate and remove useless file duplicates to free up disk space and better organize your file collections. You will have full control in being able to look through the list of duplicates and decide which copy to keep.
 

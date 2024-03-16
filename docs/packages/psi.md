@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@d8c446cc443361885a3ac97f172d559c02e5a713/icons/psi.png" width="32" height="32"/> [![Psi](https://img.shields.io/chocolatey/v/psi.svg?label=Psi)](https://community.chocolatey.org/packages/psi) [![Psi](https://img.shields.io/chocolatey/dt/psi.svg)](https://community.chocolatey.org/packages/psi)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@1a2e63eab3c9efff3dcf886a35eab66a33568f0a/icons/psi.png" width="32" height="32"/> [![Psi](https://img.shields.io/chocolatey/v/psi.svg?label=Psi)](https://community.chocolatey.org/packages/psi) [![Psi](https://img.shields.io/chocolatey/dt/psi.svg)](https://community.chocolatey.org/packages/psi)
 
 ## Usage
 

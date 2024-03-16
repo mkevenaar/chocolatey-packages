@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>FinalWire Ltd</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://www.aida64.com/products/aida64-business</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ac3929abb895484448ef48cf4d7b8a1760695f94/icons/aida64-business.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@c81b24be45c733d678c120410c5c099719a080d6/icons/aida64-business.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>FinalWire Ltd</copyright>
     <tags>trial diagnostic benchmark monitor audit inventory remote</tags>

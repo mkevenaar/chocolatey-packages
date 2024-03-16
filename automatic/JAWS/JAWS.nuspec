@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Freedom Scientific</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://www.freedomscientific.com/products/software/jaws/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@e8482fd8d4d0eb2ec196902b39a85218f67c361b/icons/JAWS.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@7eda158bcaa9de58f845434ce5925435274c6637/icons/JAWS.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Freedom Scientific. All rights reserved.</copyright>
     <tags>jaws screenreeder trial admin</tags>

@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@11fc26adf401e7d7c62ee06da6838c469aa5eb3b/icons/tomtom-mydrive-connect.png" width="32" height="32"/> [![TomTom MyDrive Connect](https://img.shields.io/chocolatey/v/tomtom-mydrive-connect.svg?label=TomTom+MyDrive+Connect)](https://community.chocolatey.org/packages/tomtom-mydrive-connect) [![TomTom MyDrive Connect](https://img.shields.io/chocolatey/dt/tomtom-mydrive-connect.svg)](https://community.chocolatey.org/packages/tomtom-mydrive-connect)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@86ad3e5602f41deae0b68822437731e5e51de3a8/icons/tomtom-mydrive-connect.png" width="32" height="32"/> [![TomTom MyDrive Connect](https://img.shields.io/chocolatey/v/tomtom-mydrive-connect.svg?label=TomTom+MyDrive+Connect)](https://community.chocolatey.org/packages/tomtom-mydrive-connect) [![TomTom MyDrive Connect](https://img.shields.io/chocolatey/dt/tomtom-mydrive-connect.svg)](https://community.chocolatey.org/packages/tomtom-mydrive-connect)
 
 ## Usage
 

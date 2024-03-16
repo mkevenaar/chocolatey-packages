@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Microsoft Corporation</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://www.microsoft.com/en-us/download/details.aspx?id=53164</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@d7431aa700805ce218e635affdde122a93466b03/icons/SQL2014.ClrTypes.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@6c6e62dd16bdf806de921908360588e1a7ed7722/icons/SQL2014.ClrTypes.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Microsoft Corporation</copyright>
     <tags>microsoft-system-clr-types-for-sql-server-2014 SQL SQL2014 .NET CLR admin</tags>

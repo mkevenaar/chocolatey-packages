@@ -36,7 +36,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <title>Etcher</title>
     <authors>Resin.io</authors>
     <projectUrl>https://etcher.io</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@d9b0daf3c9830ec580c70bb5d0b018736e73adde/icons/etcher.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@1d7d171cf348280ab9a726c33f980843b9bd1757/icons/etcher.png</iconUrl>
     <copyright>Resin.io</copyright>
     <tags>etcher usb format boot cross-platform foss balena balenaetcher img flasher dd write sd admin</tags>
     <releaseNotes>https://github.com/resin-io/etcher/blob/master/CHANGELOG.md</releaseNotes>

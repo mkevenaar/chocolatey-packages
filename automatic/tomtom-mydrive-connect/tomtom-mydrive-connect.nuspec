@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>TomTom International B.V.</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://www.tomtom.com/mydrive-connect/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@11fc26adf401e7d7c62ee06da6838c469aa5eb3b/icons/tomtom-mydrive-connect.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@86ad3e5602f41deae0b68822437731e5e51de3a8/icons/tomtom-mydrive-connect.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>TomTom International B.V.</copyright>
     <tags>tomtom-mydrive-connect tomtom navigation update cross-platform freeware admin</tags>

@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@e55b3c228cf6b5fd2088d60a69320fc278f6e030/icons/icloud.png" width="32" height="32"/> [![Apple iCloud](https://img.shields.io/chocolatey/v/iCloud.svg?label=Apple+iCloud)](https://community.chocolatey.org/packages/iCloud) [![Apple iCloud](https://img.shields.io/chocolatey/dt/iCloud.svg)](https://community.chocolatey.org/packages/iCloud)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@d46940a621e0aab565b4f17c16b5c698e2be470b/icons/icloud.png" width="32" height="32"/> [![Apple iCloud](https://img.shields.io/chocolatey/v/iCloud.svg?label=Apple+iCloud)](https://community.chocolatey.org/packages/iCloud) [![Apple iCloud](https://img.shields.io/chocolatey/dt/iCloud.svg)](https://community.chocolatey.org/packages/iCloud)
 
 ## Usage
 

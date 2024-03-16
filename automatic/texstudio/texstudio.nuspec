@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Benito van der Zander, Jan Sundermeyer, Daniel Braun, Tim Hoffmann</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://www.texstudio.org/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@40810f199752424b7b3e7b70bf9a8a2a2d426518/icons/texstudio.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@b978724457daab41d3e35df59c103a74dcbe6000/icons/texstudio.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Benito van der Zander, Jan Sundermeyer, Daniel Braun, Tim Hoffmann</copyright>
     <tags>admin tex latex texmaker texstudio miktex editor</tags>

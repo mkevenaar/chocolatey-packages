@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@04dc5eb5743f7aec66c0fd7a583fe56cb80aa51a/icons/helio-workstation.png" width="48" height="48"/> [helio-workstation.portable](https://community.chocolatey.org/packages/helio-workstation.portable)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@541c39f37252917dbd3f0673ea1c9b1e90528504/icons/helio-workstation.png" width="48" height="48"/> [helio-workstation.portable](https://community.chocolatey.org/packages/helio-workstation.portable)
 
 ## ![helio-workstation example](https://cdn.jsdelivr.net/gh/helio-fm/helio-workstation@30a8ba6b1ab4d5421887dce9fc0eae77e3c266fc/Resources/screen-v2.png)
 

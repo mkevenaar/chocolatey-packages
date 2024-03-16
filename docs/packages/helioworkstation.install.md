@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@04dc5eb5743f7aec66c0fd7a583fe56cb80aa51a/icons/helio-workstation.png" width="32" height="32"/> [![Helio Workstation (Install)](https://img.shields.io/chocolatey/v/helio-workstation.install.svg?label=Helio+Workstation+(Install))](https://community.chocolatey.org/packages/helio-workstation.install) [![Helio Workstation (Install)](https://img.shields.io/chocolatey/dt/helio-workstation.install.svg)](https://community.chocolatey.org/packages/helio-workstation.install)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@541c39f37252917dbd3f0673ea1c9b1e90528504/icons/helio-workstation.png" width="32" height="32"/> [![Helio Workstation (Install)](https://img.shields.io/chocolatey/v/helio-workstation.install.svg?label=Helio+Workstation+(Install))](https://community.chocolatey.org/packages/helio-workstation.install) [![Helio Workstation (Install)](https://img.shields.io/chocolatey/dt/helio-workstation.install.svg)](https://community.chocolatey.org/packages/helio-workstation.install)
 
 ## Usage
 

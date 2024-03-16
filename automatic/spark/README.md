@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@5ba00a7d7af3ba4d40acabfaa8c37fa14d43fdce/icons/spark.png" width="48" height="48"/> [spark](https://community.chocolatey.org/packages/spark)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@f6c41139d3f0dc5d0bef6076b3de43e1508b4c3a/icons/spark.png" width="48" height="48"/> [spark](https://community.chocolatey.org/packages/spark)
 
 ## Spark
 

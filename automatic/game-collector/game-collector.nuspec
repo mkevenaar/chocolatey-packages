@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Collectorz.com</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://www.collectorz.com/game/game-collector</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4de82d783c8574401d9b506f1391a611db64c3e6/icons/game-collector.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@c91711803fd6a71c3a95270fe5a5353c05852dbf/icons/game-collector.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Collectorz.com</copyright>
     <tags>game-collector clz collectorz trial admin</tags>

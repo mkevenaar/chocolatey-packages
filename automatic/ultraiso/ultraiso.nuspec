@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>EZB Systems,Inc</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://www.ezbsystems.com/ultraiso/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@855b0e8af6bfa3130897fcd125809c10721a7d23/icons/ultraiso.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ddcedfafe242553f39b101b695d2d7b4c348f342/icons/ultraiso.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>EZB Systems, Inc</copyright>
     <tags>trial tools iso bootable-usb admin</tags>

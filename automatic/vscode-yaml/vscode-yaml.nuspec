@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Red Hat</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://marketplace.visualstudio.com/items?itemName=redhat.vscode-yaml</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@012830bf1d08a51c5b0bf0d95884b1883d69da7b/icons/vscode-yaml.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@d2dd0d0fb9b676251bcd26d3b1988a1815b85f10/icons/vscode-yaml.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Red Hat</copyright>
     <tags>vscode-yaml red-hat redhat extension vscode</tags>

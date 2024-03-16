@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@7d924f094e0faea8c264d6b973e7388c5f3a9ac8/icons/microsoft-windows-terminal.png" width="32" height="32"/> [![Windows Terminal](https://img.shields.io/chocolatey/v/microsoft-windows-terminal.svg?label=Windows+Terminal)](https://community.chocolatey.org/packages/microsoft-windows-terminal) [![Windows Terminal](https://img.shields.io/chocolatey/dt/microsoft-windows-terminal.svg)](https://community.chocolatey.org/packages/microsoft-windows-terminal)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@c22c9a3e3dd59ab1181cb729c7853f205478c3ea/icons/microsoft-windows-terminal.png" width="32" height="32"/> [![Windows Terminal](https://img.shields.io/chocolatey/v/microsoft-windows-terminal.svg?label=Windows+Terminal)](https://community.chocolatey.org/packages/microsoft-windows-terminal) [![Windows Terminal](https://img.shields.io/chocolatey/dt/microsoft-windows-terminal.svg)](https://community.chocolatey.org/packages/microsoft-windows-terminal)
 
 ## Usage
 

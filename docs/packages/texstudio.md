@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@40810f199752424b7b3e7b70bf9a8a2a2d426518/icons/texstudio.png" width="32" height="32"/> [![TeXstudio](https://img.shields.io/chocolatey/v/texstudio.svg?label=TeXstudio)](https://community.chocolatey.org/packages/texstudio) [![TeXstudio](https://img.shields.io/chocolatey/dt/texstudio.svg)](https://community.chocolatey.org/packages/texstudio)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@b978724457daab41d3e35df59c103a74dcbe6000/icons/texstudio.png" width="32" height="32"/> [![TeXstudio](https://img.shields.io/chocolatey/v/texstudio.svg?label=TeXstudio)](https://community.chocolatey.org/packages/texstudio) [![TeXstudio](https://img.shields.io/chocolatey/dt/texstudio.svg)](https://community.chocolatey.org/packages/texstudio)
 
 ## Usage
 

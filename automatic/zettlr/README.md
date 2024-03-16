@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4fa07822efa981d198c0dd8801a7a98219c5184c/icons/zettlr.png" width="48" height="48"/> [zettlr](https://community.chocolatey.org/packages/zettlr)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@5a78e1ccfc8614c8b11e7e7cc17434ee55bedd15/icons/zettlr.png" width="48" height="48"/> [zettlr](https://community.chocolatey.org/packages/zettlr)
 
 ![The central window of Zettlr](https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@5e55e33f3550ffba353990103f9a0ffadda9adc7/automatic/zettlr/screenshot.png)
 

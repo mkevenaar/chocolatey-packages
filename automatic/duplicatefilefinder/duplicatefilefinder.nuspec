@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Auslogics</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://www.auslogics.com/en/software/duplicate-file-finder/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4bbb0dafc56bfb1020c6d2b1d8ad05ea8e90d0b5/icons/duplicatefilefinder.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@a2f72310c47a30845d22ffef9f4c75b065d5e077/icons/duplicatefilefinder.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Auslogics</copyright>
     <tags>file-duplicates deduplication freeware admin</tags>

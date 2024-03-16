@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@e1d9a5ea9725b2f50f96ef7550d6537ea4450768/icons/devmanview.png" width="32" height="32"/> [![DevManView](https://img.shields.io/chocolatey/v/devmanview.svg?label=DevManView)](https://community.chocolatey.org/packages/devmanview) [![DevManView](https://img.shields.io/chocolatey/dt/devmanview.svg)](https://community.chocolatey.org/packages/devmanview)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4738ff100a5877c872df119fa7062165c6a824c0/icons/devmanview.png" width="32" height="32"/> [![DevManView](https://img.shields.io/chocolatey/v/devmanview.svg?label=DevManView)](https://community.chocolatey.org/packages/devmanview) [![DevManView](https://img.shields.io/chocolatey/dt/devmanview.svg)](https://community.chocolatey.org/packages/devmanview)
 
 ## Usage
 

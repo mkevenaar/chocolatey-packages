@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@083dd15e52cd8b007dd76e7ec933436c910dbe83/icons/mongodb.png" width="32" height="32"/> [![MongoDB (Install)](https://img.shields.io/chocolatey/v/mongodb.install.svg?label=MongoDB+(Install))](https://community.chocolatey.org/packages/mongodb.install) [![MongoDB (Install)](https://img.shields.io/chocolatey/dt/mongodb.install.svg)](https://community.chocolatey.org/packages/mongodb.install)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4106c5776d3ca53c63912a20b56fc3b41a535a43/icons/mongodb.png" width="32" height="32"/> [![MongoDB (Install)](https://img.shields.io/chocolatey/v/mongodb.install.svg?label=MongoDB+(Install))](https://community.chocolatey.org/packages/mongodb.install) [![MongoDB (Install)](https://img.shields.io/chocolatey/dt/mongodb.install.svg)](https://community.chocolatey.org/packages/mongodb.install)
 
 ## Usage
 

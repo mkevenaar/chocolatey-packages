@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ae9a5d45a8eb3a6276aad2f781b8cc2ccf86f267/icons/rocrail.png" width="48" height="48"/> [rocrail](https://community.chocolatey.org/packages/rocrail)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@fabf3f9b3fb2f1e2308ad7d2aa376c99db3dc39b/icons/rocrail.png" width="48" height="48"/> [rocrail](https://community.chocolatey.org/packages/rocrail)
 
 Rocrail is free software for controlling model trains for Linux, Apple macOS, Raspberry Pi & Odroid and of course Windows operating systems.
 

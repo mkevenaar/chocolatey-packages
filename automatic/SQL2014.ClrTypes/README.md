@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@d7431aa700805ce218e635affdde122a93466b03/icons/SQL2014.ClrTypes.png" width="48" height="48"/> [SQL2014.ClrTypes](https://community.chocolatey.org/packages/SQL2014.ClrTypes)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@6c6e62dd16bdf806de921908360588e1a7ed7722/icons/SQL2014.ClrTypes.png" width="48" height="48"/> [SQL2014.ClrTypes](https://community.chocolatey.org/packages/SQL2014.ClrTypes)
 
 The SQL Server System CLR Types package contains the components implementing the new geometry, geography, and hierarchyid types in SQL Server 2014. This component can be installed separately from the server to allow client applications to use these types outside of the server.
 

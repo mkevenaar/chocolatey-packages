@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@083dd15e52cd8b007dd76e7ec933436c910dbe83/icons/mongodb.png" width="48" height="48"/> [mongodb.portable](https://community.chocolatey.org/packages/mongodb.portable)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4106c5776d3ca53c63912a20b56fc3b41a535a43/icons/mongodb.png" width="48" height="48"/> [mongodb.portable](https://community.chocolatey.org/packages/mongodb.portable)
 
 MongoDB (from "humongous") is a scalable, high-performance, open source NoSQL database written in C++.
 

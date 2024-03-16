@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Intel</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://downloadcenter.intel.com/Detail_Desc.aspx?DwnldID=30058</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4222ecff31a588907bd4290d5106e8cfc84a4745/icons/intel-mas.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@794b72b6a786e5a0f6084b242f65586e60ba6c83/icons/intel-mas.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Intel</copyright>
     <tags>intel-memory-and-storage-tool ssd firmware memroy admin</tags>

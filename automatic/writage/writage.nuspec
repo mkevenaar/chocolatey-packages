@@ -36,7 +36,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Text Software Limited</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://www.writage.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@77922186ca474d25299d683ca4cdb586eb34825c/icons/writage.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@6e694f4b85a55e659b9f4d33758e4e556afff533/icons/writage.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Text Software Limited</copyright>
     <tags>writage markdown word admin</tags>

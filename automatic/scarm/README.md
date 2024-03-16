@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@9a3aec2cd14cadf9ff04d111fcc1ae400959b1c9/icons/scarm.png" width="48" height="48"/> [scarm](https://community.chocolatey.org/packages/scarm)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@323595ed55bdb26e1af255afd14a80ac860ed821/icons/scarm.png" width="48" height="48"/> [scarm](https://community.chocolatey.org/packages/scarm)
 
 SCARM means Simple Computer Aided Railway Modeller – software for easy and precise design of model train layouts and railroad track plans.
 

@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@793b0f9445b2258a192e23bba3d482e7df9db46b/icons/ultravnc.png" width="32" height="32"/> [![UltraVNC](https://img.shields.io/chocolatey/v/ultravnc.svg?label=UltraVNC)](https://community.chocolatey.org/packages/ultravnc) [![UltraVNC](https://img.shields.io/chocolatey/dt/ultravnc.svg)](https://community.chocolatey.org/packages/ultravnc)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@f3646baccfb720a0999612d163766ead103022e3/icons/ultravnc.png" width="32" height="32"/> [![UltraVNC](https://img.shields.io/chocolatey/v/ultravnc.svg?label=UltraVNC)](https://community.chocolatey.org/packages/ultravnc) [![UltraVNC](https://img.shields.io/chocolatey/dt/ultravnc.svg)](https://community.chocolatey.org/packages/ultravnc)
 
 ## Usage
 

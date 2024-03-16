@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@320be0f0eca14083b7ba734b13a417b407225a8b/icons/mariadb.png" width="32" height="32"/> [![MariaDB](https://img.shields.io/chocolatey/v/mariadb.svg?label=MariaDB)](https://community.chocolatey.org/packages/mariadb) [![MariaDB](https://img.shields.io/chocolatey/dt/mariadb.svg)](https://community.chocolatey.org/packages/mariadb)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@c518d179861bc201aede2754562c8ae9a2858d61/icons/mariadb.png" width="32" height="32"/> [![MariaDB](https://img.shields.io/chocolatey/v/mariadb.svg?label=MariaDB)](https://community.chocolatey.org/packages/mariadb) [![MariaDB](https://img.shields.io/chocolatey/dt/mariadb.svg)](https://community.chocolatey.org/packages/mariadb)
 
 ## Usage
 

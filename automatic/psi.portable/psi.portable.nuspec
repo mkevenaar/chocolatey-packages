@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Justin Karneges,Kevin Smith</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://psi-im.org/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@d8c446cc443361885a3ac97f172d559c02e5a713/icons/psi.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@1a2e63eab3c9efff3dcf886a35eab66a33568f0a/icons/psi.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Psi Team</copyright>
     <tags>xmpp messenger chat gnupg qt</tags>

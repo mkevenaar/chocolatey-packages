@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@51247a81a30c4c8d14434fcbc61c7a0b750c0945/icons/winrar.png" width="32" height="32"/> [![WinRAR](https://img.shields.io/chocolatey/v/winrar.svg?label=WinRAR)](https://community.chocolatey.org/packages/winrar) [![WinRAR](https://img.shields.io/chocolatey/dt/winrar.svg)](https://community.chocolatey.org/packages/winrar)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@646ffab0085403b1476d1d7e4ad50a1a82203e67/icons/winrar.png" width="32" height="32"/> [![WinRAR](https://img.shields.io/chocolatey/v/winrar.svg?label=WinRAR)](https://community.chocolatey.org/packages/winrar) [![WinRAR](https://img.shields.io/chocolatey/dt/winrar.svg)](https://community.chocolatey.org/packages/winrar)
 
 ## Usage
 

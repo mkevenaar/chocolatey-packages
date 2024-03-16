@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4de82d783c8574401d9b506f1391a611db64c3e6/icons/game-collector.png" width="48" height="48"/> [game-collector](https://community.chocolatey.org/packages/game-collector)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@c91711803fd6a71c3a95270fe5a5353c05852dbf/icons/game-collector.png" width="48" height="48"/> [game-collector](https://community.chocolatey.org/packages/game-collector)
 
 Video Game Database Software - catalog your game collection
 

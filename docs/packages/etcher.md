@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@d9b0daf3c9830ec580c70bb5d0b018736e73adde/icons/etcher.png" width="32" height="32"/> [![Etcher](https://img.shields.io/chocolatey/v/etcher.svg?label=Etcher)](https://community.chocolatey.org/packages/etcher) [![Etcher](https://img.shields.io/chocolatey/dt/etcher.svg)](https://community.chocolatey.org/packages/etcher)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@1d7d171cf348280ab9a726c33f980843b9bd1757/icons/etcher.png" width="32" height="32"/> [![Etcher](https://img.shields.io/chocolatey/v/etcher.svg?label=Etcher)](https://community.chocolatey.org/packages/etcher) [![Etcher](https://img.shields.io/chocolatey/dt/etcher.svg)](https://community.chocolatey.org/packages/etcher)
 
 ## Usage
 

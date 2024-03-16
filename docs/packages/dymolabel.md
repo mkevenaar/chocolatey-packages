@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@b740eda125847cf997405fd3c7e8c470218f2292/icons/dymo-label.png" width="32" height="32"/> [![DYMO Label](https://img.shields.io/chocolatey/v/dymo-label.svg?label=DYMO+Label)](https://community.chocolatey.org/packages/dymo-label) [![DYMO Label](https://img.shields.io/chocolatey/dt/dymo-label.svg)](https://community.chocolatey.org/packages/dymo-label)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@8775790b1ebc1c983f60998157dbd5ed7cfcf361/icons/dymo-label.png" width="32" height="32"/> [![DYMO Label](https://img.shields.io/chocolatey/v/dymo-label.svg?label=DYMO+Label)](https://community.chocolatey.org/packages/dymo-label) [![DYMO Label](https://img.shields.io/chocolatey/dt/dymo-label.svg)](https://community.chocolatey.org/packages/dymo-label)
 
 ## Usage
 

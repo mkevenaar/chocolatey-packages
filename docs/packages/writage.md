@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@77922186ca474d25299d683ca4cdb586eb34825c/icons/writage.png" width="32" height="32"/> [![Writage](https://img.shields.io/chocolatey/v/writage.svg?label=Writage)](https://community.chocolatey.org/packages/writage) [![Writage](https://img.shields.io/chocolatey/dt/writage.svg)](https://community.chocolatey.org/packages/writage)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@6e694f4b85a55e659b9f4d33758e4e556afff533/icons/writage.png" width="32" height="32"/> [![Writage](https://img.shields.io/chocolatey/v/writage.svg?label=Writage)](https://community.chocolatey.org/packages/writage) [![Writage](https://img.shields.io/chocolatey/dt/writage.svg)](https://community.chocolatey.org/packages/writage)
 
 ## Usage
 

@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>VideoLAN Organization</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://nightlies.videolan.org/index.html</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@a562571bebc3bd7f25660341bd2ab5db86f5ff25/icons/vlc-nightly.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@6df622a4cab687cecd53a762025616155896faff/icons/vlc-nightly.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>VideoLAN</copyright>
     <tags>vlc-nightly vlc videolan admin</tags>

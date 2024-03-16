@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@35a3c2c9405695b548d10666884abcf238e92e1e/icons/omnidb-server.png" width="32" height="32"/> [![OmniDB-server](https://img.shields.io/chocolatey/v/omnidb-server.svg?label=OmniDB-server)](https://community.chocolatey.org/packages/omnidb-server) [![OmniDB-server](https://img.shields.io/chocolatey/dt/omnidb-server.svg)](https://community.chocolatey.org/packages/omnidb-server)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ab055ea9be30b03b5238d502f47cd39d362ae0fe/icons/omnidb-server.png" width="32" height="32"/> [![OmniDB-server](https://img.shields.io/chocolatey/v/omnidb-server.svg?label=OmniDB-server)](https://community.chocolatey.org/packages/omnidb-server) [![OmniDB-server](https://img.shields.io/chocolatey/dt/omnidb-server.svg)](https://community.chocolatey.org/packages/omnidb-server)
 
 ## Usage
 

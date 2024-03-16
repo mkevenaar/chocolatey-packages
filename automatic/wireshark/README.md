@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@faf506da98b6ae7e18f12faa1c0c30daa386db65/icons/wireshark.png" width="48" height="48"/> [wireshark](https://community.chocolatey.org/packages/wireshark)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@dd87af3c120e66d0910e9bb71a0c2b9a7acdd334/icons/wireshark.png" width="48" height="48"/> [wireshark](https://community.chocolatey.org/packages/wireshark)
 
 Wireshark is the world’s foremost and widely-used network protocol analyzer. It lets you see what’s happening on your network at a microscopic level and is the de facto (and often de jure) standard across many commercial and non-profit enterprises, government agencies, and educational institutions. Wireshark development thrives thanks to the volunteer contributions of networking experts around the globe and is the continuation of a project started by Gerald Combs in 1998.
 

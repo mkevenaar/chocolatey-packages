@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Peter Rudenko</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://helio.fm/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@04dc5eb5743f7aec66c0fd7a583fe56cb80aa51a/icons/helio-workstation.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@541c39f37252917dbd3f0673ea1c9b1e90528504/icons/helio-workstation.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Peter Rudenko</copyright>
     <tags>helio-workstation helio</tags>
