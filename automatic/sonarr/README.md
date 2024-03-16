@@ -26,3 +26,7 @@ Sonarr (formerly NzbDrone) is a PVR for Usenet and BitTorrent users. It can moni
 ## Notes
 
 Installs as a service, to get to Sonarr open browser and go to [localhost]:8989 (remove the brackets)
+
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know the package is no longer updating correctly.
