@@ -1,4 +1,26 @@
-# [<img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@f8b7a8ffdde499925336648853e9179ae6ceb8f6/icons/prowlarr.png" height="48" width="48" /> ![Prowlarr](https://img.shields.io/chocolatey/v/prowlarr.svg?label=Prowlarr&style=for-the-badge)](https://chocolatey.org/packages/prowlarr)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@f8b7a8ffdde499925336648853e9179ae6ceb8f6/icons/prowlarr.png" width="32" height="32"/> [![Prowlarr](https://img.shields.io/chocolatey/v/prowlarr.svg?label=Prowlarr)](https://community.chocolatey.org/packages/prowlarr) [![Prowlarr](https://img.shields.io/chocolatey/dt/prowlarr.svg)](https://community.chocolatey.org/packages/prowlarr)
+
+## Usage
+
+To install Prowlarr, run the following command from the command line or from PowerShell:
+
+```powershell
+choco install prowlarr
+```
+
+To upgrade Prowlarr, run the following command from the command line or from PowerShell:
+
+```powershell
+choco upgrade prowlarr
+```
+
+To uninstall Prowlarr, run the following command from the command line or from PowerShell:
+
+```powershell
+choco uninstall prowlarr
+```
+
+## Description
 
 [Prowlarr](https://github.com/Prowlarr/Prowlarr) is a indexer manager/proxy built on the popular arr .net/reactjs base stack to integrate with your various PVR apps. Prowlarr supports both Torrent Trackers and Usenet Indexers. It integrates seamlessly with Sonarr, Radarr, Lidarr, and Readarr offering complete management of your indexers with no per app Indexer setup required (we do it all).
 
@@ -29,3 +51,13 @@ Installs as a service, to get to Prowlarr open browser and go to [localhost]:969
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
+
+
+## Links
+
+[Chocolatey Package Page](https://community.chocolatey.org/packages/prowlarr)
+
+[Software Site](https://prowlarr.com/)
+
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/prowlarr)
+

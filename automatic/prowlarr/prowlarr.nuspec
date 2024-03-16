@@ -37,14 +37,14 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>https://github.com/Prowlarr/Prowlarr/graphs/contributors</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://prowlarr.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/JourneyOver/chocolatey-packages@6095413768de0bd32f182d4f06c13da0e2471942/automatic/prowlarr/icons/512x512.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@f8b7a8ffdde499925336648853e9179ae6ceb8f6/icons/prowlarr.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Copyright Prowlarr</copyright>
     <tags>prowlarr indexer torrent-search-engine torrent-management torrent-downloader torznab newznab rss rss-proxy p2p filesharing torrent nntp proxy server sonarr radarr lidarr arr admin</tags>
     <releaseNotes>https://github.com/Prowlarr/Prowlarr/releases</releaseNotes>
     <licenseUrl>https://github.com/Prowlarr/Prowlarr/blob/develop/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <packageSourceUrl>https://github.com/journeyover/chocolatey-packages/tree/master/automatic/prowlarr</packageSourceUrl>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/prowlarr</packageSourceUrl>
     <docsUrl>https://wiki.servarr.com/prowlarr</docsUrl>
     <mailingListUrl>https://www.reddit.com/r/prowlarr/</mailingListUrl>
     <bugTrackerUrl>https://github.com/Prowlarr/Prowlarr/issues</bugTrackerUrl>

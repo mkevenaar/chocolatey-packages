@@ -37,14 +37,14 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>https://github.com/Sonarr/Sonarr/graphs/contributors</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://sonarr.tv/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/JourneyOver/chocolatey-packages@76c7b31b4ba90b90decfbc40c928a9b939973555/automatic/sonarr/icons/128x128.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@9488a1da3f6e0cbc656374cdc1220aa8e28de542/icons/sonarr.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>© 2021 Sonarr. All rights reserved.</copyright>
     <tags>sonarr pvr p2p filesharing torrent nntp admin</tags>
     <releaseNotes>https://github.com/Sonarr/Sonarr/releases</releaseNotes>
     <licenseUrl>https://github.com/Sonarr/Sonarr/blob/develop/LICENSE.md</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <packageSourceUrl>https://github.com/journeyover/chocolatey-packages/tree/master/automatic/sonarr</packageSourceUrl>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/sonarr</packageSourceUrl>
     <docsUrl>https://wiki.servarr.com/Sonarr</docsUrl>
     <mailingListUrl>https://forums.sonarr.tv/</mailingListUrl>
     <bugTrackerUrl>https://github.com/Sonarr/Sonarr/issues</bugTrackerUrl>

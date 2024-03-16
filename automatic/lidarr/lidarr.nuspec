@@ -37,14 +37,14 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>https://github.com/lidarr/Lidarr/graphs/contributors</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://lidarr.audio/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/JourneyOver/chocolatey-packages@76c7b31b4ba90b90decfbc40c928a9b939973555/automatic/lidarr/icons/128x128.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@e584be55fa3a82faee28de798041b5fefeefd4ec/icons/lidarr.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>© 2020 Lidarr. All rights reserved.</copyright>
     <tags>lidarr pvr p2p filesharing torrent nntp admin</tags>
     <releaseNotes>https://github.com/lidarr/Lidarr/releases/</releaseNotes>
     <licenseUrl>https://github.com/Lidarr/Lidarr/blob/develop/LICENSE.md</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <packageSourceUrl>https://github.com/journeyover/chocolatey-packages/tree/master/automatic/lidarr</packageSourceUrl>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/lidarr</packageSourceUrl>
     <docsUrl>https://wiki.servarr.com/lidarr</docsUrl>
     <mailingListUrl>https://www.reddit.com/r/Lidarr</mailingListUrl>
     <bugTrackerUrl>https://github.com/lidarr/Lidarr/issues</bugTrackerUrl>

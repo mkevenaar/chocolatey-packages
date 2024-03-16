@@ -36,14 +36,14 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>https://github.com/Radarr/Radarr/graphs/contributors</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://radarr.video/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/JourneyOver/chocolatey-packages@76c7b31b4ba90b90decfbc40c928a9b939973555/automatic/radarr/icons/512x512.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@d8fcd2811c42e9f7401946802dc57da9a7b2b585/icons/radarr.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>© 2020 Radarr. All rights reserved.</copyright>
     <tags>radarr pvr p2p filesharing torrent nntp admin</tags>
     <releaseNotes>https://github.com/Radarr/Radarr/releases</releaseNotes>
     <licenseUrl>https://github.com/Radarr/Radarr/blob/develop/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <packageSourceUrl>https://github.com/journeyover/chocolatey-packages/tree/master/automatic/radarr</packageSourceUrl>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/radarr</packageSourceUrl>
     <docsUrl>https://wiki.servarr.com/radarr</docsUrl>
     <mailingListUrl>https://www.reddit.com/r/radarr/</mailingListUrl>
     <bugTrackerUrl>https://github.com/radarr/radarr/issues</bugTrackerUrl>

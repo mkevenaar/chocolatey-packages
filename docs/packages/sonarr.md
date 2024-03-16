@@ -1,4 +1,26 @@
-# [<img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@9488a1da3f6e0cbc656374cdc1220aa8e28de542/icons/sonarr.png" height="48" width="48" /> ![Sonarr](https://img.shields.io/chocolatey/v/sonarr.svg?label=Sonarr&style=for-the-badge)](https://chocolatey.org/packages/sonarr)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@9488a1da3f6e0cbc656374cdc1220aa8e28de542/icons/sonarr.png" width="32" height="32"/> [![Sonarr](https://img.shields.io/chocolatey/v/sonarr.svg?label=Sonarr)](https://community.chocolatey.org/packages/sonarr) [![Sonarr](https://img.shields.io/chocolatey/dt/sonarr.svg)](https://community.chocolatey.org/packages/sonarr)
+
+## Usage
+
+To install Sonarr, run the following command from the command line or from PowerShell:
+
+```powershell
+choco install sonarr
+```
+
+To upgrade Sonarr, run the following command from the command line or from PowerShell:
+
+```powershell
+choco upgrade sonarr
+```
+
+To uninstall Sonarr, run the following command from the command line or from PowerShell:
+
+```powershell
+choco uninstall sonarr
+```
+
+## Description
 
 Sonarr (formerly NzbDrone) is a PVR for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new episodes of your favorite shows and will grab, sorts and renames them. It can also be configured to automatically upgrade the quality of files already downloaded when a better quality format becomes available.
 
@@ -30,3 +52,13 @@ Installs as a service, to get to Sonarr open browser and go to [localhost]:8989 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know the package is no longer updating correctly.
+
+
+## Links
+
+[Chocolatey Package Page](https://community.chocolatey.org/packages/sonarr)
+
+[Software Site](https://sonarr.tv/)
+
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/sonarr)
+

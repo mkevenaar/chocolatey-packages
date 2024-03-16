@@ -37,14 +37,14 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>https://github.com/Jackett/Jackett/graphs/contributors</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://github.com/Jackett/Jackett</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/JourneyOver/chocolatey-packages@76c7b31b4ba90b90decfbc40c928a9b939973555/automatic/jackett/icons/256x256.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@034cf0e5675ac21113c0baf00a8618a105bd47ef/icons/jackett.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Jackett developers</copyright>
     <tags>jackett torrent-search-engine torrent-management torrent-downloader torznab newznab rss rss-proxy p2p filesharing torrent nntp proxy server sonarr radarr sickrage couchpotato mylar admin</tags>
     <releaseNotes>https://github.com/Jackett/Jackett/releases/</releaseNotes>
     <licenseUrl>https://github.com/Jackett/Jackett/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <packageSourceUrl>https://github.com/journeyover/chocolatey-packages/tree/master/automatic/jackett</packageSourceUrl>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/jackett</packageSourceUrl>
     <docsUrl>https://github.com/Jackett/Jackett/wiki</docsUrl>
     <mailingListUrl>https://discord.gg/J865QuA</mailingListUrl>
     <bugTrackerUrl>https://github.com/Jackett/Jackett/issues</bugTrackerUrl>
