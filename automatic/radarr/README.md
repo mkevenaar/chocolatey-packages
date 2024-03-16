@@ -34,3 +34,7 @@ The project was inspired by other Usenet/BitTorrent movie downloaders such as Co
 ## Notes
 
 Installs as a service, to get to Radarr open browser and go to [localhost]:7878 (remove the brackets)
+
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know the package is no longer updating correctly.
