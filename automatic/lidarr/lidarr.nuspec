@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>https://github.com/lidarr/Lidarr/graphs/contributors</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://lidarr.audio/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@e584be55fa3a82faee28de798041b5fefeefd4ec/icons/lidarr.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@34180dba21ceff6da2c9d64cd778bbfbc3bf19c5/icons/lidarr.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>© 2020 Lidarr. All rights reserved.</copyright>
     <tags>lidarr pvr p2p filesharing torrent nntp admin</tags>

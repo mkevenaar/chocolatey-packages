@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@e584be55fa3a82faee28de798041b5fefeefd4ec/icons/lidarr.png" width="32" height="32"/> [![Lidarr](https://img.shields.io/chocolatey/v/lidarr.svg?label=Lidarr)](https://community.chocolatey.org/packages/lidarr) [![Lidarr](https://img.shields.io/chocolatey/dt/lidarr.svg)](https://community.chocolatey.org/packages/lidarr)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@34180dba21ceff6da2c9d64cd778bbfbc3bf19c5/icons/lidarr.png" width="32" height="32"/> [![Lidarr](https://img.shields.io/chocolatey/v/lidarr.svg?label=Lidarr)](https://community.chocolatey.org/packages/lidarr) [![Lidarr](https://img.shields.io/chocolatey/dt/lidarr.svg)](https://community.chocolatey.org/packages/lidarr)
 
 ## Usage
 
