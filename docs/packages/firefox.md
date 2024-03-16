@@ -67,7 +67,7 @@ Every 6 weeks, Firefox developers take the current stable features of each build
 
 [Privacy policy](https://www.mozilla.org/en-US/privacy/firefox/)
 
-**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know the package is no longer updating correctly.
+**Please Note**: This is an automatically updated package. If you find it is out of date by more than a day or two, please contact the maintainer(s) and let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) that the package is no longer updating correctly.
 
 
 ## Links

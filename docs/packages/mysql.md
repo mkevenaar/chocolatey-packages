@@ -26,7 +26,7 @@ MySQL Community Edition is the freely downloadable version of the world's most p
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
-let them know the package is no longer updating correctly.
+let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) that the package is no longer updating correctly.
 
 ### Package Parameters
 
