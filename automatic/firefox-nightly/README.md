@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@8ecd254744fba13d72ef044bb50a01bfec89755b/icons/firefox-nightly.png" width="48" height="48"/> [firefox-nightly](https://community.chocolatey.org/packages/firefox-nightly)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@972436b98f0066a91d8f6899e42a6ccf06c7acbf/icons/firefox-nightly.png" width="48" height="48"/> [firefox-nightly](https://community.chocolatey.org/packages/firefox-nightly)
 
 Firefox Nightly builds are under active development and should be used only by advanced users for testing experimental features.
 
