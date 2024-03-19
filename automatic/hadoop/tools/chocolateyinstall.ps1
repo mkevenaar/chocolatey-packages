@@ -2,8 +2,8 @@
 
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $hadoop_home    = "C:\Hadoop"
-$mirrors        = 'https://www.apache.org/dyn/closer.cgi/hadoop/common/hadoop-3.3.6/hadoop-3.3.6.tar.gz'
-$checksum32     = 'f5195059c0d4102adaa7fff17f7b2a85df906bcb6e19948716319f9978641a04'
+$mirrors        = 'https://www.apache.org/dyn/closer.cgi/hadoop/common/hadoop-3.4.0/hadoop-3.4.0.tar.gz'
+$checksum32     = 'e311a78480414030f9ec63549a5d685e69e26f207103d9abf21a48b9dd03c86c'
 
 # d/l from closest mirror
 $get_mirror_page = Invoke-WebRequest -Uri $mirrors -UseBasicParsing
