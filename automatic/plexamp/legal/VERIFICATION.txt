@@ -6,13 +6,13 @@ The installer have been downloaded from their official download link listed on <
 and can be verified like this:
 
 1. Download the following installers:
-  64-Bit: <https://plexamp.plex.tv/plexamp.plex.tv/desktop/Plexamp%20Setup%204.10.0.exe>
+  64-Bit: <https://plexamp.plex.tv/plexamp.plex.tv/desktop/Plexamp%20Setup%204.10.1.exe>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum64: 9F1772ADF7E49C13F8B302207CC62002476DA4CC4CF5CC6789506CF6B5AA376D
+  checksum64: B6966D64C8705371682505A6A1EDD8F9B7AC62234AE7C646A21F368E05F7B100
 
 File 'LICENSE.txt' is obtained from Plexamp program Settings/About/Licenses
 
