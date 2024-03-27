@@ -6,12 +6,12 @@ The installer have been downloaded from their official download link listed on <
 and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <https://exiftool.org/exiftool-12.80.zip>
+  32-Bit: <https://exiftool.org/exiftool-12.81.zip>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: E2F7A18A6D8FA3F1F4F459620EB798DD087DA295906CB8173A72B00BD52765E2
+  checksum32: A33752E96242FFDD4EDE9FBD63CBBACB8CA154FE7ABCBFFF333F7687B9DBB6D2
 
 File 'LICENSE.txt' is obtained from <https://exiftool.org/#license>
