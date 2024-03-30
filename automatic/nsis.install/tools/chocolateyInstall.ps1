@@ -3,7 +3,7 @@ $toolsDir              = "$(Split-Path -parent $MyInvocation.MyCommand.Definitio
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
-  file           = "$toolsDir\nsis-3.09-setup.exe"
+  file           = "$toolsDir\nsis-3.10-setup.exe"
   fileType       = 'exe'
   softwareName   = 'Nullsoft Install System*'
   silentArgs     = '/S'
