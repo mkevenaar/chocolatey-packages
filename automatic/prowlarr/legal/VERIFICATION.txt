@@ -2,18 +2,18 @@ VERIFICATION
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
-The installer have been downloaded from their official download link listed on <https://github.com/Prowlarr/Prowlarr/releases/tag/v1.16.0.4401>
+The installer have been downloaded from their official download link listed on <https://github.com/Prowlarr/Prowlarr/releases/tag/v1.16.1.4420>
 and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <https://github.com/Prowlarr/Prowlarr/releases/download/v1.16.0.4401/Prowlarr.develop.1.16.0.4401.windows-core-x86-installer.exe>
-  64-Bit: <https://github.com/Prowlarr/Prowlarr/releases/download/v1.16.0.4401/Prowlarr.develop.1.16.0.4401.windows-core-x64-installer.exe>
+  32-Bit: <https://github.com/Prowlarr/Prowlarr/releases/download/v1.16.1.4420/Prowlarr.develop.1.16.1.4420.windows-core-x86-installer.exe>
+  64-Bit: <https://github.com/Prowlarr/Prowlarr/releases/download/v1.16.1.4420/Prowlarr.develop.1.16.1.4420.windows-core-x64-installer.exe>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: DF715B11260CE344EAC311F80BB180049DD7F7D5F1938616944B821734557829
-  checksum64: 76C9093D50F785F1846CCEB099CB915EA0B6134F51112CE6622A7AC50055A736
+  checksum32: 0EAC77686368C2D6293127E44DF171AF9CB9BBF8D602600FA3AD0FEB34F7E7A1
+  checksum64: F2C84FA35698222FC644424D39E060EF7C4B27D00D15BFD14F1F3BD94D9370C0
 
 File 'LICENSE.txt' is obtained from <https://github.com/Prowlarr/Prowlarr/blob/develop/LICENSE>
