@@ -111,6 +111,14 @@
         url: /packages/iobitmalwarefighter.html
       - page: "IObit Uninstaller"
         url: /packages/iobituninstaller.html
+      - page: "IrfanView (Install)"
+        url: /packages/irfanview.html
+      - page: "IrfanView All Languages (Install)"
+        url: /packages/irfanviewlanguages.html
+      - page: "IrfanView All Plugins (Install)"
+        url: /packages/irfanviewplugins.html
+      - page: "IrfanView Shell Extension (Install)"
+        url: /packages/irfanviewshellextension.html
       - page: "Jackett"
         url: /packages/jackett.html
       - page: "Freedom Scientific JAWS"

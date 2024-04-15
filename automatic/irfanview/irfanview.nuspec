@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Read this before creating packages: https://chocolatey.org/docs/create-packages -->
+<!-- It is especially important to read the above link to understand additional requirements when publishing packages to the community feed aka dot org (https://community.chocolatey.org/packages). -->
+
+<!-- Test your packages in a test environment: https://github.com/chocolatey/chocolatey-test-environment -->
+
+<!--
+This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Reference. Chocolatey uses a special version of NuGet.Core that allows us to do more than was initially possible. As such there are certain things to be aware of:
+
+* the package xmlns schema url may cause issues with nuget.exe
+* Any of the following elements can ONLY be used by choco tools - projectSourceUrl, docsUrl, mailingListUrl, bugTrackerUrl, packageSourceUrl, provides, conflicts, replaces
+* nuget.exe can still install packages with those elements but they are ignored. Any authoring tools or commands will error on those elements
+-->
+
+<!-- You can embed software files directly into packages, as long as you are not bound by distribution rights. -->
+<!-- * If you are an organization making private packages, you probably have no issues here -->
+<!-- * If you are releasing to the community feed, you need to consider distribution rights. -->
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <!-- This section is about this package, although id and version have ties back to the software -->
+    <!-- id is lowercase and if you want a good separator for words, use '-', not '.'. Dots are only acceptable as suffixes for certain types of packages, e.g. .install, .portable, .extension, .template -->
+    <!-- If the software is cross-platform, attempt to use the same id as the debian/rpm package(s) if possible. -->
+    <id>irfanview</id>
+    <!-- version should MATCH as closely as possible with the underlying software -->
+    <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
+    <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
+    <version>4.66</version>
+    <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
+    <owners>Maurice Kevenaar</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <!-- This section is about the software itself -->
+    <title>IrfanView (Install)</title>
+    <authors>Irfan Skiljan</authors>
+    <!-- projectUrl is required for the community feed -->
+    <projectUrl>https://www.irfanview.com/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@8483cf19933cc937b78a8a4523c4b37da5b5b643/icons/irfanview.png</iconUrl>
+    <!-- copyright is usually years and software vendor, but not required for internal feeds -->
+    <copyright>© Irfan Skiljan</copyright>
+    <tags>irfan irfanview image viewer editor converter thumbnail binary embedded</tags>
+    <releaseNotes>https://www.irfanview.com/main_history.htm</releaseNotes>
+    <licenseUrl>https://www.irfanview.com/eula.htm</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/irfanview</packageSourceUrl>
+    <docsUrl>https://www.irfanview.com/faq.htm</docsUrl>
+    <mailingListUrl>https://irfanview-forum.de/</mailingListUrl>
+    <summary>Fast and compact image viewer and converter</summary>
+    <description><![CDATA[![Screenshot of IrfanView](https://www.irfanview.com/images/startbild_engl-small.gif)
+
+
+IrfanView is a very fast, small, compact and innovative FREEWARE (for non-commercial use) graphic viewer for Windows 9x, ME, NT, 2000, XP, 2003 , 2008, Vista, Windows 7, Windows 8, Windows 10.
+
+It is designed to be simple for beginners and powerful for professionals.
+
+IrfanView seeks to create unique, new and interesting features, unlike some other graphic viewers, whose whole "creativity" is based on feature cloning, stealing of ideas and whole dialogs from ACDSee and/or IrfanView! (for example: XnView has been stealing/cloning features and whole dialogs from IrfanView, for 10+ years).
+
+IrfanView was the first Windows graphic viewer WORLDWIDE with Multiple (animated) GIF support.
+One of the first graphic viewers WORLDWIDE with Multipage TIF support.
+The first graphic viewer WORLDWIDE with Multiple ICO support.
+
+[Features](http://www.irfanview.com/main_what_is_engl.htm)
+[Screenshots](http://www.irfanview.com/screenshot.htm)
+
+#### Package Parameters
+The following package parameters may be passed directly to the program's installer with the chocolatey option `-params`:
+
+* `/desktop`      - create desktop shortcut for IrfanView
+* `/thumbs`       - create desktop shortcut for IrfanView Thumbnails
+* `/group`        - create IrfanView group in Start Menu
+* `/currentuser`  - desktop/group links will only install for current user
+* `/assocallusers`- set associations for all users (Windows XP only)
+* `/assoc=VALUE`  - set file associations; 0 = none (default), 1 = images only, 2 = select all
+* `/ini=PATH`     - set custom INI file folder (system environment variables are allowed)
+* `/folder=PATH`  - destination folder; if not indicated: old IrfanView folder is used, if not found, the "Program Files" folder is used
+
+#### Package Specifics
+If no parameters are passed, the following is assumed: `--params '/assoc=1 /group=1 /ini=%APPDATA%\IrfanView'`.
+
+**[IrfanView All Plugins](https://community.chocolatey.org/packages/irfanviewplugins)**
+**[IrfanView All Languages](chhttps://community.chocolatey.org/packages/irfanview-languages)**
+**[IrfanView Shell Extension](https://community.chocolatey.org/packages/irfanview-shellextension)**
+
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) that the package is no longer updating correctly.
+]]></description>
+    <!-- =============================== -->
+
+    <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
+        <dependencies>
+            <dependency id="dotnet4.6.1" version="4.6.01055.20170308" />
+        </dependencies>
+
+    <!--<provides>NOT YET IMPLEMENTED</provides>-->
+    <!--<conflicts>NOT YET IMPLEMENTED</conflicts>-->
+    <!--<replaces>NOT YET IMPLEMENTED</replaces>-->
+    </metadata>
+  <!-- this section controls what actually gets packaged into the Chocolatey package -->
+  <!-- Uncomment to limit what is packed in -->
+    <files>
+        <file src="tools\**" target="tools" />
+        <file src="legal\**" target="legal" />
+    </files>
+</package>
