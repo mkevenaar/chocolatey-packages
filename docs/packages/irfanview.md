@@ -54,7 +54,7 @@ The following package parameters may be passed directly to the program's install
 If no parameters are passed, the following is assumed: `--params '/assoc=1 /group=1 /ini=%APPDATA%\IrfanView'`.
 
 **[IrfanView All Plugins](https://community.chocolatey.org/packages/irfanviewplugins)**
-**[IrfanView All Languages](chhttps://community.chocolatey.org/packages/irfanview-languages)**
+**[IrfanView All Languages](https://community.chocolatey.org/packages/irfanview-languages)**
 **[IrfanView Shell Extension](https://community.chocolatey.org/packages/irfanview-shellextension)**
 
 **Please Note**: This is an automatically updated package. If you find it is
