@@ -12,6 +12,6 @@ $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $unPath = Join-Path $toolsDir 'Uninstall-ChocolateyPath.psm1'
 Import-Module $unPath
 
-$version      = "7.17.20"
+$version      = "8.13.3"
 $binPath = Join-Path $toolsDir "kibana-$($version)-windows-x86_64\bin"
 Uninstall-ChocolateyPath $binPath 'Machine'
