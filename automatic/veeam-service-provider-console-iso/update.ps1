@@ -32,9 +32,9 @@ function global:au_GetLatest {
 
     $isoVersion = $version
 
-    if($version -eq "8.0.0.16877") {
-      $isoVersion = "8.0.0.16877_20231130"
-      $version = "8.0.0.20231130"
+    if($version -eq "8.0.0.18054") {
+      $isoVersion = "8.0.0.18054_20240219"
+      $version = "8.0.0.20240219"
     }
 
     $version = Get-Version ($version)
