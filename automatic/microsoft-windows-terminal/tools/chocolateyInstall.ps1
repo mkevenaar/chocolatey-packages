@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$fileName       = "$toolsDir\Microsoft.WindowsTerminalPreview_1.20.11215.0_8wekyb3d8bbwe.msixbundle"
-$version        = "1.20.11215.0"
+$fileName       = "$toolsDir\Microsoft.WindowsTerminalPreview_1.21.1272.0_8wekyb3d8bbwe.msixbundle"
+$version        = "1.21.1272.0"
 $PreRelease     = "True"
 
 $WindowsVersion=[Environment]::OSVersion.Version
