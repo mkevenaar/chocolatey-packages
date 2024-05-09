@@ -6,8 +6,8 @@ $servicename    = 'sonarr'
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   fileType      = 'exe'
-  file          = "$toolsDir\Sonarr.develop.4.0.4.1616.win-x86-installer.exe"
-  file64        = "$toolsDir\Sonarr.develop.4.0.4.1616.win-x64-installer.exe"
+  file          = "$toolsDir\Sonarr.develop.4.0.4.1650.win-x86-installer.exe"
+  file64        = "$toolsDir\Sonarr.develop.4.0.4.1650.win-x64-installer.exe"
   softwareName  = 'Sonarr*'
   silentArgs     = "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /LOG=`"$($env:TEMP)\$($env:chocolateyPackageName).$($env:chocolateyPackageVersion).InnoInstall.log`""
   validExitCodes = @(0)
