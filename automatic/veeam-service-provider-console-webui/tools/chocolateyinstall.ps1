@@ -4,7 +4,7 @@ $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $isoPackageName = 'veeam-service-provider-console-iso'
 $scriptPath = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 $commonPath = $(Split-Path -parent $(Split-Path -parent $scriptPath))
-$filename = 'VeeamServiceProviderConsole_8.0.0.18054_20240219.iso'
+$filename = 'VeeamServiceProviderConsole_8.0.0.19236_20240426.iso'
 $installPath = Join-Path  (Join-Path $commonPath $isoPackageName) $filename
 
 $fileLocation = 'WebUI\VAC.WebUI.x64.msi'
