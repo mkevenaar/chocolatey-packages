@@ -1,5 +1,14 @@
-﻿$ErrorActionPreference = 'Stop';
-$toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$ErrorActionPreference = 'Stop';
+$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+
+$headers = @{
+  "User-Agent" = "Chocolatey Installation. https://chocolatey.org"
+}
+
+$options =
+@{
+  Headers = $headers
+}
 
 $url = 'https://download2.veeam.com/VSPC/v8/VeeamServiceProviderConsole_8.0.0.19236_20240426.iso'
 $checksum = '227c23193f2c6eda03c5521eaef8bc74da62bae165c030423d70ad88360173fa'
@@ -13,11 +22,12 @@ $installPath = Join-Path $packagePath $filename
 Get-ChildItem $packagePath\*.iso | Where-Object Name -NotMatch $filename | ForEach-Object { Remove-Item $_ -ea 0; if (Test-Path $_) { Set-Content "$_.ignore" } }
 
 $packageArgs = @{
-  packageName   = $env:ChocolateyPackageName
-  fileFullPath  = $installPath
-  url           = $url
-  checksum      = $checksum
-  checksumType  = $checksumType
+  PackageName  = $env:ChocolateyPackageName
+  FileFullPath = $installPath
+  Url          = $url
+  Checksum     = $checksum
+  ChecksumType = $checksumType
+  Options      = $options
 }
 
 Get-ChocolateyWebFile @packageArgs

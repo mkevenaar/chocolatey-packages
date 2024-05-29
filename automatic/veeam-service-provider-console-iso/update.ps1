@@ -4,6 +4,14 @@ $releases = 'https://www.veeam.com/download-version.html'
 $releaseNotesFeed = 'https://www.veeam.com/services/veeam/technical-documents?resourceType=resourcetype:techdoc/releasenotes&productId=49'
 $productName = 'Veeam Service Provider Console'
 
+$headers = @{
+  "User-Agent" = "Chocolatey AU update check. https://chocolatey.org"
+}
+
+$options =
+@{
+  Headers = $headers
+}
 function global:au_SearchReplace {
   @{
     'tools\chocolateyInstall.ps1' = @{
@@ -32,9 +40,9 @@ function global:au_GetLatest {
 
     $isoVersion = $version
 
-    if($version -eq "8.0.0.19236") {
-      $isoVersion = "8.0.0.19236_20240426"
-      $version = "8.0.0.20240426"
+    if($version -eq "8.0.0.19552") {
+      $isoVersion = "8.0.0.19552_20240516"
+      $version = "8.0.0.20240516"
     }
 
     $version = Get-Version ($version)
@@ -54,6 +62,7 @@ function global:au_GetLatest {
         URL32 = $url
         Version = $version
         ReleaseNotes = $ReleaseNotes
+        Options  = $options
     }
 }
 
