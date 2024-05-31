@@ -14,7 +14,7 @@ function global:au_GetLatest {
 
   $version = Get-Version($version)
 
-  $url32 = 'https://download.zerotier.com/RELEASES/' + $version + '/dist/ZeroTier%20One.msi'
+  $url32 = 'https://download.zerotier.com/RELEASES/' + $version + '/dist/ZeroTierOne.msi'
 
   return @{
         URL32 = $url32
