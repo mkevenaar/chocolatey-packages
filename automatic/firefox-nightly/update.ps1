@@ -1,4 +1,4 @@
-[CmdletBinding()]
+﻿[CmdletBinding()]
 param($IncludeStream, [switch] $Force)
 Import-Module Chocolatey-AU
 . "$PSScriptRoot\update_helper.ps1"
@@ -7,7 +7,7 @@ $releasesNIGHTLY = 'https://releases.mozilla.org/pub/firefox/nightly/latest-mozi
 $product = 'firefox'
 
 function global:au_BeforeUpdate {
-  cp "$PSScriptRoot\Readme.$($Latest.PackageName).md" "$PSScriptRoot\README.md" -Force
+  Copy-Item "$PSScriptRoot\Readme.$($Latest.PackageName).md" "$PSScriptRoot\README.md" -Force
 }
 
 function global:au_AfterUpdate {
