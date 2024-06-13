@@ -88,8 +88,7 @@ $Options = [ordered]@{
                 Password   = $Env:mail_pass
                 Port       = $Env:mail_port
                 EnableSsl  = $Env:mail_enablessl -eq 'true'
-                Attachment = "$PSScriptRoot\update_info.xml"
-                UserMessage = ''
+                UserMessage = "Update status: Update status: https://gist.github.com/choco-bot/$Env:gist_id"
                 SendAlways  = $false                        #Send notifications every time
              }
            } else {}
@@ -103,7 +102,7 @@ $Options = [ordered]@{
         $Options.ModulePaths | ForEach-Object { Import-Module $_ }
         . $Options.UpdateIconScript $PackageName.ToLowerInvariant() -Quiet -ThrowErrorOnIconNotFound
         . $Options.UpdatePackageSourceScript $PackageName.ToLowerInvariant() -Quiet
-        if (Test-Path tools) { Expand-Aliases -Directory tools }
+        Expand-Aliases -Directory "$PWD"
 
         $pattern = "^${PackageName}(?:\\(?<stream>[^:]+))?(?:\:(?<version>.+))?$"
         $p = $Options.ForcedPackages | Where-Object { $_ -match $pattern }
