@@ -1,4 +1,4 @@
-Import-Module Chocolatey-AU
+﻿Import-Module Chocolatey-AU
 
 $releases = 'https://get.geo.opera.com/pub/opera-developer/'
 
@@ -26,7 +26,7 @@ function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
     $versionSort = { [version]$_.href.TrimEnd('/') }
-    $versionLink = $download_page.links | Where-Object href -match '^[\d]+[\d\.]+\/$' | sort $versionSort | Select-Object -Last 1
+    $versionLink = $download_page.links | Where-Object href -match '^[\d]+[\d\.]+\/$' | Sort-Object $versionSort | Select-Object -Last 1
 
     [version] $version = $versionLink.href -replace '/', ''
 
