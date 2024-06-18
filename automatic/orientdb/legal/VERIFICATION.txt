@@ -6,12 +6,12 @@ The installer have been downloaded from their official download link listed on <
 and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <https://repo1.maven.org/maven2/com/orientechnologies/orientdb-community/3.2.30/orientdb-community-3.2.30.zip>
+  32-Bit: <https://repo1.maven.org/maven2/com/orientechnologies/orientdb-community/3.2.31/orientdb-community-3.2.31.zip>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: 48A95446477D17DB1D3F297C3A5887C83761B895326B08ED96BA5A8C18A75344
+  checksum32: 9D1418CFE795C9F47F08D5E0B27D5C9E9D5A41B8FF96260CF365D0CB70CC7964
 
 File 'LICENSE.txt' is obtained from <https://github.com/orientechnologies/orientdb/blob/develop/license.txt>
