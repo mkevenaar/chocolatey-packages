@@ -2,18 +2,18 @@ VERIFICATION
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
-The installer have been downloaded from their official download link listed on <https://github.com/Sonarr/Sonarr/releases/tag/v4.0.5.1778>
+The installer have been downloaded from their official download link listed on <https://github.com/Sonarr/Sonarr/releases/tag/v4.0.5.1782>
 and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <https://github.com/Sonarr/Sonarr/releases/download/v4.0.5.1778/Sonarr.develop.4.0.5.1778.win-x86-installer.exe>
-  64-Bit: <https://github.com/Sonarr/Sonarr/releases/download/v4.0.5.1778/Sonarr.develop.4.0.5.1778.win-x64-installer.exe>
+  32-Bit: <https://github.com/Sonarr/Sonarr/releases/download/v4.0.5.1782/Sonarr.develop.4.0.5.1782.win-x86-installer.exe>
+  64-Bit: <https://github.com/Sonarr/Sonarr/releases/download/v4.0.5.1782/Sonarr.develop.4.0.5.1782.win-x64-installer.exe>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: 8A7C50DBBD6B7155DCFC2BE1BA70A336E906CD4DEB55EFE53CADFED192704E0F
-  checksum64: EE83CABE99ADE3B881AD00B0CE6FC8C156C264FB9EF8FAE0040657A72E033674
+  checksum32: 9D250387ECDA40E81FB7A8286E3175B4486984E12E32514B6025ED6D2935816B
+  checksum64: C1A53586D91ACCBEEEAFE0D689CA560A144D9B6B3A504486269859EC763A1B2F
 
 File 'LICENSE.txt' is obtained from <https://github.com/Sonarr/Sonarr/blob/develop/LICENSE.md>
