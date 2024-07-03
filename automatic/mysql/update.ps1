@@ -1,6 +1,10 @@
 Import-Module Chocolatey-AU
 
-$releases = 'https://dev.mysql.com/downloads/mysql/'
+# The mysql-server repo contains a bunch of tags for "mysql-cluster-VERSION"
+# If I use https://api.github.com/repos/mysql/mysql-server/tags then I'll need to paginate to find "mysql-VERSION"
+# I'm using https://api.github.com/repos/mysql/mysql-server//git/matching-refs/tags so that I'll get a complete list without needing to paginate
+# https://stackoverflow.com/a/74561918
+$releases = 'https://api.github.com/repos/mysql/mysql-server/git/matching-refs/tags'
 
 function global:au_SearchReplace {
     @{
@@ -13,13 +17,19 @@ function global:au_SearchReplace {
  }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases
+    $header = @{
+        "Authorization" = "token $env:github_api_key"
+    }
+    $download_page = Invoke-RestMethod -Uri $releases -Headers $header
 
-    $version = ($download_page.ParsedHtml.getElementsByTagName('h1') | Where-Object innerhtml -match "^MySQL Community Server ").innerhtml -replace "^MySQL Community Server "
-    $versiondata = Get-Version($version)
+    $valid_tags = $download_page | Where-Object { $_.ref -notmatch '^refs/tags/mysql-cluster-' }
+    $latest_valid_tag = $valid_tags[-1].ref
+    $latest_valid_version = ($latest_valid_tag -split "/")[-1]
+
+    $versiondata = Get-Version($latest_valid_version)
     $version = $versiondata.toString()
 
-    $url = 'https://dev.mysql.com/get/Downloads/MySQL-' + $versiondata.toString(2) + '/mysql-' + $version + '-winx64.zip'
+    $url = 'https://cdn.mysql.com/Downloads/MySQL-' + $versiondata.toString(2) + '/mysql-' + $version + '-winx64.msi'
     $Latest = @{ URL64 = $url; Version = $version }
     return $Latest
 }
