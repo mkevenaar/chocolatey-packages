@@ -1,4 +1,4 @@
-Import-Module Chocolatey-AU
+﻿Import-Module Chocolatey-AU
 
 # The mysql-server repo contains a bunch of tags for "mysql-cluster-VERSION"
 # If I use https://api.github.com/repos/mysql/mysql-server/tags then I'll need to paginate to find "mysql-VERSION"
@@ -7,53 +7,51 @@ Import-Module Chocolatey-AU
 $releases = 'https://api.github.com/repos/mysql/mysql-server/git/matching-refs/tags'
 
 function global:au_SearchReplace {
-    @{
-        'tools\chocolateyInstall.ps1' = @{
-            "(^[$]url\s*=\s*)('.*')"      = "`$1'$($Latest.URL64)'"
-            "(^[$]checksum\s*=\s*)('.*')" = "`$1'$($Latest.Checksum64)'"
-            "(^[$]checksumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
-        }
+  @{
+    'tools\chocolateyInstall.ps1' = @{
+      "(^[$]url\s*=\s*)('.*')"          = "`$1'$($Latest.URL64)'"
+      "(^[$]checksum\s*=\s*)('.*')"     = "`$1'$($Latest.Checksum64)'"
+      "(^[$]checksumType\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType64)'"
     }
- }
+  }
+}
 
 function global:au_GetLatest {
-    $headers = @{}
-    if (Test-Path Env:\github_api_key) {
-        $headers.Authorization = "token " + $env:github_api_key
-    }
-    $download_page = Invoke-RestMethod -Uri $releases -Headers $header
+  $headers = @{}
+  if (Test-Path Env:\github_api_key) {
+    $headers.Authorization = "token " + $env:github_api_key
+  }
+  $download_page = Invoke-RestMethod -Uri $releases -Headers $header
 
-    $valid_tags = $download_page | Where-Object { $_.ref -notmatch '^refs/tags/mysql-cluster-' }
-    $latest_valid_tag = $valid_tags[-1].ref
-    $latest_valid_version = ($latest_valid_tag -split "/")[-1]
+  $valid_tags = $download_page | Where-Object { $_.ref -notmatch '^refs/tags/mysql-cluster-' }
+  $latest_valid_tag = $valid_tags[-1].ref
+  $latest_valid_version = ($latest_valid_tag -split "/")[-1]
 
-    $versiondata = Get-Version($latest_valid_version)
-    $version = $versiondata.toString()
+  $versiondata = Get-Version($latest_valid_version)
+  $version = $versiondata.toString()
 
-    $url = 'https://cdn.mysql.com/Downloads/MySQL-' + $versiondata.toString(2) + '/mysql-' + $version + '-winx64.msi'
-    $Latest = @{ URL64 = $url; Version = $version }
-    return $Latest
+  $url = 'https://cdn.mysql.com/Downloads/MySQL-' + $versiondata.toString(2) + '/mysql-' + $version + '-winx64.msi'
+  $Latest = @{ URL64 = $url; Version = $version }
+  return $Latest
 }
 
 if ($MyInvocation.InvocationName -ne '.') {
-    update -ChecksumFor 64
+  update -ChecksumFor 64
 }
 
 function global:au_AfterUpdate ($Package) {
+  if ($Package.RemoteVersion -ne $Package.NuspecVersion) {
+    Get-RemoteFiles -NoSuffix
 
-    if ($Package.RemoteVersion -ne $Package.NuspecVersion) {
+    $file = [IO.Path]::Combine("tools", $Latest.FileName32)
 
-        Get-RemoteFiles -NoSuffix
+    Write-Output "Submitting file $file to VirusTotal"
 
-        $file = [IO.Path]::Combine("tools", $Latest.FileName32)
+    # Assumes vt-cli Chocolatey package is installed!
+    vt.exe scan file $file --apikey $env:VT_APIKEY
 
-        Write-Output "Submitting file $file to VirusTotal"
+    Remove-Item $file -ErrorAction Ignore
 
-        # Assumes vt-cli Chocolatey package is installed!
-        vt.exe scan file $file --apikey $env:VT_APIKEY
-
-        Remove-Item $file -ErrorAction Ignore
-
-        $Latest.Remove("FileName32")
-    }
+    $Latest.Remove("FileName32")
   }
+}
