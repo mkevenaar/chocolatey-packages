@@ -17,8 +17,9 @@ function global:au_SearchReplace {
  }
 
 function global:au_GetLatest {
-    $header = @{
-        "Authorization" = "token $env:github_api_key"
+    $headers = @{}
+    if (Test-Path Env:\github_api_key) {
+        $headers.Authorization = "token " + $env:github_api_key
     }
     $download_page = Invoke-RestMethod -Uri $releases -Headers $header
 
