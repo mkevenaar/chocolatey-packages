@@ -17,9 +17,8 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-  $headers = @{}
-  if (Test-Path Env:\github_api_key) {
-    $headers.Authorization = "token " + $env:github_api_key
+  $header = @{
+    "Authorization" = "token $env:github_api_key"
   }
   $download_page = Invoke-RestMethod -Uri $releases -Headers $header
 
@@ -30,7 +29,7 @@ function global:au_GetLatest {
   $versiondata = Get-Version($latest_valid_version)
   $version = $versiondata.toString()
 
-  $url = 'https://cdn.mysql.com/Downloads/MySQL-' + $versiondata.toString(2) + '/mysql-' + $version + '-winx64.msi'
+  $url = 'https://cdn.mysql.com/Downloads/MySQL-' + $versiondata.toString(2) + '/mysql-' + $version + '-winx64.zip'
   $Latest = @{ URL64 = $url; Version = $version }
   return $Latest
 }
