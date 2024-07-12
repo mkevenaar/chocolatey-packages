@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = 'https://www.anyrail.com/downloads/AnyRail/7.0/AnyRail7.0.16.msi'
-$checksum     = '0a8dba40946bd130fe08a426c6c570959f5bd8c86007a3fcd82bebc77f03c794'
+$url          = 'https://www.anyrail.com/downloads/AnyRail/7.0/AnyRail7.0.17.msi'
+$checksum     = 'a191c665a840ae7a87dfafb7e5821cf4060b2357a86201103bc86c1d793ce4bd'
 $checksumType = 'sha256'
 
 $packageArgs = @{
