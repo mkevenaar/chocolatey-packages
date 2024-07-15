@@ -2,7 +2,7 @@
 
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $version        = "0.82.1"
-$url64 = 'https://github.com/microsoft/PowerToys/releases/download/V0.82.1/PowerToysSetup-0.82.1-x64.exe'
+$url64 = 'https://github.com/microsoft/PowerToys/releases/download/v0.82.1/PowerToysSetup-0.82.1-x64.exe'
 $checksum64 = 'b8fa7e7c8f88b69e070e234f561d32807634e2e9d782edbb9dc35f3a454f2264'
 
 $WindowsVersion=[Environment]::OSVersion.Version
