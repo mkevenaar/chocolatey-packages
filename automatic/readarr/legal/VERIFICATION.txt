@@ -2,18 +2,18 @@ VERIFICATION
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
-The installer have been downloaded from their official download link listed on <https://github.com/Readarr/Readarr/releases/tag/v0.3.31.2578>
+The installer have been downloaded from their official download link listed on <https://github.com/Readarr/Readarr/releases/tag/v0.3.32.2587>
 and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <https://github.com/Readarr/Readarr/releases/download/v0.3.31.2578/Readarr.develop.0.3.31.2578.windows-core-x86-installer.exe>
-  64-Bit: <https://github.com/Readarr/Readarr/releases/download/v0.3.31.2578/Readarr.develop.0.3.31.2578.windows-core-x64-installer.exe>
+  32-Bit: <https://github.com/Readarr/Readarr/releases/download/v0.3.32.2587/Readarr.develop.0.3.32.2587.windows-core-x86-installer.exe>
+  64-Bit: <https://github.com/Readarr/Readarr/releases/download/v0.3.32.2587/Readarr.develop.0.3.32.2587.windows-core-x64-installer.exe>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: FCEF84FD2410298D14A859E2E9CADDDE60BE61EECE43041B5920A08B23CC6807
-  checksum64: EEE4202C50C0E84B0357177CFC264FA2C7F197E22E87AA9764CA22DD962F40D0
+  checksum32: 35C744C69DD8A64DD9AD23678D9663AFF5316D25D6FCB8A9D8AD6483099A43AC
+  checksum64: 1BA90162B7D219B183531CA1866B42DD700E1582DDCAB6D92E13C90695854515
 
 File 'LICENSE.txt' is obtained from <https://github.com/Readarr/Readarr/blob/develop/LICENSE>
