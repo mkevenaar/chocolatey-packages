@@ -12,6 +12,10 @@ function global:au_GetLatest {
     $version = '1.6.6'
   }
 
+  if ($version -eq '1.14.0.20240819') {
+    $version = '1.14.0'
+  }
+
   $version = Get-Version($version)
 
   $url32 = 'https://download.zerotier.com/RELEASES/' + $version + '/dist/ZeroTierOne.msi'
