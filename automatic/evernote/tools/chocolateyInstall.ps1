@@ -14,7 +14,7 @@ elseif ($osInfo.ProductType -ne 1) {
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url          = 'https://win.desktop.evernote.com/builds/Evernote-latest.exe'
-$checksum     = 'C784D92D68021A81BAC73F7AB35EEC9C4C7BBA6B7C56BD3CCE8890A6D44D42D5'
+$checksum     = '6BE8E8AD8BA2A2AA98F0EB254FB581A3BC621557AED85D9CD74EA3103785064C'
 $checksumType = 'sha256'
 
 $packageArgs = @{
