@@ -1,15 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$headers = @{
-  "User-Agent" = "Chocolatey Installation. https://chocolatey.org"
-}
-
-$options =
-@{
-  Headers = $headers
-}
-
 $url = 'https://download2.veeam.com/VSPC/v8/VeeamServiceProviderConsole_8.0.0.19552_20240516.iso'
 $checksum = 'cb714707912c55de6f5567b49da77671202ad8fa661122f71f3bfabc7930a858'
 $checksumType = 'sha256'
@@ -27,7 +18,6 @@ $packageArgs = @{
   Url          = $url
   Checksum     = $checksum
   ChecksumType = $checksumType
-  Options      = $options
 }
 
 Get-ChocolateyWebFile @packageArgs
