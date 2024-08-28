@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url = 'https://download2.veeam.com/VBR/v12/VeeamExtract_12.1.2.172.zip'
-$checksum = '0fa67e32aa86e855594da30b6c9cb73bf324e55bc97828c63d9e2edc6b5f0ddb'
+$url = 'https://download2.veeam.com/VBR/v12/VeeamExtract_12.2.0.334.zip'
+$checksum = '6a7107fe5b548382c5af4c0068554323d8f490ca54f261977c35cc0db4e81dc6'
 $checksumType = 'sha256'
 
 $packageArgs = @{
