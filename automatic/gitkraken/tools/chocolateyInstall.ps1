@@ -17,5 +17,17 @@ $packageArgs = @{
   softwareName  = 'GitKraken*'
 }
 
-Install-ChocolateyPackage @packageArgs
+$GitKrakenPath = Join-Path -Path $Env:LOCALAPPDATA -ChildPath 'gitkraken\gitkraken.exe'
 
+$Outdated = if (Test-Path -Path $GitKrakenPath) {
+  $InstalledVersion = (Get-ItemProperty -Path $GitKrakenPath -ErrorAction:SilentlyContinue).VersionInfo.ProductVersion
+  [Version]$($Env:ChocolateyPackageVersion) -gt [Version]$InstalledVersion
+}
+else {
+  # GitKraken is not installed, therefore it is outdated.
+  $true
+}
+
+if ($Env:ChocolateyForce -or $Outdated) {
+  Install-ChocolateyPackage @packageArgs
+}
