@@ -2,33 +2,37 @@ Import-Module Chocolatey-AU
 
 $releases = 'https://exiftool.org/'
 
-function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge -FileNameSkip 1 }
+function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+  $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
-    $re = "exiftool-(.+).zip"
-    $url = $releases + ($download_page.Links | Where-Object href -match $re | Select-Object -First 1 -expand href)
+  $re = "exiftool-(.+\d)_32.zip"
+  $url32 = $releases + ($download_page.Links | Where-Object href -match $re | Select-Object -First 1 -expand href)
+  $url64 = $url32 -Replace "_32", "_64"
+  $version = ([regex]::Match($url32, $re)).Captures.Groups[1].value
 
-    $version = $url -split "-" | Select-Object -last 1 | ForEach-Object { $_ -replace ".zip", "" }
-
-    return @{
-        URL32 = $url
-        Version = $version
-	FileType = 'zip'
-    }
+  return @{
+    URL32    = $url32
+    URL64    = $url64
+    Version  = $version
+    FileType = 'zip'
+  }
 }
 
 function global:au_SearchReplace {
   return @{
     ".\tools\chocolateyInstall.ps1" = @{
       "(?i)(^\s*file\s*=\s*`"[$]toolsDir\\).*"   = "`${1}$($Latest.FileName32)`""
+      "(?i)(^\s*file64\s*=\s*`"[$]toolsDir\\).*" = "`${1}$($Latest.FileName64)`""
     }
-    ".\legal\VERIFICATION.txt" = @{
+    ".\legal\VERIFICATION.txt"      = @{
       "(?i)(listed on\s*)\<.*\>" = "`${1}<$releases>"
       "(?i)(32-Bit.+)\<.*\>"     = "`${1}<$($Latest.URL32)>"
+      "(?i)(64-Bit.+)\<.*\>"     = "`${1}<$($Latest.URL64)>"
       "(?i)(checksum type:).*"   = "`${1} $($Latest.ChecksumType32)"
       "(?i)(checksum32:).*"      = "`${1} $($Latest.Checksum32)"
+      "(?i)(checksum64:).*"      = "`${1} $($Latest.Checksum64)"
     }
   }
 }
