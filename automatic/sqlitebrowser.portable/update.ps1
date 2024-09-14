@@ -11,7 +11,7 @@ function global:au_GetLatest {
     $re  = "DB.Browser.for.SQLite-(.+)-win32.zip"
     $url32 = $download_page.links | Where-Object href -match $re | Select-Object -First 1 -expand href
 
-    $version = ([regex]::Match($url32,$re)).Captures.Groups[1].value
+    $version = ([regex]::Match($url32,$re)).Captures.Groups[1].value.trim('v')
     $url32 = 'https://download.sqlitebrowser.org' + $url32
 
     $url64 = $url32 -Replace "win32", "win64"
