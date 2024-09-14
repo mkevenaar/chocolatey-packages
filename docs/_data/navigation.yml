@@ -41,6 +41,8 @@
         url: /packages/chromecacheview.html
       - page: "JetBrains Clion"
         url: /packages/clionide.html
+      - page: "CodeQL CLI"
+        url: /packages/codeql.html
       - page: "Comic Collector"
         url: /packages/comiccollector.html
       - page: "CrystalDiskInfo"
