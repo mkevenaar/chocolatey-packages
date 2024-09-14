@@ -11,6 +11,6 @@ $packageArgs = @{
 
 Get-ChocolateyUnzip  @packageArgs
 
-Move-Item "$(Join-Path $toolsDir 'exiftool(-k).exe')" "$(Join-Path $toolsDir 'exiftool.exe')" -Force
+Get-ChildItem -Path $toolsDir\*\exiftool*.exe | Rename-Item -NewName exiftool.exe
 
 Get-ChildItem $toolsDir\*.zip | ForEach-Object { Remove-Item $_ -ea 0; if (Test-Path $_) { Set-Content "$_.ignore" } }
