@@ -6,14 +6,14 @@ The installer have been downloaded from their official download link listed on <
 and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <https://download.sqlitebrowser.org/DB.Browser.for.SQLite-3.12.2-win32.zip>
-  64-Bit: <https://download.sqlitebrowser.org/DB.Browser.for.SQLite-3.12.2-win64.zip>
+  32-Bit: <https://download.sqlitebrowser.org/DB.Browser.for.SQLite-v3.13.0-win32.zip>
+  64-Bit: <https://download.sqlitebrowser.org/DB.Browser.for.SQLite-v3.13.0-win64.zip>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: 9344BCD50865663674F11C1D8297C0D2B4A4F7CED0A459C9E71E89382549454F
-  checksum64: 559EDC274A2823264E886159EAA36332FD5AF1F2F4B86BA2A5EF485B6420AB54
+  checksum32: 12C688C67ACDE2E76FF5D5A6C1DADA854015F57C6B06C5378231FC357DDEA47B
+  checksum64: 69465171D0EACA2A3D68EC5A5048F62EE192D136412A6F6747538D4535C18BBE
 
 File 'LICENSE.txt' is obtained from <https://github.com/sqlitebrowser/sqlitebrowser/blob/master/LICENSE>
