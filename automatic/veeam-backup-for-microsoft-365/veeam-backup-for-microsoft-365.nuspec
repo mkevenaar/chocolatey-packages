@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>8.0.2.159</version>
+    <version>8.0.3.1044</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Maurice Kevenaar</owners>
     <!-- ============================== -->
@@ -41,7 +41,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Veeam Software Group GmbH</copyright>
     <tags>veeam-backup-for-microsoft-365 vb365 veeam backup m365 office microsoft admin</tags>
-    <releaseNotes>https://www.veeam.com/veeam_backup_m365_7a_release_notes_rn.pdf</releaseNotes>
+    <releaseNotes></releaseNotes>
     <licenseUrl>https://www.veeam.com/eula.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/veeam-backup-for-microsoft-365</packageSourceUrl>
@@ -67,9 +67,9 @@ let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) th
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
     <dependencies>
-      <dependency id="veeam-backup-for-microsoft-365-server" version="[8.0.2.159]" />
-      <dependency id="veeam-backup-for-microsoft-365-console" version="[8.0.2.159]" />
-      <dependency id="veeam-backup-for-microsoft-365-rest-api" version="[8.0.2.159]" />
+      <dependency id="veeam-backup-for-microsoft-365-server" version="[8.0.3.1044]" />
+      <dependency id="veeam-backup-for-microsoft-365-console" version="[8.0.3.1044]" />
+      <dependency id="veeam-backup-for-microsoft-365-rest-api" version="[8.0.3.1044]" />
     </dependencies>
 
     <!--<provides>NOT YET IMPLEMENTED</provides>-->
