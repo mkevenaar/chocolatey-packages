@@ -3,10 +3,10 @@
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 . $toolsDir\helpers.ps1
 
-$url                       = 'https://download.semiconductor.samsung.com/resources/software-resources/Samsung_Magician_installer_Official_8.0.0.900_Windows.zip'
-$checksum                  = 'c786d822e1442d30bf63480a3c3a31c779e087753a060f4359f9f1351d44f311'
+$url                       = 'https://download.semiconductor.samsung.com/resources/software-resources/Samsung_Magician_Installer_Official_8.1.0.800.exe'
+$checksum                  = '5F3F8D53B3DD8FA7655366A7C2B4427B8799FA52BC242176C1F67ACFCDB7B2C5'
 $checksumType              = 'sha256'
-[version] $softwareVersion = '8.0.0.900'
+[version] $softwareVersion = '8.1.0.800'
 
 $installedVersion = Get-InstalledVersion
 if ($installedVersion -gt $softwareVersion) {
@@ -15,19 +15,10 @@ if ($installedVersion -gt $softwareVersion) {
 }
 
 $packageArgs = @{
-  PackageName    = $env:ChocolateyPackageName
+  packageName    = $env:ChocolateyPackageName
   url            = $url
   checksum       = $checksum
   checksumType   = $checksumType
-  Destination    = $toolsDir
-}
-
-Install-ChocolateyZipPackage @packageArgs
-
-$packageArgs = @{
-  packageName    = $env:ChocolateyPackageName
-  fileType       = 'exe'
-  file           = Get-Item $toolsDir\*.exe
   softwareName   = 'Samsung Magician*'
   silentArgs     = ""
   validExitCodes = @(0,3010)
@@ -40,6 +31,6 @@ $ahkProc = Start-Process -FilePath $ahkEXE.FullName -ArgumentList $ahkFile -Pass
 Write-Debug "AutoHotKey start time:`t$($ahkProc.StartTime.ToShortTimeString())"
 Write-Debug "Process ID:`t$($ahkProc.Id)"
 
-Install-ChocolateyInstallPackage @packageArgs
+Install-ChocolateyPackage @packageArgs
 
 if (Get-Process -id $ahkProc.Id -ErrorAction SilentlyContinue) {Stop-Process -id $ahkProc.Id}
