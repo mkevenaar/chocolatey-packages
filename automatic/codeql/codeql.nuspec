@@ -34,7 +34,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
     <title>CodeQL CLI</title>
-    <authors>Github</authors>
+    <authors>GitHub</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://securitylab.github.com/tools/codeql/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@e24fe2a71b2e8a0818ff4760c8fcfaa0ec7b2f30/icons/codeql.png</iconUrl>
