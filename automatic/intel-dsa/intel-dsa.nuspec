@@ -9,7 +9,7 @@
     <owners>mkevenaar</owners>
     <licenseUrl>http://www.intel.com/content/www/us/en/legal/terms-of-use.html</licenseUrl>
     <projectUrl>https://www.intel.com/content/www/us/en/support/detect.html</projectUrl>
-    <iconUrl>https://raw.githubusercontent.com/mkevenaar/chocolatey-packages/master/icons/intel-dsa.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@c5685ed6db1e1f33a8f8f7d7024617669464485b/icons/intel-dsa.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <description></description>
     <summary> Intel® Driver &amp; Support Assistant enables you to scan computing devices for the latest drivers available from Intel.</summary>
