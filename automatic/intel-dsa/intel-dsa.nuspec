@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one.-->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>intel-dsa</id>
+    <version>23.4.39.9</version>
+    <title>Intel® Driver &amp; Support Assistant (Install)</title>
+    <authors>Intel Corporation</authors>
+    <owners>mkevenaar</owners>
+    <licenseUrl>http://www.intel.com/content/www/us/en/legal/terms-of-use.html</licenseUrl>
+    <projectUrl>https://www.intel.com/content/www/us/en/support/detect.html</projectUrl>
+    <iconUrl>https://raw.githubusercontent.com/mkevenaar/chocolatey-packages/master/icons/intel-dsa.png</iconUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <description></description>
+    <summary> Intel® Driver &amp; Support Assistant enables you to scan computing devices for the latest drivers available from Intel.</summary>
+    <releaseNotes>https://www.intel.com/content/www/us/en/support/articles/000056693/software/software-applications.html</releaseNotes>
+    <copyright>Intel Corporation</copyright>
+    <tags>dsa intel driver support assistant update utility</tags>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/intel-dsa</packageSourceUrl>
+    <docsUrl>https://www.intel.com/content/www/us/en/support/topics/idsa-faq.html</docsUrl>
+    <mailingListUrl>https://community.intel.com/</mailingListUrl>
+    <dependencies></dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
