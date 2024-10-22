@@ -2,7 +2,7 @@
 
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url64          = 'https://release.axocdn.com/windows/GitKrakenSetup.exe'
-$checksum64     = 'ae2ed227abe877193b95479e6e7599ed1e93848ca6276685f9c67fae34281928'
+$checksum64     = '616f488dca194144a82dd43d6df789d09237968610acb7abb8b5d770262fa07d'
 $checksumType64 = 'sha256'
 
 $packageArgs = @{
