@@ -6,13 +6,13 @@ The installer have been downloaded from their official download link listed on <
 and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <https://dl.grafana.com/oss/release/grafana-11.1.8.windows-amd64.zip>
+  32-Bit: <https://dl.grafana.com/oss/release/grafana-11.2.3.windows-amd64.zip>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: C4C8DFB755AF3340A4491806A309E7A79086C22F3BC47C89915576B1CCA23D45
+  checksum32: F76D744C64EDEBA77D91C6C062BDF6503D162C3515C492F9A7B071B78603DD1C
 
 File 'LICENSE.txt' is obtained from <https://github.com/grafana/grafana/blob/master/LICENSE>
 
