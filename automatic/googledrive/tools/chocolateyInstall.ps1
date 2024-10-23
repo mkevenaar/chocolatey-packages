@@ -27,13 +27,18 @@ else {
     checksum       = $checksum
     checksumType   = $checksumType
     softwareName   = 'Google Drive*'
-    silentArgs     = "--silent --desktop_shortcut"
+    silentArgs     = "--silent"
     validExitCodes = @(0, 1641, 3010)
   }
 
   $pp = Get-PackageParameters
   if ($pp.NoStart) {
     $packageArgs['silentArgs'] += ' --skip_launch_new'
+  }
+  if ($pp.NoDesktopIcon) {
+    $packageArgs['silentArgs'] += ' --desktop_shortcut=false'
+  } else {
+    $packageArgs['silentArgs'] += ' --desktop_shortcut'
   }
   if ($pp.NoGsuiteIcons) {
     $packageArgs['silentArgs'] += ' --gsuite_shortcuts=false'
