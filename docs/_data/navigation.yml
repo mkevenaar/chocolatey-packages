@@ -105,6 +105,8 @@
         url: /packages/icloud.html
       - page: "[Deprecated] Intel SSD Toolbox"
         url: /packages/intel.ssd.toolbox.html
+      - page: "Intel® Driver & Support Assistant (Install)"
+        url: /packages/inteldsa.html
       - page: "JetBrains IntelliJ IDEA (Educational)"
         url: /packages/intellijideaedu.html
       - page: "Intel® Memory and Storage Tool"

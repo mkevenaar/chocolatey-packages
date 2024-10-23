@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@d745753da830756a40daac8ffed6283164af9d21/icons/intel-dsa.png" width="48" height="48"/> [intel-dsa](https://community.chocolatey.org/packages/intel-dsa)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ed7af5ef3b4d01795ea3e33a66baba28bc337118/icons/intel-dsa.png" width="48" height="48"/> [intel-dsa](https://community.chocolatey.org/packages/intel-dsa)
 
 The Intel® Driver & Support Assistant keeps your system up-to-date by providing tailored support and hassle-free updates for most of your Intel hardware.
 
