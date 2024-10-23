@@ -19,7 +19,9 @@
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/intel-dsa</packageSourceUrl>
     <docsUrl>https://www.intel.com/content/www/us/en/support/topics/idsa-faq.html</docsUrl>
     <mailingListUrl>https://community.intel.com/</mailingListUrl>
-    <dependencies></dependencies>
+    <dependencies>
+      <dependency id="dotnetfx" version="4.6.2.0" />
+    </dependencies>
   </metadata>
   <files>
     <file src="tools\**" target="tools" />
