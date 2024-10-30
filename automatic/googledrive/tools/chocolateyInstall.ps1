@@ -2,7 +2,7 @@
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 . $toolsDir\helpers.ps1
 
-[version] $softwareVersion = '98.0.0.0'
+[version] $softwareVersion = '99.0.0.0'
 $installedVersion = Get-InstalledVersion
 
 if ($installedVersion -eq $softwareVersion -and !$env:ChocolateyForce) {
@@ -16,7 +16,7 @@ else {
   }
 
   $url = 'https://dl.google.com/drive-file-stream/GoogleDriveSetup.exe'
-  $checksum = '15690C7E5220FC21CCB7B38A05B7C717F1157A81AC7B9A2D05E85B246C18024D'
+  $checksum = 'D43A58266159302ABB9BBF42560A99E6133FE72379B34C1DD59633D16BD4A071'
   $checksumType = 'sha256'
 
   $packageArgs = @{
