@@ -5,8 +5,8 @@ $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $toolsDir
-  file          = "$toolsDir\exiftool-13.00_32.zip"
-  file64        = "$toolsDir\exiftool-13.00_64.zip"
+  file          = "$toolsDir\exiftool-13.01_32.zip"
+  file64        = "$toolsDir\exiftool-13.01_64.zip"
 }
 
 Get-ChocolateyUnzip  @packageArgs
