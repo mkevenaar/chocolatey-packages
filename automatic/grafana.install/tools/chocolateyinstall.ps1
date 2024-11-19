@@ -6,7 +6,7 @@ $packageArgs = @{
   softwareName   = 'GrafanaOSS*'
   fileType       = 'msi'
   silentArgs     = "/qn /norestart /l*v `"$env:TEMP\$env:ChocolateyPackageName.$env:ChocolateyPackageVersion.log`""
-  file           = "$toolsdir\grafana-10.4.12.windows-amd64.msi"
+  file           = "$toolsdir\grafana-10.4.13.windows-amd64.msi"
   validExitCodes = @(0,1641,3010)
 }
 
