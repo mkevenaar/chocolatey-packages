@@ -1,10 +1,12 @@
-﻿$softwareNamePattern = 'Samsung Magician*'
+﻿$ErrorActionPreference = 'Stop'
+
+$softwareNamePattern = 'Samsung Magician*'
 
 function Get-InstalledVersion {
   [array] $keys = Get-UninstallRegistryKey -SoftwareName $softwareNamePattern
 
   if ($keys.Length -ge 1) {
-      return [version] ($keys[0].DisplayVersion)
+    return [version] ($keys[0].DisplayVersion)
   }
 
   return $null
@@ -12,11 +14,11 @@ function Get-InstalledVersion {
 
 function Uninstall-CurrentVersion {
   $packageArgs = @{
-    packageName   = $env:ChocolateyPackageName
-    softwareName  = $softwareNamePattern
-    fileType      = 'exe'
-    silentArgs    = '/SILENT'
-    validExitCodes= @(0, 3010, 1605, 1614, 1641)
+    packageName    = $env:ChocolateyPackageName
+    softwareName   = $softwareNamePattern
+    fileType       = 'exe'
+    silentArgs     = '/SILENT'
+    validExitCodes = @(0, 3010, 1605, 1614, 1641)
   }
 
   [array]$key = Get-UninstallRegistryKey -SoftwareName $packageArgs['softwareName']
@@ -38,7 +40,6 @@ function Uninstall-CurrentVersion {
     Write-Warning "$($key.Count) matches found!"
     Write-Warning "To prevent accidental data loss, no programs will be uninstalled."
     Write-Warning "Please alert package maintainer the following keys were matched:"
-    $key | ForEach-Object {Write-Warning "- $($_.DisplayName)"}
+    $key | ForEach-Object { Write-Warning "- $($_.DisplayName)" }
   }
 }
-
