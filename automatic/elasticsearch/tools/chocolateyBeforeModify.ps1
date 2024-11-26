@@ -5,6 +5,6 @@ $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $unPath = Join-Path $toolsDir 'Uninstall-ChocolateyPath.psm1'
 Import-Module $unPath
 
-$version      = "8.16.1"
+$version      = "8.15.5"
 $binPath = Join-Path $toolsDir "elasticsearch-$($version)\bin"
 Uninstall-ChocolateyPath $binPath 'Machine'
