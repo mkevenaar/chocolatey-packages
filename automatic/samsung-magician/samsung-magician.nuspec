@@ -40,8 +40,9 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@e1ad9513cb5d8d6c79ce23c9023f141ac1b8df2d/icons/samsung-magician.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Samsung Electronics</copyright>
-    <tags>samsung-magician samsung ssd admin</tags>
+    <tags>samsung-magician samsung ssd magician nvme firmware update test factory manufacturer admin</tags>
     <licenseUrl>https://www.samsung.com/us/common/legal.html</licenseUrl>
+    <releaseNotes>https://semiconductor.samsung.com/consumer-storage/support/tools/</releaseNotes>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/samsung-magician</packageSourceUrl>
     <docsUrl>https://www.samsung.com/semiconductor/minisite/ssd/product/consumer/magician/</docsUrl>
@@ -58,7 +59,7 @@ let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) th
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
     <dependencies>
         <dependency id="autohotkey.portable" version="2.0.0" />
-        <dependency id="dotnet4.6.1" />
+        <dependency id="dotnetfx" />
     </dependencies>
 
     <!--<provides>NOT YET IMPLEMENTED</provides>-->
