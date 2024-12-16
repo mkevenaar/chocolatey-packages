@@ -2,7 +2,7 @@
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url          = 'https://download.cdn.viber.com/desktop/windows/ViberSetup.exe'
-$checksum     = '32B33B926B9C30703A3D44DE577E2CC02124042E6B803CC8EDFE5578A660420D'
+$checksum     = 'D43191C2EF2CDC4658AD601F32632639177A60C134453186A431D4727EE59E7B'
 $checksumType = 'sha256'
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
