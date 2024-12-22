@@ -6,8 +6,8 @@ $servicename = 'readarr'
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   fileType      = 'exe'
-  file          = "$toolsDir\Readarr.develop.0.4.5.2699.windows-core-x86-installer.exe"
-  file64        = "$toolsDir\Readarr.develop.0.4.5.2699.windows-core-x64-installer.exe"
+  file          = "$toolsDir\Readarr.develop.0.4.6.2711.windows-core-x86-installer.exe"
+  file64        = "$toolsDir\Readarr.develop.0.4.6.2711.windows-core-x64-installer.exe"
   softwareName  = 'Readarr*'
   silentArgs     = "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /LOG=`"$($env:TEMP)\$($env:chocolateyPackageName).$($env:chocolateyPackageVersion).InnoInstall.log`""
   validExitCodes = @(0)

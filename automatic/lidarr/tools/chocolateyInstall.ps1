@@ -6,8 +6,8 @@ $servicename    = "lidarr"
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   fileType      = 'exe'
-  file          = "$toolsDir\Lidarr.master.2.8.2.4493.windows-core-x86-installer.exe"
-  file64        = "$toolsDir\Lidarr.master.2.8.2.4493.windows-core-x64-installer.exe"
+  file          = "$toolsDir\Lidarr.develop.2.9.0.4508.windows-core-x86-installer.exe"
+  file64        = "$toolsDir\Lidarr.develop.2.9.0.4508.windows-core-x64-installer.exe"
   softwareName  = 'Lidarr*'
   silentArgs     = "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /LOG=`"$($env:TEMP)\$($env:chocolateyPackageName).$($env:chocolateyPackageVersion).InnoInstall.log`""
   validExitCodes = @(0)
