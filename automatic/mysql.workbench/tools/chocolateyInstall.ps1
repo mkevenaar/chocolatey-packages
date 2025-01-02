@@ -2,7 +2,7 @@
 
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url        = 'https://cdn.mysql.com/Downloads/MySQLGUITools/mysql-workbench-community-8.0.40-winx64.msi'
-$checksum     = 'e0ede360bf917823a0007b4c434f65edeec8863759012c1ad22ef4e2279220ef'
+$checksum     = '895da98edbf1e471e86729ad53c1994806f74ec1c10e78ae7d4ec58e1bfab578'
 $checksumType = 'sha256'
 
 $packageArgs = @{
