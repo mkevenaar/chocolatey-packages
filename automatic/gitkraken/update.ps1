@@ -15,10 +15,10 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
   $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
-  $re = 'Latest release: (.+)</span>'
+  $re = 'Latest release: (.+)</h5>'
   $version = ([regex]::Match($download_page.content, $re)).Captures.Groups[1].value
 
-  $url64 = 'https://release.axocdn.com/windows/GitKrakenSetup.exe'
+  $url64 = 'https://release.gitkraken.com/windows/GitKrakenSetup.exe'
 
   return @{
     URL64   = $url64
@@ -26,4 +26,4 @@ function global:au_GetLatest {
   }
 }
 
-update 64
+update -ChecksumFor 64
