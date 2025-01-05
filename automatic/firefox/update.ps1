@@ -3,8 +3,8 @@ param($IncludeStream, [switch] $Force)
 Import-Module Chocolatey-AU
 . "$PSScriptRoot\update_helper.ps1"
 
-$releasesBETA    = 'https://www.mozilla.org/en-US/firefox/beta/all/'
-$releasesDEV     = 'https://www.mozilla.org/en-US/firefox/developer/all/'
+$releasesBETA = 'https://www.mozilla.org/en-US/firefox/all/desktop-beta/win/en-US/'
+$releasesDEV = 'https://www.mozilla.org/en-US/firefox/all/desktop-developer/win/en-US/'
 $product = 'firefox'
 
 function global:au_BeforeUpdate {
@@ -18,6 +18,7 @@ function global:au_AfterUpdate {
     -Product $product `
     -ExtendedRelease:$($Latest.PackageName -eq 'FirefoxESR') `
     -DevelopmentRelease:$($Latest.PackageName -eq 'firefox-dev') `
+
 }
 
 function global:au_SearchReplace {
@@ -28,7 +29,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
 
   $streams = @{}
-  
+
   $data = GetVersionAndUrlFormats -UpdateUrl $releasesBETA -Product "${product}-beta"
   $version = $data.Version
   $betaversion = $version -replace "b", "."
