@@ -2,10 +2,25 @@ Import-Module Chocolatey-AU
 
 $releases = 'https://filezilla-project.org/download.php?show_all=1&type=server'
 
-function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix }
+$headers = @{
+  "Accept" = "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8"
+  "User-Agent" = "Chocolatey AU update check. https://chocolatey.org"
+}
+
+$options =
+@{
+  Headers = $headers
+}
+
+function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
+
+
+function global:au_AfterUpdate($Package) {
+  Invoke-VirusTotalScan $Package
+}
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing -UserAgent "Chocolatey"
+    $download_page = Invoke-WebRequest -Uri $releases -UserAgent "Chocolatey" -UseBasicParsing -Headers $headers
     $re = "FileZilla_Server_(.+)_.+\.exe"
 
     $url = $download_page.Links | Where-Object href -match $re | Select-Object -first 1 -expand href
@@ -16,6 +31,7 @@ function global:au_GetLatest {
         URL32 = $url
         Version = $version
         FileType = 'exe'
+        Options = $options
     }
 }
 
