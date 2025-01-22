@@ -1,6 +1,6 @@
 Import-Module Chocolatey-AU
 
-$releases = 'https://dev.mysql.com/downloads/mysql/'
+$releases = 'https://dev.mysql.com/downloads/mysql/8.0.html'
 
 function global:au_SearchReplace {
     @{
@@ -20,6 +20,8 @@ function global:au_GetLatest {
     $version = $versiondata.toString()
 
     $url = 'https://dev.mysql.com/get/Downloads/MySQL-' + $versiondata.toString(2) + '/mysql-' + $version + '-winx64.zip'
+    $url = 'https://cdn.mysql.com/archives/mysql-' + $versiondata.toString(2) + '/mysql-' + $version + '-winx64.zip'
+    $url = 'https://cdn.mysql.com/Downloads/MySQL-' + $versiondata.toString(2) + '/mysql-' + $version + '-winx64.zip'
     $Latest = @{ URL64 = $url; Version = $version }
     return $Latest
 }
