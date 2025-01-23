@@ -6,14 +6,14 @@ The installer have been downloaded from their official download link listed on <
 and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <https://exiftool.org/exiftool-13.14_32.zip>
-  64-Bit: <https://exiftool.org/exiftool-13.14_64.zip>
+  32-Bit: <https://exiftool.org/exiftool-13.15_32.zip>
+  64-Bit: <https://exiftool.org/exiftool-13.15_64.zip>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: F95F8AD97CDEC06C0347B92166DC252FB47CF2499022FAAE9B403FEA52650050
-  checksum64: B525C385783F4579A546AB926ACA1D1C624579D4E8DC83D2FCCEDB31D80EBC5E
+  checksum32: 4D7C8FEC6B88EBD694939238A24C82B786847EB9BEEE83C7FDA9D4EAB35D5129
+  checksum64: F42AE797842F24D2FC86C058C5ED9B6CBF2F7F9141365A865349DE8406E50B45
 
 File 'LICENSE.txt' is obtained from <https://exiftool.org/#license>
