@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>4.0.12.2866</version>
+    <version>4.0.12.2892</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Maurice Kevenaar</owners>
     <!-- ============================== -->
@@ -42,7 +42,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <copyright>© 2021 Sonarr. All rights reserved.</copyright>
     <tags>sonarr pvr p2p filesharing torrent nntp admin</tags>
     <releaseNotes>https://github.com/Sonarr/Sonarr/releases</releaseNotes>
-    <licenseUrl>https://github.com/Sonarr/Sonarr/blob/develop/LICENSE.md</licenseUrl>
+    <licenseUrl>https://github.com/Sonarr/Sonarr/blob/v5-develop/LICENSE.md</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/sonarr</packageSourceUrl>
     <docsUrl>https://wiki.servarr.com/Sonarr</docsUrl>
