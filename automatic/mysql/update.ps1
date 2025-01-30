@@ -25,14 +25,14 @@ function CreateStream {
 }
 
 function global:au_GetLatest {
-  # $header = @{
-  #   "Authorization" = "token $env:github_api_key"
-  # }
+  $header = @{
+    "Authorization" = "token $env:github_api_key"
+  }
   $download_page = Invoke-RestMethod -Uri $releases -Headers $header
 
   $streams = @{ }
 
-  $tags = $download_page | Where-Object { $_.ref -match '^refs/tags/mysql-\d.\d.\d$' } | Sort-Object -Property ref -Descending
+  $tags = $download_page | Where-Object { $_.ref -match '^refs/tags/mysql-[0-9.]+$' } | Sort-Object -Property ref -Descending
 
   foreach ($tag in $tags) {
     $version = ($tag -split "/")[-1]
@@ -42,15 +42,15 @@ function global:au_GetLatest {
     $majmin = $versiondata.toString(2)
 
     $url = 'https://cdn.mysql.com/Downloads/MySQL-' + $majmin + '/mysql-' + $version + '-winx64.zip'
-    try {
-      Get-RedirectedUrl $url
-    }
-    catch {
-      # Ignore the missing versions.
-      continue
-    }
 
     if (!$streams.ContainsKey("$majmin")) {
+      try {
+        Get-RedirectedUrl $url
+      }
+      catch {
+        # Ignore the missing versions.
+        continue
+      }
       $streams.Add($majmin, (CreateStream $url $version $releaseNotes))
     }
   }
@@ -64,4 +64,3 @@ if ($MyInvocation.InvocationName -ne '.') {
 function global:au_AfterUpdate($Package) {
   Invoke-VirusTotalScan $Package
 }
-
