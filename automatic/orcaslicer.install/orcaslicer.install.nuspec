@@ -43,7 +43,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <releaseNotes>https://github.com/SoftFever/OrcaSlicer/releases/tag/v2.2.0</releaseNotes>
     <licenseUrl>https://github.com/SoftFever/OrcaSlicer/blob/main/LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/prusaslicer</packageSourceUrl>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/orcaslicer.install</packageSourceUrl>
     <docsUrl>https://github.com/SoftFever/OrcaSlicer/wiki</docsUrl>
     <projectSourceUrl>https://github.com/SoftFever/OrcaSlicer</projectSourceUrl>
     <bugTrackerUrl>https://github.com/SoftFever/OrcaSlicer/issues</bugTrackerUrl>

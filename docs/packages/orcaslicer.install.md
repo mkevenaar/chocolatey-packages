@@ -42,5 +42,5 @@ let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) th
 
 [Software Site](https://github.com/SoftFever/OrcaSlicer)
 
-[Package Source](https://github.com/jtcmedia/chocolatey-packages/tree/master/prusaslicer)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/orcaslicer.install)
 
