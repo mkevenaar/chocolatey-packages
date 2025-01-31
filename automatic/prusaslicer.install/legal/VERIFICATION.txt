@@ -14,4 +14,4 @@ and can be verified like this:
   checksum type: sha256
   checksum64: 642E0B216BF8130363D11144D809E8F1599DEC5D873715A918C03446718D189C
 
-File 'LICENSE.txt' is obtained from <https://github.com/psi-im/psi/blob/master/COPYING>
+File 'LICENSE.txt' is obtained from <https://github.com/prusa3d/Slic3r/blob/master/LICENSE>
