@@ -77,5 +77,5 @@ let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) th
 
 [Software Site](https://www.prusa3d.com/slic3r-prusa-edition/)
 
-[Package Source](https://github.com/jtcmedia/chocolatey-packages/tree/master/prusaslicer)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/prusaslicer.install)
 
