@@ -44,7 +44,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <licenseUrl>https://github.com/prusa3d/PrusaSlicer/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/prusaslicer.install</packageSourceUrl>
-    <docsUrl>https://www.prusaprinters.org/slic3r-prusa-edition-beginners-guide/</docsUrl>
+    <docsUrl>https://help.prusa3d.com/category/prusaslicer_204</docsUrl>
     <projectSourceUrl>https://github.com/prusa3d/PrusaSlicer</projectSourceUrl>
     <bugTrackerUrl>https://github.com/prusa3d/PrusaSlicer/issues</bugTrackerUrl>
     <mailingListUrl>https://forum.prusa3d.com/?language=en</mailingListUrl>
