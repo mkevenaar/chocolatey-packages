@@ -209,6 +209,8 @@
         url: /packages/powertoys.html
       - page: "Prowlarr"
         url: /packages/prowlarr.html
+      - page: "PrusaSlicer (Install)"
+        url: /packages/prusaslicer.install.html
       - page: "Psi"
         url: /packages/psi.html
       - page: "Psi (Install)"

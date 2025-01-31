@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Read this before creating packages: https://docs.chocolatey.org/en-us/create/create-packages -->
+<!-- It is especially important to read the above link to understand additional requirements when publishing packages to the community feed aka dot org (https://chocolatey.org/packages). -->
+<!-- Test your packages in a test environment: https://github.com/chocolatey/chocolatey-test-environment -->
+
+<!--
+This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Reference. Chocolatey uses a special version of NuGet.Core that allows us to do more than was initially possible. As such there are certain things to be aware of:
+
+* the package xmlns schema url may cause issues with nuget.exe
+* Any of the following elements can ONLY be used by choco tools - projectSourceUrl, docsUrl, mailingListUrl, bugTrackerUrl, packageSourceUrl, provides, conflicts, replaces
+* nuget.exe can still install packages with those elements but they are ignored. Any authoring tools or commands will error on those elements
+-->
+<!-- You can embed software files directly into packages, as long as you are not bound by distribution rights. -->
+<!-- * If you are an organization making private packages, you probably have no issues here -->
+<!-- * If you are releasing to the community feed, you need to consider distribution rights. -->
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <!-- This section is about this package, although id and version have ties back to the software -->
+    <!-- id is lowercase and if you want a good separator for words, use '-', not '.'. Dots are only acceptable as suffixes for certain types of packages, e.g. .install, .portable, .extension, .template -->
+    <!-- If the software is cross-platform, attempt to use the same id as the debian/rpm package(s) if possible. -->
+    <id>prusaslicer.install</id>
+    <!-- version should MATCH as closely as possible with the underlying software -->
+    <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
+    <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
+    <version>0.0</version>
+    <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
+    <owners>Maurice Kevenaar</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <!-- This section is about the software itself -->
+    <title>PrusaSlicer (Install)</title>
+    <authors>Alessandro Ranellucci, Prusa Research</authors>
+    <!-- projectUrl is required for the community feed -->
+    <projectUrl>https://www.prusa3d.com/slic3r-prusa-edition/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@9379b1d016dfd1a1de933e8de3807fcb94ba26fb/icons/prusaslicer.install.png</iconUrl>
+    <!-- copyright is usually years and software vendor, but not required for internal feeds -->
+    <copyright>Prusa Research s.r.o.</copyright>
+    <tags>prusaslicer slic3r 3dprinting prusa gcode slicer stl admin</tags>
+    <releaseNotes>https://github.com/prusa3d/PrusaSlicer/releases/tag/version_2.9.0</releaseNotes>
+    <licenseUrl>https://github.com/prusa3d/PrusaSlicer/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <packageSourceUrl>https://github.com/jtcmedia/chocolatey-packages/tree/master/prusaslicer</packageSourceUrl>
+    <docsUrl>https://www.prusaprinters.org/slic3r-prusa-edition-beginners-guide/</docsUrl>
+    <projectSourceUrl>https://github.com/prusa3d/PrusaSlicer</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/prusa3d/PrusaSlicer/issues</bugTrackerUrl>
+    <mailingListUrl>https://forum.prusa3d.com/?language=en</mailingListUrl>
+    <summary>PrusaSlicer takes 3D models (STL, OBJ, AMF) and converts them into G-code instructions for FFF printers or PNG layers for mSLA 3D printers.</summary>
+    <description><![CDATA[## PrusaSlicer
+
+You may want to check the [PrusaSlicer project page](https://www.prusa3d.com/prusaslicer/).
+
+PrusaSlicer takes 3D models (STL, OBJ, AMF) and converts them into G-code
+instructions for FFF printers or PNG layers for mSLA 3D printers. It's
+compatible with any modern printer based on the RepRap toolchain, including all
+those based on the Marlin, Prusa, Sprinter and Repetier firmware. It also works
+with Mach3, LinuxCNC and Machinekit controllers.
+
+PrusaSlicer is based on [Slic3r](https://github.com/Slic3r/Slic3r) by Alessandro Ranellucci and the RepRap community.
+
+### What are PrusaSlicer's main features?
+
+Key features are:
+
+* **multi-platform** (Linux/Mac/Win) and packaged as standalone-app with no dependencies required
+* complete **command-line interface** to use it with no GUI
+* multi-material **(multiple extruders)** object printing
+* multiple G-code flavors supported (RepRap, Makerbot, Mach3, Machinekit etc.)
+* ability to plate **multiple objects having distinct print settings**
+* **multithread** processing
+* **STL auto-repair** (tolerance for broken models)
+* wide automated unit testing
+
+Other major features are:
+
+* combine infill every 'n' perimeters layer to speed up printing
+* **3D preview** (including multi-material files)
+* **multiple layer heights** in a single print
+* **spiral vase** mode for bumpless vases
+* fine-grained configuration of speed, acceleration, extrusion width
+* several infill patterns including honeycomb, spirals, Hilbert curves
+* support material, raft, brim, skirt
+* **standby temperature** and automatic wiping for multi-extruder printing
+* [customizable **G-code macros**](https://github.com/prusa3d/PrusaSlicer/wiki/Slic3r-Prusa-Edition-Macro-Language) and output filename with variable placeholders
+* support for **post-processing scripts**
+* **cooling logic** controlling fan speed and dynamic print speed
+
+### What's PrusaSlicer license?
+
+PrusaSlicer is licensed under the _GNU Affero General Public License, version 3_.
+The PrusaSlicer is originally based on Slic3r by Alessandro Ranellucci.
+
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) that the package is no longer updating correctly.
+]]></description>
+    <!-- =============================== -->
+
+    <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
+    <!--<dependencies>
+      <dependency id="" version="__MINIMUM_VERSION__" />
+      <dependency id="" version="[__EXACT_VERSION__]" />
+      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_INCLUSIVE]" />
+      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_EXCLUSIVE)" />
+      <dependency id="" />
+    </dependencies>-->
+
+    <!--<provides>NOT YET IMPLEMENTED</provides>-->
+    <!--<conflicts>NOT YET IMPLEMENTED</conflicts>-->
+    <!--<replaces>NOT YET IMPLEMENTED</replaces>-->
+  </metadata>
+  <!-- this section controls what actually gets packaged into the Chocolatey package -->
+  <files>
+    <file src="legal\**" target="legal" />
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
