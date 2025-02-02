@@ -15,7 +15,7 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
   $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
-  $re = 'Latest release: (.+)</h5>'
+  $re = 'Latest release: ([\d\.]+)'
   $version = ([regex]::Match($download_page.content, $re)).Captures.Groups[1].value
 
   $url64 = 'https://release.gitkraken.com/windows/GitKrakenSetup.exe'
