@@ -1,7 +1,7 @@
 Import-Module Chocolatey-AU
 
 $releases = 'https://mariadb.org/download'
-$feed = 'https://downloads.mariadb.org/rest-api/mariadb/'
+$feed = 'https://downloads.mariadb.org/rest-api/mariadb/all-releases/'
 $mirror = 'archive'
 
 function name4url($url) {
@@ -25,30 +25,30 @@ function global:au_BeforeUpdate {
 
     if ($Latest.Url32) {
       $base_name = name4url $Latest.Url32
-      $file_name = "{0}{2}.{1}" -f $base_name, $ext, $(if ($NoSuffix) { '' } else {'_x32'})
+      $file_name = "{0}{2}.{1}" -f $base_name, $ext, $(if ($NoSuffix) { '' } else { '_x32' })
       $file_path = Join-Path $toolsPath $file_name
 
       Write-Host "Downloading to $file_name -" $Latest.Url32
-      $url32 = $Latest.URL32  + "?mirror=${mirror}"
+      $url32 = $Latest.URL32 + "?mirror=${mirror}"
       Invoke-WebRequest -Uri $url32 -OutFile $file_path
-      (Get-MsiInformation -Path $file_path).ProductVersion
       $Latest.FileName32 = $file_name
     }
 
     if ($Latest.Url64) {
-        $base_name = name4url $Latest.Url64
-        $file_name = "{0}{2}.{1}" -f $base_name, $ext, $(if ($NoSuffix) { '' } else {'_x64'})
-        $file_path = Join-Path $toolsPath $file_name
+      $base_name = name4url $Latest.Url64
+      $file_name = "{0}{2}.{1}" -f $base_name, $ext, $(if ($NoSuffix) { '' } else { '_x64' })
+      $file_path = Join-Path $toolsPath $file_name
 
-        Write-Host "Downloading to $file_name -" $Latest.Url64
-        $url64 = $Latest.URL64  + "?mirror=${mirror}"
-        Invoke-WebRequest -Uri $url64 -OutFile $file_path
-        (Get-MsiInformation -Path $file_path).ProductVersion
-        $Latest.FileName64 = $file_name
+      Write-Host "Downloading to $file_name -" $Latest.Url64
+      $url64 = $Latest.URL64 + "?mirror=${mirror}"
+      Invoke-WebRequest -Uri $url64 -OutFile $file_path
+      $Latest.FileName64 = $file_name
     }
-  } catch {
+  }
+  catch {
     throw $_
-  } finally {
+  }
+  finally {
     $ProgressPreference = $CurrentProgressPreference
   }
 }
@@ -61,33 +61,33 @@ function global:au_GetLatest {
 
   $streams = @{ }
 
-  $major_releases = $json.major_releases
+  $releases = $json.releases
 
-  foreach ($major_release in $major_releases) {
+  foreach ($release in $releases) {
+    $version = Get-Version($release.release_number)
 
-    $streamVersion = $major_release.release_id
+    $releaseVersion = $version.toString()
+    $streamVersion = $version.toString(2)
 
-    $release_data_feed = "https://downloads.mariadb.org/rest-api/mariadb/${streamVersion}/"
+    $release_data_feed = "https://downloads.mariadb.org/rest-api/mariadb/${releaseVersion}"
     $release_json = Invoke-WebRequest -Uri $release_data_feed -UseBasicParsing  | ConvertFrom-Json
 
-    $releaseversion = $release_json.releases.psobject.properties.name | Select-Object -First 1
+    $64bit = $release_json.release_data.$releaseVersion.files | Where-Object { ($_.os -eq "Windows") -and ($_.package_type -eq "MSI Package") -and ($_.cpu -eq "x86_64") }
 
-    if (-not $major_release.release_status -eq 'Stable' -or -not $major_release.release_status -eq 'Old Stable' ) {
-      $version = ($release_json.releases.psobject.properties.name | Select-Object -First 1) + "-" + $major_release.release_status
-      $releaseversion = Get-Version($version)
+    $releaseNotes = $release_json.release_data.$releaseVersion.release_notes_url
+
+    if ('' -eq $releaseNotes) {
+      $releaseNotesVersion = $releaseVersion -replace "\."
+      $releaseNotes = "https://mariadb.com/kb/en/mariadb-${releaseNotesVersion}-release-notes/"
     }
 
-    $64bit = $release_json.releases.$releaseversion.files | Where-Object { ($_.os -eq "Windows") -and ($_.package_type -eq "MSI Package") -and ($_.cpu -eq "x86_64") }
-
-    $releaseNotes = $release_json.releases.$releaseversion.release_notes_url
-
-    if('' -eq $releaseNotes) {
-      $releasenotesversion = $releaseversion -replace "\."
-      $releaseNotes = "https://mariadb.com/kb/en/mariadb-${releasenotesversion}-release-notes/"
+    if ("stable" -ne $release.status) {
+      $releaseVersion = $releaseVersion + "-" + $release.status
+      $streamVersion = $streamVersion + "-" + $release.status
     }
 
     $Result = @{
-      Version        = $releaseversion
+      Version        = $releaseVersion
       URL64          = $64bit.file_download_url
       Checksum64     = $64bit.checksum.sha256sum
       ChecksumType64 = 'sha256'
@@ -95,7 +95,9 @@ function global:au_GetLatest {
       FileType       = 'msi'
     }
     if (-not $null -eq $64bit.file_name) {
-      $streams.Add($streamVersion, $Result)
+      if (!$streams.ContainsKey("$streamVersion")) {
+        $streams.Add($streamVersion, $Result)
+      }
     }
   }
 
@@ -108,7 +110,7 @@ function global:au_SearchReplace {
     ".\tools\chocolateyInstall.ps1" = @{
       "(?i)(^\s*file64\s*=\s*`"[$]toolsDir\\).*" = "`${1}$($Latest.FileName64)`""
     }
-    ".\legal\VERIFICATION.txt" = @{
+    ".\legal\VERIFICATION.txt"      = @{
       "(?i)(listed on\s*)\<.*\>" = "`${1}<$releases>"
       "(?i)(64-Bit.+)\<.*\>"     = "`${1}<$($Latest.URL64)>"
       "(?i)(checksum type:).*"   = "`${1} $($Latest.ChecksumType64)"
