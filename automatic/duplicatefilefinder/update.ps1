@@ -17,7 +17,7 @@ function global:au_GetLatest {
     $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
     $version_page  = Invoke-WebRequest -Uri $versions -UseBasicParsing
 
-    $re = 'Version (.+\d) \|'
+    $re = 'Version ([\d\.]+)'
     $version = ([regex]::Match($version_page.content,$re)).Captures.Groups[1].value
 
     $url = $download_page.Links | Where-Object href -match "setup.exe" | Select-Object -First 1 -expand href
