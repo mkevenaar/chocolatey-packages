@@ -6,7 +6,7 @@ $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $toolsDir
   fileType       = 'exe'
-  file           = "$toolsdir\texstudio-4.8.1-win-qt6.exe"
+  file           = "$toolsdir\texstudio-4.8.6-win-qt6-signed.exe"
   softwareName   = 'TeXStudio *'
   silentArgs     = '/S'
 
