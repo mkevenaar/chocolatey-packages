@@ -24,7 +24,7 @@ function global:au_GetLatest {
   }
   $download_page = Invoke-RestMethod -Uri $releases -Headers $header
 
-    $re  = "texstudio-(.+)-win.qt6.exe"
+    $re  = "texstudio-(.+)-win.qt6-signed.exe"
     $asset = $download_page.assets | Where-Object -Property name -match $re
 
   $version = $download_page.tag_name.Replace('v', '')
