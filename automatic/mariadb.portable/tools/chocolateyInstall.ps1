@@ -8,16 +8,16 @@ Write-Host "Adding `'$installDirBin`' to the path and the current shell path"
 Install-ChocolateyPath "$installDirBin"
 $env:Path = "$($env:Path);$($installDirBin)"
 
-if (![System.IO.Directory]::Exists($installDir)) {[System.IO.Directory]::CreateDirectory($installDir) | Out-Null}
+if (![System.IO.Directory]::Exists($installDir)) { [System.IO.Directory]::CreateDirectory($installDir) | Out-Null }
 
 $packageArgs = @{
-  packageName    = $env:ChocolateyPackageName
-  unzipLocation  = $installDir
-  file64         = "$toolsdir\mariadb-11.4.5-winx64.zip"
+  packageName   = $env:ChocolateyPackageName
+  unzipLocation = $installDir
+  file64        = "$toolsdir\mariadb-11.4.5-winx64.zip"
 }
 
 Write-Verbose "Downloading and installing program..."
-Install-ChocolateyZipPackage  @packageArgs
+Get-ChocolateyUnzip @packageArgs
 
 # find the unpack directory
 $installedContentsDir = Get-ChildItem $installDir -include 'mariadb*' | Sort-Object -Property LastWriteTime -Desc | Select-Object -First 1
@@ -26,7 +26,7 @@ $installedContentsDir = Get-ChildItem $installDir -include 'mariadb*' | Sort-Obj
 if ([System.IO.Directory]::Exists("$installDirBin")) {
   Write-Host "Clearing out the contents of `'$installDirBin`'."
   Start-Sleep 3
-  [System.IO.Directory]::Delete($installDirBin,$true)
+  [System.IO.Directory]::Delete($installDirBin, $true)
 }
 
 # copy the installed directory into the current dir
@@ -37,7 +37,7 @@ Copy-Item "$($installedContentsDir)\*" "$($installDir)\current" -Force -Recurse
 # initialize everything
 Write-Host "Initializing MariaDB if it hasn't already been initialized."
 
-$defaultDataDir='C:\ProgramData\MariaDB\data'
+$defaultDataDir = 'C:\ProgramData\MariaDB\data'
 if (![System.IO.Directory]::Exists($defaultDataDir)) {
   [System.IO.Directory]::CreateDirectory($defaultDataDir) | Out-Null
 }
