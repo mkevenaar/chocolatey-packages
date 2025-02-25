@@ -7,9 +7,7 @@ $toolsPath = Split-Path $MyInvocation.MyCommand.Definition
 $LCID = (Get-UICulture).LCID
 $url_version = '701'
 
-$checksumType32 = 'sha256'
 $checksumType64 = 'sha256'
-
 
 $pp = Get-PackageParameters
 if ($pp.LCID) {
@@ -326,9 +324,6 @@ $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $toolsDir
   fileType      = 'exe'
-  url           = $downloadInfo.URL32
-  checksum      = $downloadInfo.Checksum32
-  checksumType  = $checksumType32
   url64bit      = $downloadInfo.URL64
   checksum64    = $downloadInfo.Checksum64
   checksumType64= $checksumType64
