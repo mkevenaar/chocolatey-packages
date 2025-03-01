@@ -4,7 +4,7 @@ function resolveLatestRelease {
     $response,
     [boolean] $usePrerelease
   )
-  $verRegex = "((\d+)(\.\d+){0,3}(\-[a-z]+[0-9]+)?)$";
+  $verRegex = "((\d+)(\.\d+){0,3}(\-[a-z]+[0-9]?)?)$";
   if ($usePrerelease) {
     $release = $response | Where-Object tag_name -Match $verRegex | Select-Object -First 1;
   } else {
