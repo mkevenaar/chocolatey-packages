@@ -1,5 +1,7 @@
 Import-Module Chocolatey-AU
 
+$feed_url = 'https://www.plex.tv/wp-json/plex/v1/downloads/plexamp'
+
 $releases = 'https://www.plex.tv/plexamp/'
 
 function name4url($url) {
@@ -41,26 +43,9 @@ function global:au_BeforeUpdate {
     $ProgressPreference = $CurrentProgressPreference
   }
 }
-function global:au_GetLatest {
-  $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
-
-  # https://plexamp.plex.tv/plexamp.plex.tv/desktop/Plexamp%20Setup%204.9.5.exe
-  $re = '/Plexamp%20Setup%20(.*\d)\.exe'
-  $url = $download_page.Links | Where-Object href -match $re | Select-Object -First 1 -expand href
-
-  # $url = [uri]::UnescapeDataString($url)
-
-  $version = ([regex]::Match($url, $re)).Captures.Groups[1].value
-
-  return @{
-    URL64    = $url
-    Version  = $version
-    FileType = 'exe'
-  }
-}
 
 function global:au_SearchReplace {
-  return @{
+  @{
     'tools\chocolateyInstall.ps1' = @{
       "(?i)(^\s*file64\s*=\s*`"[$]toolsDir\\).*" = "`${1}$($Latest.FileName64)`""
     }
@@ -72,6 +57,22 @@ function global:au_SearchReplace {
     }
   }
 }
+
+function global:au_GetLatest {
+  $json = Invoke-RestMethod -Uri $feed_url
+
+  $version = $json.data.computer.windows.version
+  $version = Get-Version($version)
+  $version.prerelease = $null
+
+  $url = $json.data.computer.windows.releases.url
+  return @{
+    URL64    = $url
+    Version  = $version
+    FileType = 'exe'
+  }
+}
+
 
 if ($MyInvocation.InvocationName -ne '.') {
   update -ChecksumFor None
