@@ -6,8 +6,8 @@ $servicename = 'prowlarr'
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   fileType      = 'exe'
-  file          = "$toolsDir\Prowlarr.master.1.31.2.4975.windows-core-x86-installer.exe"
-  file64        = "$toolsDir\Prowlarr.master.1.31.2.4975.windows-core-x64-installer.exe"
+  file          = "$toolsDir\Prowlarr.develop.1.32.0.4978.windows-core-x86-installer.exe"
+  file64        = "$toolsDir\Prowlarr.develop.1.32.0.4978.windows-core-x64-installer.exe"
   softwareName  = 'Prowlarr*'
   silentArgs     = "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /LOG=`"$($env:TEMP)\$($env:chocolateyPackageName).$($env:chocolateyPackageVersion).InnoInstall.log`""
   validExitCodes = @(0)
