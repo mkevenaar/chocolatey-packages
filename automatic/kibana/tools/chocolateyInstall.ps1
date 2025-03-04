@@ -1,10 +1,10 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = 'https://artifacts.elastic.co/downloads/kibana/kibana-8.17.3-windows-x86_64.zip'
-$checksum     = 'b110c3abbe00e9e19e03c6792f7df3616797893583c3e5e58a8e117efc5c9349'
+$url          = 'https://artifacts.elastic.co/downloads/kibana/kibana-8.16.5-windows-x86_64.zip'
+$checksum     = '6a995d557ff37ac76fbc4fe2a13226f3150e8a20675802b6b1ea9fc68a914c01'
 $checksumType = 'sha256'
-$version      = "8.17.3"
+$version      = "8.16.5"
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
