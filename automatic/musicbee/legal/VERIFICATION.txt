@@ -1,0 +1,19 @@
+VERIFICATION
+Verification is intended to assist the Chocolatey moderators and community
+in verifying that this package's contents are trustworthy.
+
+The installer have been downloaded from their official download link listed on <https://www.appveyor.com/releases/>
+and can be verified like this:
+
+1. Download the following installers:
+  32-Bit: <https://www.appveyor.com/downloads/appveyor/appveyor-server.msi>
+2. You can use one of the following methods to obtain the checksum
+  - Use powershell function 'Get-Filehash'
+  - Use chocolatey utility 'checksum.exe'
+
+  checksum type: sha256
+  checksum32: C23525691D170B1F33456092220049E2264F90A515BF7CF62C819327D97C5EC8
+
+File 'LICENSE.txt' is extracted from the software.
+
+File 'VERIFICATION.png' is a screenshot of <https://getmusicbee.com/forum/index.php?topic=42659.0>

@@ -1,0 +1,95 @@
+END USER LICENSE AGREEMENT 
+for MUSICBEE
+
+IMPORTANT- PLEASE READ CAREFULLY: BY INSTALLING THE SOFTWARE, COPYING THE SOFTWARE, AND/OR USING THE SOFTWARE, YOU (EITHER ON BEHALF OF YOURSELF AS AN INDIVIDUAL OR ON BEHALF OF AN ENTITY AS ITS AUTHORISED REPRESENTATIVE) AGREE TO ALL OF THE TERMS OF THIS END USER LICENSE AGREEMENT ('AGREEMENT') REGARDING YOUR USE OF THE SOFTWARE.  IF YOU DO NOT AGREE WITH ALL OF THE TERMS OF THIS AGREEMENT, CLICK ON THE 'CANCEL' BUTTON. THIS WILL CANCEL THE INSTALLATION.
+
+Permitted use and restrictions:
+-----------------------------------------
+Subject to the terms below, the Author ("Steven Mayall") hereby grants you, upon the following terms and conditions, a non-exclusive, non-transferable license to install and to use the downloadable version of MusicBee.
+
+The Software is free for personal use only.
+
+By using the Software, you agree to the following conditions. The Licensee may not:
+1) decompile, disassemble, reverse engineer or modify any part of the Software;
+2) remove any proprietary notices or labels on the Software;
+3) resell, lease, rent, transfer, sublicense, or otherwise transfer rights to the Software.
+
+Title
+------
+You acknowledge and agree that ownership, rights, and title to the Software and all subsequent copies thereof are held by and shall remain that of the Author.
+
+Disclaimer of warranty
+------------------------------
+The Software is provided to you at no charge "as is", "with all faults". You accept that this Software may contain bugs and that the Author has made no express warranties, oral or written, to you regarding the products and that the products are being provided to you without warranty of any kind. The Author disclaims any and all other warranties, whether expressed, implied, or statutory, including, but without limitation, the implied warranties of non infringement of third party rights, merchantability, and fitness for a particular purpose. The Author shall not be liable for indirect, incidental, special, cover, reliance, or consequential damages (including, but not limited to, loss of anticipated profit) arising from any cause under or related to this agreement.
+
+Limitation of liability
+---------------------------
+The Licensee must assume the entire risk of using the program. In no event shall the Author be liable to you for any damages whatsoever (including any incidental, indirect or consequential damages which shall include damages for personal injury, lost profits, lost data, lost savings) arising out of the use of the Software, even if the Author has been advised of the possibility of such damages. In no event will the Authors’ liability for any claim, whether in contract, strict liability or tort (including negligence or otherwise), be liable to you for any damages.
+
+Term and termination
+-----------------------------
+This license agreement will continue in perpetuity unless terminated as set forth herein. This license agreement may be terminated in the event that the Licensee breaches any term or condition of the agreement. The Licensee may voluntarily terminate this license agreement in writing. Upon termination of this agreement, the Licensee must cease to use the Software.
+
+Third party intellectual property rights
+--------------------------------------------------
+Several standalone components are bundled with the Software.  Licence and Title rights for these components rest with their authors or as described in each component's license, as described below:
+
+BASS Audio Library
+© 1999-2008, Un4seen Developments Ltd. (http://www.un4seen.com)
+
+BASS.Net
+© 2005-2008, TEN53 GbR (http://www.ten53.de)
+
+BASS_AC3 Addon, 
+© 2003-2006, MaresWEB (http://www.maresweb.de) 
+Components © 2006 Dolby Laboratories, Inc. 
+
+BASS_APE Addon
+© 2003-2006, MaresWEB (http://www.maresweb.de)
+Components © 2000-2006, Matthew T. Ashland. (http://www.monkeysaudio.com)
+
+BASS_MPC Addon
+© 2003-2006, MaresWEB (http://www.maresweb.de)
+Components © 2006, The Musepack Development Team. (http://www.musepack.net)
+
+BASS_OFR Addon
+© 2003-2006, MaresWEB (http://www.maresweb.de)
+Components © 1996-2005, Florin Ghido.  (http://www.losslessaudio.org)
+
+BASS_TTA Addon
+© 2003-2006, MaresWEB (http://www.maresweb.de)
+Components © 1999-2006 Alexander Djourik. (http://www.trueaudio.com)
+
+BASS_SPX
+© 2003-2006, MaresWEB (http://www.maresweb.de)
+Components © 2002-2006, Jean-Marc Valin, Xiph.Org Foundation (http://www.speex.org)
+
+BASS_VST
+© Bjoern Petersen Software Design'n'Development, http://www.silverjuke.net
+enhancements by BaseHead, LLC, http://baseheadinc.com
+
+BASSBox Visualisation Plugins
+© Patrice Terrier, http://zapsolution.com
+
+FLAC Encoder (flac.exe) : Licensed under BSD License
+© 2000-2008, Josh Coalson
+The source code is available at: http://flac.sourceforge.net
+
+MP3 Gain (mp3gain.exe): Authored by Glen Sawyer. Licensed under the GNU Lesser General Public License (http://www.gnu.org/copyleft/lesser.html). The full source code to the library is available via: http://mp3gain.sourceforge.net
+
+EBU R128 algorithm for Replay Gain (lib1770.dll): Authored by Peter Belkner.  Licensed under the GNU Lesser General Public License.
+The source code is available at: http://sourceforge.net/projects/r128gain/files/lib1770
+
+Some icons are sourced from: http://www.famfamfam.com/lab/icons/silk/
+
+Ogg Vorbis Encoder & Tools (oggenc2.exe, VorbisGain.exe): Licensed under the terms that follow. Source code is available via:
+http://www.vorbis.com/download.psp
+Copyright (c) 2002, Xiph.Org Foundation
+Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
+* Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
+* Redistributions in binary form must reproduce the above copyright notice, this list of conditions and the following disclaimer in the documentation and/or other materials provided with the distribution.
+* Neither the name of the Xiph.org Foundation nor the names of its contributors may be used to endorse or promote products derived from this software without specific prior written permission.
+This software is provided by the copyright holders and contributors "as is" and any express or implied warranties, including, but not limited to, the implied warranties of merchantability and fitness for a particular purpose are disclaimed. In no event shall the foundation or contributors be liable for any direct, indirect, incidental, special, exemplary, or consequential damages (including, but not limited to, procurement of substitute goods or services; loss of use, data, or profits; or business interruption) however caused and on any theory of liability, whether in contract, strict liability, or tort (including negligence or otherwise) arising in any way out of the use of this software, even if advised of the possibility of such damage.
+
+MusicBee uses the gracenote API to source metadata and lyrics, http://www.gracenote.com
+
