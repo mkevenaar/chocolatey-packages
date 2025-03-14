@@ -45,6 +45,12 @@
         url: /packages/codeql.html
       - page: "Comic Collector"
         url: /packages/comiccollector.html
+      - page: "CPU-Z"
+        url: /packages/cpuz.html
+      - page: "CPU-Z (Install)"
+        url: /packages/cpuz.install.html
+      - page: "CPU-Z (Portable)"
+        url: /packages/cpuz.portable.html
       - page: "CrystalDiskInfo"
         url: /packages/crystaldiskinfo.html
       - page: "CrystalDiskInfo (Install)"
