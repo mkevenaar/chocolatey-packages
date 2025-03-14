@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = 'https://downloadmirror.intel.com/763558/Intel_MAS_GUI_Tool_Win_2.2.zip'
-$checksum     = 'd4d95878974c75ea89397e35f6d6a3f19c746206d4f37b323bcf53b18e920638'
+$url          = 'https://downloadmirror.intel.com/822150/Intel_MAS_GUI_Tool_Win_2.5.zip'
+$checksum     = '0018aa9abc867fce94b0199df38c47f5bae6fe2355d82d89a90ae86efc9e5cdd'
 $checksumType = 'sha256'
 
 # Cleanup old files, if exist
