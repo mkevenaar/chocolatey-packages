@@ -1,4 +1,4 @@
-# [<img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@f8b7a8ffdde499925336648853e9179ae6ceb8f6/icons/prowlarr.png" height="48" width="48" /> ![Prowlarr](https://img.shields.io/chocolatey/v/prowlarr.svg?label=Prowlarr&style=for-the-badge)](https://chocolatey.org/packages/prowlarr)
+# [<img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@f8b7a8ffdde499925336648853e9179ae6ceb8f6/icons/prowlarr.png" height="48" width="48" /> ![Prowlarr](https://img.shields.io/chocolatey/v/prowlarr.svg?label=Prowlarr&style=for-the-badge)](https://community.chocolatey.org/packages/prowlarr)
 
 [Prowlarr](https://github.com/Prowlarr/Prowlarr) is a indexer manager/proxy built on the popular arr .net/reactjs base stack to integrate with your various PVR apps. Prowlarr supports both Torrent Trackers and Usenet Indexers. It integrates seamlessly with Sonarr, Radarr, Lidarr, and Readarr offering complete management of your indexers with no per app Indexer setup required (we do it all).
 

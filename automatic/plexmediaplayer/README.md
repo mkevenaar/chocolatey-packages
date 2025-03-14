@@ -12,7 +12,7 @@ Plex Media Player has powerful live search capabilities that allow you to quickl
 
 Plex Media Player gives you both a beautiful HTPC experience and a slick desktop media player experience. Whether you are home or away, you can easily play any file type with the world’s most powerful playback engine. It’s the ultimate media player!
 
-[Plex Media Server software here](https://chocolatey.org/packages/plexmediaserver)
+[Plex Media Server software here](https://community.chocolatey.org/packages/plexmediaserver)
 
 **SOCIAL MEDIA:**
 [Facebook](https://www.facebook.com/plexapp) | [Twitter](https://twitter.com/plex) | [Google+](https://plus.google.com/+plex) | [YouTube](https://www.youtube.com/user/plextvapp) | [blog](https://www.plex.tv/blog/) | [LinkedIn](https://www.linkedin.com/company/1175144/)

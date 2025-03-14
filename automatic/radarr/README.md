@@ -1,4 +1,4 @@
-# [<img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@d8fcd2811c42e9f7401946802dc57da9a7b2b585/icons/radarr.png" height="48" width="48" /> ![Radarr](https://img.shields.io/chocolatey/v/radarr.svg?label=Radarr&style=for-the-badge)](https://chocolatey.org/packages/radarr)
+# [<img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@d8fcd2811c42e9f7401946802dc57da9a7b2b585/icons/radarr.png" height="48" width="48" /> ![Radarr](https://img.shields.io/chocolatey/v/radarr.svg?label=Radarr&style=for-the-badge)](https://community.chocolatey.org/packages/radarr)
 
 Radarr is an **independent** fork of [Sonarr](https://github.com/Sonarr/Sonarr) reworked for automatically downloading movies via Usenet and BitTorrent.
 

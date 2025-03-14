@@ -1,4 +1,4 @@
-# [<img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ea421dc919659102d9460ade2a06ba5702b52496/icons/readarr.png" height="48" width="48" /> ![Readarr](https://img.shields.io/chocolatey/v/readarr.svg?label=Readarr&style=for-the-badge)](https://chocolatey.org/packages/readarr)
+# [<img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ea421dc919659102d9460ade2a06ba5702b52496/icons/readarr.png" height="48" width="48" /> ![Readarr](https://img.shields.io/chocolatey/v/readarr.svg?label=Readarr&style=for-the-badge)](https://community.chocolatey.org/packages/readarr)
 
 Readarr is an eBook and audiobook collection manager for Usenet and BitTorrent users. It can monitor multiple RSS feeds for new books and will interface with clients and indexers to grab, sort, and rename them. It can also be configured to automatically upgrade the quality of existing files in the library when a better quality format becomes available. It does not manage comics or magazines.
 

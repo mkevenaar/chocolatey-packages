@@ -19,7 +19,7 @@ DBeaver is free and open source universal database tool for developers and datab
 
 ## Notes
 
-- Dbeaver is also avaialable as commercial [Enterprise Edition](https://chocolatey.org/packages/dbeaver-ee).
+- Dbeaver is also avaialable as commercial [Enterprise Edition](https://community.chocolatey.org/packages/dbeaver-ee).
 - This installer includes JRE.
 - See [Windows Silent Install](https://github.com/dbeaver/dbeaver/wiki/Windows-Silent-Install) for unatended installation details.
 
