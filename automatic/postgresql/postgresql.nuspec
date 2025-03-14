@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Read this before creating packages: https://chocolatey.org/docs/create-packages -->
+<!-- It is especially important to read the above link to understand additional requirements when publishing packages to the community feed aka dot org (https://community.chocolatey.org/packages). -->
+
+<!-- Test your packages in a test environment: https://github.com/chocolatey/chocolatey-test-environment -->
+
+<!--
+This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Reference. Chocolatey uses a special version of NuGet.Core that allows us to do more than was initially possible. As such there are certain things to be aware of:
+
+* the package xmlns schema url may cause issues with nuget.exe
+* Any of the following elements can ONLY be used by choco tools - projectSourceUrl, docsUrl, mailingListUrl, bugTrackerUrl, packageSourceUrl, provides, conflicts, replaces
+* nuget.exe can still install packages with those elements but they are ignored. Any authoring tools or commands will error on those elements
+-->
+
+<!-- You can embed software files directly into packages, as long as you are not bound by distribution rights. -->
+<!-- * If you are an organization making private packages, you probably have no issues here -->
+<!-- * If you are releasing to the community feed, you need to consider distribution rights. -->
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <!-- This section is about this package, although id and version have ties back to the software -->
+    <!-- id is lowercase and if you want a good separator for words, use '-', not '.'. Dots are only acceptable as suffixes for certain types of packages, e.g. .install, .portable, .extension, .template -->
+    <!-- If the software is cross-platform, attempt to use the same id as the debian/rpm package(s) if possible. -->
+    <id>postgresql17</id>
+    <!-- version should MATCH as closely as possible with the underlying software -->
+    <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
+    <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
+    <version>17.4</version>
+    <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
+    <owners>Maurice Kevenaar</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <!-- This section is about the software itself -->
+    <title>PostgreSQL</title>
+    <authors>PostgreSQL Global Development Group</authors>
+    <!-- projectUrl is required for the community feed -->
+    <projectUrl>https://postgresql.org/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@146ea9a4b2fdab35e5de69a738307afe89969e9b/icons/postgresql.png</iconUrl>
+    <!-- copyright is usually years and software vendor, but not required for internal feeds -->
+    <copyright>Copyright © 1996-2024 The PostgreSQL Global Development Group</copyright>
+    <tags>foss cross-platform postgres postgresql sql relational database admin</tags>
+    <releaseNotes>https://www.postgresql.org/docs/17/static/release.html</releaseNotes>
+    <licenseUrl>https://www.postgresql.org/about/licence/</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/postgresql</packageSourceUrl>
+    <docsUrl>https://www.postgresql.org/docs/17/index.html</docsUrl>
+    <mailingListUrl>https://www.postgresql.org/list</mailingListUrl>
+    <bugTrackerUrl>https://www.postgresql.org/account/submitbug</bugTrackerUrl>
+    <projectSourceUrl>https://github.com/postgres/postgres</projectSourceUrl>
+    <summary>PostgreSQL is an object-relational database management system</summary>
+    <description><![CDATA[PostgreSQL is an object-relational database management system (ORDBMS) based on POSTGRE, developed at the University of California at Berkeley Computer Science Department. POSTGRES pioneered many concepts that only became available in some commercial database systems much later.
+
+PostgreSQL can be used, modified, and distributed by anyone free of charge for any purpose, be it private, commercial, or academic.
+
+## Features
+
+- [Feature Matrix](https://www.postgresql.org/about/featurematrix)
+
+## Package parameters
+
+- `/AllowRemote` - Allow remote connections with username and password from all hosts by adding appropriate lines in the `pg_hba.conf`
+- `/Password` - Password to be assigned to the `postgres` user. If omitted, it will be generated and shown in the install output. PostgreSql installer ignores this parameter if there is existing installation.
+- `/Port` - Server port, if not set it defaults to `5432` or the first available port after it.
+- `/NoPath` - Do not add PostgreSql bin directory to the PATH.
+
+Other parameters could be set via `--ia` argument, for example, to set custom components:
+
+```sh
+choco install postgresql13 --params '/Password:test /Port:5433' --ia '--enable-components server,commandlinetools'
+```
+
+Check all [installer](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads) options by adding `--help` as command line argument.
+
+## Notes
+
+- Test installation (specify your password):
+`$Env:PGPASSWORD='test'; '\conninfo' | psql -Upostgres`
+This should output:
+`You are connected to database "postgres" as user "postgres" on host "localhost" at port "5432"`
+- This package will install PostgreSQL to `$Env:ProgramFiles\PostgreSQL\[MajorVersion]`.
+- If you have problems during installation see [troubleshooting page](https://wiki.postgresql.org/wiki/Troubleshooting_Installation).
+- If you didn't specify password during setup and didn't record the generated one, you need manually reset it using the following steps:
+    - Open file `data\pg_hba.conf` in PostgreSql installation directory
+    - Change `METHOD` to `trust` and restart service with `Restart-Service postgresql*`
+    - Execute `"alter user postgres with password '[my password]';" | psql -Upostgres`
+    - Revert back `data\pg_hba.conf` to METHOD `md5` and restart service
+
+### Virtual package
+
+Each major version has its own package: `postgresql<Version>`
+
+**Virtual package** [postgresql](https://community.chocolatey.org/packages/postgresql) also contains all versions that depend on adequate major version, but using it without problems require some special choco parameters.
+
+To propagate package parameters to dependencies use `--params-global` choco install parameter with virtual package `postgresql`. Assuming latest version is 12, to provide password the following two examples result in identical installation:
+
+```sh
+choco install postgresql --params '/Password:test' --params-global
+choco install postgresql12 --params '/Password:test'
+```
+
+To uninstall dependent package use `--force-dependencies`:
+
+```sh
+# The following two examples are identical
+choco uninstall postgresql --force-dependencies
+choco uninstall postgresql12 postgresql
+
+# This example uninstalls only postgresql virtual package and not postgresql12
+choco uninstall postgresql
+```
+
+To force reinstallation via virtual package use `--force-dependencies`:
+
+```sh
+# The following two examples are identical
+choco install postgresql --force --force-dependencies
+choco install postgresql12 --force --force-dependencies
+
+# This will reinstall only postgresql virtual package and not its dependency postgresql12
+choco install postgresql -force
+
+# This one is different then the first one as vcredist140 dependency is not reinstalled
+choco install postgresql12 --force
+```
+
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) that the package is no longer updating correctly.
+]]></description>
+    <dependencies><dependency id="chocolatey-core.extension" version="1.3.3" /><dependency id="vcredist140" version="14.23.27820" /></dependencies>
+  </metadata>
+
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

@@ -215,6 +215,8 @@
         url: /packages/plexmediaplayer.html
       - page: "Plex Media Server"
         url: /packages/plexmediaserver.html
+      - page: "PostgreSQL"
+        url: /packages/postgresql.html
       - page: "PowerToys"
         url: /packages/powertoys.html
       - page: "Prowlarr"
