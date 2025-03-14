@@ -48,5 +48,5 @@ let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) th
 
 [Software Site](http://www.cpuid.com/softwares/cpu-z.html)
 
-[Package Source](https://github.com/majkinetor/chocolatey/tree/master/cpu-z.portable)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/cpu-z.portable)
 

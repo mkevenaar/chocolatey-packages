@@ -57,6 +57,8 @@
         url: /packages/crystaldiskinfo.install.html
       - page: "CrystalDiskInfo (Portable)"
         url: /packages/crystaldiskinfo.portable.html
+      - page: "DBeaver - Community Edition"
+        url: /packages/dbeaver.html
       - page: "DevManView"
         url: /packages/devmanview.html
       - page: "Driver Booster"

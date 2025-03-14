@@ -22,69 +22,69 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- This section is about this package, although id and version have ties back to the software -->
     <!-- id is lowercase and if you want a good separator for words, use '-', not '.'. Dots are only acceptable as suffixes for certain types of packages, e.g. .install, .portable, .extension, .template -->
     <!-- If the software is cross-platform, attempt to use the same id as the debian/rpm package(s) if possible. -->
-    <id>cpu-z.portable</id>
+    <id>dbeaver</id>
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>2.14</version>
+    <version>24.3.5</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Maurice Kevenaar</owners>
     <!-- ============================== -->
 
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
-    <title>CPU-Z (Portable)</title>
-    <authors>CPUID</authors>
+    <title>DBeaver - Community Edition</title>
+    <authors>DBeaver Corp</authors>
     <!-- projectUrl is required for the community feed -->
-    <projectUrl>http://www.cpuid.com/softwares/cpu-z.html</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@a2d2b28de250105f84f6a2d0123c435ba7667f57/icons/cpu-z.png</iconUrl>
+    <projectUrl>https://dbeaver.io/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@3f5b96f6782d39b9375aa1ddab44b3f80aaacf14/icons/dbeaver.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>CPUID</copyright>
-    <tags>admin system-information hardware memory intel amd processor cpu motherboard</tags>
-    <releaseNotes>http://www.cpuid.com/softwares/cpu-z.html#version-history</releaseNotes>
-    <licenseUrl>http://www.cpuid.com/softwares/hwmonitor-pro/eula.html</licenseUrl>
+    <copyright>DBeaver Corp. All rights reserved.</copyright>
+    <tags>admin cross-platform database mysql oracle db2 sql-server postgresql sql dbeaver foss</tags>
+    <releaseNotes>https://github.com/dbeaver/dbeaver/releases/tag/24.3.5</releaseNotes>
+    <licenseUrl>https://github.com/dbeaver/dbeaver/blob/devel/LICENSE.md</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/cpu-z.portable</packageSourceUrl>
-    <docsUrl>http://www.cpuid.com/softwares/cpu-z.html#install</docsUrl>
-    <bugTrackerUrl>http://www.cpuid.com/bug-report.html</bugTrackerUrl>
-    <summary>System information software</summary>
-    <description><![CDATA[A freeware system profiler (system monitor) application that detects the central processing unit, RAM, motherboard chipset, and other hardware features of a modern personal computer, and presents the information in one window:
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/dbeaver</packageSourceUrl>
+    <docsUrl>https://dbeaver.com/docs/dbeaver/</docsUrl>
+    <mailingListUrl>https://www.reddit.com/r/dbeaver</mailingListUrl>
+    <bugTrackerUrl>https://github.com/serge-rider/dbeaver/issues</bugTrackerUrl>
+    <projectSourceUrl>https://github.com/serge-rider/dbeaver</projectSourceUrl>
+    <summary>Free multi-platform database tool for developers, SQL programmers, database administrators and analysts.</summary>
+    <description><![CDATA[DBeaver is free and open source universal database tool for developers and database administrators.
 
 ## Features
 
-- Processor name and number, codename, process, package, cache levels.
-- Mainboard and chipset.
-- Memory type, size, timings, and module specifications (SPD).
-- Real time measurement of each core's internal frequency, memory frequency.
+- Usability is the main goal of this project, program UI is carefully designed and implemented.
+- It is free and open-source.
+- It is multiplatform.
+- It is based on opensource framework and allows writing of various extensions (plugins).
+- It supports any database having a JDBC driver.
+- It may handle any external datasource which may or may not have a JDBC driver.
+- There is a set of plugins for certain databases (MySQL, Oracle, DB2, SQL Server, PostgreSQL ...) and different database management utilities (e.g. ERD).
+- It has a great number of features.
+- DBeaver consumes much less memory than other popular similar software (SQuirreL, DBVisualizer).
+- Database metadata is loaded on demand and there is no long-running “metadata caching” procedure at connect time.
+- ResultSet viewer (grid) is very fast and consumes very little ammount of memory.
+- All remote database operations work in non-blocking mode so DBeaver does not hang if the database server does not respond or if there is a related network issue.
 
 ## Notes
 
-- You might need to use `--ignore-checksums` option when installing this package due to the fact that vendor overwrites historic download locations. Automatic updater will release new version with choco fix notation when that happens.
+- Dbeaver is also avaialable as commercial [Enterprise Edition](https://chocolatey.org/packages/dbeaver-ee).
+- This installer includes JRE.
+- See [Windows Silent Install](https://github.com/dbeaver/dbeaver/wiki/Windows-Silent-Install) for unatended installation details.
 
-![screenshot](https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@a881086a60d04bd8b1a1a8898af3e200416a19d5/automatic/cpu-z.install/screenshot.png)
+![screenshot](https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@5a5f18988a6c8b51677fc503470b4135b4d91105/automatic/dbeaver/screenshot.png)
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) that the package is no longer updating correctly.
 ]]></description>
-    <!-- =============================== -->
-
-    <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
-    <!--<dependencies>
-      <dependency id="" version="__MINIMUM_VERSION__" />
-      <dependency id="" version="[__EXACT_VERSION__]" />
-      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_INCLUSIVE]" />
-      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_EXCLUSIVE)" />
-      <dependency id="" />
-    </dependencies>-->
-
-    <!--<provides>NOT YET IMPLEMENTED</provides>-->
-    <!--<conflicts>NOT YET IMPLEMENTED</conflicts>-->
-    <!--<replaces>NOT YET IMPLEMENTED</replaces>-->
+    <dependencies>
+        <dependency id="chocolatey-core.extension" version="1.3.3" />
+    </dependencies>
   </metadata>
-  <!-- this section controls what actually gets packaged into the Chocolatey package -->
-  <!-- Uncomment to limit what is packed in -->
   <files>
     <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
   </files>
 </package>
