@@ -1,12 +1,12 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $toolsPath = Split-Path $MyInvocation.MyCommand.Definition
-$is64 = (Get-ProcessorBits 64) -and $env:chocolateyForceX86 -ne 'true'
+$is64 = (Get-OSArchitectureWidth 64) -and $env:chocolateyForceX86 -ne 'true'
 
 $packageArgs = @{
   packageName   = $Env:ChocolateyPackageName
-  url           = 'https://download.cpuid.com/cpu-z/cpu-z_2.14-en.zip'
-  checksum      = '8e0fa773bf2598e9ce9167824f9bdb542b0ce3324937bfba020d2042fa6d7fd5'
+  url           = 'https://download.cpuid.com/cpu-z/cpu-z_2.15-en.zip'
+  checksum      = '6da57f4678b4022a555f6b0ae7e2521bd23f91c3d5fe15f7646f6d8b981e7336'
   checksumType  = 'sha256'
   unzipLocation = $toolsPath
 }
