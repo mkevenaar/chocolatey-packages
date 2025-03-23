@@ -74,6 +74,5 @@ let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) th
   <!-- Uncomment to limit what is packed in -->
   <files>
     <file src="tools\**" target="tools" />
-    <file src="legal\**" target="legal" />
   </files>
 </package>
