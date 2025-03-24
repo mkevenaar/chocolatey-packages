@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>8.16.5</version>
+    <version>9.0.0-rc1</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Maurice Kevenaar</owners>
     <!-- ============================== -->
@@ -37,11 +37,11 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Elastic</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://www.elastic.co/kibana/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@3ac63bf30efd773e83add28046b48de5dcf5334a/icons/kibana.svg</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@27d92fa2fac6f589a8872281166f3020c60d6152/icons/kibana.svg</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Elasticsearch B.V.</copyright>
     <tags>data kibana visualization elastic admin</tags>
-    <releaseNotes>https://www.elastic.co/guide/en/kibana/reference/8.16/release-notes-8.16.5.html</releaseNotes>
+    <releaseNotes>https://www.elastic.co/guide/en/kibana/reference/9.0/release-notes-9.0.0-rc1.html</releaseNotes>
     <licenseUrl>https://github.com/elastic/kibana/blob/master/LICENSE.txt</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/kibana</packageSourceUrl>
