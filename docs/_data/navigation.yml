@@ -251,6 +251,8 @@
         url: /packages/scarm.html
       - page: "Server Backup Agent"
         url: /packages/serverbackupagent.html
+      - page: "Signal (Desktop)"
+        url: /packages/signal.html
       - page: "SimulIDE"
         url: /packages/simulide.html
       - page: "Slack for Windows"
