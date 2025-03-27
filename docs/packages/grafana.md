@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@0462688e26372e1922bd13142072fac888eb9b3f/icons/grafana.svg" width="32" height="32"/> [![Grafana](https://img.shields.io/chocolatey/v/grafana.svg?label=Grafana)](https://community.chocolatey.org/packages/grafana) [![Grafana](https://img.shields.io/chocolatey/dt/grafana.svg)](https://community.chocolatey.org/packages/grafana)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@27d92fa2fac6f589a8872281166f3020c60d6152/icons/grafana.svg" width="32" height="32"/> [![Grafana](https://img.shields.io/chocolatey/v/grafana.svg?label=Grafana)](https://community.chocolatey.org/packages/grafana) [![Grafana](https://img.shields.io/chocolatey/dt/grafana.svg)](https://community.chocolatey.org/packages/grafana)
 
 ## Usage
 
