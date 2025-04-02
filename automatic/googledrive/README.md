@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@a29d2dfbd5e87d84c7f629753f3a8fc524007e6f/icons/googledrive.svg" width="48" height="48"/> [googledrive](https://community.chocolatey.org/packages/googledrive)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@27d92fa2fac6f589a8872281166f3020c60d6152/icons/googledrive.svg" width="48" height="48"/> [googledrive](https://community.chocolatey.org/packages/googledrive)
 
 Google Drive – All your files – everywhere.
 Safely store your files and access them from any device
