@@ -5,7 +5,7 @@ $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $toolsDir
-  file           = "$toolsdir\texstudio-4.8.6-win-portable-qt6.zip"
+  file           = "$toolsdir\texstudio-4.8.7-win-portable-qt6.zip"
 }
 
 Get-ChocolateyUnzip  @packageArgs
