@@ -2,18 +2,18 @@ VERIFICATION
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
-The installer have been downloaded from their official download link listed on <https://github.com/Radarr/Radarr/releases/tag/v5.22.4.9896>
+The installer have been downloaded from their official download link listed on <https://github.com/Radarr/Radarr/releases/tag/v5.23.0.9907>
 and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <https://github.com/Radarr/Radarr/releases/download/v5.22.4.9896/Radarr.master.5.22.4.9896.windows-core-x86-installer.exe>
-  64-Bit: <https://github.com/Radarr/Radarr/releases/download/v5.22.4.9896/Radarr.master.5.22.4.9896.windows-core-x64-installer.exe>
+  32-Bit: <https://github.com/Radarr/Radarr/releases/download/v5.23.0.9907/Radarr.develop.5.23.0.9907.windows-core-x86-installer.exe>
+  64-Bit: <https://github.com/Radarr/Radarr/releases/download/v5.23.0.9907/Radarr.develop.5.23.0.9907.windows-core-x64-installer.exe>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: 40925447F49BC8138B76DB89EB3F32F298A3924A4195213FDE1E0B8732C32026
-  checksum64: 1DB742706582E35CE98C5A9BA9357AC1905B368CF8599355143954F11E38F578
+  checksum32: E523D0443065DE15E88653BF6E2F274685D5D822583BE32414632CC715E1C06F
+  checksum64: E0F223DD01A72989F4978322E6FAF580903D95605B215203805556D9F98CD7C4
 
 File 'LICENSE.txt' is obtained from <https://github.com/Radarr/Radarr/blob/develop/LICENSE>
