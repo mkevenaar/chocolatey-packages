@@ -18,7 +18,7 @@ function global:au_GetLatest {
   $re = 'Latest release: ([\d\.]+)'
   $version = ([regex]::Match($download_page.content, $re)).Captures.Groups[1].value
 
-  $url64 = 'https://release.gitkraken.com/windows/GitKrakenSetup.exe'
+  $url64 = 'https://api.gitkraken.dev/releases/production/windows/x64/active/GitKrakenSetup.exe'
 
   return @{
     URL64   = $url64
