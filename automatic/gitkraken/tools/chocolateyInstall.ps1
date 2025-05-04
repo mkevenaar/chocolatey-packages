@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64          = 'https://release.gitkraken.com/windows/GitKrakenSetup.exe'
+$url64          = 'https://api.gitkraken.dev/releases/production/windows/x64/active/GitKrakenSetup.exe'
 $checksum64     = '3282188252c3d1d68554d576dab731662c7b9b6eebf256d60aecae7281dd9f80'
 $checksumType64 = 'sha256'
 
