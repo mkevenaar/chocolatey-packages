@@ -1,10 +1,10 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = 'https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-8.18.2-windows-x86_64.zip'
-$checksum     = '791ca898453dfa17336a5162aa5dd08a9efe8a10d88baa0a882ba7d336833b1b'
+$url          = 'https://artifacts.elastic.co/downloads/elasticsearch/elasticsearch-8.17.7-windows-x86_64.zip'
+$checksum     = 'df49ea92bf719aa9ea6159aff0f04a513772ad974de4c99ab08956f3a7f3ccfb'
 $checksumType = 'sha256'
-$version      = "8.18.2"
+$version      = "8.17.7"
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
