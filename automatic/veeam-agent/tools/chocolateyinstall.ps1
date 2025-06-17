@@ -1,11 +1,11 @@
 ﻿$ErrorActionPreference = 'Stop';
 $PackageParameters = Get-PackageParameters
-$Version      = '6.3.1.1074'
+$Version      = '6.3.2.1205'
 
 $toolsDir     = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 
-$url          = 'https://download5.veeam.com/VAW/v6/VeeamAgentWindows_6.3.1.1074.zip'
-$checksum     = '52106ddc15c9ca21fb20fc42ab3630db5c67325950b44b6e3f5c2a3d2409a156'
+$url          = 'https://download5.veeam.com/VAW/v6/VeeamAgentWindows_6.3.2.1205.zip'
+$checksum     = 'aef1807d6d83aa6a9e038a0df95704b81ed01c1fb51c9eb2a511933bae1bed2b'
 $checksumType = 'sha256'
 
 Import-Module -Name "$($toolsDir)\helpers.ps1"
