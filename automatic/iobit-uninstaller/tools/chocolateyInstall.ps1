@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url          = 'https://cdn.iobit.com/dl/iobituninstaller.exe'
-$checksum     = '5BF00629BB38D365226BFFFFAFE978C9A2AD9A8C9702F4083FECD148710B85A0'
+$checksum     = '2EEDB4E902026473D549FB3AF0639F9628C314FA42931189BE029C6DBA1693FD'
 $checksumType = 'sha256'
 
 . $toolsDir\helpers.ps1
