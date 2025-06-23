@@ -39,13 +39,13 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@1d7d171cf348280ab9a726c33f980843b9bd1757/icons/etcher.png</iconUrl>
     <copyright>Resin.io</copyright>
     <tags>etcher usb format boot cross-platform foss balena balenaetcher img flasher dd write sd admin</tags>
-    <releaseNotes>https://github.com/resin-io/etcher/blob/master/CHANGELOG.md</releaseNotes>
-    <licenseUrl>https://raw.githubusercontent.com/resin-io/etcher/master/LICENSE</licenseUrl>
+    <releaseNotes>https://github.com/balena-io/etcher/blob/master/CHANGELOG.md</releaseNotes>
+    <licenseUrl>https://raw.githubusercontent.com/balena-io/etcher/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/etcher</packageSourceUrl>
-    <docsUrl>https://github.com/resin-io/etcher/blob/master/docs/USER-DOCUMENTATION.md</docsUrl>
-    <projectSourceUrl>https://github.com/resin-io/etcher</projectSourceUrl>
-    <bugTrackerUrl>https://github.com/resin-io/etcher/issues</bugTrackerUrl>
+    <docsUrl>https://github.com/balena-io/etcher/blob/master/docs/USER-DOCUMENTATION.md</docsUrl>
+    <projectSourceUrl>https://github.com/balena-io/etcher</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/balena-io/etcher/issues</bugTrackerUrl>
     <summary>Flash OS images to SD cards and USB drives, safely and easily</summary>
     <description><![CDATA[Etcher is a powerful OS image flasher built with web technologies to ensure flashing an SDCard or USB drive is a pleasant and safe experience. It protects you from accidentally writing to your hard-drives, ensures every byte of data was written correctly and much more.
 
