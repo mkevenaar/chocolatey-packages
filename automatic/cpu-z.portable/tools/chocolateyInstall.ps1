@@ -5,8 +5,8 @@ $is64 = (Get-OSArchitectureWidth 64) -and $env:chocolateyForceX86 -ne 'true'
 
 $packageArgs = @{
   packageName   = $Env:ChocolateyPackageName
-  url           = 'https://download.cpuid.com/cpu-z/cpu-z_2.15-en.zip'
-  checksum      = 'c8461d995d77a8fe1e8c5823403e88b04b733165cc151083b26379f1fe4b9501'
+  url           = 'https://download.cpuid.com/cpu-z/cpu-z_2.16-en.zip'
+  checksum      = 'ddbff8a049861b2095a4cd798cb5b8f0315a9d159850b9cb220c2a03d91dde28'
   checksumType  = 'sha256'
   unzipLocation = $toolsPath
 }
