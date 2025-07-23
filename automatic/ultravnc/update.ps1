@@ -65,14 +65,15 @@ function global:au_BeforeUpdate {
 function global:au_GetLatest {
     $version_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
-    $re = 'Release(.+\d)'
+    $re = 'version: UltraVNC (.+\d)'
     $version = ([regex]::Match($version_page.content,$re)).Captures.Groups[1].value.Trim()
     $version_short = $version -replace '\.',''
 
     # $url32 = "https://www.uvnc.eu/download/" + $version_short + "/UltraVNC_" + ($version -replace '(\d).(\d).(\d).?(\d)?','$1_$2_$3$4') + "_X86_Setup.exe"
     # $url64 = $url32 -Replace "X86","X64"
-    $url32 = "https://www.uvnc.eu/download/" + ($version -replace '(\d).(\d).(\d).?(\d)?','$1$2$3') + "0/UltraVNC_" + $version_short + "_X86_Setup.exe"
-    $url64 = $url32 -Replace "X86","X64"
+    ## https://uvnc.eu/download/1640/UltraVNC_1640_x64_Setup.exe
+    $url32 = "https://uvnc.eu/download/" + ($version -replace '(\d).(\d).(\d).?(\d)?','$1$2$3') + "0/UltraVNC_" + $version_short + "_x86_Setup.exe"
+    $url64 = $url32 -Replace "x86","x64"
 
     $version = ($version -replace '(\d).(\d).(\d).?(\d)?','$1.$2$3$4')
 
