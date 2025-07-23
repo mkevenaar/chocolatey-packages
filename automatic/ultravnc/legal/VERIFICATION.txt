@@ -6,15 +6,15 @@ The installer have been downloaded from their official download link listed on <
 and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <https://www.uvnc.eu/download/1430/UltraVNC_1435_X86_Setup.exe>
-  64-Bit: <https://www.uvnc.eu/download/1430/UltraVNC_1435_X64_Setup.exe>
+  32-Bit: <https://uvnc.eu/download/1640/UltraVNC_1640_x86_Setup.exe>
+  64-Bit: <https://uvnc.eu/download/1640/UltraVNC_1640_x64_Setup.exe>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: C88255179F09FA6BA57808477FD42A1FCF43B643A103B64541F68CF128A5AC47
-  checksum64: C6C9124D7A9EDE2C47E9138B40F83C3A8D824383C1DB241175A52DD30BC4663C
+  checksum32: 92378B147B1467788178C1E09AA177286ED6220F2BB9C55872E3D154EDBC3D04
+  checksum64: 434853E116EEB132CFDF47FDF6BA489D30C67A38147AFF6B9BD0EC2F4D0F1919
 
 File 'LICENSE.txt' is obtained from <https://github.com/ultravnc/UltraVNC/blob/main/LICENSE>
 This is the official GPL License as shown here <https://www.uvnc.com/downloads/ultravnc/128-download-ultravnc-1230.html>
