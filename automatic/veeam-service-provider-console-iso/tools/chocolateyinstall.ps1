@@ -1,11 +1,11 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url = 'https://download2.veeam.com/VSPC/v8/VeeamServiceProviderConsole_8.1.0.21377_20240820.iso'
-$checksum = '98f9128d68c4a2e52a8d5926e4ec971cc90517632cb06c7136f62980082d8018'
+$url = 'https://download2.veeam.com/VSPC/v9/VeeamServiceProviderConsole_9.0.0.29555.iso'
+$checksum = '93027bb04e51416020fe0bc53b2fac5408947cc9707ab8b709c3a8a277f44e8a'
 $checksumType = 'sha256'
 
-$filename = 'VeeamServiceProviderConsole_8.1.0.21377_20240820.iso'
+$filename = 'VeeamServiceProviderConsole_9.0.0.29555.iso'
 $packagePath = $(Split-Path -parent $toolsDir)
 $installPath = Join-Path $packagePath $filename
 

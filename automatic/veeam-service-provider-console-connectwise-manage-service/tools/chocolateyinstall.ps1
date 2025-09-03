@@ -4,7 +4,7 @@ $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $isoPackageName = 'veeam-service-provider-console-iso'
 $scriptPath = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 $commonPath = $(Split-Path -parent $(Split-Path -parent $scriptPath))
-$filename = 'VeeamServiceProviderConsole_8.1.0.21377_20240820.iso'
+$filename = 'VeeamServiceProviderConsole_9.0.0.29555.iso'
 $installPath = Join-Path  (Join-Path $commonPath $isoPackageName) $filename
 
 $fileLocation = 'Plugins\ConnectWise\Manage\VAC.ConnectorService.x64.msi'
