@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64          = 'https://fastdl.mongodb.org/windows/mongodb-windows-x86_64-8.0.14-rc1-signed.msi'
-$checksum64     = '0c0b9ef89a9b5f5ee85cdc1f957a130612e9ad975be03e1ed5aabbfcdff16774'
+$url64          = 'https://fastdl.mongodb.org/windows/mongodb-windows-x86_64-7.0.24-signed.msi'
+$checksum64     = '1240b0b1037647b9bfe4f792ed46cc9608969a3aff364661841cfc3f81a15949'
 $checksumType64 = 'sha256'
 $silentArgs     = 'ADDLOCAL="ServerService,Server,ProductFeature,Router,MiscellaneousTools" /qn /norestart'
 $dataPath       = "$env:PROGRAMDATA\MongoDB\data\db"
