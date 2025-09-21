@@ -6,12 +6,12 @@ The installer have been downloaded from their official download link listed on <
 and can be verified like this:
 
 1. Download the following installers:
-  64-Bit: <https://cdn.prusa3d.com/downloads/drivers/prusa3d_win_2_9_2.exe>
+  64-Bit: <https://cdn.prusa3d.com/downloads/drivers/prusa3d_win_2_9_3.exe>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum64: B9342369898E1EC7560C2253D919DBC21255A6AEA9EFF5AD9CBD56B614FD1862
+  checksum64: E97108DF1788D6DE1B70C52CEECD328F7C775D747117F4BB026C5B1867308701
 
 File 'LICENSE.txt' is obtained from <https://github.com/prusa3d/Slic3r/blob/master/LICENSE>
