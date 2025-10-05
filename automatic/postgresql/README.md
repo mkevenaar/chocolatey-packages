@@ -1,23 +1,26 @@
 # <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@146ea9a4b2fdab35e5de69a738307afe89969e9b/icons/postgresql.png" width="48" height="48"/> [![](https://img.shields.io/chocolatey/v/postgresql.svg?color=red&label=postgresql)](https://community.chocolatey.org/packages/postgresql) [![](https://img.shields.io/chocolatey/v/postgresql14.svg?color=red&label=postgresql14)](https://community.chocolatey.org/packages/postgresql14) [![](https://img.shields.io/chocolatey/v/postgresql13.svg?color=red&label=postgresql13)](https://community.chocolatey.org/packages/postgresql13) [![](https://img.shields.io/chocolatey/v/postgresql12.svg?color=red&label=postgresql12)](https://community.chocolatey.org/packages/postgresql12) [![](https://img.shields.io/chocolatey/v/postgresql11.svg?color=red&label=postgresql11)](https://community.chocolatey.org/packages/postgresql11) [![](https://img.shields.io/chocolatey/v/postgresql10.svg?color=red&label=postgresql10)](https://community.chocolatey.org/packages/postgresql10) [![](https://img.shields.io/chocolatey/v/postgresql9.svg?color=red&label=postgresql9)](https://community.chocolatey.org/packages/postgresql9)
 
-PostgreSQL is an object-relational database management system (ORDBMS) based on POSTGRE, developed at the University of California at Berkeley Computer Science Department. POSTGRES pioneered many concepts that only became available in some commercial database systems much later.
+**PostgreSQL** is a powerful, open-source **object-relational database management system (ORDBMS)**, developed at the **University of California, Berkeley**.
+It extends the POSTGRES project and pioneered features later adopted by other commercial systems.
 
-PostgreSQL can be used, modified, and distributed by anyone free of charge for any purpose, be it private, commercial, or academic.
+PostgreSQL is **free to use, modify, and distribute** for private, commercial, or academic purposes.
 
 ## Features
 
-- [Feature Matrix](https://www.postgresql.org/about/featurematrix)
+- See the [Feature Matrix](https://www.postgresql.org/about/featurematrix)
 
 ## Package parameters
 
-- `/AllowRemote` - Allow remote connections with username and password from all hosts by adding appropriate lines in the `pg_hba.conf`
-- `/Password` - Password to be assigned to the `postgres` user. If omitted, it will be generated and shown in the install output. PostgreSql installer ignores this parameter if there is existing installation.
-- `/Port` - Server port, if not set it defaults to `5432` or the first available port after it.
-- `/NoPath` - Do not add PostgreSql bin directory to the PATH.
+| Parameter | Description |
+|------------|--------------|
+| `/AllowRemote` | Enables remote connections (adds entries to `pg_hba.conf`). |
+| `/Password` | Sets password for `postgres` user. If omitted, one is generated. Ignored if PostgreSQL already exists. |
+| `/Port` | Database server port. Defaults to `5432` or next available port. |
+| `/NoPath` | Prevents adding PostgreSQL `bin` directory to `PATH`. |
 
-Other parameters could be set via `--ia` argument, for example, to set custom components:
+Other parameters could be set via `--ia` argument, example:
 
-```sh
+```powershell
 choco install postgresql13 --params '/Password:test /Port:5433' --ia '--enable-components server,commandlinetools'
 ```
 

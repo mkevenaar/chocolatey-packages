@@ -10,7 +10,7 @@ function Get-WebRequestTable {
   foreach ($row in $rows) {
     $cells = @($row.Cells)
     if ($cells[0].tagName -eq "TH") {
-      $titles = @($cells | % { ("" + $_.InnerText).Trim() })
+      $titles = @($cells | ForEach-Object { ("" + $_.InnerText).Trim() })
       continue
     }
     if (!$titles) { $titles = @(1..($cells.Count + 2) | ForEach-Object { "P$_" }) }
