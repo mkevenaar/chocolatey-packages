@@ -6,13 +6,13 @@ The installer have been downloaded from their official download link listed on <
 and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <https://github.com/fttx/barcode-to-pc-server/releases/download/v4.8.8/barcode-to-pc-server.v4.8.8.win.setup.exe>
+  32-Bit: <https://github.com/fttx/barcode-to-pc-server/releases/download/v4.8.9/barcode-to-pc-server.v4.8.9.win.setup.exe>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: A0A62354BDF81B5E9ABC61D2D540D4B454D64D8BDE5EF84A6A79DF96C289AAD8
+  checksum32: B865E8E0E624B143D43128879276FA8844E7669F12633342FBF67883C101A585
 
 File 'LICENSE.txt' is obtained from <https://raw.githubusercontent.com/fttx/barcode-to-pc-server/master/LICENSE.md>
 
