@@ -6,15 +6,15 @@ The installer have been downloaded from their official download link listed on <
 and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <https://www.irfanview.info/files/iview472_setup.exe>
-  64-Bit: <https://www.irfanview.info/files/iview472_x64_setup.exe>
+  32-Bit: <https://www.irfanview.info/files/iview473_setup.exe>
+  64-Bit: <https://www.irfanview.info/files/iview473_x64_setup.exe>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: 216A4CFA1B41A0600D4D4D95E21ED387DE62153DA274FA469B1A5784F568154F
-  checksum64: CE109CEF189EA78FB620D29F0CA61A0FA10CB9273B46C072EB858612BA35E3B4
+  checksum32: 0A43505CE79AE9401324AF304F0BDE22D1DD4D00F27DFF0CCCF62CB7022B770D
+  checksum64: 724E0A7AA97D10AD76843552DDF648521F60F2809398F7CA9AD4AE4726010E08
 
 File 'LICENSE.txt' is obtained from <https://www.irfanview.com/eula.htm>
 File 'VERIFICATION.pdf' is an email conversation between the developer and maintainer

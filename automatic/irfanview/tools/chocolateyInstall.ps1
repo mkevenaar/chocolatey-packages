@@ -81,8 +81,8 @@ Write-Debug "Silent arguments Chocolatey will use are: $silentArgs"
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'exe'
-  file          = "$toolsDir\iview472_setup.exe"
-  file64        = "$toolsDir\iview472_x64_setup.exe"
+  file          = "$toolsDir\iview473_setup.exe"
+  file64        = "$toolsDir\iview473_x64_setup.exe"
   silentArgs     = $silentArgs
   validExitCodes = @(0)
   softwareName   = 'IrfanView*'
