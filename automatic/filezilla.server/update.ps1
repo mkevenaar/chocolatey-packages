@@ -1,15 +1,56 @@
 Import-Module Chocolatey-AU
 
 $releases = 'https://filezilla-project.org/download.php?show_all=1&type=server'
+$userAgent = 'Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:128.0) Gecko/20100101 Firefox/128.0'
 
 $headers = @{
-  "Accept" = "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8"
-  "User-Agent" = "Chocolatey AU update check. https://chocolatey.org"
+  "Accept"    = "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,*/*;q=0.8"
+  "User-Agent" = $userAgent
+  "Referer"   = 'https://filezilla-project.org/'
 }
 
 $options =
 @{
-  Headers = $headers
+  Headers   = $headers
+  UserAgent = $userAgent
+}
+
+function Get-DecryptedContentWrapper {
+  param(
+    [Parameter(Mandatory = $true)][string] $Html
+  )
+
+  $pattern = '<div[^>]+id="contentwrapper"[^>]*v1="(?<iv>[^"]+)"[^>]*v2="(?<key>[^"]+)"[^>]*v3="(?<alg>[^"]+)"[^>]*>(?<payload>.*?)</div>'
+  $regexOptions = [System.Text.RegularExpressions.RegexOptions]::Singleline -bor [System.Text.RegularExpressions.RegexOptions]::IgnoreCase
+  $match = [regex]::Match($Html, $pattern, $regexOptions)
+
+  if (-not $match.Success) {
+    throw "Failed to locate the encrypted payload on $releases."
+  }
+
+  $cipherBytes = [Convert]::FromBase64String($match.Groups['payload'].Value.Trim())
+  $ivBytes     = [Convert]::FromBase64String($match.Groups['iv'].Value)
+  $keyBytes    = [Convert]::FromBase64String($match.Groups['key'].Value)
+  $algorithm   = [System.Text.Encoding]::UTF8.GetString([Convert]::FromBase64String($match.Groups['alg'].Value))
+
+  if ($algorithm -ne 'AES-CBC') {
+    throw "Unsupported cipher '$algorithm' returned by the FileZilla download page."
+  }
+
+  $aes = [System.Security.Cryptography.Aes]::Create()
+  try {
+    $aes.Mode    = [System.Security.Cryptography.CipherMode]::CBC
+    $aes.Padding = [System.Security.Cryptography.PaddingMode]::PKCS7
+    $aes.Key     = $keyBytes
+    $aes.IV      = $ivBytes
+
+    $plainBytes = $aes.CreateDecryptor().TransformFinalBlock($cipherBytes, 0, $cipherBytes.Length)
+  }
+  finally {
+    $aes.Dispose()
+  }
+
+  return [System.Text.Encoding]::UTF8.GetString($plainBytes)
 }
 
 function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
@@ -20,12 +61,18 @@ function global:au_AfterUpdate($Package) {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases -UserAgent "Chocolatey" -UseBasicParsing -Headers $headers
-    $re = "FileZilla_Server_(.+)_.+\.exe"
+    $response = Invoke-WebRequest -Uri $releases -UseBasicParsing -Headers $headers -UserAgent $userAgent
+    $decodedHtml = Get-DecryptedContentWrapper $response.Content
 
-    $url = $download_page.Links | Where-Object href -match $re | Select-Object -first 1 -expand href
+    $downloadPattern = 'https://dl\d+\.cdn\.filezilla-project\.org/server/FileZilla_Server_(?<version>[\d\.]+)_win64-setup\.exe[^"]*'
+    $downloadMatch = [regex]::Match($decodedHtml, $downloadPattern, [System.Text.RegularExpressions.RegexOptions]::IgnoreCase)
 
-    $version = (([regex]::Match($url, $re)).Captures.Groups[1].value).replace('_','.')
+    if (-not $downloadMatch.Success) {
+      throw 'Failed to locate the FileZilla Server Windows installer link on the download page.'
+    }
+
+    $url = $downloadMatch.Value
+    $version = $downloadMatch.Groups['version'].Value
 
     return @{
         URL32 = $url
