@@ -62,7 +62,6 @@ let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) th
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
     <dependencies>
-      <dependency id="dotnet-desktopruntime" />
       <dependency id="vcredist140" />
     </dependencies>
 
