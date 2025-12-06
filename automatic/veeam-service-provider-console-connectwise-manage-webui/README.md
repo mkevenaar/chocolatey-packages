@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@5f8f375b81c2f755de0018d069b0f00f6fbec0ea/icons/veeam-service-provider-console-connectwise-manage-webui.png" width="48" height="48"/> [veeam-service-provider-console-connectwise-manage-webui](https://community.chocolatey.org/packages/veeam-service-provider-console-connectwise-manage-webui)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@039a79f5c1285472100cfbcc2d73b252f7012f62/icons/veeam-service-provider-console-connectwise-manage-webui.png" width="48" height="48"/> [veeam-service-provider-console-connectwise-manage-webui](https://community.chocolatey.org/packages/veeam-service-provider-console-connectwise-manage-webui)
 
 Exit when reboot detected
 

@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@d4b6f157666e2fe32fe20059b6ae55c0ab202ceb/icons/veeam-service-provider-console-iso.png" width="48" height="48"/> [veeam-service-provider-console-iso](https://community.chocolatey.org/packages/veeam-service-provider-console-iso)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4591cfbc1b865ec1fdf3cb84e7dd738eade5d6e2/icons/veeam-service-provider-console-iso.png" width="48" height="48"/> [veeam-service-provider-console-iso](https://community.chocolatey.org/packages/veeam-service-provider-console-iso)
 
 Exit when reboot detected
 

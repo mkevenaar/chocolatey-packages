@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Veeam Software Group GmbH</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://www.veeam.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@a0844ac8358fcf34bbef6283cbe0408b8705a988/icons/veeam-service-provider-console-connectwise-manage-service.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ec5c687d598772fca8a452832cc6e897a0f70827/icons/veeam-service-provider-console-connectwise-manage-service.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Veeam Software Group GmbH</copyright>
     <tags>veeam-service-provider-console-connectwise-manage-service veeam-service-provider-console vspc veeam connectwise admin</tags>

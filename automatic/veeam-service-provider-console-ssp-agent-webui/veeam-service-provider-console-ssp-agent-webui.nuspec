@@ -36,7 +36,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Veeam Software Group GmbH</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://www.veeam.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@130e1e4c169be56bac93bff6a4be9595f54b7309/icons/veeam-service-provider-console-ssp-agent-webui.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@371a84fcac66d550b04357f7f1def8f1cbe2b493/icons/veeam-service-provider-console-ssp-agent-webui.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Veeam Software Group GmbH</copyright>
     <tags>veeam-service-provider-console-ssp-agent-webui veeam-service-provider-console vspc veeam admin</tags>
