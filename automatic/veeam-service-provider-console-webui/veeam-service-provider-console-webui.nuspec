@@ -34,12 +34,12 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
     <title>Veeam Service Provider Console WebUI</title>
-    <authors>Veeam Software AG</authors>
+    <authors>Veeam Software Group GmbH</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://www.veeam.com/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@75f6547b645b0eb9ef96ff7f2c34f3d7063939e1/icons/veeam-service-provider-console-webui.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Veeam Software AG</copyright>
+    <copyright>Veeam Software Group GmbH</copyright>
     <tags>veeam-service-provider-console-webui veeam-service-provider-console vspc veeam  admin</tags>
     <releaseNotes></releaseNotes>
     <licenseUrl>https://www.veeam.com/eula.html</licenseUrl>

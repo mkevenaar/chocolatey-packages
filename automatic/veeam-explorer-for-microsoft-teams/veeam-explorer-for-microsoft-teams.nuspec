@@ -34,12 +34,12 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
     <title>Veeam Explorer for Microsoft Teams</title>
-    <authors>Veeam Software AG</authors>
+    <authors>Veeam Software Group GmbH</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://www.veeam.com/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@5078deafb141f35289405be2a611dbc99cfecf79/icons/veeam-explorer-for-microsoft-teams.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Veeam Software AG</copyright>
+    <copyright>Veeam Software Group GmbH</copyright>
     <tags>veeam-explorer-for-microsoft-teams vbr veeam explorer teams admin</tags>
     <releaseNotes>https://www.veeam.com/veeam_backup_11_0_release_notes_rn.pdf</releaseNotes>
     <licenseUrl>https://www.veeam.com/eula.html</licenseUrl>

@@ -34,12 +34,12 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
     <title>Veeam ONE ISO downloader</title>
-    <authors>Veeam Software AG</authors>
+    <authors>Veeam Software Group GmbH</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://www.veeam.com/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4b35af30cee6ea1783efeceb996c1e4c4bdb34d6/icons/veeam-one-iso.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Veeam Software AG</copyright>
+    <copyright>Veeam Software Group GmbH</copyright>
     <tags>veeam-one-iso vone veeam-one veeam one monitoring admin</tags>
     <releaseNotes></releaseNotes>
     <licenseUrl>https://www.veeam.com/eula.html</licenseUrl>

@@ -34,12 +34,12 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
     <title>Veeam ONE Reporter Web UI</title>
-    <authors>Veeam Software AG</authors>
+    <authors>Veeam Software Group GmbH</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://www.veeam.com/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@3c7e8c21ee2dcb440643a882debf29a88f6b6034/icons/veeam-one-reporter-web.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Veeam Software AG</copyright>
+    <copyright>Veeam Software Group GmbH</copyright>
     <tags>veeam-one-reporter-web vone veeam-one veeam one reporter web admin</tags>
     <releaseNotes></releaseNotes>
     <licenseUrl>https://www.veeam.com/eula.html</licenseUrl>

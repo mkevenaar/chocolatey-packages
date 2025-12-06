@@ -34,12 +34,12 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
     <title>Veeam Service Provider Console Application Server Web UI for Veeam ConnectWise Manage Plugin</title>
-    <authors>Veeam Software AG</authors>
+    <authors>Veeam Software Group GmbH</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://www.veeam.com/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@5f8f375b81c2f755de0018d069b0f00f6fbec0ea/icons/veeam-service-provider-console-connectwise-manage-webui.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Veeam Software AG</copyright>
+    <copyright>Veeam Software Group GmbH</copyright>
     <tags>veeam-service-provider-console-connectwise-manage-webui veeam-service-provider-console vspc veeam connectwise admin</tags>
     <releaseNotes></releaseNotes>
     <licenseUrl>https://www.veeam.com/eula.html</licenseUrl>

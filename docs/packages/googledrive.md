@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@a29d2dfbd5e87d84c7f629753f3a8fc524007e6f/icons/googledrive.svg" width="32" height="32"/> [![Google Drive](https://img.shields.io/chocolatey/v/googledrive.svg?label=Google+Drive)](https://community.chocolatey.org/packages/googledrive) [![Google Drive](https://img.shields.io/chocolatey/dt/googledrive.svg)](https://community.chocolatey.org/packages/googledrive)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@27d92fa2fac6f589a8872281166f3020c60d6152/icons/googledrive.svg" width="32" height="32"/> [![Google Drive](https://img.shields.io/chocolatey/v/googledrive.svg?label=Google+Drive)](https://community.chocolatey.org/packages/googledrive) [![Google Drive](https://img.shields.io/chocolatey/dt/googledrive.svg)](https://community.chocolatey.org/packages/googledrive)
 
 ## Usage
 

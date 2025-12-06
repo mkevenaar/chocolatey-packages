@@ -35,12 +35,12 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- == SOFTWARE SPECIFIC SECTION == -->
     <!-- This section is about the software itself -->
     <title>Veeam Backup &amp; Replication Extract Utility</title>
-    <authors>Veeam Software AG</authors>
+    <authors>Veeam Software Group GmbH</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>http://www.veeam.com/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@d47fb7da33a696a72cd507a4f07547458b12720f/icons/veeam-backup-and-replication-extract.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
-    <copyright>Veeam Software AG</copyright>
+    <copyright>Veeam Software Group GmbH</copyright>
     <tags>veeam-backup-and-replication veeam backup extract admin</tags>
     <releaseNotes>https://helpcenter.veeam.com/rn/veeam_backup_13_0_1_release_notes.html</releaseNotes>
     <licenseUrl>https://www.veeam.com/eula.html</licenseUrl>

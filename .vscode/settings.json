@@ -22,5 +22,14 @@
     "statusBar.background": "#884B2E",
     "statusBarItem.hoverBackground": "#6F3215",
     "statusBar.foreground": "#FDCEA5"
-  }
+  },
+  "cSpell.words": [
+    "helperscripts",
+    "INSTALLDIR",
+    "norestart",
+    "PASSWORDCHG",
+    "THIRDPARTY",
+    "veeam",
+    "VSPC"
+  ]
 }
