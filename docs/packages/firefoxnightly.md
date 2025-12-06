@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@972436b98f0066a91d8f6899e42a6ccf06c7acbf/icons/firefox-nightly.png" width="32" height="32"/> [![Firefox Nightly](https://img.shields.io/chocolatey/v/firefox-nightly.svg?label=Firefox+Nightly)](https://community.chocolatey.org/packages/firefox-nightly) [![Firefox Nightly](https://img.shields.io/chocolatey/dt/firefox-nightly.svg)](https://community.chocolatey.org/packages/firefox-nightly)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@8ecd254744fba13d72ef044bb50a01bfec89755b/icons/firefox-nightly.png" width="32" height="32"/> [![Firefox Nightly](https://img.shields.io/chocolatey/v/firefox-nightly.svg?label=Firefox+Nightly)](https://community.chocolatey.org/packages/firefox-nightly) [![Firefox Nightly](https://img.shields.io/chocolatey/dt/firefox-nightly.svg)](https://community.chocolatey.org/packages/firefox-nightly)
 
 ## Usage
 

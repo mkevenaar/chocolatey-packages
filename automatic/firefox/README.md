@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@b40e08792b4d113bcb96960eaa184c093471a01e/icons/firefox-dev.png" width="48" height="48"/> [firefox-dev](https://community.chocolatey.org/packages/firefox-dev)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@f7092bb1e7a5e0d6ca4ea79b41c5928aff418af7/icons/firefox-dev.png" width="48" height="48"/> [firefox-dev](https://community.chocolatey.org/packages/firefox-dev)
 
 Firefox Browser Developer Edition
 

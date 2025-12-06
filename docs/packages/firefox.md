@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@b40e08792b4d113bcb96960eaa184c093471a01e/icons/firefox-dev.png" width="32" height="32"/> [![Firefox Developer Edition](https://img.shields.io/chocolatey/v/firefox-dev.svg?label=Firefox+Developer+Edition)](https://community.chocolatey.org/packages/firefox-dev) [![Firefox Developer Edition](https://img.shields.io/chocolatey/dt/firefox-dev.svg)](https://community.chocolatey.org/packages/firefox-dev)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@f7092bb1e7a5e0d6ca4ea79b41c5928aff418af7/icons/firefox-dev.png" width="32" height="32"/> [![Firefox Developer Edition](https://img.shields.io/chocolatey/v/firefox-dev.svg?label=Firefox+Developer+Edition)](https://community.chocolatey.org/packages/firefox-dev) [![Firefox Developer Edition](https://img.shields.io/chocolatey/dt/firefox-dev.svg)](https://community.chocolatey.org/packages/firefox-dev)
 
 ## Usage
 
