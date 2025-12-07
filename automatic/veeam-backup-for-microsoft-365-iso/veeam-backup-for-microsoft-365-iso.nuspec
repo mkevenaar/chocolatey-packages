@@ -87,7 +87,6 @@ let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) th
     <!--<replaces>NOT YET IMPLEMENTED</replaces>-->
   </metadata>
   <!-- this section controls what actually gets packaged into the Chocolatey package -->
-  <!-- Uncomment to limit what is packed in -->
   <files>
     <file src="tools\**" target="tools" />
   </files>
