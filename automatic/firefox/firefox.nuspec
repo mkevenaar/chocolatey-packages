@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>146.0.9-beta</version>
+    <version>147.0.1-beta</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Maurice Kevenaar</owners>
     <!-- ============================== -->
@@ -37,7 +37,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <authors>Mozilla</authors>
     <!-- projectUrl is required for the community feed -->
     <projectUrl>https://www.mozilla.org/firefox/developer</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@f7092bb1e7a5e0d6ca4ea79b41c5928aff418af7/icons/firefox-dev.png</iconUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@b40e08792b4d113bcb96960eaa184c093471a01e/icons/firefox-dev.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Mozilla Foundation</copyright>
     <tags>browser mozilla firefox developmer admin foss cross-platform</tags>
