@@ -6,12 +6,12 @@ The installer have been downloaded from their official download link listed on <
 and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <https://nginx.org/download/nginx-1.29.3.zip>
+  32-Bit: <https://nginx.org/download/nginx-1.29.4.zip>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: AFA2FDE9FDF0AC64B91A17DCD34100AC557A3FF8E6154EEB0EEAE7AA8E5BBC2D
+  checksum32: 658336377F103CB5908085D9FF31B48A7B43311403D2A0779A935DDC3CAEFAB3
 
 File 'LICENSE.txt' is obtained from <https://nginx.org/LICENSE>
