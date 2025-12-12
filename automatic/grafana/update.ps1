@@ -9,12 +9,6 @@ function global:au_SearchReplace {
       "(^[$]checksum32\s*=\s*)('.*')"    = "`$1'$($Latest.Checksum32)'"
       "(^[$]checksumType32\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
     }
-    ".\legal\VERIFICATION.txt"   = @{
-      "(?i)(listed on\s*)\<.*\>" = "`${1}<$releases>"
-      "(?i)(32-Bit.+)\<.*\>"     = "`${1}<$($Latest.URL32)>"
-      "(?i)(checksum type:).*"   = "`${1} $($Latest.ChecksumType32)"
-      "(?i)(checksum32:).*"      = "`${1} $($Latest.Checksum32)"
-    }
   }
 }
 
