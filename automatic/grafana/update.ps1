@@ -5,7 +5,9 @@ $releases = "https://api.github.com/repos/grafana/grafana/releases"
 function global:au_SearchReplace {
   return @{
     ".\tools\chocolateyInstall.ps1" = @{
-      "(?i)(^\s*file\s*=\s*`"[$]toolsDir\\).*" = "`${1}$($Latest.FileName32)`""
+      "(^[$]url32\s*=\s*)('.*')"         = "`$1'$($Latest.URL32)'"
+      "(^[$]checksum32\s*=\s*)('.*')"    = "`$1'$($Latest.Checksum32)'"
+      "(^[$]checksumType32\s*=\s*)('.*')" = "`$1'$($Latest.ChecksumType32)'"
     }
     ".\legal\VERIFICATION.txt"   = @{
       "(?i)(listed on\s*)\<.*\>" = "`${1}<$releases>"
@@ -20,15 +22,12 @@ function CreateStream {
   param($url32bit, $version)
 
   $Result = @{
-    Version  = $version
-    URL32    = $url32bit
-    FileType = 'zip'
+    Version = $version
+    URL32   = $url32bit
   }
 
   return $Result
 }
-
-function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 
 function global:au_GetLatest {
   $header = @{
@@ -57,5 +56,5 @@ function global:au_GetLatest {
 }
 
 if ($MyInvocation.InvocationName -ne ".") {
-  update -ChecksumFor None
+  update -ChecksumFor 32
 }
