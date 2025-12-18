@@ -35,8 +35,8 @@ if ($pp.ALLOWDENYKEY) { $SilentArgs += " ALLOWDENYKEY=`"$($pp.ALLOWDENYKEY)`"" }
 $PackageArgs = @{
   PackageName    = $env:ChocolateyPackageName
   FileType       = 'MSI'
-  file          = "$toolsDir\zabbix_agent-7.2.15-windows-i386-openssl.msi"
-  file64        = "$toolsDir\zabbix_agent-7.2.15-windows-amd64-openssl.msi"
+  file          = "$toolsDir\zabbix_agent-7.4.6-windows-i386-openssl.msi"
+  file64        = "$toolsDir\zabbix_agent-7.4.6-windows-amd64-openssl.msi"
   softwareName  = "Zabbix Agent *"
 
   SilentArgs     = $SilentArgs
