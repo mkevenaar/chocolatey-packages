@@ -27,7 +27,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>8.2.0.2202</version>
+    <version>8.3.0.2201</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Maurice Kevenaar</owners>
     <!-- ============================== -->
@@ -63,8 +63,8 @@ let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) th
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
     <dependencies>
-      <dependency id="veeam-backup-for-microsoft-365-iso" version="[8.2.0.2202]" />
-      <dependency id="veeam-backup-for-microsoft-365-console" version="[8.2.0.2202]" />
+      <dependency id="veeam-backup-for-microsoft-365-iso" version="[8.3.0.2201]" />
+      <dependency id="veeam-backup-for-microsoft-365-console" version="[8.3.0.2201]" />
       <dependency id="chocolatey-isomount.extension" version="1.0" />
       <dependency id="DotNet4.7.2" />
     </dependencies>
