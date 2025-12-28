@@ -2,18 +2,18 @@ VERIFICATION
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
-The installer have been downloaded from their official download link listed on <https://github.com/Lidarr/Lidarr/releases/tag/v3.1.1.4876>
+The installer have been downloaded from their official download link listed on <https://github.com/Lidarr/Lidarr/releases/tag/v3.1.1.4900>
 and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <https://github.com/Lidarr/Lidarr/releases/download/v3.1.1.4876/Lidarr.develop.3.1.1.4876.windows-core-x86-installer.exe>
-  64-Bit: <https://github.com/Lidarr/Lidarr/releases/download/v3.1.1.4876/Lidarr.develop.3.1.1.4876.windows-core-x64-installer.exe>
+  32-Bit: <https://github.com/Lidarr/Lidarr/releases/download/v3.1.1.4900/Lidarr.develop.3.1.1.4900.windows-core-x86-installer.exe>
+  64-Bit: <https://github.com/Lidarr/Lidarr/releases/download/v3.1.1.4900/Lidarr.develop.3.1.1.4900.windows-core-x64-installer.exe>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: ACEBF515F71FDE6F425FF828E97EE502659552332E0851FD53721BB49CCE49D2
-  checksum64: 67A5C2DA3DC366F53437D34B43F1AE91E91F57A8BC04005B73FE59328A26740B
+  checksum32: C4D2F9517DC4505C80B150E5773C49B1D543E340BBACE74085C2D21E731CD88A
+  checksum64: 4F274C4C6C3126DB80FED758300AED5EB8642C9419AEFA14486717AFF0AA5677
 
 File 'LICENSE.txt' is obtained from <https://github.com/lidarr/Lidarr/blob/develop/LICENSE.md>
