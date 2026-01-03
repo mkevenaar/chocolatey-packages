@@ -6,13 +6,13 @@ The installer have been downloaded from their official download link listed on <
 and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <https://github.com/kaikramer/keystore-explorer/releases/download/v5.6.0/kse-560.zip>
+  32-Bit: <https://github.com/kaikramer/keystore-explorer/releases/download/v5.6.1/kse-561.zip>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: 83AE713AE466856EE97D834905CB01203E8172F25C857AB0B25CF1337CD1776C
+  checksum32: B242289D1C8931D202C2E8B17FD076A1E97827FD42C700126C8910FC7BDF8981
 
 File 'LICENSE.txt' is obtained from <https://github.com/kaikramer/keystore-explorer/blob/main/LICENSE>
 
