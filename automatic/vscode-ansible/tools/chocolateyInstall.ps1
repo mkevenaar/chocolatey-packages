@@ -1,3 +1,3 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-Install-VsCodeExtension -extensionId 'redhat.ansible@26.1.1'
+Install-VsCodeExtension -extensionId 'redhat.ansible@26.1.2'
