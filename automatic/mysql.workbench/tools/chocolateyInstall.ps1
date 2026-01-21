@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url        = 'https://cdn.mysql.com/Downloads/MySQLGUITools/mysql-workbench-community-8.0.44-winx64.msi'
-$checksum     = 'a94535296037706856061c41ffdad61c1bc917324feff7b95c12a6335c926b82'
+$url        = 'https://cdn.mysql.com/Downloads/MySQLGUITools/mysql-workbench-community-8.0.46-winx64.msi'
+$checksum     = 'f4664eb0ed7a3031d64212030f0faea045d155f397f428884455e8d240f3dfa3'
 $checksumType = 'sha256'
 
 $packageArgs = @{
