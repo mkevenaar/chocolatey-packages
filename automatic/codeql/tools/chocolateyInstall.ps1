@@ -5,8 +5,8 @@ $package = Split-Path $toolsDir
 $codeql_home = Join-Path $package 'codeql-win64/codeql'
 $codeql_bat = Join-Path $codeql_home 'codeql.exe'
 
-$url = 'https://github.com/github/codeql-cli-binaries/releases/download/v2.24.0/codeql-win64.zip'
-$checksum = '131666780003e4bb8a7ff0430ca5f2fdb62a25110f27293ebbe64984c653eda4'
+$url = 'https://github.com/github/codeql-cli-binaries/releases/download/v2.24.1/codeql-win64.zip'
+$checksum = '7608f6c07b077ab142f9768f2b089700129d5871398eef64b7965c99d5d725bd'
 $checksumType = 'sha256'
 
 $packageArgs = @{
