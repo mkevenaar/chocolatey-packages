@@ -34,7 +34,7 @@ if (Get-32bitOnlyInstalled -product $softwareName) {
 
     Checksum = $checksums.Win32
     ChecksumType = 'sha512'
-    Url = "https://archive.mozilla.org/pub/firefox/nightly/2026/02/2026-02-04-09-45-24-mozilla-central/firefox-149.0a1.${locale}.win32.installer.exe"
+    Url = "https://archive.mozilla.org/pub/firefox/nightly/2026/02/2026-02-04-21-44-33-mozilla-central/firefox-149.0a1.${locale}.win32.installer.exe"
 
     silentArgs = '-ms'
     validExitCodes = @(0)
@@ -43,7 +43,7 @@ if (Get-32bitOnlyInstalled -product $softwareName) {
   if (!(Get-32bitOnlyInstalled($softwareName)) -and (Get-OSArchitectureWidth 64)) {
     $packageArgs.Checksum64 = $checksums.Win64
     $packageArgs.ChecksumType64 = 'sha512'
-    $packageArgs.Url64 = "https://archive.mozilla.org/pub/firefox/nightly/2026/02/2026-02-04-09-45-24-mozilla-central/firefox-149.0a1.${locale}.win64.installer.exe"
+    $packageArgs.Url64 = "https://archive.mozilla.org/pub/firefox/nightly/2026/02/2026-02-04-21-44-33-mozilla-central/firefox-149.0a1.${locale}.win64.installer.exe"
   }
 
   Install-ChocolateyPackage @packageArgs
