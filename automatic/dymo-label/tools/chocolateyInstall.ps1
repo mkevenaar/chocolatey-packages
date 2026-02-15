@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = 'https://s3.amazonaws.com/download.dymo.com/dymo/Software/Win/DLS8Setup8.7.4.exe'
+$url          = 'https://download.dymo.com/dymo/Software/Win/DLS8Setup8.7.4.exe'
 $checksum     = '409d79f053ba0c803ce83b71e8245992cd63708fa27017f48a5063826f1bea4d'
 $checksumType = 'sha256'
 
