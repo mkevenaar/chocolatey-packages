@@ -2,16 +2,16 @@ VERIFICATION
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
-The installer have been downloaded from their official download link listed on <https://github.com/OrcaSlicer/OrcaSlicer/releases/tag/v2.3.2-beta2>
+The installer have been downloaded from their official download link listed on <https://github.com/OrcaSlicer/OrcaSlicer/releases/tag/v2.3.2-rc>
 and can be verified like this:
 
 1. Download the following installers:
-  64-Bit: <https://github.com/OrcaSlicer/OrcaSlicer/releases/download/v2.3.2-beta2/OrcaSlicer_Windows_Installer_V2.3.2-beta2.exe>
+  64-Bit: <https://github.com/OrcaSlicer/OrcaSlicer/releases/download/v2.3.2-rc/ORCaSlicer_Windows_Installer_V2.3.2-RC.exe>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum64: 8F1583B0057ACB1BCA693FC6A2FAE0B6DEB58EA2BFA40AB37D6F7B51FBBB2F1D
+  checksum64: 99C0FC427099F059D03CB52B1B980A45D88E9A84C7CB607C297874054A3D51E8
 
 File 'LICENSE.txt' is obtained from <https://github.com/SoftFever/OrcaSlicer/blob/main/LICENSE.txt>

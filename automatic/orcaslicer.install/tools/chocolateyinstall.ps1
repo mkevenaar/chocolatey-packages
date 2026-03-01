@@ -4,7 +4,7 @@ $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
-  file          = "$toolsDir\OrcaSlicer_Windows_Installer_V2.3.2-beta2.exe"
+  file          = "$toolsDir\ORCaSlicer_Windows_Installer_V2.3.2-RC.exe"
   fileType      = 'exe'
   softwareName  = 'OrcaSlicer*'
   silentArgs    = "/S"
