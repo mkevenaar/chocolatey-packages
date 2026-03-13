@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 $packageName = 'intel-dsa'
 $url         = 'https://dsadata.intel.com/installer/'
-$checksum    = '39E8CAF7D6E3F2DC312D62F3393DF44B067C7ED2B7E32EFD222FEF3C9A54E170'
+$checksum    = '5B4957C11B7370CBC2A0EE0F5AFDC3DFCA3BC624A9165EB0BC0A8FE3C7AEEE5E'
 
 $packageArgs = @{
   packageName    = $packageName
