@@ -3,8 +3,8 @@
 $packageArgs = @{
   packageName    = $Env:ChocolateyPackageName
   fileType       = 'exe'
-  url            = 'https://download.cpuid.com/cpu-z/cpu-z_2.18-en.exe'
-  checksum       = '3999dad2516dbc9afdd51defc2447d940aa78a88bcf93655186c856b326e3821'
+  url            = 'https://download.cpuid.com/cpu-z/cpu-z_2.19-en.exe'
+  checksum       = 'fe2e2556fc3c13722ceb1831c8c07b232fea25d5ba2c70d43d9eeb7b0008796f'
   checksumType   = 'sha256'
   silentArgs     = '/VERYSILENT /SUPPRESSMSGBOXES /NORESTART'
   validExitCodes = @(0)
