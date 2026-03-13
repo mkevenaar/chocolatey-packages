@@ -1,5 +1,5 @@
 ﻿$ErrorActionPreference = 'Stop';
-$version = '6.0.45'
+$version = '7.0.24'
 $title = 'Zabbix Agent'
 
 $configDir = Join-Path $env:PROGRAMDATA 'zabbix'
@@ -19,8 +19,8 @@ $service = Get-WmiObject -Class Win32_Service -Filter "Name=`'$title`'"
 $PackageArgs = @{
   PackageName    = $env:ChocolateyPackageName
   unzipLocation = $tempDir
-  file          = "$toolsDir\zabbix_agent-6.0.45-windows-i386-openssl.zip"
-  file64        = "$toolsDir\zabbix_agent-6.0.45-windows-amd64-openssl.zip"
+  file          = "$toolsDir\zabbix_agent-7.0.24-windows-i386-openssl.zip"
+  file64        = "$toolsDir\zabbix_agent-7.0.24-windows-amd64-openssl.zip"
 }
 
 try {
