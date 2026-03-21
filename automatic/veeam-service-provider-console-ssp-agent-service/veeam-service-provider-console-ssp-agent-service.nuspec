@@ -47,7 +47,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <docsUrl>http://www.veeam.com/support.html</docsUrl>
     <mailingListUrl>https://forums.veeam.com/</mailingListUrl>
     <summary>Veeam Service Provider Console Application Server for Self-Service Portal for Veeam Agents</summary>
-    <description><![CDATA[Exit when reboot detected
+    <description><![CDATA[## Exit when reboot detected
 
 When installing / upgrading these packages, I would like to advise you to enable this feature `choco feature enable -n=exitOnRebootDetected`
 
@@ -76,7 +76,8 @@ let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) th
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
     <dependencies>
       <dependency id="veeam-service-provider-console-iso" version="[9.0.0.29555]" />
-      <dependency id="chocolatey-isomount.extension" version="1.0" />
+      <dependency id="veeam.extension" version="1.0.0" />
+      <dependency id="chocolatey-isomount.extension" version="1.1.0" />
       <dependency id="dotnet-6.0-runtime" version="6.0.24" />
     </dependencies>
 

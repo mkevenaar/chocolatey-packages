@@ -1,6 +1,6 @@
 # <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@2a777a345e0e3086eb4c3acc950f5f57905b1c2f/icons/veeam-service-provider-console-ssp-agent-service.png" width="48" height="48"/> [veeam-service-provider-console-ssp-agent-service](https://community.chocolatey.org/packages/veeam-service-provider-console-ssp-agent-service)
 
-Exit when reboot detected
+## Exit when reboot detected
 
 When installing / upgrading these packages, I would like to advise you to enable this feature `choco feature enable -n=exitOnRebootDetected`
 
