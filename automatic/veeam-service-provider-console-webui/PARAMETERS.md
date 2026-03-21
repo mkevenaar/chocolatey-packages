@@ -1,4 +1,4 @@
-# Veeam ONE Monitor Server package parameters
+# Veeam Service Provider Console Web UI package parameters
 
 ## Package Parameters
 

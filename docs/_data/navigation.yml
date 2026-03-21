@@ -5,10 +5,24 @@
         url: /chocolatey-isomount.extension/Index.html
       - page: Changelog
         url: /chocolatey-isomount.extension/Changelog.html
+      - page: Get-ChocolateyIsoFile
+        url: /chocolatey-isomount.extension/HelpersGetChocolateyIsoFile.html
       - page: Install-ChocolateyIsoInstallPackage
         url: /chocolatey-isomount.extension/HelpersInstallChocolateyIsoInstallPackage.html
       - page: Install-ChocolateyIsoPackage
         url: /chocolatey-isomount.extension/HelpersInstallChocolateyIsoPackage.html
+  - title: veeam.extension
+    subfolderitems:
+      - page: Documentation
+        url: /veeam.extension/Index.html
+      - page: Changelog
+        url: /veeam.extension/Changelog.html
+      - page: Add-SilentArgument
+        url: /veeam.extension/HelpersAddSilentArgument.html
+      - page: Install-VeeamIsoPatchIfNeeded
+        url: /veeam.extension/HelpersInstallVeeamIsoPatchIfNeeded.html
+      - page: Invoke-PackageParameterValidation
+        url: /veeam.extension/HelpersInvokePackageParameterValidation.html
   - title: Packages
     subfolderitems:
       - page: "AIDA64 Business"
@@ -301,6 +315,8 @@
         url: /packages/ultraiso.html
       - page: "UltraVNC"
         url: /packages/ultravnc.html
+      - page: "Veeam helpers extension"
+        url: /packages/veeam.extension.html
       - page: "Veeam Agent for Microsoft Windows"
         url: /packages/veeamagent.html
       - page: "Veeam Backup & Replication Catalog"
@@ -377,6 +393,8 @@
         url: /packages/veeamserviceproviderconsoleconnectwisemanagewebui.html
       - page: "Veeam Service Provider Console ISO downloader"
         url: /packages/veeamserviceproviderconsoleiso.html
+      - page: "Veeam Service Provider Console Management Agent"
+        url: /packages/veeamserviceproviderconsolemanagementagent.html
       - page: "Veeam Service Provider Console Application Server"
         url: /packages/veeamserviceproviderconsoleserver.html
       - page: "Veeam Service Provider Console Application Server for Self-Service Portal for Veeam Agents"

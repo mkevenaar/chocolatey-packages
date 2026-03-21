@@ -63,7 +63,7 @@ let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) th
     <dependencies>
       <dependency id="veeam-backup-for-microsoft-365-iso" version="[8.2.0.2202]" />
       <dependency id="veeam-backup-for-microsoft-365-console" version="[8.2.0.2202]" />
-      <dependency id="chocolatey-isomount.extension" version="1.0" />
+      <dependency id="chocolatey-isomount.extension" version="1.1.0" />
       <dependency id="DotNet4.7.2" />
     </dependencies>
 

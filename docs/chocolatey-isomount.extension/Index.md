@@ -52,6 +52,15 @@ $packageArgs = @{
 Install-ChocolateyIsoPackage @packageArgs
 ```
 
+To copy a single file out of an ISO, mount the ISO and copy the file directly:
+
+```powershell
+$toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
+$isoPath = Join-Path $toolsDir 'image.iso'
+
+Get-ChocolateyIsoFile -IsoFile $isoPath -FilePath 'setup.msi' -Destination $toolsDir
+```
+
 Keep in mind that function may work only in the context of the `chocolateyInstaller.ps1`.
 
 To get the list of functions, load the module directly and invoke the following command:

@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>1.0.1</version>
+    <version>1.1.0</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Maurice Kevenaar</owners>
     <!-- ============================== -->
@@ -44,7 +44,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <licenseUrl>https://github.com/mkevenaar/chocolatey-packages/blob/master/LICENSE.md</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/extensions/chocolatey-isomount.extension</packageSourceUrl>
-    <docsUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/extensions/chocolatey-isomount.extension/README.md</docsUrl>
+    <docsUrl>https://mkevenaar.github.io/chocolatey-packages/chocolatey-isomount.extension/Index.html</docsUrl>
     <projectSourceUrl>https://github.com/mkevenaar/chocolatey-packages</projectSourceUrl>
     <bugTrackerUrl>https://github.com/mkevenaar/chocolatey-packages/issues</bugTrackerUrl>
     <summary>Helper functions useful for deploying software from ISO files.</summary>
