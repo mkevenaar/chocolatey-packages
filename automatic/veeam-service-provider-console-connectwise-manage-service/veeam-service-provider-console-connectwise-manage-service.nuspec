@@ -80,7 +80,8 @@ let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) th
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
     <dependencies>
       <dependency id="veeam-service-provider-console-iso" version="[9.0.0.29555]" />
-      <dependency id="chocolatey-isomount.extension" version="1.0" />
+      <dependency id="veeam.extension" version="1.0.0" />
+      <dependency id="chocolatey-isomount.extension" version="1.1.0" />
     </dependencies>
 
     <!--<provides>NOT YET IMPLEMENTED</provides>-->
@@ -88,7 +89,6 @@ let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) th
     <!--<replaces>NOT YET IMPLEMENTED</replaces>-->
   </metadata>
   <!-- this section controls what actually gets packaged into the Chocolatey package -->
-  <!-- Uncomment to limit what is packed in -->
   <files>
     <file src="tools\**" target="tools" />
   </files>

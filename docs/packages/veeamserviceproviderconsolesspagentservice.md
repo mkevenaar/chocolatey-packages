@@ -22,7 +22,7 @@ choco uninstall veeam-service-provider-console-ssp-agent-service
 
 ## Description
 
-Exit when reboot detected
+## Exit when reboot detected
 
 When installing / upgrading these packages, I would like to advise you to enable this feature `choco feature enable -n=exitOnRebootDetected`
 

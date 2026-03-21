@@ -154,6 +154,9 @@
     Install-ChocolateyIsoPackage @packageArgs
 
 .LINK
+    https://mkevenaar.github.io/chocolatey-packages/chocolatey-isomount.extension/HelpersInstallChocolateyIsoPackage.html
+
+.LINK
     Install-ChocolateyIsoInstallPackage
 
 .LINK
@@ -169,6 +172,7 @@
     Install-ChocolateyZipPackage
 #>
 
+[CmdletBinding(HelpUri='https://mkevenaar.github.io/chocolatey-packages/chocolatey-isomount.extension/HelpersInstallChocolateyIsoPackage.html')]
 param(
     [parameter(Mandatory=$true, Position=0)][string] $packageName,
     [parameter(Mandatory=$true, Position=1)][string] $url,
