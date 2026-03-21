@@ -1,4 +1,4 @@
-Import-Module Chocolatey-AU
+﻿Import-Module Chocolatey-AU
 Import-Module "$PSScriptRoot\..\..\scripts\au_extensions.psm1"
 
 $repoUser = "dbeaver"
@@ -37,7 +37,7 @@ function global:au_AfterUpdate($Package) {
 function global:au_GetLatest {
   $release = Get-LatestGithubReleases $repoUser $repoName $true
 
-  $url64 = $release.latest.Assets | Where-Object { $_ -match 'x86_64-setup\.exe$' } | Select-Object -First 1
+  $url64 = $release.latest.Assets | Where-Object { $_ -match 'windows-x86_64.exe$' } | Select-Object -First 1
 
   $Latest = @{
     URL64      = $url64;
