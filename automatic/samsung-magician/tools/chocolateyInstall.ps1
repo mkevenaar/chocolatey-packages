@@ -3,8 +3,8 @@
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 . $toolsDir\helpers.ps1
 
-$url                       = 'https://download.semiconductor.samsung.com/resources/software-resources/Samsung_Magician_Installer_Official_9.0.0.910.exe'
-$checksum                  = '4406017DAC7A0BAA55476B624F575B7F729C7BF5450B6995478C3289E6D3248D'
+$url                       = 'https://download.semiconductor.samsung.com/resources/software-resources/Samsung_Magician_Installer_Official_9.0.1.950.exe'
+$checksum                  = 'D46CF61AA5B5073138E9D063E91F1861776315A14DFCA3FFD8724611C21588D8'
 $checksumType              = 'sha256'
 
 # Download the installer using Chocolatey's internal handling
