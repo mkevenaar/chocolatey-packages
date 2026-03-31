@@ -2,7 +2,7 @@
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url          = 'https://cdn.sa.services.tomtom.com/static/sa/Windows/InstallTomTomMyDriveConnect.exe'
-$checksum     = '721767BD0EB9601BB9126863C84E107C2F56DA7BA5F960717BED08A96A16CBE5'
+$checksum     = '6ED8DBAB71D64DCC23D05E33EC79FADA08CAC171FA99966255F7E276886EEA2D'
 $checksumType = 'sha256'
 
 $packageArgs = @{
