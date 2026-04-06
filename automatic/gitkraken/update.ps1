@@ -1,6 +1,6 @@
 Import-Module Chocolatey-AU
 
-$releases = 'https://www.gitkraken.com/download'
+$downloadUrl = 'https://api.gitkraken.dev/releases/production/windows/x64/active/GitKrakenSetup.exe'
 
 function global:au_SearchReplace {
   @{
@@ -13,12 +13,13 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-  $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+  $url64 = Get-RedirectedUrl $downloadUrl
 
-  $re = 'Latest release: ([\d\.]+)'
-  $version = ([regex]::Match($download_page.content, $re)).Captures.Groups[1].value
+  $version = ([regex]::Match($url64, '/windows/x64/([^/]+)/')).Groups[1].Value
 
-  $url64 = 'https://api.gitkraken.dev/releases/production/windows/x64/active/GitKrakenSetup.exe'
+  if (-not $version) {
+    throw "Unable to determine GitKraken version from redirect URL: $url64"
+  }
 
   return @{
     URL64   = $url64
