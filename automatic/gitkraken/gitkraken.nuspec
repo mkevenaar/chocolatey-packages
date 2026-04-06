@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>11.9.0</version>
+    <version>11.10.0</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Maurice Kevenaar</owners>
     <!-- ============================== -->
@@ -48,7 +48,17 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <docsUrl>https://help.gitkraken.com/gitkraken-client/gitkraken-client-home/</docsUrl>
     <bugTrackerUrl>https://help.gitkraken.com/gitkraken-client/contact-support/</bugTrackerUrl>
     <summary>The intuitive, fast, and beautiful cross-platform Git client.</summary>
-    <description><![CDATA[The intuitive, fast, and beautiful cross-platform Git client. NOTE: GitKraken web site does not allow to download a specific version, so this package *always* downloads the latest one. Once installed GitKraken has its own auto-update. Unpredictable downloads is a reason why checksum verification is disabled. If you have strong arguments for adding checksums - let me know.
+    <description><![CDATA[GitKraken is a graphical Git client for working with repositories, branches, commits, merges, and pull requests from a desktop UI.
+
+## Package Notes
+
+GitKraken also has its own in-app update mechanism. This package checks `%LOCALAPPDATA%\gitkraken\gitkraken.exe` and only reinstalls when the Chocolatey package version is newer, unless `choco upgrade gitkraken --force` is used.
+
+## Useful Links
+
+- Release notes: <https://www.gitkraken.com/release-notes>
+- Documentation: <https://help.gitkraken.com/gitkraken-client/gitkraken-client-home/>
+- Support: <https://help.gitkraken.com/gitkraken-client/contact-support/>
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
