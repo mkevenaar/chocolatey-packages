@@ -2,15 +2,20 @@ Import-Module Chocolatey-AU
 
 $releases = 'https://exiftool.org/'
 
-function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
+function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge -FileNameSkip 1 }
 
 function global:au_GetLatest {
   $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
   $re = "exiftool-(.+\d)_32.zip"
-  $url32 = $releases + ($download_page.Links | Where-Object href -match $re | Select-Object -First 1 -expand href)
+  $downloadLink = $download_page.Links | Where-Object href -match $re | Select-Object -First 1 -ExpandProperty href
+  if (-not $downloadLink) {
+    throw "Could not find the ExifTool 32-bit Windows archive on $releases"
+  }
+
+  $url32 = [uri]::new([uri]$releases, $downloadLink).AbsoluteUri
   $url64 = $url32 -Replace "_32", "_64"
-  $version = ([regex]::Match($url32, $re)).Captures.Groups[1].value
+  $version = ([regex]::Match($downloadLink, $re)).Captures.Groups[1].value
 
   return @{
     URL32    = $url32
