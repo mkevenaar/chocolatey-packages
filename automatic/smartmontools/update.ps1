@@ -13,14 +13,19 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases
+    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
     $feed = ([xml]$download_page.Content).rss.channel
-    
-    $release = $feed.item | Where-Object link -match "win32-setup.exe/download$" | Select-Object -First 1
+
+    $release = $feed.item | Where-Object link -match "smartmontools-[0-9]+(?:\.[0-9]+)+(?:-[0-9]+)?\.win32-setup\.exe/download$" | Select-Object -First 1
 
     $url = $release.link
-    
-    $version = $url -split "-" | Select-Object -last 1 -skip 2
+
+    $versionMatch = [regex]::Match($url, "smartmontools-(?<Version>[0-9]+(?:\.[0-9]+)+)(?:-[0-9]+)?\.win32-setup\.exe/download$")
+    if (-not $versionMatch.Success) {
+        throw "Unable to parse version from $url"
+    }
+
+    $version = Get-Version $versionMatch.Groups['Version'].Value
 
     return @{ 
         URL32 = $url
