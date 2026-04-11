@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = 'https://download.microsoft.com/download/2/6/f/26f7aa55-ef6f-4882-b19b-a1be0e7328fe/KIT_BUNDLE_WINDOWSSDK_MEDIACREATION/winsdksetup.exe'
-$checksum     = '5535188a9aeea1cebcbf04de3c2c37d76f10600a65867ff65f6153d507b60488'
+$url          = 'https://download.microsoft.com/download/c5526ca8-88aa-4325-8d72-de642afc7356/KIT_BUNDLE_WINDOWSSDK_MEDIACREATION/winsdksetup.exe'
+$checksum     = '2010278fca14c22ffac2829d17d13fd837148867f5287d6fbb52e9619573477a'
 $checksumType = 'sha256'
 
 # This just downloads a bunch of files onto the machine, including the Orca MSI
