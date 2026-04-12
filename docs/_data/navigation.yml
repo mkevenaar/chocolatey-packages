@@ -113,6 +113,8 @@
         url: /packages/icloud.html
       - page: "[Deprecated] Intel SSD Toolbox"
         url: /packages/intel.ssd.toolbox.html
+      - page: "Intel Arc & Iris Xe Graphics Drivers"
+        url: /packages/intelarcgraphicsdriver.html
       - page: "Intel® Driver & Support Assistant (Install)"
         url: /packages/inteldsa.html
       - page: "JetBrains IntelliJ IDEA (Educational)"
