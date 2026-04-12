@@ -57,9 +57,9 @@ let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) th
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
     <dependencies>
-      <dependency id="vcredist2010" version="" />
-      <dependency id="vcredist2013" version="" />
-      <dependency id="vcredist2017" version="" />
+      <dependency id="vcredist2010" />
+      <dependency id="vcredist2013" />
+      <dependency id="vcredist2017" />
     </dependencies>
 
     <!--<provides>NOT YET IMPLEMENTED</provides>-->
