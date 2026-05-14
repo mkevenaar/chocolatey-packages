@@ -7,7 +7,7 @@ Package can be verified like this:
 
 1. Go to
 
-   x64: https://artifacts.videolan.org/vlc/nightly-win64/20260512-0436/vlc-4.0.0-dev-win64-5a0b3159.exe
+   x64: https://artifacts.videolan.org/vlc-3.0/nightly-win64/20260514-0222/vlc-3.0.24-beta1-win64-89f95324.exe
 
    to download the installer.
 
@@ -15,11 +15,11 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum64: 1CCA4715E7BB53FB2C757F8BC46953825E8224033846021B3326FA9D4C9F3D11
+   checksum64: A655B8BA38FD23E954B9352014593056D80EF304D463FA4FAA25D300BA4CD023
 
 Using AU:
 
-   Get-RemoteChecksum https://artifacts.videolan.org/vlc/nightly-win64/20260512-0436/vlc-4.0.0-dev-win64-5a0b3159.exe
+   Get-RemoteChecksum https://artifacts.videolan.org/vlc-3.0/nightly-win64/20260514-0222/vlc-3.0.24-beta1-win64-89f95324.exe
 
 File 'LICENSE.txt' obtained from:
    https://git.videolan.org/?p=vlc.git;a=blob_plain;f=COPYING;hb=HEAD
