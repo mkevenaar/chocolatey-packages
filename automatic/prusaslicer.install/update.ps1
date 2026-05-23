@@ -1,7 +1,6 @@
 ﻿Import-Module Chocolatey-AU
 
-$releases = "https://cache.prusa3d.com/help/api/v1/prusa3d_downloads?orderby=created&order=desc&lng=en&tag=mk4&posts_per_page=10"
-$downloadUrl = "https://www.prusa3d.com/slic3r-prusa-edition/"
+$releases = "https://files.prusa3d.com/wp-content/uploads/repository/PrusaSlicer-settings-master/live/PrusaSlicer.version"
 
 function global:au_SearchReplace {
   @{
@@ -13,7 +12,7 @@ function global:au_SearchReplace {
     }
 
     ".\legal\VERIFICATION.txt" = @{
-      "(?i)(listed on\s*)\<.*\>" = "`${1}<$downloadUrl>"
+      "(?i)(listed on\s*)\<.*\>" = "`${1}<$($Latest.ReleaseUri)>"
       "(?i)(64-Bit.+)\<.*\>"     = "`${1}<$($Latest.URL64)>"
       "(?i)(checksum type:).*"   = "`${1} $($Latest.ChecksumType64)"
       "(?i)(checksum64:).*"      = "`${1} $($Latest.Checksum64)"
@@ -29,19 +28,102 @@ function global:au_BeforeUpdate {
   Get-RemoteFiles -Purge
 }
 
-function global:au_GetLatest {
+function Get-PrusaSlicerVersionFile {
+  $response = Invoke-WebRequest -Uri $releases -UseBasicParsing
 
-  $json = Invoke-RestMethod -Uri $releases
-  $data = $json.data | Where-Object { $_.meta.type.value -eq 'driver' } | Select-Object -First 1
-  $files = $data.meta.files | Where-Object { $_.platform -eq 'win' }
-  $url = $files.file_url
-  $version = Get-Version($data.title)
+  if ($response.Content -is [byte[]]) {
+    return [System.Text.Encoding]::UTF8.GetString($response.Content)
+  }
+
+  [string]$response.Content
+}
+
+function ConvertFrom-PrusaSlicerVersionFile {
+  param(
+    [Parameter(Mandatory)]
+    [string] $Content
+  )
+
+  $section = 'root'
+  $versionData = @{
+    root = @{}
+  }
+
+  foreach ($line in ($Content -split '\r?\n')) {
+    $line = $line.Trim()
+
+    if ([string]::IsNullOrWhiteSpace($line) -or $line.StartsWith('#') -or $line.StartsWith(';')) {
+      continue
+    }
+
+    if ($line -match '^\[(?<section>[^\]]+)\]$') {
+      $section = $matches['section'].Trim()
+      if (-not $versionData.ContainsKey($section)) {
+        $versionData[$section] = @{}
+      }
+      continue
+    }
+
+    if ($line -match '^(?<key>[^=]+?)\s*=\s*(?<value>.+)$') {
+      $key = $matches['key'].Trim()
+      $value = $matches['value'].Trim()
+      $versionData[$section][$key] = $value
+      continue
+    }
+
+    if ($section -eq 'root' -and $line -match '^\d+\.\d+\.\d+(?:-[A-Za-z0-9.-]+)?$') {
+      $versionData[$section]['release'] = $line
+    }
+  }
+
+  $versionData
+}
+
+function Get-PrusaSlicerVersionValue {
+  param(
+    [Parameter(Mandatory)]
+    [hashtable] $VersionData,
+
+    [Parameter(Mandatory)]
+    [string] $Name
+  )
+
+  if ($VersionData.ContainsKey('common') -and $VersionData['common'].ContainsKey($Name)) {
+    return $VersionData['common'][$Name]
+  }
+
+  if ($VersionData.ContainsKey('root') -and $VersionData['root'].ContainsKey($Name)) {
+    return $VersionData['root'][$Name]
+  }
+
+  $null
+}
+
+function global:au_GetLatest {
+  $versionData = ConvertFrom-PrusaSlicerVersionFile -Content (Get-PrusaSlicerVersionFile)
+
+  $releaseVersion = Get-PrusaSlicerVersionValue -VersionData $versionData -Name 'release'
+
+  if (-not $releaseVersion) {
+    throw "Could not find the latest PrusaSlicer release version on $releases."
+  }
+
+  if (-not $versionData.ContainsKey('release:win64') -or -not $versionData['release:win64'].ContainsKey('url')) {
+    throw "Could not find the PrusaSlicer Windows 64-bit download URL on $releases."
+  }
+
+  $url = $versionData['release:win64']['url']
+  $version = Get-Version($releaseVersion)
+  $releaseUri = "https://github.com/prusa3d/PrusaSlicer/releases/tag/version_${releaseVersion}"
 
   @{
     URL64        = $url
     Version      = $version
-    ReleaseNotes = "https://github.com/prusa3d/PrusaSlicer/releases/tag/version_${version}"
+    ReleaseUri   = $releaseUri
+    ReleaseNotes = $releaseUri
   }
 }
 
-update -ChecksumFor none
+if ($MyInvocation.InvocationName -ne '.') {
+  update -ChecksumFor none
+}
