@@ -6,8 +6,8 @@ $servicename = 'radarr'
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   fileType      = 'exe'
-  file          = "$toolsDir\Radarr.develop.6.2.0.10390.windows-core-x86-installer.exe"
-  file64        = "$toolsDir\Radarr.develop.6.2.0.10390.windows-core-x64-installer.exe"
+  file          = "$toolsDir\Radarr.develop.6.2.1.10437.windows-core-x86-installer.exe"
+  file64        = "$toolsDir\Radarr.develop.6.2.1.10437.windows-core-x64-installer.exe"
   softwareName  = 'Radarr*'
   silentArgs     = "/VERYSILENT /SUPPRESSMSGBOXES /NORESTART /SP- /LOG=`"$($env:TEMP)\$($env:chocolateyPackageName).$($env:chocolateyPackageVersion).InnoInstall.log`""
   validExitCodes = @(0)
