@@ -2,7 +2,7 @@
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url          = 'http://www.nirsoft.net/utils/wnetwatcher.zip'
-$checksum     = 'e2904c352ae669e4b1886e5297450291345f99b9da45be3649f8b96570475124'
+$checksum     = '9e4382edf91569b3751ff4d87f06f5ab5eb89976153c75ca0ec74d7572341bf9'
 $checksumType = 'sha256'
 
 $packageArgs = @{
