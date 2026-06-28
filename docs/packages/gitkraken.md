@@ -22,7 +22,17 @@ choco uninstall gitkraken
 
 ## Description
 
-The intuitive, fast, and beautiful cross-platform Git client. NOTE: GitKraken web site does not allow to download a specific version, so this package *always* downloads the latest one. Once installed GitKraken has its own auto-update. Unpredictable downloads is a reason why checksum verification is disabled. If you have strong arguments for adding checksums - let me know.
+GitKraken is a graphical Git client for working with repositories, branches, commits, merges, and pull requests from a desktop UI.
+
+## Package Notes
+
+GitKraken also has its own in-app update mechanism. This package checks `%LOCALAPPDATA%\gitkraken\gitkraken.exe` and only reinstalls when the Chocolatey package version is newer, unless `choco upgrade gitkraken --force` is used.
+
+## Useful Links
+
+- Release notes: <https://www.gitkraken.com/release-notes>
+- Documentation: <https://help.gitkraken.com/gitkraken-client/gitkraken-client-home/>
+- Support: <https://help.gitkraken.com/gitkraken-client/contact-support/>
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and

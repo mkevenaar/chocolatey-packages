@@ -10,3 +10,4 @@
 - If the local AU run cannot complete because of missing Chocolatey extensions or environment-specific helpers, report the blocker instead of filling generated fields by hand.
 - Before finishing AU package work, review `git diff` and confirm that no unintended `.nuspec` version changes or manual checksum changes are present.
 - For package-specific commits, prefix the commit subject with the package id in parentheses, followed by a short summary. Example: `(intel-arc-graphics-driver) Fix AU update flow`.
+- For meta-package groups, use the meta package id as the commit prefix when updating all related packages or all related packages except the meta package. For changes limited to one specific package, use that package id instead.

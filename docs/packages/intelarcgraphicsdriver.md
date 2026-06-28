@@ -44,6 +44,7 @@ out of date by more than a day or two, please contact the maintainer(s) and
 let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) that the package is no longer updating correctly.
 
 
+
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/intel-arc-graphics-driver)
