@@ -2,9 +2,9 @@ Import-Module Chocolatey-AU
 [string]$ReleasesUrl = 'https://www.intel.com/content/www/us/en/download/785597/intel-arc-graphics-windows.html'
 
 $headers = @{
-  "Accept"          = "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/png,image/svg+xml,*/*;q=0.8"
-  "Accept-Language" = "en-GB,en;q=0.5"
-  "Accept-Encoding" = "gzip, deflate, br, zstd"
+  "Accept"          = "*/*"
+  "Accept-Language" = "en-US,en;q=0.9"
+  "User-Agent"      = "curl/8.0.1"
 }
 
 $regexOptions = [System.Text.RegularExpressions.RegexOptions]::IgnoreCase -bor [System.Text.RegularExpressions.RegexOptions]::Singleline
@@ -19,6 +19,36 @@ function Get-RegexMatch {
   $match = [regex]::Match($Content, $Pattern, $regexOptions)
   if (-not $match.Success) { throw $ErrorMessage }
   $match
+}
+
+function Get-RemoteChecksum {
+  param(
+    [string]$Url
+  )
+
+  $checksumType = 'sha256'
+  $fileName = Split-Path -Path ([System.Uri]$Url).AbsolutePath -Leaf
+  $downloadDirectory = Join-Path -Path $env:TEMP -ChildPath ([System.Guid]::NewGuid().ToString())
+  $destination = Join-Path -Path $downloadDirectory -ChildPath $fileName
+  $previousProgressPreference = $ProgressPreference
+
+  try {
+    $ProgressPreference = 'SilentlyContinue'
+    New-Item -Path $downloadDirectory -ItemType Directory -Force | Out-Null
+    Invoke-WebRequest -Uri $Url -UseBasicParsing -OutFile $destination
+    $checksum = Get-FileHash -Path $destination -Algorithm $checksumType | ForEach-Object Hash
+  }
+  finally {
+    $ProgressPreference = $previousProgressPreference
+    if (Test-Path -LiteralPath $downloadDirectory) {
+      Remove-Item -LiteralPath $downloadDirectory -Recurse -Force
+    }
+  }
+
+  @{
+    Checksum64     = $checksum
+    ChecksumType64 = $checksumType
+  }
 }
 
 function global:au_SearchReplace {
@@ -40,7 +70,7 @@ function global:au_GetLatest {
 
   $versionMatch = Get-RegexMatch `
     -Content $downloadPage.Content `
-    -Pattern 'Version\s+(?<Version>\d+(?:\.\d+){3})' `
+    -Pattern '<meta\s+name="DownloadVersion"\s+content="(?<Version>\d+(?:\.\d+){3})(?:\s+[^"]*)?"\s*/?>' `
     -ErrorMessage "Failed to locate the Intel Arc graphics driver version on '$ReleasesUrl'."
 
   $downloadMatch = Get-RegexMatch `
@@ -50,14 +80,18 @@ function global:au_GetLatest {
 
   $releaseNotesMatch = Get-RegexMatch `
     -Content $downloadPage.Content `
-    -Pattern 'https://downloadmirror\.intel\.com/\d+/ReleaseNotes_\d+(?:\.\d+)+(?:_\d+(?:\.\d+)+)?(?:_WHQL)?\.pdf' `
+    -Pattern 'https://downloadmirror\.intel\.com/\d+/ReleaseNotes_\d+(?:\.\d+)+(?:_\d+(?:\.\d+)*)?(?:_?WHQL|_)?\.pdf' `
     -ErrorMessage "Failed to locate the Intel Arc graphics driver release notes URL on '$ReleasesUrl'."
+
+  $checksum = Get-RemoteChecksum -Url $downloadMatch.Value
 
   @{
     URL64         = $downloadMatch.Value
+    Checksum64    = $checksum.Checksum64
+    ChecksumType64 = $checksum.ChecksumType64
     Version       = $versionMatch.Groups['Version'].Value
     ReleaseNotes  = $releaseNotesMatch.Value
   }
 }
 
-Update-Package -ChecksumFor 64 -NoCheckUrl
+Update-Package -ChecksumFor none -NoCheckUrl

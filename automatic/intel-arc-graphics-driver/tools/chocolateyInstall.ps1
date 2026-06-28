@@ -5,8 +5,15 @@ $url64          = 'https://downloadmirror.intel.com/814237/gfx_win_101.5186_101.
 $checksum64     = 'E4926F2E042752FF83352AD9B6D2574A429BFCB8C1F004E9ED53F3E690D3D13F'
 $checksumType64 = 'sha256'
 
-Confirm-WinMinimumBuild 19042
-if (!(Get-IsIntelVideo)){
+$minimumBuild = 19042
+$osBuild = [Environment]::OSVersion.Version.Build
+if ($osBuild -lt $minimumBuild) {
+    Write-Warning "  ** Windows build $minimumBuild or higher is required."
+    throw
+   }
+
+$videoCard = (Get-CimInstance -ClassName Win32_VideoController).Description
+if (-not ($videoCard -match 'Intel')){
     Write-Warning "  ** No Intel display adapter found."
     throw
    }
@@ -20,7 +27,7 @@ $packageArgs = @{
   fileType       = 'EXE'
   url64bit       = $url64
   checksum64     = $checksum64
-  checksumType64 = 'sha256'
+  checksumType64 = $checksumType64
   silentArgs     = "--overwrite --silent --report $toolsDir\install.log"
   softwareName   = 'Intel Arc*'
   validExitCodes = @(0, 3010, 1641, 14)
