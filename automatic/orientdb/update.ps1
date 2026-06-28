@@ -1,16 +1,23 @@
 Import-Module Chocolatey-AU
 
-$releases = 'https://orientdb.org/download/'
+$releases = 'https://orientdb.dev/downloads/'
+$mavenMetadata = 'https://repo1.maven.org/maven2/com/orientechnologies/orientdb-community/maven-metadata.xml'
+$mavenArtifactBase = 'https://repo1.maven.org/maven2/com/orientechnologies/orientdb-community'
 
 function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+    [xml]$metadata = (Invoke-WebRequest -Uri $mavenMetadata -UseBasicParsing).Content
 
-    $re  = ".zip"
-    $url = $download_page.links | Where-Object href -match $re | Select-Object -First 1 -expand href
+    $version = $metadata.metadata.versioning.release
+    if ([string]::IsNullOrWhiteSpace($version)) {
+        $version = $metadata.metadata.versioning.latest
+    }
+    if ([string]::IsNullOrWhiteSpace($version)) {
+        throw "Failed to locate the latest OrientDB Community version in $mavenMetadata."
+    }
 
-    $version = Get-Version ($url)
+    $url = "$mavenArtifactBase/$version/orientdb-community-$version.zip"
 
     return @{
         URL32 = $url
