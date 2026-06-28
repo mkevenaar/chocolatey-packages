@@ -12,7 +12,7 @@ function global:au_GetLatest {
     $url32 = $download_page.links | Where-Object href -match $re | Select-Object -First 1 -expand href
 
     $version = ([regex]::Match($url32,$re)).Captures.Groups[1].value.trim('v')
-    $url32 = 'https://download.sqlitebrowser.org' + $url32
+    $url32 = ([uri]::new([uri]$releases, $url32)).AbsoluteUri
 
     $url64 = $url32 -Replace "win32", "win64"
     return @{ 
