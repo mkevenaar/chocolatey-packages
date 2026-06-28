@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64          = 'https://downloadmirror.intel.com/814237/gfx_win_101.5186_101.5234.exe'
-$checksum64     = 'E4926F2E042752FF83352AD9B6D2574A429BFCB8C1F004E9ED53F3E690D3D13F'
+$url64          = 'https://downloadmirror.intel.com/921459/gfx_win_101.8826.exe'
+$checksum64     = '5A4E2AA6A08AEEBE72AEF7FA92AFBFCD631A16ECC270E3A45E7D6ACF4CCD82E1'
 $checksumType64 = 'sha256'
 
 $minimumBuild = 19042

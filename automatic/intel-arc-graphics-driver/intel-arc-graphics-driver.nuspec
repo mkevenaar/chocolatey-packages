@@ -26,7 +26,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>31.0.101.5186</version>
+    <version>32.0.101.8826</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Maurice Kevenaar</owners>
     <!-- ============================== -->
@@ -41,13 +41,13 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Intel Corporation</copyright>
     <tags>intel arc iris video driver</tags>
-    <releaseNotes>https://downloadmirror.intel.com/916917/ReleaseNotes_101.8629_WHQL.pdf</releaseNotes>
+    <releaseNotes>https://downloadmirror.intel.com/921459/ReleaseNotes_101.8826_.pdf</releaseNotes>
     <licenseUrl>https://software.intel.com/en-us/articles/end-user-license-agreement</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/intel-arc-graphics-driver</packageSourceUrl>
     <mailingListUrl>https://community.intel.com/</mailingListUrl>
     <summary>Intel Arc Graphics Driver for Windows 10/11</summary>
-    <description>## Detailed Description
+    <description><![CDATA[## Detailed Description
 **Note:** Installing this Intel generic graphics driver will overwrite your computer manufacturer (OEM) customized driver. OEM drivers are handpicked and include customized features and solutions to platform-specific issues. The generic Intel driver provides users the latest and greatest feature enhancements and bug fixes that OEMs may not have customized yet to address platform-specific needs. Users can check for matching OEM versions at OEM websites.
 
 Are you still experiencing an error preventing the driver update? Look here for [why and a solution](https://www.intel.com/content/www/us/en/support/articles/000056629/graphics-drivers.html).
@@ -67,7 +67,8 @@ Any graphics issues found using Intel generic graphics drivers should be [report
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) that the package is no longer updating correctly.
-</description>
+
+]]></description>
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
