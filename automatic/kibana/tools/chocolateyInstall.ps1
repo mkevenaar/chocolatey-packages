@@ -16,6 +16,12 @@ $packageArgs = @{
 
 Install-ChocolateyZipPackage  @packageArgs
 
+$kibanaDir = Join-Path $toolsDir "kibana-$($version)"
+
+Get-ChildItem -Path $kibanaDir -Recurse -Filter '*.exe' |
+  Where-Object { -not $_.PSIsContainer } |
+  ForEach-Object { Set-Content "$($_.FullName).ignore" }
+
 $binPath = Join-Path $toolsDir "kibana-$($version)\bin"
 
 Install-ChocolateyPath $binPath 'Machine'
