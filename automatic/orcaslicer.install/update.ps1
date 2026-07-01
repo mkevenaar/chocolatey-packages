@@ -42,7 +42,7 @@ function global:au_GetLatest {
   $release = Get-LatestGithubReleases $repoUser $repoName $true
 
   $version = $release.latest.Version
-  $url64 = $release.latest.Assets | Where-Object { $_ -match '\.exe$' } | Select-Object -First 1
+  $url64 = $release.latest.Assets | Where-Object { $_ -match '_x64\.exe$' } | Select-Object -First 1
 
   @{
     URL64      = $url64;
