@@ -29,7 +29,7 @@ function Add-SilentArgument {
     [string]$Value
   )
 
-  if (-not $Buffer) {
+  if ($null -eq $Buffer) {
     throw "Add-SilentArgument called without a valid buffer."
   }
 
