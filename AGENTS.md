@@ -1,5 +1,7 @@
 # Agent Instructions
 
+- Never use `curl.exe`; use PowerShell or .NET-native tooling instead.
+
 ## Chocolatey AU Packages
 
 - Fix update logic in `update.ps1` or supporting scripts only.
