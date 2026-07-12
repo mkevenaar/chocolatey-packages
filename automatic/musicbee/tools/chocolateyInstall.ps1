@@ -5,7 +5,7 @@ $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $downloadArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $toolsDir
-  file          = "$toolsDir\MusicBeeSetup_3_5.zip"
+  file          = "$toolsDir\MusicBeeSetup_3_6_Update2.zip"
 }
 
 Get-ChocolateyUnzip @downloadArgs

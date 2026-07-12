@@ -6,13 +6,13 @@ The installer have been downloaded from their official download link listed on <
 and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <https://mega.nz/file/NkN1hYRQ#MMtrhSRamU7UiiDxdYlvPCQHRz4AiKrX4ldtQ1yTVK0>
+  32-Bit: <http://files3.majorgeeks.com/fedae7d9d5021026b90211ad6e640aba57634d8e/multimedia/MusicBeeSetup_3_6_Update2.zip>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: BE27F1149654924DDDD106254493137280F3E8098EC1029435C02FDDA092BDB5
+  checksum32: D78749706BF368792B426E4C8D163072A9AB7119B9F3EFC608B8B3505DC5B164
 
 File 'LICENSE.txt' is extracted from the software.
 
