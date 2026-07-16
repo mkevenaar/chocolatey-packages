@@ -1,6 +1,6 @@
 ﻿$ErrorActionPreference = 'Stop'
 $url         = 'https://dsadata.intel.com/installer/'
-$checksum    = '5B4957C11B7370CBC2A0EE0F5AFDC3DFCA3BC624A9165EB0BC0A8FE3C7AEEE5E'
+$checksum    = 'D6EDB02027C4800F247B1658959272C720B007685FE093FFA899D6E9B06342B1'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
