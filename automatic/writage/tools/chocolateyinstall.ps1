@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32          = 'https://www.writage.com/Writage-4.6.1.msi'
-$checksum32     = '5b9abee34b80d07aaa27d752894f8ecc6f8100ccf77239d905176e6eecd48c01'
+$url32          = 'https://www.writage.com/Writage-4.6.3.msi'
+$checksum32     = 'b2cccdf3763b01da71951b97df3ea009dbe6efe69781ffdc38b73e8a3b7472e4'
 $checksumType32 = 'sha256'
 
 $packageArgs = @{
