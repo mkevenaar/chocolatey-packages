@@ -7,8 +7,8 @@ Package can be verified like this:
 
 1. Go to
 
-   x32 url: https://cdn.zabbix.com/zabbix/binaries/stable/6.0/6.0.48/zabbix_agent-6.0.48-windows-i386-openssl.msi
-   x64 url: https://cdn.zabbix.com/zabbix/binaries/stable/6.0/6.0.48/zabbix_agent-6.0.48-windows-amd64-openssl.msi
+   x32 url: https://cdn.zabbix.com/zabbix/binaries/stable/7.0/7.0.29/zabbix_agent-7.0.29-windows-i386-openssl.msi
+   x64 url: https://cdn.zabbix.com/zabbix/binaries/stable/7.0/7.0.29/zabbix_agent-7.0.29-windows-amd64-openssl.msi
 
    to download the installer.
 
@@ -16,11 +16,11 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 9085CA0F48C9D42DB5143B2ECB5343C18C42F77C9AAA2DEAB47DE2C319A2FF1C
-   checksum64: 9919E9B93F218B1D90ACE4EE3A53E6FEF2BAB84140D467738888DC20D48E6810
+   checksum32: 8E531602712A981BE6132DD540CBE2A90A5F08E92FBC42AC5EF853DD0C9F6C3D
+   checksum64: 13DDC99730C296CAC4E7364F72863FBD3181FCC8BAD0DF54D84F8786165E85C1
 
 Using AU:
 
-   x32: Get-RemoteChecksum https://cdn.zabbix.com/zabbix/binaries/stable/6.0/6.0.48/zabbix_agent-6.0.48-windows-i386-openssl.msi
-   x64: Get-RemoteChecksum https://cdn.zabbix.com/zabbix/binaries/stable/6.0/6.0.48/zabbix_agent-6.0.48-windows-amd64-openssl.msi
+   x32: Get-RemoteChecksum https://cdn.zabbix.com/zabbix/binaries/stable/7.0/7.0.29/zabbix_agent-7.0.29-windows-i386-openssl.msi
+   x64: Get-RemoteChecksum https://cdn.zabbix.com/zabbix/binaries/stable/7.0/7.0.29/zabbix_agent-7.0.29-windows-amd64-openssl.msi
    
