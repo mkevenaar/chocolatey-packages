@@ -1,3 +1,3 @@
 ﻿$ErrorActionPreference = 'Stop'
 
-Install-VsCodeExtension -extensionId 'redhat.vscode-yaml@1.25.2026073008'
+Install-VsCodeExtension -extensionId 'redhat.vscode-yaml@1.25.2026073109'
