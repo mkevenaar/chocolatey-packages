@@ -10,8 +10,8 @@ Set-AutoUpdate -Enable
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   fileType       = 'exe'
-  url            = 'https://updates.signal.org/desktop/signal-desktop-win-8.21.0.exe'
-  checksum       = '441e24c4ff3ae498d29b048534eab0254a04836942e72b9a2ab2527ff66e5cc3'
+  url            = 'https://updates.signal.org/desktop/signal-desktop-win-8.22.0.exe'
+  checksum       = 'b2bf0e60ed5d4757915c51fb2ecb49e2b26c2eb4a260e5af2875f0f35a9b27da'
   checksumType   = 'sha256'
   softwareName   = 'Signal *'
   silentArgs     = '/S'
