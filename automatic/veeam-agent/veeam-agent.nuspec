@@ -61,8 +61,8 @@ out of date by more than a day or two, please contact the maintainer(s) and
 let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) that the package is no longer updating correctly.
 ]]></description>
     <dependencies>
-      <dependency id="dotnet-8.0-aspnetruntime" version="8.0.21" />
-      <dependency id="dotnet-8.0-desktopruntime" version="8.0.21" />
+      <dependency id="dotnet-10.0-aspnetruntime" version="10.0.10" />
+      <dependency id="dotnet-10.0-desktopruntime" version="10.0.10" />
       <!--dependency id="dotnet" version="[4.5.2]" /-->
     </dependencies>
 
