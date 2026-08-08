@@ -1,33 +1,62 @@
 ﻿$ErrorActionPreference = 'Stop';
 
-$toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64          = 'https://downloads.slack-edge.com/desktop-releases/windows/x64/4.48.102/slack-standalone-4.48.102.0.msi'
-$checksum64     = 'a66d736ce3a79a1bce26128996c2ffedba8defafe86924f3465bcebce12c46bf'
+$url64          = 'https://downloads.slack-edge.com/desktop-releases/windows/x64/4.51.180/Slack.msix'
+$checksum64     = '371fd449c1df199ac38f8f1178f2a97a152d8e7d20f0662e971addcb12bc3d6e'
 $checksumType64 = 'sha256'
 
+$toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+. (Join-Path $toolsDir 'helper.ps1')
+
+$packageName = $env:ChocolateyPackageName
+$appxPackageName = 'com.tinyspeck.slackdesktop'
+$targetVersion = [version]"$($env:ChocolateyPackageVersion).0"
+$fileName = 'Slack.msix'
+$downloadCachePath = Get-SlackDownloadCachePath -PackageName $packageName -Version $env:ChocolateyPackageVersion
+$fileFullPath = Join-Path -Path $downloadCachePath -ChildPath $fileName
+
+if (-not [Environment]::Is64BitOperatingSystem) {
+  throw 'Slack MSIX requires 64-bit Windows.'
+}
+
+$WindowsVersion = [Environment]::OSVersion.Version
+if ($WindowsVersion.Major -lt 10) {
+  throw 'Slack MSIX requires Windows 10 or newer.'
+}
+
 $packageArgs = @{
-  packageName   = $env:ChocolateyPackageName
-  unzipLocation = $toolsDir
-  fileType      = 'msi'
+  packageName   = $packageName
+  fileFullPath  = $fileFullPath
   url64bit      = $url64
   checksum64    = $checksum64
   checksumType64= $checksumType64
-  softwareName  = 'Slack*'
-  silentArgs    = "/qn /norestart"
-  validExitCodes= @(0)
 }
 
-$SlackPath = Join-Path -Path $Env:ProgramFiles -ChildPath 'Slack\slack.exe'
-$SlackPresent = Test-Path -Path $SlackPath
-
-if ($SlackPresent) {
-  $InstalledVersion = (Get-ItemProperty -Path $SlackPath -ErrorAction:SilentlyContinue).VersionInfo.ProductVersion
-  $SlackOutdated = [Version]$($Env:ChocolateyPackageVersion) -gt [Version]$InstalledVersion
+if ($MyInvocation.InvocationName -eq '.') {
+  return
 }
 
-# Only Attempt an install if the existing version is the same or newer than the package version, or if forced
-if (-not $SlackPresent -or ($SlackPresent -and $SlackOutdated) -or $Env:ChocolateyForce)
-{
-  Get-Process 'slack' -ErrorAction SilentlyContinue | Stop-Process -Force
-  Install-ChocolateyPackage @packageArgs
+if ($env:ChocolateyAllowEmptyChecksums -eq 'true' -and $env:ChocolateyPackageName -like 'chocolatey\*') {
+  Get-ChocolateyWebFile @packageArgs
+  return
 }
+
+$installedVersion = Get-SlackAppxVersion -AppxPackageName $appxPackageName
+
+Uninstall-LegacySlackMsi -PackageName $packageName
+
+if ($installedVersion -gt $targetVersion) {
+  Write-Warning "Slack $installedVersion is already installed, which is newer than this package version."
+  return
+}
+
+if ($installedVersion -eq $targetVersion -and -not $env:ChocolateyForce) {
+  Write-Host "Slack $targetVersion is already installed. Use --force to reinstall."
+  return
+}
+
+if ($installedVersion -eq $targetVersion -and $env:ChocolateyForce) {
+  Uninstall-SlackMsix -AppxPackageName $appxPackageName
+}
+
+Get-ChocolateyWebFile @packageArgs
+Add-AppxProvisionedPackage -Online -PackagePath $fileFullPath -SkipLicense -Regions 'all'

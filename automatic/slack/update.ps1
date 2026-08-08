@@ -1,6 +1,6 @@
 Import-Module Chocolatey-AU
 
-$releases = 'https://slack.com/intl/en-nl/downloads/windows'
+$releases = 'https://slack.com/api/desktop.latestRelease?arch=x64&variant=msix'
 
 function global:au_SearchReplace {
     @{
@@ -13,17 +13,15 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+    $release = Invoke-RestMethod -Uri $releases
 
-    $url64 = Get-RedirectedUrl 'https://slack.com/ssb/download-win64-msi'
-
-    $re = "Version (.+\d)</span>"
-
-    $version = ([regex]::Match($download_page.RawContent, $re)).Captures.Groups[1].value
+    if (-not $release.ok) {
+        throw "Slack latest release API returned an unsuccessful response."
+    }
 
     return @{
-        URL64 = $url64
-        Version = $version
+        URL64 = $release.download_url
+        Version = $release.version
     }
 }
 
