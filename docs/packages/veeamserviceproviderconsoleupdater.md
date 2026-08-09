@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@676546948197c9fb045de8382bc6e15d3a9546e4/icons/veeam-service-provider-console-updater.png" width="32" height="32"/> [![Veeam Service Provider Console Veeam Updater](https://img.shields.io/chocolatey/v/veeam-service-provider-console-updater.svg?label=Veeam+Service+Provider+Console+Veeam+Updater)](https://community.chocolatey.org/packages/veeam-service-provider-console-updater) [![Veeam Service Provider Console Veeam Updater](https://img.shields.io/chocolatey/dt/veeam-service-provider-console-updater.svg)](https://community.chocolatey.org/packages/veeam-service-provider-console-updater)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@e24c3928da9c487cc1370a3eaa792ee1c0e00805/icons/veeam-service-provider-console-updater.png" width="32" height="32"/> [![Veeam Service Provider Console Veeam Updater](https://img.shields.io/chocolatey/v/veeam-service-provider-console-updater.svg?label=Veeam+Service+Provider+Console+Veeam+Updater)](https://community.chocolatey.org/packages/veeam-service-provider-console-updater) [![Veeam Service Provider Console Veeam Updater](https://img.shields.io/chocolatey/dt/veeam-service-provider-console-updater.svg)](https://community.chocolatey.org/packages/veeam-service-provider-console-updater)
 
 ## Usage
 
@@ -36,11 +36,12 @@ Veeam Updater helps keep Veeam installations secure and up to date by automatica
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) that the package is no longer updating correctly.
 
+
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/veeam-service-provider-console-updater)
 
 [Software Site](http://www.veeam.com/)
 
-[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/veeam-service-provider-console-server)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/veeam-service-provider-console-updater)
 

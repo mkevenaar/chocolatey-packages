@@ -28,7 +28,12 @@ When installing / upgrading these packages, I would like to advise you to enable
 
 ## Veeam Service Provider Console Management Agent
 
-**Veeam Service Provider Console Management Agent** can act as a cloud agent, client agent, master agent or infrastructure agent to interact with _Veeam Service Provider Console_ and managed workloads.
+**Veeam Service Provider Console Management Agent** A Veeam Service Provider Console management agent can act as a cloud agent, client agent, master agent or infrastructure agent.
+
+- **Cloud management agent** is used to interact with _Veeam Cloud Connect_ servers in the service provider infrastructure.
+- **Client management agent** is used to interact with _Veeam_ products installed on client computers.
+- **Master management agent** is used to perform discovery of computers in the client infrastructure, and automate installation and update of _Veeam backup agents_.
+- **Infrastructure management agent** is used to interact with _Veeam_ products hosted in the _service provider infrastructure_.
 
 ### Package Parameters
 
@@ -38,7 +43,7 @@ This package accepts a lot of parameters. Some of them are required the installa
 
 #### Required parameters
 
-* None by default. Specify `/vacConnectionAccount` and `/vacConnectionAccountPassword` when `/vacAgentAccountType` is set to `2`.
+- None by default. Specify `/vacConnectionAccount` and `/vacConnectionAccountPassword` when `/vacAgentAccountType` is set to `2`.
 
 * `/installDir` - Installs the component to the specified location. By default, _Veeam Service Provider Console_ uses the `CommunicationAgent` subfolder of the `C:\Program Files\Veeam\Availability Console` folder. Example: `/installDir:"C:\Veeam\"` **NOTE:** The component will be installed to the `C:\Veeam\CommunicationAgent` folder.
 * `/vacAgentAccountType` - Specifies the type of account under which management agent service will run. Specify `2` if you want to run management agent under a custom account. If you do not use this parameter, management agent service will run under local System account (default value, `1`). Example: `/vacAgentAccountType:2`
