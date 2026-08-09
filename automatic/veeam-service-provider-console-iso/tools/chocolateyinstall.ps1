@@ -1,11 +1,14 @@
 ﻿$ErrorActionPreference = 'Stop';
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-$url = 'https://download2.veeam.com/VSPC/v9/VeeamServiceProviderConsole_9.0.0.29555.iso'
-$checksum = '93027bb04e51416020fe0bc53b2fac5408947cc9707ab8b709c3a8a277f44e8a'
+$SettingsXmlPath = Join-Path $toolsDir 'VSPCSettings.xml'
+$SettingsXmlIsoPath = 'Setup\VSPCSettings.xml'
+
+$url = 'https://download2.veeam.com/VSPC/v9/VeeamServiceProviderConsole_9.3.0.35057_20260726.iso'
+$checksum = 'c2b0ce5b3b537912656a861044caa46eaae0a3df50fab585bf3a4bbaae656f13'
 $checksumType = 'sha256'
 
-$filename = 'VeeamServiceProviderConsole_9.0.0.29555.iso'
+$filename = 'VeeamServiceProviderConsole_9.3.0.35057_20260726.iso'
 $packagePath = $(Split-Path -parent $toolsDir)
 $installPath = Join-Path $packagePath $filename
 
@@ -21,3 +24,13 @@ $packageArgs = @{
 }
 
 Get-ChocolateyWebFile @packageArgs
+
+#Extract the settings XML from the ISO for later use
+$settingsArgs = @{
+  isoFile     = $installPath
+  filePath    = $SettingsXmlIsoPath
+  destination = $SettingsXmlPath
+  packageName = $env:ChocolateyPackageName
+}
+
+Get-ChocolateyIsoFile @settingsArgs

@@ -1,4 +1,4 @@
-# # Veeam Service Provider Console Self-Service for Veeam Agent Service package parameters
+# Veeam Service Provider Console Self-Service for Veeam Agent Service package parameters
 
 ## Package Parameters
 
