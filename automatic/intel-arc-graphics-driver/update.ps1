@@ -80,7 +80,7 @@ function global:au_GetLatest {
 
   $releaseNotesMatch = Get-RegexMatch `
     -Content $downloadPage.Content `
-    -Pattern 'https://downloadmirror\.intel\.com/\d+/ReleaseNotes_\d+(?:\.\d+)+(?:_\d+(?:\.\d+)*)?(?:_?WHQL|_)?\.pdf' `
+    -Pattern 'https://downloadmirror\.intel\.com/\d+/ReleaseNotes_+[^"''<>\s)]+?\.pdf' `
     -ErrorMessage "Failed to locate the Intel Arc graphics driver release notes URL on '$ReleasesUrl'."
 
   $checksum = Get-RemoteChecksum -Url $downloadMatch.Value
