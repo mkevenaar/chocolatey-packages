@@ -2,16 +2,16 @@ VERIFICATION
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
-The installer have been downloaded from their official download link listed on <https://github.com/dbeaver/dbeaver/releases/tag/26.1.4>
+The installer have been downloaded from their official download link listed on <https://github.com/dbeaver/dbeaver/releases/tag/26.1.5>
 and can be verified like this:
 
 1. Download the following installers:
-  64-Bit: <https://github.com/dbeaver/dbeaver/releases/download/26.1.4/dbeaver-ce-26.1.4-windows-x86_64.exe>
+  64-Bit: <https://github.com/dbeaver/dbeaver/releases/download/26.1.5/dbeaver-ce-26.1.5-windows-x86_64.exe>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum64: 3EE1F622C29E0097EF89157E2ABE08798F38F5C506B089E7A92CFF2DEEB2E498
+  checksum64: 949712159583714E020233099AC2FBB96572B939935E59B5D8DE1D8DE9DD56BC
 
 File 'LICENSE.txt' is obtained from <https://github.com/lidarr/Lidarr/blob/develop/LICENSE.md>
