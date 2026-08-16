@@ -8,9 +8,11 @@
 - Do not manually edit AU-generated package output such as installer URLs, checksums, checksum types, release notes, or dependency-generated metadata.
 - Never manually compute and write package checksums. Checksum updates must be produced by the AU script.
 - Never commit any change to a `<version>` value in a `.nuspec` file.
+- Never statically define package versions in `update.ps1`. Derive versions from upstream metadata or fail/ignore when the upstream source cannot provide one.
 - If an AU run changes a `.nuspec` version during validation, exclude/revert that change before committing and report that AU generated it.
 - If the local AU run cannot complete because of missing Chocolatey extensions or environment-specific helpers, report the blocker instead of filling generated fields by hand.
 - Before finishing AU package work, review `git diff` and confirm that no unintended `.nuspec` version changes or manual checksum changes are present.
 - For package-specific commits, prefix the commit subject with the package id in parentheses, followed by a short summary. Example: `(intel-arc-graphics-driver) Fix AU update flow`.
 - For meta-package groups, use the meta package id as the commit prefix when updating all related packages or all related packages except the meta package. For changes limited to one specific package, use that package id instead.
 - Winget cannot and should never be used as a source of truth.
+- The Wayback Machine, Internet Archive, `web.archive.org`, `archive.org`, and other web archives must not be used as package sources or update sources.
