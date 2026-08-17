@@ -12,7 +12,7 @@ Add as a dependency in your package nuspec:
 
 ```xml
 <dependencies>
-  <dependency id="veeam.extension" version="1.0.0" />
+  <dependency id="veeam.extension" version="1.1.0" />
 </dependencies>
 ```
 
@@ -30,12 +30,21 @@ Import-Module $Env:ChocolateyInstall\extensions\veeam.extension\*.psm1
 ```powershell
 $pp = Get-PackageParameters
 $rules = @{
-  installDir = 'Path'
-  useSsl     = 'Boolean'
-  retries    = 'Integer'
+  installDir            = 'Path'
+  useSsl                = 'Boolean'
+  certificateThumbprint = 'String'
+  retries               = 'Integer'
 }
 
-Invoke-PackageParameterValidation -Parameters $pp -Rules $rules
+$dependencies = @(
+  @{
+    Parameter = 'useSsl'
+    Value     = '1'
+    Requires  = @('certificateThumbprint')
+  }
+)
+
+Invoke-PackageParameterValidation -Parameters $pp -Rules $rules -RequiredParameters @('installDir') -Dependencies $dependencies
 
 $silentArgs = New-Object System.Collections.Generic.List[string]
 Add-SilentArgument -Buffer $silentArgs -Value ("INSTALLDIR=`"{0}`"" -f $pp.installDir)
@@ -60,6 +69,6 @@ Install-VeeamIsoPatchIfNeeded `
 
 ### Functions
 
-- `Invoke-PackageParameterValidation`: Validates and normalizes parameters based on simple rule types (ZeroOrOne, OneOrTwo, Path, String, Integer, Boolean).
+- `Invoke-PackageParameterValidation`: Validates required and dependent parameters and normalizes values based on simple rule types (ZeroOrOne, ZeroOneOrTwo, OneOrTwo, Path, String, Integer, Boolean).
 - `Add-SilentArgument`: Adds trimmed installer arguments to a `List[string]` when non-empty.
 - `Install-VeeamIsoPatchIfNeeded`: Reads a Veeam settings XML to find product/global patch entries, copies the patch from the ISO, and installs it when required.

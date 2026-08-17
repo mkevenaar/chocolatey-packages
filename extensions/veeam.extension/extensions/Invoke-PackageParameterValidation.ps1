@@ -5,8 +5,9 @@ function Invoke-PackageParameterValidation {
 
 .DESCRIPTION
   Checks supplied package parameters against a hashtable of rule names and types.
-  Ensures required parameters are present, trims values, and normalizes booleans
-  to '1' or '0'. Throws descriptive errors when a parameter fails validation.
+  Ensures required and dependent parameters are present, trims values, and
+  normalizes booleans to '1' or '0'. Throws descriptive errors when a parameter
+  fails validation.
 
 .PARAMETER Parameters
   Hashtable of parameters, typically the result of Get-PackageParameters. Values
@@ -14,25 +15,48 @@ function Invoke-PackageParameterValidation {
 
 .PARAMETER Rules
   Hashtable mapping parameter names to rule types. Supported types:
-  ZeroOrOne, OneOrTwo, Path, String, Integer, Boolean.
+  ZeroOrOne, ZeroOneOrTwo, OneOrTwo, Path, String, Integer, Boolean.
+
+.PARAMETER RequiredParameters
+  Names of package parameters that must be supplied with a non-empty value.
+
+.PARAMETER Dependencies
+  Dependency rules for conditionally required parameters. Each rule is a
+  hashtable with Parameter and Requires keys. An optional Value key limits the
+  rule to the specified normalized parameter value.
 
 .EXAMPLE
   >
   $pp = Get-PackageParameters
   $rules = @{
-    installDir = 'Path'
-    useSsl     = 'Boolean'
-    retryCount = 'Integer'
+    installDir            = 'Path'
+    useSsl                = 'Boolean'
+    certificateThumbprint = 'String'
+    retryCount            = 'Integer'
   }
-  Invoke-PackageParameterValidation -Parameters $pp -Rules $rules
+  $dependencies = @(
+    @{
+      Parameter = 'useSsl'
+      Value     = '1'
+      Requires  = @('certificateThumbprint')
+    }
+  )
+  Invoke-PackageParameterValidation -Parameters $pp -Rules $rules -RequiredParameters @('installDir') -Dependencies $dependencies
 
 .LINK
   https://mkevenaar.github.io/chocolatey-packages/veeam.extension/HelpersInvokePackageParameterValidation.html
 #>
   [CmdletBinding(HelpUri='https://mkevenaar.github.io/chocolatey-packages/veeam.extension/HelpersInvokePackageParameterValidation.html')]
   param(
+    [Parameter(Mandatory=$true)]
     [hashtable]$Parameters,
-    [hashtable]$Rules
+
+    [Parameter(Mandatory=$true)]
+    [hashtable]$Rules,
+
+    [string[]]$RequiredParameters = @(),
+
+    [object[]]$Dependencies = @()
   )
 
   foreach ($rule in $Rules.GetEnumerator()) {
@@ -54,6 +78,11 @@ function Invoke-PackageParameterValidation {
       'zeroorone' {
         if ($trimmedValue -ne '0' -and $trimmedValue -ne '1') {
           throw "Package parameter '$name' must be either 0 or 1."
+        }
+      }
+      'zerooneortwo' {
+        if ($trimmedValue -ne '0' -and $trimmedValue -ne '1' -and $trimmedValue -ne '2') {
+          throw "Package parameter '$name' must be 0, 1, or 2."
         }
       }
       'oneortwo' {
@@ -105,5 +134,42 @@ function Invoke-PackageParameterValidation {
     }
 
     $Parameters[$name] = $trimmedValue
+  }
+
+  foreach ($name in $RequiredParameters) {
+    if (-not $Parameters.ContainsKey($name) -or [string]::IsNullOrWhiteSpace([string]$Parameters[$name])) {
+      throw "Package parameter '$name' is required."
+    }
+  }
+
+  foreach ($dependency in $Dependencies) {
+    if ($dependency -isnot [hashtable] -or -not $dependency.ContainsKey('Parameter') -or -not $dependency.ContainsKey('Requires')) {
+      throw "Package parameter dependency rules must define 'Parameter' and 'Requires'."
+    }
+
+    $parameterName = [string]$dependency.Parameter
+    if (-not $Parameters.ContainsKey($parameterName)) {
+      continue
+    }
+
+    if ($dependency.ContainsKey('Value') -and [string]$Parameters[$parameterName] -ne [string]$dependency.Value) {
+      continue
+    }
+
+    $missingParameters = @(
+      foreach ($requiredName in @($dependency.Requires)) {
+        if (-not $Parameters.ContainsKey([string]$requiredName) -or [string]::IsNullOrWhiteSpace([string]$Parameters[[string]$requiredName])) {
+          [string]$requiredName
+        }
+      }
+    )
+
+    if ($missingParameters.Count -gt 0) {
+      $condition = "Package parameter '$parameterName'"
+      if ($dependency.ContainsKey('Value')) {
+        $condition += " with value '$($dependency.Value)'"
+      }
+      throw "$condition requires package parameter(s): $($missingParameters -join ', ')."
+    }
   }
 }
