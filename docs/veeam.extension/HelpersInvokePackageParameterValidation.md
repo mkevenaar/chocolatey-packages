@@ -68,35 +68,35 @@ are updated in place when trimmed or normalized.
 
 Property               | Value
 ---------------------- | -----
-Aliases                |
+Aliases                | 
 Required?              | true
 Position?              | 1
 Default Value          | 
 Accept Pipeline Input? | false
-
+ 
 ###  -Rules &lt;Hashtable&gt;
 Hashtable mapping parameter names to rule types. Supported types:
 ZeroOrOne, ZeroOneOrTwo, OneOrTwo, Path, String, Integer, Boolean.
 
 Property               | Value
 ---------------------- | -----
-Aliases                |
+Aliases                | 
 Required?              | true
 Position?              | 2
 Default Value          | 
 Accept Pipeline Input? | false
-
+ 
 ###  -RequiredParameters [&lt;String[]&gt;]
 Names of package parameters that must be supplied with a non-empty value.
 
 Property               | Value
 ---------------------- | -----
-Aliases                |
+Aliases                | 
 Required?              | false
 Position?              | 3
 Default Value          | @()
 Accept Pipeline Input? | false
-
+ 
 ###  -Dependencies [&lt;Object[]&gt;]
 Dependency rules for conditionally required parameters. Each rule is a
 hashtable with Parameter and Requires keys. An optional Value key limits the
@@ -104,12 +104,12 @@ rule to the specified normalized parameter value.
 
 Property               | Value
 ---------------------- | -----
-Aliases                |
+Aliases                | 
 Required?              | false
 Position?              | 4
 Default Value          | @()
 Accept Pipeline Input? | false
-
+ 
 ### &lt;CommonParameters&gt;
 
 This cmdlet supports the common parameters: -Verbose, -Debug, -ErrorAction, -ErrorVariable, -OutBuffer, and -OutVariable. For more information, see `about_CommonParameters` http://go.microsoft.com/fwlink/p/?LinkID=113216 .
