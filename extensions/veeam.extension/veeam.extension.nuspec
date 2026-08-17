@@ -38,7 +38,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <projectUrl>https://github.com/mkevenaar/chocolatey-packages</projectUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Maurice Kevenaar</copyright>
-    <tags>chocolatey unofficial extension iso mount isomount admin</tags>
+    <tags>chocolatey unofficial extension veeam helpers admin</tags>
     <releaseNotes>https://github.com/mkevenaar/chocolatey-packages/tree/master/extensions/veeam.extension/CHANGELOG.md</releaseNotes>
     <licenseUrl>https://github.com/mkevenaar/chocolatey-packages/blob/master/LICENSE.md</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
@@ -55,13 +55,9 @@ These functions may be used in Chocolatey install/uninstall scripts by declaring
     <!-- =============================== -->
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
-    <!--<dependencies>
-      <dependency id="" version="__MINIMUM_VERSION__" />
-      <dependency id="" version="[__EXACT_VERSION__]" />
-      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_INCLUSIVE]" />
-      <dependency id="" version="[_MIN_VERSION_INCLUSIVE, MAX_VERSION_EXCLUSIVE)" />
-      <dependency id="" />
-    </dependencies>-->
+    <dependencies>
+      <dependency id="chocolatey-isomount.extension" version="1.1.0" />
+    </dependencies>
 
     <!--<provides>NOT YET IMPLEMENTED</provides>-->
     <!--<conflicts>NOT YET IMPLEMENTED</conflicts>-->
