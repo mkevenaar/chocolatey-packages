@@ -13,26 +13,9 @@ if (-not (Test-Path -LiteralPath $installPath)) {
   throw "Unable to locate ISO source '$installPath'. Ensure dependency '$isoPackageName' is installed."
 }
 
-$fileLocation = 'Monitor\VeeamONE.Monitor.Client.x64.msi'
-
-$pp = Get-PackageParameters
-
-$parameterValidationRules = @{
-  installDir    = 'String'
-  monitorServer = 'String'
-}
-
-Invoke-PackageParameterValidation -Parameters $pp -Rules $parameterValidationRules
+$fileLocation = 'Redistr\VeeamUpdater.msi'
 
 $silentArgs = New-Object System.Collections.Generic.List[string]
-
-if ($pp.installDir) {
-  Add-SilentArgument -Buffer $silentArgs -Value ("INSTALLDIR=`"{0}`"" -f $pp.installDir)
-}
-
-if ($pp.monitorServer) {
-  Add-SilentArgument -Buffer $silentArgs -Value ("VM_CLN_SERVER_NAME=`"{0}`"" -f $pp.monitorServer)
-}
 
 Add-SilentArgument -Buffer $silentArgs -Value 'ACCEPT_THIRDPARTY_LICENSES=1'
 Add-SilentArgument -Buffer $silentArgs -Value 'ACCEPT_EULA=1'
@@ -47,7 +30,7 @@ $msiSilentArgs = $silentArgs -join ' '
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   isoFile        = $installPath
-  softwareName   = 'Veeam ONE Monitor Client*'
+  softwareName   = 'Veeam Updater*'
   file           = $fileLocation
   fileType       = 'msi'
   silentArgs     = $msiSilentArgs
@@ -58,13 +41,13 @@ $packageArgs = @{
 Install-ChocolateyIsoInstallPackage @packageArgs
 
 $patchArgs = @{
-  PackageName    = $env:ChocolateyPackageName
-  IsoFile        = $installPath
-  SettingsFile   = $settingsFile
-  SilentArgs     = $msiSilentArgs
+  PackageName  = $env:ChocolateyPackageName
+  IsoFile      = $installPath
+  SettingsFile = $settingsFile
+  SilentArgs   = $msiSilentArgs
   ValidExitCodes = @(0,1638,1641,3010)
-  Destination    = $toolsDir
-  ProductName    = 'MonitorClient'
+  Destination  = $toolsDir
+  ProductName  = 'UpdaterSvc'
 }
 
 Install-VeeamIsoPatchIfNeeded @patchArgs

@@ -4,68 +4,96 @@ $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $isoPackageName = 'veeam-one-iso'
 $scriptPath = $(Split-Path -parent $MyInvocation.MyCommand.Definition)
 $commonPath = $(Split-Path -parent $(Split-Path -parent $scriptPath))
-$filename = 'VeeamONE_12.2.0.4093.iso'
+$filename = 'VeeamONE_13.1.0.7034_20260723.iso'
 $installPath = Join-Path  (Join-Path $commonPath $isoPackageName) $filename
+$isoToolsPath = Join-Path (Join-Path $commonPath $isoPackageName) 'tools'
+$settingsFile = Join-Path $isoToolsPath 'VOSettings.xml'
+
+if (-not (Test-Path -LiteralPath $installPath)) {
+  throw "Unable to locate ISO source '$installPath'. Ensure dependency '$isoPackageName' is installed."
+}
 
 $fileLocation = 'Reporter\VeeamONE.Reporter.WebUI.x64.msi'
 
-$service = get-service w3svc -ErrorAction SilentlyContinue
-if(!$service) {
+$service = Get-Service w3svc -ErrorAction SilentlyContinue
+if (-not $service) {
   Write-Warning "IIS is not installed on this machine! `nPlease install IIS on this machine as described on the package page"
-  throw
+  throw "IIS is not installed on this machine! `nPlease install IIS on this machine as described on the package page"
 }
 
 $pp = Get-PackageParameters
 
-if (-not $pp.username -or -not $pp.password -or -not $pp.oneServer) {
-  throw "A Required package parameter is missing, please provide the 'username','password','oneServer' parameters"
+$parameterValidationRules = @{
+  installDir                   = 'String'
+  oneServer                   = 'String'
+  username                    = 'String'
+  password                    = 'String'
+  create                      = 'Boolean'
+  iisSitePort                 = 'Integer'
+  sslThumbprint               = 'String'
+  reporterWebServerWebAPIPort = 'Integer'
 }
 
-$silentArgs = ""
+Invoke-PackageParameterValidation -Parameters $pp -Rules $parameterValidationRules -RequiredParameters @('oneServer', 'username', 'password')
+
+$silentArgs = New-Object System.Collections.Generic.List[string]
 
 if ($pp.installDir) {
-  $silentArgs += " INSTALLDIR=$($pp.installDir)"
+  Add-SilentArgument -Buffer $silentArgs -Value ("INSTALLDIR=`"{0}`"" -f $pp.installDir)
 }
 
 if ($pp.oneServer) {
-  $silentArgs += " VO_REPORTER_WEB_SERVER_NAME=$($pp.oneServer)"
+  Add-SilentArgument -Buffer $silentArgs -Value ("VO_REPORTER_WEB_SERVER_NAME=`"{0}`"" -f $pp.oneServer)
 }
 
 if ($pp.username) {
   $computername = $env:computername
-  $fulluser = $pp.username
+  $fullUser = $pp.username
   if ($pp.username -notmatch "\\") {
-    $fulluser = "$($computername)\$($pp.username)"
+    $fullUser = "$($computername)\$($pp.username)"
   }
-  if(-not $pp.password) {
-    throw 'Password is required when setting a username...'
-  }
-  if ($pp.create) {
+
+  $createLocalUser = $pp.ContainsKey('create') -and $pp.create -eq '1'
+  if ($createLocalUser) {
     if ($pp.username -match "\\") {
       throw "Only local users can be created"
     }
 
-    if (Get-WmiObject -Class Win32_UserAccount | Where-Object {$_.Name -eq $pp.username}) {
+    $escapedUserName = $pp.username.Replace("'", "''")
+    $existingUser = Get-CimInstance -ClassName Win32_UserAccount -Filter "LocalAccount=True AND Name='$escapedUserName'" -ErrorAction SilentlyContinue
+    if ($existingUser) {
       Write-Warning "The local user already exists, not creating again"
     } else {
       net user $pp.username $pp.password /add /PASSWORDCHG:NO
       wmic UserAccount where ("Name='{0}'" -f $pp.username) set PasswordExpires=False
-      net localgroup "Administrators" $pp.username /add    }
+      net localgroup "Administrators" $pp.username /add
+    }
   }
-  $silentArgs += " VO_REPORTER_WEB_CONNECTION_ACCOUNT_NAME=`"$($fulluser)`" VO_REPORTER_WEB_CONNECTION_ACCOUNT_PASSWORD=`"$($pp.password)`""
+  Add-SilentArgument -Buffer $silentArgs -Value ("VO_REPORTER_WEB_CONNECTION_ACCOUNT_NAME=`"{0}`"" -f $fullUser)
+  Add-SilentArgument -Buffer $silentArgs -Value ("VO_REPORTER_WEB_CONNECTION_ACCOUNT_PASSWORD=`"{0}`"" -f $pp.password)
 }
 
-if ($pp.iisSitePort) {
-  $silentArgs += " VO_REPORTER_WEB_SITE_PORT=`"$($pp.iisSitePort)`""
+if ($pp.ContainsKey('iisSitePort')) {
+  Add-SilentArgument -Buffer $silentArgs -Value ("VO_REPORTER_WEB_SITE_PORT=`"{0}`"" -f $pp.iisSitePort)
 }
 
 if ($pp.sslThumbprint) {
-  $silentArgs += " VO_REPORTER_WEB_SITE_CERTIFICATE_THUMBPRINT=`"$($pp.sslThumbprint)`""
+  Add-SilentArgument -Buffer $silentArgs -Value ("VO_REPORTER_WEB_SITE_CERTIFICATE_THUMBPRINT=`"{0}`"" -f $pp.sslThumbprint)
 }
 
-if ($pp.reporterWebServerWebAPIPort) {
-  $silentArgs += " VO_REPORTER_WEB_SERVER_WEB_API_PORT=`"$($pp.reporterWebServerWebAPIPort)`""
+if ($pp.ContainsKey('reporterWebServerWebAPIPort')) {
+  Add-SilentArgument -Buffer $silentArgs -Value ("VO_REPORTER_WEB_SERVER_WEB_API_PORT=`"{0}`"" -f $pp.reporterWebServerWebAPIPort)
 }
+
+Add-SilentArgument -Buffer $silentArgs -Value 'ACCEPT_THIRDPARTY_LICENSES=1'
+Add-SilentArgument -Buffer $silentArgs -Value 'ACCEPT_EULA=1'
+Add-SilentArgument -Buffer $silentArgs -Value 'ACCEPT_REQUIRED_SOFTWARE=1'
+Add-SilentArgument -Buffer $silentArgs -Value 'ACCEPT_LICENSING_POLICY=1'
+Add-SilentArgument -Buffer $silentArgs -Value '/qn'
+Add-SilentArgument -Buffer $silentArgs -Value '/norestart'
+Add-SilentArgument -Buffer $silentArgs -Value "/l*v `"$env:TEMP\$env:ChocolateyPackageName.$env:ChocolateyPackageVersion.log`""
+
+$msiSilentArgs = $silentArgs -join ' '
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
@@ -73,9 +101,21 @@ $packageArgs = @{
   softwareName   = 'Veeam ONE Reporter Web*'
   file           = $fileLocation
   fileType       = 'msi'
-  silentArgs     = "$($silentArgs) ACCEPT_THIRDPARTY_LICENSES=1 ACCEPT_EULA=1 ACCEPT_REQUIRED_SOFTWARE=1 ACCEPT_LICENSING_POLICY=1 /qn /norestart /l*v `"$env:TEMP\$env:ChocolateyPackageName.$env:ChocolateyPackageVersion.log`""
+  silentArgs     = $msiSilentArgs
   validExitCodes = @(0,1638,1641,3010) #1638 was added to allow updating when an newer version is already installed.
   destination    = $toolsDir
 }
 
 Install-ChocolateyIsoInstallPackage @packageArgs
+
+$patchArgs = @{
+  PackageName    = $env:ChocolateyPackageName
+  IsoFile        = $installPath
+  SettingsFile   = $settingsFile
+  SilentArgs     = $msiSilentArgs
+  ValidExitCodes = @(0,1638,1641,3010)
+  Destination    = $toolsDir
+  ProductName    = 'ReporterWeb'
+}
+
+Install-VeeamIsoPatchIfNeeded @patchArgs

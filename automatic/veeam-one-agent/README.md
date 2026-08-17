@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@0a1dc3da07e8ad824bdb1ea2fadb450b256ad551/icons/veeam-one-agent.png" width="48" height="48"/> [veeam-one-agent](https://community.chocolatey.org/packages/veeam-one-agent)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@9f61997d436f77d997b7c1eb4a9c8d5e7b11b582/icons/veeam-one-agent.png" width="48" height="48"/> [veeam-one-agent](https://community.chocolatey.org/packages/veeam-one-agent)
 
 ## Exit when reboot detected
 
@@ -32,12 +32,12 @@ To have choco remember parameters on upgrade, be sure to set `choco feature enab
 
 The package accepts the following optional parameters:
 
-* `/installDir`- Installs the component to the specified location. By default, Veeam ONE uses the **Veeam ONE Agent** subfolder of the `C:\Program Files\Veeam\Veeam ONE folder`. Example: `/installDir="C:\Veeam\"` The component will be installed to the `C:\Veeam\Veeam ONE Agent` folder.
-* `/server` - Specifies the mode in which Veeam ONE agent will run. If you specify this parameter, the agent will be installed in Server mode. Only required for the Veeam ONE Server
+* `/installDir` - Installs the component to the specified location. By default, Veeam ONE uses the **Veeam ONE Agent** subfolder of the `C:\Program Files\Veeam\Veeam ONE folder`. Example: `/installDir:"C:\Veeam\"` The component will be installed to the `C:\Veeam\Veeam ONE Agent` folder.
+* `/server` - Specifies the mode in which Veeam Analytics service will run. If you specify this parameter, the service will be installed in server mode and bundled installation will be enabled. If you do not use this parameter, the service will be installed in client mode.
 * `/username` - Specifies a user account under which the Veeam ONE Agent service will run. Example: `/username:ONESERVER\Administrator`
 * `/password` - This parameter must be used if you have specified the `/username` parameter. Specifies a password for the account that will be used to run Veeam ONE Agent. Example: `/password:p@ssw0rd`
 * `/create` - Create the requested user on this machine, this user will be added to the local Administrators group.
-* `/agentServicePort` - Specifies a port that will be used by Monitor to communicate with Veeam ONE Agent. By default, port number 2805 is used. Example: `/agentServicePort:2805`
+* `/agentServicePort` - Specifies a port that will be used by Veeam ONE to communicate with Veeam ONE Agent. By default, port number 2805 is used. Example: `/agentServicePort:2805`
 
 #### Required parameters
 

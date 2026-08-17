@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@389832e99573a88fd092dd63dc75280ee55b7ff4/icons/veeam-one-monitor-server.png" width="32" height="32"/> [![Veeam ONE Monitor Server](https://img.shields.io/chocolatey/v/veeam-one-monitor-server.svg?label=Veeam+ONE+Monitor+Server)](https://community.chocolatey.org/packages/veeam-one-monitor-server) [![Veeam ONE Monitor Server](https://img.shields.io/chocolatey/dt/veeam-one-monitor-server.svg)](https://community.chocolatey.org/packages/veeam-one-monitor-server)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@88ce6a9103e1c2be9784983ec7a70a9b6240bb40/icons/veeam-one-monitor-server.png" width="32" height="32"/> [![Veeam ONE Monitor Server](https://img.shields.io/chocolatey/v/veeam-one-monitor-server.svg?label=Veeam+ONE+Monitor+Server)](https://community.chocolatey.org/packages/veeam-one-monitor-server) [![Veeam ONE Monitor Server](https://img.shields.io/chocolatey/dt/veeam-one-monitor-server.svg)](https://community.chocolatey.org/packages/veeam-one-monitor-server)
 
 ## Usage
 
@@ -57,11 +57,12 @@ This package accepts a lot of parameters. Some of them are required the installa
 * `/sqlAuthentication` - Specifies if you want to use the Microsoft SQL Server authentication mode to connect to the Microsoft SQL Server where the Veeam ONE database is deployed. Specify `1` to use the SQL Server authentication mode. If you do not use this parameter, Veeam ONE will connect to the Microsoft SQL Server in the Microsoft Windows authentication mode (default value, `0`). Together with this parameter, you must specify the following parameters: `/sqlUsername` and `/sqlPassword`. Example: `/sqlAuthentication:1`
 * `/sqlUsername` - This parameter must be used if you have specified the `/sqlAuthentication` parameter. Specifies a LoginID to connect to the Microsoft SQL Server in the SQL Server authentication mode. Example: `/sqlUsername:sa`
 * `/sqlPassword` - This parameter must be used if you have specified the `/sqlAuthentication` parameter. Specifies a password to connect to the Microsoft SQL Server in the SQL Server authentication mode. Example: `/sqlPassword:p@ssw0rd`
-* `/licenseFile` - Specifies a full path to the license file. If this parameter is not specified, Veeam ONE Free Edition will be installed. Example: `/licenseFile:C:\Users\Administrator\Desktop\veeam_one_subscription_100_100.lic`
+* `/licenseFile` - Specifies a full path to the license file. If this parameter is not specified, Veeam ONE Community Edition will be installed. Example: `/licenseFile:C:\Users\Administrator\Desktop\veeam_one_subscription_100_100.lic`
+* `/licenseAutoUpdate` - Specifies if you want to enable automatic license update and usage reporting. By default, license auto update is enabled. Example: `/licenseAutoUpdate:"0"`
 * `/installDir` - Installs the component to the specified location. By default, Veeam ONE uses the **Veeam ONE Monitor Server** subfolder of the `C:\Program Files\Veeam\Veeam ONE folder`. Example: `/installDir:"C:\Veeam\"` The component will be installed to the `C:\Veeam\Veeam ONE Monitor Server` folder.
 * `/grpcServerPort` - Specifies the port number used for communication between Veeam ONE Monitoring service and Veeam ONE Web Client. If you do not use this parameter, Veeam ONE Monotoring service will use the default port 2714. Example: `/grpcServerPort:"2714"`
 * `/perfCache` - Specifies a path to the folder where Performance Cache will be stored. If you do not use this parameter, the performance cache will be stored to the `C:\PerfCache` folder (default). Example: `/perfCache:D:\Veeam\PerfCache`
-* `/installationType` - Specifies the mode in which Veeam ONE will collect data from virtual infrastructure and Veeam Backup & Replication servers. Specify `1` to use the **Optimized for Advanced Scalability Deployment** mode. Specify `2` to use **The Backup Data Only** mode. If you do not use this parameter, Veeam ONE will collect data in the **Optimized for Typical Deployment** mode (default value, `0`). For details, see [Choose Data Collection Mode](https://helpcenter.veeam.com/docs/one/deployment/typical_choose_collection_mode.html). Example: `/installationType:2`
+* `/installationType` - Specifies the mode in which Veeam ONE will collect data from virtualization and Veeam Backup & Replication servers. Specify `1` to use the **Veeam backup data and large-scale virtual infrastructure performance monitoring** mode. Specify `2` to use the **Veeam backup data only** mode. If you do not use this parameter, Veeam ONE will collect data in the **Veeam backup data and virtual infrastructure performance monitoring** mode (default value, `0`). For details, see [Choose Data Collection Mode](https://helpcenter.veeam.com/docs/one/userguide/typical_choose_collection_mode.html?ver=13). Example: `/installationType:2`
 * `/autoUpdate` - Specifies if you want to enable automatic updates after Veeam ONE installation. Specify 1 to enable automatic updates. Example: `/autoUpdate:"1"`
 
 Example: `choco install veeam-one-monitor-server --params "/perfCache:D:\Veeam\PerfCache"`
@@ -75,7 +76,7 @@ let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) th
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/veeam-one-monitor-server)
 
-[Software Site](http://www.veeam.com/)
+[Software Site](https://www.veeam.com)
 
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/veeam-one-monitor-server)
 

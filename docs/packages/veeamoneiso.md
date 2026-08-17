@@ -1,4 +1,4 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4b35af30cee6ea1783efeceb996c1e4c4bdb34d6/icons/veeam-one-iso.png" width="32" height="32"/> [![Veeam ONE ISO downloader](https://img.shields.io/chocolatey/v/veeam-one-iso.svg?label=Veeam+ONE+ISO+downloader)](https://community.chocolatey.org/packages/veeam-one-iso) [![Veeam ONE ISO downloader](https://img.shields.io/chocolatey/dt/veeam-one-iso.svg)](https://community.chocolatey.org/packages/veeam-one-iso)
+﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ce38da592eedce03ebd09ddf46119408f937431b/icons/veeam-one-iso.png" width="32" height="32"/> [![Veeam ONE ISO downloader](https://img.shields.io/chocolatey/v/veeam-one-iso.svg?label=Veeam+ONE+ISO+downloader)](https://community.chocolatey.org/packages/veeam-one-iso) [![Veeam ONE ISO downloader](https://img.shields.io/chocolatey/dt/veeam-one-iso.svg)](https://community.chocolatey.org/packages/veeam-one-iso)
 
 ## Usage
 
@@ -47,7 +47,7 @@ let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) th
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/veeam-one-iso)
 
-[Software Site](http://www.veeam.com/)
+[Software Site](https://www.veeam.com)
 
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/veeam-one-iso)
 

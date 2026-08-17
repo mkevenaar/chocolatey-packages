@@ -13,30 +13,36 @@ if (-not (Test-Path -LiteralPath $installPath)) {
   throw "Unable to locate ISO source '$installPath'. Ensure dependency '$isoPackageName' is installed."
 }
 
-$fileLocation = 'Agent\VeeamONE.Agent.x64.msi'
+$fileLocation = 'CachingService\VeeamONE.Caching.Service.x64.msi'
 
 $pp = Get-PackageParameters
 
 $parameterValidationRules = @{
-  installDir       = 'String'
-  server           = 'Boolean'
-  username         = 'String'
-  password         = 'String'
-  create           = 'Boolean'
-  agentServicePort = 'Integer'
+  username                 = 'String'
+  password                 = 'String'
+  create                   = 'Boolean'
+  postgresqlAuthentication = 'ZeroOrOne'
+  postgresqlServer         = 'String'
+  postgresqlPort           = 'Integer'
+  postgresqlDatabase       = 'String'
+  postgresqlUsername       = 'String'
+  postgresqlPassword       = 'String'
+  postgresqlInstallation   = 'ZeroOrOne'
+  reporterServerWebApiPort = 'Integer'
+  cachingServicePort       = 'Integer'
 }
 
-Invoke-PackageParameterValidation -Parameters $pp -Rules $parameterValidationRules -RequiredParameters @('username', 'password')
+$parameterDependencies = @(
+  @{
+    Parameter = 'postgresqlAuthentication'
+    Value     = '1'
+    Requires  = @('postgresqlUsername', 'postgresqlPassword')
+  }
+)
+
+Invoke-PackageParameterValidation -Parameters $pp -Rules $parameterValidationRules -RequiredParameters @('username', 'password', 'postgresqlInstallation') -Dependencies $parameterDependencies
 
 $silentArgs = New-Object System.Collections.Generic.List[string]
-$agentType = if ($pp.ContainsKey('server') -and $pp.server -eq '1') { '1' } else { '0' }
-
-Add-SilentArgument -Buffer $silentArgs -Value ("VO_AGENT_TYPE=`"{0}`"" -f $agentType)
-Add-SilentArgument -Buffer $silentArgs -Value ("VO_BUNDLE_INSTALLATION=`"{0}`"" -f $agentType)
-
-if ($pp.installDir) {
-  Add-SilentArgument -Buffer $silentArgs -Value ("INSTALLDIR=`"{0}`"" -f $pp.installDir)
-}
 
 if ($pp.username) {
   $computername = $env:computername
@@ -61,12 +67,45 @@ if ($pp.username) {
       net localgroup "Administrators" $pp.username /add
     }
   }
-  Add-SilentArgument -Buffer $silentArgs -Value ("VO_AGENT_SERVICE_ACCOUNT_NAME=`"{0}`"" -f $fullUser)
-  Add-SilentArgument -Buffer $silentArgs -Value ("VO_AGENT_SERVICE_ACCOUNT_PASSWORD=`"{0}`"" -f $pp.password)
+
+  Add-SilentArgument -Buffer $silentArgs -Value ("VO_CACHING_SERVICE_ACCOUNT_NAME=`"{0}`"" -f $fullUser)
+  Add-SilentArgument -Buffer $silentArgs -Value ("VO_CACHING_SERVICE_ACCOUNT_PASSWORD=`"{0}`"" -f $pp.password)
 }
 
-if ($pp.ContainsKey('agentServicePort')) {
-  Add-SilentArgument -Buffer $silentArgs -Value ("VO_AGENT_SERVICE_PORT={0}" -f $pp.agentServicePort)
+if ($pp.ContainsKey('postgresqlAuthentication')) {
+  Add-SilentArgument -Buffer $silentArgs -Value ("VO_POSTGRESQL_AUTHENTICATION={0}" -f $pp.postgresqlAuthentication)
+}
+
+if ($pp.postgresqlServer) {
+  Add-SilentArgument -Buffer $silentArgs -Value ("VO_POSTGRESQL_SERVER=`"{0}`"" -f $pp.postgresqlServer)
+}
+
+if ($pp.ContainsKey('postgresqlPort')) {
+  Add-SilentArgument -Buffer $silentArgs -Value ("VO_POSTGRESQL_PORT={0}" -f $pp.postgresqlPort)
+}
+
+if ($pp.postgresqlDatabase) {
+  Add-SilentArgument -Buffer $silentArgs -Value ("VO_POSTGRESQL_DATABASE=`"{0}`"" -f $pp.postgresqlDatabase)
+}
+
+if ($pp.postgresqlUsername) {
+  Add-SilentArgument -Buffer $silentArgs -Value ("VO_POSTGRESQL_USERNAME=`"{0}`"" -f $pp.postgresqlUsername)
+}
+
+if ($pp.postgresqlPassword) {
+  Add-SilentArgument -Buffer $silentArgs -Value ("VO_POSTGRESQL_PASSWORD=`"{0}`"" -f $pp.postgresqlPassword)
+}
+
+if ($pp.ContainsKey('postgresqlInstallation')) {
+  Add-SilentArgument -Buffer $silentArgs -Value ("VO_POSTGRESQL_INSTALLATION={0}" -f $pp.postgresqlInstallation)
+}
+
+if ($pp.ContainsKey('reporterServerWebApiPort')) {
+  Add-SilentArgument -Buffer $silentArgs -Value ("VO_CACHING_SERVICE_REPORTERCONNECTIONPARAMETERS_PORT={0}" -f $pp.reporterServerWebApiPort)
+}
+
+if ($pp.ContainsKey('cachingServicePort')) {
+  Add-SilentArgument -Buffer $silentArgs -Value ("VO_CACHING_SERVICE_PORT={0}" -f $pp.cachingServicePort)
 }
 
 Add-SilentArgument -Buffer $silentArgs -Value 'ACCEPT_THIRDPARTY_LICENSES=1'
@@ -82,7 +121,7 @@ $msiSilentArgs = $silentArgs -join ' '
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   isoFile        = $installPath
-  softwareName   = 'Veeam ONE Agent*'
+  softwareName   = 'Veeam ONE Caching Service*'
   file           = $fileLocation
   fileType       = 'msi'
   silentArgs     = $msiSilentArgs
@@ -99,7 +138,7 @@ $patchArgs = @{
   SilentArgs     = $msiSilentArgs
   ValidExitCodes = @(0,1638,1641,3010)
   Destination    = $toolsDir
-  ProductName    = 'OneAgent'
+  ProductName    = 'CachingService'
 }
 
 Install-VeeamIsoPatchIfNeeded @patchArgs

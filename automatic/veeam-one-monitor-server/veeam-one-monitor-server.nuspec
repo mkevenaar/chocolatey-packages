@@ -25,7 +25,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>12.2.0.4093</version>
+    <version>0.0.0</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Maurice Kevenaar</owners>
     <!-- ============================== -->
@@ -35,12 +35,12 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <title>Veeam ONE Monitor Server</title>
     <authors>Veeam Software Group GmbH</authors>
     <!-- projectUrl is required for the community feed -->
-    <projectUrl>http://www.veeam.com/</projectUrl>
-    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@389832e99573a88fd092dd63dc75280ee55b7ff4/icons/veeam-one-monitor-server.png</iconUrl>
+    <projectUrl>https://www.veeam.com</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@88ce6a9103e1c2be9784983ec7a70a9b6240bb40/icons/veeam-one-monitor-server.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>Veeam Software Group GmbH</copyright>
     <tags>veeam-one-monitor-server vone veeam-one veeam one monitor server admin</tags>
-    <releaseNotes></releaseNotes>
+    <releaseNotes>https://helpcenter.veeam.com/rn/veeam_one_13_1_release_notes.html</releaseNotes>
     <licenseUrl>https://www.veeam.com/eula.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/veeam-one-monitor-server</packageSourceUrl>
@@ -83,12 +83,15 @@ let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) th
 
     <!-- Specifying dependencies and version ranges? https://docs.nuget.org/create/versioning#specifying-version-ranges-in-.nuspec-files -->
     <dependencies>
-      <dependency id="veeam-one-iso" version="[12.2.0.4093]" />
+      <dependency id="veeam-one-iso" version="[13.1.0.7034]" />
+      <dependency id="veeam.extension" version="1.1.0" />
       <dependency id="chocolatey-isomount.extension" version="1.1.0" />
-      <dependency id="DotNet4.7.2" />
+      <dependency id="msoledbsql" version="[18.7.2,19.0.0)" />
+      <dependency id="dotnet-10.0-desktopruntime" version="10.0.10" />
+      <dependency id="SQL2014.ClrTypes" />
+      <dependency id="MSXML6.SP1" />
       <dependency id="vcredist140" />
-      <dependency id="SQL2014.SMO" />
-      <dependency id="msoledbsql" />
+      <dependency id="DotNet4.7.2" />
     </dependencies>
 
     <!--<provides>NOT YET IMPLEMENTED</provides>-->

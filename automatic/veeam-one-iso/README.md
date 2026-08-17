@@ -1,4 +1,4 @@
-# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4b35af30cee6ea1783efeceb996c1e4c4bdb34d6/icons/veeam-one-iso.png" width="48" height="48"/> [veeam-one-iso](https://community.chocolatey.org/packages/veeam-one-iso)
+# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ce38da592eedce03ebd09ddf46119408f937431b/icons/veeam-one-iso.png" width="48" height="48"/> [veeam-one-iso](https://community.chocolatey.org/packages/veeam-one-iso)
 
 ## Exit when reboot detected
 

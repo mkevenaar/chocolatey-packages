@@ -377,6 +377,8 @@
         url: /packages/veeamexplorerfororacle.html
       - page: "Veeam ONE Agent"
         url: /packages/veeamoneagent.html
+      - page: "Veeam ONE Caching Service"
+        url: /packages/veeamonecachingservice.html
       - page: "Veeam ONE ISO downloader"
         url: /packages/veeamoneiso.html
       - page: "Veeam ONE Monitor Client"
@@ -387,6 +389,10 @@
         url: /packages/veeamonereporterserver.html
       - page: "Veeam ONE Reporter Web UI"
         url: /packages/veeamonereporterweb.html
+      - page: "Veeam ONE Updater"
+        url: /packages/veeamoneupdater.html
+      - page: "Veeam Updater Plug-in for Veeam ONE"
+        url: /packages/veeamoneupdaterplugin.html
       - page: "[Deprecated] Veeam Service Provider Console ConnectWise Automate Plugin"
         url: /packages/veeamserviceproviderconsoleconnectwiseautomateplugin.html
       - page: "Veeam Service Provider Console Application Server for Veeam ConnectWise Manage Plugin"
