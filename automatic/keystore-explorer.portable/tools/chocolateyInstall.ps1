@@ -1,12 +1,12 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$folder         = 'kse-561'
+$folder         = 'kse-570'
 
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
   unzipLocation  = $toolsDir
-  file          = "$toolsDir\kse-561.zip"
+  file          = "$toolsDir\kse-570.zip"
 }
 
 Get-ChocolateyUnzip  @packageArgs
