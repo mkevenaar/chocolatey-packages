@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url64 = 'https://dl.grafana.com/oss/release/grafana-13.2.1.windows-amd64.msi'
-$checksum64 = 'ae1dfcba5b4183d2fce1ab7fc2289cfdd8f545f08c7c672073f05188f064541c'
+$url64 = 'https://dl.grafana.com/oss/release/grafana-13.0.8.windows-amd64.msi'
+$checksum64 = 'a4f130207b05b04f47064bdbe6ac488f7211219baba8aed2ee0b9e35d358ae1f'
 $checksumType64 = 'sha256'
 
 $packageArgs = @{
