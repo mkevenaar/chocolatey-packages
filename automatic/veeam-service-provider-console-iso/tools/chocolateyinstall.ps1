@@ -4,11 +4,11 @@ $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $SettingsXmlPath = Join-Path $toolsDir 'VSPCSettings.xml'
 $SettingsXmlIsoPath = 'Setup\VSPCSettings.xml'
 
-$url = 'https://download2.veeam.com/VSPC/v9/VeeamServiceProviderConsole_9.3.0.35057_20260726.iso'
-$checksum = 'c2b0ce5b3b537912656a861044caa46eaae0a3df50fab585bf3a4bbaae656f13'
+$url = 'https://download2.veeam.com/VSPC/v9/VeeamServiceProviderConsole_9.3.0.35706_20260901.iso'
+$checksum = '931553a86de4478a726ac0e59313d894bb21fa7b35817b1c1873eab099f8887b'
 $checksumType = 'sha256'
 
-$filename = 'VeeamServiceProviderConsole_9.3.0.35057_20260726.iso'
+$filename = 'VeeamServiceProviderConsole_9.3.0.35706_20260901.iso'
 $packagePath = $(Split-Path -parent $toolsDir)
 $installPath = Join-Path $packagePath $filename
 
