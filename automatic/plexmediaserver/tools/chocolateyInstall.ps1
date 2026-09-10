@@ -4,8 +4,8 @@ $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url32          = 'https://downloads.plex.tv/plex-media-server-new/1.42.2.10156-f737b826c/windows/PlexMediaServer-1.42.2.10156-f737b826c-x86.exe'
 $checksum32     = '7f472ccf09c652b03c1a16e2beb11590ed7c61dc613dd7d98cc8d4d08d6b974b'
 $checksumType32 = 'sha256'
-$url64          = 'https://downloads.plex.tv/plex-media-server-new/1.43.3.10896-cb3ebc72d/windows/PlexMediaServer-1.43.3.10896-cb3ebc72d-x86_64.exe'
-$checksum64     = '92f1d6277b9cde5ad6c9b059e679276bca581d62a1299c9f77b15e541a70e3f3'
+$url64          = 'https://downloads.plex.tv/plex-media-server-new/1.43.4.10903-e5521bd8c/windows/PlexMediaServer-1.43.4.10903-e5521bd8c-x86_64.exe'
+$checksum64     = '4543b1307d601f4e69cf6de81d4fd0eefd9e1f94cd9d6e36f342e40aa6326025'
 $checksumType64 = 'sha256'
 
 Start-CheckandStop "Plex Media Server"
