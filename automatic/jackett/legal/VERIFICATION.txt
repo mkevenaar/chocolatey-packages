@@ -2,17 +2,17 @@ VERIFICATION
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
-The installer have been downloaded from their official download link listed on <https://github.com/Jackett/Jackett/releases/tag/v0.24.2595>
+The installer have been downloaded from their official download link listed on <https://github.com/Jackett/Jackett/releases/tag/v0.24.2601>
 and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <https://github.com/Jackett/Jackett/releases/download/v0.24.2595/Jackett.Installer.Windows.exe>
+  32-Bit: <https://github.com/Jackett/Jackett/releases/download/v0.24.2601/Jackett.Installer.Windows.exe>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: F385B5BB71AC57BC45C7E3DDF4D4AEDBA0BD28F4EFCFCF6751BA4E4637143811
+  checksum32: 2C3976F3D0B5525D5E9D9676372211CBD2A2283E7FD77DFF879C947BAA877494
 
 File 'LICENSE.txt' is obtained from <https://github.com/Jackett/Jackett/blob/master/LICENSE>
 
