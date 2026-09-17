@@ -1,4 +1,4 @@
-Import-Module Chocolatey-AU
+﻿Import-Module Chocolatey-AU
 . $PSScriptRoot\update_helpers.ps1
 
 $releases = 'https://www.enterprisedb.com/downloads/postgres-postgresql-downloads'
@@ -48,12 +48,10 @@ function global:au_GetLatest {
     $tds = $tr -split '</td>'
 
     $version = $tds[0] -split '>' | Select-Object -Last 1
-    $version = $version.Replace('*', '')
+    $version = $version.Replace('*', '').Trim()
 
-    $tds[4] -match 'href="(.+?)"' | Out-Null
+    if ($tds[4] -notmatch 'href="(.+?)"') { Write-Host 'No href for' $version; continue }
     $href = $Matches[1]
-
-    if (!$href) { Write-Host 'No href for' $version; continue }
 
     [PSCUstomObject]@{ version = $version; href = $href }
   }
@@ -64,17 +62,18 @@ function global:au_GetLatest {
     if (!$major) { continue }
     if (!$minor) { $minor = '0'; $item.version += '.0' }
 
+    $url64 = Resolve-PostgreUrl $item.href
+    $packageVersion = Get-PostgreVersion -url $url64 -expectedVersion $item.version
+
     $s1 = @{
-      Version      = $item.version
-      Url64        = Resolve-PostgreUrl $item.href
+      Version      = $packageVersion
+      Url64        = $url64
       PackageName  = "postgresql$major"
       ReleaseNotes = "https://www.postgresql.org/docs/$major/static/release.html"
       SoftwareName = "PostgreSQL $major*"
     }
-    if ($s1.Url64.Trim() -eq '') { Write-Host "no URL for" $item.version; continue }
-
     $s2 = @{
-      Version     = $item.version
+      Version     = $packageVersion
       Dependency  = $s1.PackageName
       PackageName = 'postgresql'
     }

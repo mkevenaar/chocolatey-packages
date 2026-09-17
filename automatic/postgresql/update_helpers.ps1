@@ -1,4 +1,4 @@
-function Get-WebRequestTable {
+﻿function Get-WebRequestTable {
   param(
     [Microsoft.PowerShell.Commands.HtmlWebResponseObject] $WebRequest
   )
@@ -35,4 +35,25 @@ function Resolve-PostgreUrl([string] $url) {
   }
   $url = try { Invoke-WebRequest @params | ForEach-Object Headers | ForEach-Object Location } catch { $_.Exception.Response.Headers.Location.OriginalString }
   $url
+}
+
+function Get-PostgreVersion([string] $url, [string] $expectedVersion) {
+  $uri = $null
+  if (![uri]::TryCreate($url, [UriKind]::Absolute, [ref] $uri) -or $uri.Scheme -notin 'http', 'https') {
+    throw "Invalid PostgreSQL installer URL: '$url'"
+  }
+
+  $fileName = [System.IO.Path]::GetFileName($uri.AbsolutePath)
+  if ($fileName -notmatch '^postgresql-(?<Version>\d+(?:\.\d+){1,2})-(?<Revision>\d+)-windows-x64\.exe$') {
+    throw "Unable to determine the PostgreSQL version and installer revision from '$url'"
+  }
+
+  $version = $Matches.Version
+  $revision = $Matches.Revision
+  if ($version -ne $expectedVersion) {
+    throw "PostgreSQL installer version '$version' does not match download page version '$expectedVersion'"
+  }
+
+  # Preserve EDB's installer revision as a numeric Chocolatey version segment.
+  "$version.$revision"
 }
