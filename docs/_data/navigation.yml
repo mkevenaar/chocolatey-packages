@@ -245,6 +245,8 @@ toc:
         url: /packages/psi.install.html
       - page: 'Psi (Portable)'
         url: /packages/psi.portable.html
+      - page: 'PostgreSQL CLI client'
+        url: /packages/psql.html
       - page: 'JetBrains Pycharm Professional'
         url: /packages/pycharm.html
       - page: 'JetBrains PyCharm (Install)'
