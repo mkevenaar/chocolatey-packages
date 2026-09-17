@@ -1,20 +1,32 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@972436b98f0066a91d8f6899e42a6ccf06c7acbf/icons/firefox-nightly.png" width="32" height="32"/> [![Firefox Nightly](https://img.shields.io/chocolatey/v/firefox-nightly.svg?label=Firefox+Nightly)](https://community.chocolatey.org/packages/firefox-nightly) [![Firefox Nightly](https://img.shields.io/chocolatey/dt/firefox-nightly.svg)](https://community.chocolatey.org/packages/firefox-nightly)
+# Firefox Nightly
+
+<img
+  src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@972436b98f0066a91d8f6899e42a6ccf06c7acbf/icons/firefox-nightly.png"
+  alt="Package icon"
+  width="32" height="32"/>
+
+[![Chocolatey version][choco-docs-version]][choco-docs-package]
+[![Chocolatey downloads][choco-docs-downloads]][choco-docs-package]
+
+[choco-docs-version]: <https://img.shields.io/chocolatey/v/firefox-nightly.svg?label=Firefox+Nightly>
+[choco-docs-downloads]: <https://img.shields.io/chocolatey/dt/firefox-nightly.svg>
+[choco-docs-package]: <https://community.chocolatey.org/packages/firefox-nightly>
 
 ## Usage
 
-To install Firefox Nightly, run the following command from the command line or from PowerShell:
+To install Firefox Nightly, run the following command:
 
 ```powershell
 choco install firefox-nightly
 ```
 
-To upgrade Firefox Nightly, run the following command from the command line or from PowerShell:
+To upgrade Firefox Nightly, run the following command:
 
 ```powershell
 choco upgrade firefox-nightly
 ```
 
-To uninstall Firefox Nightly, run the following command from the command line or from PowerShell:
+To uninstall Firefox Nightly, run the following command:
 
 ```powershell
 choco uninstall firefox-nightly
@@ -22,15 +34,23 @@ choco uninstall firefox-nightly
 
 ## Description
 
-Firefox Nightly builds are under active development and should be used only by advanced users for testing experimental features.
+Firefox Nightly builds are under active development and should be used only by
+advanced users for testing experimental features.
 
-## Package Parameters
+### Package Parameters
 
-- `l=<locale>` - Install given Firefox locale. For example `choco install Firefox --params "l=en-GB"`. See the [official page](https://releases.mozilla.org/pub/firefox/releases/latest/README.txt) for a complete list of available locales.
+- `l=<locale>` - Install given Firefox locale. For example
+  `choco install Firefox --params "l=en-GB"`. See the
+  [official page](https://releases.mozilla.org/pub/firefox/releases/latest/README.txt)
+  for a complete list of available locales.
 
 #### Firefox channels (development cycle)
 
-Every 6 weeks, Firefox developers take the current stable features of each build and introduce them into the next stable channel for further development. The Developer Edition is a special build containing features never moved forward since they would be rarely used by the average user and needlessly consume resources.
+Every 6 weeks, Firefox developers take the current stable features of each build
+and introduce them into the next stable channel for further development. The
+Developer Edition is a special build containing features never moved forward
+since they would be rarely used by the average user and needlessly consume
+resources.
 
 - [Firefox](https://community.chocolatey.org/packages/firefox)
 - [Firefox Beta](https://community.chocolatey.org/packages/firefox-beta)
@@ -43,8 +63,9 @@ Every 6 weeks, Firefox developers take the current stable features of each build
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
-let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) that the package is no longer updating correctly.
-
+let them know
+[package update issues](https://github.com/mkevenaar/chocolatey-packages/issues)
+that the package is no longer updating correctly.
 
 ## Links
 
@@ -53,4 +74,3 @@ let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) th
 [Software Site](https://www.mozilla.org/firefox/nightly/)
 
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/firefox-nightly)
-

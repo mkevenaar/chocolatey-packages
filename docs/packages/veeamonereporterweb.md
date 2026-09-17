@@ -1,20 +1,32 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@8938b8981ef12d4ae5da8e5d84f4d644fc466e17/icons/veeam-one-reporter-web.png" width="32" height="32"/> [![Veeam ONE Reporter Web UI](https://img.shields.io/chocolatey/v/veeam-one-reporter-web.svg?label=Veeam+ONE+Reporter+Web+UI)](https://community.chocolatey.org/packages/veeam-one-reporter-web) [![Veeam ONE Reporter Web UI](https://img.shields.io/chocolatey/dt/veeam-one-reporter-web.svg)](https://community.chocolatey.org/packages/veeam-one-reporter-web)
+# Veeam ONE Reporter Web UI
+
+<img
+  src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@8938b8981ef12d4ae5da8e5d84f4d644fc466e17/icons/veeam-one-reporter-web.png"
+  alt="Package icon"
+  width="32" height="32"/>
+
+[![Chocolatey version][choco-docs-version]][choco-docs-package]
+[![Chocolatey downloads][choco-docs-downloads]][choco-docs-package]
+
+[choco-docs-version]: <https://img.shields.io/chocolatey/v/veeam-one-reporter-web.svg?label=Veeam+ONE+Reporter+Web+UI>
+[choco-docs-downloads]: <https://img.shields.io/chocolatey/dt/veeam-one-reporter-web.svg>
+[choco-docs-package]: <https://community.chocolatey.org/packages/veeam-one-reporter-web>
 
 ## Usage
 
-To install Veeam ONE Reporter Web UI, run the following command from the command line or from PowerShell:
+To install Veeam ONE Reporter Web UI, run the following command:
 
 ```powershell
 choco install veeam-one-reporter-web
 ```
 
-To upgrade Veeam ONE Reporter Web UI, run the following command from the command line or from PowerShell:
+To upgrade Veeam ONE Reporter Web UI, run the following command:
 
 ```powershell
 choco upgrade veeam-one-reporter-web
 ```
 
-To uninstall Veeam ONE Reporter Web UI, run the following command from the command line or from PowerShell:
+To uninstall Veeam ONE Reporter Web UI, run the following command:
 
 ```powershell
 choco uninstall veeam-one-reporter-web
@@ -22,47 +34,77 @@ choco uninstall veeam-one-reporter-web
 
 ## Description
 
-## Exit when reboot detected
+### Exit when reboot detected
 
-When installing / upgrading these packages, I would like to advise you to enable this feature `choco feature enable -n=exitOnRebootDetected`
+When installing / upgrading these packages, I would like to advise you to enable
+this feature `choco feature enable -n=exitOnRebootDetected`
 
-## Veeam ONE Web UI
+### Veeam ONE Web UI
 
-**Veeam ONE Web UI** is a client part for Veeam ONE Reporter. Veeam ONE Web UI communicates with the database, processes and displays data in a web-based interface.
+**Veeam ONE Web UI** is a client part for Veeam ONE Reporter. Veeam ONE Web UI
+communicates with the database, processes and displays data in a web-based
+interface.
 
-## Manual steps
+### Manual steps
 
-You'll need an SQL Server (express) installed. It's not required to have this installed on this server. You'll need to specify parameters to connect to the SQL Server.
+You'll need an SQL Server (express) installed. It's not required to have this
+installed on this server. You'll need to specify parameters to connect to the
+SQL Server.
 
-This package requires you to install the IIS Windows feature, WAS Configuration API feature, some ASP features and Client Certificate Mapping Authentication. You can install these by executing `choco install IIS-WebServerRole IIS-WindowsAuthentication IIS-WebSockets IIS-ASPNET45 IIS-NetFxExtensibility45 WAS-ConfigurationAPI IIS-ManagementConsole IIS-ManagementService IIS-ClientCertificateMappingAuthentication --source WindowsFeatures`
+This package requires you to install the IIS Windows feature, WAS Configuration
+API feature, some ASP features and Client Certificate Mapping Authentication.
+You can install these by executing
+`choco install IIS-WebServerRole IIS-WindowsAuthentication IIS-WebSockets IIS-ASPNET45 IIS-NetFxExtensibility45 WAS-ConfigurationAPI IIS-ManagementConsole IIS-ManagementService IIS-ClientCertificateMappingAuthentication --source WindowsFeatures`
 
-### Package Parameters
+#### Package Parameters
 
-To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+To have choco remember parameters on upgrade, be sure to set
+`choco feature enable -n=useRememberedArgumentsForUpgrades`.
 
-This package accepts a lot of parameters. Some of them are required the installation. For the full list of parameters, please have a look at the [documentation](https://github.com/mkevenaar/chocolatey-packages/blob/master/automatic/veeam-one-reporter-web/PARAMETERS.md)
+This package accepts a lot of parameters. Some of them are required the
+installation. For the full list of parameters, please have a look at the
+[documentation](https://github.com/mkevenaar/chocolatey-packages/blob/master/automatic/veeam-one-reporter-web/PARAMETERS.md)
 
-#### Required parameters
+##### Required parameters
 
-* `/username`
-* `/password`
-* `/oneServer`
+- `/username`
+- `/password`
+- `/oneServer`
 
-* `/installDir` - Installs the component to the specified location. By default, Veeam ONE uses the **Veeam ONE Reporter Web** subfolder of the `C:\Program Files\Veeam\Veeam ONE` folder. Example: `/installDir:"C:\Veeam\"` The component will be installed to the `C:\Veeam\Veeam ONE Reporter Web` folder.
-* `/oneServer` - Specifies FQDN of the server where Veeam ONE Reporting Service is installed. Example: `/oneServer:oneserver.tech.local`
-* `/username` - Specifies a user account that will be used to access and configure Veeam ONE Reporting Service from the Web Client in the Microsoft Windows authentication mode. Example: `/username:ONESERVER\Administrator`
-* `/password` - This parameter must be used if you have specified the `/username` parameter. Specifies a password for the account that will be used to access Veeam ONE Reporting Service from the Web UI. Example: `/password:p@ssw0rd`
-* `/create` - Create the requested user on this machine, this user will be added to the local Administrators group.
-* `/iisSitePort` - Specifies a port that will be used by the Veeam ONE Web Client website. By default, port number `1239` is used. Example: `/iisSitePort:1239`
-* `/sslThumbprint` - Specifies the certificate to be used by the Veeam ONE Web Client website. If this parameter is not specified, a new certificate will be generated by `openssl.exe`. Example: `/sslThumbprint:0677d0b8f27caccc966b15d807b41a101587b488`
-* `/reporterWebServerWebAPIPort` - Specifies the port number used for communication with Veeam ONE Web API. If you do not use this parameter, Veeam ONE Web Client will use the default port **2741**. Example: `/reporterWebServerWebAPIPort:"2741"`
+- `/installDir` - Installs the component to the specified location. By default,
+  Veeam ONE uses the **Veeam ONE Reporter Web** subfolder of the
+  `C:\Program Files\Veeam\Veeam ONE` folder. Example: `/installDir:"C:\Veeam\"`
+  The component will be installed to the `C:\Veeam\Veeam ONE Reporter Web`
+  folder.
+- `/oneServer` - Specifies FQDN of the server where Veeam ONE Reporting Service
+  is installed. Example: `/oneServer:oneserver.tech.local`
+- `/username` - Specifies a user account that will be used to access and
+  configure Veeam ONE Reporting Service from the Web Client in the Microsoft
+  Windows authentication mode. Example: `/username:ONESERVER\Administrator`
+- `/password` - This parameter must be used if you have specified the
+  `/username` parameter. Specifies a password for the account that will be used
+  to access Veeam ONE Reporting Service from the Web UI. Example:
+  `/password:p@ssw0rd`
+- `/create` - Create the requested user on this machine, this user will be added
+  to the local Administrators group.
+- `/iisSitePort` - Specifies a port that will be used by the Veeam ONE Web
+  Client website. By default, port number `1239` is used. Example:
+  `/iisSitePort:1239`
+- `/sslThumbprint` - Specifies the certificate to be used by the Veeam ONE Web
+  Client website. If this parameter is not specified, a new certificate will be
+  generated by `openssl.exe`. Example:
+  `/sslThumbprint:0677d0b8f27caccc966b15d807b41a101587b488`
+- `/reporterWebServerWebAPIPort` - Specifies the port number used for
+  communication with Veeam ONE Web API. If you do not use this parameter, Veeam
+  ONE Web Client will use the default port **2741**. Example:
+  `/reporterWebServerWebAPIPort:"2741"`
 
 Example: `choco install veeam-one-reporter-web --params "/iisSitePort:12345"`
-
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
-let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) that the package is no longer updating correctly.
-
+let them know
+[package update issues](https://github.com/mkevenaar/chocolatey-packages/issues)
+that the package is no longer updating correctly.
 
 ## Links
 
@@ -71,4 +113,3 @@ let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) th
 [Software Site](https://www.veeam.com)
 
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/veeam-one-reporter-web)
-

@@ -1,20 +1,32 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@081d7b0b59739e4d377150098854a2244235fe01/icons/PyCharm-community.png" width="32" height="32"/> [![JetBrains PyCharm (Install)](https://img.shields.io/chocolatey/v/pycharm-community.svg?label=JetBrains+PyCharm+(Install))](https://community.chocolatey.org/packages/pycharm-community) [![JetBrains PyCharm (Install)](https://img.shields.io/chocolatey/dt/pycharm-community.svg)](https://community.chocolatey.org/packages/pycharm-community)
+# JetBrains PyCharm (Install)
+
+<img
+  src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@081d7b0b59739e4d377150098854a2244235fe01/icons/PyCharm-community.png"
+  alt="Package icon"
+  width="32" height="32"/>
+
+[![Chocolatey version][choco-docs-version]][choco-docs-package]
+[![Chocolatey downloads][choco-docs-downloads]][choco-docs-package]
+
+[choco-docs-version]: <https://img.shields.io/chocolatey/v/pycharm-community.svg?label=JetBrains+PyCharm+(Install)>
+[choco-docs-downloads]: <https://img.shields.io/chocolatey/dt/pycharm-community.svg>
+[choco-docs-package]: <https://community.chocolatey.org/packages/pycharm-community>
 
 ## Usage
 
-To install JetBrains PyCharm (Install), run the following command from the command line or from PowerShell:
+To install JetBrains PyCharm (Install), run the following command:
 
 ```powershell
 choco install pycharm-community
 ```
 
-To upgrade JetBrains PyCharm (Install), run the following command from the command line or from PowerShell:
+To upgrade JetBrains PyCharm (Install), run the following command:
 
 ```powershell
 choco upgrade pycharm-community
 ```
 
-To uninstall JetBrains PyCharm (Install), run the following command from the command line or from PowerShell:
+To uninstall JetBrains PyCharm (Install), run the following command:
 
 ```powershell
 choco uninstall pycharm-community
@@ -22,22 +34,27 @@ choco uninstall pycharm-community
 
 ## Description
 
-[![official JetBrains project](http://jb.gg/badges/official-plastic.svg)](https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub)
+[![official JetBrains project](http://jb.gg/badges/official-plastic.svg)](<https://confluence.jetbrains.com/display/ALL/JetBrains+on+GitHub>)
 
-## ALL THE PYTHON TOOLS IN ONE PLACE
+### ALL THE PYTHON TOOLS IN ONE PLACE
 
-### Be More Productive
+#### Be More Productive
 
-Save time while PyCharm takes care of the routine. Focus on the bigger things and embrace the keyboard-centric approach to get the most of PyCharm’s many productivity features.
+Save time while PyCharm takes care of the routine. Focus on the bigger things
+and embrace the keyboard-centric approach to get the most of PyCharm’s many
+productivity features.
 
-### Get Smart Assistance
+#### Get Smart Assistance
 
-PyCharm knows everything about your code. Rely on it for intelligent code completion, on-the-fly error checking and quick-fixes, easy project navigation, and much more.
+PyCharm knows everything about your code. Rely on it for intelligent code
+completion, on-the-fly error checking and quick-fixes, easy project navigation,
+and much more.
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
-let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) that the package is no longer updating correctly.
-
+let them know
+[package update issues](https://github.com/mkevenaar/chocolatey-packages/issues)
+that the package is no longer updating correctly.
 
 ## Links
 
@@ -46,4 +63,3 @@ let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) th
 [Software Site](http://www.jetbrains.com/pycharm/)
 
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/pycharm-community)
-

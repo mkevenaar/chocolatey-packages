@@ -1,20 +1,32 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@a2d2b28de250105f84f6a2d0123c435ba7667f57/icons/cpu-z.png" width="32" height="32"/> [![CPU-Z (Portable)](https://img.shields.io/chocolatey/v/cpu-z.portable.svg?label=CPU-Z+(Portable))](https://community.chocolatey.org/packages/cpu-z.portable) [![CPU-Z (Portable)](https://img.shields.io/chocolatey/dt/cpu-z.portable.svg)](https://community.chocolatey.org/packages/cpu-z.portable)
+# CPU-Z (Portable)
+
+<img
+  src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@a2d2b28de250105f84f6a2d0123c435ba7667f57/icons/cpu-z.png"
+  alt="Package icon"
+  width="32" height="32"/>
+
+[![Chocolatey version][choco-docs-version]][choco-docs-package]
+[![Chocolatey downloads][choco-docs-downloads]][choco-docs-package]
+
+[choco-docs-version]: <https://img.shields.io/chocolatey/v/cpu-z.portable.svg?label=CPU-Z+(Portable)>
+[choco-docs-downloads]: <https://img.shields.io/chocolatey/dt/cpu-z.portable.svg>
+[choco-docs-package]: <https://community.chocolatey.org/packages/cpu-z.portable>
 
 ## Usage
 
-To install CPU-Z (Portable), run the following command from the command line or from PowerShell:
+To install CPU-Z (Portable), run the following command:
 
 ```powershell
 choco install cpu-z.portable
 ```
 
-To upgrade CPU-Z (Portable), run the following command from the command line or from PowerShell:
+To upgrade CPU-Z (Portable), run the following command:
 
 ```powershell
 choco upgrade cpu-z.portable
 ```
 
-To uninstall CPU-Z (Portable), run the following command from the command line or from PowerShell:
+To uninstall CPU-Z (Portable), run the following command:
 
 ```powershell
 choco uninstall cpu-z.portable
@@ -22,25 +34,30 @@ choco uninstall cpu-z.portable
 
 ## Description
 
-A freeware system profiler (system monitor) application that detects the central processing unit, RAM, motherboard chipset, and other hardware features of a modern personal computer, and presents the information in one window:
+A freeware system profiler (system monitor) application that detects the central
+processing unit, RAM, motherboard chipset, and other hardware features of a
+modern personal computer, and presents the information in one window:
 
-## Features
+### Features
 
 - Processor name and number, codename, process, package, cache levels.
 - Mainboard and chipset.
 - Memory type, size, timings, and module specifications (SPD).
 - Real time measurement of each core's internal frequency, memory frequency.
 
-## Notes
+### Notes
 
-- You might need to use `--ignore-checksums` option when installing this package due to the fact that vendor overwrites historic download locations. Automatic updater will release new version with choco fix notation when that happens.
+- You might need to use `--ignore-checksums` option when installing this package
+  due to the fact that vendor overwrites historic download locations. Automatic
+  updater will release new version with choco fix notation when that happens.
 
 ![screenshot](https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@a881086a60d04bd8b1a1a8898af3e200416a19d5/automatic/cpu-z.install/screenshot.png)
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
-let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) that the package is no longer updating correctly.
-
+let them know
+[package update issues](https://github.com/mkevenaar/chocolatey-packages/issues)
+that the package is no longer updating correctly.
 
 ## Links
 
@@ -49,4 +66,3 @@ let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) th
 [Software Site](http://www.cpuid.com/softwares/cpu-z.html)
 
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/cpu-z.portable)
-

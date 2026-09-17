@@ -1,20 +1,32 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@866115c69165780d9fab3d896a8f66c98a92fd32/icons/plexmediaplayer.png" width="32" height="32"/> [![Plex Media Player for Windows](https://img.shields.io/chocolatey/v/plexmediaplayer.svg?label=Plex+Media+Player+for+Windows)](https://community.chocolatey.org/packages/plexmediaplayer) [![Plex Media Player for Windows](https://img.shields.io/chocolatey/dt/plexmediaplayer.svg)](https://community.chocolatey.org/packages/plexmediaplayer)
+# Plex Media Player for Windows
+
+<img
+  src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@866115c69165780d9fab3d896a8f66c98a92fd32/icons/plexmediaplayer.png"
+  alt="Package icon"
+  width="32" height="32"/>
+
+[![Chocolatey version][choco-docs-version]][choco-docs-package]
+[![Chocolatey downloads][choco-docs-downloads]][choco-docs-package]
+
+[choco-docs-version]: <https://img.shields.io/chocolatey/v/plexmediaplayer.svg?label=Plex+Media+Player+for+Windows>
+[choco-docs-downloads]: <https://img.shields.io/chocolatey/dt/plexmediaplayer.svg>
+[choco-docs-package]: <https://community.chocolatey.org/packages/plexmediaplayer>
 
 ## Usage
 
-To install Plex Media Player for Windows, run the following command from the command line or from PowerShell:
+To install Plex Media Player for Windows, run the following command:
 
 ```powershell
 choco install plexmediaplayer
 ```
 
-To upgrade Plex Media Player for Windows, run the following command from the command line or from PowerShell:
+To upgrade Plex Media Player for Windows, run the following command:
 
 ```powershell
 choco upgrade plexmediaplayer
 ```
 
-To uninstall Plex Media Player for Windows, run the following command from the command line or from PowerShell:
+To uninstall Plex Media Player for Windows, run the following command:
 
 ```powershell
 choco uninstall plexmediaplayer
@@ -22,17 +34,26 @@ choco uninstall plexmediaplayer
 
 ## Description
 
-## The ultimate home theater experience
+### The ultimate home theater experience
 
-Your HTPC running Plex Media Player gives you the best possible playback experience on a dizzying array of configurations. From PCs to Raspberry Pis to Mac Minis, Plex Media Player is the most powerful, sophisticated way to play media in your home theater. Simple and intuitive controls give you the cleanest, most theater-like viewing experience. Power users and media junkies rejoice!
+Your HTPC running Plex Media Player gives you the best possible playback
+experience on a dizzying array of configurations. From PCs to Raspberry Pis to
+Mac Minis, Plex Media Player is the most powerful, sophisticated way to play
+media in your home theater. Simple and intuitive controls give you the cleanest,
+most theater-like viewing experience. Power users and media junkies rejoice!
 
-## Easy to search and browse
+### Easy to search and browse
 
-Plex Media Player has powerful live search capabilities that allow you to quickly find that movie, show, or song you are looking for. Plex also provides helpful suggestions when you don’t really know what you want.
+Plex Media Player has powerful live search capabilities that allow you to
+quickly find that movie, show, or song you are looking for. Plex also provides
+helpful suggestions when you don’t really know what you want.
 
-## Plays anything, anywhere
+### Plays anything, anywhere
 
-Plex Media Player gives you both a beautiful HTPC experience and a slick desktop media player experience. Whether you are home or away, you can easily play any file type with the world’s most powerful playback engine. It’s the ultimate media player!
+Plex Media Player gives you both a beautiful HTPC experience and a slick desktop
+media player experience. Whether you are home or away, you can easily play any
+file type with the world’s most powerful playback engine. It’s the ultimate
+media player!
 
 [Plex Media Server software here](https://community.chocolatey.org/packages/plexmediaserver)
 
@@ -41,8 +62,9 @@ Plex Media Player gives you both a beautiful HTPC experience and a slick desktop
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
-let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) that the package is no longer updating correctly.
-
+let them know
+[package update issues](https://github.com/mkevenaar/chocolatey-packages/issues)
+that the package is no longer updating correctly.
 
 ## Links
 
@@ -51,4 +73,3 @@ let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) th
 [Software Site](https://www.plex.tv/apps/computer/plex-media-player/)
 
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/plexmediaplayer)
-

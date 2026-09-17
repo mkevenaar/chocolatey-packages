@@ -1,20 +1,32 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ae6d78dcd1f2f8cf131384eb08f9dd59ae933802/icons/meshmixer.png" width="32" height="32"/> [![Meshmixer](https://img.shields.io/chocolatey/v/meshmixer.svg?label=Meshmixer)](https://community.chocolatey.org/packages/meshmixer) [![Meshmixer](https://img.shields.io/chocolatey/dt/meshmixer.svg)](https://community.chocolatey.org/packages/meshmixer)
+# Meshmixer
+
+<img
+  src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ae6d78dcd1f2f8cf131384eb08f9dd59ae933802/icons/meshmixer.png"
+  alt="Package icon"
+  width="32" height="32"/>
+
+[![Chocolatey version][choco-docs-version]][choco-docs-package]
+[![Chocolatey downloads][choco-docs-downloads]][choco-docs-package]
+
+[choco-docs-version]: <https://img.shields.io/chocolatey/v/meshmixer.svg?label=Meshmixer>
+[choco-docs-downloads]: <https://img.shields.io/chocolatey/dt/meshmixer.svg>
+[choco-docs-package]: <https://community.chocolatey.org/packages/meshmixer>
 
 ## Usage
 
-To install Meshmixer, run the following command from the command line or from PowerShell:
+To install Meshmixer, run the following command:
 
 ```powershell
 choco install meshmixer
 ```
 
-To upgrade Meshmixer, run the following command from the command line or from PowerShell:
+To upgrade Meshmixer, run the following command:
 
 ```powershell
 choco upgrade meshmixer
 ```
 
-To uninstall Meshmixer, run the following command from the command line or from PowerShell:
+To uninstall Meshmixer, run the following command:
 
 ```powershell
 choco uninstall meshmixer
@@ -22,9 +34,12 @@ choco uninstall meshmixer
 
 ## Description
 
-Meshmixer is state-of-the-art software for working with triangle meshes. Do you need to clean up a 3D scan, do some 3D printing, or design an object that fits something else? Meshmixer can help. Think of it as a sort of "Swiss Army Knife" for 3D meshes. Oh, and it's free, for Windows and macOS!
+Meshmixer is state-of-the-art software for working with triangle meshes. Do you
+need to clean up a 3D scan, do some 3D printing, or design an object that fits
+something else? Meshmixer can help. Think of it as a sort of "Swiss Army Knife"
+for 3D meshes. Oh, and it's free, for Windows and macOS!
 
-## Features
+### Features
 
 - Drag-and-Drop Mesh Mixing
 - 3D Sculpting and Surface Stamping
@@ -45,14 +60,16 @@ Meshmixer is state-of-the-art software for working with triangle meshes. Do you 
 - 3D Measurements
 - Stability and Thickness Analysis
 
-## Notes
+### Notes
 
-This package will install in the default Windows program directory, and not in Chocolatey's custom program location! And it only supports 64bit processors!
+This package will install in the default Windows program directory, and not in
+Chocolatey's custom program location! And it only supports 64bit processors!
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
-let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) that the package is no longer updating correctly.
-
+let them know
+[package update issues](https://github.com/mkevenaar/chocolatey-packages/issues)
+that the package is no longer updating correctly.
 
 ## Links
 
@@ -61,4 +78,3 @@ let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) th
 [Software Site](https://meshmixer.com/)
 
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/meshmixer)
-

@@ -1,6 +1,7 @@
 # Chocolatey ISO helpers extension
 
-This is a Chocolatey extension that simplifies building Chocolatey packages that require deployments via ISO files.
+This is a Chocolatey extension that simplifies building Chocolatey packages that
+require deployments via ISO files.
 
 **NOTE**: This package requires PowerShell 3 or higher
 
@@ -12,7 +13,8 @@ The module is usually automatically installed as a dependency.
 
 ## Usage
 
-To create a package that uses a function from this extension add the following to the `nuspec` specification:
+To create a package that uses a function from this extension add the following
+to the `nuspec` specification:
 
 ```xml
 <dependencies>
@@ -22,7 +24,8 @@ To create a package that uses a function from this extension add the following t
 
 **NOTE**: Make sure you use adequate _minimum_ version.
 
-To test the functions you can import the module directly or via the `chocolateyInstaller.psm1` module:
+To test the functions you can import the module directly or via the
+`chocolateyInstaller.psm1` module:
 
 ```powershell
 PS> import-module $Env:ChocolateyInstall\helpers\chocolateyInstaller.psm1
@@ -61,9 +64,11 @@ $isoPath = Join-Path $toolsDir 'image.iso'
 Get-ChocolateyIsoFile -IsoFile $isoPath -FilePath 'setup.msi' -Destination $toolsDir
 ```
 
-Keep in mind that function may work only in the context of the `chocolateyInstaller.ps1`.
+Keep in mind that function may work only in the context of the
+`chocolateyInstaller.ps1`.
 
-To get the list of functions, load the module directly and invoke the following command:
+To get the list of functions, load the module directly and invoke the following
+command:
 
 ```powershell
 Get-Command -Module chocolatey-isomount

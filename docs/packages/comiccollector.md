@@ -1,20 +1,32 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@196f45fcb5d2f1678981ea7d99518d53a9a47cf3/icons/comic-collector.png" width="32" height="32"/> [![Comic Collector](https://img.shields.io/chocolatey/v/comic-collector.svg?label=Comic+Collector)](https://community.chocolatey.org/packages/comic-collector) [![Comic Collector](https://img.shields.io/chocolatey/dt/comic-collector.svg)](https://community.chocolatey.org/packages/comic-collector)
+# Comic Collector
+
+<img
+  src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@196f45fcb5d2f1678981ea7d99518d53a9a47cf3/icons/comic-collector.png"
+  alt="Package icon"
+  width="32" height="32"/>
+
+[![Chocolatey version][choco-docs-version]][choco-docs-package]
+[![Chocolatey downloads][choco-docs-downloads]][choco-docs-package]
+
+[choco-docs-version]: <https://img.shields.io/chocolatey/v/comic-collector.svg?label=Comic+Collector>
+[choco-docs-downloads]: <https://img.shields.io/chocolatey/dt/comic-collector.svg>
+[choco-docs-package]: <https://community.chocolatey.org/packages/comic-collector>
 
 ## Usage
 
-To install Comic Collector, run the following command from the command line or from PowerShell:
+To install Comic Collector, run the following command:
 
 ```powershell
 choco install comic-collector
 ```
 
-To upgrade Comic Collector, run the following command from the command line or from PowerShell:
+To upgrade Comic Collector, run the following command:
 
 ```powershell
 choco upgrade comic-collector
 ```
 
-To uninstall Comic Collector, run the following command from the command line or from PowerShell:
+To uninstall Comic Collector, run the following command:
 
 ```powershell
 choco uninstall comic-collector
@@ -28,8 +40,9 @@ Browse, sort and search your comic collection in various layouts and views
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
-let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) that the package is no longer updating correctly.
-
+let them know
+[package update issues](https://github.com/mkevenaar/chocolatey-packages/issues)
+that the package is no longer updating correctly.
 
 ## Links
 
@@ -38,4 +51,3 @@ let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) th
 [Software Site](https://www.collectorz.com/comic/comic-collector)
 
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/comic-collector)
-

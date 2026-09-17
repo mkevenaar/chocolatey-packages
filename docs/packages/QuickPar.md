@@ -1,20 +1,32 @@
-﻿# <img src="https://cdn.rawgit.com/mkevenaar/chocolatey-packages/master/icons/QuickPar.png" width="32" height="32"/> [![QuickPar](https://img.shields.io/chocolatey/v/QuickPar.svg?label=QuickPar)](https://community.chocolatey.org/packages/QuickPar) [![QuickPar](https://img.shields.io/chocolatey/dt/QuickPar.svg)](https://community.chocolatey.org/packages/QuickPar)
+# QuickPar
+
+<img
+  src="https://cdn.rawgit.com/mkevenaar/chocolatey-packages/master/icons/QuickPar.png"
+  alt="Package icon"
+  width="32" height="32"/>
+
+[![Chocolatey version][choco-docs-version]][choco-docs-package]
+[![Chocolatey downloads][choco-docs-downloads]][choco-docs-package]
+
+[choco-docs-version]: <https://img.shields.io/chocolatey/v/QuickPar.svg?label=QuickPar>
+[choco-docs-downloads]: <https://img.shields.io/chocolatey/dt/QuickPar.svg>
+[choco-docs-package]: <https://community.chocolatey.org/packages/QuickPar>
 
 ## Usage
 
-To install QuickPar, run the following command from the command line or from PowerShell:
+To install QuickPar, run the following command:
 
 ```powershell
 choco install QuickPar
 ```
 
-To upgrade QuickPar, run the following command from the command line or from PowerShell:
+To upgrade QuickPar, run the following command:
 
 ```powershell
 choco upgrade QuickPar
 ```
 
-To uninstall QuickPar, run the following command from the command line or from PowerShell:
+To uninstall QuickPar, run the following command:
 
 ```powershell
 choco uninstall QuickPar
@@ -22,11 +34,17 @@ choco uninstall QuickPar
 
 ## Description
 
-QuickPar is a utility for creating Parity Volumes using the Reed Solomon algorithm. For details of the algorithm used, see the parchive website at SourceForge. Parity Volumes may be used to verify that a set of files have not been corrupted, or to reconstruct damaged files (providing that you have a sufficient quantity of Parity Volumes to match the missing or damaged files)
+QuickPar is a utility for creating Parity Volumes using the Reed Solomon
+algorithm. For details of the algorithm used, see the parchive website at
+SourceForge. Parity Volumes may be used to verify that a set of files have not
+been corrupted, or to reconstruct damaged files (providing that you have a
+sufficient quantity of Parity Volumes to match the missing or damaged files)
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
-let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) that the package is no longer updating correctly.
+let them know
+[package update issues](https://github.com/mkevenaar/chocolatey-packages/issues)
+that the package is no longer updating correctly.
 
 ## Links
 
@@ -35,4 +53,3 @@ let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) th
 [Software Site](http://www.quickpar.org.uk)
 
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/manual/QuickPar)
-

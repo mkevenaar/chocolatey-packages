@@ -1,488 +1,487 @@
-﻿toc:
-  - title: chocolatey-isomount.extension
+toc:
+  - title: 'chocolatey-isomount.extension'
     subfolderitems:
-      - page: Documentation
+      - page: 'Documentation'
         url: /chocolatey-isomount.extension/Index.html
-      - page: Changelog
+      - page: 'Changelog'
         url: /chocolatey-isomount.extension/Changelog.html
-      - page: Get-ChocolateyIsoFile
+      - page: 'Get-ChocolateyIsoFile'
         url: /chocolatey-isomount.extension/HelpersGetChocolateyIsoFile.html
-      - page: Install-ChocolateyIsoInstallPackage
+      - page: 'Install-ChocolateyIsoInstallPackage'
         url: /chocolatey-isomount.extension/HelpersInstallChocolateyIsoInstallPackage.html
-      - page: Install-ChocolateyIsoPackage
+      - page: 'Install-ChocolateyIsoPackage'
         url: /chocolatey-isomount.extension/HelpersInstallChocolateyIsoPackage.html
-  - title: veeam.extension
+  - title: 'veeam.extension'
     subfolderitems:
-      - page: Documentation
+      - page: 'Documentation'
         url: /veeam.extension/Index.html
-      - page: Changelog
+      - page: 'Changelog'
         url: /veeam.extension/Changelog.html
-      - page: Add-SilentArgument
+      - page: 'Add-SilentArgument'
         url: /veeam.extension/HelpersAddSilentArgument.html
-      - page: Install-VeeamIsoPatchIfNeeded
+      - page: 'Install-VeeamIsoPatchIfNeeded'
         url: /veeam.extension/HelpersInstallVeeamIsoPatchIfNeeded.html
-      - page: Invoke-PackageParameterValidation
+      - page: 'Invoke-PackageParameterValidation'
         url: /veeam.extension/HelpersInvokePackageParameterValidation.html
   - title: Packages
     subfolderitems:
-      - page: "AIDA64 Business"
+      - page: 'AIDA64 Business'
         url: /packages/aida64business.html
-      - page: "AIDA64 Engineer"
+      - page: 'AIDA64 Engineer'
         url: /packages/aida64engineer.html
-      - page: "AIDA64 Extreme"
+      - page: 'AIDA64 Extreme'
         url: /packages/aida64extreme.html
-      - page: "AIDA64 Network Audit"
+      - page: 'AIDA64 Network Audit'
         url: /packages/aida64networkaudit.html
-      - page: "AlternateStreamView"
+      - page: 'AlternateStreamView'
         url: /packages/alternatestreamview.html
-      - page: "AnyRail6"
+      - page: 'AnyRail6'
         url: /packages/anyrail6.html
-      - page: "AppVeyor Server (Team Edition)"
+      - page: 'AppVeyor Server (Team Edition)'
         url: /packages/appveyorserver.html
-      - page: "Bacula"
+      - page: 'Bacula'
         url: /packages/bacula.html
-      - page: "Barcode to PC server"
+      - page: 'Barcode to PC server'
         url: /packages/barcodetopcserver.html
-      - page: "Bitvise SSH Server"
+      - page: 'Bitvise SSH Server'
         url: /packages/bitvisesshserver.html
-      - page: "Book Collector"
+      - page: 'Book Collector'
         url: /packages/bookcollector.html
-      - page: "Chatty"
+      - page: 'Chatty'
         url: /packages/chatty.html
-      - page: "Chocolatey ISO helpers extension"
+      - page: 'Chocolatey ISO helpers extension'
         url: /packages/chocolateyisomount.extension.html
-      - page: "ChromeCacheView"
+      - page: 'ChromeCacheView'
         url: /packages/chromecacheview.html
-      - page: "JetBrains Clion"
+      - page: 'JetBrains Clion'
         url: /packages/clionide.html
-      - page: "CodeQL CLI"
+      - page: 'CodeQL CLI'
         url: /packages/codeql.html
-      - page: "Comic Collector"
+      - page: 'Comic Collector'
         url: /packages/comiccollector.html
-      - page: "CPU-Z"
+      - page: 'CPU-Z'
         url: /packages/cpuz.html
-      - page: "CPU-Z (Install)"
+      - page: 'CPU-Z (Install)'
         url: /packages/cpuz.install.html
-      - page: "CPU-Z (Portable)"
+      - page: 'CPU-Z (Portable)'
         url: /packages/cpuz.portable.html
-      - page: "CrystalDiskInfo"
+      - page: 'CrystalDiskInfo'
         url: /packages/crystaldiskinfo.html
-      - page: "CrystalDiskInfo (Install)"
+      - page: 'CrystalDiskInfo (Install)'
         url: /packages/crystaldiskinfo.install.html
-      - page: "CrystalDiskInfo (Portable)"
+      - page: 'CrystalDiskInfo (Portable)'
         url: /packages/crystaldiskinfo.portable.html
-      - page: "DBeaver - Community Edition"
+      - page: 'DBeaver - Community Edition'
         url: /packages/dbeaver.html
-      - page: "DevManView"
+      - page: 'DevManView'
         url: /packages/devmanview.html
-      - page: "Driver Booster"
+      - page: 'Driver Booster'
         url: /packages/driverbooster.html
-      - page: "Duplicate File Finder"
+      - page: 'Duplicate File Finder'
         url: /packages/duplicatefilefinder.html
-      - page: "DYMO Connect"
+      - page: 'DYMO Connect'
         url: /packages/dymoconnect.html
-      - page: "DYMO Label"
+      - page: 'DYMO Label'
         url: /packages/dymolabel.html
-      - page: "EFSDump"
+      - page: 'EFSDump'
         url: /packages/efsdump.html
-      - page: "Elasticsearch"
+      - page: 'Elasticsearch'
         url: /packages/elasticsearch.html
-      - page: "Etcher"
+      - page: 'Etcher'
         url: /packages/etcher.html
-      - page: "Evernote"
+      - page: 'Evernote'
         url: /packages/evernote.html
-      - page: "ExifTool"
+      - page: 'ExifTool'
         url: /packages/exiftool.html
-      - page: "FileZilla Server"
+      - page: 'FileZilla Server'
         url: /packages/filezilla.server.html
-      - page: "Firefox Developer Edition"
+      - page: 'Firefox Developer Edition'
         url: /packages/firefox.html
-      - page: "Firefox Nightly"
+      - page: 'Firefox Nightly'
         url: /packages/firefoxnightly.html
-      - page: "Game Collector"
+      - page: 'Game Collector'
         url: /packages/gamecollector.html
-      - page: "GitKraken"
+      - page: 'GitKraken'
         url: /packages/gitkraken.html
-      - page: "JetBrains GoLand"
+      - page: 'JetBrains GoLand'
         url: /packages/goland.html
-      - page: "Google Drive"
-        url: /packages/googledrive.html
-      - page: "Hangouts Chat (Install)"
+      - page: 'Hangouts Chat (Install)'
         url: /packages/googlehangoutschat.html
-      - page: "Grafana"
+      - page: 'Google Drive'
+        url: /packages/googledrive.html
+      - page: 'Grafana'
         url: /packages/grafana.html
-      - page: "Grafana (Install)"
-        url: /packages/grafana.install.html
-      - page: "Grafana Agent"
+      - page: 'Grafana Agent'
         url: /packages/grafanaagent.html
-      - page: "Hadoop"
+      - page: 'Grafana (Install)'
+        url: /packages/grafana.install.html
+      - page: 'Hadoop'
         url: /packages/hadoop.html
-      - page: "Helio Workstation"
+      - page: 'Helio Workstation'
         url: /packages/helioworkstation.html
-      - page: "Helio Workstation (Install)"
+      - page: 'Helio Workstation (Install)'
         url: /packages/helioworkstation.install.html
-      - page: "Helio Workstation (Portable)"
+      - page: 'Helio Workstation (Portable)'
         url: /packages/helioworkstation.portable.html
-      - page: "Apple iCloud"
+      - page: 'Apple iCloud'
         url: /packages/icloud.html
-      - page: "[Deprecated] Intel SSD Toolbox"
-        url: /packages/intel.ssd.toolbox.html
-      - page: "Intel Arc & Iris Xe Graphics Drivers"
+      - page: 'Intel Arc & Iris Xe Graphics Drivers'
         url: /packages/intelarcgraphicsdriver.html
-      - page: "Intel® Driver & Support Assistant (Install)"
+      - page: 'Intel® Driver & Support Assistant (Install)'
         url: /packages/inteldsa.html
-      - page: "JetBrains IntelliJ IDEA (Educational)"
-        url: /packages/intellijideaedu.html
-      - page: "Intel® Memory and Storage Tool"
+      - page: 'Intel® Memory and Storage Tool'
         url: /packages/intelmas.html
-      - page: "IObit Malware Fighter Free"
+      - page: '[Deprecated] Intel SSD Toolbox'
+        url: /packages/intel.ssd.toolbox.html
+      - page: 'JetBrains IntelliJ IDEA (Educational)'
+        url: /packages/intellijideaedu.html
+      - page: 'IObit Malware Fighter Free'
         url: /packages/iobitmalwarefighter.html
-      - page: "IObit Uninstaller"
+      - page: 'IObit Uninstaller'
         url: /packages/iobituninstaller.html
-      - page: "IrfanView (Install)"
+      - page: 'IrfanView (Install)'
         url: /packages/irfanview.html
-      - page: "IrfanView All Languages (Install)"
+      - page: 'IrfanView All Languages (Install)'
         url: /packages/irfanviewlanguages.html
-      - page: "IrfanView All Plugins (Install)"
-        url: /packages/irfanviewplugins.html
-      - page: "IrfanView Shell Extension (Install)"
+      - page: 'IrfanView Shell Extension (Install)'
         url: /packages/irfanviewshellextension.html
-      - page: "Jackett"
+      - page: 'IrfanView All Plugins (Install)'
+        url: /packages/irfanviewplugins.html
+      - page: 'Jackett'
         url: /packages/jackett.html
-      - page: "Freedom Scientific JAWS"
+      - page: 'Freedom Scientific JAWS'
         url: /packages/JAWS.html
-      - page: "Jetbrains Rider"
+      - page: 'Jetbrains Rider'
         url: /packages/jetbrainsrider.html
-      - page: "JetBrains Toolbox App (Install)"
-        url: /packages/jetbrainstoolbox.html
-      - page: "JetBrains YouTrack"
+      - page: 'JetBrains YouTrack'
         url: /packages/jetbrainsyoutrack.html
-      - page: "KeyStore Explorer (Portable)"
+      - page: 'JetBrains Toolbox App (Install)'
+        url: /packages/jetbrainstoolbox.html
+      - page: 'KeyStore Explorer (Portable)'
         url: /packages/keystoreexplorer.portable.html
-      - page: "Kibana"
+      - page: 'Kibana'
         url: /packages/kibana.html
-      - page: "LastPass"
+      - page: 'LastPass'
         url: /packages/lastpass.html
-      - page: "Lidarr"
+      - page: 'Lidarr'
         url: /packages/lidarr.html
-      - page: "MariaDB"
+      - page: 'MariaDB'
         url: /packages/mariadb.html
-      - page: "MariaDB (Install)"
+      - page: 'MariaDB (Install)'
         url: /packages/mariadb.install.html
-      - page: "MariaDB (Portable)"
+      - page: 'MariaDB (Portable)'
         url: /packages/mariadb.portable.html
-      - page: "Microsoft Baseline Security Analyzer"
+      - page: 'Microsoft Baseline Security Analyzer'
         url: /packages/mbsa.html
-      - page: "MediaInfo"
+      - page: 'MediaInfo'
         url: /packages/mediainfo.html
-      - page: "MediaInfo CLI"
+      - page: 'MediaInfo CLI'
         url: /packages/mediainfocli.html
-      - page: "Meshmixer"
+      - page: 'Meshmixer'
         url: /packages/meshmixer.html
-      - page: "Windows Terminal"
+      - page: 'Windows Terminal'
         url: /packages/microsoftwindowsterminal.html
-      - page: "MongoDB"
+      - page: 'MongoDB'
         url: /packages/mongodb.html
-      - page: "MongoDB (Install)"
+      - page: 'MongoDB (Install)'
         url: /packages/mongodb.install.html
-      - page: "MongoDB (Portable)"
+      - page: 'MongoDB (Portable)'
         url: /packages/mongodb.portable.html
-      - page: "Movie Collector"
+      - page: 'Movie Collector'
         url: /packages/moviecollector.html
-      - page: "MusicBee"
-        url: /packages/musicbee.html
-      - page: "Music Collector"
+      - page: 'Music Collector'
         url: /packages/musiccollector.html
-      - page: "MySQL (Community Server)"
+      - page: 'MusicBee'
+        url: /packages/musicbee.html
+      - page: 'MySQL (Community Server)'
         url: /packages/mysql.html
-      - page: "MySQL Workbench"
+      - page: 'MySQL Workbench'
         url: /packages/mysql.workbench.html
-      - page: "nginx"
+      - page: 'nginx'
         url: /packages/nginx.html
-      - page: "Nullsoft Scriptable Install System"
+      - page: 'Nullsoft Scriptable Install System'
         url: /packages/nsis.html
-      - page: "Nullsoft Scriptable Install System (Install)"
+      - page: 'Nullsoft Scriptable Install System (Install)'
         url: /packages/nsis.install.html
-      - page: "Nullsoft Scriptable Install System (Portable)"
+      - page: 'Nullsoft Scriptable Install System (Portable)'
         url: /packages/nsis.portable.html
-      - page: "OctoFarm"
+      - page: 'OctoFarm'
         url: /packages/octofarm.html
-      - page: "OmniDB-app"
+      - page: 'OmniDB-app'
         url: /packages/omnidbapp.html
-      - page: "OmniDB-server"
+      - page: 'OmniDB-server'
         url: /packages/omnidbserver.html
-      - page: "Openfire"
+      - page: 'Openfire'
         url: /packages/openfire.html
-      - page: "Opera beta"
+      - page: 'Opera beta'
         url: /packages/operabeta.html
-      - page: "Opera Developer"
+      - page: 'Opera Developer'
         url: /packages/operadeveloper.html
-      - page: "Orca"
+      - page: 'Orca'
         url: /packages/orca.html
-      - page: "OrcaSlicer (Install)"
+      - page: 'OrcaSlicer (Install)'
         url: /packages/orcaslicer.install.html
-      - page: "OrientDB (Portable)"
+      - page: 'OrientDB (Portable)'
         url: /packages/orientdb.html
-      - page: "Plexamp"
-        url: /packages/plexamp.html
-      - page: "Plex Home Theater"
+      - page: 'Plex Home Theater'
         url: /packages/plexhometheater.html
-      - page: "Plex Media Player for Windows"
+      - page: 'Plexamp'
+        url: /packages/plexamp.html
+      - page: 'Plex Media Player for Windows'
         url: /packages/plexmediaplayer.html
-      - page: "Plex Media Server"
+      - page: 'Plex Media Server'
         url: /packages/plexmediaserver.html
-      - page: "PostgreSQL"
+      - page: 'PostgreSQL'
         url: /packages/postgresql.html
-      - page: "PowerToys"
+      - page: 'PowerToys'
         url: /packages/powertoys.html
-      - page: "Prowlarr"
+      - page: 'Prowlarr'
         url: /packages/prowlarr.html
-      - page: "PrusaSlicer (Install)"
+      - page: 'PrusaSlicer (Install)'
         url: /packages/prusaslicer.install.html
-      - page: "Psi"
+      - page: 'Psi'
         url: /packages/psi.html
-      - page: "Psi (Install)"
+      - page: 'Psi (Install)'
         url: /packages/psi.install.html
-      - page: "Psi (Portable)"
+      - page: 'Psi (Portable)'
         url: /packages/psi.portable.html
-      - page: "JetBrains Pycharm Professional"
+      - page: 'JetBrains Pycharm Professional'
         url: /packages/pycharm.html
-      - page: "JetBrains PyCharm (Install)"
+      - page: 'JetBrains PyCharm (Install)'
         url: /packages/pycharmcommunity.html
-      - page: "JetBrains Pycharm Educational"
+      - page: 'JetBrains Pycharm Educational'
         url: /packages/pycharmedu.html
-      - page: "QuickPar"
+      - page: 'QuickPar'
         url: /packages/QuickPar.html
-      - page: "Radarr"
+      - page: 'Radarr'
         url: /packages/radarr.html
-      - page: "Readarr"
+      - page: 'Readarr'
         url: /packages/readarr.html
-      - page: "RegDelNull"
+      - page: 'RegDelNull'
         url: /packages/regdelnull.html
-      - page: "Rocrail"
+      - page: 'Rocrail'
         url: /packages/rocrail.html
-      - page: "Samsung Magician"
+      - page: 'Samsung Magician'
         url: /packages/samsungmagician.html
-      - page: "SCARM"
+      - page: 'SCARM'
         url: /packages/scarm.html
-      - page: "Server Backup Agent"
+      - page: 'Server Backup Agent'
         url: /packages/serverbackupagent.html
-      - page: "Signal (Desktop)"
+      - page: 'Signal (Desktop)'
         url: /packages/signal.html
-      - page: "SimulIDE"
+      - page: 'SimulIDE'
         url: /packages/simulide.html
-      - page: "Slack for Windows"
+      - page: 'Slack for Windows'
         url: /packages/slack.html
-      - page: "smartmontools"
+      - page: 'smartmontools'
         url: /packages/smartmontools.html
-      - page: "Sonarr"
+      - page: 'Sonarr'
         url: /packages/sonarr.html
-      - page: "Spark"
+      - page: 'Spark'
         url: /packages/spark.html
-      - page: "SpeedFan"
+      - page: 'SpeedFan'
         url: /packages/speedfan.html
-      - page: "Microsoft System CLR Types for SQL Server 2014"
+      - page: 'Microsoft System CLR Types for SQL Server 2014'
         url: /packages/SQL2014.ClrTypes.html
-      - page: "Microsoft SQL Server 2014 Management Objects"
+      - page: 'Microsoft SQL Server 2014 Management Objects'
         url: /packages/SQL2014.SMO.html
-      - page: "DB Browser for SQLite"
+      - page: 'DB Browser for SQLite'
         url: /packages/sqlitebrowser.html
-      - page: "DB Browser for SQLite (Install)"
+      - page: 'DB Browser for SQLite (Install)'
         url: /packages/sqlitebrowser.install.html
-      - page: "DB Browser for SQLite (Portable)"
+      - page: 'DB Browser for SQLite (Portable)'
         url: /packages/sqlitebrowser.portable.html
-      - page: "SuperPutty"
+      - page: 'SuperPutty'
         url: /packages/superputty.html
-      - page: "SuperPutty (Install)"
+      - page: 'SuperPutty (Install)'
         url: /packages/superputty.install.html
-      - page: "SuperPutty (Portable)"
+      - page: 'SuperPutty (Portable)'
         url: /packages/superputty.portable.html
-      - page: "Swift for Windows"
+      - page: 'Swift for Windows'
         url: /packages/swiftforwindows.html
-      - page: "TCPVcon"
+      - page: 'TCPVcon'
         url: /packages/tcpvcon.html
-      - page: "TeXstudio"
+      - page: 'TeXstudio'
         url: /packages/texstudio.html
-      - page: "TeXstudio (Install)"
+      - page: 'TeXstudio (Install)'
         url: /packages/texstudio.install.html
-      - page: "TeXstudio (Portable)"
+      - page: 'TeXstudio (Portable)'
         url: /packages/texstudio.portable.html
-      - page: "Thonny"
+      - page: 'Thonny'
         url: /packages/thonny.html
-      - page: "TomTom MyDrive Connect"
+      - page: 'TomTom MyDrive Connect'
         url: /packages/tomtommydriveconnect.html
-      - page: "Trillian"
+      - page: 'Trillian'
         url: /packages/trillian.html
-      - page: "UltraISO"
+      - page: 'UltraISO'
         url: /packages/ultraiso.html
-      - page: "UltraVNC"
+      - page: 'UltraVNC'
         url: /packages/ultravnc.html
-      - page: "Veeam helpers extension"
-        url: /packages/veeam.extension.html
-      - page: "Veeam Agent for Microsoft Windows"
+      - page: 'Veeam Agent for Microsoft Windows'
         url: /packages/veeamagent.html
-      - page: "Veeam Backup & Replication Catalog"
+      - page: 'Veeam Backup & Replication Catalog'
         url: /packages/veeambackupandreplicationcatalog.html
-      - page: "Veeam Backup & Replication Console"
+      - page: 'Veeam Backup & Replication Console'
         url: /packages/veeambackupandreplicationconsole.html
-      - page: "Veeam Backup & Replication Extract Utility"
+      - page: 'Veeam Backup & Replication Extract Utility'
         url: /packages/veeambackupandreplicationextract.html
-      - page: "Veeam Backup & Replication ISO downloader"
+      - page: 'Veeam Backup & Replication ISO downloader'
         url: /packages/veeambackupandreplicationiso.html
-      - page: "Veeam Backup & Replication Management Console"
+      - page: 'Veeam Backup & Replication Management Console'
         url: /packages/veeambackupandreplicationmanagement.html
-      - page: "Veeam Backup & Replication Server"
+      - page: 'Veeam Backup & Replication Server'
         url: /packages/veeambackupandreplicationserver.html
-      - page: "Veeam Backup for Microsoft 365"
+      - page: 'Veeam Backup for Microsoft 365'
         url: /packages/veeambackupformicrosoft365.html
-      - page: "Veeam Backup for Microsoft 365 Console"
+      - page: 'Veeam Backup for Microsoft 365 Console'
         url: /packages/veeambackupformicrosoft365console.html
-      - page: "Veeam Backup Microsoft 365 ISO downloader"
+      - page: 'Veeam Backup Microsoft 365 ISO downloader'
         url: /packages/veeambackupformicrosoft365iso.html
-      - page: "Veeam Backup for Microsoft 365 Management Console"
+      - page: 'Veeam Backup for Microsoft 365 Management Console'
         url: /packages/veeambackupformicrosoft365management.html
-      - page: "Veeam Backup for Microsoft 365 REST API & Restore Portal"
+      - page: 'Veeam Backup for Microsoft 365 REST API & Restore Portal'
         url: /packages/veeambackupformicrosoft365restapi.html
-      - page: "Veeam Backup for Microsoft 365 Server"
+      - page: 'Veeam Backup for Microsoft 365 Server'
         url: /packages/veeambackupformicrosoft365server.html
-      - page: "[Deprecated] Veeam Backup for Microsoft Office 365"
+      - page: '[Deprecated] Veeam Backup for Microsoft Office 365'
         url: /packages/veeambackupformicrosoftoffice365.html
-      - page: "[Deprecated] Veeam Backup for Microsoft Office 365 Console"
+      - page: '[Deprecated] Veeam Backup for Microsoft Office 365 Console'
         url: /packages/veeambackupformicrosoftoffice365console.html
-      - page: "[Deprecated] Veeam Backup for Microsoft Office 365 Management Console"
+      - page: '[Deprecated] Veeam Backup for Microsoft Office 365 Management Console'
         url: /packages/veeambackupformicrosoftoffice365management.html
-      - page: "Veeam Explorer for Microsoft Active Directory"
+      - page: 'Veeam Explorer for Microsoft Active Directory'
         url: /packages/veeamexplorerformicrosoftactivedirectory.html
-      - page: "Veeam Explorer for Microsoft Exchange"
+      - page: 'Veeam Explorer for Microsoft Exchange'
         url: /packages/veeamexplorerformicrosoftexchange.html
-      - page: "Veeam Explorer for Microsoft Exchange for Microsoft 365"
+      - page: 'Veeam Explorer for Microsoft Exchange for Microsoft 365'
         url: /packages/veeamexplorerformicrosoftexchangem365.html
-      - page: "[Deprecated] Veeam Explorer for Microsoft Exchange for Microsoft o365"
+      - page: '[Deprecated] Veeam Explorer for Microsoft Exchange for Microsoft o365'
         url: /packages/veeamexplorerformicrosoftexchangeo365.html
-      - page: "Veeam Explorer for Microsoft SharePoint"
+      - page: 'Veeam Explorer for Microsoft SharePoint'
         url: /packages/veeamexplorerformicrosoftsharepoint.html
-      - page: "Veeam Explorer for Microsoft SharePoint for Microsoft 365"
+      - page: 'Veeam Explorer for Microsoft SharePoint for Microsoft 365'
         url: /packages/veeamexplorerformicrosoftsharepointm365.html
-      - page: "[Deprecated] Veeam Explorer for Microsoft SharePoint for Microsoft o365"
+      - page: '[Deprecated] Veeam Explorer for Microsoft SharePoint for Microsoft o365'
         url: /packages/veeamexplorerformicrosoftsharepointo365.html
-      - page: "Veeam Explorer for Microsoft SQL Server"
+      - page: 'Veeam Explorer for Microsoft SQL Server'
         url: /packages/veeamexplorerformicrosoftsqlserver.html
-      - page: "Veeam Explorer for Microsoft Teams"
+      - page: 'Veeam Explorer for Microsoft Teams'
         url: /packages/veeamexplorerformicrosoftteams.html
-      - page: "Veeam Explorer for Microsoft Teams for Microsoft 365"
+      - page: 'Veeam Explorer for Microsoft Teams for Microsoft 365'
         url: /packages/veeamexplorerformicrosoftteamsm365.html
-      - page: "[Deprecated] Veeam Explorer for Microsoft Teams for Microsoft o365"
+      - page: '[Deprecated] Veeam Explorer for Microsoft Teams for Microsoft o365'
         url: /packages/veeamexplorerformicrosoftteamso365.html
-      - page: "Veeam Explorer for Oracle"
+      - page: 'Veeam Explorer for Oracle'
         url: /packages/veeamexplorerfororacle.html
-      - page: "Veeam ONE Agent"
+      - page: 'Veeam ONE Agent'
         url: /packages/veeamoneagent.html
-      - page: "Veeam ONE Caching Service"
+      - page: 'Veeam ONE Caching Service'
         url: /packages/veeamonecachingservice.html
-      - page: "Veeam ONE ISO downloader"
+      - page: 'Veeam ONE ISO downloader'
         url: /packages/veeamoneiso.html
-      - page: "Veeam ONE Monitor Client"
+      - page: 'Veeam ONE Monitor Client'
         url: /packages/veeamonemonitorclient.html
-      - page: "Veeam ONE Monitor Server"
+      - page: 'Veeam ONE Monitor Server'
         url: /packages/veeamonemonitorserver.html
-      - page: "Veeam ONE Reporter Server"
+      - page: 'Veeam ONE Reporter Server'
         url: /packages/veeamonereporterserver.html
-      - page: "Veeam ONE Reporter Web UI"
+      - page: 'Veeam ONE Reporter Web UI'
         url: /packages/veeamonereporterweb.html
-      - page: "Veeam ONE Updater"
+      - page: 'Veeam ONE Updater'
         url: /packages/veeamoneupdater.html
-      - page: "Veeam Updater Plug-in for Veeam ONE"
+      - page: 'Veeam Updater Plug-in for Veeam ONE'
         url: /packages/veeamoneupdaterplugin.html
-      - page: "[Deprecated] Veeam Service Provider Console ConnectWise Automate Plugin"
+      - page: '[Deprecated] Veeam Service Provider Console ConnectWise Automate Plugin'
         url: /packages/veeamserviceproviderconsoleconnectwiseautomateplugin.html
-      - page: "Veeam Service Provider Console Application Server for Veeam ConnectWise Manage Plugin"
+      - page: 'Veeam Service Provider Console Application Server for Veeam ConnectWise Manage Plugin'
         url: /packages/veeamserviceproviderconsoleconnectwisemanageservice.html
-      - page: "Veeam Service Provider Console Application Server Web UI for Veeam ConnectWise Manage Plugin"
+      - page: 'Veeam Service Provider Console Application Server Web UI for Veeam ConnectWise Manage Plugin'
         url: /packages/veeamserviceproviderconsoleconnectwisemanagewebui.html
-      - page: "Veeam Service Provider Console ISO downloader"
+      - page: 'Veeam Service Provider Console ISO downloader'
         url: /packages/veeamserviceproviderconsoleiso.html
-      - page: "Veeam Service Provider Console Management Agent"
+      - page: 'Veeam Service Provider Console Management Agent'
         url: /packages/veeamserviceproviderconsolemanagementagent.html
-      - page: "Veeam Service Provider Console Application Server"
+      - page: 'Veeam Service Provider Console Application Server'
         url: /packages/veeamserviceproviderconsoleserver.html
-      - page: "Veeam Service Provider Console Application Server for Self-Service Portal for Veeam Agents"
+      - page: 'Veeam Service Provider Console Application Server for Self-Service Portal for Veeam Agents'
         url: /packages/veeamserviceproviderconsolesspagentservice.html
-      - page: "Veeam Service Provider Console Self-Service Portal APIs for Veeam Agents"
+      - page: 'Veeam Service Provider Console Self-Service Portal APIs for Veeam Agents'
         url: /packages/veeamserviceproviderconsolesspagentwebui.html
-      - page: "Veeam Service Provider Console Veeam Updater"
+      - page: 'Veeam Service Provider Console Veeam Updater'
         url: /packages/veeamserviceproviderconsoleupdater.html
-      - page: "Veeam Service Provider Console Veeam Updater Plugin"
+      - page: 'Veeam Service Provider Console Veeam Updater Plugin'
         url: /packages/veeamserviceproviderconsoleupdaterplugin.html
-      - page: "Veeam Service Provider Console WebUI"
+      - page: 'Veeam Service Provider Console WebUI'
         url: /packages/veeamserviceproviderconsolewebui.html
-      - page: "Veusz (Install)"
+      - page: 'Veeam helpers extension'
+        url: /packages/veeam.extension.html
+      - page: 'Veusz (Install)'
         url: /packages/veusz.html
-      - page: "Viber"
+      - page: 'Viber'
         url: /packages/viber.html
-      - page: "VLC Nightly"
+      - page: 'VLC Nightly'
         url: /packages/vlcnightly.html
-      - page: "Ansible VSCode Extension"
+      - page: 'Ansible VSCode Extension'
         url: /packages/vscodeansible.html
-      - page: "Puppet VSCode Extension"
+      - page: 'Puppet VSCode Extension'
         url: /packages/vscodepuppet.html
-      - page: "Ruby VSCode Extension"
+      - page: 'Ruby VSCode Extension'
         url: /packages/vscoderuby.html
-      - page: "Live Share VSCode Extension"
+      - page: 'Live Share VSCode Extension'
         url: /packages/vscodevsliveshare.html
-      - page: "YAML VSCode Extension"
+      - page: 'YAML VSCode Extension'
         url: /packages/vscodeyaml.html
-      - page: "IBM 3270 terminal emulator"
+      - page: 'IBM 3270 terminal emulator'
         url: /packages/wc3270.html
-      - page: "IBM 3270 terminal emulator (Install)"
+      - page: 'IBM 3270 terminal emulator (Install)'
         url: /packages/wc3270.install.html
-      - page: "IBM 3270 terminal emulator (Portable)"
+      - page: 'IBM 3270 terminal emulator (Portable)'
         url: /packages/wc3270.portable.html
-      - page: "WD Backup"
+      - page: 'WD Backup'
         url: /packages/wdbackup.html
-      - page: "WD Security for Windows"
+      - page: 'WD Security for Windows'
         url: /packages/wdsecurity.html
-      - page: "WD Smartware for Windows"
+      - page: 'WD Smartware for Windows'
         url: /packages/wdsmartware.html
-      - page: "WifiInfoView"
+      - page: 'WifiInfoView'
         url: /packages/wifiinfoview.html
-      - page: "Win32 Disk Imager"
+      - page: 'Win32 Disk Imager'
         url: /packages/win32diskimager.html
-      - page: "Win32 Disk Imager (Install)"
+      - page: 'Win32 Disk Imager (Install)'
         url: /packages/win32diskimager.install.html
-      - page: "Win32 Disk Imager (Portable)"
+      - page: 'Win32 Disk Imager (Portable)'
         url: /packages/win32diskimager.portable.html
-      - page: "Windows Repair"
+      - page: 'Windows Repair'
         url: /packages/windowsrepair.html
-      - page: "Windows Repair (Install)"
+      - page: 'Windows Repair (Install)'
         url: /packages/windowsrepair.install.html
-      - page: "Windows Repair (Portable)"
+      - page: 'Windows Repair (Portable)'
         url: /packages/windowsrepair.portable.html
-      - page: "WinRAR"
+      - page: 'WinRAR'
         url: /packages/winrar.html
-      - page: "WirelessNetView"
+      - page: 'WirelessNetView'
         url: /packages/wirelessnetview.html
-      - page: "WirelessNetView (Install)"
+      - page: 'WirelessNetView (Install)'
         url: /packages/wirelessnetview.install.html
-      - page: "WirelessNetView (Portable)"
+      - page: 'WirelessNetView (Portable)'
         url: /packages/wirelessnetview.portable.html
-      - page: "Wireshark"
+      - page: 'Wireshark'
         url: /packages/wireshark.html
-      - page: "Wireless Network Watcher"
+      - page: 'Wireless Network Watcher'
         url: /packages/wnetwatcher.html
-      - page: "Wireless Network Watcher (Install)"
+      - page: 'Wireless Network Watcher (Install)'
         url: /packages/wnetwatcher.install.html
-      - page: "Wireless Network Watcher (Portable)"
+      - page: 'Wireless Network Watcher (Portable)'
         url: /packages/wnetwatcher.portable.html
-      - page: "Writage"
+      - page: 'Writage'
         url: /packages/writage.html
-      - page: "Zabbix Agent"
+      - page: 'Zabbix Agent'
         url: /packages/zabbixagent.html
-      - page: "Zabbix Agent (Install)"
+      - page: 'Zabbix Agent (Install)'
         url: /packages/zabbixagent.install.html
-      - page: "Zabbix Agent 2"
+      - page: 'Zabbix Agent 2'
         url: /packages/zabbixagent2.html
-      - page: "zerotier-one (Install)"
+      - page: 'zerotier-one (Install)'
         url: /packages/zerotierone.html
-      - page: "Zettlr"
+      - page: 'Zettlr'
         url: /packages/zettlr.html
-

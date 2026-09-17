@@ -1,6 +1,7 @@
 # Veeam helpers extension
 
-Chocolatey extension with helper functions for Veeam packages (parameter validation, silent argument building, and ISO patch installation).
+Chocolatey extension with helper functions for Veeam packages (parameter
+validation, silent argument building, and ISO patch installation).
 
 **NOTE**: Requires PowerShell 3 or higher.
 
@@ -18,7 +19,8 @@ Add as a dependency in your package nuspec:
 
 ## Usage
 
-Functions are available when the extension is installed as a dependency. To test interactively, import the modules:
+Functions are available when the extension is installed as a dependency. To test
+interactively, import the modules:
 
 ```powershell
 Import-Module $Env:ChocolateyInstall\helpers\chocolateyInstaller.psm1
@@ -69,6 +71,11 @@ Install-VeeamIsoPatchIfNeeded `
 
 ### Functions
 
-- `Invoke-PackageParameterValidation`: Validates required and dependent parameters and normalizes values based on simple rule types (ZeroOrOne, ZeroOneOrTwo, OneOrTwo, Path, String, Integer, Boolean).
-- `Add-SilentArgument`: Adds trimmed installer arguments to a `List[string]` when non-empty.
-- `Install-VeeamIsoPatchIfNeeded`: Reads a Veeam settings XML to find product/global patch entries, copies the patch from the ISO, and installs it when required.
+- `Invoke-PackageParameterValidation`: Validates required and dependent
+  parameters and normalizes values based on simple rule types (ZeroOrOne,
+  ZeroOneOrTwo, OneOrTwo, Path, String, Integer, Boolean).
+- `Add-SilentArgument`: Adds trimmed installer arguments to a `List[string]`
+  when non-empty.
+- `Install-VeeamIsoPatchIfNeeded`: Reads a Veeam settings XML to find
+  product/global patch entries, copies the patch from the ISO, and installs it
+  when required.

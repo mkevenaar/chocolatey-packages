@@ -1,19 +1,24 @@
-﻿# Invoke-PackageParameterValidation
+# Invoke-PackageParameterValidation
 
-<!-- This documentation is automatically generated from https://github.com/mkevenaar/chocolatey-packages/tree/master//extensions/veeam.extension/extensions/Invoke-PackageParameterValidation.ps1 using https://github.com/mkevenaar/chocolatey-packages/tree/master/GenerateDocs.ps1. Contributions are welcome at the original location(s). -->
+<!--
+This documentation is automatically generated from
+https://github.com/mkevenaar/chocolatey-packages/tree/master/extensions/veeam.extension/extensions/Invoke-PackageParameterValidation.ps1
+using https://github.com/mkevenaar/chocolatey-packages/tree/master/GenerateDocs.ps1.
+Contributions are welcome at the original location(s).
+-->
 
-Validates and normalizes Chocolatey package parameters based on simple rule types.
+Validates and normalizes Chocolatey package parameters based on simple rule
+types.
 
 ## Syntax
 
-
-~~~powershell
+```powershell
 Invoke-PackageParameterValidation `
   -Parameters <Hashtable> `
   -Rules <Hashtable> `
   [-RequiredParameters <String[]>] `
   [-Dependencies <Object[]>] [<CommonParameters>]
-~~~
+```
 
 ## Description
 
@@ -22,17 +27,15 @@ Ensures required and dependent parameters are present, trims values, and
 normalizes booleans to '1' or '0'. Throws descriptive errors when a parameter
 fails validation.
 
-
 ## Aliases
 
 None
 
 ## Examples
 
- **EXAMPLE 1**
+### EXAMPLE 1
 
-~~~powershell
-
+```powershell
 $pp = Get-PackageParameters
 $rules = @{
   installDir            = 'Path'
@@ -48,8 +51,7 @@ $dependencies = @(
   }
 )
 Invoke-PackageParameterValidation -Parameters $pp -Rules $rules -RequiredParameters @('installDir') -Dependencies $dependencies
-~~~ 
-
+```
 
 ## Inputs
 
@@ -61,66 +63,76 @@ None
 
 ## Parameters
 
+### -Parameters &lt;Hashtable&gt;
 
-###  -Parameters &lt;Hashtable&gt;
 Hashtable of parameters, typically the result of Get-PackageParameters. Values
 are updated in place when trimmed or normalized.
 
-Property               | Value
----------------------- | -----
-Aliases                | 
-Required?              | true
-Position?              | 1
-Default Value          | 
-Accept Pipeline Input? | false
- 
-###  -Rules &lt;Hashtable&gt;
+| Property | Value |
+| -------- | ----- |
+| Aliases | |
+| Required? | true |
+| Position? | 1 |
+| Default Value | |
+| Accept Pipeline Input? | false |
+
+### -Rules &lt;Hashtable&gt;
+
 Hashtable mapping parameter names to rule types. Supported types:
 ZeroOrOne, ZeroOneOrTwo, OneOrTwo, Path, String, Integer, Boolean.
 
-Property               | Value
----------------------- | -----
-Aliases                | 
-Required?              | true
-Position?              | 2
-Default Value          | 
-Accept Pipeline Input? | false
- 
-###  -RequiredParameters [&lt;String[]&gt;]
+| Property | Value |
+| -------- | ----- |
+| Aliases | |
+| Required? | true |
+| Position? | 2 |
+| Default Value | |
+| Accept Pipeline Input? | false |
+
+### -RequiredParameters [&lt;String[]&gt;]
+
 Names of package parameters that must be supplied with a non-empty value.
 
-Property               | Value
----------------------- | -----
-Aliases                | 
-Required?              | false
-Position?              | 3
-Default Value          | @()
-Accept Pipeline Input? | false
- 
-###  -Dependencies [&lt;Object[]&gt;]
+| Property | Value |
+| -------- | ----- |
+| Aliases | |
+| Required? | false |
+| Position? | 3 |
+| Default Value | @() |
+| Accept Pipeline Input? | false |
+
+### -Dependencies [&lt;Object[]&gt;]
+
 Dependency rules for conditionally required parameters. Each rule is a
 hashtable with Parameter and Requires keys. An optional Value key limits the
 rule to the specified normalized parameter value.
 
-Property               | Value
----------------------- | -----
-Aliases                | 
-Required?              | false
-Position?              | 4
-Default Value          | @()
-Accept Pipeline Input? | false
- 
+| Property | Value |
+| -------- | ----- |
+| Aliases | |
+| Required? | false |
+| Position? | 4 |
+| Default Value | @() |
+| Accept Pipeline Input? | false |
+
 ### &lt;CommonParameters&gt;
 
-This cmdlet supports the common parameters: -Verbose, -Debug, -ErrorAction, -ErrorVariable, -OutBuffer, and -OutVariable. For more information, see `about_CommonParameters` http://go.microsoft.com/fwlink/p/?LinkID=113216 .
-
+This cmdlet supports the common parameters. For more information, see
+[about_CommonParameters](http://go.microsoft.com/fwlink/p/?LinkID=113216).
 
 ## Links
 
+- [https://mkevenaar.github.io/chocolatey-packages/veeam.extension/HelpersInvokePackageParameterValidation.html](https://mkevenaar.github.io/chocolatey-packages/veeam.extension/HelpersInvokePackageParameterValidation.html)
 
+[Extension documentation](Index.html)
 
-[[Function Reference|HelpersReference]]
+***NOTE:*** This documentation has been automatically generated using:
 
-***NOTE:*** This documentation has been automatically generated from `Import-Module "$env:ChocolateyInstalls\veeams\veeam.psm1" -Force; Get-Help Invoke-PackageParameterValidation -Full`.
+```powershell
+$extensionPath = Join-Path $env:ChocolateyInstall 'extensions\veeam'
+Import-Module (Join-Path $extensionPath 'veeam.psm1') -Force
+Get-Help Invoke-PackageParameterValidation -Full
+```
 
-View the source for [Invoke-PackageParameterValidation](https://github.com/mkevenaar/chocolatey-packages/tree/master//extensions/veeam.extension/extensions/Invoke-PackageParameterValidation.ps1)
+View the source for
+[Invoke-PackageParameterValidation](https://github.com/mkevenaar/chocolatey-packages/tree/master/extensions/veeam.extension/extensions/Invoke-PackageParameterValidation.ps1)

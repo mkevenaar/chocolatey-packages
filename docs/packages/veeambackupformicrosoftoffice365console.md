@@ -1,20 +1,35 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ec5c8311275798f228e45671f705c3f693edc8bc/icons/veeam-backup-for-microsoft-office-365-console.png" width="32" height="32"/> [![[Deprecated] Veeam Backup for Microsoft Office 365 Console](https://img.shields.io/chocolatey/v/veeam-backup-for-microsoft-office-365-console.svg?label=%5BDeprecated%5D+Veeam+Backup+for+Microsoft+Office+365+Console)](https://community.chocolatey.org/packages/veeam-backup-for-microsoft-office-365-console) [![[Deprecated] Veeam Backup for Microsoft Office 365 Console](https://img.shields.io/chocolatey/dt/veeam-backup-for-microsoft-office-365-console.svg)](https://community.chocolatey.org/packages/veeam-backup-for-microsoft-office-365-console)
+# \[Deprecated\] Veeam Backup for Microsoft Office 365 Console
+
+<img
+  src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@ec5c8311275798f228e45671f705c3f693edc8bc/icons/veeam-backup-for-microsoft-office-365-console.png"
+  alt="Package icon"
+  width="32" height="32"/>
+
+[![Chocolatey version][choco-docs-version]][choco-docs-package]
+[![Chocolatey downloads][choco-docs-downloads]][choco-docs-package]
+
+[choco-docs-version]: <https://img.shields.io/chocolatey/v/veeam-backup-for-microsoft-office-365-console.svg?label=%5BDeprecated%5D+Veeam+Backup+for+Microsoft+Office+365+Console>
+[choco-docs-downloads]: <https://img.shields.io/chocolatey/dt/veeam-backup-for-microsoft-office-365-console.svg>
+[choco-docs-package]: <https://community.chocolatey.org/packages/veeam-backup-for-microsoft-office-365-console>
 
 ## Usage
 
-To install [Deprecated] Veeam Backup for Microsoft Office 365 Console, run the following command from the command line or from PowerShell:
+To install \[Deprecated\] Veeam Backup for Microsoft Office 365 Console, run the
+following command:
 
 ```powershell
 choco install veeam-backup-for-microsoft-office-365-console
 ```
 
-To upgrade [Deprecated] Veeam Backup for Microsoft Office 365 Console, run the following command from the command line or from PowerShell:
+To upgrade \[Deprecated\] Veeam Backup for Microsoft Office 365 Console, run the
+following command:
 
 ```powershell
 choco upgrade veeam-backup-for-microsoft-office-365-console
 ```
 
-To uninstall [Deprecated] Veeam Backup for Microsoft Office 365 Console, run the following command from the command line or from PowerShell:
+To uninstall \[Deprecated\] Veeam Backup for Microsoft Office 365 Console, run
+the following command:
 
 ```powershell
 choco uninstall veeam-backup-for-microsoft-office-365-console
@@ -24,28 +39,34 @@ choco uninstall veeam-backup-for-microsoft-office-365-console
 
 DEPRECATED!
 
-Veeam Backup for Microsoft Office 365 is a comprehensive solution that allows you to back up and restore data of your Microsoft Office 365, on-premises Microsoft Exchange and on-premises Microsoft SharePoint organizations, including Microsoft OneDrive for Business.
+Veeam Backup for Microsoft Office 365 is a comprehensive solution that allows
+you to back up and restore data of your Microsoft Office 365, on-premises
+Microsoft Exchange and on-premises Microsoft SharePoint organizations, including
+Microsoft OneDrive for Business.
 
 This package installs the following software by default:
 
-* Veeam Backup for Microsoft Office 365 Console
-* Veeam Backup for Microsoft Office 365 PowerShell
+- Veeam Backup for Microsoft Office 365 Console
+- Veeam Backup for Microsoft Office 365 PowerShell
 
-To have choco remember parameters on upgrade, be sure to set `choco feature enable -n=useRememberedArgumentsForUpgrades`.
+To have choco remember parameters on upgrade, be sure to set
+`choco feature enable -n=useRememberedArgumentsForUpgrades`.
 
 ### Package Parameters
 
 The package accepts the following optional parameters:
 
-* `/console` - Only install Veeam Backup for Microsoft Office 365 Console
-* `/powershell` - Only install Veeam Backup for Microsoft Office 365 PowerShell
+- `/console` - Only install Veeam Backup for Microsoft Office 365 Console
+- `/powershell` - Only install Veeam Backup for Microsoft Office 365 PowerShell
 
-**NOTE** These parameters can be combined. e.g. `-params '"/console"'` to only install the Console part.
+**NOTE** These parameters can be combined. e.g. `-params '"/console"'` to only
+install the Console part.
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
-let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) that the package is no longer updating correctly.
-
+let them know
+[package update issues](https://github.com/mkevenaar/chocolatey-packages/issues)
+that the package is no longer updating correctly.
 
 ## Links
 
@@ -54,4 +75,3 @@ let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) th
 [Software Site](http://www.veeam.com/)
 
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/deprecated/veeam-backup-for-microsoft-office-365-console)
-

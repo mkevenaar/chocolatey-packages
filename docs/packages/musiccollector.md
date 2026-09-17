@@ -1,20 +1,32 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@a06d6a19bb5dcb0ef64e72a8336d7e4cb0fe88e0/icons/music-collector.png" width="32" height="32"/> [![Music Collector](https://img.shields.io/chocolatey/v/music-collector.svg?label=Music+Collector)](https://community.chocolatey.org/packages/music-collector) [![Music Collector](https://img.shields.io/chocolatey/dt/music-collector.svg)](https://community.chocolatey.org/packages/music-collector)
+# Music Collector
+
+<img
+  src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@a06d6a19bb5dcb0ef64e72a8336d7e4cb0fe88e0/icons/music-collector.png"
+  alt="Package icon"
+  width="32" height="32"/>
+
+[![Chocolatey version][choco-docs-version]][choco-docs-package]
+[![Chocolatey downloads][choco-docs-downloads]][choco-docs-package]
+
+[choco-docs-version]: <https://img.shields.io/chocolatey/v/music-collector.svg?label=Music+Collector>
+[choco-docs-downloads]: <https://img.shields.io/chocolatey/dt/music-collector.svg>
+[choco-docs-package]: <https://community.chocolatey.org/packages/music-collector>
 
 ## Usage
 
-To install Music Collector, run the following command from the command line or from PowerShell:
+To install Music Collector, run the following command:
 
 ```powershell
 choco install music-collector
 ```
 
-To upgrade Music Collector, run the following command from the command line or from PowerShell:
+To upgrade Music Collector, run the following command:
 
 ```powershell
 choco upgrade music-collector
 ```
 
-To uninstall Music Collector, run the following command from the command line or from PowerShell:
+To uninstall Music Collector, run the following command:
 
 ```powershell
 choco uninstall music-collector
@@ -28,8 +40,9 @@ Browse, sort and search your music collection in various layouts and views
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
-let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) that the package is no longer updating correctly.
-
+let them know
+[package update issues](https://github.com/mkevenaar/chocolatey-packages/issues)
+that the package is no longer updating correctly.
 
 ## Links
 
@@ -38,4 +51,3 @@ let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) th
 [Software Site](https://www.collectorz.com/music/music-collector)
 
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/music-collector)
-

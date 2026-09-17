@@ -1,20 +1,32 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@02cb0f9840085af5af579771da19ff025d88058f/icons/chromecacheview.png" width="32" height="32"/> [![ChromeCacheView](https://img.shields.io/chocolatey/v/chromecacheview.svg?label=ChromeCacheView)](https://community.chocolatey.org/packages/chromecacheview) [![ChromeCacheView](https://img.shields.io/chocolatey/dt/chromecacheview.svg)](https://community.chocolatey.org/packages/chromecacheview)
+# ChromeCacheView
+
+<img
+  src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@02cb0f9840085af5af579771da19ff025d88058f/icons/chromecacheview.png"
+  alt="Package icon"
+  width="32" height="32"/>
+
+[![Chocolatey version][choco-docs-version]][choco-docs-package]
+[![Chocolatey downloads][choco-docs-downloads]][choco-docs-package]
+
+[choco-docs-version]: <https://img.shields.io/chocolatey/v/chromecacheview.svg?label=ChromeCacheView>
+[choco-docs-downloads]: <https://img.shields.io/chocolatey/dt/chromecacheview.svg>
+[choco-docs-package]: <https://community.chocolatey.org/packages/chromecacheview>
 
 ## Usage
 
-To install ChromeCacheView, run the following command from the command line or from PowerShell:
+To install ChromeCacheView, run the following command:
 
 ```powershell
 choco install chromecacheview
 ```
 
-To upgrade ChromeCacheView, run the following command from the command line or from PowerShell:
+To upgrade ChromeCacheView, run the following command:
 
 ```powershell
 choco upgrade chromecacheview
 ```
 
-To uninstall ChromeCacheView, run the following command from the command line or from PowerShell:
+To uninstall ChromeCacheView, run the following command:
 
 ```powershell
 choco uninstall chromecacheview
@@ -22,16 +34,21 @@ choco uninstall chromecacheview
 
 ## Description
 
-ChromeCacheView is a small utility that reads the cache folder of Google Chrome Web browser, and displays the list of all files currently stored in the cache.
+ChromeCacheView is a small utility that reads the cache folder of Google Chrome
+Web browser, and displays the list of all files currently stored in the cache.
 
-For each cache file, the following information is displayed: URL, Content type, File size, Last accessed time, Expiration time, Server name, Server response, and more.
+For each cache file, the following information is displayed: URL, Content type,
+File size, Last accessed time, Expiration time, Server name, Server response,
+and more.
 
-You can easily select one or more items from the cache list, and then extract the files to another folder, or copy the URLs list to the clipboard.
+You can easily select one or more items from the cache list, and then extract
+the files to another folder, or copy the URLs list to the clipboard.
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
-let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) that the package is no longer updating correctly.
-
+let them know
+[package update issues](https://github.com/mkevenaar/chocolatey-packages/issues)
+that the package is no longer updating correctly.
 
 ## Links
 
@@ -40,4 +57,3 @@ let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) th
 [Software Site](http://www.nirsoft.net/utils/chrome_cache_view.html)
 
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/chromecacheview)
-

@@ -1,20 +1,32 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@014e3dda4ace9d5a4c8b8846c795969a36429bd2/icons/speedfan.png" width="32" height="32"/> [![SpeedFan](https://img.shields.io/chocolatey/v/speedfan.svg?label=SpeedFan)](https://community.chocolatey.org/packages/speedfan) [![SpeedFan](https://img.shields.io/chocolatey/dt/speedfan.svg)](https://community.chocolatey.org/packages/speedfan)
+# SpeedFan
+
+<img
+  src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@014e3dda4ace9d5a4c8b8846c795969a36429bd2/icons/speedfan.png"
+  alt="Package icon"
+  width="32" height="32"/>
+
+[![Chocolatey version][choco-docs-version]][choco-docs-package]
+[![Chocolatey downloads][choco-docs-downloads]][choco-docs-package]
+
+[choco-docs-version]: <https://img.shields.io/chocolatey/v/speedfan.svg?label=SpeedFan>
+[choco-docs-downloads]: <https://img.shields.io/chocolatey/dt/speedfan.svg>
+[choco-docs-package]: <https://community.chocolatey.org/packages/speedfan>
 
 ## Usage
 
-To install SpeedFan, run the following command from the command line or from PowerShell:
+To install SpeedFan, run the following command:
 
 ```powershell
 choco install speedfan
 ```
 
-To upgrade SpeedFan, run the following command from the command line or from PowerShell:
+To upgrade SpeedFan, run the following command:
 
 ```powershell
 choco upgrade speedfan
 ```
 
-To uninstall SpeedFan, run the following command from the command line or from PowerShell:
+To uninstall SpeedFan, run the following command:
 
 ```powershell
 choco uninstall speedfan
@@ -22,15 +34,21 @@ choco uninstall speedfan
 
 ## Description
 
-SpeedFan is a program that monitors voltages, fan speeds and temperatures in computers with hardware monitor chips. SpeedFan can even access S.M.A.R.T. info and show hard disk temperatures. SpeedFan supports SCSI disks too. SpeedFan can even change the FSB on some hardware (but this should be considered a bonus feature). SpeedFan can access digital temperature sensors and can change fan speeds accordingly, thus reducing noise.
+SpeedFan is a program that monitors voltages, fan speeds and temperatures in
+computers with hardware monitor chips. SpeedFan can even access S.M.A.R.T. info
+and show hard disk temperatures. SpeedFan supports SCSI disks too. SpeedFan can
+even change the FSB on some hardware (but this should be considered a bonus
+feature). SpeedFan can access digital temperature sensors and can change fan
+speeds accordingly, thus reducing noise.
 
 [FAQ](http://www.almico.com/sffaq.php)
 [User forum](http://www.almico.com/forumindex.php)
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
-let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) that the package is no longer updating correctly.
-
+let them know
+[package update issues](https://github.com/mkevenaar/chocolatey-packages/issues)
+that the package is no longer updating correctly.
 
 ## Links
 
@@ -39,4 +57,3 @@ let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) th
 [Software Site](http://www.almico.com/speedfan.php)
 
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/speedfan)
-

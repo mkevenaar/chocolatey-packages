@@ -1,20 +1,35 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4026af40d08833be884912dc18e38edd83131a83/icons/veeam-explorer-for-microsoft-teams-m365.png" width="32" height="32"/> [![Veeam Explorer for Microsoft Teams for Microsoft 365](https://img.shields.io/chocolatey/v/veeam-explorer-for-microsoft-teams-m365.svg?label=Veeam+Explorer+for+Microsoft+Teams+for+Microsoft+365)](https://community.chocolatey.org/packages/veeam-explorer-for-microsoft-teams-m365) [![Veeam Explorer for Microsoft Teams for Microsoft 365](https://img.shields.io/chocolatey/dt/veeam-explorer-for-microsoft-teams-m365.svg)](https://community.chocolatey.org/packages/veeam-explorer-for-microsoft-teams-m365)
+# Veeam Explorer for Microsoft Teams for Microsoft 365
+
+<img
+  src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@4026af40d08833be884912dc18e38edd83131a83/icons/veeam-explorer-for-microsoft-teams-m365.png"
+  alt="Package icon"
+  width="32" height="32"/>
+
+[![Chocolatey version][choco-docs-version]][choco-docs-package]
+[![Chocolatey downloads][choco-docs-downloads]][choco-docs-package]
+
+[choco-docs-version]: <https://img.shields.io/chocolatey/v/veeam-explorer-for-microsoft-teams-m365.svg?label=Veeam+Explorer+for+Microsoft+Teams+for+Microsoft+365>
+[choco-docs-downloads]: <https://img.shields.io/chocolatey/dt/veeam-explorer-for-microsoft-teams-m365.svg>
+[choco-docs-package]: <https://community.chocolatey.org/packages/veeam-explorer-for-microsoft-teams-m365>
 
 ## Usage
 
-To install Veeam Explorer for Microsoft Teams for Microsoft 365, run the following command from the command line or from PowerShell:
+To install Veeam Explorer for Microsoft Teams for Microsoft 365, run the
+following command:
 
 ```powershell
 choco install veeam-explorer-for-microsoft-teams-m365
 ```
 
-To upgrade Veeam Explorer for Microsoft Teams for Microsoft 365, run the following command from the command line or from PowerShell:
+To upgrade Veeam Explorer for Microsoft Teams for Microsoft 365, run the
+following command:
 
 ```powershell
 choco upgrade veeam-explorer-for-microsoft-teams-m365
 ```
 
-To uninstall Veeam Explorer for Microsoft Teams for Microsoft 365, run the following command from the command line or from PowerShell:
+To uninstall Veeam Explorer for Microsoft Teams for Microsoft 365, run the
+following command:
 
 ```powershell
 choco uninstall veeam-explorer-for-microsoft-teams-m365
@@ -24,14 +39,16 @@ choco uninstall veeam-explorer-for-microsoft-teams-m365
 
 Exit when reboot detected
 
-When installing / upgrading these packages, I would like to advise you to enable this feature `choco feature enable -n=exitOnRebootDetected`
+When installing / upgrading these packages, I would like to advise you to enable
+this feature `choco feature enable -n=exitOnRebootDetected`
 
-## Quick and easy granular recovery for Teams
+### Quick and easy granular recovery for Teams
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
-let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) that the package is no longer updating correctly.
-
+let them know
+[package update issues](https://github.com/mkevenaar/chocolatey-packages/issues)
+that the package is no longer updating correctly.
 
 ## Links
 
@@ -40,4 +57,3 @@ let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) th
 [Software Site](http://www.veeam.com/)
 
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/veeam-explorer-for-microsoft-teams-m365)
-

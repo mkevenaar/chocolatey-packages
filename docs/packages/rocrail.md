@@ -1,20 +1,32 @@
-﻿# <img src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@fabf3f9b3fb2f1e2308ad7d2aa376c99db3dc39b/icons/rocrail.png" width="32" height="32"/> [![Rocrail](https://img.shields.io/chocolatey/v/rocrail.svg?label=Rocrail)](https://community.chocolatey.org/packages/rocrail) [![Rocrail](https://img.shields.io/chocolatey/dt/rocrail.svg)](https://community.chocolatey.org/packages/rocrail)
+# Rocrail
+
+<img
+  src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@fabf3f9b3fb2f1e2308ad7d2aa376c99db3dc39b/icons/rocrail.png"
+  alt="Package icon"
+  width="32" height="32"/>
+
+[![Chocolatey version][choco-docs-version]][choco-docs-package]
+[![Chocolatey downloads][choco-docs-downloads]][choco-docs-package]
+
+[choco-docs-version]: <https://img.shields.io/chocolatey/v/rocrail.svg?label=Rocrail>
+[choco-docs-downloads]: <https://img.shields.io/chocolatey/dt/rocrail.svg>
+[choco-docs-package]: <https://community.chocolatey.org/packages/rocrail>
 
 ## Usage
 
-To install Rocrail, run the following command from the command line or from PowerShell:
+To install Rocrail, run the following command:
 
 ```powershell
 choco install rocrail
 ```
 
-To upgrade Rocrail, run the following command from the command line or from PowerShell:
+To upgrade Rocrail, run the following command:
 
 ```powershell
 choco upgrade rocrail
 ```
 
-To uninstall Rocrail, run the following command from the command line or from PowerShell:
+To uninstall Rocrail, run the following command:
 
 ```powershell
 choco uninstall rocrail
@@ -22,17 +34,26 @@ choco uninstall rocrail
 
 ## Description
 
-Rocrail is free software for controlling model trains for Linux, Apple macOS, Raspberry Pi & Odroid and of course Windows operating systems.
+Rocrail is free software for controlling model trains for Linux, Apple macOS,
+Raspberry Pi & Odroid and of course Windows operating systems.
 
-Rocrail assumes all responsibilities for controlling a model railroad and their accessories. Trains can be either manually controlled or completely controlled by the software in automatic mode. A mixed operation, i.e. controlling some trains manually and other trains in fully automatic mode is possible.
+Rocrail assumes all responsibilities for controlling a model railroad and their
+accessories. Trains can be either manually controlled or completely controlled
+by the software in automatic mode. A mixed operation, i.e. controlling some
+trains manually and other trains in fully automatic mode is possible.
 
-Nightly builds are snapshots and it is recommended to save your last working revision in case it will not work for you.
-Using this program is at your own risk. Robert Jan Versluis can not be held responsible for any damage that the use of this program may cause to your computer, model trains or anything else. To prevent problems it is strongly recommended to first read the Manual.
+Nightly builds are snapshots and it is recommended to save your last working
+revision in case it will not work for you.
+Using this program is at your own risk. Robert Jan Versluis can not be held
+responsible for any damage that the use of this program may cause to your
+computer, model trains or anything else. To prevent problems it is strongly
+recommended to first read the Manual.
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
-let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) that the package is no longer updating correctly.
-
+let them know
+[package update issues](https://github.com/mkevenaar/chocolatey-packages/issues)
+that the package is no longer updating correctly.
 
 ## Links
 
@@ -41,4 +62,3 @@ let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) th
 [Software Site](https://wiki.rocrail.net/doku.php)
 
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/rocrail)
-
