@@ -1,5 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 
+$toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+
 $packageName = 'mariadb'
 $binRoot = Get-ToolsLocation
 $installDir = Join-Path $binRoot "$packageName"
@@ -13,7 +15,7 @@ if (![System.IO.Directory]::Exists($installDir)) { [System.IO.Directory]::Create
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $installDir
-  file64        = "$toolsdir\mariadb-13.1.1-winx64.zip"
+  file64        = "$toolsDir\mariadb-13.1.1-winx64.zip"
 }
 
 Write-Verbose "Downloading and installing program..."
@@ -44,4 +46,4 @@ if (![System.IO.Directory]::Exists($defaultDataDir)) {
 
 Start-Process $installDirBin\mysql_install_db.exe --datadir=$defaultDataDir
 
-Get-ChildItem $toolsPath\*.zip | ForEach-Object { Remove-Item $_ -ea 0; if (Test-Path $_) { Set-Content "$_.ignore" } }
+Get-ChildItem $toolsDir\*.zip | ForEach-Object { Remove-Item $_ -ea 0; if (Test-Path $_) { Set-Content "$_.ignore" } }
