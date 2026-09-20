@@ -105,16 +105,16 @@ toc:
         url: /packages/gitkraken.html
       - page: 'JetBrains GoLand'
         url: /packages/goland.html
-      - page: 'Hangouts Chat (Install)'
-        url: /packages/googlehangoutschat.html
       - page: 'Google Drive'
         url: /packages/googledrive.html
+      - page: 'Hangouts Chat (Install)'
+        url: /packages/googlehangoutschat.html
       - page: 'Grafana'
         url: /packages/grafana.html
-      - page: 'Grafana Agent'
-        url: /packages/grafanaagent.html
       - page: 'Grafana (Install)'
         url: /packages/grafana.install.html
+      - page: 'Grafana Agent'
+        url: /packages/grafanaagent.html
       - page: 'Hadoop'
         url: /packages/hadoop.html
       - page: 'Helio Workstation'
@@ -125,16 +125,16 @@ toc:
         url: /packages/helioworkstation.portable.html
       - page: 'Apple iCloud'
         url: /packages/icloud.html
+      - page: '[Deprecated] Intel SSD Toolbox'
+        url: /packages/intel.ssd.toolbox.html
       - page: 'Intel Arc & Iris Xe Graphics Drivers'
         url: /packages/intelarcgraphicsdriver.html
       - page: 'Intel® Driver & Support Assistant (Install)'
         url: /packages/inteldsa.html
-      - page: 'Intel® Memory and Storage Tool'
-        url: /packages/intelmas.html
-      - page: '[Deprecated] Intel SSD Toolbox'
-        url: /packages/intel.ssd.toolbox.html
       - page: 'JetBrains IntelliJ IDEA (Educational)'
         url: /packages/intellijideaedu.html
+      - page: 'Intel® Memory and Storage Tool'
+        url: /packages/intelmas.html
       - page: 'IObit Malware Fighter Free'
         url: /packages/iobitmalwarefighter.html
       - page: 'IObit Uninstaller'
@@ -143,20 +143,20 @@ toc:
         url: /packages/irfanview.html
       - page: 'IrfanView All Languages (Install)'
         url: /packages/irfanviewlanguages.html
-      - page: 'IrfanView Shell Extension (Install)'
-        url: /packages/irfanviewshellextension.html
       - page: 'IrfanView All Plugins (Install)'
         url: /packages/irfanviewplugins.html
+      - page: 'IrfanView Shell Extension (Install)'
+        url: /packages/irfanviewshellextension.html
       - page: 'Jackett'
         url: /packages/jackett.html
       - page: 'Freedom Scientific JAWS'
         url: /packages/JAWS.html
       - page: 'Jetbrains Rider'
         url: /packages/jetbrainsrider.html
-      - page: 'JetBrains YouTrack'
-        url: /packages/jetbrainsyoutrack.html
       - page: 'JetBrains Toolbox App (Install)'
         url: /packages/jetbrainstoolbox.html
+      - page: 'JetBrains YouTrack'
+        url: /packages/jetbrainsyoutrack.html
       - page: 'KeyStore Explorer (Portable)'
         url: /packages/keystoreexplorer.portable.html
       - page: 'Kibana'
@@ -189,10 +189,10 @@ toc:
         url: /packages/mongodb.portable.html
       - page: 'Movie Collector'
         url: /packages/moviecollector.html
-      - page: 'Music Collector'
-        url: /packages/musiccollector.html
       - page: 'MusicBee'
         url: /packages/musicbee.html
+      - page: 'Music Collector'
+        url: /packages/musiccollector.html
       - page: 'MySQL (Community Server)'
         url: /packages/mysql.html
       - page: 'MySQL Workbench'
@@ -223,10 +223,10 @@ toc:
         url: /packages/orcaslicer.install.html
       - page: 'OrientDB (Portable)'
         url: /packages/orientdb.html
-      - page: 'Plex Home Theater'
-        url: /packages/plexhometheater.html
       - page: 'Plexamp'
         url: /packages/plexamp.html
+      - page: 'Plex Home Theater'
+        url: /packages/plexhometheater.html
       - page: 'Plex Media Player for Windows'
         url: /packages/plexmediaplayer.html
       - page: 'Plex Media Server'
@@ -319,6 +319,8 @@ toc:
         url: /packages/ultraiso.html
       - page: 'UltraVNC'
         url: /packages/ultravnc.html
+      - page: 'Veeam helpers extension'
+        url: /packages/veeam.extension.html
       - page: 'Veeam Agent for Microsoft Windows'
         url: /packages/veeamagent.html
       - page: 'Veeam Backup & Replication Catalog'
@@ -415,12 +417,12 @@ toc:
         url: /packages/veeamserviceproviderconsoleupdaterplugin.html
       - page: 'Veeam Service Provider Console WebUI'
         url: /packages/veeamserviceproviderconsolewebui.html
-      - page: 'Veeam helpers extension'
-        url: /packages/veeam.extension.html
       - page: 'Veusz (Install)'
         url: /packages/veusz.html
       - page: 'Viber'
         url: /packages/viber.html
+      - page: 'VIOFO Player'
+        url: /packages/viofoplayer.html
       - page: 'VLC Nightly'
         url: /packages/vlcnightly.html
       - page: 'Ansible VSCode Extension'
