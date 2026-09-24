@@ -4,7 +4,7 @@ $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $url = 'https://downloads.wdc.com/wdapp/WDSecurity_WIN.zip'
 $checksum = '71d04ec5d2061d5e0748bd5576d3eea68e3df1320ee0edf8f9c09e0819ef2b27'
 $checksumType = 'sha256'
-$fileLocation = Join-Path $toolsDir "WDSecuritySetup.exe"
+$fileLocation = Join-Path -Path $toolsDir -ChildPath 'WDSecurity_WIN' | Join-Path -ChildPath "WDSecuritySetup.exe"
 
 $downloadArgs = @{
   packageName   = $env:ChocolateyPackageName
