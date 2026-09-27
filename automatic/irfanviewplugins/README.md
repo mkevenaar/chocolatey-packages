@@ -6,6 +6,22 @@ There are too many plugins to list in the space of the description.
 
 Please see the [IrfanView PlugIns](http://www.irfanview.com/plugins.htm) web page for the current list and versions.
 
+#### Package Parameters
+
+* `/folder=PATH` - install plugins into this IrfanView installation folder.
+  When omitted, the plugin installer locates the existing installation.
+
+Quote paths containing spaces. Both `/folder=PATH` and `/folder:PATH` are supported.
+To install IrfanView and its plugins into the same custom folder, pass the
+parameters to the dependency too (PowerShell):
+
+```powershell
+choco install irfanviewplugins --params "/folder='D:\Image Tools\IrfanView'" --apply-params-to-dependencies
+```
+
+Other IrfanView package parameters can be included in that command; the plugins
+package uses only `/folder`.
+
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) that the package is no longer updating correctly.

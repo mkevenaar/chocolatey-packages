@@ -2,80 +2,58 @@
 
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-# Default values
-$desktop = 0
-$thumbs = 0
-$group = 1
-$allusers = 1
-$assoc = 1
-$ini = "%APPDATA%\IrfanView"
-$folder = $null
+$pp = Get-PackageParameters
 
-$packageParameters = $env:chocolateyPackageParameters
-
-if ($packageParameters) {
-    $match_pattern = "\/(?<option>([a-zA-Z]+))=(?<value>([`"'])?([a-zA-Z0-9- _\\:%\.]+)([`"'])?)|\/(?<option>([a-zA-Z]+))"
-    $option_name = 'option'
-    $value_name = 'value'
-
-    if ($packageParameters -match $match_pattern ){
-        $results = $packageParameters | Select-String $match_pattern -AllMatches
-        $results.matches | ForEach-Object {
-          $arguments.Add(
-              $_.Groups[$option_name].Value.Trim(),
-              $_.Groups[$value_name].Value.Trim())
-      }
-    } else {
-        Throw "Package Parameters were found but were invalid (REGEX failure)"
-    }
-
-    if ($arguments.ContainsKey("desktop")) {
-        Write-Verbose "Adding desktop shortcut to IrfanView"
-        $desktop = 1
-    }
-
-    if ($arguments.ContainsKey("thumbs")) {
-        Write-Verbose "Adding desktop shortcut to IrfanView Thumbnails"
-        $thumbs = 1
-    }
-
-    if ($arguments.ContainsKey("group")) {
-        Write-Verbose "Adding IrfanView group to start menu"
-        $group = 1
-    }
-
-    if ($arguments.ContainsKey("allusers")) {
-        Write-Verbose "Installing IrfanView for only current user"
-        $allusers = 0
-    }
-
-    if ($arguments.ContainsKey("assoc")) {
-        Write-Verbose "Associating IrfanView to file types"
-        $assoc = $arguments["assoc"]
-    }
-
-    if ($arguments.ContainsKey("ini")) {
-        Write-Verbose "You want to use a custom configuration Path"
-        $ini = $arguments["ini"]
-    }
-
-    if ($arguments.ContainsKey("folder")) {
-        Write-Verbose "You want to use a custom configuration Path"
-        $folder = $arguments["folder"]
-    }
-
-} else {
-    Write-Debug "No package parameters passed in"
+# Keep the package defaults when an option is omitted.
+$options = [ordered]@{
+  desktop  = 0
+  thumbs   = 0
+  group    = 1
+  allusers = 1
+  assoc    = 1
 }
 
-$silentArgs = "/silent" +
-              " /desktop=" + $desktop +
-              " /thumbs=" + $thumbs +
-              " /group=" + $group +
-              " /allusers=" + $allusers +
-              " /assoc=" + $assoc
-if ($ini) { $silentArgs += " /ini=" + $ini }
-if ($folder) { $silentArgs += " /folder=" + $folder }
+foreach ($name in @('desktop', 'thumbs', 'group', 'allusers', 'currentuser', 'assocallusers')) {
+  if ($pp.ContainsKey($name)) {
+    # Get-PackageParameters returns $true for a switch without a value.
+    $value = $pp[$name]
+    if ($value -is [bool]) { $value = [int]$value }
+    if ("$value" -notmatch '^[01]$') {
+      throw "Package parameter /$name must be 0 or 1, or supplied without a value."
+    }
+    $pp[$name] = [int]$value
+    if ($options.Contains($name)) { $options[$name] = $pp[$name] }
+  }
+}
+
+if ($pp.ContainsKey('currentuser')) {
+  $options.allusers = 1 - $pp.currentuser
+}
+if ($pp.ContainsKey('assoc')) {
+  if ("$($pp.assoc)" -notmatch '^[012]$') {
+    throw 'Package parameter /assoc must be 0 (none), 1 (images), or 2 (all).'
+  }
+  $options.assoc = $pp.assoc
+}
+
+$paths = [ordered]@{ ini = '%APPDATA%\IrfanView' }
+foreach ($name in @('ini', 'folder')) {
+  if ($pp.ContainsKey($name)) {
+    if ($pp[$name] -is [bool] -or [string]::IsNullOrWhiteSpace($pp[$name]) -or $pp[$name] -match '["\r\n]') {
+      throw "Package parameter /$name requires a folder path without embedded double quotes or newlines."
+    }
+    $paths[$name] = $pp[$name]
+  }
+}
+
+$silentArgs = '/silent'
+foreach ($option in $options.GetEnumerator()) {
+  $silentArgs += " /$($option.Key)=$($option.Value)"
+}
+if ($pp.assocallusers -eq 1) { $silentArgs += ' /assocallusers' }
+foreach ($path in $paths.GetEnumerator()) {
+  $silentArgs += ' /{0}="{1}"' -f $path.Key, $path.Value
+}
 Write-Debug "Silent arguments Chocolatey will use are: $silentArgs"
 
 $packageArgs = @{

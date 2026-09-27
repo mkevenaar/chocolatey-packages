@@ -41,3 +41,4 @@ automatic/_output/
 /update_info.xml
 __attic
 *.msixbundle
+/tests*
