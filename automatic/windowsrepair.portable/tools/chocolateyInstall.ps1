@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = 'http://www.tweaking.com/files/setups/tweaking.com_windows_repair_aio.zip'
+$url          = 'https://www.tweaking.com/files/setups/tweaking.com_windows_repair_aio.zip'
 $checksum     = '91bbb2945bf5f772844d95a807ed264199fccb560dd877be2075d8be1a299aa0'
 $checksumType = 'sha256'
 
@@ -11,6 +11,7 @@ $packageArgs = @{
   url            = $url
   checksum       = $checksum
   checksumType   = $checksumType
+  options        = @{ Headers = @{ 'User-Agent' = 'Mozilla/5.0' } }
 }
 
 Install-ChocolateyZipPackage  @packageArgs
