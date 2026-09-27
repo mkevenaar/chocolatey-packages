@@ -66,4 +66,4 @@ that the package is no longer updating correctly.
 
 [Software Site](https://octofarm.net/)
 
-[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/octofarm)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/deprecated/octofarm)
