@@ -44,7 +44,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <licenseUrl>https://github.com/plexinc/plex-home-theater-public/blob/pht-frodo/LICENSE.GPL</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <projectSourceUrl>https://github.com/plexinc/plex-home-theater-public</projectSourceUrl>
-    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/plex-home-theater</packageSourceUrl>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/deprecated/plex-home-theater</packageSourceUrl>
     <docsUrl>https://support.plex.tv/articles/</docsUrl>
     <mailingListUrl>https://forums.plex.tv/</mailingListUrl>
     <summary>For those of you with a dedicated computer for your TV, Plex Home Theater celebrates your personal videos, music and photos and gives them the stage they deserve.</summary>

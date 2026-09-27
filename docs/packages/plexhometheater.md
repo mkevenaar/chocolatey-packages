@@ -55,4 +55,4 @@ that the package is no longer updating correctly.
 
 [Software Site](https://www.plex.tv/)
 
-[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/plex-home-theater)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/deprecated/plex-home-theater)
