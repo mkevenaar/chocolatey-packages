@@ -6,12 +6,12 @@ The installer have been downloaded from their official download link listed on <
 and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <https://github.com/veusz/veusz/releases/download/veusz-3.6.2/veusz-3.6.2-x64-windows-setup.exe>
+  64-Bit: <https://github.com/veusz/veusz/releases/download/veusz-4.2.1/veusz-4.2.1-windows-x64-setup.exe>
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: 6881977FC44797067D561915BE8250594D170AD4C087617FE09F7D583E49BE01
+  checksum64: 3CD93746DE91F8410FCD95778F229088F051AB17D1BFA6DFE9DAABE72994828C
 
 File 'LICENSE.txt' is obtained from <https://github.com/veusz/veusz/blob/master/COPYING>
