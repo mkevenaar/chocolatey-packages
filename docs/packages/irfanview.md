@@ -61,15 +61,18 @@ The first graphic viewer WORLDWIDE with Multiple ICO support.
 Pass package parameters with `--params`. Parameter names are case-insensitive;
 values can use `=` or `:`. Quote paths containing spaces.
 
-* `/desktop[=0|1]` - create a desktop shortcut for IrfanView (default: 0).
-* `/thumbs[=0|1]` - create a desktop shortcut for IrfanView Thumbnails (default: 0).
-* `/group[=0|1]` - create an IrfanView group in the Start Menu (default: 1).
-* `/allusers[=0|1]` - create desktop/Start Menu shortcuts for all users (1) or only the current user (0); default: 1.
-* `/currentuser[=0|1]` - use current-user shortcuts; equivalent to `/allusers=0` when enabled. Takes precedence over `/allusers`.
-* `/assocallusers[=0|1]` - set associations for all users (Windows XP only; disabled by default).
-* `/assoc=VALUE` - set file associations: 0 = none, 1 = images only (package default), 2 = all.
-* `/ini=PATH` - set the INI file folder (default: `%APPDATA%\IrfanView`). Environment variables are passed unchanged to the installer.
-* `/folder=PATH` - set the installation folder. When omitted, the installer uses the existing IrfanView folder, or Program Files for a new installation.
+- `/desktop[=0|1]` - create a desktop shortcut for IrfanView (default: 0).
+- `/thumbs[=0|1]` - create a desktop shortcut for IrfanView Thumbnails (default: 0).
+- `/group[=0|1]` - create an IrfanView group in the Start Menu (default: 1).
+- `/allusers[=0|1]` - create desktop/Start Menu shortcuts for all users (1) or only the current user (0); default: 1.
+- `/currentuser[=0|1]` - use current-user shortcuts; equivalent to `/allusers=0` when enabled. Takes precedence over `/allusers`.
+- `/assocallusers[=0|1]` - set associations for all users (Windows XP only; disabled by default).
+- `/assoc=VALUE` - set file associations: 0 = none, 1 = images only (package
+  default), 2 = all.
+- `/ini=PATH` - set the INI file folder (default: `%APPDATA%\IrfanView`).
+  Environment variables are passed unchanged to the installer.
+- `/folder=PATH` - set the installation folder. When omitted, the installer uses
+  the existing IrfanView folder, or Program Files for a new installation.
 
 For switches, omit `=0|1` to enable the option, or specify `=0` to disable it.
 `/assoc`, `/ini`, and `/folder` require values.

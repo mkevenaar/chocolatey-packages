@@ -41,12 +41,13 @@ There are too many plugins to list in the space of the description.
 Please see the [IrfanView PlugIns](http://www.irfanview.com/plugins.htm) web
 page for the current list and versions.
 
-### Package Parameters
+#### Package Parameters
 
-* `/folder=PATH` - install plugins into this IrfanView installation folder.
+- `/folder=PATH` - install plugins into this IrfanView installation folder.
   When omitted, the plugin installer locates the existing installation.
 
-Quote paths containing spaces. Both `/folder=PATH` and `/folder:PATH` are supported.
+Quote paths containing spaces. Both `/folder=PATH` and `/folder:PATH` are
+supported.
 To install IrfanView and its plugins into the same custom folder, pass the
 parameters to the dependency too (PowerShell):
 

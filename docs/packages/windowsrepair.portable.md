@@ -56,6 +56,6 @@ that the package is no longer updating correctly.
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/windowsrepair.portable)
 
-[Software Site](http://www.tweaking.com/content/page/windows_repair_all_in_one.html)
+[Software Site](https://www.tweaking.com/features/windows-repair-all-in-one/)
 
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/windowsrepair.portable)
