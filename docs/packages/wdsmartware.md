@@ -50,4 +50,4 @@ that the package is no longer updating correctly.
 
 [Software Site](https://support.wdc.com/downloads.aspx?p=259)
 
-[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/wd-smartware)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/deprecated/wd-smartware)

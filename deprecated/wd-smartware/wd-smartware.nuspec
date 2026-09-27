@@ -41,7 +41,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <copyright>Western Digital Technologies, Inc. All rights reserved.</copyright>
     <tags>wd-smartware western digital wd westerndigital wdc admin</tags>
     <releaseNotes>http://support.wdc.com/download/notes/Win_WD_SmartWare_2.4.21.1_SW_Release_Notes.pdf?v=477</releaseNotes>
-    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/wd-smartware</packageSourceUrl>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/deprecated/wd-smartware</packageSourceUrl>
     <docsUrl>https://support-en.wd.com/app/answers/detail/a_id/9584/</docsUrl>
     <summary>WD SmartWare for Windows</summary>
     <description><![CDATA[WD SmartWare software is an easy-to-use backup application that enables users to automatically protect their data through continuous or scheduled backups. These backups can be performed by categories or the selection of the desired files.
