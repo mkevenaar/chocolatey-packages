@@ -43,7 +43,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <releaseNotes>7.10.0</releaseNotes>
     <licenseUrl>http://www.apple.com/legal/internet-services/icloud/en/terms.html</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/icloud</packageSourceUrl>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/deprecated/icloud</packageSourceUrl>
     <docsUrl>https://www.apple.com/support/icloud/</docsUrl>
     <summary>iCloud for Windows</summary>
     <description><![CDATA[Installs iCloud services to Windows PC. This includes iCloud Drive, PhotoSync, Outlook and Browser sync.

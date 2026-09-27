@@ -49,4 +49,4 @@ that the package is no longer updating correctly.
 
 [Software Site](http://www.apple.com/icloud/)
 
-[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/icloud)
+[Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/deprecated/icloud)
