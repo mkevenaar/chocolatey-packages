@@ -25,7 +25,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <!-- version should MATCH as closely as possible with the underlying software -->
     <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
     <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
-    <version>5.5.5</version>
+    <version>7.2.9</version>
     <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
     <owners>Maurice Kevenaar</owners>
     <!-- ============================== -->
@@ -48,7 +48,7 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <bugTrackerUrl>https://github.com/telegramdesktop/tdesktop/issues</bugTrackerUrl>
     <projectSourceUrl>https://telegram.org/apps#source-code</projectSourceUrl>
     <summary>Cloud-based synchronized messaging app with a focus on speed and security</summary>
-    <description>Pure instant messaging — simple, fast, secure, and synced across all your devices. Over 200 million active users in four years.
+    <description><![CDATA[Pure instant messaging — simple, fast, secure, and synced across all your devices. Over 200 million active users in four years.
 
 FAST: Telegram is the fastest messaging app on the market, connecting people via a unique, distributed network of data centers around the globe.
 
@@ -84,7 +84,12 @@ We keep expanding the boundaries of what you can do with a messaging app. Don’
 
 #### Community
 * [Facebook](https://telegram.org/faq#facebook-or-other-platforms)
-* [Twitter](https://twitter.com/telegram)</description>
+* [Twitter](https://twitter.com/telegram)
+
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) that the package is no longer updating correctly.
+]]></description>
  <dependencies>
       <dependency id="telegram.install" version="[7.2.9]" />
     </dependencies>
