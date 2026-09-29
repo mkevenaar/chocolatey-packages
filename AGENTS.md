@@ -1,6 +1,7 @@
 # Agent Instructions
 
 - Never use `curl.exe`; use PowerShell or .NET-native tooling instead.
+- Never use PowerShell aliases; spell out cmdlet and function names in full.
 
 ## Chocolatey AU Packages
 

@@ -303,6 +303,12 @@ toc:
         url: /packages/swiftforwindows.html
       - page: 'TCPVcon'
         url: /packages/tcpvcon.html
+      - page: 'Telegram'
+        url: /packages/telegram.html
+      - page: 'Telegram (Install)'
+        url: /packages/telegram.install.html
+      - page: 'Telegram (Portable)'
+        url: /packages/telegram.portable.html
       - page: 'TeXstudio'
         url: /packages/texstudio.html
       - page: 'TeXstudio (Install)'

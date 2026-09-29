@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Read this before creating packages: https://docs.chocolatey.org/en-us/create/create-packages -->
+<!-- It is especially important to read the above link to understand additional requirements when publishing packages to the community feed aka dot org (https://community.chocolatey.org/packages). -->
+<!-- Test your packages in a test environment: https://github.com/chocolatey/chocolatey-test-environment -->
+
+<!--
+This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Reference. Chocolatey uses a special version of NuGet.Core that allows us to do more than was initially possible. As such there are certain things to be aware of:
+
+* the package xmlns schema url may cause issues with nuget.exe
+* Any of the following elements can ONLY be used by choco tools - projectSourceUrl, docsUrl, mailingListUrl, bugTrackerUrl, packageSourceUrl, provides, conflicts, replaces
+* nuget.exe can still install packages with those elements but they are ignored. Any authoring tools or commands will error on those elements
+-->
+<!-- You can embed software files directly into packages, as long as you are not bound by distribution rights. -->
+<!-- * If you are an organization making private packages, you probably have no issues here -->
+<!-- * If you are releasing to the community feed, you need to consider distribution rights. -->
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <!-- == PACKAGE SPECIFIC SECTION == -->
+    <!-- This section is about this package, although id and version have ties back to the software -->
+    <!-- id is lowercase and if you want a good separator for words, use '-', not '.'. Dots are only acceptable as suffixes for certain types of packages, e.g. .install, .portable, .extension, .template -->
+    <!-- If the software is cross-platform, attempt to use the same id as the debian/rpm package(s) if possible. -->
+    <id>telegram.portable</id>
+    <!-- version should MATCH as closely as possible with the underlying software -->
+    <!-- Is the version a prerelease of a version? https://docs.nuget.org/create/versioning#creating-prerelease-packages -->
+    <!-- Note that unstable versions like 0.0.1 can be considered a released version, but it's possible that one can release a 0.0.1-beta before you release a 0.0.1 version. If the version number is final, that is considered a released version and not a prerelease. -->
+    <version>5.5.5</version>
+    <!-- owners is a poor name for maintainers of the package. It sticks around by this name for compatibility reasons. It basically means you. -->
+    <owners>Maurice Kevenaar</owners>
+    <!-- ============================== -->
+
+    <!-- == SOFTWARE SPECIFIC SECTION == -->
+    <!-- This section is about the software itself -->
+    <title>Telegram (Portable)</title>
+    <authors>Pavel Durov,Nikolai Durov</authors>
+    <!-- projectUrl is required for the community feed -->
+    <projectUrl>https://desktop.telegram.org/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@1dac7d7eb1994481b19cc4db6ac02edd2d9de7c8/icons/telegram.png</iconUrl>
+    <!-- copyright is usually years and software vendor, but not required for internal feeds -->
+    <copyright>© 2021 Pavel Durov and Nikolai Durov</copyright>
+    <tags>im messenger chat synchronized cloud</tags>
+    <releaseNotes>https://github.com/telegramdesktop/tdesktop/releases</releaseNotes>
+    <licenseUrl>https://github.com/telegramdesktop/tdesktop/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/telegram.portable</packageSourceUrl>
+    <docsUrl>https://telegram.org/faq</docsUrl>
+    <bugTrackerUrl>https://github.com/telegramdesktop/tdesktop/issues</bugTrackerUrl>
+    <projectSourceUrl>https://telegram.org/apps#source-code</projectSourceUrl>
+    <summary>Cloud-based synchronized messaging app with a focus on speed and security</summary>
+    <description>Pure instant messaging — simple, fast, secure, and synced across all your devices. Over 200 million active users in four years.
+
+FAST: Telegram is the fastest messaging app on the market, connecting people via a unique, distributed network of data centers around the globe.
+
+SYNCED: You can access your messages from all your devices at once. Start typing on your phone and finish the message from your tablet or laptop. Never lose your data again.
+
+UNLIMITED: You can send media and files, without any limits on their type and size. Your entire chat history will require no disk space on your device, and will be securely stored in the Telegram cloud for as long as you need it.
+
+SECURE: We made it our mission to provide the best security combined with ease of use. Everything on Telegram, including chats, groups, media, etc. is encrypted using a combination of 256-bit symmetric AES encryption, 2048-bit RSA encryption, and Diffie–Hellman secure key exchange.
+
+POWERFUL: You can create group chats for up to 200,000 members, share large videos, documents of any type (.DOC, .MP3, .ZIP, etc.), and even set up bots for specific tasks. It's the perfect tool for hosting online communities and coordinating teamwork.
+
+RELIABLE: Built to deliver your messages in the minimum bytes possible, Telegram is the most reliable messaging system ever made. It works even on the weakest mobile connections.
+
+FUN: Telegram has powerful photo and video editing tools and an open sticker/GIF platform to cater to all your expressive needs.
+
+SIMPLE: While providing an unprecedented array of features, we are taking great care to keep the interface clean. With its minimalist design, Telegram is lean and easy to use.
+
+100% FREE and NO ADS: Telegram is free and will always be free. We are not going to sell ads or introduce subscription fees.
+
+PRIVATE: We take your privacy seriously and will never give third parties access to your data.
+
+For those interested in maximum privacy, Telegram offers Secret Chats. Secret Chat messages can be programmed to self-destruct automatically from both participating devices. This way you can send all types of disappearing content — messages, photos, videos, and even files. Secret Chats use end-to-end encryption to ensure that a message can only be read by its intended recipient.
+
+We keep expanding the boundaries of what you can do with a messaging app. Don’t wait years for older messengers to catch up with Telegram — join the revolution today.
+
+
+#### Documentation
+* [FAQ](https://telegram.org/faq)
+* [FAQ-Technical](https://core.telegram.org/techfaq)
+* [API](https://core.telegram.org/api)
+* [Protocol](https://core.telegram.org/mtproto)
+* [Schema](https://core.telegram.org/schema)
+
+#### Community
+* [Facebook](https://telegram.org/faq#facebook-or-other-platforms)
+* [Twitter](https://twitter.com/telegram)</description>
+    <dependencies>
+      <dependency id="chocolatey-core.extension" version="1.3.3" />
+    </dependencies>
+
+    <!--<provides>NOT YET IMPLEMENTED</provides>-->
+    <!--<conflicts>NOT YET IMPLEMENTED</conflicts>-->
+    <!--<replaces>NOT YET IMPLEMENTED</replaces>-->
+  </metadata>
+  <!-- this section controls what actually gets packaged into the Chocolatey package -->
+  <!-- Uncomment to limit what is packed in -->
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
