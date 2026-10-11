@@ -1,7 +1,7 @@
 # Telegram (Install)
 
 <img
-  src="https://rawcdn.githack.com/SebastianK90/chocolateyautomaticpackages/31d0b9851a02b653471474a4aef34e0b9a90e4c1/icons/telegram.png"
+  src="https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@1dac7d7eb1994481b19cc4db6ac02edd2d9de7c8/icons/telegram.png"
   alt="Package icon"
   width="32" height="32"/>
 
@@ -97,6 +97,12 @@ today.
 
 - [Facebook](https://telegram.org/faq#facebook-or-other-platforms)
 - [Twitter](https://twitter.com/telegram)
+
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know
+[package update issues](https://github.com/mkevenaar/chocolatey-packages/issues)
+that the package is no longer updating correctly.
 
 ## Links
 

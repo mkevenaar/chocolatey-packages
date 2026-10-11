@@ -67,6 +67,6 @@ that the package is no longer updating correctly.
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/simulide)
 
-[Software Site](https://simulide.blogspot.com/)
+[Software Site](https://simulide.com/p/)
 
 [Package Source](https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/simulide)

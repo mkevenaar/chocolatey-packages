@@ -98,6 +98,12 @@ today.
 - [Facebook](https://telegram.org/faq#facebook-or-other-platforms)
 - [Twitter](https://twitter.com/telegram)
 
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know
+[package update issues](https://github.com/mkevenaar/chocolatey-packages/issues)
+that the package is no longer updating correctly.
+
 ## Links
 
 [Chocolatey Package Page](https://community.chocolatey.org/packages/telegram)

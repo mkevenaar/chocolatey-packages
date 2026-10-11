@@ -67,7 +67,6 @@ None
 $packageName= 'bob'
 $toolsDir   = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 $url        = 'https://somewhere.com/file.iso'
-
 $packageArgs = @{
     packageName   = $packageName
     fileType      = 'msi'

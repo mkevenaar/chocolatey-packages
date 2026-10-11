@@ -1,18 +1,23 @@
 ﻿$ErrorActionPreference = 'Stop';
 
-$toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
+$toolsDir = Split-Path -Parent $MyInvocation.MyCommand.Definition
 
 $packageArgs = @{
-  packageName    = $env:ChocolateyPackageName
-  destination    = $toolsDir
-  file           = "$toolsDir\SimulIDE_0.3.10-SR2-Win32.7z"
+  PackageName    = $env:ChocolateyPackageName
+  Destination    = $toolsDir
+  FileFullPath   = "$toolsDir\SimulIDE_1.1.0-SR2_Win32.zip"
+  FileFullPath64 = "$toolsDir\SimulIDE_1.1.0-SR2_Win64.zip"
 }
 
 Get-ChocolateyUnzip @packageArgs
 
-$bindir = Join-Path -Path ($packageArgs.file -replace ".7z") -ChildPath "bin"
+$archivePath = $packageArgs.FileFullPath
+if ((Get-OSArchitectureWidth -Compare 64) -and $env:ChocolateyForceX86 -ne 'true' -and $packageArgs.FileFullPath64) {
+  $archivePath = $packageArgs.FileFullPath64
+}
+$applicationDir = Join-Path -Path $toolsDir -ChildPath ([System.IO.Path]::GetFileNameWithoutExtension($archivePath))
 
-# create empty sidecar so shimgen ignores them.
-Set-Content -Path (Join-Path -Path $bindir -ChildPath "simulide.exe.ignore") -Value $null
-Set-Content -Path (Join-Path -Path $bindir -ChildPath "avra.exe.ignore") -Value $null
-Set-Content -Path (Join-Path -Path $bindir -ChildPath "gpasm.exe.ignore") -Value $null
+# Ignore the GUI and bundled helpers, wherever they are in the archive.
+Get-ChildItem -LiteralPath $applicationDir -Filter '*.exe' -Recurse -File | ForEach-Object {
+  Set-Content -LiteralPath "$($_.FullName).ignore" -Value $null
+}

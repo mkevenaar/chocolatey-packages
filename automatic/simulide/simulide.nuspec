@@ -35,17 +35,17 @@ This is a nuspec. It mostly adheres to https://docs.nuget.org/create/Nuspec-Refe
     <title>SimulIDE</title>
     <authors>SimulIDE</authors>
     <!-- projectUrl is required for the community feed -->
-    <projectUrl>https://simulide.blogspot.com/</projectUrl>
+    <projectUrl>https://simulide.com/p/</projectUrl>
     <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@00a90c0bf02817f373a69ed52b56380955e43d58/icons/simulide.png</iconUrl>
     <!-- copyright is usually years and software vendor, but not required for internal feeds -->
     <copyright>SimulIDE</copyright>
     <tags>simulide simulator</tags>
-    <releaseNotes>https://simulide.blogspot.com/</releaseNotes>
-    <licenseUrl>https://sourceforge.net/p/simulide/svnrepo/HEAD/tree/trunk/COPYING</licenseUrl>
+    <releaseNotes>https://simulide.com/p/download110/</releaseNotes>
+    <licenseUrl>https://github.com/Arcachofo/SimulIDE-dev/blob/master/COPYING</licenseUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/simulide</packageSourceUrl>
-    <projectSourceUrl>https://sourceforge.net/p/simulide/svnrepo/HEAD/tree/trunk/</projectSourceUrl>
-    <bugTrackerUrl>https://sourceforge.net/p/simulide/tickets/</bugTrackerUrl>
+    <projectSourceUrl>https://simulide.com/p/source-code/</projectSourceUrl>
+    <bugTrackerUrl>https://simulide.com/p/forum/</bugTrackerUrl>
     <summary>Electronic Circuit Simulator</summary>
     <description><![CDATA[## SimulIDE
 

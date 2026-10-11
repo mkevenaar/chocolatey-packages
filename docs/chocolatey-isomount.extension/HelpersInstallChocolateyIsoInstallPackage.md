@@ -63,7 +63,6 @@ None
 $packageName= 'bob'
 $toolsDir   = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 $fileLocation = Join-Path $toolsDir 'ISO_EMBEDDED_IN_PACKAGE'
-
 $packageArgs = @{
     packageName   = $packageName
     fileType      = 'msi'

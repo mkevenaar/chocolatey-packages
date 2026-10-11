@@ -2,16 +2,19 @@ VERIFICATION
 Verification is intended to assist the Chocolatey moderators and community
 in verifying that this package's contents are trustworthy.
 
-The installer have been downloaded from their official download link listed on <https://simulide.blogspot.com/p/downloads.html>
+The installer have been downloaded from their official download link listed on <https://simulide.com/p/downloads/>
 and can be verified like this:
 
 1. Download the following installers:
-  32-Bit: <https://sourceforge.net/projects/simulide/files/SimulIDE_0.3.10/SimulIDE_0.3.10-SR2-Win32.zip/download>
+  32-Bit: <https://simulide.com/p/fls/SimulIDE_1.1.0-SR2_Win32.zip>
+  64-Bit: <https://simulide.com/p/fls/SimulIDE_1.1.0-SR2_Win64.zip>
+  An empty architecture URL means that upstream does not provide that build.
 2. You can use one of the following methods to obtain the checksum
   - Use powershell function 'Get-Filehash'
   - Use chocolatey utility 'checksum.exe'
 
   checksum type: sha256
-  checksum32: F822DC6EE316589387BA130952104AB2E65F35D6E60783F463AB000B30AE1967
+  checksum32: F4E2D5A5C741719FFFFD7DAD85569EE585FDA3FF887FF33FACED51599B2FAE05
+  checksum64: 8DE5A3044AE5C3B756EFE1F4F103AD5651C5F11B5A99B4F531070AE3ACCE2809
 
-File 'LICENSE.txt' is obtained from <https://sourceforge.net/p/simulide/svnrepo/HEAD/tree/trunk/COPYING>
+File 'LICENSE.txt' is obtained from <https://raw.githubusercontent.com/Arcachofo/SimulIDE-dev/master/COPYING>
