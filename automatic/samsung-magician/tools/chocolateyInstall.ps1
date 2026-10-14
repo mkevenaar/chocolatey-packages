@@ -23,9 +23,13 @@ if (-not $ahkEXE) {
   return
 }
 
+# The installer asks whether the user lives in a GDPR country or Brazil; answer No unless /GDPR:Yes is passed.
+$pp = Get-PackageParameters
+$gdprAnswer = if ($pp.GDPR -match '^(y|yes|true|1)$') { 'Yes' } else { 'No' }
+
 # Start AutoHotKey script for the silent install
 $ahkFile = Join-Path $toolsDir 'chocolateyInstall.ahk'
-$ahkProc = Start-Process -FilePath $ahkEXE.FullName -ArgumentList $ahkFile -PassThru
+$ahkProc = Start-Process -FilePath $ahkEXE.FullName -ArgumentList "`"$ahkFile`" $gdprAnswer" -PassThru
 Write-Debug "AutoHotKey start time:`t$($ahkProc.StartTime.ToShortTimeString())"
 Write-Debug "Process ID:`t$($ahkProc.Id)"
 
