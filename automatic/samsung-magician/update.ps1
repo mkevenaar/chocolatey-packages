@@ -1,6 +1,6 @@
 ﻿Import-Module Chocolatey-AU
 
-$releases = 'https://semiconductor.samsung.com/consumer-storage/support/tools/'
+$releases = 'https://www.samsung.com/uk/support/model/MZ-V9P4T0BW/'
 
 $headers = @{
   Referer = 'https://semiconductor.samsung.com/consumer-storage/support/tools/'
@@ -12,16 +12,9 @@ $options =
   Headers = $headers
 }
 
-function name4url($url) {
-  if ($FileNameBase) { return $FileNameBase }
-  $res = $url -split '/' | Select-Object -Last 1
-  $res -replace '\.[^.]+$'
-}
-
 function global:au_BeforeUpdate {
   $ext = $Latest.FileType
   $toolsPath = Resolve-Path tools
-  $NoSuffix = $true
 
   Write-Host 'Purging' $ext
   Remove-Item -Force "$toolsPath\*.$ext" -ea ignore
@@ -33,8 +26,7 @@ function global:au_BeforeUpdate {
 
     $Latest.Options.Headers.GetEnumerator() | ForEach-Object { $client.Headers.Add($_.Key, $_.Value) | Out-Null }
 
-    $base_name = name4url $Latest.Url32
-    $file_name = "{0}{2}.{1}" -f $base_name, $ext, $(if ($NoSuffix) { '' } else {'_x32'})
+    $file_name = $Latest.InstallerFileName
     $file_path = "$toolsPath\$file_name"
 
     Write-Host "Downloading to $file_name -" $Latest.Url32
@@ -63,25 +55,31 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases
-
-    $re  = "Samsung_Magician_[iI]nstaller_Official_(.+).exe"
-
-    $url = $download_page.links | Where-Object href -match $re | Select-Object -First 1 -ExpandProperty href
-
-    if (-not $url) {
-        throw "Failed to find a download URL matching the expected pattern: $re"
+    # The semiconductor tools page can lag behind Samsung's product support data.
+    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+    $contents = [regex]::Match($download_page.Content, '(?s)<li\s+data-sdf-prop="contents"[^>]*>(.*?)</li>')
+    if (-not $contents.Success) {
+        throw 'Failed to find Samsung software download metadata.'
     }
 
-    # Extract version from the URL
-    $version = (([regex]::Match($url,$re)).Captures.Groups[1].value)
-    $version = (Get-Version $version).ToString()
+    $downloads = [System.Net.WebUtility]::HtmlDecode($contents.Groups[1].Value) | ConvertFrom-Json
+    $re = '^Samsung_Magician_Installer_Official_(\d+(?:\.\d+){1,3})\.exe$'
+    $installer = $downloads.softwares | Where-Object { $_.fileName -match $re } |
+        Sort-Object { [version]([regex]::Match($_.fileName, $re).Groups[1].Value) } -Descending |
+        Select-Object -First 1
+    if (-not $installer -or -not $installer.downloadUrl) {
+        throw 'Failed to find a Samsung Magician Windows installer in the support metadata.'
+    }
+
+    $url = $installer.downloadUrl
+    $version = (Get-Version ([regex]::Match($installer.fileName, $re).Groups[1].Value)).ToString()
 
     # Return the necessary details
     return @{
         RemoteVersion = $version
         URL32 = $url
         Version = $version
+        InstallerFileName = $installer.fileName
         Options  = $options
     }
 }
