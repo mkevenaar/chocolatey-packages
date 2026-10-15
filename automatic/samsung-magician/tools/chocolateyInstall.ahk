@@ -7,6 +7,21 @@ SetControlDelay(-1)
 winTitleDialog := "Setup" ; Common title for dialog windows
 dialogClass := "ahk_class #32770"
 
+; The GDPR/Brazil residency prompt can come before or after the language selection (9.0.2 shows
+; it first), so answer it from a timer whenever it appears. Argument 1 picks the answer: Yes or No (default).
+gdprButton := (A_Args.Length >= 1 && A_Args[1] = "Yes") ? "&Yes" : "&No"
+SetTimer(AnswerGdprPrompt, 250)
+
+AnswerGdprPrompt()
+{
+  prompt := winTitleDialog " " dialogClass
+  try
+  {
+    if WinExist(prompt) && InStr(WinGetText(prompt), "GDPR country")
+      ControlClick(gdprButton, prompt, , , , "NA")
+  }
+}
+
 ; Step 1: Language selection
 WinWait("Select Setup Language", , 30000)
 if WinExist("Select Setup Language")
@@ -15,33 +30,21 @@ if WinExist("Select Setup Language")
   ControlClick("OK", "Select Setup Language")
 }
 
-; Step 2 and Step 3: Handle dialogs dynamically
-WinWait(winTitleDialog " " dialogClass, , 30000) ; Wait for the "Setup" dialog with the specified class
-
-; Retrieve the full visible text of the dialog
-dialogContent := WinGetText(winTitleDialog " " dialogClass)
-
-; Debugging: Uncomment this to view the retrieved text
-; MsgBox("Dialog Content: " dialogContent)
-
-; Determine if it's the "Already Installed" or GDPR dialog
-if InStr(dialogContent, "Samsung Magician is already installed")
+; Step 2: an upgrade may ask whether to continue over the existing installation. Wait for that
+; dialog or the welcome screen, whichever comes first (the GDPR prompt is handled by the timer).
+Loop
 {
-  ; Handle "Already Installed" dialog
-  WinActivate
-  ControlClick("&Yes", winTitleDialog " " dialogClass) ; Click "Yes"
-
-  ; Handle GDPR prompt
-  WinWait(winTitleDialog " " dialogClass, "Are you a resident of a European country (GDPR country) or Brazil?", , 30000)
-  WinActivate
-  ControlClick("&No", winTitleDialog " " dialogClass) ; Click "No"
-
-}
-else if InStr(dialogContent, "Are you a resident of a European country (GDPR country) or Brazil?")
-{
-  ; Handle GDPR prompt
-  WinActivate
-  ControlClick("&No", winTitleDialog " " dialogClass) ; Click "No"
+  if WinExist("Setup - Samsung Magician", "Welcome to the Samsung Magician Setup Wizard")
+    break
+  try
+  {
+    if WinExist(winTitleDialog " " dialogClass) && InStr(WinGetText(winTitleDialog " " dialogClass), "Samsung Magician is already installed")
+    {
+      WinActivate
+      ControlClick("&Yes", winTitleDialog " " dialogClass) ; Click "Yes"
+    }
+  }
+  Sleep(250)
 }
 
 ; Step 4: Welcome screen
