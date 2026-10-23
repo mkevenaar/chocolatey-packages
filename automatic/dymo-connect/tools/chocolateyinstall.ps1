@@ -1,11 +1,11 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir       = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url32          = 'https://dymoreleasecontent.blob.core.windows.net/dymo-release/DCDWIN/DCDSetup1.6.3.11-X86.exe'
-$checksum32     = 'c7dc09fa0abb36ad606eacb691a0f2a90b8d901e39ac6e0034f929a269e9c998'
+$url32          = 'https://dymoreleasecontent.blob.core.windows.net/dymo-release/DCDWIN/DCDSetup1.6.4.4-X86.exe'
+$checksum32     = 'b71d2b3fab89058312e0e7ca08c912c5512abf653e19b5659684baa7153c94fe'
 $checksumType32 = 'sha256'
-$url64          = 'https://dymoreleasecontent.blob.core.windows.net/dymo-release/DCDWIN/DCDSetup1.6.3.11-X64.exe'
-$checksum64     = '1305e9936e595b23128f2b92b070d02ae80a5a1ed6f2fc09011b8607fa28119f'
+$url64          = 'https://dymoreleasecontent.blob.core.windows.net/dymo-release/DCDWIN/DCDSetup1.6.4.4-X64.exe'
+$checksum64     = 'd504d747c301bc9147987cdc982d283f116e3d9c68ba3df690af4e72e60c9b78'
 $checksumType64 = 'sha256'
 
 $packageArgs = @{
