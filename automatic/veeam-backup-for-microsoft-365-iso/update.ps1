@@ -1,6 +1,6 @@
-Import-Module Chocolatey-AU
+﻿Import-Module Chocolatey-AU
 
-$releases = 'https://www.veeam.com/download-version.html'
+$releases = 'https://www.veeam.com/products/downloads/latest-version.html'
 $releaseNotesFeed = 'https://www.veeam.com/services/veeam/technical-documents?resourceType=resourcetype:techdoc/releasenotes&productId=36'
 $productName = 'for Microsoft 365'
 
@@ -19,19 +19,27 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases -DisableKeepAlive
-    $table = $download_page.ParsedHtml.getElementsByTagName('tbody') | Where-Object innerhtml -Match $productName | Select-Object -First 1
+    $download_page = Invoke-WebRequest -Uri $releases -DisableKeepAlive -UseBasicParsing -ErrorAction Stop
+    $tables = [regex]::Matches($download_page.Content, '(?is)<tbody\b[^>]*>.*?</tbody>')
+    $table = $tables | Where-Object {
+        $text = [System.Net.WebUtility]::HtmlDecode(($_.Value -replace '<[^>]+>', ' '))
+        ($text -replace '\s+', ' ') -match [regex]::Escape($productName)
+    } | Select-Object -First 1
 
-    $re = "Version\s+:\s+([0-9]+\.[0-9]+\.[0-9]+(?:\.[0-9]+)(?:\.[0-9]+)?)"
+    if (-not $table) {
+        throw "Unable to find $productName in $releases."
+    }
 
-    $table.innerHTML -imatch $re
-    $version = $Matches[1]
+    $tableText = [System.Net.WebUtility]::HtmlDecode(($table.Value -replace '<[^>]+>', ' '))
+    $versionMatch = [regex]::Match($tableText, '(?i)Version\s*:?\s*(?<version>[0-9]+\.[0-9]+\.[0-9]+\.[0-9]+(?:\.[0-9]+)?)')
+
+    if (-not $versionMatch.Success) {
+        throw "Unable to find the $productName version in $releases."
+    }
+
+    $version = $versionMatch.Groups['version'].Value
 
     $isoVersion = $version
-
-    if($version -match "7.1.0.2031") {
-      $isoVersion = "7.1.0.2031_P20240418"
-    }
 
     $version = Get-Version ($version)
     $majversion = $version.ToString(1)
@@ -39,9 +47,18 @@ function global:au_GetLatest {
     $filename = "VeeamBackupMicrosoft365_$($isoVersion).iso"
     $url = "https://download2.veeam.com/VBO/v$($majversion)/$($filename)"
 
-    $releaseNotesPage = Invoke-WebRequest $releaseNotesFeed | ConvertFrom-Json
+    $releaseNotesPage = (Invoke-WebRequest -Uri $releaseNotesFeed -UseBasicParsing -ErrorAction Stop).Content | ConvertFrom-Json
 
-    $ReleaseNotes = $releaseNotesPage.payload.products[0].documentGroups[0].documents[0].links.pdf
+    $links = $releaseNotesPage.payload.products[0].documentGroups[0].documents[0].links
+    $ReleaseNotes = $links.pdf
+
+    if (-not $ReleaseNotes) {
+        $ReleaseNotes = $links.html
+    }
+
+    if (-not $ReleaseNotes) {
+        throw "Unable to find release notes for $productName in $releaseNotesFeed."
+    }
 
     return @{
         Filename = $filename

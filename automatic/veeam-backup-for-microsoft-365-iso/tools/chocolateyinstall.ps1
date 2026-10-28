@@ -2,7 +2,7 @@
 $toolsDir   = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $url = 'https://download2.veeam.com/VBO/v8/VeeamBackupMicrosoft365_8.6.0.5011.iso'
-$checksum = '6c189a683833748d2f6fc230f64115e409fb8b1e32b3e0ff5ee4f8ecd072eca3'
+$checksum = 'c3febd6776830b7768620ce039265848a1bf4edfaa360a517ddc4333626476d7'
 $checksumType = 'sha256'
 
 $filename = 'VeeamBackupMicrosoft365_8.6.0.5011.iso'
