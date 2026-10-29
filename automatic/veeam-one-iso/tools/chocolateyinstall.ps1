@@ -4,11 +4,11 @@ $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $SettingsXmlPath = Join-Path $toolsDir 'VOSettings.xml'
 $SettingsXmlIsoPath = 'Setup\VOSettings.xml'
 
-$url = 'https://download2.veeam.com/VONE/v13/VeeamONE_13.1.0.7233_20260821.iso'
-$checksum = '935b10c7afbda04d776092e56ef36cfc544b1fe791b9645cae13d69aa44aa150'
+$url = 'https://download2.veeam.com/VONE/v13/VeeamONE_13.1.0.7940.iso'
+$checksum = '1c97a15ea413378a852b8de2b5c4a5e0256c622d5a7c6315119a8f1698b53d74'
 $checksumType = 'sha256'
 
-$filename = 'VeeamONE_13.1.0.7233_20260821.iso'
+$filename = 'VeeamONE_13.1.0.7940.iso'
 $packagePath = $(Split-Path -parent $toolsDir)
 $installPath = Join-Path $packagePath $filename
 
