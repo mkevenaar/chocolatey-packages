@@ -6,8 +6,8 @@ if (!(Get-OSArchitectureWidth -Compare 64)) { throw 'psql requires 64-bit Window
 
 $packageArgs = @{
   PackageName     = $Env:ChocolateyPackageName
-  Url64           = 'https://get.enterprisedb.com/postgresql/postgresql-18.6-5-windows-x64-binaries.zip'
-  Checksum64      = 'E2246BA91D22345BC3D017586C09EDE52D9DF180B1EEB480F050445F1CAD84E2'
+  Url64           = 'https://get.enterprisedb.com/postgresql/postgresql-18.7-1-windows-x64-binaries.zip'
+  Checksum64      = 'EAD0BBC27FB678FA24DCF86B738981323042ABD073C744103BF7F3AED23F9A33'
   ChecksumType64  = 'sha256'
   UnzipLocation   = $toolsDir
   SpecificFolder  = 'pgsql/bin'
