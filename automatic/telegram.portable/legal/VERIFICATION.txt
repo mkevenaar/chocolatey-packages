@@ -7,8 +7,8 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/telegramdesktop/tdesktop/releases/download/v7.4.3/td-portable-win-x86-7.4.3.zip
-   x64: https://github.com/telegramdesktop/tdesktop/releases/download/v7.4.3/td-portable-win-x64-7.4.3.zip
+   x32: https://github.com/telegramdesktop/tdesktop/releases/download/v7.4.4/td-portable-win-x86-7.4.4.zip
+   x64: https://github.com/telegramdesktop/tdesktop/releases/download/v7.4.4/td-portable-win-x64-7.4.4.zip
 
    to download the installer.
 
@@ -16,8 +16,8 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: 83782EB17226E5DCD054C994DDF6BE09746C3ED3512AC80CC140B3CF9BF8030C
-   checksum64: BCD26EDAA49024518E45B634FFA66EE863A01AD88C0AC946D7D2D226528276FC
+   checksum32: 842A36C3B02F60E95665F1180D1EABC195F86F716F2ECD8578A7DC9D1DF124C5
+   checksum64: 8BBE0754E3285EF4753F85899E06D7D432DDE2C011B9F6CFC154E45B8FC97152
 
 File 'LICENSE.txt' is obtained from:
     https://raw.githubusercontent.com/telegramdesktop/tdesktop/master/LICENSE
