@@ -40,6 +40,15 @@ the advanced Magician software, an exclusive set of essential tools equip you
 like a pro. Stay ahead with automatic updates, check drive health and speed, and
 enable speed boosting RAPID Mode, all with one simple download.
 
+### Package Parameters
+
+The installer asks whether you are a resident of a European country (GDPR
+country) or Brazil. The package answers **No** by default.
+
+- `/GDPR:Yes` - answer Yes instead.
+
+Example: `choco install samsung-magician --params "'/GDPR:Yes'"`
+
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
 let them know
