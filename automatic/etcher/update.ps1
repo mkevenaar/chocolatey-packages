@@ -5,23 +5,17 @@ $releases = 'https://api.github.com/repos/balena-io/etcher/releases/latest'
 function global:au_SearchReplace {
   return @{
     ".\tools\chocolateyInstall.ps1" = @{
-      "(?i)(^\s*file\s*=\s*`"[$]toolsDir\\).*" = "`${1}$($Latest.FileName32)`""
-    }
-    ".\legal\VERIFICATION.txt"      = @{
-      "(?i)(listed on\s*)\<.*\>" = "`${1}<$releases>"
-      "(?i)(32-Bit.+)\<.*\>"     = "`${1}<$($Latest.URL32)>"
-      "(?i)(checksum type:).*"   = "`${1} $($Latest.ChecksumType32)"
-      "(?i)(checksum32:).*"      = "`${1} $($Latest.Checksum32)"
+      "(?i)(^\s*url\s*=\s*)('.*')"          = "`${1}'$($Latest.URL32)'"
+      "(?i)(^\s*checksum\s*=\s*)('.*')"     = "`${1}'$($Latest.Checksum32)'"
+      "(?i)(^\s*checksumType\s*=\s*)('.*')" = "`${1}'$($Latest.ChecksumType32)'"
     }
   }
 }
 
-function global:au_BeforeUpdate { Get-RemoteFiles -NoSuffix -Purge }
-
-
 function global:au_GetLatest {
-  $header = @{
-    "Authorization" = "token $env:github_api_key"
+  $header = @{}
+  if ($env:github_api_key) {
+    $header.Authorization = "token $env:github_api_key"
   }
   $download_page = Invoke-RestMethod -Uri $releases -Headers $header
 
@@ -32,13 +26,12 @@ function global:au_GetLatest {
   if ($asset) {
     $url = $asset.browser_download_url
     return @{
-          URL32   = $url
-          Version = $version
-          FileType = 'exe'
+      URL32   = $url
+      Version = $version
     }
   }
 }
 
 if ($MyInvocation.InvocationName -ne '.') {
-  update -ChecksumFor None
+  update -ChecksumFor 32
 }
