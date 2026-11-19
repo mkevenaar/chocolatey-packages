@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $packageName         = $Env:ChocolateyPackageName
-$softwareNamePattern = 'PostgreSQL 18*'
+$softwareNamePattern = 'PostgreSQL 19*'
 
 [array] $key = Get-UninstallRegistryKey $softwareNamePattern
 if ($key.Count -eq 1) {

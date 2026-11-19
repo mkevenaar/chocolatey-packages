@@ -19,15 +19,15 @@ if ($pp.Port) { Write-Host "Using port: $($pp.Port)"; $silentArgs.ServerPort = $
 $packageArgs = @{
     packageName     = $Env:ChocolateyPackageName
     fileType        = 'exe'
-    url64           = 'https://get.enterprisedb.com/postgresql/postgresql-18.7-1-windows-x64.exe'
-    checksum64      = '90BF244854A6C7F6D204B26934A32BD571B9953963B6137BB46D2FCD3F1A313E'
+    url64           = 'https://get.enterprisedb.com/postgresql/postgresql-19.0-1-windows-x64.exe'
+    checksum64      = '2E3DCB6D764FBDBBEB6DFF688990B65B72ABE85CD552862277605FEDEA9632FE'
     checksumType64  = 'sha256'
     url             = ''
     checksum        = ''
     checksumType32  = 'sha256'
     silentArgs      =  ($silentArgs.Keys | ForEach-Object { "--{0} {1}" -f $_.Tolower(), $silentArgs.$_}) -join ' '
     validExitCodes  = @(0)
-    softwareName    = 'PostgreSQL 18*'
+    softwareName    = 'PostgreSQL 19*'
 }
 Install-ChocolateyPackage @packageArgs
 Write-Host "Installation log: $Env:TEMP\install-postgresql.log"
