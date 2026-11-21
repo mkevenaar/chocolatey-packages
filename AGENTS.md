@@ -21,3 +21,8 @@
 - For meta-package groups, use the meta package id as the commit prefix when updating all related packages or all related packages except the meta package. For changes limited to one specific package, use that package id instead.
 - Winget cannot and should never be used as a source of truth.
 - The Wayback Machine, Internet Archive, `web.archive.org`, `archive.org`, and other web archives must not be used as package sources or update sources.
+
+## Package README Documentation
+
+- After editing a package's `README.md`, verify that the text from line 3 through the end is no more than 4,000 characters, including Markdown, URLs, whitespace, and line endings. This is the text AU uses for the package description. Shorten other content as needed to meet the limit.
+- Preserve the mandatory final three-line automatic-update notice verbatim, including its wording, line breaks, and maintainer issue link. Do not shorten or replace it to meet the character limit.
