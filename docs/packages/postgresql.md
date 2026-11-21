@@ -8,40 +8,36 @@
 [![Chocolatey version][choco-docs-version]][choco-docs-package]
 [![Chocolatey downloads][choco-docs-downloads]][choco-docs-package]
 
-[choco-docs-version]: <https://img.shields.io/chocolatey/v/postgresql18.svg?label=PostgreSQL>
-[choco-docs-downloads]: <https://img.shields.io/chocolatey/dt/postgresql18.svg>
-[choco-docs-package]: <https://community.chocolatey.org/packages/postgresql18>
+[choco-docs-version]: <https://img.shields.io/chocolatey/v/postgresql19.svg?label=PostgreSQL>
+[choco-docs-downloads]: <https://img.shields.io/chocolatey/dt/postgresql19.svg>
+[choco-docs-package]: <https://community.chocolatey.org/packages/postgresql19>
 
 ## Usage
 
 To install PostgreSQL, run the following command:
 
 ```powershell
-choco install postgresql18
+choco install postgresql19
 ```
 
 To upgrade PostgreSQL, run the following command:
 
 ```powershell
-choco upgrade postgresql18
+choco upgrade postgresql19
 ```
 
 To uninstall PostgreSQL, run the following command:
 
 ```powershell
-choco uninstall postgresql18
+choco uninstall postgresql19
 ```
 
 ## Description
 
-**PostgreSQL** is a powerful, open-source **object-relational database
-management system (ORDBMS)**, developed at the **University of California,
-Berkeley**.
-It extends the POSTGRES project and pioneered features later adopted by other
-commercial systems.
-
-PostgreSQL is **free to use, modify, and distribute** for private, commercial,
-or academic purposes.
+**PostgreSQL** is a free, open-source object-relational database management
+system.
+It may be used, modified, and distributed for private, commercial, or academic
+purposes.
 
 ### Features
 
@@ -56,28 +52,59 @@ or academic purposes.
 | `/Port` | Database server port. Defaults to `5432` or next available port. |
 | `/NoPath` | Prevents adding PostgreSQL `bin` directory to `PATH`. |
 
-Other parameters could be set via `--ia` argument, example:
+Pass other installer options with `--ia`:
 
 ```powershell
 choco install postgresql13 --params '/Password:test /Port:5433' --ia '--enable-components server,commandlinetools'
 ```
 
-Check all
+Run the
 [installer](https://www.enterprisedb.com/downloads/postgres-postgresql-downloads)
-options by adding `--help` as command line argument.
+with `--help` for all options.
+
+### Troubleshooting
+
+#### Installation through SSH or remote automation
+
+The EDB installer can exit with code `1` after a successful download and
+checksum
+check, reporting:
+
+```text
+Error writing file .../postgresql_installer_<id>/temp_check_comspec.bat
+```
+
+The [upstream issue](https://github.com/EnterpriseDB/edb-installers/issues/336)
+reports this failure in remote sessions and a successful install through RDP.
+An
+[investigation](https://github.com/EnterpriseDB/edb-installers/issues/336#issuecomment-3440350270)
+traces it to `USERDOMAIN` being `WORKGROUP` in some SSH sessions, causing
+invalid
+temporary-directory permissions. This error can also have other causes.
+
+Compare these values in the failing session:
+
+```powershell
+[System.Security.Principal.WindowsIdentity]::GetCurrent().Name
+"$env:USERDOMAIN\$env:USERNAME"
+```
+
+For local accounts, `<computername>\<username>` versus `WORKGROUP\<username>`
+indicates a mismatch. Check the session's temporary
+`installbuilder_installer_*.log`
+for `Invalid account`. Retry in an elevated console or RDP PowerShell window.
+Report persistent failures with the installer log and account comparison.
 
 ### Notes
 
 - Test installation (specify your password):
 `$Env:PGPASSWORD='test'; '\conninfo' | psql -Upostgres`
-This should output:
-`You are connected to database "postgres" as user "postgres" on host "localhost" at port "5432"`
+This should report a connection to the `postgres` database on port `5432`.
 - This package will install PostgreSQL to
   `$Env:ProgramFiles\PostgreSQL\[MajorVersion]`.
 - If you have problems during installation see
   [troubleshooting page](https://wiki.postgresql.org/wiki/Troubleshooting_Installation).
-- If you didn't specify password during setup and didn't record the generated
-  one, you need manually reset it using the following steps:
+- To reset a generated password you did not record:
   - Open file `data\pg_hba.conf` in PostgreSql installation directory
   - Change `METHOD` to `trust` and restart service with
     `Restart-Service postgresql*`
@@ -86,47 +113,22 @@ This should output:
 
 #### Virtual package
 
-Each major version has its own package: `postgresql<Version>`
+Each major version has a `postgresql<Version>` package. The virtual
+[postgresql](https://community.chocolatey.org/packages/postgresql) package
+depends on it.
+Forward parameters with `--params-global`; use `--force-dependencies` to
+uninstall
+or forcibly reinstall dependencies:
 
-**Virtual package**
-[postgresql](https://community.chocolatey.org/packages/postgresql) also contains
-all versions that depend on adequate major version, but using it without
-problems require some special choco parameters.
-
-To propagate package parameters to dependencies use `--params-global` choco
-install parameter with virtual package `postgresql`. Assuming latest version is
-12, to provide password the following two examples result in identical
-installation:
-
-```sh
+```powershell
 choco install postgresql --params '/Password:test' --params-global
-choco install postgresql12 --params '/Password:test'
-```
-
-To uninstall dependent package use `--force-dependencies`:
-
-```sh
-# The following two examples are identical
 choco uninstall postgresql --force-dependencies
-choco uninstall postgresql12 postgresql
-
-# This example uninstalls only postgresql virtual package and not postgresql12
-choco uninstall postgresql
-```
-
-To force reinstallation via virtual package use `--force-dependencies`:
-
-```sh
-# The following two examples are identical
 choco install postgresql --force --force-dependencies
-choco install postgresql12 --force --force-dependencies
-
-# This will reinstall only postgresql virtual package and not its dependency postgresql12
-choco install postgresql -force
-
-# This one is different then the first one as vcredist140 dependency is not reinstalled
-choco install postgresql12 --force
 ```
+
+Without `--force-dependencies`, uninstall and forced reinstall affect only the
+virtual package.
+Forcing dependencies also reinstalls packages such as `vcredist140`.
 
 **Please Note**: This is an automatically updated package. If you find it is
 out of date by more than a day or two, please contact the maintainer(s) and
@@ -136,7 +138,7 @@ that the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://community.chocolatey.org/packages/postgresql18)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/postgresql19)
 
 [Software Site](https://postgresql.org/)
 
