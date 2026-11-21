@@ -8,28 +8,28 @@
 [![Chocolatey version][choco-docs-version]][choco-docs-package]
 [![Chocolatey downloads][choco-docs-downloads]][choco-docs-package]
 
-[choco-docs-version]: <https://img.shields.io/chocolatey/v/psql18.svg?label=PostgreSQL+CLI+client>
-[choco-docs-downloads]: <https://img.shields.io/chocolatey/dt/psql18.svg>
-[choco-docs-package]: <https://community.chocolatey.org/packages/psql18>
+[choco-docs-version]: <https://img.shields.io/chocolatey/v/psql19.svg?label=PostgreSQL+CLI+client>
+[choco-docs-downloads]: <https://img.shields.io/chocolatey/dt/psql19.svg>
+[choco-docs-package]: <https://community.chocolatey.org/packages/psql19>
 
 ## Usage
 
 To install PostgreSQL CLI client, run the following command:
 
 ```powershell
-choco install psql18
+choco install psql19
 ```
 
 To upgrade PostgreSQL CLI client, run the following command:
 
 ```powershell
-choco upgrade psql18
+choco upgrade psql19
 ```
 
 To uninstall PostgreSQL CLI client, run the following command:
 
 ```powershell
-choco uninstall psql18
+choco uninstall psql19
 ```
 
 ## Description
@@ -84,7 +84,7 @@ that the package is no longer updating correctly.
 
 ## Links
 
-[Chocolatey Package Page](https://community.chocolatey.org/packages/psql18)
+[Chocolatey Package Page](https://community.chocolatey.org/packages/psql19)
 
 [Software Site](https://www.postgresql.org)
 
