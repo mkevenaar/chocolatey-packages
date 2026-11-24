@@ -1,7 +1,7 @@
 ﻿$ErrorActionPreference = 'Stop';
 
-$url = 'https://cdn.mysql.com/Downloads/MySQL-8.4/mysql-8.4.13.1-winx64.zip'
-$checksum = 'b96b13299bd0e74deaf543ae77d7aea5dac57bfae24ae30902d8899912a43382'
+$url = 'https://cdn.mysql.com/Downloads/MySQL-26.10/mysql-26.10.0.1-winx64.zip'
+$checksum = '8f313612e2efbb46643d7105595373daa77cb55179715cb6ac96382457c21291'
 $checksumType = 'sha256'
 
 $pp = Get-PackageParameters
