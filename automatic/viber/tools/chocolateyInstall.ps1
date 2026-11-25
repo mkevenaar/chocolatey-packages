@@ -1,8 +1,8 @@
 ﻿$ErrorActionPreference = 'Stop';
 
 $toolsDir     = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
-$url          = 'https://download.cdn.viber.com/desktop/windows/29.5.0/ViberSetup.msi'
-$checksum     = '856A79E863729714170A60B40EEE53414D17B1CAB4C6B6A1077123DC47FF49E7'
+$url          = 'https://download.cdn.viber.com/desktop/windows/29.7.0/ViberSetup.msi'
+$checksum     = '161E91908E30DB20902649BB4FE1DF9CBD27E2CC30B06E1D7B4168B8950923FF'
 $checksumType = 'sha256'
 $packageArgs = @{
   packageName    = $env:ChocolateyPackageName
