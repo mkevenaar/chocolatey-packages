@@ -7,8 +7,8 @@ Package can be verified like this:
 
 1. Go to
 
-   x32: https://github.com/telegramdesktop/tdesktop/releases/download/v7.4.6/td-setup-win-x86-7.4.6.exe
-   x64: https://github.com/telegramdesktop/tdesktop/releases/download/v7.4.6/td-setup-win-x64-7.4.6.exe
+   x32: https://github.com/telegramdesktop/tdesktop/releases/download/v7.4.7/td-setup-win-x86-7.4.7.exe
+   x64: https://github.com/telegramdesktop/tdesktop/releases/download/v7.4.7/td-setup-win-x64-7.4.7.exe
 
    to download the installer.
 
@@ -16,8 +16,8 @@ Package can be verified like this:
    - Use powershell function 'Get-FileHash'
    - Use Chocolatey utility 'checksum.exe'
 
-   checksum32: F7CA6F2E4CB10A5678509C17D4F43D910AF3D46163FA0114A9FBFAC6BDF1B39A
-   checksum64: C4323C79B76B86E3B160953EC7EBEADCE502D7E042AE7D7A407F423D21AD3D3F
+   checksum32: 8E6455FD308E370FEA160DF6286EB2C887BE916AC3D813DAA4450C92BAA20092
+   checksum64: 8A58BBBFC1EB6497E5C1FD62D1B7C9E6856DE1533ABA6F72790A5B057612A378
 
 
 File 'LICENSE.txt' is obtained from:
