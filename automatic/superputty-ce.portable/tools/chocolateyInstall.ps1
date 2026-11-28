@@ -2,6 +2,10 @@
 
 $toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
 
+if ([Environment]::OSVersion.Version -lt [Version]'10.0.19041') {
+  Write-Warning "SuperPuTTY Community Edition supports Windows 10 version 2004 (build 19041) / Windows Server 2022 or later. This system is $([Environment]::OSVersion.Version)."
+}
+
 $packageArgs = @{
   packageName   = $env:ChocolateyPackageName
   unzipLocation = $toolsDir

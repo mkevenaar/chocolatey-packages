@@ -1,6 +1,12 @@
 ﻿$ErrorActionPreference = 'Stop'
 
 $toolsDir = "$(Split-Path -Parent $MyInvocation.MyCommand.Definition)"
+
+# The setup has MinVersion=10.0.19041 and exits with code 1 without a message on older systems.
+if ([Environment]::OSVersion.Version -lt [Version]'10.0.19041') {
+  throw "SuperPuTTY Community Edition requires Windows 10 version 2004 (build 19041) / Windows Server 2022 or later. This system is $([Environment]::OSVersion.Version)."
+}
+
 $logFile  = "$($env:TEMP)\$($env:ChocolateyPackageName).$($env:ChocolateyPackageVersion).InnoInstall.log"
 
 $packageArgs = @{
