@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Do not remove this test for UTF-8: if “Ω” doesn’t appear as greek uppercase omega letter enclosed in quotation marks, you should use an editor that supports UTF-8, not this one. -->
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>superputty-ce.portable</id>
+    <version>0.0</version>
+    <owners>Maurice Kevenaar</owners>
+    <title>SuperPuTTY Community Edition (Portable)</title>
+    <authors>Chris Thornton, Jim Radford</authors>
+    <projectUrl>https://greyhair-atx.github.io/superputty/</projectUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/mkevenaar/chocolatey-packages@16c9865113a11ca6482f97f0092c3482896afe02/icons/superputty.png</iconUrl>
+    <copyright>Jim Radford and SuperPuTTY Community Edition contributors</copyright>
+    <tags>superputty foss putty ssh telnet scp rdp vnc tabs portable</tags>
+    <releaseNotes>https://github.com/greyhair-atx/superputty/releases/tag/sp-1.8.5</releaseNotes>
+    <licenseUrl>https://github.com/greyhair-atx/superputty/blob/master/License.txt</licenseUrl>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <packageSourceUrl>https://github.com/mkevenaar/chocolatey-packages/tree/master/automatic/superputty-ce.portable</packageSourceUrl>
+    <docsUrl>https://github.com/greyhair-atx/superputty/blob/master/docs/manual/README.md</docsUrl>
+    <projectSourceUrl>https://github.com/greyhair-atx/superputty</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/greyhair-atx/superputty/issues</bugTrackerUrl>
+    <summary>Tabbed Windows workspace for PuTTY, PowerShell, Command Prompt, RDP, VNC and SCP sessions</summary>
+    <description><![CDATA[SuperPuTTY Community Edition is an actively maintained, independently published fork of the original SuperPuTTY project. It provides a tabbed Windows workspace for PuTTY, PowerShell, Command Prompt, RDP, VNC and SCP sessions, with signed Windows x64 releases, security improvements and expanded session-management features.
+
+SuperPuTTY was created by Jim Radford and the original contributors. The Community Edition is maintained by Chris Thornton and is not an official upstream SuperPuTTY or PuTTY release.
+
+## Features
+
+* Docking, tabbed user interface for managing many sessions in one window
+* Hosts PuTTY (SSH, Telnet, RLogin, Raw), PowerShell and Command Prompt sessions
+* RDP and VNC sessions alongside terminal tabs
+* Secure file transfer using SCP
+* Layouts, including automatic restore of the window arrangement
+* Supports PuTTY session configurations including private keys
+* Signed releases with published SHA-256 checksums and an SBOM
+
+## Notes
+
+* Requires Windows x64, Windows 10 build 19041 or later and .NET Framework 4.8.
+* PuTTY is installed as a dependency. Other connection clients (for example a VNC viewer) must be installed separately.
+* This package extracts the portable build and adds a `SuperPutty` shim. Settings are stored in `%USERPROFILE%\SuperPuTTY.settings` when that file exists.
+
+**Please Note**: This is an automatically updated package. If you find it is
+out of date by more than a day or two, please contact the maintainer(s) and
+let them know [here](https://github.com/mkevenaar/chocolatey-packages/issues) that the package is no longer updating correctly.
+]]></description>
+    <dependencies>
+      <dependency id="putty" version="0.85.0" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+    <file src="legal\**" target="legal" />
+  </files>
+</package>
